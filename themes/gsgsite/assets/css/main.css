@@ -2,6 +2,17 @@
 .post, .page{
   margin: 0;
 }
+.container {
+  max-width: 1010px;
+  margin: 0 auto;
+}
+.titleContainer {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+#masthead {
+  display: none;
+}
 .homepage{
   display: flex;
   justify-content: space-between;
@@ -59,4 +70,90 @@
   font-size: 36px;
   color: black;
   border-bottom: 1.5px solid black;
-  }
+}
+
+
+/* About us page */
+.aboutUsPageWrapper .aboutUsFirstScreen {
+  min-height: 100vh;
+  position: relative;
+}
+.aboutUsPageWrapper .aboutUsFirstScreen .logo {
+  max-width: 170px;
+  position: absolute;
+  top: 10%;
+  left: 4%;
+}
+.aboutUsPageWrapper .aboutUsFirstScreen .logo img {
+  width: 100%;
+}
+.aboutUsPageWrapper .aboutUsFirstScreen .decorCircle {
+  position: absolute;
+  bottom: 2%;
+  right: -13%;
+}
+.aboutUsPageWrapper .aboutUsFirstScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.aboutUsPageWrapper .borderBlock {
+  width: 100%;
+  color: #171111;
+  text-transform: uppercase;
+  position: relative;
+}
+.aboutUsPageWrapper .borderBlock .row {
+  border: 2px solid #171111;
+}
+.aboutUsPageWrapper .borderBlock .row:nth-child(1) {
+  border-bottom: 0px;
+  min-height: 13vh;
+}
+.aboutUsPageWrapper .borderBlock .row:nth-child(2) {
+  border: none;
+  border-right: 2px solid #171111;
+}
+.aboutUsPageWrapper .borderBlock .row:nth-child(3) {
+  border-top: 0;
+  min-height: 13vh;
+}
+.aboutUsPageWrapper .borderBlock .row .title {
+  font-size: 100px;
+}
+.aboutUsPageWrapper .aboutYellow {
+  background-color: #fff600;
+  color: #171111;
+  padding-top: 150px;
+}
+.aboutUsPageWrapper .aboutYellow .title {
+  font-size: 26px;
+  position: relative;
+  margin-bottom: 90px;
+}
+.aboutUsPageWrapper .aboutYellow .title::after {
+  max-width: 500px;
+  width: 100%;
+  height: 1px;
+  background-color: #171111;
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+}
+.aboutUsPageWrapper .aboutYellow > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutUsPageWrapper .aboutYellow .part {
+  flex-basis: calc(50% - 50px);
+}
+.aboutUsPageWrapper .aboutYellow p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
