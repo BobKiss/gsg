@@ -1,0 +1,62 @@
+/* Homepage */
+.post, .page{
+  margin: 0;
+}
+.homepage{
+  display: flex;
+  justify-content: space-between;
+}
+.homepage .homeLogo{
+  max-width: 185px;
+  margin-left: 5%;
+}
+.homepage video.homeVideoBack{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+.homepage .rectangleBlock{
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.homepage .rectangleBlock p{
+  font-size: 100px;
+  color: black;
+  max-width: 60%;
+  text-transform: uppercase;
+  line-height: 100px;
+  font-weight: 800;
+  margin: auto 0;
+  padding: 15% 0;
+}
+.homepage .clientsBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.homepage .clientItemHome{
+  border-top: 1.5px solid black;
+  border-left: 1.5px solid black;
+  color: black;
+  text-decoration: none;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+.homepage .clientItemHome:visited{
+  color: black;
+}
+.homepage .clientItemHome p{
+  max-width: 55%;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: black;
+  border-bottom: 1.5px solid black;
+  }
