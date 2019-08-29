@@ -2,9 +2,10 @@
 .post, .page{
   margin: 0;
 }
-.homepage{
+.homepage .homeContent{
   display: flex;
   justify-content: space-between;
+      margin-top: 7%;
 }
 .homepage .homeLogo{
   max-width: 185px;
@@ -22,6 +23,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+      position: relative;
 }
 .homepage .rectangleBlock p{
   font-size: 100px;
@@ -37,6 +39,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.homepage .rectangleBlock img{
+  position: absolute;
+right: 7%;
+bottom: -27%;
 }
 .homepage .clientItemHome{
   border-top: 1.5px solid black;
@@ -57,7 +64,10 @@
   margin: 0;
   text-transform: uppercase;
   font-size: 36px;
+  line-height: 35px;
   color: black;
   border-bottom: 1.5px solid black;
+  padding: 20px;
+  padding-right: 0;
   }
-.someclass{}    
+.someclass{}
