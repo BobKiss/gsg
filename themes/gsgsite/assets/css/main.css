@@ -1,4 +1,9 @@
 /* Homepage */
+
+body{
+      overflow-x: hidden;
+}
+
 .post, .page{
   margin: 0;
 }
@@ -70,3 +75,91 @@ bottom: -27%;
   padding: 20px;
   padding-right: 0;
   }
+
+/* Side Menu */
+
+.sideMenu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.sideMenu .sideMenuItem{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 3px;
+  width: 56px;
+  height: 56px;
+  z-index: 3;
+  background-color: black;
+}
+.sideMenu .sideMenuItem p.langName{
+  margin: auto;
+  text-transform: capitalize;
+  color: white;
+      font-size: 20px;
+}
+.sideMenu .sideMenuItem i{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+.sideMenu .sideMenuItem.active img{
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+}
+.sideMenu .sideMenuItem.active i{
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+}
+.sideMenu .sideMenuItem.active img{
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+.sideMenu .sideMenuItem .sideMenuMail i{
+  visibility: visible;
+  opacity: 1;
+  color: white;
+  font-size: 30px;
+}
+.sideMenu .sideMenuItem.active{
+  background-color: #fff600;
+}
+.sideMenu.active .sideMenuItem{
+  border: 1px solid #fff600;
+  border-right: none;
+}
+.sideMenu .sideMenuMail{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sideMenuContent{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: black;
+  width: 70%;
+  height: 100%;
+  z-index: 2;
+  right: 0;
+  transform: translateX(100%);
+  transition: .5s;
+}
+.sideMenuContent.active{
+  transform: unset;
+  transition: .5s;
+}
