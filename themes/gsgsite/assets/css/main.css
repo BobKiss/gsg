@@ -95,6 +95,7 @@
 .aboutUsPageWrapper .aboutUsFirstScreen {
   min-height: 100vh;
   position: relative;
+  background-color: #e5e5e3;
 }
 .aboutUsPageWrapper .aboutUsFirstScreen .logo {
   max-width: 170px;
@@ -298,4 +299,111 @@
   font-size: 18px;
   line-height: 23px;
   padding-top: 10px;
+}
+#wwd {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#wwd svg path {
+  fill: transparent;
+}
+#wwd.animateStart svg path {
+  stroke: #171111;
+  stroke-width: 3;
+}
+#wwd.animateStart svg path:nth-child(1) {
+  stroke-dasharray: 521;
+  stroke-dashoffset: 521;
+  animation: line-move 2s ease forwards, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(2) {
+  stroke-dasharray: 376;
+  stroke-dashoffset: 376;
+  animation: line-move 2s ease forwards 0.3s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(3) {
+  stroke-dasharray: 345;
+  stroke-dashoffset: 345;
+  animation: line-move 2s ease forwards 0.6s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(4) {
+  stroke-dasharray: 521;
+  stroke-dashoffset: 521;
+  animation: line-move 2s ease forwards 0.9s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(5) {
+  stroke-dasharray: 359.6;
+  stroke-dashoffset: 359.6;
+  animation: line-move 2s ease forwards 1.2s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(6) {
+  stroke-dasharray: 326;
+  stroke-dashoffset: 326;
+  animation: line-move 2s ease forwards 1.5s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(7) {
+  stroke-dasharray: 372;
+  stroke-dashoffset: 372;
+  animation: line-move 2s ease forwards 1.8s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(8) {
+  stroke-dasharray: 359.6;
+  stroke-dashoffset: 359.6;
+  animation: line-move 2s ease forwards 2.1s, fill 0.5s ease forwards 3s;
+}
+/*  second line */
+#wwd.animateStart svg path:nth-child(9) {
+  stroke-dasharray: 521;
+  stroke-dashoffset: 521;
+  animation: line-move 2s ease forwards 0.3s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(10) {
+  stroke-dasharray: 376;
+  stroke-dashoffset: 376;
+  animation: line-move 2s ease forwards 0.6s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(11) {
+  stroke-dasharray: 326;
+  stroke-dashoffset: 326;
+  animation: line-move 2s ease forwards 0.9s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(12) {
+  stroke-dasharray: 258;
+  stroke-dashoffset: 258;
+  animation: line-move 2s ease forwards 1.2s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(13) {
+  stroke-dasharray: 521;
+  stroke-dashoffset: 521;
+  animation: line-move 2s ease forwards 1.5s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(14) {
+  stroke-dasharray: 359.6;
+  stroke-dashoffset: 359.6;
+  animation: line-move 2s ease forwards 1.8s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(15) {
+  stroke-dasharray: 353;
+  stroke-dashoffset: 353;
+  animation: line-move 2s ease forwards 2.1s, fill 0.5s ease forwards 3s;
+}
+#wwd.animateStart svg path:nth-child(16) {
+  stroke-dasharray: 345;
+  stroke-dashoffset: 345;
+  animation: line-move 2s ease forwards 2.4s, fill 0.5s ease forwards 3s;
+}
+
+
+@keyframes line-move {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  to {
+    fill: #171111;
+    stroke-width: 1px;
+  }
 }
