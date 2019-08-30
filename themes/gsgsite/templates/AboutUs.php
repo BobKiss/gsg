@@ -125,6 +125,26 @@ Template Name: About Us
         </div>
       </div>
     </section>
+
+    <section class="partneers">
+      <div class="titleContainer">
+        <div class="title">Partners in the Road</div>
+      </div>
+
+      <div class="sliderPartneers">
+				<?php
+				while ( have_rows('partneers') ) : the_row();
+					?>
+          <div>
+            <a href="<?php echo get_sub_field('link'); ?>" class="singlePartneer">
+              <img src="<?php echo get_sub_field('image');?>" alt="<?php echo get_sub_field('link');?> ">
+            </a>
+          </div>
+				<?php
+				endwhile;
+				?>
+      </div> <!-- .sliderPartneers-->
+    </section>
   </div>
 
 </div>

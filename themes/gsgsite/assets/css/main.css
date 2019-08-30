@@ -280,6 +280,11 @@
   flex-direction: column;
   flex-basis: calc(33% - 30px);
 }
+.aboutUsPageWrapper .managmentBoard .member .image {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
 .aboutUsPageWrapper .managmentBoard .member .memberTitle {
   font-size: 26px;
   line-height: 23px;
@@ -406,4 +411,11 @@
     fill: #171111;
     stroke-width: 1px;
   }
+}
+
+.aboutUsPageWrapper .partneers {
+  background-color: #fff600;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  color: #000;
 }
