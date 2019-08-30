@@ -37,6 +37,75 @@ Template Name: About Us
         </div>
       </div>
     </section>
+
+    <section class="aboutMap">
+      <div class="titleContainer">
+        <div class="title">Shaham Crystal Group | Activity map in Israel</div>
+      </div>
+      <div class="container">
+        <div class="mapSection">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45488.42264829626!2d34.760255635002856!3d32.07067567860087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca6193b7c1f%3A0xc1fb72a2c0963f90!2z0KLQtdC70Ywt0JDQstC40LIsINCY0LfRgNCw0LjQu9GM!5e0!3m2!1sru!2sua!4v1567152065704!5m2!1sru!2sua" width="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div> <!-- .mapSection-->
+        <div class="titleSection">
+          <div class="row"></div>
+          <div class="row mapTitleRow">
+            <div class="mapTitle">
+              מפת<br>
+              פעילות<br>
+              בארץ<br>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div> <!-- .titleSection -->
+      </div>
+    </section>
+
+    <section class="activityAreas">
+      <div class="titleContainer">
+        <div class="title">Shaham Crystal Group | Areas of activity</div>
+      </div>
+
+      <div class="titleContainer content">
+				<div class="list">
+					<?php
+					while ( have_rows('activity_areas') ) : the_row();
+						?>
+            <div class="singleParagraph">
+              <div class="pTitle"><?php the_sub_field('title'); ?></div>
+              <div class="pContent">
+								<?php the_sub_field('content'); ?>
+              </div>
+            </div>
+					<?php
+					endwhile;
+					?>
+        </div>
+      </div>
+    </section>
+
+    <section class="managmentBoard">
+      <div class="titleContainer">
+        <div class="title">Shaham Crystal Group | Management board</div>
+      </div>
+
+      <div class="container">
+        <div class="board">
+					<?php
+					while ( have_rows('managment_board') ) : the_row();
+						?>
+            <div class="member">
+              <div class="image">
+                <img src="<?php echo get_sub_field('image')['url']; ?>" alt="">
+              </div>
+              <div class="memberTitle"><?php the_sub_field('title'); ?></div>
+              <div class="memberDescription"><?php the_sub_field('description'); ?></div>
+            </div>
+					<?php
+					endwhile;
+					?>
+        </div>
+      </div>
+    </section>
   </div>
 
 </div>

@@ -10,7 +10,25 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+.titleContainer .title {
+  font-size: 26px;
+  position: relative;
+  margin-bottom: 90px;
+}
+.titleContainer .title::after {
+  max-width: 580px;
+  width: 100%;
+  height: 1px;
+  background-color: #171111;
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+}
 #masthead {
+  display: none;
+}
+.sideMenu {
   display: none;
 }
 .homepage{
@@ -127,21 +145,7 @@
   background-color: #fff600;
   color: #171111;
   padding-top: 150px;
-}
-.aboutUsPageWrapper .aboutYellow .title {
-  font-size: 26px;
-  position: relative;
-  margin-bottom: 90px;
-}
-.aboutUsPageWrapper .aboutYellow .title::after {
-  max-width: 500px;
-  width: 100%;
-  height: 1px;
-  background-color: #171111;
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 0;
+  padding-bottom: 100px;
 }
 .aboutUsPageWrapper .aboutYellow > .container {
   display: flex;
@@ -156,4 +160,142 @@
   padding-bottom: 30px;
   font-size: 18px;
   line-height: 23px;
+}
+.aboutUsPageWrapper .aboutMap {
+  background-color: #fefefe;
+  padding-top: 160px;
+  padding-bottom: 180px;
+}
+
+.aboutUsPageWrapper .aboutMap > .container {
+  display: flex;
+}
+.aboutUsPageWrapper .aboutMap .mapSection {
+  /*flex-basis: 65%;*/
+  width: 55%;
+  margin: auto;
+  overflow: hidden; /* clearfix */
+  display: flex;
+}
+.aboutUsPageWrapper .aboutMap .mapSection:before {
+  content: "";
+  padding-top: 100%;
+  float: left;
+}
+.aboutUsPageWrapper .aboutMap .mapSection iframe {
+  width: 100%;
+  margin: 0;
+}
+.aboutUsPageWrapper .aboutMap .titleSection {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  background-color: #030000;
+  padding: 7%;
+}
+.aboutUsPageWrapper .aboutMap .mapTitle {
+  font-size: 48px;
+  line-height: 48px;
+  color: #fefefe;
+}
+.aboutUsPageWrapper .aboutMap .mapTitleRow {
+  display: flex;
+  align-items: center;
+}
+.aboutUsPageWrapper .aboutMap .titleSection .row {
+  border: 2px solid #fefefe;
+  flex-grow: 1;
+}
+.aboutUsPageWrapper .aboutMap .titleSection .row:nth-child(1) {
+  border-bottom: 0;
+  height: 10%;
+}
+.aboutUsPageWrapper .aboutMap .titleSection .row:nth-child(2) {
+  border: none;
+  border-left: 2px solid #fefefe;
+}
+.aboutUsPageWrapper .aboutMap .titleSection .row:nth-child(3) {
+  border-top: 0;
+  height: 10%;
+}
+
+.aboutUsPageWrapper .activityAreas {
+  color: #ffffff;
+  background-color: #000000;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.aboutUsPageWrapper .activityAreas .titleContainer {
+  padding-left: 60px;
+}
+.aboutUsPageWrapper .activityAreas .titleContainer .title::after {
+  background-color: #fefefe;
+  width: 100%;
+  max-width: 100%;
+}
+.aboutUsPageWrapper .activityAreas .content {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.aboutUsPageWrapper .activityAreas .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aboutUsPageWrapper .activityAreas .singleParagraph {
+  flex-basis: calc(50% - 50px);
+}
+.aboutUsPageWrapper .activityAreas .pTitle {
+  position: relative;
+  font-size: 26px;
+}
+.aboutUsPageWrapper .activityAreas .pTitle:after {
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background-color: #fefefe;
+}
+.aboutUsPageWrapper .activityAreas .pContent {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+
+.aboutUsPageWrapper .managmentBoard {
+  background-color: #fffefe;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  color: #020000;
+}
+.aboutUsPageWrapper .managmentBoard .board {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutUsPageWrapper .managmentBoard .member {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33% - 30px);
+}
+.aboutUsPageWrapper .managmentBoard .member .memberTitle {
+  font-size: 26px;
+  line-height: 23px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.aboutUsPageWrapper .managmentBoard .member .memberTitle:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #020000;
+}
+.aboutUsPageWrapper .managmentBoard .member .memberDescription {
+  font-size: 18px;
+  line-height: 23px;
+  padding-top: 10px;
 }
