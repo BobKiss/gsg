@@ -37,10 +37,24 @@
 
 			</div>
 			<div class="infoRow">
+				<div class="infoCol">
+					<p><?php _e('Change language','GsgStrings'); ?></p>
+					<?php do_action('wpml_add_language_selector'); ?>
+				</div>
+				<div class="infoCol">
 
+				</div>
+				<div class="infoCol">
+
+				</div>
+				<div class="infoCol">
+
+				</div>
 			</div>
 			<div class="socialsRow">
-
+				<span><?php _e('Our social:','GsgStrings'); ?></span>
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt="">
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt="">
 			</div>
 		</div>
 	<div class="sideMenuItem"><i class="fal fa-envelope"></i></div>
