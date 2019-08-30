@@ -121,6 +121,7 @@
 }
 .aboutUsPageWrapper .borderBlock .row .title {
   font-size: 100px;
+  text-align: left;
 }
 .aboutUsPageWrapper .aboutYellow {
   background-color: #fff600;
