@@ -31,30 +31,44 @@
 <aside class="sideMenu">
 	<div class="sideMenuItem">
 		<img src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt="">
-		<i class="fal fa-times"></i></div>
+		<i class="fal fa-times"></i>
+	</div>
 		<div class="sideMenuContent">
 			<div class="menuBlock">
-
+			<nav id="site-navigation" class="main-navigation">
+			<div class="container mainNavigationContainer">
+				<?php
+				wp_nav_menu( array(
+					'menu' => 'Main menu 2',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+				<div class="activeLine"></div>
+			</div>
+		</nav>
 			</div>
 			<div class="infoRow">
 				<div class="infoCol">
-					<p><?php _e('Change language','GsgStrings'); ?></p>
+					<p class="infoHeading"><?php _e('Change language','GsgStrings'); ?></p>
 					<?php do_action('wpml_add_language_selector'); ?>
 				</div>
 				<div class="infoCol">
-
+					<p class="infoHeading"><?php _e('Address','GsgStrings'); ?></p>
+					<span><?php _e('27 Jaffa Street Haifa, Israel','GsgStrings'); ?></span>
 				</div>
 				<div class="infoCol">
-
+					<p class="infoHeading"><?php _e('Phone','GsgStrings'); ?></p>
+					<span>+972-722-20-20-70</span>
 				</div>
 				<div class="infoCol">
-
+					<p class="infoHeading"><?php _e('Email','GsgStrings'); ?></p>
+					<span>office@gsg.co.il</span>
 				</div>
 			</div>
 			<div class="socialsRow">
 				<span><?php _e('Our social:','GsgStrings'); ?></span>
-				<img src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt="">
-				<img src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt="">
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/InstagramIcon.png" alt="">
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/FacebookIcon.png" alt="">
 			</div>
 		</div>
 	<div class="sideMenuItem"><i class="fal fa-envelope"></i></div>
