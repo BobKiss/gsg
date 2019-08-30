@@ -8,17 +8,17 @@ Template Name: About Us
 <div class="page">
 
   <div class="aboutUsPageWrapper">
-    <section class="aboutUsFirstScreen" style="background-image: url(<?php echo get_bloginfo('url') ?>/wp-content/uploads/2019/08/aboutUsBg.jpg)">
+    <section class="aboutUsFirstScreen" style="background-image: url(<?php echo site_url(); ?>/wp-content/uploads/2019/08/aboutUsBg.jpg)">
       <a href="<?php echo get_bloginfo('url') ?>" class="logo">
-        <img src="<?php echo get_bloginfo('url') ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+        <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
       </a>
       <div class="borderBlock container">
         <div class="row"></div>
         <div class="row">
-          <div class="title">Who we are <br> What we do</div>
+          <div class="title">Who we are<br>What we do</div>
         </div>
         <div class="row"></div>
-        <img class="decorCircle" src="<?php echo get_bloginfo('url') ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
+        <img class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
       </div> <!--.borderBlock-->
     </section> <!-- .aboutUsFirstScreen-->
 
