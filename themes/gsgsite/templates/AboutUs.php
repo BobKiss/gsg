@@ -136,7 +136,7 @@ Template Name: About Us
 				while ( have_rows('partneers') ) : the_row();
 					?>
           <div>
-            <a href="<?php echo get_sub_field('link'); ?>" class="singlePartneer">
+            <a href="<?php echo get_sub_field('link'); ?>" target="_blank" class="singlePartneer">
               <img src="<?php echo get_sub_field('image');?>" alt="<?php echo get_sub_field('link');?> ">
             </a>
           </div>
