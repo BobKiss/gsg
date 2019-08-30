@@ -72,6 +72,7 @@
   border-bottom: 1.5px solid black;
 }
 
+
 /* About us page */
 .aboutUsPageWrapper .aboutUsFirstScreen {
   min-height: 100vh;
@@ -156,3 +157,4 @@
   font-size: 18px;
   line-height: 23px;
 }
+
