@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
   $('.sideMenu .sideMenuItem.first').click(function(e){
     $(this).toggleClass('active');
     $(this).parent().toggleClass('active');
-    $('.sideMenuContent').toggleClass('active');
+    $('.sideMenuWrapper').toggleClass('active');
   });
   $('.mainNavigationContainer .menu-item-has-children > a, .fullscreenMenu .menu-item-has-children > a').click(function (e) {
     console.log('click and prev def');
