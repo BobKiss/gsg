@@ -537,6 +537,9 @@ body{
   display: flex;
   justify-content: space-between;
 }
+.sideMenuWrapper .sideMenuContent .infoCol{
+  color: white;
+}
 .sideMenuWrapper .sideMenuContent .socialsRow{
   border-top: 1px solid #fff600;
   padding-top: 15px;
@@ -558,9 +561,21 @@ body{
 .sideMenuWrapper .sideMenuContent .infoRow .infoHeading{
   margin: 10px 0;
 }
-.sideMenuWrapper .sideMenuContent .wpml-ls-link a{
+.sideMenuWrapper .sideMenuContent .wpml-ls-legacy-list-horizontal a{
   border-right: 1px solid white;
   padding: 0 10px;
   font-size: 18px;
   line-height: 18px;
+  color: white;
 }
+.sideMenuWrapper .sideMenuContent .wpml-ls-legacy-list-horizontal{
+  padding: 0;
+}
+.sideMenuWrapper .sideMenuContent .main-navigation a{
+  color: white;
+}
+@media screen and (min-width: 37.5em){
+.main-navigation ul {
+    display: flex;
+    flex-direction: column;
+}}
