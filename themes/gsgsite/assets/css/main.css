@@ -3,6 +3,9 @@
 body{
       overflow-x: hidden;
 }
+a:focus {
+  outline: none;
+}
 
 .post, .page{
   margin: 0;
@@ -423,6 +426,13 @@ body{
   padding-top: 160px;
   padding-bottom: 160px;
   color: #000;
+}
+.aboutUsPageWrapper .partneers a.singlePartneer {
+  padding: 0 20px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Side Menu */
