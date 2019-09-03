@@ -542,6 +542,8 @@ a:focus {
 .sideMenuWrapper .sideMenuContent .menuBlock{
   border: 1px solid #fff600;
   display: flex;
+  justify-content: flex-end;
+  padding: 75px 65px;
 }
 .sideMenuWrapper .sideMenuContent .infoRow{
   display: flex;
@@ -584,8 +586,17 @@ a:focus {
 .sideMenuWrapper .sideMenuContent .main-navigation a{
   color: white;
 }
-@media screen and (min-width: 37.5em){
+.sideMenuWrapper .sideMenuContent li.current-menu-item{
+  color: #fff600;
+}
+.sideMenuWrapper .sideMenuContent li.menu-item-has-children:after{
+  font-family: 'Font Awesome\ 5 Pro';
+  font-weight: 900;
+  content: "\f104";
+  color: #fff600;
+}
 .main-navigation ul {
     display: flex;
     flex-direction: column;
-}}
+    align-items: flex-end;
+}
