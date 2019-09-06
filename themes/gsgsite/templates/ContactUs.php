@@ -76,7 +76,6 @@ Template Name: Contact Us
 		</a>
 	</section>
 
-
 </div>
 
 <?php
