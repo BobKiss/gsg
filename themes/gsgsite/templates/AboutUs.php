@@ -6,7 +6,6 @@ Template Name: About Us
 <?php get_header(); ?>
 
 <div class="page">
-
   <div class="aboutUsPageWrapper">
     <section class="headerSection" style="background-image: url(<?php echo site_url(); ?>/wp-content/uploads/2019/08/aboutUsBg.jpg)">
       <a href="<?php echo get_bloginfo('url') ?>" class="logo">
