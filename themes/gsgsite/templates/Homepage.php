@@ -29,3 +29,4 @@ Template Name: Homepage
 
 </div>
 
+<?php wp_footer(); ?>

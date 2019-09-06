@@ -24,6 +24,7 @@ jQuery(document).ready(function ($) {
   });
 
   $('.sideMenu .sideMenuItem.first').click(function(e){
+    console.log('click');
     $(this).toggleClass('active');
     $(this).parent().toggleClass('active');
     $('.sideMenuWrapper').toggleClass('active');

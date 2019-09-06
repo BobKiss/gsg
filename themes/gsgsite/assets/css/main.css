@@ -1,7 +1,7 @@
 /* Homepage */
 
-body{
-      overflow-x: hidden;
+body.page-template-templatesHomepage-php {
+  overflow: hidden;
 }
 a:focus {
   outline: none;
