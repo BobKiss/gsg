@@ -29,6 +29,3 @@ Template Name: Homepage
 
 </div>
 
-<?php
-get_footer();
-?>
