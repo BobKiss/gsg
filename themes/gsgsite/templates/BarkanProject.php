@@ -125,3 +125,4 @@ Template Name: Barkan Project
 <?php
 get_footer();
 ?>
+
