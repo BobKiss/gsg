@@ -7,16 +7,15 @@ Template Name: Barkan Project
 
 <div class="page">
 	<!-- SectionContacts -->
-	<section class="headerSection">
-		<a href="<?php echo get_bloginfo('url') ?>" class="logo">
-			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
-		</a>
-	</section> <!-- .headerSection-->
-		<section class="barkan-header">
+	<section class="barkan-header">
 		<div class="container">
 			<div class="row d-flex no-gutters">
 				<div class="col-12 barkan-header__img">
+				    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock124.jpg">
 				</div>
+				 <a href="<?php echo get_bloginfo('url') ?>" class="barkan-header-logo">
+		        		<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+			    	</a>
 				<p class="barkan-header__text">ברקן מול הים | ברק </p>
 			</div>
 		</div>
