@@ -36,7 +36,14 @@
 				<i class="fal fa-envelope"></i>
 			</a>
 		</div>
-		<div class="sideMenuItem"><p class="langName"><?php echo ICL_LANGUAGE_CODE; ?></p></div>
+		<?php $lang = get_locale();
+			if ($lang == 'en_US') {
+				$linkToSwitch = '?lang=he';
+			} else {
+				$linkToSwitch = '?lang=en';
+			}
+		?>
+		<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php echo ICL_LANGUAGE_CODE; ?></a></div>
 	</aside>
 
 	<div class="sideMenuWrapper">
