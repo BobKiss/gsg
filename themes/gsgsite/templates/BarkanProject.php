@@ -8,14 +8,15 @@ Template Name: Barkan Project
 <div class="page">
 	<!-- SectionContacts -->
 	<section class="barkan-header">
+	    <a href="<?php echo get_bloginfo('url') ?>" class="logo">
+			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+		</a>
 		<div class="container">
 			<div class="row d-flex no-gutters">
 				<div class="col-12 barkan-header__img">
 				    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock124.jpg">
 				</div>
-				 <a href="<?php echo get_bloginfo('url') ?>" class="barkan-header-logo">
-		        		<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
-			    	</a>
+				 
 				<p class="barkan-header__text">ברקן מול הים | ברק </p>
 			</div>
 		</div>
@@ -55,8 +56,8 @@ Template Name: Barkan Project
 		<div class="container">
 			<div class="barkan-slider__wrap">
 				<div class="row no-gutters inline-block">
-					<div class="col-9"><div class="barkan-slider__img img_01"></div></div>
-					<div class="col-3"><div class="barkan-slider__img img_02"></div></div>
+					<div class="col-9"><div class="barkan-slider__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg"></div></div>
+					<div class="col-3 barkan-slider__img"><div class="barkan-slider__img barkan-slider__img_left"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg"></div></div>
 					<span class="barkan-slider__toggle_left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
 					<span class="barkan-slider__toggle_right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
 				</div>			
@@ -89,7 +90,7 @@ Template Name: Barkan Project
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5></div>
-				<div class="col-12"><img src="imgs/barkan-map.png" class="barkan__about_map"></div>
+				<div class="col-12"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/barkan-map.png" class="barkan__about_map"></div>
 			</div>
 		</div>
 	</section>
@@ -124,4 +125,3 @@ Template Name: Barkan Project
 <?php
 get_footer();
 ?>
-
