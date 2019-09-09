@@ -971,6 +971,144 @@ a:hover, a:active {
     margin: 0 10px;
 }
 
+.header-logo{
+    position: absolute;
+    width: 160px;
+    top: 130px;
+    left: 95px;
+}
+.barkan-header{
+    padding-top: 130px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.barkan-header__img img{
+    width: 100%;
+    height: 620px;
+}
+.barkan-header__text{
+    font-size: 24px;
+    color: #231f20;
+    font-weight: bold;
+}
+.barkan-about{
+    text-align: right;
+    color: #231f20;   
+}
+.barkan-about a{
+    color: #231f20;   
+}
+.barkan-about__title{
+    padding-bottom: 4px;
+    margin-top: 50px;
+    border-bottom: 2px solid  #231f20;
+    color: #231f20;
+    font-size: 24px;
+}
+.barkan-about__text{
+    margin: 25px 0;
+    font-size: 18px;
+}
+.barkan-about__stattext{
+    font-size: 20px;
+    line-height: 20px;
+}
+.barkan-about__statline{
+    width: 700px;
+    height: 13px;
+    background: #000;
+    margin: auto 0;
+    margin-right: auto;
+    margin-left: 50px;
+}
+.statline_01{
+    background: #c4c2c2;
+    width: 250px;
+    height: 100%;
+    display: inherit;
+    margin-right: auto;
+}
+.statline_02{
+    background: #c4c2c2;
+    width: 390px;
+    height: 100%;
+    display: inherit;
+    margin-right: auto;
+}
+.statline_03{
+    background: #c4c2c2;
+    width: 250px;
+    height: 100%;
+    display: inherit;
+    margin-right: auto;
+}
+.barkan-about__stat_wrap{
+    padding-bottom: 25px;
+}
+.barkan__about_map{
+    width: 100%;
+    height: 380px;
+    margin-top: 60px;
+}
+.barkan-about__btn{
+    margin-right: auto;
+    border: 2px solid  #231f20;
+    border-left: none;
+    font-size: 18px;
+    padding: 2px 6px;
+    margin-top: 64px;
+}
+.barkan-slider{
+    padding-top: 100px;
+}
+.barkan-slider__wrap{
+    height: 600px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.barkan-slider__toggle_right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-bottom: 50%;
+    margin-left: 50%;
+    width: 64px;
+    height: 56px;
+    text-align: center;
+    line-height: 60px;
+    background: #d7d3cf;
+}
+.barkan-slider__toggle_right i{
+    font-size: 24px;
+    color: #000;
+}
+.barkan-slider__toggle_left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-bottom: 50%;
+    margin-right: 50%;
+    width: 64px;
+    height: 56px;
+    text-align: center;
+    line-height: 60px;
+    background: #d7d3cf;
+}
+.barkan-slider__toggle_left i{
+    font-size: 24px;
+    color: #000;
+}
+.barkan-slider__img{
+    width: 100%;
+    height: 600px;
+    display: inline-flex;
+}  
+.barkan-slider__img_left{
+    padding-right: 30px;
+}
+
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
