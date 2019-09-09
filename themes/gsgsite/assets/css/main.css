@@ -118,11 +118,12 @@ a:focus {
   position: relative;
   background-color: #e5e5e3;
 }
-.headerSection .logo {
+.headerSection .logo, .barkan-header .logo {
   max-width: 170px;
   position: absolute;
   top: 8%;
   left: 4%;
+  z-index: 999;
 }
 .headerSection .logo img {
   width: 100%;
@@ -766,16 +767,15 @@ a:focus {
 /*SectionBarkanProj*/
 
 
-.barkan-header-logo{
-    position: absolute;
-    width: 160px;
-    top: 130px;
-    left: 95px;
-}
 .barkan-header{
-    padding-top: 130px;
-    padding-bottom: 60px;
     position: relative;
+}
+.barkan-header__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 130px;
+    margin-bottom: 60px;
 }
 .barkan-header__img img{
     width: 100%;
