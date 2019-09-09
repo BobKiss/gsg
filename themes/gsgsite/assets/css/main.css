@@ -1,7 +1,7 @@
 /* Homepage */
 
-body{
-      overflow-x: hidden;
+body.page-template-templatesHomepage-php {
+  overflow: hidden;
 }
 a:focus {
   outline: none;
@@ -11,7 +11,7 @@ a:focus {
   margin: 0;
 }
 .container {
-  max-width: 1010px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .titleContainer {
@@ -113,53 +113,53 @@ a:focus {
 /* About us page */
 
 
-.aboutUsPageWrapper .aboutUsFirstScreen {
+.headerSection {
   min-height: 100vh;
   position: relative;
   background-color: #e5e5e3;
 }
-.aboutUsPageWrapper .aboutUsFirstScreen .logo {
+.headerSection .logo {
   max-width: 170px;
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 4%;
 }
-.aboutUsPageWrapper .aboutUsFirstScreen .logo img {
+.headerSection .logo img {
   width: 100%;
 }
-.aboutUsPageWrapper .aboutUsFirstScreen .decorCircle {
+.headerSection .decorCircle {
   position: absolute;
   bottom: 2%;
   right: -13%;
 }
-.aboutUsPageWrapper .aboutUsFirstScreen {
+.headerSection {
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
 }
-.aboutUsPageWrapper .borderBlock {
+.headerSection .borderBlock {
   width: 100%;
   color: #171111;
   text-transform: uppercase;
   position: relative;
 }
-.aboutUsPageWrapper .borderBlock .row {
+.headerSection .borderBlock .row {
   border: 2px solid #171111;
 }
-.aboutUsPageWrapper .borderBlock .row:nth-child(1) {
+.headerSection .borderBlock .row:nth-child(1) {
   border-bottom: 0px;
   min-height: 13vh;
 }
-.aboutUsPageWrapper .borderBlock .row:nth-child(2) {
+.headerSection .borderBlock .row:nth-child(2) {
   border: none;
   border-right: 2px solid #171111;
 }
-.aboutUsPageWrapper .borderBlock .row:nth-child(3) {
+.headerSection .borderBlock .row:nth-child(3) {
   border-top: 0;
   min-height: 13vh;
 }
-.aboutUsPageWrapper .borderBlock .row .title {
+.headerSection .borderBlock .row .title {
   font-size: 100px;
   text-align: left;
 }
@@ -600,3 +600,306 @@ a:focus {
     flex-direction: column;
     align-items: flex-end;
 }
+
+
+
+
+/*SectionSV-ContactUs*/
+
+.sn-intro{
+    padding-top: 140px;
+    padding-bottom: 90px;
+    background: #fff600; 
+}
+.sn-contactsus {
+    background: #fffefe;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+}
+.sn-contactus__title{
+    border-bottom: 2px solid #000;
+    width: 50%;
+}
+ .sn-contactsus textarea,  .sn-contactsus input{
+    background: #f4f4f4;
+}
+.sn-contactus__area{
+    padding-right: 25px;
+}
+.sn-contactus__block{
+    padding-left: 25px;
+    width: 100%;
+}
+
+/*SectionContactUs*/
+
+.contactsus{
+    background: #fff600;
+    padding-top: 135px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.contactus__title{
+    text-align: right;
+    font-size: 24px;
+}
+
+.contactsus textarea{
+    width: 100%;
+    justify-content: space-between;
+    border: none;
+    padding: 10px;
+}
+
+.contactus__wrap{
+    padding-top: 45px;
+    padding-bottom: 55px;
+    margin-top: 10px;
+    border-top: 1px solid #000;
+}
+
+.contactus__inp{
+    margin-left: 25px;
+    height: 210px;
+    width: 100%;
+    padding-left: 25px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contactus__inp input{
+    height: 50px;
+    border: none;
+    padding-right: 10px;
+}
+.contactus__area{
+    padding-right: 25px;
+}
+.contactus_btn[type="submit"]{
+    border: 1px solid #000;
+    padding: 0 15px;
+    line-height: 25px;
+    margin-top: 25px;
+    background: none;
+    font-weight: bold;
+    border-radius: 0;
+}
+.contactus__lets{
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.contactus__soc_icons{
+    margin-left: 14px;
+    /* padding-bottom: 24px; */
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+.contactus__text, .contactus__soc{
+    font-size: 24px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.contactus__text {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+.contactus__upbtn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #e6e6e6;
+    color: #000;
+    line-height: 100px;
+    text-align: center;
+    font-size: 54px;
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -100px;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Footer. */
+
+.site-footer{
+    padding-top: 270px;
+    padding-bottom: 75px;
+    background: #000;
+}
+.footer__logo{
+    width: 170px;
+    margin-top: 140px;
+}
+.footer__menu{
+    border-bottom: 2px solid #8e8686;
+    padding-bottom: 10px;
+}
+.footer__menu a, .footer__links a{
+    color: #8e8686;
+}
+.footer__menu a:hover, .footer__links a:hover{
+    color: #fff600;
+    text-decoration: none;
+}
+.footer__menu_sep{
+    display: inline-flex;
+    width: 2px;
+    height: 20px;
+    background: #8e8686;
+    margin: 0 10px;
+}
+
+/*SectionBarkanProj*/
+
+
+.barkan-header-logo{
+    position: absolute;
+    width: 160px;
+    top: 130px;
+    left: 95px;
+}
+.barkan-header{
+    padding-top: 130px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.barkan-header__img img{
+    width: 100%;
+    height: 620px;
+}
+.barkan-header__text{
+    font-size: 24px;
+    color: #231f20;
+    font-weight: bold;
+}
+.barkan-about{
+    text-align: right;
+    color: #231f20;   
+}
+.barkan-about a{
+    color: #231f20;   
+}
+.barkan-about__title{
+    padding-bottom: 4px;
+    margin-top: 50px;
+    border-bottom: 2px solid  #231f20;
+    color: #231f20;
+    font-size: 24px;
+}
+.barkan-about__text{
+    margin: 25px 0;
+    font-size: 18px;
+}
+.barkan-about__stattext{
+    font-size: 20px;
+    line-height: 20px;
+}
+.barkan-about__statline{
+    width: 700px;
+    height: 13px;
+    background: #000;
+    margin: auto 0;
+    margin-right: auto;
+    margin-left: 50px;
+}
+.statline_01{
+    background: #c4c2c2;
+    width: 250px;
+    height: 100%;
+    display: inherit;
+    margin-right: auto;
+}
+.statline_02{
+    background: #c4c2c2;
+    width: 390px;
+    height: 100%;
+    display: inherit;
+    margin-right: auto;
+}
+.statline_03{
+    background: #c4c2c2;
+    width: 250px;
+    height: 100%;
+    display: inherit;
+    margin-right: auto;
+}
+.barkan-about__stat_wrap{
+    padding-bottom: 25px;
+}
+.barkan__about_map{
+    width: 100%;
+    height: 380px;
+    margin-top: 60px;
+}
+.barkan-about__btn{
+    margin-right: auto;
+    border: 2px solid  #231f20;
+    border-left: none;
+    font-size: 18px;
+    padding: 2px 6px;
+    margin-top: 64px;
+}
+.barkan-slider{
+    padding-top: 100px;
+}
+.barkan-slider__wrap{
+    height: 600px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.barkan-slider__toggle_right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-bottom: 50%;
+    margin-left: 50%;
+    width: 64px;
+    height: 56px;
+    text-align: center;
+    line-height: 60px;
+    background: #d7d3cf;
+}
+.barkan-slider__toggle_right i{
+    font-size: 24px;
+    color: #000;
+}
+.barkan-slider__toggle_left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-bottom: 50%;
+    margin-right: 50%;
+    width: 64px;
+    height: 56px;
+    text-align: center;
+    line-height: 60px;
+    background: #d7d3cf;
+}
+.barkan-slider__toggle_left i{
+    font-size: 24px;
+    color: #000;
+}
+.barkan-slider__img{
+    width: 100%;
+    height: 600px;
+    display: inline-flex;
+}  
+.barkan-slider__img_left{
+    padding-right: 30px;
+}
+
