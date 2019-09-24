@@ -5,19 +5,20 @@ Template Name: Homepage
 ?>
 <?php get_header(); ?>
 
-<div class="page homepage">
-  <video autoplay muted loop class="homeVideoBack">
-    <source src="<?php bloginfo('template_url'); ?>/assets/images/CleanWater.mp4" type="video/mp4">
-  </video>
-<div class="homepageContent">
-  <div class="homeLogo">
-    <img src="<?php bloginfo('template_url'); ?>/assets/images/BlackLogo.png" alt="">
-  </div>
-  <div class="rectangleBlock" style="background-image:url(<?php bloginfo('template_url'); ?>/assets/images/HomeTxtBack.png);     background-size: 100% 100%;">
-    <img src="<?php bloginfo('template_url'); ?>/assets/images/HomeCircleTxt.png" alt="">
-    <p>Live Large Every Day</p>
-  </div>
-  <div class="clientsBlock">
+ 
+    <header id="header" class="header" style="background: url(<?php bloginfo('template_url'); ?>/assets/images/lefteris-kallergis.png) center center / cover">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="borderblock"></div>
+					<div class="borderblock"><h2 class="header__title">
+					    <?php echo the_title(); ?>
+					</h2></div>
+					<div class="borderblock"><img src="<?php bloginfo('template_url'); ?>/assets/images/HomeCircleTxt.png" class="header__round_text" alt=""></div>
+				</div>
+			</div>			
+		</div>
+		<div class="clientsBlock">
     <a href="<?php home_url('/somepage/'); ?>" class="clientItemHome">
       <p>Business Clients</p>
     </a>
@@ -25,8 +26,10 @@ Template Name: Homepage
       <p>Private Clients</p>
     </a>
   </div>
-</div>
-
-</div>
+    </header> <!-- .headerSection-->
+    
+    
+ 
+  
 
 <?php wp_footer(); ?>

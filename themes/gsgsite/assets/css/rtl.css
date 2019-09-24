@@ -1,6 +1,22 @@
-body {
-  direction: rtl;
+body{
+    direction: rtl;
 }
 .headerSection {
-  direction: ltr;
+    direction: ltr;
+}
+.contactus__inp {
+    padding-right: 0 !important;
+    padding-left: 24px;
+}
+.contactus__area {
+    padding-left: 0 !important;
+    padding-right: 24px;
+}
+
+.contactus__links_left-block{
+    text-align: right !important;
+}
+
+.contactus__links_right-block{
+    text-align: left !important;
 }

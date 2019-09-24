@@ -9,10 +9,7 @@ Template Name: Supervision
 
 	<!-- SectionContacts -->
   
-	<section class="headerSection" style="background-image: url(<?php echo site_url(); ?>/wp-content/uploads/2019/08/aboutUsBg.jpg)">
-		<a href="<?php echo get_bloginfo('url') ?>" class="logo">
-			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
-		</a>
+    <section class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/shane-mclendon-EN1tF2EG-50-unsplash.jpg) center center / cover">
 		<div class="borderBlock container">
 			<div class="row"></div>
 			<div class="row">
@@ -67,8 +64,6 @@ Template Name: Supervision
 				</div>
 			</div>
 		</div>
-		<a href="#" class="contactus__upbtn"><i class="fa fa-angle-up" aria-hidden="true"></i>
-		</a>
 	</section>
 
 </div>

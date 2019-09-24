@@ -4,22 +4,18 @@ Template Name: Coming Soon
 */
 ?>
 <?php get_header(); ?>
-<style>
-.globalBack{
-	display: none;
-}
-</style>
-<div class="page coming">
-	<img class="sectionComingBack" src="<?php the_field('coming_back_img'); ?>" draggable="false">
-	<section class="comingContent">
-		<div class="comingText wow bounceInRight">
-			<h1><?php the_field('coming_heading'); ?></h1>
-			<span><?php the_field('coming_subtitle'); ?></span>
-		</div>
-	</section>
-
-</div>
-
-<?php
-get_footer();
-?>
+    <section class="headerSection" style="background: #fff600">
+		<div class="container">
+		    <div class="row no-gutters">
+		        <div class="col-12 d-flex">
+		            <div class="coming__wrap">
+		                <img src="<?php bloginfo('template_url'); ?>/assets/images/coming.png" alt="">
+		                <img src="<?php bloginfo('template_url'); ?>/assets/images/soon.png" alt="" style="margin-top: 40px; height: 250px;">
+		                <img id="coming__circle" class="coming__circle" src="<?php bloginfo('template_url'); ?>/assets/images/progress-circle.png" alt="decorAbout">
+		            </div>
+		        </div>
+		    </div>
+			
+		</div> <!--.borderBlock-->
+	</section> <!-- .headerSection-->
+<?php wp_footer(); ?>
