@@ -1,0 +1,34 @@
+body{
+    direction: rtl;
+}
+.headerSection {
+    direction: ltr;
+}
+.contactus__inp {
+    padding-right: 0 !important;
+    padding-left: 24px;
+}
+.contactus__area {
+    padding-left: 0 !important;
+    padding-right: 24px;
+}
+
+.contactus__links_left-block{
+    text-align: right !important;
+}
+
+.contactus__links_right-block{
+    text-align: left !important;
+}
+.socialsRow{
+    direction: ltr;
+}
+.sideMenuWrapper .sideMenuContent .infoRow{
+    direction: ltr;
+}
+.changeLang__item .langName .LangHe{
+    display: inline !important;
+}
+.changeLang__item .langName .LangEn{
+    display: none !important;
+}
