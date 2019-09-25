@@ -20,11 +20,12 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> class="owerflow-hidden">
 <div id="page" class="site">
+    <a href="<?php echo get_bloginfo('url') ?>" class="logo">
+			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+	</a>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gsgsite' ); ?></a>
-
-
 
 	<aside class="sideMenu">
 		<div class="sideMenuItem first">
@@ -36,7 +37,14 @@
 				<i class="fal fa-envelope"></i>
 			</a>
 		</div>
-		<div class="sideMenuItem"><p class="langName"><?php echo ICL_LANGUAGE_CODE; ?></p></div>
+		<?php $lang = get_locale();
+			if ($lang == 'en_US') {
+				$linkToSwitch = '?lang=he';
+			} else {
+				$linkToSwitch = '?lang=en';
+			}
+		?>
+		<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php echo ICL_LANGUAGE_CODE; ?></a></div>
 	</aside>
 
 	<div class="sideMenuWrapper">
@@ -54,9 +62,13 @@
 				</nav>
 			</div>
 			<div class="infoRow">
-				<div class="infoCol">
-					<p class="infoHeading"><?php _e('Change language','GsgStrings'); ?></p>
-					<?php do_action('wpml_add_language_selector'); ?>
+			    <div class="infoCol">
+					<p class="infoHeading"><?php _e('Change language','GsgStrings'); ?> </p>
+					<p class="changeLang__item">
+					    <a href="<?php echo $linkToSwitch; ?>" class="langName">
+					        <span class="LangEn">English</span><span class="LangHe">Hebrew</span>
+					    </a><?php echo ICL_LANGUAGE_NAME_EN; ?></p>
+					
 				</div>
 				<div class="infoCol">
 					<p class="infoHeading"><?php _e('Address','GsgStrings'); ?></p>
@@ -66,15 +78,15 @@
 					<p class="infoHeading"><?php _e('Phone','GsgStrings'); ?></p>
 					<span>+972-722-20-20-70</span>
 				</div>
-				<div class="infoCol">
+			    <div class="infoCol">
 					<p class="infoHeading"><?php _e('Email','GsgStrings'); ?></p>
 					<span>office@gsg.co.il</span>
 				</div>
 			</div>
 			<div class="socialsRow">
-				<span><?php _e('Our social:','GsgStrings'); ?></span>
+				<span><?php _e('Our social:','GsgStrings'); ?>
 				<a href="<?php home_url('/somepage/'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/InstagramIcon.png" alt=""></a>
-				<a href="<?php home_url('/somepage/'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/FacebookIcon.png" alt=""></a>
+				<a href="<?php home_url('/somepage/'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/FacebookIcon.png" alt=""></a></span>
 			</div>
 		</div>
 	</div>
