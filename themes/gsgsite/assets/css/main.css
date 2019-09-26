@@ -182,6 +182,9 @@ position: relative;
     border-color: #fff;
     color: #fff;
 }
+.blog .header .borderblock .header__title{
+    font-size: 105px;
+}
 
 
 /* About us page */
@@ -977,6 +980,87 @@ position: relative;
 
 }
 
+/*SectionHousesys*/
+
+.housesys, .housesys .housesys__img img{
+    width: 100%;
+    height: 100vh;
+    direction: ltr;
+}
+.housesys__menu_title{
+    font-size: 26px;
+    padding-bottom: 15px;
+
+}
+.housesys .container-fluid{
+    padding: 0;
+}
+.housesys .housesys__img{
+    width: 74%;
+    position: relative;
+}
+.housesys__menu{
+    width: 26%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.65);
+
+}
+.housesys__menu_wrap{
+    margin: auto 0;
+}
+.housesys__menu_desc{
+    border: 1px solid #fff;
+    border-right: 0;
+    border-left: 0;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+.housesys__menu_desc div{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    line-height: 40px;
+}
+.housesys__menu_btn{
+    display: inline-flex;
+    justify-content: center;
+    line-height: 34px;
+    width: 100%;
+    border: 1px solid #fff;
+    margin: 5px 0;
+}
+.housesys__menu_wrap a{
+    color: #fff;
+}
+.housesys__menu_wrap a:hover:active{
+    text-decoration: none;
+}
+.housesys__menu_nav{
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 60px;
+    height: 250px;
+    background: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    padding: 15px 0;
+}
+.housesys__menu_nav .housesys__menu_lnk img{
+    width: 27.5px;
+    height: 27.5px;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: flex;
+}
 
 /* Footer. */
 
