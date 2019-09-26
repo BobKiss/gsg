@@ -43,7 +43,7 @@
     		                <a href="#" style="margin-left:10px;">
     		                    <svg type="image/svg+xml" data="SvgImg.svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/fb-white.svg" width="30" height="30" alt="image format png" />
-                                </svg> 
+                                </svg>
     		                </a>
     		                <a href="#" style="margin-left:10px;">
     		                    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
@@ -62,9 +62,9 @@
     		        </div>
     		    </div>
     	    <a href="#" class="footer__upbtn">
-    	        <object type="image/svg+xml" data="SvgImg.svg" width="100" height="100">
+    	        <!-- <object type="image/svg+xml" data="SvgImg.svg" width="100" height="100">
     	            <img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.svg" width="100" height="100" alt="image format png" />
-                </object>
+                </object> -->
     		</a>\
     	</div>
 	</footer><!-- #colophon -->

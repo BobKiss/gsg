@@ -125,6 +125,7 @@ function gsgsite_scripts() {
 		wp_enqueue_style( 'main-style-hebrew', get_template_directory_uri() . '/assets/css/rtl.css' );
 	}
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/main.css' );
+	wp_enqueue_style( 'shop-style', get_template_directory_uri() . '/assets/css/shop.css' );
 	wp_enqueue_style( 'Assistant-font', 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800&display=swap&subset=hebrew' );
 	wp_enqueue_style( 'Dosis', 'https://fonts.googleapis.com/css?family=Dosis:400,700,800' );
 	wp_enqueue_style( 'slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
@@ -133,6 +134,8 @@ function gsgsite_scripts() {
 	wp_enqueue_style( 'fawesome', get_template_directory_uri() . '/assets/fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css' );
 
 	wp_enqueue_script( 'gsgsite-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'flat-content-tabs', get_template_directory_uri() . '/js/flat-content-tabs.js', array(), '20190925', true );
+
 	wp_enqueue_script( 'slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '1', true );
 	wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1', true );
 	wp_enqueue_script( 'gsgsite-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -171,3 +174,78 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+require get_template_directory() . '/inc/ajax/index.php';
+
+
+
+//add option to acf 'post types' dropdown on 'edit field group' page
+add_filter('acf/location/rule_values/post_type', 'acf_location_rule_values_Post');
+function acf_location_rule_values_Post( $choices ) {
+	$choices['product_variation'] = 'Product Variation';
+    //print_r($choices);
+    return $choices;
+}
+// Render fields at the bottom of variations - does not account for field group order or placement.
+add_action( 'woocommerce_product_after_variable_attributes', function( $loop, $variation_data, $variation ) {
+    global $abcdefgh_i; // Custom global variable to monitor index
+    $abcdefgh_i = $loop;
+    // Add filter to update field name
+    add_filter( 'acf/prepare_field', 'acf_prepare_field_update_field_name' );
+
+    // Loop through all field groups
+    $acf_field_groups = acf_get_field_groups();
+    foreach( $acf_field_groups as $acf_field_group ) {
+        foreach( $acf_field_group['location'] as $group_locations ) {
+            foreach( $group_locations as $rule ) {
+                // See if field Group has at least one post_type = Variations rule - does not validate other rules
+                if( $rule['param'] == 'post_type' && $rule['operator'] == '==' && $rule['value'] == 'product_variation' ) {
+                    // Render field Group
+                    acf_render_fields( $variation->ID, acf_get_fields( $acf_field_group ) );
+                    break 2;
+                }
+            }
+        }
+    }
+
+    // Remove filter
+    remove_filter( 'acf/prepare_field', 'acf_prepare_field_update_field_name' );
+}, 10, 3 );
+
+// Filter function to update field names
+function  acf_prepare_field_update_field_name( $field ) {
+    global $abcdefgh_i;
+    $field['name'] = preg_replace( '/^acf\[/', "acf[$abcdefgh_i][", $field['name'] );
+    return $field;
+}
+
+// Save variation data
+add_action( 'woocommerce_save_product_variation', function( $variation_id, $i = -1 ) {
+    // Update all fields for the current variation
+    if ( ! empty( $_POST['acf'] ) && is_array( $_POST['acf'] ) && array_key_exists( $i, $_POST['acf'] ) && is_array( ( $fields = $_POST['acf'][ $i ] ) ) ) {
+        foreach ( $fields as $key => $val ) {
+            update_field( $key, $val, $variation_id );
+        }
+    }
+}, 10, 2 );
+
+
+//Gallery fields do not work? - register scripts to make them work
+function xxx_admin_head_post() {
+	global $post_type;
+	if ($post_type === 'product') {
+		wp_register_script( 'xxx-acf-variation', get_template_directory_uri() . '/js/acf-variation.js', array(
+			'jquery-core',
+			'jquery-ui-core'
+		), '1.1.0',
+			true ); // Custom scripts
+
+		wp_enqueue_script( 'xxx-acf-variation' ); // Enqueue it!
+
+	}
+}
+
+/* actions fired when adding/editing posts or pages */
+/* admin_head-(hookname) */
+add_action( 'admin_head-post.php', 'xxx_admin_head_post' );
+add_action( 'admin_head-post-new.php',  'xxx_admin_head_post' );
