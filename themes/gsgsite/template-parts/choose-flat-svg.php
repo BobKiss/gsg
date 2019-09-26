@@ -1,6 +1,6 @@
 <svg class="" width="1401" height="1080" viewBox="0 0 1401 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect class="image" x="-1" width="1402" height="1080" fill="url(#pattern0)"/>
-<g data-flat="flat-1" class="flat-item disabled">
+<g data-flat="flat-1" class="flat-item">
   <g class="is-closed">
     <path opacity="0.8" d="M267 126H638V250H267V126Z" fill="black"/>
     <path opacity="0.8" d="M244 213H267V250H244V213Z" fill="black"/>
