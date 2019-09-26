@@ -165,6 +165,7 @@ position: relative;
     border: 0;
     border-right: 2px solid #171111;
     height: 290px;
+    display: flex;
 }
 .borderblock:nth-child(3){
     border-top: 0;
@@ -172,12 +173,15 @@ position: relative;
 }
 .header__title{
     text-align: left;
-    line-height: 290px;
     font-size: 124px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: auto 0;
 }
-
+.blog .header .borderblock {
+    border-color: #fff;
+    color: #fff;
+}
 
 
 /* About us page */
@@ -883,6 +887,94 @@ position: relative;
     font-weight: 400;
     letter-spacing: 1px;
     
+}
+
+/*SectionBlogPage*/
+
+.blogpage{
+    border-top: 25px solid #fff600;
+    padding-top: 75px;
+}
+.blogpage__title{
+    text-align: right;
+    font-size: 24px;
+    line-height: 52px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 55px;
+    color: #171111;
+
+}
+.blogpage__title span{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+    color: #231f20;
+}
+.blogpage__wrap{
+    text-align: right;
+    padding-left: 30px;
+    color: #231f20;
+}
+.blogpage__wrap_title{
+    font-size: 24px;
+    padding-bottom: 24px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.blogpage__wrap_text{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.blogpage__imgwrap{
+    padding-right: 30px;
+    width: 100%;
+}
+.blogpage__mainimg{
+    width: 100%;
+    height: 400px;
+}
+
+.blogpage__img_title{
+    border-right: 14px solid #fff600;
+    padding-right: 55px;
+    padding-left: 30px;
+    font-size: 24px;
+    color: #231f20;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    display: block;
+    text-align: right;
+    line-height: 26px;
+
+}
+
+.blogpage__text p{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.blogpage__imgwrap_sec{
+    padding-left: 30px;
+}
+.blogpage__secimg{
+    width: 100%;
+    height: 820px;
+    margin-top: 6px;
+}
+.blog__nav{
+    width: 100%;
+    margin-top: 80px;
+    display: inline-flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    margin-bottom: 130px;
+
 }
 
 
