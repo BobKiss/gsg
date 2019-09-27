@@ -1,0 +1,1 @@
+[27-Sep-2019 13:50:34 UTC] PHP Notice:  WC_Cart::get_checkout_url is <strong>deprecated</strong> since version 2.5! Use wc_get_checkout_url instead. in /Users/a.skuropatov/sites/gsg.test/wp-includes/functions.php on line 4435

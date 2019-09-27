@@ -981,10 +981,15 @@ position: relative;
 }
 
 /*SectionHousesys*/
-
-.housesys, .housesys .housesys__img img{
+.housesys .housesys__img img,
+.housesys .housesys__tabs_content,
+.housesys .housesys__img img{
+  width: 100%;
+  direction: ltr;
+}
+.housesys{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     direction: ltr;
 }
 .housesys__menu_title{
@@ -1028,18 +1033,30 @@ position: relative;
     justify-content: space-between;
     line-height: 40px;
 }
-.housesys__menu_btn{
+.housesys__menu_wrap .housesys__menu_btn{
     display: inline-flex;
     justify-content: center;
     line-height: 34px;
     width: 100%;
-    border: 1px solid #fff;
+    color: #fff600;
+    border: 1px solid #fff600;
     margin: 5px 0;
+    transition: all .2s ease-in-out;
+}
+.housesys__menu_wrap .housesys__menu_btn.disabled,
+.housesys__menu_wrap .housesys__menu_btn.disabled:hover{
+  color: #fff;
+  border-color: #fff;
+  background: transparent;
+}
+.housesys__menu_wrap .housesys__menu_btn.active,
+.housesys__menu_wrap .housesys__menu_btn:hover{
+  background: #fff600;
+  color: #000;
+  text-decoration: none;
 }
 .housesys__menu_wrap a{
     color: #fff;
-}
-.housesys__menu_wrap a:hover:active{
     text-decoration: none;
 }
 .housesys__menu_nav{

@@ -79,6 +79,9 @@ if ( ! function_exists( 'gsgsite_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		add_theme_support( 'woocommerce' );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'gsgsite_setup' );
@@ -230,7 +233,7 @@ add_action( 'woocommerce_save_product_variation', function( $variation_id, $i = 
 }, 10, 2 );
 
 
-//Gallery fields do not work? - register scripts to make them work
+//Gallery fields do not work in variations? - register scripts to make them work
 function xxx_admin_head_post() {
 	global $post_type;
 	if ($post_type === 'product') {
@@ -244,8 +247,38 @@ function xxx_admin_head_post() {
 
 	}
 }
-
 /* actions fired when adding/editing posts or pages */
 /* admin_head-(hookname) */
 add_action( 'admin_head-post.php', 'xxx_admin_head_post' );
 add_action( 'admin_head-post-new.php',  'xxx_admin_head_post' );
+
+
+
+//remove unnecessary woocommerce data on product page
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+//allow to add only one product in cart
+add_filter( 'woocommerce_add_to_cart_validation', 'gsg_only_one_in_cart', 99, 2 );
+function gsg_only_one_in_cart( $passed, $added_product_id ) {
+   wc_empty_cart();
+   return $passed;
+}
+
+function woo_remove_product_tabs( $tabs ) {
+    unset( $tabs['description'] );          // Remove the description tab
+    unset( $tabs['reviews'] );          // Remove the reviews tab
+    unset( $tabs['additional_information'] );   // Remove the additional information tab
+    return $tabs;
+}
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+
+remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
+remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50);

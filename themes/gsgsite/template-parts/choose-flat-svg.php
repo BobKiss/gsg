@@ -1,4 +1,4 @@
-<svg class="" width="1401" height="1080" viewBox="0 0 1401 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="" viewBox="0 0 1401 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect class="image" x="-1" width="1402" height="1080" fill="url(#pattern0)"/>
 <g data-flat="flat-1" class="flat-item">
   <g class="is-closed">

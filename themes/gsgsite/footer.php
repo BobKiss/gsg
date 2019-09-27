@@ -62,15 +62,18 @@
     		        </div>
     		    </div>
     	    <a href="#" class="footer__upbtn">
-    	        <!-- <object type="image/svg+xml" data="SvgImg.svg" width="100" height="100">
-    	            <img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.svg" width="100" height="100" alt="image format png" />
-                </object> -->
-    		</a>\
+						<!-- upbtn.svg is breaking page it's not svg -->
+    	       <!-- <object type="image/svg+xml" data="SvgImg.svg" width="100" height="100">
+    	           <img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.svg" width="100" height="100" alt="image format png" />
+            	</object> -->
+    		</a>
     	</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha256-wk7QMTzYE7BJvko9BsywPzRmKzhCtIQKTuN6/B9sRmw=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
 
 </body>
 </html>

@@ -68,7 +68,7 @@
 					    <a href="<?php echo $linkToSwitch; ?>" class="langName">
 					        <span class="LangEn">English</span><span class="LangHe">Hebrew</span>
 					    </a><?php echo ICL_LANGUAGE_NAME_EN; ?></p>
-					
+
 				</div>
 				<div class="infoCol">
 					<p class="infoHeading"><?php _e('Address','GsgStrings'); ?></p>
