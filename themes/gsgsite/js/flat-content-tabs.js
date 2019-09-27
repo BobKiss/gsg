@@ -1,9 +1,11 @@
 jQuery(document).ready(function($) {
   //flat info tabs switching
   $('.flat-tab-trigger').on('click', function(e){
-    if(!$(this).hasClass('.disabled') && !$(this).hasClass('active')){
 
-      e.preventDefault();
+    e.preventDefault();
+    if(!$(this).hasClass('disabled') && !$(this).hasClass('active')){
+
+
       $('.flat-tab-trigger.active').removeClass('active');
       $(this).addClass('active');
 
