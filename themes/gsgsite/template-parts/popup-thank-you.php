@@ -1,5 +1,5 @@
-<a href="#" class="thank-you-popup-trigger">Show inline popup</a>
-<div id="thank_you_popup" class="popup-wrap">
+<a href="#" class="thank-you-popup-trigger mfp-hide">Show inline popup</a>
+<div id="thank_you_popup" class="popup-wrap mfp-hide">
   <div class="popup-inner">
     <div class="title">Successful booking</div>
     <div class="desc">Thank you for your order</div>
