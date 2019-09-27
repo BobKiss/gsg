@@ -8,8 +8,11 @@ Template Name: GsgEnergy
 <div class="page">
 
 	<!-- SectionContacts -->
-  
+
     <section class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy.png) center center / cover">
+		<a href="<?php echo get_bloginfo('url') ?>" class="logo">
+			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+		</a>
 		<div class="borderBlock container">
 			<div class="row"></div>
 			<div class="row">
@@ -21,7 +24,7 @@ Template Name: GsgEnergy
 			<img class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
 		</div> <!--.borderBlock-->
 	</section> <!-- .headerSection-->
-  
+
 		<!-- SectioSN-Intro -->
 
 	<section class="sn-intro">
@@ -29,7 +32,7 @@ Template Name: GsgEnergy
 			<h4 class="sn-contactus__title text-right">קבוצת גביש שחם | ENERGY</h4>
 			<div class="row d-flex no-gutters">
 				<div class="col-md-6 col-sm-12">
-					
+
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__area text-right">מחלקת האנרגיה בקבוצת גביש שחם הינה בעלת ניסיון עשיר בתחום האנרגיה ובכלל זה בניהול והקמת תחנות תדלוק ברחבי הארץ. </br>
@@ -41,9 +44,9 @@ Template Name: GsgEnergy
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Section-Gsgenergy -->
-	
+
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
 			<div class="row"><div class="col-sm-12 col-md-6"><h4 class="gsg-energy__title">מפת מתווה גז ארצית | ישראל</h4></div></div>
@@ -55,7 +58,7 @@ Template Name: GsgEnergy
 				<div class="col-md-4 col-sm-12">
 				    <div class="gsg-energy__intro-wrap d-flex">
 				        <div class="gsg-energy__intro_top"></div>
-				        <div class="gsg-energy__intro">מפת 
+				        <div class="gsg-energy__intro">מפת
 מתווה
 הגז</div>
                     <div class="gsg-energy__intro_bottom"></div>
@@ -87,6 +90,8 @@ Template Name: GsgEnergy
 				</div>
 			</div>
 		</div>
+		<a href="#" class="contactus__upbtn"><i class="fa fa-angle-up" aria-hidden="true"></i>
+		</a>
 	</section>
 
 </div>

@@ -27,8 +27,6 @@
 	</a>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gsgsite' ); ?></a>
 
-
-
 	<aside class="sideMenu">
 		<div class="sideMenuItem first">
 			<img class="menuIcon" src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt="">
@@ -64,9 +62,13 @@
 				</nav>
 			</div>
 			<div class="infoRow">
-				<div class="infoCol">
-					<p class="infoHeading"><?php _e('Change language','GsgStrings'); ?></p>
-					<?php do_action('wpml_add_language_selector'); ?>
+			    <div class="infoCol">
+					<p class="infoHeading"><?php _e('Change language','GsgStrings'); ?> </p>
+					<p class="changeLang__item">
+					    <a href="<?php echo $linkToSwitch; ?>" class="langName">
+					        <span class="LangEn">English</span><span class="LangHe">Hebrew</span>
+					    </a><?php echo ICL_LANGUAGE_NAME_EN; ?></p>
+					
 				</div>
 				<div class="infoCol">
 					<p class="infoHeading"><?php _e('Address','GsgStrings'); ?></p>
@@ -76,15 +78,15 @@
 					<p class="infoHeading"><?php _e('Phone','GsgStrings'); ?></p>
 					<span>+972-722-20-20-70</span>
 				</div>
-				<div class="infoCol">
+			    <div class="infoCol">
 					<p class="infoHeading"><?php _e('Email','GsgStrings'); ?></p>
 					<span>office@gsg.co.il</span>
 				</div>
 			</div>
 			<div class="socialsRow">
-				<span><?php _e('Our social:','GsgStrings'); ?></span>
+				<span><?php _e('Our social:','GsgStrings'); ?>
 				<a href="<?php home_url('/somepage/'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/InstagramIcon.png" alt=""></a>
-				<a href="<?php home_url('/somepage/'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/FacebookIcon.png" alt=""></a>
+				<a href="<?php home_url('/somepage/'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/FacebookIcon.png" alt=""></a></span>
 			</div>
 		</div>
 	</div>

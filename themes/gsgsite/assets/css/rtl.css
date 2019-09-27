@@ -20,3 +20,28 @@ body{
 .contactus__links_right-block{
     text-align: left !important;
 }
+.socialsRow{
+    direction: ltr;
+}
+.sideMenuWrapper .sideMenuContent .infoRow{
+    direction: ltr;
+}
+.changeLang__item .langName .LangHe{
+    display: inline !important;
+}
+.changeLang__item .langName .LangEn{
+    display: none !important;
+}
+.header__title {
+    text-align: right !important;
+}
+.borderblock:nth-child(2){
+    border-left: 2px solid #171111 !important;
+    border-right: 0 !important;
+
+
+}
+.blog .header .borderblock {
+    border-color: #fff !important;
+
+}

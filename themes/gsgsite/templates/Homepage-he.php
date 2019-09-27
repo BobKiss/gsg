@@ -11,6 +11,7 @@ Template Name: Homepage-he
   </video>
 <div class="homepageContent">
   <div class="homeLogo">
+    <img src="<?php bloginfo('template_url'); ?>/assets/images/BlackLogo.png" alt="">
   </div>
   <div class="rectangleBlock" style="background-image:url(<?php bloginfo('template_url'); ?>/assets/images/HomeTxtBack.png);background-size: 100% 100%;">
     <img src="<?php bloginfo('template_url'); ?>/assets/images/HomeCircleTxt.png" alt="">
