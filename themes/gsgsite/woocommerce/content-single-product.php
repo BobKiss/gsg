@@ -37,15 +37,16 @@ if ( post_password_required() ) {
 		<div class="container-fluid">
 			<div class="row no-gutters">
 				<div class="housesys__img choose-flat-img-container">
-					<?php get_template_part('template-parts/choose-flat-svg'); ?>
-					<!-- <img src="<?php bloginfo('template_url'); ?>/assets/images/r2house.png"> -->
+					<div class="choose-flat-svg-container">
+						<?php get_template_part('template-parts/choose-flat-svg'); ?>
+					</div>
 					<div class="housesys__tabs_content dnone"></div>
 					<div class="housesys__menu_nav">
-						<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left.png"></a>
-						<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right.png"></a>
+						<a href="#" class="housesys__menu_lnk" onclick="history.back()"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left.png"></a>
+						<a href="#" class="housesys__menu_lnk" onclick="history.forward()"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right.png"></a>
 						<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png"></a>
-						<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus.png"></a>
-						<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></a>
+						<a href="#" class="housesys__menu_lnk" onclick="document.getElementById('housesysImg').style.width = '74%'"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus.png"></a>
+						<a href="#" class="housesys__menu_lnk" onclick="document.getElementById('housesysImg').style.width = '100%'"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></a>
 					</div>
 				</div>
 

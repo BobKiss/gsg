@@ -129,6 +129,7 @@ function gsgsite_scripts() {
 	}
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/main.css' );
 	wp_enqueue_style( 'shop-style', get_template_directory_uri() . '/assets/css/shop.css' );
+	wp_enqueue_style( 'magnific-popup-style', get_template_directory_uri() . '/assets/css/magnific-popup.min.css' );
 	wp_enqueue_style( 'Assistant-font', 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800&display=swap&subset=hebrew' );
 	wp_enqueue_style( 'Dosis', 'https://fonts.googleapis.com/css?family=Dosis:400,700,800' );
 	wp_enqueue_style( 'slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
@@ -140,6 +141,7 @@ function gsgsite_scripts() {
 	wp_enqueue_script( 'flat-content-tabs', get_template_directory_uri() . '/js/flat-content-tabs.js', array(), '20190925', true );
 
 	wp_enqueue_script( 'slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '1', true );
+	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.js', array('jquery'), '1', true );
 	wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1', true );
 	wp_enqueue_script( 'gsgsite-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -226,7 +228,8 @@ function  acf_prepare_field_update_field_name( $field ) {
 add_action( 'woocommerce_save_product_variation', function( $variation_id, $i = -1 ) {
     // Update all fields for the current variation
     if ( ! empty( $_POST['acf'] ) && is_array( $_POST['acf'] ) && array_key_exists( $i, $_POST['acf'] ) && is_array( ( $fields = $_POST['acf'][ $i ] ) ) ) {
-        foreach ( $fields as $key => $val ) {
+				// error_log(print_r($_POST['acf'][ $i ], 1));
+				foreach ( $fields as $key => $val ) {
             update_field( $key, $val, $variation_id );
         }
     }

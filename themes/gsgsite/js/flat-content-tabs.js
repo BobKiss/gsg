@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  //flat info tabs switching
+  //flat tabs switching
   $('.flat-tab-trigger').on('click', function(e){
 
     e.preventDefault();
@@ -21,8 +21,22 @@ jQuery(document).ready(function($) {
         method: 'POST',
       })
       .done(function(response){
-        $('.choose-flat-img-container svg').addClass('dnone');
+        //unslick slider
+        if($('.housesys__tabs_content .imgs-slider').length){
+          $('.housesys__tabs_content .imgs-slider').slick('unslick');
+        }
+
+        $('.choose-flat-svg-container').addClass('dnone');
         $('.housesys__tabs_content').html(response).removeClass('dnone');
+
+        //init slider
+        $('.housesys__tabs_content .imgs-slider').slick({
+          infinite: true,
+          dots: true,
+          appendArrows: '.housesys__tabs_content .slider-nav',
+          appendDots: '.housesys__tabs_content .slider-nav',
+
+        });
       });
 
     }

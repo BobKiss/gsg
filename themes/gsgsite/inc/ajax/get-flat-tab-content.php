@@ -33,19 +33,42 @@ add_action('wp_ajax_nopriv_get-flat-tab-content', 'get_flat_tab_content');
 
 //each tab output
 function output_product_architecture($field){
-  foreach($field as $image){ ?>
-    <img src="<?=$image['url']?>" alt="">
-  <?php }
+  ?>
+  <div class="imgs-slider">
+    <?php foreach($field as $image) : ?>
+      <div class="slide-item">
+        <img src="<?=$image['url']?>" alt="">
+      </div>
+    <?php endforeach; ?>
+  </div>
+  <div class="slider-nav"></div>
+  <?php
 }
 
 function output_product_images($field){
-  foreach($field as $image){ ?>
-    <img src="<?=$image['url']?>" alt="">
-  <?php }
+  ?>
+  <div class="imgs-slider">
+    <?php foreach($field as $image) : ?>
+      <div class="slide-item">
+        <img src="<?=$image['url']?>" alt="">
+      </div>
+    <?php endforeach; ?>
+  </div>
+  <div class="slider-nav"></div>
+  <?php
 }
 function output_product_description_a($field){
-  echo $field;
+  ?>
+  <div class="prod-desc-one"><?=$field?></div>
+  <?php
 }
 function output_product_description_b($field){
-  echo $field;
+  ?>
+  <?php //var_dump($field); die; ?>
+  <div class="prod-desc-two">
+    <div class="static-img" style="background-image: url('/wp-content/uploads/2019/09/flat-text-tab-bg.png')"></div>
+    <div class="text-col"><?=$field?></div>
+  </div>
+  <div class="slider-nav"></div>
+  <?php
 }
