@@ -49,18 +49,20 @@ jQuery(document).ready(function($) {
   });
 
   //selecting flat
-  $('.choose-flat-img-container .flat-item').not('.disabled').on('click', function(e){
+  $('.choose-flat-img-container .flat-item').on('click', function(e){
 
-    $('.choose-flat-img-container .flat-item').removeClass('active');
-    $(this).addClass('active');
-    $('.housesys__menu_btn').removeClass('disabled');
-    $('.add-to-cart-simulation').addClass('active');
-    var attributes = $(this).data('attributes');
+    if(!$(this).hasClass('disabled')){
+      $('.choose-flat-img-container .flat-item').removeClass('active');
+      $(this).addClass('active');
+      $('.housesys__menu_btn').removeClass('disabled');
+      $('.add-to-cart-simulation').addClass('active');
+      var attributes = $(this).data('attributes');
 
-    //change woocommerce select
-    for(attribute in attributes){
-      var select = $('select[name="'+attribute+'"]')
-      select.val(attributes[attribute]).trigger('change');
+      //change woocommerce select
+      for(attribute in attributes){
+        var select = $('select[name="'+attribute+'"]')
+        select.val(attributes[attribute]).trigger('change');
+      }
     }
 
   });
