@@ -27,6 +27,7 @@
 
 body{
     font-family: 'asimon', 'Dosis', sans-serif !important;
+    overflow: hidden;
 }
 body .page-template-templatesHomepage-php {
   overflow: hidden;
@@ -1031,15 +1032,19 @@ position: relative;
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
-    line-height: 40px;
+    line-height: 20px;
 }
-.housesys__menu_wrap .housesys__menu_btn{
+.housesys__img button{
+    padding: none;
+    background: none;
+    border: none;
+}
+.housesys__menu_wrap button{
+    padding: 0;
     display: inline-flex;
     justify-content: center;
     line-height: 34px;
     width: 100%;
-    color: #fff600;
-    border: 1px solid #fff600;
     margin: 5px 0;
     transition: all .2s ease-in-out;
 }
@@ -1055,13 +1060,26 @@ position: relative;
   color: #000;
   text-decoration: none;
 }
-.housesys__menu_wrap a{
-    color: #fff;
-    text-decoration: none;
+.housesys__menu_btn{
+    color: #fff600;
+    border: 1px solid #fff600;
+    background: none;
 }
+.housesys__offer_btn{
+    color: #000;
+    background: #fff600;
+    border: 1px solid #fff600;
+}
+.housesys__menu_wrap button:hover, .housesys__menu_wrap button:focus{
+    text-decoration: none;
+    color: #000;
+    background: #fff600;
+    border: 1px solid #fff600;
+}
+
 .housesys__menu_nav{
     position: absolute;
-    top: 45%;
+    top: 42%;
     right: 0;
     width: 60px;
     height: 250px;

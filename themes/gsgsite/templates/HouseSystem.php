@@ -8,14 +8,14 @@ Template Name: House System
 <section id="housesys" class="housesys">
 			<div class="container-fluid">
 				<div class="row no-gutters">
-						<div class="housesys__img">
-							<img src="<?php bloginfo('template_url'); ?>/assets/images/r2house.png">
+						<div class="housesys__img" id="housesysImg">
+							<img id="mainImg" src="<?php bloginfo('template_url'); ?>/assets/images/r2house.png">
 							<div class="housesys__menu_nav">
-								<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left.png"></a>
-								<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right.png"></a>
-								<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png"></a>
-								<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus.png"></a>
-								<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></a>
+								<button onclick="history.back()" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left.png"></button>
+								<button onclick="history.forward()" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right.png"></button>
+								<button class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png"></button>
+								<button onclick="document.getElementById('housesysImg').style.width = '74%'" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus.png"></button>
+								<button onclick="document.getElementById('housesysImg').style.width = '100%'" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></button>
 							</div>
 						</div>
 				
@@ -29,10 +29,10 @@ Template Name: House System
 									<div><span class="housesys__menu_count">ללא</span><p class="housesys__menu_text">בחר דירה</p></div>
 									<div><span class="housesys__menu_count">ללא</span><p class="housesys__menu_text">בחר חבילה</p></div>
 								</div>
-								<a class="housesys__menu_btn" href="#">הצג שרטוט נכס</a>
-								<a class="housesys__menu_btn" href="#"> הצג מפרט ומחירון</a>
-								<a class="housesys__menu_btn" href="#">הצג תמונות והדמיות</a>
-								<a class="housesys__menu_btn" href="#">הצג חבילות קונספט</a>
+								<button onclick="document.getElementById('mainImg').src='<?php bloginfo('template_url'); ?>/assets/images/flatplan.png'" class="housesys__menu_btn">הצג שרטוט נכס</button>
+								<button onclick="document.getElementById('mainImg').src='<?php bloginfo('template_url'); ?>/assets/images/flatdesc.png'" class="housesys__menu_btn" > הצג מפרט ומחירון</button>
+								<button onclick="document.getElementById('mainImg').src='<?php bloginfo('template_url'); ?>/assets/images/flatint.png'" class="housesys__menu_btn" >הצג תמונות והדמיות</button>
+								<button onclick="document.getElementById('mainImg').src='<?php bloginfo('template_url'); ?>/assets/images/flatdoc.png'" class="housesys__menu_btn" >הצג חבילות קונספט</button>
 								<div class="housesys__menu_desc">
 									<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">מחיר בסיס</p></div>
 									<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">תוספת חבילה</p></div>
@@ -40,7 +40,7 @@ Template Name: House System
 									<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">מחיר סופי </p></div>
 									<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">סה”כ דמי הרשמה</p></div>
 								</div>
-								<a class="housesys__menu_btn" href="#">לטופס הרשמה ותשלום דמי הרשמה ></a>
+								<button class="housesys__offer_btn">לטופס הרשמה ותשלום דמי הרשמה ></button>
 								
 							</div>
 							
