@@ -988,7 +988,6 @@ position: relative;
     height: 100vh;
     direction: ltr;
 }
-
 .housesys__menu_title{
     font-size: 26px;
     padding-bottom: 15px;
@@ -1035,7 +1034,6 @@ position: relative;
     background: none;
     border: none;
 }
-
 .housesys__menu_wrap button{
     padding: 0;
     display: inline-flex;
