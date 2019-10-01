@@ -16,7 +16,7 @@ Template Name: Barkan Project 2
 				<div class="col-12 barkan-header__img">
 				    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock124.jpg">
 				</div>
-				 
+
 				<p class="barkan-header__text">ברקן מול הים | ברק </p>
 			</div>
 		</div>
@@ -28,7 +28,7 @@ Template Name: Barkan Project 2
 					<h5 class="barkan-about__title">
 						ברקן מול הים | על הפרוייקט
 					</h5>
-					<p class="barkan-about__text">	פרויקט ברקן מול הים, הינו פרויקט הרחבה קהילתית הכולל 62 מגרשים בגודל של כחצי דונם המיועדים לבניית וילות צמודות קרקע. הפרויקט ממוקם באזור הצפון מערבי של הישוב (הגבעה הצפונית) ופונה לנוף הררי מרהיב. 
+					<p class="barkan-about__text">	פרויקט ברקן מול הים, הינו פרויקט הרחבה קהילתית הכולל 62 מגרשים בגודל של כחצי דונם המיועדים לבניית וילות צמודות קרקע. הפרויקט ממוקם באזור הצפון מערבי של הישוב (הגבעה הצפונית) ופונה לנוף הררי מרהיב.
 	נשארו 3 מגרשים אחרונים בלבד!
 					</p>
 					<h5 class="barkan-about__title">
@@ -60,7 +60,7 @@ Template Name: Barkan Project 2
 					<div class="col-3 barkan-slider__img"><div class="barkan-slider__img barkan-slider__img_left"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg"></div></div>
 					<span class="barkan-slider__toggle_left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
 					<span class="barkan-slider__toggle_right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-				</div>			
+				</div>
 			</div>
 		</div>
 	</section>
@@ -90,7 +90,11 @@ Template Name: Barkan Project 2
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5></div>
-				<div class="col-12"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/barkan-map.png" class="barkan__about_map"></div>
+				<div class="col-12">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/barkan-map.png" class="barkan__about_map">
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
