@@ -129,6 +129,7 @@ function gsgsite_scripts() {
 	}
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/main.css' );
 	wp_enqueue_style( 'main-style-alex', get_template_directory_uri() . '/assets/css/main_alex.css' );
+	wp_enqueue_style( 'projects', get_template_directory_uri() . '/assets/css/projects.css' );
 	wp_enqueue_style( 'shop-style', get_template_directory_uri() . '/assets/css/shop.css' );
 	wp_enqueue_style( 'magnific-popup-style', get_template_directory_uri() . '/assets/css/magnific-popup.min.css' );
 	wp_enqueue_style( 'Assistant-font', 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800&display=swap&subset=hebrew' );
