@@ -5,7 +5,7 @@ Template Name: Sample Project Page
 ?>
 <?php get_header(); ?>
 
-<div class="page">
+<div class="page SamplePAGE">
 	<!-- SectionContacts -->
 	<section class="barkan-header">
 
@@ -51,13 +51,25 @@ Template Name: Sample Project Page
 	</section>
 
 	<section class="barkan-slider">
-		<div class="container">
-			<div class="barkan-slider__wrap">
-				<div class="row no-gutters inline-block">
-					<div class="col-9"><div class="barkan-slider__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg"></div></div>
-					<div class="col-3 barkan-slider__img"><div class="barkan-slider__img barkan-slider__img_left"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg"></div></div>
-					<span class="barkan-slider__toggle_left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
-					<span class="barkan-slider__toggle_right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+		<div class="barkan-slider__img">
+			<div>
+				<div class="barkan-single-slider">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg">
+				</div>
+			</div>
+			<div>
+				<div class="barkan-single-slider">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg">
+				</div>
+			</div>
+			<div>
+				<div class="barkan-single-slider">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg">
+				</div>
+			</div>
+			<div>
+				<div class="barkan-single-slider">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg">
 				</div>
 			</div>
 		</div>
@@ -88,7 +100,11 @@ Template Name: Sample Project Page
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5></div>
-				<div class="col-12"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/barkan-map.png" class="barkan__about_map"></div>
+				<div class="col-12">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/barkan-map.png" class="barkan__about_map">
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -117,6 +133,7 @@ Template Name: Sample Project Page
 	</section>
 
 </div>
+
 
 <?php
 get_footer();

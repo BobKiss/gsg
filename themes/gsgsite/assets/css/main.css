@@ -1414,12 +1414,15 @@ header{
 }
 .statline_03{
     background: #c4c2c2;
-    width: 250px;
+    width: 20%;
     height: 100%;
     display: inherit;
     margin-right: auto;
 }
 .barkanPAGE {
+
+}
+.SamplePAGE {
 
 }
 .barkan-about__stat_wrap{
