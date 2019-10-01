@@ -89,17 +89,20 @@
   height: calc(100vh - 80px);
   display: flex;
 }
-.prod-desc-two .static-img,
+.prod-desc-two .imgs-slider,
 .prod-desc-two .text-col{
   width: 50%;
   flex-shrink: 0;
 }
-.prod-desc-two .static-img{
+.prod-desc-two .imgs-slider{
+
+  margin-bottom: -80px;
+}
+.prod-desc-two .slide-item{
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: -80px;
 }
 .prod-desc-two .text-col{
   text-align: right;

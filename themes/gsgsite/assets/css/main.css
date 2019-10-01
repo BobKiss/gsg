@@ -26,7 +26,7 @@
 /* Homepage */
 
 body{
-    font-family: 'asimon', 'Dosis', sans-serif !important; 
+    font-family: 'asimon', 'Dosis', sans-serif !important;
     /*overflow: hidden;*/
 }
 body .page-template-templatesHomepage-php {
@@ -653,7 +653,7 @@ header{
     width: 1px;
     height: 40%;
     background: #fff600;
-    
+
 }
 .sideMenuWrapper .sideMenuContent .infoRow{
   display: flex;
@@ -762,7 +762,7 @@ header{
 }
 
 .active{
-	
+
 }
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active .sub-menu{
 	height: auto;
@@ -806,7 +806,7 @@ header{
 .sn-intro{
     padding-top: 140px;
     padding-bottom: 90px;
-    background: #fff600; 
+    background: #fff600;
 }
 .sn-contactsus, .gsgenergy {
     background: #fffefe;
@@ -967,7 +967,7 @@ header{
     color: #000;
     font-weight: 400;
     letter-spacing: 1px;
-    
+
 }
 
 /*SectionBlogPage*/
@@ -1141,12 +1141,13 @@ header{
   color: #000;
   text-decoration: none;
 }
-.housesys__menu_btn{
+.housesys__menu_btn,
+.housesys__menu_btn:visited{
     color: #fff600;
     border: 1px solid #fff600;
     background: none;
 }
-.housesys__offer_btn{   
+.housesys__offer_btn{
     color: #000;
     background: #fff600;
     border: 1px solid #fff600;
@@ -1167,7 +1168,7 @@ header{
     background: #ececec;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
+    justify-content: space-around;
     padding: 15px 0;
 }
 .housesys__menu_nav .housesys__menu_lnk img{
@@ -1277,10 +1278,10 @@ header{
 }
 .barkan-about{
     text-align: right;
-    color: #231f20;   
+    color: #231f20;
 }
 .barkan-about a{
-    color: #231f20;   
+    color: #231f20;
 }
 .barkan-about__title{
     padding-bottom: 4px;
@@ -1387,7 +1388,7 @@ header{
     width: 100%;
     height: 600px;
     display: inline-flex;
-}  
+}
 .barkan-slider__img_left{
     padding-right: 30px;
 }
@@ -1413,7 +1414,7 @@ header{
 }
 
 #coming__circle{
-    
+
     -webkit-animation-name: rotation;
     -webkit-animation-duration: 36s;
     -webkit-animation-iteration-count: infinite;
@@ -1482,19 +1483,19 @@ transform:rotate(360deg);}
 /*Media*/
 
 @media screen and (max-width: 1620px){
-        
+
     .logo{
         top: 5%;
         left: 2%;
     }
-    
+
     .sideMenu{
         top: 6%;
     }
     header{
         padding-top: 150px;
         padding-bottom: 100px;
-    
+
     }
     .borderblock:nth-child(2) {
         height: 160px;
@@ -1508,7 +1509,7 @@ transform:rotate(360deg);}
     .clientItemHome p{
         font-size: 26px;
     }
-   
+
 }
 @media screen and (max-width: 1520px){
 
@@ -1518,7 +1519,7 @@ transform:rotate(360deg);}
     .clientItemHome p{
         font-size: 22px;
     }
-   
+
 }
 @media screen and (max-width: 1460px){
 
@@ -1528,7 +1529,7 @@ transform:rotate(360deg);}
     .clientItemHome p{
         font-size: 20px;
     }
-   
+
 }
 @media screen and (max-width: 1380px){
 
@@ -1538,7 +1539,7 @@ transform:rotate(360deg);}
     .clientItemHome p{
         font-size: 18px;
     }
-   
+
 }
 @media screen and (max-width: 1300px){
 
@@ -1548,7 +1549,7 @@ transform:rotate(360deg);}
     .clientItemHome p{
         font-size: 16px;
     }
-   
+
 }
 
 @media screen and (max-width: 1200px){
@@ -1562,11 +1563,11 @@ transform:rotate(360deg);}
         font-size: 16px;
     }
 
-   
+
 }
 @media screen and (max-width: 992px){
 
-   
+
 }
 
 @media screen and (max-width: 768px){
@@ -1575,7 +1576,7 @@ transform:rotate(360deg);}
     }
     .sideMenu .sideMenuItem{
         width: 46px;
-        height: 46px;   
+        height: 46px;
     }
     .header__title {
         font-size: 50px;
@@ -1596,7 +1597,3 @@ transform:rotate(360deg);}
     line-height: 50px;
     }
 }
-
-
-
-

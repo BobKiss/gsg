@@ -17,7 +17,8 @@ function get_flat_tab_content(){
         break;
 
       case 'product_description_b':
-        output_product_description_b($field);
+        $field2 = get_field('product_descr_two_pics', $_POST['variation_id']);
+        output_product_description_b($field, $field2);
         break;
     }
     // echo '<pre>';
@@ -62,11 +63,16 @@ function output_product_description_a($field){
   <div class="prod-desc-one"><?=$field?></div>
   <?php
 }
-function output_product_description_b($field){
+function output_product_description_b($field, $field2){
   ?>
   <?php //var_dump($field); die; ?>
   <div class="prod-desc-two">
-    <div class="static-img" style="background-image: url('/wp-content/uploads/2019/09/flat-text-tab-bg.png')"></div>
+    <div class="imgs-slider">
+      <?php foreach($field2 as $image) : ?>
+        <div class="slide-item" style="background-image: url('<?=$image['url']?>')"></div>
+      <?php endforeach; ?>
+    </div>
+    <!-- <div class="static-img" ></div> -->
     <div class="text-col"><?=$field?></div>
   </div>
   <div class="slider-nav"></div>

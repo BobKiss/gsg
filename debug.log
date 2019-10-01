@@ -804,3 +804,6 @@
 [30-Sep-2019 13:31:52 UTC] go here2
 [30-Sep-2019 13:31:52 UTC] go here2
 [30-Sep-2019 13:31:52 UTC] go here2
+[01-Oct-2019 05:53:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/get-flat-tab-content.php on line 70
+[01-Oct-2019 05:55:54 UTC] PHP Notice:  Undefined variable: field2 in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/get-flat-tab-content.php on line 71
+[01-Oct-2019 05:55:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/get-flat-tab-content.php on line 71
