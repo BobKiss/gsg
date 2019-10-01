@@ -11,7 +11,7 @@ get_header();
 ?>
 
  <div class="blog">
-    <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center center / cover">
+    <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
