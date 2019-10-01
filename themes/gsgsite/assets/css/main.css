@@ -28,6 +28,7 @@
 body{
     font-family: 'asimon', 'Dosis', sans-serif !important;
     /*overflow: hidden;*/
+    direction: ltr;
 }
 body .page-template-templatesHomepage-php {
   overflow: hidden;
@@ -280,9 +281,12 @@ header{
   padding-top: 160px;
   padding-bottom: 180px;
 }
-
 .aboutUsPageWrapper .aboutMap > .container {
+  direction: rtl;
   display: flex;
+}
+.aboutUsPageWrapper .aboutMap .mapTitle {
+  text-align: right;
 }
 .aboutUsPageWrapper .aboutMap .mapSection {
   /*flex-basis: 65%;*/
@@ -362,6 +366,8 @@ header{
 .aboutUsPageWrapper .activityAreas .pTitle {
   position: relative;
   font-size: 26px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 .aboutUsPageWrapper .activityAreas .pTitle:after {
   content: '';
@@ -1637,6 +1643,13 @@ transform:rotate(360deg);}
     }
 
 
+}
+/* 1120px */
+@media screen and (max-width: 1120px){
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 @media screen and (max-width: 992px){
 

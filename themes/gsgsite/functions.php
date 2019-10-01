@@ -123,18 +123,18 @@ add_action( 'widgets_init', 'gsgsite_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gsgsite_scripts() {
+	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
 	wp_enqueue_style( 'gsgsite-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/main.css' );
 	if (get_locale() === 'he_IL') {
 		wp_enqueue_style( 'main-style-hebrew', get_template_directory_uri() . '/assets/css/rtl.css' );
 	}
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/main.css' );
 	wp_enqueue_style( 'main-style-alex', get_template_directory_uri() . '/assets/css/main_alex.css' );
 	wp_enqueue_style( 'shop-style', get_template_directory_uri() . '/assets/css/shop.css' );
 	wp_enqueue_style( 'magnific-popup-style', get_template_directory_uri() . '/assets/css/magnific-popup.min.css' );
 	wp_enqueue_style( 'Assistant-font', 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800&display=swap&subset=hebrew' );
 	wp_enqueue_style( 'Dosis', 'https://fonts.googleapis.com/css?family=Dosis:400,700,800' );
 	wp_enqueue_style( 'slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
-	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
 
 	wp_enqueue_style( 'fawesome', get_template_directory_uri() . '/assets/fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css' );
 

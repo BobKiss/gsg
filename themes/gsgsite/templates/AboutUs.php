@@ -11,7 +11,9 @@ Template Name: About Us
       <div class="borderBlock container">
         <div class="row"></div>
         <div class="row">
-          
+          <div class="title">
+            <?php the_title(); ?>
+          </div>
         </div>
         <div class="row"></div>
         <img class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
