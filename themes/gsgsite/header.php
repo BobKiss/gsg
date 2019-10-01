@@ -32,10 +32,45 @@
 			<img class="menuIcon" src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt="">
 			<i class="fal fa-times"></i>
 		</div>
-		<div class="sideMenuItem">
-			<a class="sideMenuMail" href="<?php home_url('/somepage/'); ?>">
+		<div class="sideMenuItem mailBlock">
+			<a class="sideMenuMail" href="#">
 				<i class="fal fa-envelope"></i>
+				<span class="cross"></span>
 			</a>
+			<div class="popup">
+				<div class="popupTitle">
+					<?php the_field('sidebar_menu_form_title', 'options'); ?>
+				</div>
+				<div class="popupForm">
+					<?php
+					if (get_locale() == 'he_IL') {
+						echo do_shortcode('[caldera_form id="CF5d9327667dc4c"]');
+					} else {
+						echo do_shortcode('[caldera_form id="CF5d9332cc693eb"]');
+					}
+					?>
+				</div>
+				<div class="popUpFooter">
+					<div class="popupColumn">
+						<div class="logo">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/WhiteLogo.png" alt="">
+						</div>
+					</div>
+					<div class="popupColumn">
+						<div class="info">
+							<div class="firstFow">
+								<?php the_field('sidebar_menu_form_info_first_line', 'options'); ?>
+							</div>
+							<div class="firstFow">
+								<?php the_field('sidebar_menu_form_info_second_line', 'options'); ?>
+							</div>
+						</div>
+					</div>
+					<div class="popupColumn">
+						<a href="#" class="submitButton"><?php _e('Submit >') ?></a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<?php $lang = get_locale();
 			if ($lang == 'en_US') {

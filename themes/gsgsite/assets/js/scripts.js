@@ -22,12 +22,12 @@ jQuery(document).ready(function ($) {
     $(this).parent().find('.sub-menu').toggleClass('activeMenu');
     $('.mainNavigationContainer .activeLine').toggleClass('hide');
   });
-	
+
   $('.sideMenuWrapper .sideMenuContent li.menu-item-has-children > a').click(function (e) {
     e.preventDefault();
     $(this).parent().toggleClass('active');
- });	
-	
+ });
+
   $('.sideMenu .sideMenuItem.first').click(function(e){
     console.log('click');
     $(this).toggleClass('active');
@@ -41,4 +41,19 @@ jQuery(document).ready(function ($) {
     $(this).parent().find('.sub-menu').toggleClass('activeMenu');
     $('.mainNavigationContainer .activeLine').toggleClass('hide');
   });
+
+
+  function initSidebarMailButton() {
+    $('.sideMenu .mailBlock a.sideMenuMail').click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('opened');
+      $('.sideMenu .mailBlock .popup').toggleClass('opened');
+    });
+    $('.sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton').click(function (e) {
+      e.preventDefault();
+      $('.sideMenu .mailBlock .popup .popupForm input[type="submit"]').click();
+    });
+  }
+
+  initSidebarMailButton();
 });

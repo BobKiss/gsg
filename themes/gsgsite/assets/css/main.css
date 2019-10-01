@@ -761,9 +761,6 @@ header{
    transform: translate(-50%, -50%);
 }
 
-.active{
-
-}
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active .sub-menu{
 	height: auto;
 	opacity: 1;
@@ -800,6 +797,188 @@ header{
     padding: 0;
 }
 
+/* Side menu popup with form */
+.sideMenu .mailBlock .popup {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 100%;
+  max-width: 500px;
+  width: 500px;
+  top: 0;
+  background-color: #030000;
+  padding-left: 40px;
+  padding-right: 35px;
+  padding-top: 35px;
+  transition: all 0.3s;
+  transform: perspective(1000px) rotateY(-90deg);
+}
+.sideMenu .mailBlock .popup.opened {
+  transform: perspective(000px) rotateY(-0deg);
+  opacity: 1;
+  visibility: visible;
+}
+.sideMenu .mailBlock .popup .popupTitle {
+  font-size: 26px;
+  color: #ffffff;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.sideMenu .mailBlock .popup .popupForm {
+
+}
+.sideMenu .mailBlock .popup .popupForm input {
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+  background-color: #f4f4f4;
+  font-size: 18px;
+  color: #000;
+  line-height: 50px;
+  height: 50px;
+}
+.sideMenu .mailBlock .popup .popupForm input::placeholder {
+  color: #c0c0c0;
+}
+.sideMenu .mailBlock .caldera-grid .form-group {
+  margin: 0;
+}
+.sideMenu .mailBlock .intl-tel-input {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.sideMenu .mailBlock .intl-tel-input.allow-dropdown .flag-container {
+  display: none;
+}
+.sideMenu .mailBlock .caldera-grid .row {
+  margin: 0;
+}
+.sideMenu .mailBlock .caldera-grid .row > div {
+  padding: 0;
+}
+.sideMenu .mailBlock .popup .popupForm input[type="text"] {
+
+}
+.sideMenu .mailBlock .popup .popupForm input[type="tel"] {
+
+}
+.sideMenu .mailBlock .popup .popupForm input[type="email"] {
+
+}
+.sideMenu .mailBlock .popup .popupForm input[type="submit"] {
+  display: none;
+}
+.sideMenu .mailBlock .popup .popupForm textarea {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #f4f4f4;
+  resize: none;
+  font-size: 18px;
+  color: #000;
+}
+.sideMenu .mailBlock .popup .popUpFooter {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  padding: 34px 0;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn {
+  width: 33%;
+  position: relative;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(2) {
+  width: 60%;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo img {
+  width: 100%;
+  height: auto;
+  max-width: 60px;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #f4f4f4;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn:last-child::after {
+  display: none;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .info {
+  font-size: 13px;
+  color: #f4f4f4;
+  text-align: center;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
+  color: #f4f4f4;
+  border: 1px solid;
+  padding: 5px 15px;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.sideMenu .mailBlock a.sideMenuMail {
+  background-color: #000;
+  transition: background-color 0.3s;
+}
+.sideMenu .mailBlock a.sideMenuMail.opened {
+  background-color: #fff600;
+}
+.sideMenu .sideMenuItem .sideMenuMail.opened i {
+  opacity: 0;
+}
+.sideMenu .mailBlock {
+
+}
+.sideMenu .mailBlock a.sideMenuMail .cross {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  width: 50%;
+  height: 50%;
+}
+.sideMenu .mailBlock a.sideMenuMail.opened .cross {
+  visibility: visible;
+  opacity: 1;
+}
+.sideMenu .mailBlock .cross::before, .sideMenu .mailBlock .cross::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 1px;
+  background-color: #2f2b1e;
+  transform: rotate(-0deg);
+  transition: transform 0.3s;
+}
+.sideMenu .mailBlock a.sideMenuMail.opened .cross::before {
+  transform: rotate(45deg);
+}
+.sideMenu .mailBlock a.sideMenuMail.opened .cross::after {
+  transform: rotate(-45deg);
+}
 
 /*SectionSN-ContactUs*/
 
