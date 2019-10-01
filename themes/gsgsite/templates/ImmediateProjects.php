@@ -22,7 +22,6 @@ Template Name: Immediate Projects
                     <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
                     <div class="view-link"><?php _e('For more information about the project, click here','Gsg'); ?> > </div>
                   </div>
-
                 <?php endif; ?>
                 <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?php _e('View project','Gsg'); ?></p></a>
               </div>
@@ -39,19 +38,21 @@ Template Name: Immediate Projects
   </div>
 <div class="small-projects-list container-2">
   <marquee scrollamount="5" class="contactus__lets"><?php _e('Sold Out Projects - Sold Out Projects - Sold Out Projects','Gsg'); ?></marquee>
+  <div class="small-list-items-wrapper">
   <?php
     if( have_rows('mini_projects_repeater') ):
-        while ( have_rows('mini_projects_repeater') ) : the_row();
-?>
+        while ( have_rows('mini_projects_repeater') ) : the_row(); ?>
         <div class="list-item">
           <div class="item-desc">
-            <div class="item-bg" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
-              <div class="item-info">
-                <div class="title"><?php the_sub_field('project_name'); ?></div>
+            <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?php _e('More info','Gsg'); ?></p></a>
+              <div class="item-content-block" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
+                <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
+                <div class="item-info">
+                  <div class="title"><?php the_sub_field('project_name'); ?></div>
                   <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
-                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><?php _e('More info','Gsg'); ?></a>
+                </div>
+                <?php endif; ?>
               </div>
-            </div>
           </div>
       </div>
         <?php
@@ -59,6 +60,7 @@ Template Name: Immediate Projects
     else :
     endif;
   ?>
+</div>
 </div>
 
 
