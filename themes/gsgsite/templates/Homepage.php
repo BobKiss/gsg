@@ -4,9 +4,10 @@ Template Name: Homepage
 */
 ?>
 <?php get_header(); ?>
-
- 
-    <header id="header" class="header" style="background: url(<?php bloginfo('template_url'); ?>/assets/images/lefteris-kallergis.png) center center / cover">
+<div class="vimeo-wrapper">
+ 	<iframe class="vimeoVideo" src="https://player.vimeo.com/video/363342188?loop=1&autoplay=1&background=1&loop=1&byline=0&title=0" width="100" height="100" frameborder="0" allow="autoplay; fullscreen" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+</div>
+    <header id="header" class="header" style="">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">

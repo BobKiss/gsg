@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Barkan Project
+Template Name: Barkan Project 2
 */
 ?>
 <?php get_header(); ?>

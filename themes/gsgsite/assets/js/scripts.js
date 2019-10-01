@@ -22,7 +22,12 @@ jQuery(document).ready(function ($) {
     $(this).parent().find('.sub-menu').toggleClass('activeMenu');
     $('.mainNavigationContainer .activeLine').toggleClass('hide');
   });
-
+	
+  $('.sideMenuWrapper .sideMenuContent li.menu-item-has-children > a').click(function (e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('active');
+ });	
+	
   $('.sideMenu .sideMenuItem.first').click(function(e){
     console.log('click');
     $(this).toggleClass('active');

@@ -1,0 +1,109 @@
+.choose-flat-svg-container{
+  height: 100vh;
+  overflow: scroll;
+}
+
+/* tabs slider */
+.housesys__tabs_content .imgs-slider{
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+.housesys__tabs_content .slick-list,
+.housesys__tabs_content .slick-track{
+  height: 100%;
+}
+.housesys__tabs_content .slider-nav{
+  background: rgba(0,0,0,.05);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.housesys__tabs_content .slick-arrow{
+  color: transparent;
+  font-size: 0;
+  width: 40px;
+  height: 23px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+}
+.housesys__tabs_content .slick-prev{
+  background-image: url('../images/arrow-double-left.png');
+}
+.housesys__tabs_content .slick-next{
+  background-image: url('../images/arrow-double-right.png');
+  order: 1;
+}
+.housesys__tabs_content .slick-dots{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.housesys__tabs_content .slick-dots li{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: inset -1.8px 0.9px 3px 0 rgba(0, 0, 0, 0.39);
+  background-color: #ffffff;
+  display: inline-flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 7px;
+}
+.housesys__tabs_content .slick-dots li button{
+  padding: 0;
+  outline: none;
+}
+.housesys__tabs_content .slick-dots li.slick-active{
+  background-color: #dedede;
+}
+
+.housesys__tabs_content .slide-item{
+  text-align: center;
+}
+.housesys__tabs_content .slide-item img{
+  width: auto;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* tabs with text */
+.prod-desc-one{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  overflow: scroll;
+  max-width: 650px;
+  direction: rtl;
+  text-align: right;
+}
+.prod-desc-two{
+  height: calc(100vh - 80px);
+  display: flex;
+}
+.prod-desc-two .static-img,
+.prod-desc-two .text-col{
+  width: 50%;
+  flex-shrink: 0;
+}
+.prod-desc-two .static-img{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: -80px;
+}
+.prod-desc-two .text-col{
+  text-align: right;
+  padding: 50px 100px;
+  overflow: scroll;
+}
+/* tabs with text end */
