@@ -1048,6 +1048,96 @@ header{
 
 }
 
+
+/*SectionArchive*/
+.archivepage{
+    border-top: 25px solid #fff600;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+.archivepage__wrap_right{
+    width: 100%;
+    text-align: right;
+    margin-top: 60px;
+    padding-left: 10px;
+}
+.archivepage__wrap_left{
+    width: 100%;
+    text-align: right;
+    margin-top: 60px;
+    padding-right: 10px;
+
+}
+.archivepage__img{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 435px;
+    position: relative;
+
+}
+.archivepage__wrap_left .archivepage__img_01{
+    height: 850px;
+}
+
+.archivepage__wrap_right .archivepage__img_03{
+    height: 850px;
+}
+
+.archivepage__desc{
+    width: 245px;
+    height: 95px;
+    background: #fffc00;
+    color: #fffc00;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 95px;
+    text-shadow: 2px 2px #000;
+    transform: rotate(-90deg);
+}
+.archivepage__wrap_right .archivepage__desc{
+    position: absolute;
+    bottom: 75px;
+    right: -170px;
+}
+.archivepage__wrap_left .archivepage__desc{
+    position: absolute;
+    bottom: 75px;
+    left: -170px;
+}
+
+.archivepage__img_title{
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    font-size: 26px;
+    line-height: 26px;
+    display: inline-flex;
+    border-bottom: 1px solid #000;
+    color: #171111;
+    
+}
+.archivepage__img_title p{
+    display: block;
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 300;
+    color: #231f20;
+}
+.archivepage__img_text{
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    color: #231f20;
+    line-height: 23px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+
+
 /*SectionBlogPage*/
 
 .blogpage{
@@ -1337,11 +1427,12 @@ header{
 
 .barkan-header{
     position: relative;
+    direction: rtl;
 }
 .barkan-header__img{
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     margin-top: 130px;
     margin-bottom: 60px;
 }
@@ -1353,10 +1444,12 @@ header{
     font-size: 24px;
     color: #231f20;
     font-weight: bold;
+    text-align: right;
 }
 .barkan-about{
     text-align: right;
     color: #231f20;
+    direction: rtl;
 }
 .barkan-about a{
     color: #231f20;
@@ -1377,7 +1470,8 @@ header{
     line-height: 20px;
 }
 .barkan-about__statline{
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     height: 13px;
     background: #000;
     margin: auto 0;
@@ -1400,10 +1494,16 @@ header{
 }
 .statline_03{
     background: #c4c2c2;
-    width: 250px;
+    width: 20%;
     height: 100%;
     display: inherit;
     margin-right: auto;
+}
+.barkanPAGE {
+
+}
+.SamplePAGE {
+
 }
 .barkan-about__stat_wrap{
     padding-bottom: 25px;
@@ -1416,7 +1516,7 @@ header{
 .barkan-about__btn{
     margin-right: auto;
     border: 2px solid  #231f20;
-    border-left: none;
+    /* border-left: none; */
     font-size: 18px;
     padding: 2px 6px;
     margin-top: 64px;
@@ -1464,13 +1564,45 @@ header{
 }
 .barkan-slider__img{
     width: 100%;
-    height: 600px;
     display: inline-flex;
+    position: relative;
 }
 .barkan-slider__img_left{
     padding-right: 30px;
 }
+.barkan-slider__img .barkan-single-slider {
+  padding-left: 30px;
+}
+.barkan-slider__img .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: transparent;
+  font-size: 27px;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.7);
+  outline: none;
+  font-weight: bold;
+}
+.barkan-slider__img .slick-prev {
+  left: 0;
+  z-index: 2;
+  transform: scale(-1, 1);
+}
+.barkan-slider__img .slick-prev::after {
+  content: '>';
+  color: black;
+}
+.barkan-slider__img .slick-next {
+  right: 0;
+}
 
+.barkan-slider__img .slick-next::after {
+  content: '>';
+  color: black;
+}
 /*SectionComingSoon*/
 
 .coming__wrap{
