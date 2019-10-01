@@ -21,6 +21,15 @@
      src: url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-black-aaa.woff2') format('woff2'),
         url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-black-aaa.woff') format('woff') format('woff');
 }
+@font-face {
+font-family: 'font1ce2d5cd34ac27b0c31dbf6cc3c1f272';
+
+    src:    url('https://nomail.com.ua/files/eot/1ce2d5cd34ac27b0c31dbf6cc3c1f272.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/1ce2d5cd34ac27b0c31dbf6cc3c1f272.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/1ce2d5cd34ac27b0c31dbf6cc3c1f272.woff2') format('woff2');
+}
+
+@font-face { font-family: 'MyriadHebrew-Regular';  src: local('MyriadHebrew-Regular'), url('https://nomail.com.ua/files/woff/1ce2d5cd34ac27b0c31dbf6cc3c1f272.woff') format('woff'); }
 
 
 /* Homepage */
@@ -1404,15 +1413,88 @@ header{
     height: 250px;
 }
 .coming__wrap .coming__circle{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: -120px;
-    margin-bottom: -60px;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: -120px;
+  margin-bottom: -60px;
+}
+.big-projects-list .list-item .item-meta{
+  color: #231f20;
+  font-family: AlmoniDLAAA;
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: right;
+}
+.big-projects-list .list-item .item-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  min-width: 535px;
+  padding: 40px;
+  margin-right: auto;
+  background-color: #ffffffa3;
+  text-align: right;
 }
 
+.big-projects-list .list-item .item-info .title{
+  color: #231f20;
+  font-family: AlmoniDLAAA;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.big-projects-list .list-item .item-info .excerpt p{
+  color: #231f20;
+  font-family: "Myriad Hebrew";
+  font-size: 20px;
+  font-weight: 400;
+}
+.big-projects-list .list-item .item-info .view-link {
+  color: #231f20;
+  font-family: AlmoniDLAAA;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.big-projects-list .list-item .view-btn{
+  background-color: black;
+  color: #fff6f8;
+  font-family: AlmoniDLAAA;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.big-projects-list .list-item .view-btn .btn-content{
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(-90deg);
+}
+
+.big-projects-list .item-bg{
+  display: flex;
+  align-items: flex-end;
+      justify-content: flex-end;
+}
+.big-projects-list .item-content-block{
+  display: flex;
+  height: 50%;
+  transform: translateX(-100px);
+}
 #coming__circle{
 
     -webkit-animation-name: rotation;
