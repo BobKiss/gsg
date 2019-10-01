@@ -1,3 +1,7 @@
+.after-header-padding{
+  padding-top: 130px;
+}
+
 .choose-flat-svg-container{
   height: 100vh;
   overflow: scroll;
