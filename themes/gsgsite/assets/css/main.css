@@ -37,6 +37,7 @@ font-family: 'font1ce2d5cd34ac27b0c31dbf6cc3c1f272';
 body{
     font-family: 'asimon', 'Dosis', sans-serif !important;
     /*overflow: hidden;*/
+    direction: ltr;
 }
 body .page-template-templatesHomepage-php {
   overflow: hidden;
@@ -289,9 +290,12 @@ header{
   padding-top: 160px;
   padding-bottom: 180px;
 }
-
 .aboutUsPageWrapper .aboutMap > .container {
+  direction: rtl;
   display: flex;
+}
+.aboutUsPageWrapper .aboutMap .mapTitle {
+  text-align: right;
 }
 .aboutUsPageWrapper .aboutMap .mapSection {
   /*flex-basis: 65%;*/
@@ -371,6 +375,8 @@ header{
 .aboutUsPageWrapper .activityAreas .pTitle {
   position: relative;
   font-size: 26px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 .aboutUsPageWrapper .activityAreas .pTitle:after {
   content: '';
@@ -424,112 +430,6 @@ header{
   font-size: 18px;
   line-height: 23px;
   padding-top: 10px;
-}
-#wwd {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#wwd svg path {
-  fill: transparent;
-}
-#wwd.animateStart svg path {
-  stroke: #171111;
-  stroke-width: 3;
-}
-#wwd.animateStart svg path:nth-child(1) {
-  stroke-dasharray: 521;
-  stroke-dashoffset: 521;
-  animation: line-move 2s ease forwards, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(2) {
-  stroke-dasharray: 376;
-  stroke-dashoffset: 376;
-  animation: line-move 2s ease forwards 0.3s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(3) {
-  stroke-dasharray: 345;
-  stroke-dashoffset: 345;
-  animation: line-move 2s ease forwards 0.6s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(4) {
-  stroke-dasharray: 521;
-  stroke-dashoffset: 521;
-  animation: line-move 2s ease forwards 0.9s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(5) {
-  stroke-dasharray: 359.6;
-  stroke-dashoffset: 359.6;
-  animation: line-move 2s ease forwards 1.2s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(6) {
-  stroke-dasharray: 326;
-  stroke-dashoffset: 326;
-  animation: line-move 2s ease forwards 1.5s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(7) {
-  stroke-dasharray: 372;
-  stroke-dashoffset: 372;
-  animation: line-move 2s ease forwards 1.8s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(8) {
-  stroke-dasharray: 359.6;
-  stroke-dashoffset: 359.6;
-  animation: line-move 2s ease forwards 2.1s, fill 0.5s ease forwards 3s;
-}
-/*  second line */
-#wwd.animateStart svg path:nth-child(9) {
-  stroke-dasharray: 521;
-  stroke-dashoffset: 521;
-  animation: line-move 2s ease forwards 0.3s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(10) {
-  stroke-dasharray: 376;
-  stroke-dashoffset: 376;
-  animation: line-move 2s ease forwards 0.6s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(11) {
-  stroke-dasharray: 326;
-  stroke-dashoffset: 326;
-  animation: line-move 2s ease forwards 0.9s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(12) {
-  stroke-dasharray: 258;
-  stroke-dashoffset: 258;
-  animation: line-move 2s ease forwards 1.2s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(13) {
-  stroke-dasharray: 521;
-  stroke-dashoffset: 521;
-  animation: line-move 2s ease forwards 1.5s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(14) {
-  stroke-dasharray: 359.6;
-  stroke-dashoffset: 359.6;
-  animation: line-move 2s ease forwards 1.8s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(15) {
-  stroke-dasharray: 353;
-  stroke-dashoffset: 353;
-  animation: line-move 2s ease forwards 2.1s, fill 0.5s ease forwards 3s;
-}
-#wwd.animateStart svg path:nth-child(16) {
-  stroke-dasharray: 345;
-  stroke-dashoffset: 345;
-  animation: line-move 2s ease forwards 2.4s, fill 0.5s ease forwards 3s;
-}
-
-@keyframes line-move {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes fill {
-  to {
-    fill: #171111;
-    stroke-width: 1px;
-  }
 }
 
 .aboutUsPageWrapper .partneers {
@@ -770,9 +670,6 @@ header{
    transform: translate(-50%, -50%);
 }
 
-.active{
-
-}
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active .sub-menu{
 	height: auto;
 	opacity: 1;
@@ -809,6 +706,188 @@ header{
     padding: 0;
 }
 
+/* Side menu popup with form */
+.sideMenu .mailBlock .popup {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 100%;
+  max-width: 500px;
+  width: 500px;
+  top: 0;
+  background-color: #030000;
+  padding-left: 40px;
+  padding-right: 35px;
+  padding-top: 35px;
+  transition: all 0.3s;
+  transform: perspective(1000px) rotateY(-90deg);
+}
+.sideMenu .mailBlock .popup.opened {
+  transform: perspective(000px) rotateY(-0deg);
+  opacity: 1;
+  visibility: visible;
+}
+.sideMenu .mailBlock .popup .popupTitle {
+  font-size: 26px;
+  color: #ffffff;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.sideMenu .mailBlock .popup .popupForm {
+
+}
+.sideMenu .mailBlock .popup .popupForm input {
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+  background-color: #f4f4f4;
+  font-size: 18px;
+  color: #000;
+  line-height: 50px;
+  height: 50px;
+}
+.sideMenu .mailBlock .popup .popupForm input::placeholder {
+  color: #c0c0c0;
+}
+.sideMenu .mailBlock .caldera-grid .form-group {
+  margin: 0;
+}
+.sideMenu .mailBlock .intl-tel-input {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.sideMenu .mailBlock .intl-tel-input.allow-dropdown .flag-container {
+  display: none;
+}
+.sideMenu .mailBlock .caldera-grid .row {
+  margin: 0;
+}
+.sideMenu .mailBlock .caldera-grid .row > div {
+  padding: 0;
+}
+.sideMenu .mailBlock .popup .popupForm input[type="text"] {
+
+}
+.sideMenu .mailBlock .popup .popupForm input[type="tel"] {
+
+}
+.sideMenu .mailBlock .popup .popupForm input[type="email"] {
+
+}
+.sideMenu .mailBlock .popup .popupForm input[type="submit"] {
+  display: none;
+}
+.sideMenu .mailBlock .popup .popupForm textarea {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #f4f4f4;
+  resize: none;
+  font-size: 18px;
+  color: #000;
+}
+.sideMenu .mailBlock .popup .popUpFooter {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  padding: 34px 0;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn {
+  width: 33%;
+  position: relative;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(2) {
+  width: 60%;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo img {
+  width: 100%;
+  height: auto;
+  max-width: 60px;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #f4f4f4;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn:last-child::after {
+  display: none;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .info {
+  font-size: 13px;
+  color: #f4f4f4;
+  text-align: center;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
+  color: #f4f4f4;
+  border: 1px solid;
+  padding: 5px 15px;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.sideMenu .mailBlock a.sideMenuMail {
+  background-color: #000;
+  transition: background-color 0.3s;
+}
+.sideMenu .mailBlock a.sideMenuMail.opened {
+  background-color: #fff600;
+}
+.sideMenu .sideMenuItem .sideMenuMail.opened i {
+  opacity: 0;
+}
+.sideMenu .mailBlock {
+
+}
+.sideMenu .mailBlock a.sideMenuMail .cross {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  width: 50%;
+  height: 50%;
+}
+.sideMenu .mailBlock a.sideMenuMail.opened .cross {
+  visibility: visible;
+  opacity: 1;
+}
+.sideMenu .mailBlock .cross::before, .sideMenu .mailBlock .cross::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 1px;
+  background-color: #2f2b1e;
+  transform: rotate(-0deg);
+  transition: transform 0.3s;
+}
+.sideMenu .mailBlock a.sideMenuMail.opened .cross::before {
+  transform: rotate(45deg);
+}
+.sideMenu .mailBlock a.sideMenuMail.opened .cross::after {
+  transform: rotate(-45deg);
+}
 
 /*SectionSN-ContactUs*/
 
@@ -1646,6 +1725,13 @@ transform:rotate(360deg);}
     }
 
 
+}
+/* 1120px */
+@media screen and (max-width: 1120px){
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 @media screen and (max-width: 992px){
 

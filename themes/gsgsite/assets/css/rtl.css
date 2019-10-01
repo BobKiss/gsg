@@ -3,46 +3,43 @@ body{
     text-align: right;
 }
 .headerSection {
-    direction: ltr;
+  direction: ltr;
 }
 .contactus__inp {
-    padding-right: 0 !important;
-    padding-left: 24px;
+  padding-right: 0 !important;
+  padding-left: 24px;
 }
 .contactus__area {
-    padding-left: 0 !important;
-    padding-right: 24px;
+  padding-left: 0 !important;
+  padding-right: 24px;
 }
 
 .contactus__links_left-block{
-    text-align: right !important;
+  text-align: right !important;
 }
 
 .contactus__links_right-block{
-    text-align: left !important;
+  text-align: left !important;
 }
 .socialsRow{
-    direction: ltr;
+  direction: ltr;
 }
 .sideMenuWrapper .sideMenuContent .infoRow{
-    direction: ltr;
+  direction: ltr;
 }
 .changeLang__item .langName .LangHe{
-    display: inline !important;
+  display: inline !important;
 }
 .changeLang__item .langName .LangEn{
-    display: none !important;
+  display: none !important;
 }
 .header__title {
-    text-align: right !important;
+  text-align: right !important;
 }
 .borderblock:nth-child(2){
-    border-left: 2px solid #171111 !important;
-    border-right: 0 !important;
-
-
+  border-left: 2px solid #171111 !important;
+  border-right: 0 !important;
 }
 .blog .header .borderblock {
-    border-color: #fff !important;
-
+  border-color: #fff !important;
 }

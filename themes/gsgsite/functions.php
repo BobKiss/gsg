@@ -129,6 +129,7 @@ function gsgsite_scripts() {
 	}
 	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/main.css' );
+
 	wp_enqueue_style( 'main-style-alex', get_template_directory_uri() . '/assets/css/main_alex.css' );
 	wp_enqueue_style( 'projects', get_template_directory_uri() . '/assets/css/projects.css' );
 	wp_enqueue_style( 'shop-style', get_template_directory_uri() . '/assets/css/shop.css' );
@@ -287,3 +288,23 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50);
+
+// ACF FOR HEADER
+function register_acf_options_pages() {
+
+    // Check function exists.
+    if( !function_exists('acf_add_options_page') )
+        return;
+
+    // register options page.
+    $option_page = acf_add_options_page(array(
+        'page_title'    => __('Theme General Settings'),
+        'menu_title'    => __('Theme Settings'),
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
+
+// Hook into acf initialization.
+add_action('acf/init', 'register_acf_options_pages');
