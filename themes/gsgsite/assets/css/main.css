@@ -1001,6 +1001,7 @@ position: relative;
 .blogpage{
     border-top: 25px solid #fff600;
     padding-top: 75px;
+    direction: rtl;
 }
 .blogpage__title{
     text-align: right;
