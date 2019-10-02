@@ -1167,11 +1167,119 @@ header .header__title span.animationTriggered {
 
 
 
+/*SectionArchive*/
+
+.archive .decorCircle{
+    position: absolute;
+    bottom: 2%;
+    right: -13%;
+}
+
+.archivepage{
+    border-top: 25px solid #fff600;
+    padding-top: 75px;
+    padding-bottom: 100px;
+    direction: rtl;
+}
+.archivepage__wrap_right{
+    width: 100%;
+    text-align: right;
+    margin-top: 60px;
+    padding-left: 10px;
+}
+.archivepage__wrap_left{
+    width: 100%;
+    text-align: right;
+    margin-top: 60px;
+    padding-right: 10px;
+
+}
+.archivepage__img{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 435px;
+    position: relative;
+
+}
+.archivepage__wrap_left .archivepage__img_01{
+    height: 850px;
+}
+
+.archivepage__wrap_right .archivepage__img_03{
+    height: 850px;
+}
+.archivepage__desc{
+    width: 245px;
+    height: 95px;
+    background: #fffc00;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 95px;
+    text-shadow: 2px 2px #000;
+    transform: rotate(-90deg);
+}
+.archivepage__img a{
+    text-decoration: none;
+    color: #fffc00;
+}
+.archivepage__img a:active{
+    text-decoration: none;
+}
+
+.archivepage__wrap_right .archivepage__desc{
+    position: absolute;
+    bottom: 75px;
+    right: -170px;
+}
+.archivepage__wrap_left .archivepage__desc{
+    position: absolute;
+    bottom: 75px;
+    left: -169px;
+}
+
+.archivepage__img_title{
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    font-size: 26px;
+    line-height: 26px;
+    display: inline-flex;
+    border-bottom: 1px solid #000;
+    color: #171111;
+    
+}
+.archivepage__img_title p{
+    display: block;
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 300;
+    color: #231f20;
+}
+.archivepage__img_text{
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    color: #231f20;
+    line-height: 23px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+
 /*SectionBlogPage*/
+
+.blog .decorCircle{
+    position: absolute;
+    bottom: 2%;
+    right: -13%;
+}
 
 .blogpage{
     border-top: 25px solid #fff600;
     padding-top: 75px;
+    direction: rtl;
 }
 .blogpage__title{
     text-align: right;
@@ -1253,6 +1361,17 @@ header .header__title span.animationTriggered {
     border-bottom: 1px solid #000;
     margin-bottom: 130px;
 
+}
+
+.blog .header .borderblock, .archive .header .borderblock {
+    border-color: #fff;
+    color: #fff;
+    
+}
+.blog .header .borderblock .header__title, .archive .header .borderblock .header__title{
+    font-size: 105px;
+    width: 80%;
+    
 }
 
 /*SectionHousesys*/
