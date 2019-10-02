@@ -33,7 +33,7 @@ get_header();
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
 					<div class="archivepage__wrap_right">
-						<div class="archivepage__img archivepage__img_01" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_04.jpg) center center / cover">
+						<div class="archivepage__img archivepage__img_01" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_02.jpg) center center / cover">
 							<span class="archivepage__desc">
 								לכתבה המלאה
 							</span>
@@ -46,7 +46,7 @@ get_header();
 
 
 						</p>
-						<div class="archivepage__img archivepage__img_02" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_05.jpg) center center / cover">
+						<div class="archivepage__img archivepage__img_02" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_03.jpg) center center / cover">
 							<span class="archivepage__desc">
 								לכתבה המלאה
 							</span>
@@ -59,7 +59,7 @@ get_header();
 
 
 						</p>
-						<div class="archivepage__img archivepage__img_03" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_06.jpg) center center / cover">
+						<div class="archivepage__img archivepage__img_03" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_05.jpg) center center / cover">
 							<span class="archivepage__desc">
 								לכתבה המלאה
 							</span>
@@ -89,8 +89,7 @@ get_header();
 
 
 						</p>
-						<div class="archivepage__img archivepage__img_02" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_02.jpg) center center / cover">
-							<img src=" ">
+						<div class="archivepage__img archivepage__img_02" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_04.jpg) center center / cover">
 							<span class="archivepage__desc">
 								לכתבה המלאה
 							</span>
@@ -103,7 +102,7 @@ get_header();
 
 
 						</p>
-						<div class="archivepage__img archivepage__img_03" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_03.jpg) center center / cover">
+						<div class="archivepage__img archivepage__img_03" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_06.jpg) center center / cover">
 							<span class="archivepage__desc">
 								לכתבה המלאה
 							</span>
