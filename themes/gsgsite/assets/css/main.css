@@ -988,6 +988,8 @@ position: relative;
     margin-bottom: 30px;
 }
 
+
+
 /*SectionBlogPage*/
 
 .blog .decorCircle{
@@ -1080,6 +1082,17 @@ position: relative;
     border-bottom: 1px solid #000;
     margin-bottom: 130px;
 
+}
+
+.blog .header .borderblock, .archive .header .borderblock {
+    border-color: #fff;
+    color: #fff;
+    
+}
+.blog .header .borderblock .header__title, .archive .header .borderblock .header__title{
+    font-size: 105px;
+    width: 80%;
+    
 }
 
 /*SectionHousesys*/
