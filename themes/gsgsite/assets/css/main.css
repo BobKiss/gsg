@@ -895,6 +895,12 @@ position: relative;
 
 /*SectionArchive*/
 
+.archive .decorCircle{
+    position: absolute;
+    bottom: 2%;
+    right: -13%;
+}
+
 .archivepage{
     border-top: 25px solid #fff600;
     padding-top: 75px;
@@ -982,9 +988,13 @@ position: relative;
     margin-bottom: 30px;
 }
 
-
-
 /*SectionBlogPage*/
+
+.blog .decorCircle{
+    position: absolute;
+    bottom: 2%;
+    right: -13%;
+}
 
 .blogpage{
     border-top: 25px solid #fff600;
