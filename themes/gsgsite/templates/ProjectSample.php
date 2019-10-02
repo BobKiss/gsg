@@ -12,10 +12,10 @@ Template Name: Sample Project Page
 		<div class="container">
 			<div class="row d-flex no-gutters">
 				<div class="col-12 barkan-header__img">
-				    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock124.jpg">
+				    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/sampPrTopImg.png">
 				</div>
 
-				<p class="barkan-header__text">ברקן מול הים | ברק </p>
+				<p class="barkan-header__text">ברקן מול הים | ברקן</p>
 			</div>
 		</div>
 	</section>
@@ -24,26 +24,34 @@ Template Name: Sample Project Page
 			<div class="row">
 				<div class="col-lg-6 d-flex flex-column">
 					<h5 class="barkan-about__title">
-						ברקן מול הים | על הפרוייקט
+						אורנית BU | על הפרוייקט
 					</h5>
-					<p class="barkan-about__text">	פרויקט ברקן מול הים, הינו פרויקט הרחבה קהילתית הכולל 62 מגרשים בגודל של כחצי דונם המיועדים לבניית וילות צמודות קרקע. הפרויקט ממוקם באזור הצפון מערבי של הישוב (הגבעה הצפונית) ופונה לנוף הררי מרהיב.
-	נשארו 3 מגרשים אחרונים בלבד!
-					</p>
+					<p class="barkan-about__text">מתחם מגורים יוקרתי, ראשון מסוגו, מבית קבוצת גביש שחם.
+פרוייקט בוטיק ייחודי המציע בתי קונספט ופרימיום מודרניים ומעוצבים עם מפרט איכותי ועשיר במיוחד. לבית החדש שלכם תוכלו לבחור "חליפה" מבין המפרטים הקונספטואליים המדהימים שתפרנו במיוחד בשבילכם והמותאמים לאלו שאוהבים את החיים ולא מוותרים על אף רגע.
+
+למי שמעריך איכות.
+למי שהזמן שלו יקר.
+למי שחושב על העתיד.</p>
 					<h5 class="barkan-about__title">
-						ברקן מול הים | פירוט הפרוייקט
+						אורנית BU  | פירוט הפרוייקט
 					</h5>
-					<p class="barkan-about__text">	62 מגרשים למכירה ביישוב ברקן | גודל מגרש החל מ500 מ”ר ועד 700 מ”ר | מחיר השטח כולל פיתוח ומיסי מקום | אפשרות לבניית וילה צמודה קרקע בשומרון
-	תכנון | גביש שחם
-	ניהול הפרוייקט | גביש שחם
-					</p>
-					<a href="#" class="barkan-about__btn"> הורדת חוברת הפרוייקט- PDF</a>
+					<p class="barkan-about__text">110 דופלקסים למכירה ביישוב אורנית | גודל דופלקס החל מ180 מ”ר ועד 270 מ”ר | מחיר הדופלקס כולל מפרט איכותי ועשיר | אפשרות לתוספת חבילות פרימיום וקונספט לשדרוג חווית המגורים | אפשרות לתוספת בריכה | אפשרות לתופסת קומת מרתף.
+<br>
+<br>
+תכנון | גביש שחם
+<br>
+ניהול הפרוייקט | גביש שחם</p>
 				</div>
 				<div class="col-lg-6 d-flex flex-column">
 					<h5 class="barkan-about__title">
-						ברקן מול הים | על האזור
+						אורנית BU  | על האזור
 					</h5>
 					<p class="barkan-about__text">
-						הישוב נוסד ב1981, ביושב כ400 משפחות. בישוב אוכלוסיה איכותית המנהלת חיי קהילה משותפים. בישוב תינוקיות, מעון, גני ילדים, ובית ספר יסודי, ביושב בריכה, מגרשי טניס ופעילות תרבותית ענפה.
+						הישוב אורנית הינו ישוב עירוני קהילתי הממוקם במורדות המערביים של הרי השומרון מצפון לראש העין ומזרחית להוד השרון. הישוב מעורב.
+הישוב מורכב ברובו מבתים צמודי קרקע ושוכן לצד נוף יערות קרן קיימת בישראל.
+בישוב מרכז מסחרי, חנויות, בתי קפה, קופ“ח, גני ילדים, בתי ספר, יסודי עד תיכון, מרכזי חוגים, מרכז ספורט ועוד.
+לפי נתוני הלמ"ס נכון לסוף 2016, לאורנית דירוג של 8 מתוך 10, במדד חברתי-כלכלי – אשכול לשנת 2015.
+הישוב ממוקם סמוך לצירים ראשיים (כביש 5 וכביש 6), בקרבת תחנת רכבת ובסביבת מרכזי תעסוקה גדולים, פארק היי-טק מפותח ומרכזי בילוי.
 					</p>
 				</div>
 			</div>
@@ -54,22 +62,22 @@ Template Name: Sample Project Page
 		<div class="barkan-slider__img">
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg">
+					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/R-2-FINAL.png">
 				</div>
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg">
+					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/Rectangle-9-copy.png">
 				</div>
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg">
+					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/R-2-FINAL.png">
 				</div>
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg">
+					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/Rectangle-9-copy.png">
 				</div>
 			</div>
 		</div>
@@ -79,9 +87,8 @@ Template Name: Sample Project Page
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
-					<h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5>
-					<p class="barkan-about__text">מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”
-					</p>
+					<h5 class="barkan-about__title">אורנית BU | על הפרוייקט</h5>
+					<p class="barkan-about__text"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -95,7 +102,7 @@ Template Name: Sample Project Page
 				</div>
 				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
 					<p class="barkan-about__stattext"><strong>השכלה</strong>| אקדמאים</p>
-					<div class="barkan-about__statline"><span class="statline_03"></span></div><p>80%</p>
+					<div class="barkan-about__statline"><span class="statline_03"></span></div><p>30%</p>
 				</div>
 			</div>
 			<div class="row">
@@ -106,6 +113,12 @@ Template Name: Sample Project Page
 					</a>
 				</div>
 			</div>
+		</div>
+
+		<div class="houseScreen">
+			<a href="#">
+				<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/projSimp.png" alt="projSimp">
+			</a>
 		</div>
 	</section>
 

@@ -438,6 +438,9 @@ header{
 
 /* Side Menu */
 
+.page-template-Homepage {
+  overflow-y: hidden;
+}
 .sideMenu{
   display: flex;
   flex-direction: column;
@@ -805,16 +808,18 @@ header{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  height: 100%;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 60px;
 }
-.sideMenu .mailBlock .popup .popUpFooter .popupColumn::after {
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn::before {
   content: '';
   position: absolute;
   top: 0;
+  right: 0;
   height: 100%;
   width: 2px;
   background-color: #f4f4f4;
@@ -976,6 +981,7 @@ header{
     padding: 10px;
     height: 214px;
     border-radius: 0;
+    resize: none;
 }
 .contactus__wrap{
     padding-top: 48px;
@@ -983,11 +989,12 @@ header{
     margin-top: 10px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    direction: rtl;
 }
 .contactus__inp{
     height: 214px;
     width: 100%;
-    padding-right: 24px;
+    padding-left: 24px;
     display: inline-flex;
     justify-content: space-between;
     flex-direction: column;
@@ -999,7 +1006,7 @@ header{
     border-radius: 0;
 }
 .contactus__area{
-    padding-left: 24px;
+    padding-right: 24px;
 }
 .contactus_btn[type="submit"]{
     border: 1px solid #000;
@@ -1116,7 +1123,7 @@ header{
     display: inline-flex;
     border-bottom: 1px solid #000;
     color: #171111;
-    
+
 }
 .archivepage__img_title p{
     display: block;
@@ -1502,8 +1509,8 @@ header{
 .barkanPAGE {
 
 }
-.SamplePAGE {
-
+.SamplePAGE .statline_03 {
+  width: 65%;
 }
 .barkan-about__stat_wrap{
     padding-bottom: 25px;
@@ -1594,6 +1601,23 @@ header{
 .barkan-slider__img .slick-prev::after {
   content: '>';
   color: black;
+}
+.SamplePAGE .houseScreen {
+  margin-top: 80px;
+}
+.SamplePAGE .houseScreen > a {
+  width: 100%;
+  display: block;
+}
+.SamplePAGE .houseScreen > a > img {
+  width: 100%;
+}
+.SamplePAGE .barkan-slider__img .barkan-single-slider {
+  max-height: 655px;
+}
+.SamplePAGE .barkan-slider__img .barkan-single-slider img {
+  height: 100%;
+  width: 100%;
 }
 .barkan-slider__img .slick-next {
   right: 0;

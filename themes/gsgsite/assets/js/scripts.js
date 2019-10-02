@@ -59,7 +59,7 @@ jQuery(document).ready(function ($) {
 
 
   function initBarkanSlider() {
-    let padding = $('.container').first().offset().left;
+    let padding = $('.container').first().offset().left + 15;
     $('.barkan-slider').css({
       'transform': `translateX(-`+padding+`px)`,
     });
@@ -70,6 +70,9 @@ jQuery(document).ready(function ($) {
       nextArrow: '<button type="button" class="slick-next">\></button>',
     });
     $('.barkan-slider__img .slick-prev').css('left', padding);
+
+    // projSimple
+    $('.houseScreen').css('padding-right', padding);
   }
   initBarkanSlider();
 });
