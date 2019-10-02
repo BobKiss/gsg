@@ -899,6 +899,7 @@ position: relative;
     border-top: 25px solid #fff600;
     padding-top: 75px;
     padding-bottom: 100px;
+    direction: rtl;
 }
 .archivepage__wrap_right{
     width: 100%;
@@ -949,7 +950,7 @@ position: relative;
 .archivepage__wrap_left .archivepage__desc{
     position: absolute;
     bottom: 75px;
-    left: -170px;
+    left: -169px;
 }
 
 .archivepage__img_title{
@@ -980,6 +981,7 @@ position: relative;
     border-bottom: 1px solid #000;
     margin-bottom: 30px;
 }
+
 
 
 /*SectionBlogPage*/
