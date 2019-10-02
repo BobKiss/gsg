@@ -34,9 +34,11 @@ get_header();
 				<div class="col-md-6 col-sm-12">
 					<div class="archivepage__wrap_right">
 						<div class="archivepage__img archivepage__img_01" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_02.jpg) center center / cover">
-							<span class="archivepage__desc">
+							<a href="#">
+							    <span class="archivepage__desc">
 								לכתבה המלאה
-							</span>
+							    </span>
+							</a>
 						</div>
 						<h5 class="archivepage__img_title">
 							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
@@ -47,9 +49,11 @@ get_header();
 
 						</p>
 						<div class="archivepage__img archivepage__img_02" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_03.jpg) center center / cover">
-							<span class="archivepage__desc">
+							<a href="#">
+							    <span class="archivepage__desc">
 								לכתבה המלאה
-							</span>
+							    </span>
+							</a>
 						</div>
 						<h5 class="archivepage__img_title">
 							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
@@ -60,9 +64,11 @@ get_header();
 
 						</p>
 						<div class="archivepage__img archivepage__img_03" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_05.jpg) center center / cover">
-							<span class="archivepage__desc">
+							<a href="#">
+							    <span class="archivepage__desc">
 								לכתבה המלאה
-							</span>
+							    </span>
+							</a>
 						</div>
 						<h5 class="archivepage__img_title">
 							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
@@ -77,9 +83,11 @@ get_header();
 				<div class="col-md-6 col-sm-12">
 					<div class="archivepage__wrap_left">
 						<div class="archivepage__img archivepage__img_01" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_01.jpg) center center / cover">
-							<span class="archivepage__desc">
+							<a href="http://gsg.coelix.live/2019/10/02/%d7%90%d7%99%d7%9a-%d7%9e%d7%aa%d7%9e%d7%95%d7%93%d7%93%d7%99%d7%9d-%d7%a2%d7%9d-%d7%93%d7%99%d7%99%d7%a8-%d7%a1%d7%a8%d7%91%d7%9f/?lang=he">
+							    <span class="archivepage__desc">
 								לכתבה המלאה
-							</span>
+							    </span>
+							</a>
 						</div>
 						<h5 class="archivepage__img_title">
 							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
@@ -90,9 +98,11 @@ get_header();
 
 						</p>
 						<div class="archivepage__img archivepage__img_02" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_04.jpg) center center / cover">
-							<span class="archivepage__desc">
+							<a href="#">
+							    <span class="archivepage__desc">
 								לכתבה המלאה
-							</span>
+							    </span>
+							</a>
 						</div>
 						<h5 class="archivepage__img_title">
 							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
@@ -103,9 +113,11 @@ get_header();
 
 						</p>
 						<div class="archivepage__img archivepage__img_03" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_06.jpg) center center / cover">
-							<span class="archivepage__desc">
+							<a href="#">
+							    <span class="archivepage__desc">
 								לכתבה המלאה
-							</span>
+							    </span>
+							</a>
 						</div>
 						<h5 class="archivepage__img_title">
 							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
