@@ -49,4 +49,4 @@ Stack trace:
 #1 X:\Work\OSPanel\domains\gsg.coelix.live\wp-content\plugins\wpml-translation-management\classes\records\class-wpml-tm-icl-translations.php(89): WPML_TM_Records->icl_translations_by_translation_id('0')
 #2 X:\Work\OSPanel\domains\gsg.coelix.live\wp-content\plugins\wpml-translation-management\classes\filters\class-wpml-tm-translation-status.php(78): WPML_TM_ICL_Translations->translations()
 #3 X:\Work\OSPanel\domains\gsg.coelix.live\wp-content\plugins\wpml-translation-management\classes\filters\class-wpml-tm-translation-status.php(48): WPML_TM_Translation_Status->is_ in X:\Work\OSPanel\domains\gsg.coelix.live\wp-content\plugins\wpml-translation-management\classes\records\class-wpml-tm-icl-translations.php on line 45
-
+2019-10-02T09:31:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\wamp64\www\gsg.coelix.live\wp-content\plugins\sitepress-multilingual-cms\vendor\composer\ClassLoader.php on line 394
