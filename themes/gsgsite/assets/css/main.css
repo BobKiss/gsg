@@ -935,12 +935,10 @@ position: relative;
 .archivepage__wrap_right .archivepage__img_03{
     height: 850px;
 }
-
 .archivepage__desc{
     width: 245px;
     height: 95px;
     background: #fffc00;
-    color: #fffc00;
     font-size: 25px;
     letter-spacing: 2px;
     text-align: center;
@@ -948,6 +946,14 @@ position: relative;
     text-shadow: 2px 2px #000;
     transform: rotate(-90deg);
 }
+.archivepage__img a{
+    text-decoration: none;
+    color: #fffc00;
+}
+.archivepage__img a:active{
+    text-decoration: none;
+}
+
 .archivepage__wrap_right .archivepage__desc{
     position: absolute;
     bottom: 75px;
@@ -987,8 +993,6 @@ position: relative;
     border-bottom: 1px solid #000;
     margin-bottom: 30px;
 }
-
-
 
 /*SectionBlogPage*/
 
