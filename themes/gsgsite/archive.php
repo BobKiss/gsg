@@ -17,10 +17,8 @@ get_header();
 				<div class="col-12">
 					<div class="borderblock"></div>
 					<div class="borderblock"><h2 class="header__title">
-					    	<?php
-				the_archive_title();
-				// the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
+				חילוץ פרוייקט 
+ממשבר - חלק א’
 					</h2></div>
 					<div class="borderblock">
 					    	<img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="archivecircle">
