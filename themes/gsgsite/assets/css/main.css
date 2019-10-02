@@ -167,6 +167,7 @@ header{
 	right: unset;
 	left: 0;
 }
+
 .borderblock{
     width: 100%;
     border: 2px solid #171111;
@@ -185,6 +186,27 @@ header{
     border-top: 0;
     position: relative;
 }
+header .header__title span {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+header .header__title span.animationTriggered {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* BORDER BLOCK ANIMATIONS */
+/* @keyframes shadow {
+  from {
+    text-shadow: 0 0 3px black;
+  }
+  to {
+    text-shadow: 0 0 3px black;
+  }
+} */
+/* end /* BORDER BLOCK ANIMATIONS */
+
 .header__title{
     text-align: left;
     font-size: 124px;

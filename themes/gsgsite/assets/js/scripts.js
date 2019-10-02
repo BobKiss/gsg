@@ -75,4 +75,22 @@ jQuery(document).ready(function ($) {
     $('.houseScreen').css('padding-right', padding);
   }
   initBarkanSlider();
+
+  function initHeaderWordsAnimations() {
+    let title = $.trim($('header .header__title').text());
+    title = title.split('');
+    $('header .header__title').empty();
+
+    let timer = 0;
+    title.forEach(function (el, i, arr) {
+      $('header .header__title').append(`<span>${el}</span>`);
+      setTimeout(function () {
+        $(this).addClass('animationTriggered');
+      }, timer += 1000);
+    });
+
+    console.log('title', title);
+  }
+
+  initHeaderWordsAnimations();
 });
