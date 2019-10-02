@@ -42,6 +42,11 @@ jQuery(document).ready(function ($) {
     $('.mainNavigationContainer .activeLine').toggleClass('hide');
   });
 
+    $('.big-projects-list .list-item .view-btn').hover(function(){
+    	$('.big-projects-list .list-item .item-info').addClass('hovered');
+    }, function() {
+    	$('.big-projects-list .list-item .item-info').removeClass('hovered');
+    });
 
   function initSidebarMailButton() {
     $('.sideMenu .mailBlock a.sideMenuMail').click(function (e) {
