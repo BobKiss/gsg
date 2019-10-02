@@ -186,12 +186,12 @@ header{
     border-top: 0;
     position: relative;
 }
-header .header__title span {
+.headerSection .borderBlock .row .title span, header .header__title span {
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
-header .header__title span.animationTriggered {
+.headerSection .borderBlock .row .title span.animationTriggered, header .header__title span.animationTriggered {
   visibility: visible;
   opacity: 1;
 }
@@ -1248,7 +1248,7 @@ header .header__title span.animationTriggered {
     display: inline-flex;
     border-bottom: 1px solid #000;
     color: #171111;
-    
+
 }
 .archivepage__img_title p{
     display: block;
@@ -1366,12 +1366,12 @@ header .header__title span.animationTriggered {
 .blog .header .borderblock, .archive .header .borderblock {
     border-color: #fff;
     color: #fff;
-    
+
 }
 .blog .header .borderblock .header__title, .archive .header .borderblock .header__title{
     font-size: 105px;
     width: 80%;
-    
+
 }
 
 /*SectionHousesys*/
