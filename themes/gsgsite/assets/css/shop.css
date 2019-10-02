@@ -1,0 +1,24 @@
+.dnone{
+  display: none;
+}
+
+.choose-flat-img-container .flat-item .is-closed,
+.choose-flat-img-container .flat-item.disabled .hover{
+  display: none;
+}
+.choose-flat-img-container .image{
+  pointer-events: none;
+}
+
+.choose-flat-img-container .flat-item:not(.disabled) .hover{
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.choose-flat-img-container .flat-item:not(.disabled):hover .hover,
+.choose-flat-img-container .flat-item.active .hover{
+  opacity: 1;
+}
+.choose-flat-img-container .flat-item.disabled .is-closed{
+  display: block;
+}

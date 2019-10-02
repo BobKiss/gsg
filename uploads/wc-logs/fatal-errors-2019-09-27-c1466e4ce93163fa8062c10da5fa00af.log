@@ -1,0 +1,39 @@
+2019-09-27T10:09:46+00:00 CRITICAL syntax error, unexpected '}' in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/get-flat-tab-content.php on line 38
+
+2019-09-27T11:31:56+00:00 CRITICAL syntax error, unexpected 'global' (T_GLOBAL) in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/add-flat-to-cart.php on line 3
+
+2019-09-27T11:32:24+00:00 CRITICAL syntax error, unexpected 'global' (T_GLOBAL) in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/add-flat-to-cart.php on line 3
+
+2019-09-27T13:40:06+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_url() on null in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/content-single-product.php:116
+Stack trace:
+#0 /Users/a.skuropatov/sites/gsg.test/wp-includes/template.php(724): require()
+#1 /Users/a.skuropatov/sites/gsg.test/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/Users/a.skurop...', false)
+#2 /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /Users/a.skuropatov/sites/gsg.test/wp-includes/template-loader.php(78): include('/Users/a.skurop...')
+#4 /Users/a.skuropatov/sites/gsg.test/wp-blog-header.php(19): require_once('/Users/a.skurop...')
+#5 /Users/a.skuropatov/sites/gsg.test/index.php(17): require('/Users/a.skurop...')
+#6 {main}
+  thrown in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/content-single-product.php on line 116
+
+2019-09-27T13:43:38+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_url() on null in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/content-single-product.php:116
+Stack trace:
+#0 /Users/a.skuropatov/sites/gsg.test/wp-includes/template.php(724): require()
+#1 /Users/a.skuropatov/sites/gsg.test/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/Users/a.skurop...', false)
+#2 /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /Users/a.skuropatov/sites/gsg.test/wp-includes/template-loader.php(78): include('/Users/a.skurop...')
+#4 /Users/a.skuropatov/sites/gsg.test/wp-blog-header.php(19): require_once('/Users/a.skurop...')
+#5 /Users/a.skuropatov/sites/gsg.test/index.php(17): require('/Users/a.skurop...')
+#6 {main}
+  thrown in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/content-single-product.php on line 116
+
+2019-09-27T13:45:27+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_url() on null in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/content-single-product.php:116
+Stack trace:
+#0 /Users/a.skuropatov/sites/gsg.test/wp-includes/template.php(724): require()
+#1 /Users/a.skuropatov/sites/gsg.test/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/Users/a.skurop...', false)
+#2 /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /Users/a.skuropatov/sites/gsg.test/wp-includes/template-loader.php(78): include('/Users/a.skurop...')
+#4 /Users/a.skuropatov/sites/gsg.test/wp-blog-header.php(19): require_once('/Users/a.skurop...')
+#5 /Users/a.skuropatov/sites/gsg.test/index.php(17): require('/Users/a.skurop...')
+#6 {main}
+  thrown in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/woocommerce/content-single-product.php on line 116
+

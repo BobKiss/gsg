@@ -1,0 +1,153 @@
+<?php
+/*
+Template Name: Sample Project Page
+*/
+?>
+<?php get_header(); ?>
+
+<div class="page SamplePAGE">
+	<!-- SectionContacts -->
+	<section class="barkan-header">
+
+		<div class="container">
+			<div class="row d-flex no-gutters">
+				<div class="col-12 barkan-header__img">
+				    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/sampPrTopImg.png">
+				</div>
+
+				<p class="barkan-header__text">ברקן מול הים | ברקן</p>
+			</div>
+		</div>
+	</section>
+	<section class="barkan-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 d-flex flex-column">
+					<h5 class="barkan-about__title">
+						אורנית BU | על הפרוייקט
+					</h5>
+					<p class="barkan-about__text">מתחם מגורים יוקרתי, ראשון מסוגו, מבית קבוצת גביש שחם.
+פרוייקט בוטיק ייחודי המציע בתי קונספט ופרימיום מודרניים ומעוצבים עם מפרט איכותי ועשיר במיוחד. לבית החדש שלכם תוכלו לבחור "חליפה" מבין המפרטים הקונספטואליים המדהימים שתפרנו במיוחד בשבילכם והמותאמים לאלו שאוהבים את החיים ולא מוותרים על אף רגע.
+
+למי שמעריך איכות.
+למי שהזמן שלו יקר.
+למי שחושב על העתיד.</p>
+					<h5 class="barkan-about__title">
+						אורנית BU  | פירוט הפרוייקט
+					</h5>
+					<p class="barkan-about__text">110 דופלקסים למכירה ביישוב אורנית | גודל דופלקס החל מ180 מ”ר ועד 270 מ”ר | מחיר הדופלקס כולל מפרט איכותי ועשיר | אפשרות לתוספת חבילות פרימיום וקונספט לשדרוג חווית המגורים | אפשרות לתוספת בריכה | אפשרות לתופסת קומת מרתף.
+<br>
+<br>
+תכנון | גביש שחם
+<br>
+ניהול הפרוייקט | גביש שחם</p>
+				</div>
+				<div class="col-lg-6 d-flex flex-column">
+					<h5 class="barkan-about__title">
+						אורנית BU  | על האזור
+					</h5>
+					<p class="barkan-about__text">
+						הישוב אורנית הינו ישוב עירוני קהילתי הממוקם במורדות המערביים של הרי השומרון מצפון לראש העין ומזרחית להוד השרון. הישוב מעורב.
+הישוב מורכב ברובו מבתים צמודי קרקע ושוכן לצד נוף יערות קרן קיימת בישראל.
+בישוב מרכז מסחרי, חנויות, בתי קפה, קופ“ח, גני ילדים, בתי ספר, יסודי עד תיכון, מרכזי חוגים, מרכז ספורט ועוד.
+לפי נתוני הלמ"ס נכון לסוף 2016, לאורנית דירוג של 8 מתוך 10, במדד חברתי-כלכלי – אשכול לשנת 2015.
+הישוב ממוקם סמוך לצירים ראשיים (כביש 5 וכביש 6), בקרבת תחנת רכבת ובסביבת מרכזי תעסוקה גדולים, פארק היי-טק מפותח ומרכזי בילוי.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="barkan-slider">
+		<div class="barkan-slider__img">
+			<div>
+				<div class="barkan-single-slider">
+					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/R-2-FINAL.png">
+				</div>
+			</div>
+			<div>
+				<div class="barkan-single-slider">
+					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/Rectangle-9-copy.png">
+				</div>
+			</div>
+			<div>
+				<div class="barkan-single-slider">
+					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/R-2-FINAL.png">
+				</div>
+			</div>
+			<div>
+				<div class="barkan-single-slider">
+					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/Rectangle-9-copy.png">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="barkan-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<h5 class="barkan-about__title">אורנית BU | על הפרוייקט</h5>
+					<p class="barkan-about__text"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
+					<p class="barkan-about__stattext"><strong>גילאי התושבים</strong>| בני 16 עד 45</p>
+					<div class="barkan-about__statline"><span class="statline_01"></span></div><p>60%</p>
+				</div>
+				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
+					<p class="barkan-about__stattext"><strong>תעסוקה</strong> | צווארון לבן</p>
+					<div class="barkan-about__statline"><span class="statline_02"></span></div><p>42%</p>
+				</div>
+				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
+					<p class="barkan-about__stattext"><strong>השכלה</strong>| אקדמאים</p>
+					<div class="barkan-about__statline"><span class="statline_03"></span></div><p>30%</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5></div>
+				<div class="col-12">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/barkan-map.png" class="barkan__about_map">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="houseScreen">
+			<a href="#">
+				<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/projSimp.png" alt="projSimp">
+			</a>
+		</div>
+	</section>
+
+	<!-- SectionContacts -->
+
+	<section id="sn-contactus" class="sn-contactsus">
+		<div class="container">
+			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
+			<div class="row contactus__wrap d-flex no-gutters">
+				<div class="col-md-6 col-sm-12">
+					<div class="contactus__inp">
+						<input type="text" id="fname" name="firstname" placeholder="שם">
+						<input type="text" id="lname" name="lastname" placeholder="טלפון">
+						<input type="mail" id="mail" name="mail" placeholder="מייל">
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="contactus__area">
+						<textarea id="subject" name="subject" placeholder="כתבו לנו" style="height:210px;"></textarea>
+						<input type="submit" value="שלח >" class="contactus_btn">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+<?php
+get_footer();
+?>
