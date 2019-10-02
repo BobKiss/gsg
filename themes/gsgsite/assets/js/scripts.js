@@ -92,5 +92,5 @@ jQuery(document).ready(function ($) {
     console.log('title', title);
   }
 
-  initHeaderWordsAnimations();
+  // initHeaderWordsAnimations();
 });
