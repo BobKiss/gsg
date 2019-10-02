@@ -11,7 +11,7 @@ get_header();
 ?>
 
 <div class="blog">
-    <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/shutterstock_1186050994.jpg) center center / cover">
+    <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_01.jpg) center center / cover">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -20,7 +20,7 @@ get_header();
 					    <?php echo the_title(); ?>
 					</h2></div>
 					<div class="borderblock">
-					    <img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="archivecircle">
+					    <img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="blogcircle">
 					</div>
 				</div>
 			</div>
@@ -86,25 +86,6 @@ get_header();
 	</section>
 	</div>
 
-  <?php
-// 		while ( have_posts() ) :
-// 			the_post();
-
-// 			get_template_part( 'template-parts/content', get_post_type() );
-
-// 			the_post_navigation();
-
-// 			// If comments are open or we have at least one comment, load up the comment template.
-// 			if ( comments_open() || get_comments_number() ) :
-// 				comments_template();
-// 			endif;
-
-// 		endwhile; // End of the loop.
-// 		?>
-
-	<!--	</main> --><!-- #main -->
-	<!--</div> --><!-- #primary -->
-
-<?php
+ 
 get_sidebar();
 get_footer();
