@@ -121,6 +121,9 @@ a:focus {
   justify-content: flex-start;
   margin-bottom: 50px;
 }
+.clientItemHome:hover {
+  text-decoration: none;
+}
 .clientItemHome:visited{
   color: black;
 }
@@ -160,31 +163,171 @@ header{
 }
 .header__round_text{
     position: absolute;
-    bottom: 0;
-    right : 0;
+    bottom: -155px;
+    right: 55px;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 36s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 36s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 36s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 [dir="rtl"] .header__round_text{
 	right: unset;
 	left: 0;
 }
 
+
+/* FIRST BLOCK ANIMATIONS */
+@keyframes borderTopLeft {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+@keyframes borderTop {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes borderTopRight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+@keyframes borderRight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 290px;
+  }
+}
+@keyframes borderBottomRight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+@keyframes borderBottom {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes borderBottomLeft {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+/* end /* FIRST BLOCK ANIMATIONS */
+
+
 .borderblock{
     width: 100%;
     border: 2px solid #171111;
     height: 140px;
 }
+.borderblockWrapper {
+  position: relative;
+  padding-right: 0;
+}
+.borderblock::before, .borderblock::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #171111;
+}
+.borderblock:nth-child(1)::before {
+  width: 2px;
+  height: 0;
+  bottom: calc(100% - 140px);
+  animation: borderTopLeft 0.25s 0.25s;
+  animation-fill-mode: forwards;
+}
 .borderblock:nth-child(1){
-    border-bottom: 0;
+  width: 0%;
+  border: 0;
+  border-top: 2px solid #171111;
+  animation: borderTop 1s 0.5s;
+  animation-fill-mode: forwards;
+}
+.borderblock:nth-child(1)::after {
+  width: 2px;
+  height: 0;
+  top: 0;
+  right: 0;
+  animation: borderTopRight 0.25s 1.5s cubic-bezier(0, 0, 0, 0);
+  animation-fill-mode: forwards;
 }
 .borderblock:nth-child(2){
     border: 0;
-    border-right: 2px solid #171111;
+    /* border-right: 2px solid #171111; */
     height: 290px;
     display: flex;
 }
+.borderblock:nth-child(2)::after {
+  right: 0;
+  top: 140px;
+  height: 0;
+  width: 2px;
+  animation: borderRight 0.5s 1.75s cubic-bezier(0, 0, 0, 0);
+  animation-fill-mode: forwards;
+}
 .borderblock:nth-child(3){
-    border-top: 0;
+    border: 0;
     position: relative;
+}
+.borderblock:nth-child(3)::after {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 0;
+  animation: borderBottomRight 0.25s 2.25s cubic-bezier(0, 0, 0, 0);
+  animation-fill-mode: forwards;
+}
+.borderblock:nth-child(3) .bottomLine {
+  position: absolute;
+  width: 0;
+  right: 0;
+  height: 2px;
+  bottom: 0;
+  background-color: #171111;
+  animation: borderBottom 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+.borderblock:nth-child(3)::before {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 0;
+  animation: borderBottomLeft 0.50s 3.5s;
+  animation-fill-mode: forwards;
 }
 .headerSection .borderBlock .row .title span, header .header__title span {
   opacity: 0;
@@ -196,23 +339,13 @@ header{
   opacity: 1;
 }
 
-/* BORDER BLOCK ANIMATIONS */
-/* @keyframes shadow {
-  from {
-    text-shadow: 0 0 3px black;
-  }
-  to {
-    text-shadow: 0 0 3px black;
-  }
-} */
-/* end /* BORDER BLOCK ANIMATIONS */
-
 .header__title{
     text-align: left;
     font-size: 124px;
     font-weight: bold;
     text-transform: uppercase;
     margin: auto 0;
+    max-width: 610px;
 }
 .blog .header .borderblock {
     border-color: #fff;
@@ -2037,10 +2170,10 @@ transform:rotate(360deg);}
 
     }
     .borderblock:nth-child(2) {
-        height: 160px;
+        /* height: 160px; */
     }
     .header__title {
-        line-height: 160px;
+        /* line-height: 160px; */
     }
     .clientsBlock{
         width: 180px;

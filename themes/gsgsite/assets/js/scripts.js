@@ -81,14 +81,13 @@ jQuery(document).ready(function ($) {
     title = title.split('');
     $('.headerSection .borderBlock .row .title, header .header__title').empty();
 
-    let timer = 0;
     title.forEach(function (el, i, arr) {
-      $('.headerSection .borderBlock .row .title, header .header__title').append(`<span style="transition-delay: ${(i * 0.2).toFixed(2)}s" >${el}</span>`);
+      $('.headerSection .borderBlock .row .title, header .header__title').append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >${el}</span>`);
     });
 
     setTimeout(function () {
       $('.headerSection .borderBlock .row .title span, header .header__title span').addClass('animationTriggered');
-    }, 1000);
+    }, 100);
 
     console.log('title', title);
   }
