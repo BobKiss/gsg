@@ -82,17 +82,17 @@ jQuery(document).ready(function ($) {
   initBarkanSlider();
 
   function initHeaderWordsAnimations() {
-    let title = $.trim($('header .header__title').text());
+    let title = $.trim($('header .header__title, .headerSection .borderBlock .row .title').text());
     title = title.split('');
-    $('header .header__title').empty();
+    $('.headerSection .borderBlock .row .title, header .header__title').empty();
 
-    let timer = 0;
     title.forEach(function (el, i, arr) {
-      $('header .header__title').append(`<span>${el}</span>`);
-      setTimeout(function () {
-        $(this).addClass('animationTriggered');
-      }, timer += 1000);
+      $('.headerSection .borderBlock .row .title, header .header__title').append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >${el}</span>`);
     });
+
+    setTimeout(function () {
+      $('.headerSection .borderBlock .row .title span, header .header__title span').addClass('animationTriggered');
+    }, 100);
 
     console.log('title', title);
   }
