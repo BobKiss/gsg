@@ -9,7 +9,8 @@
 
 get_header();
 ?>
-    <div class="blog">
+
+<div class="blog">
     <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/shutterstock_1186050994.jpg) center center / cover">
 		<div class="container">
 			<div class="row">
@@ -18,9 +19,11 @@ get_header();
 					<div class="borderblock"><h2 class="header__title">
 					    <?php echo the_title(); ?>
 					</h2></div>
-					<div class="borderblock"></div>
+					<div class="borderblock">
+					    <img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="archivecircle">
+					</div>
 				</div>
-			</div>			
+			</div>
 		</div>
 	</header> <!-- headerSection-->
 	<section id="blogpage" class="blogpage">
@@ -38,7 +41,7 @@ get_header();
 
 						</h6>
 						<p class="blogpage__wrap_text">
-							
+
 דיירים המבקשים לקדם פרויקט מסוג תמ"א 38 או פינוי-בינוי בבניין ישן, צריכים להתאגד ולגבש את הרוב הנדרש. בפרויקט תמ"א 38 הכולל הריסה ובניה מחדש, הרוב הנדרש ליישום הפרויקט עומד על 80% מבעלי הדירות בבניין הישן (אשר -75% לפחות מהרכוש המשותף צמוד לדירותיהם). ככל שמדובר במתחם הכולל מספר בניינים, יש צורך בהסכמה של 67% לפחות מבעלי הדירות בכל בניין ובניין.
 כאשר מודבר בתמ"א 38 במסלול חיזוק הבניין הקיים ותוספת קומות  (להבדיל מפינוי בינוי) מדובר ברוב נמוך יותר - 66% בלבד מבעלי הדירות בבניין אחד. כמובן  שיזם תמיד יעדיף הסכמה של כלל בעלי הדירות בטרם יחל בהשקעה ותכנון של הפרויקט, ואולם מניסיון החיים מדובר במצב שלא תמיד מתקיים.
 <p></p>
@@ -55,7 +58,7 @@ get_header();
 			<div class="row d-flex no-gutters">
 				<div class="col-md-6 col-sm-12">
 					<div class="blogpage__imgwrap_sec">
-						<div class="blogpage__secimg" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/joshua.jpg) center center / cover"></div>	
+						<div class="blogpage__secimg" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/joshua.jpg) center center / cover"></div>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12">
@@ -67,7 +70,7 @@ get_header();
 							</p>
 							<p>
 							בפרויקט פינוי בינוי - כדאי לדעת כי על פי החוק, בעלי הדירות בבניין הישן יכולים לפנות לבית המשפט בתביעה כנגד בעל הדירה הסרבן בטענה כי סירובו איננו סביר ובתביעה להשית עליו קנס כספי בשל הנזק שהוא מסב לשאר הדיירים. בית המשפט ישקול את נימוקי סירובו של הדייר המסרב לחתום על תנאי התמ״א. כמו כן בית המשפט יבחן את הנזק שנגרם ליתר הדיירים, את יכולתו הכלכלית של הדייר הסרבן ואת כלל תנאי העסקה עם היזם.
-						
+
 							בפרויקט תמ״א 38 (חיזוק ובניה) - הכתובת לברור הסכסוך עם הדייר הסרבן היא  המפקח על הבתים המשותפים במשרד המשפטים, אשר בסמכותו לחייב את הדייר הסרבן להסכים (למעשה לכפות עליו הסכמה),וזאת אם מצא שסירובו אינו סביר. </br>
 							במחצית 2018 תוקן חוק דייר סרבן, באופן שקבע כי לעומת המצב הישן בו תביעה כנגד דייר סרבן תהיה כספית לקבלת פיצוי, במצב החדש אחרי התיקון בית המשפט מוסמך לפסוק לא רק פיצוי כספי אלא גם פינוי של הדירה המוחזקת על ידי הדייר הסרבן. במקרה של סירוב שאינו סביר, יוכל בית המשפט להוציא צו פינוי לבעל הדירה ולמנות כונס שיהיה מורשה חתימה במקומו ויוכל להתקדם מול היזם בעסקה הפינוי-בינוי. התיקון האחרון מתייחס גם למתן פתרונות לאוכלוסיית הקשישים בפרויקטים (ביחס לדיירים קשישים בני למעלה מ 80 יש חובה ליתן דיור חלופי גם במקרה של פרויקט תמ״א הכולל חיזוק ובניה בלבד).
 							</p>
@@ -83,7 +86,7 @@ get_header();
 	</section>
 	</div>
 
-// 		<?php
+  <?php
 // 		while ( have_posts() ) :
 // 			the_post();
 
@@ -99,10 +102,9 @@ get_header();
 // 		endwhile; // End of the loop.
 // 		?>
 
-	<!--	</main><!-- #main -->-->
-	<!--</div><!-- #primary -->-->
+	<!--	</main> --><!-- #main -->
+	<!--</div> --><!-- #primary -->
 
 <?php
 get_sidebar();
 get_footer();
-
