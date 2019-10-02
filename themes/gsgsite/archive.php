@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying archive pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package gsgsite
  */
@@ -10,82 +10,119 @@
 get_header();
 ?>
 
-<div class="blog">
-    <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_01.jpg) center center / cover">
+ <div class="archive">
+    <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="borderblock"></div>
 					<div class="borderblock"><h2 class="header__title">
-					    <?php echo the_title(); ?>
+				חילוץ פרוייקט 
+ממשבר - חלק א’
 					</h2></div>
 					<div class="borderblock">
-					    <img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="blogcircle">
+					    	<img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="archivecircle">
 					</div>
 				</div>
 			</div>
 		</div>
 	</header> <!-- headerSection-->
-	<section id="blogpage" class="blogpage">
+	
+	<section id="archivepage" class="archivepage">
 		<div class="container">
-			<h4 class="blogpage__title">איך מתמודדים עם דייר סרבן ?  תמ”א 38  |
-				<span>מאת מעיין בכר
-				</span>
-			</h4>
-			<div class="row d-flex no-gutters">
+			<div class="row">
 				<div class="col-md-6 col-sm-12">
-					<div class="blogpage__wrap">
-						<h6 class="blogpage__wrap_title">
-							פרויקטים רבים מסוג תמ״א 38 (חיזוק ובניה) או פינוי בינוי, לא הצליחו להתרומם במשך שנים בשל דיירים סרבנים, אשר מנעו קידום הפרויקט. לעתים המניעים שהביאו את הדיירים הסרבנים למנוע קידום הפרויקט היו מניעים סחטניים וניסיון לקבל תמורה גבוהה יותר באופן בלתי מוצדק (ולעיתים מדובר בסירוב מוצדק). בשנת 2018 תוקן החוק באופן שמקל על הטיפול בדיירים סרבנים ואשר צפוי להביא להתחלות בניה רבות ולהנעת פרויקטים התקועים במשך שנים. אז מה ניתן לעשות כשיש בבניין דייר סרבן ? וכיצד נדע האם סרבנותו סבירה ומוצדקת או לא?
+					<div class="archivepage__wrap_right">
+						<div class="archivepage__img archivepage__img_01" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_02.jpg) center center / cover">
+							<span class="archivepage__desc">
+								לכתבה המלאה
+							</span>
+						</div>
+						<h5 class="archivepage__img_title">
+							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
+						</h5>
+						<p class="archivepage__img_text">
+							עשרות אלפי יחידות בניה ופרויקטים נתקעים במשך שנים ארוכות או לא מתרוממים כלל בשל חסמים שונים (משפטיים, תכנוניים, בירוקרטיים או כלכליים). הסרת החסמים ופתרון הבעיות ביעילות ובמהירות, תוך מציאת הפתרונות האופטימליים, פעמים רבות, הם קריטיים לשמירה על כדאיותו וכלכליותו של הפרויקט.
 
 
-						</h6>
-						<p class="blogpage__wrap_text">
+						</p>
+						<div class="archivepage__img archivepage__img_02" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_03.jpg) center center / cover">
+							<span class="archivepage__desc">
+								לכתבה המלאה
+							</span>
+						</div>
+						<h5 class="archivepage__img_title">
+							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
+						</h5>
+						<p class="archivepage__img_text">
+							עשרות אלפי יחידות בניה ופרויקטים נתקעים במשך שנים ארוכות או לא מתרוממים כלל בשל חסמים שונים (משפטיים, תכנוניים, בירוקרטיים או כלכליים). הסרת החסמים ופתרון הבעיות ביעילות ובמהירות, תוך מציאת הפתרונות האופטימליים, פעמים רבות, הם קריטיים לשמירה על כדאיותו וכלכליותו של הפרויקט.
 
-דיירים המבקשים לקדם פרויקט מסוג תמ"א 38 או פינוי-בינוי בבניין ישן, צריכים להתאגד ולגבש את הרוב הנדרש. בפרויקט תמ"א 38 הכולל הריסה ובניה מחדש, הרוב הנדרש ליישום הפרויקט עומד על 80% מבעלי הדירות בבניין הישן (אשר -75% לפחות מהרכוש המשותף צמוד לדירותיהם). ככל שמדובר במתחם הכולל מספר בניינים, יש צורך בהסכמה של 67% לפחות מבעלי הדירות בכל בניין ובניין.
-כאשר מודבר בתמ"א 38 במסלול חיזוק הבניין הקיים ותוספת קומות  (להבדיל מפינוי בינוי) מדובר ברוב נמוך יותר - 66% בלבד מבעלי הדירות בבניין אחד. כמובן  שיזם תמיד יעדיף הסכמה של כלל בעלי הדירות בטרם יחל בהשקעה ותכנון של הפרויקט, ואולם מניסיון החיים מדובר במצב שלא תמיד מתקיים.
-<p></p>
- דייר סרבן , הוא דייר שאינו מסכים לקדם את הליך התמ"א או את הליך 	</p>
+
+						</p>
+						<div class="archivepage__img archivepage__img_03" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_05.jpg) center center / cover">
+							<span class="archivepage__desc">
+								לכתבה המלאה
+							</span>
+						</div>
+						<h5 class="archivepage__img_title">
+							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
+						</h5>
+						<p class="archivepage__img_text">
+							עשרות אלפי יחידות בניה ופרויקטים נתקעים במשך שנים ארוכות או לא מתרוממים כלל בשל חסמים שונים (משפטיים, תכנוניים, בירוקרטיים או כלכליים). הסרת החסמים ופתרון הבעיות ביעילות ובמהירות, תוך מציאת הפתרונות האופטימליים, פעמים רבות, הם קריטיים לשמירה על כדאיותו וכלכליותו של הפרויקט.
+
+
+						</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<div class="blogpage__imgwrap">
-						<div class="blogpage__mainimg" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/blogpg.jpg) center center / cover"></div>
-						<span class="blogpage__img_title">“ ישנן התנגדויות לגיטימיות אשר עומד מאחוריהן רציונל ונימוק אמיתי. וישנן התנגדויות סחטניות אשר אינן סבירות ופוגעות בכלל הדיירים בבניין ” </span>
-					</div>
-				</div>
-			</div>
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-sm-12">
-					<div class="blogpage__imgwrap_sec">
-						<div class="blogpage__secimg" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/joshua.jpg) center center / cover"></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="blogpage__text"><p>
-							פעמים רבות מדובר בדיירים מבוגרים החוששים מהמעבר או מבעיות גישה לדירה בתקופת ביצוע העבודות ולעיתים אף מדובר בסחטנות שמטרתה להפעיל לחץ ולקבל תמורה כספית או אחרת עבור ההסכמה.
-							</p>
-							<p>
-							ישנן התנגדויות לגיטימיות אשר עומד מאחוריהן רציונל ונימוק אמיתי. וישנן התנגדויות סחטניות אשר אינן סבירות ופוגעות בכלל הדיירים בבניין. ישנם מקרים בהם הכירו בתי המשפט בסירוב דייר כסירוב סביר. זאת למשל כאשר אין היתכנות כלכלית לפרויקט או לאחד מהצדדים, כאשר לא הוצע לדייר פתרון מגורים חלופי לתקופת ביצוע העבודות, כאשר לא הוסכם על בטוחות מספקות או כאשר מתקיימות נסיבות אישיות מיוחדות המצדיקות סירוב, כאשר התמורה לדייר הסרבן מקפחת ביחס ליתר הדיירים או כאשר מוכיחים חוסר תום לב מצד ועד הדיירים בבניין.
-							</p>
-							<p>
-							בפרויקט פינוי בינוי - כדאי לדעת כי על פי החוק, בעלי הדירות בבניין הישן יכולים לפנות לבית המשפט בתביעה כנגד בעל הדירה הסרבן בטענה כי סירובו איננו סביר ובתביעה להשית עליו קנס כספי בשל הנזק שהוא מסב לשאר הדיירים. בית המשפט ישקול את נימוקי סירובו של הדייר המסרב לחתום על תנאי התמ״א. כמו כן בית המשפט יבחן את הנזק שנגרם ליתר הדיירים, את יכולתו הכלכלית של הדייר הסרבן ואת כלל תנאי העסקה עם היזם.
+					<div class="archivepage__wrap_left">
+						<div class="archivepage__img archivepage__img_01" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_01.jpg) center center / cover">
+							<span class="archivepage__desc">
+								לכתבה המלאה
+							</span>
+						</div>
+						<h5 class="archivepage__img_title">
+							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
+						</h5>
+						<p class="archivepage__img_text">
+							עשרות אלפי יחידות בניה ופרויקטים נתקעים במשך שנים ארוכות או לא מתרוממים כלל בשל חסמים שונים (משפטיים, תכנוניים, בירוקרטיים או כלכליים). הסרת החסמים ופתרון הבעיות ביעילות ובמהירות, תוך מציאת הפתרונות האופטימליים, פעמים רבות, הם קריטיים לשמירה על כדאיותו וכלכליותו של הפרויקט.
 
-							בפרויקט תמ״א 38 (חיזוק ובניה) - הכתובת לברור הסכסוך עם הדייר הסרבן היא  המפקח על הבתים המשותפים במשרד המשפטים, אשר בסמכותו לחייב את הדייר הסרבן להסכים (למעשה לכפות עליו הסכמה),וזאת אם מצא שסירובו אינו סביר. </br>
-							במחצית 2018 תוקן חוק דייר סרבן, באופן שקבע כי לעומת המצב הישן בו תביעה כנגד דייר סרבן תהיה כספית לקבלת פיצוי, במצב החדש אחרי התיקון בית המשפט מוסמך לפסוק לא רק פיצוי כספי אלא גם פינוי של הדירה המוחזקת על ידי הדייר הסרבן. במקרה של סירוב שאינו סביר, יוכל בית המשפט להוציא צו פינוי לבעל הדירה ולמנות כונס שיהיה מורשה חתימה במקומו ויוכל להתקדם מול היזם בעסקה הפינוי-בינוי. התיקון האחרון מתייחס גם למתן פתרונות לאוכלוסיית הקשישים בפרויקטים (ביחס לדיירים קשישים בני למעלה מ 80 יש חובה ליתן דיור חלופי גם במקרה של פרויקט תמ״א הכולל חיזוק ובניה בלבד).
-							</p>
-							<p>
-							התיקון לחוק בהחלט מסייע בידי דיירים ויזמים המבקשים לקדם פרויקט תמ״א 38 או פרויקט פינוי בינוי מצד אחד, ומצד שני מגן על דיירים קשישים אשר זקוקים להגנה ודיור חלופי בעת ביצוע עבודות בבניין הישן בו הם </p>
+
+						</p>
+						<div class="archivepage__img archivepage__img_02" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_04.jpg) center center / cover">
+							<span class="archivepage__desc">
+								לכתבה המלאה
+							</span>
+						</div>
+						<h5 class="archivepage__img_title">
+							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
+						</h5>
+						<p class="archivepage__img_text">
+							עשרות אלפי יחידות בניה ופרויקטים נתקעים במשך שנים ארוכות או לא מתרוממים כלל בשל חסמים שונים (משפטיים, תכנוניים, בירוקרטיים או כלכליים). הסרת החסמים ופתרון הבעיות ביעילות ובמהירות, תוך מציאת הפתרונות האופטימליים, פעמים רבות, הם קריטיים לשמירה על כדאיותו וכלכליותו של הפרויקט.
+
+
+						</p>
+						<div class="archivepage__img archivepage__img_03" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_06.jpg) center center / cover">
+							<span class="archivepage__desc">
+								לכתבה המלאה
+							</span>
+						</div>
+						<h5 class="archivepage__img_title">
+							איך מתמודדים עם דייר סרבן | <p>מאת מעיין בכר</p>
+						</h5>
+						<p class="archivepage__img_text">
+							עשרות אלפי יחידות בניה ופרויקטים נתקעים במשך שנים ארוכות או לא מתרוממים כלל בשל חסמים שונים (משפטיים, תכנוניים, בירוקרטיים או כלכליים). הסרת החסמים ופתרון הבעיות ביעילות ובמהירות, תוך מציאת הפתרונות האופטימליים, פעמים רבות, הם קריטיים לשמירה על כדאיותו וכלכליותו של הפרויקט.
+
+
+						</p>
 					</div>
 				</div>
-			</div>
-			<div class="blog__nav">
-				<a href="#">< לכתבה הקודמת</a><p class="blog__nav_text">חזרה לעמוד מגזין</p><a href="#">לכתבה הבאה ></a>
-			</div>
+			</div>	
 		</div>
 	</section>
-	</div>
 
- 
+
+
+<?php
 get_sidebar();
 get_footer();
