@@ -10,7 +10,7 @@
 get_header();
 ?>
 
- <div class="blog">
+ <div class="archive">
     <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
 		<div class="container">
 			<div class="row">
@@ -18,11 +18,13 @@ get_header();
 					<div class="borderblock"></div>
 					<div class="borderblock"><h2 class="header__title">
 					    	<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
+				the_archive_title();
+				// the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 					</h2></div>
-					<div class="borderblock"></div>
+					<div class="borderblock">
+					    	<img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="archivecircle">
+					</div>
 				</div>
 			</div>
 		</div>
