@@ -25,7 +25,7 @@
 /* Homepage */
 
 body{
-    font-family: 'asimon', 'Dosis', sans-serif !important;
+    font-family: 'asimon', sans-serif !important;
     /*overflow: hidden;*/
     direction: ltr;
 }
@@ -48,14 +48,17 @@ a:focus {
   margin: 0 auto;
 }
 .titleContainer .title {
+  display: flex;
+justify-content: flex-end;
   font-size: 26px;
   position: relative;
   margin-bottom: 90px;
+  padding-bottom: 10px;
 }
 .titleContainer .title::after {
   max-width: 580px;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #171111;
   display: block;
   content: '';
@@ -109,6 +112,9 @@ a:focus {
   right: 0;
   top: 0;
   margin-top: 50vh;
+}
+[dir="rtl"] .clientsBlock{
+  direction: rtl;
 }
 .clientItemHome{
   border-top: 1.5px solid black;
@@ -181,10 +187,6 @@ header{
     animation-duration: 36s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
-[dir="rtl"] .header__round_text{
-	right: unset;
-	left: 0;
 }
 
 
@@ -409,6 +411,7 @@ header{
 .headerSection .borderBlock .row .title {
   font-size: 100px;
   text-align: left;
+  max-width: 60%;
 }
 .aboutUsPageWrapper .aboutYellow {
   background-color: #fff600;
@@ -429,7 +432,11 @@ header{
   padding-bottom: 30px;
   font-size: 18px;
   line-height: 23px;
+  text-align: right;
+  direction: rtl;
 }
+
+
 .aboutUsPageWrapper .aboutMap {
   background-color: #fefefe;
   padding-top: 160px;

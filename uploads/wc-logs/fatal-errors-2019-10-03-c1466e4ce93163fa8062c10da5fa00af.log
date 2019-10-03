@@ -1,0 +1,2 @@
+2019-10-03T08:08:55+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 28672 bytes) in X:\Work\OSPanel\domains\gsg.coelix.live\wp-content\plugins\caldera-forms\classes\magic\doer.php on line 295
+
