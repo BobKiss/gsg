@@ -1136,8 +1136,8 @@ font-weight: 400;
     text-align: right;
     font-size: 26px;
     line-height: 32px;
-    letter-spacing: 1px;
-    font-weight: 700;
+    letter-spacing: 2px;
+    font-weight: 900;
 }
 .contactus__area textarea{
     width: 100%;
@@ -1147,6 +1147,10 @@ font-weight: 400;
     height: 214px;
     border-radius: 0;
     resize: none;
+    font-weight: 900;
+    color: #c0c0c0;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 .contactus__wrap{
     padding-top: 48px;
@@ -1169,6 +1173,10 @@ font-weight: 400;
     border: none;
     padding-right: 10px;
     border-radius: 0;
+    font-weight: 900;
+    color: #c0c0c0;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 .contactus__area{
     padding-right: 24px;
@@ -1179,7 +1187,7 @@ font-weight: 400;
     line-height: 25px;
     margin-top: 25px;
     background: none;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 0;
 }
 .contactus__links{
