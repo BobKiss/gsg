@@ -20,13 +20,17 @@
     		        <div class="footer__menu d-flex justify-content-between">
     		            <a href="#" class="footer__menu_item">אודות</a>
     		            <span class="footer__menu_sep"></span>
-    		            <a href="#" class="footer__menu_item">פרוייקטים בארץ מיידיים</a>
+										<a href="#" class="footer__menu_item">פרוייקטים בארץ מיידיים</a>
+    		            <span class="footer__menu_sep"></span>
+										<a href="#" class="footer__menu_item">פרוייקטים  בארץ להשקעה</a>
+    		            <span class="footer__menu_sep"></span>
+										<a href="#" class="footer__menu_item">חו”ל GSG</a>
     		            <span class="footer__menu_sep"></span>
     		            <a href="#" class="footer__menu_item">ניהול ופיקוח</a>
     		            <span class="footer__menu_sep"></span>
     		            <a href="#" class="footer__menu_item">אנרגיה GSG</a>
     		            <span class="footer__menu_sep"></span>
-    		            <a href="#" class="footer__menu_item">מהתקשורת</a>
+    		            <a href="#" class="footer__menu_item">חילוץ פרוייקטים וניהול משברים</a>
     		            <span class="footer__menu_sep"></span>
     		            <a href="#" class="footer__menu_item">מהתקשורת</a>
     		            <span class="footer__menu_sep"></span>
@@ -40,12 +44,12 @@
     		            <div class="footer__links_item">מייל <span class="footer__menu_sep"></span>office@gsg.co.il</div>
     		            <div class="footer__links_item" style="color:white;"><a href="#">ENGLISH</a><span class="footer__menu_sep"></span><a href="#" style="margin-left:14px;">HEBREW</a>Change language</div>
     		            <div class="footer__links_item" style="color:white;">
-    		                <a href="#" style="margin-left:10px;">
+    		                <a href="https://www.facebook.com/gavish.shaham/" style="margin-left:10px;">
     		                    <svg type="image/svg+xml" data="SvgImg.svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/fb-white.svg" width="30" height="30" alt="image format png" />
                                 </svg>
     		                </a>
-    		                <a href="#" style="margin-left:10px;">
+    		                <a href="https://www.instagram.com/gavish_shaham_group/" style="margin-left:10px;">
     		                    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/insta-white.svg" width="30" height="30" alt="image format png" />
                                 </svg>
