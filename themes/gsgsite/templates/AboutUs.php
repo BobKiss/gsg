@@ -12,7 +12,8 @@ Template Name: About Us
         <div class="row"></div>
         <div class="row">
           <div class="title">
-            <?php the_title(); ?>
+            WHO WE ARE
+            WHAT WE DO
           </div>
         </div>
         <div class="row"></div>

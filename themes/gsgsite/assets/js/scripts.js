@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+  $('.headerSection .borderBlock').addClass('animated');
+
   if ($('#wwd'). length > 0) {
     setTimeout(function () {
       $('#wwd').addClass('animateStart');
