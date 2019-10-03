@@ -19,7 +19,7 @@ Template Name: GsgEnergy
 				</div>
 			</div>
 			<div class="row"></div>
-			<img class="decorCircle" src="<?php // echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
+			<img class="decorCircle" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorEnergy.png" alt="decorAbout">
 		</div> <!--.borderBlock-->
 	</section> <!-- .headerSection-->
 
@@ -50,7 +50,7 @@ Template Name: GsgEnergy
 			<div class="row"><div class="col-sm-12 col-md-6"><h4 class="gsg-energy__title">מפת מתווה גז ארצית | ישראל</h4></div></div>
 			<div class="row d-flex no-gutters">
 				<div class="col-md-8 col-sm-12">
-				    <div class="gsg-energy__map" style="background: url(<?php // echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
+				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
 				    </div>
 				</div>
 				<div class="col-md-4 col-sm-12">

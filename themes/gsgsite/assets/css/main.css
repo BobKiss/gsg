@@ -15,9 +15,15 @@ a:focus {
 .post, .page{
   margin: 0;
 }
+
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
+}
+
+.homepageContainer {
+  max-width: 1120px;
 }
 .titleContainer {
   max-width: 1120px;
@@ -180,7 +186,7 @@ header{
     height: 0;
   }
   to {
-    height: 140px;
+    height: 100%;
   }
 }
 @keyframes borderTop {
@@ -196,7 +202,7 @@ header{
     height: 0;
   }
   to {
-    height: 140px;
+    height: 100%;
   }
 }
 @keyframes borderRight {
@@ -212,7 +218,7 @@ header{
     height: 0;
   }
   to {
-    height: 140px;
+    height: 100%;
   }
 }
 @keyframes borderBottom {
@@ -228,7 +234,7 @@ header{
     height: 0;
   }
   to {
-    height: 140px;
+    height: 100%;
   }
 }
 /* end /* FIRST BLOCK ANIMATIONS */
@@ -243,6 +249,14 @@ header{
   position: relative;
   padding-right: 0;
 }
+.contactUsPageHeader .header__round_text {
+  bottom: 60px;
+  right: -90px;
+}
+.contactUsPageHeader.borderblockWrapper .borderblock:nth-child(2) {
+  padding-bottom: 7vh;
+  padding-top: 7vh;
+}
 .borderblockWrapper .borderblock::before, .borderblock::after {
   content: '';
   display: block;
@@ -253,11 +267,13 @@ header{
   width: 2px;
   height: 0;
   bottom: calc(100% - 140px);
+  max-height: 140px;
   animation: borderTopLeft 0.25s 0.25s;
   animation-fill-mode: forwards;
 }
 .borderblockWrapper .borderblock:nth-child(1){
   width: 0%;
+  max-width: 100%;
   border: 0;
   border-top: 2px solid #171111;
   animation: borderTop 0.25s 0.5s;
@@ -268,6 +284,7 @@ header{
   height: 0;
   top: 0;
   right: 0;
+  max-height: 140px;
   animation: borderTopRight 0.25s 0.75s cubic-bezier(0, 0, 0, 0);
   animation-fill-mode: forwards;
 }
@@ -295,12 +312,14 @@ header{
   top: 0;
   width: 2px;
   height: 0;
+  max-height: 140px;
   animation: borderBottomRight 0.25s 1.25s cubic-bezier(0, 0, 0, 0);
   animation-fill-mode: forwards;
 }
 .borderblockWrapper .borderblock:nth-child(3) .bottomLine {
   position: absolute;
   width: 0;
+  max-width: 100%;
   right: 0;
   height: 2px;
   bottom: 0;
@@ -313,6 +332,7 @@ header{
   bottom: 0;
   width: 2px;
   height: 0;
+  max-height: 140px;
   animation: borderBottomLeft 0.5s 2s;
   animation-fill-mode: forwards;
 }
@@ -368,6 +388,23 @@ header{
   position: absolute;
   bottom: 2%;
   right: -13%;
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotation;
+  -moz-animation-duration: 36s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: rotation;
+  -o-animation-duration: 36s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  animation-name: rotation;
+  animation-duration: 36s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
 }
 .headerSection {
   display: flex;
@@ -789,7 +826,8 @@ font-weight: 100;
   transition: .5s;
 }
 .sideMenuWrapper .sideMenuContent{
-  width: 650px;
+  max-width: 650px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 4%;
@@ -947,7 +985,7 @@ font-weight: 100;
 	transition: .5s;
 	padding-right: 10px;
 }
-.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active > a{
+.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active > a, .sideMenuWrapper .sideMenuContent li.current-menu-item > a{
 	color: #fff600;
 }
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after{
@@ -2363,6 +2401,9 @@ transform:rotate(360deg);}
     .clientItemHome p{
         font-size: 20px;
     }
+    .homepageContainer {
+        padding-right: 100px;
+    }
 
 }
 @media screen and (max-width: 1380px){
@@ -2405,9 +2446,14 @@ transform:rotate(360deg);}
     padding-left: 100px;
     padding-right: 100px;
   }
+  .homepageContainer {
+    padding-right: 250px;
+  }
 }
 @media screen and (max-width: 992px){
-
+  .homepageContainer {
+    padding-right: 150px;
+  }
 
 }
 
@@ -2415,26 +2461,107 @@ transform:rotate(360deg);}
     .sideMenu{
         top: 0;
     }
+    [dir="rtl"] .clientsBlock{
+      direction: ltr;
+    }
+    .clientsBlock {
+      top: unset;
+      right: unset;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 100%;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .clientItemHome {
+      position: relative;
+    }
+    .clientItemHome::after {
+      position: absolute;
+      content: '';
+      width: 50%;
+      height: 2px;
+      background: black;
+      bottom: 0;
+      left: 0;
+    }
+    .clientItemHome:nth-child(1)::after {
+      right: 0;
+      left: unset;
+    }
+    .clientItemHome p {
+      max-width: 100px;
+      font-size: 17px;
+      font-weight: 900;
+      padding: 0 10px;
+      border-bottom: 0;
+      line-height: 20px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      position: relative;
+    }
     .sideMenu .sideMenuItem{
         width: 46px;
         height: 46px;
     }
     .header__title {
-        font-size: 50px;
+      font-size: 31px;
+      line-height: 40px;
+      padding-top: 10px;
+      margin-left: -20px;
+      max-width: 200px;
     }
     .logo{
         width: 130px;
     }
+    .sideMenuWrapper {
+      width: 100%;
+    }
+    .sideMenuWrapper .sideMenuContent {
+      padding: 20px 50px;
+    }
+    .borderblockWrapper {
+      padding-left: 0;
+    }
+    .homepageContainer {
+      padding-right: 50px;
+      padding-left: 48px;
+    }
+    .borderblockWrapper .borderblock:nth-child(3) {
+      height: 65px;
+    }
+    .borderblockWrapper .borderblock:nth-child(1) {
+      height: 27px;
+    }
+    .borderblockWrapper .borderblock:nth-child(1)::before {
+      max-height: 27px;
+      top: 0;
+    }
+    .borderblockWrapper .borderblock:nth-child(1)::after {
+      max-height: 27px;
+    }
+    .header__round_text {
+      max-width: 110px;
+      bottom: -56px;
+      right: 15px;
+    }
+    .clientItemHome {
+      border-left: 0;
+      border-right: 1.5px solid black;
+    }
+    .clientItemHome:nth-child(2){
+      border-left: 1.5px solid black;
+      border-right: 0;
+    }
 }
 
 @media screen and (max-width: 576px){
-     .header__title {
-    line-height: 70px;
-    }
+
 }
 
 @media screen and (max-width: 320px){
-     .header__title {
-    line-height: 50px;
-    }
+
 }

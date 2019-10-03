@@ -20,13 +20,17 @@
     		        <div class="footer__menu d-flex justify-content-between">
     		            <a href="#" class="footer__menu_item">אודות</a>
     		            <span class="footer__menu_sep"></span>
-    		            <a href="#" class="footer__menu_item">פרוייקטים בארץ מיידיים</a>
+										<a href="#" class="footer__menu_item">פרוייקטים בארץ מיידיים</a>
+    		            <span class="footer__menu_sep"></span>
+										<a href="#" class="footer__menu_item">פרוייקטים  בארץ להשקעה</a>
+    		            <span class="footer__menu_sep"></span>
+										<a href="#" class="footer__menu_item">חו”ל GSG</a>
     		            <span class="footer__menu_sep"></span>
     		            <a href="#" class="footer__menu_item">ניהול ופיקוח</a>
     		            <span class="footer__menu_sep"></span>
     		            <a href="#" class="footer__menu_item">אנרגיה GSG</a>
     		            <span class="footer__menu_sep"></span>
-    		            <a href="#" class="footer__menu_item">מהתקשורת</a>
+    		            <a href="#" class="footer__menu_item">חילוץ פרוייקטים וניהול משברים</a>
     		            <span class="footer__menu_sep"></span>
     		            <a href="#" class="footer__menu_item">מהתקשורת</a>
     		            <span class="footer__menu_sep"></span>

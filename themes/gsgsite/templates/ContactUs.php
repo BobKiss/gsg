@@ -10,7 +10,7 @@ Template Name: Contact Us
 	<header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/shutterstock_1081210097.jpg) center center / cover">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 borderblockWrapper">
+				<div class="col-12 borderblockWrapper contactUsPageHeader">
 					<div class="borderblock"></div>
 					<div class="borderblock">
 						<h2 class="header__title">
@@ -18,6 +18,7 @@ Template Name: Contact Us
 						</h2>
 					</div>
 					<div class="borderblock">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/decorContact.png" alt="" class="header__round_text">
 						<div class="bottomLine"></div>
 					</div>
 				</div>
