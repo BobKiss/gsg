@@ -329,7 +329,7 @@ header{
     font-weight: 900;
     text-transform: uppercase;
     margin: auto 0;
-    max-width: 700px;
+    max-width: 770px;
     font-family: 'Roboto';
     color: #171111;
 
@@ -423,6 +423,10 @@ header{
   left: 0;
   animation: borderHorizonal 0.5s 0.5s, borderVertical 0.5s 0.3s;
   animation-fill-mode: forwards;
+}
+.headerSection .borderBlock.bigPaddings .row .title {
+  padding-top: 3vw;
+  padding-bottom: 3.5vw;
 }
 .headerSection .borderBlock.animated .row:nth-child(1)::after {
   max-height: 100%;

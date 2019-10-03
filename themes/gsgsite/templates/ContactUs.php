@@ -10,14 +10,18 @@ Template Name: Contact Us
 	<header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/shutterstock_1081210097.jpg) center center / cover">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 borderblockWrapper">
 					<div class="borderblock"></div>
-					<div class="borderblock"><h2 class="header__title">
+					<div class="borderblock">
+						<h2 class="header__title">
 					    <?php echo the_title(); ?>
-					</h2></div>
-					<div class="borderblock"></div>
+						</h2>
+					</div>
+					<div class="borderblock">
+						<div class="bottomLine"></div>
+					</div>
 				</div>
-			</div>			
+			</div>
 		</div>
 	</header> <!-- .headerSection-->
 	<section id="contactus" class="contactsus">
@@ -34,7 +38,7 @@ Template Name: Contact Us
 					<div class="col-md-6 col-sm-12">
 						<div class="contactus__area">
 							<textarea id="subject" name="subject" placeholder="כתבו לנו"></textarea>
-							
+
 							<input type="submit" value="שלח >" class="contactus_btn">
 						</div>
 					</div>
