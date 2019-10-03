@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
 
   if ($('.partneers').length > 0) {
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
-      rtl: true,
+      // rtl: true,
       slidesToShow: 7,
       arrows: false,
       variableWidth: true,
