@@ -1,6 +1,10 @@
 jQuery(document).ready(function ($) {
   $('.headerSection .borderBlock').addClass('animated');
 
+  // if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
+  //   $('head').append('<meta name="mobile-web-app-capable" content="yes">');
+  // }
+
   if ($('#wwd'). length > 0) {
     setTimeout(function () {
       $('#wwd').addClass('animateStart');
@@ -89,9 +93,25 @@ jQuery(document).ready(function ($) {
     let title = $.trim($('header .header__title, .headerSection .borderBlock .row .title').text());
     title = title.split('');
     $('.headerSection .borderBlock .row .title, header .header__title').empty();
+    title.forEach(function (item, i, arr) {
+      if (item == '\\') {
+        if (arr[i+1] == 'n') {
+          arr.splice(i+1, 1);
+          arr[i] = '<br>';
+        }
+      }
+    });
+
 
     title.forEach(function (el, i, arr) {
-      $('.headerSection .borderBlock .row .title, header .header__title').append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >${el}</span>`);
+      if (el == '<br>') {
+        $('.headerSection .borderBlock .row .title, header .header__title').append(`<br>`);
+      }
+      if (el == ' ') {
+        $('.headerSection .borderBlock .row .title, header .header__title').append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >&nbsp;</span>`);
+      } else {
+        $('.headerSection .borderBlock .row .title, header .header__title').append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >${el}</span>`);
+      }
     });
 
     setTimeout(function () {
@@ -102,4 +122,12 @@ jQuery(document).ready(function ($) {
   }
 
   initHeaderWordsAnimations();
+
+
+
+  function disableLanguages() {
+    $('.sideMenu .sideMenuItem a.langName').click(function (e) {
+      e.preventDefault();
+    });
+  }
 });

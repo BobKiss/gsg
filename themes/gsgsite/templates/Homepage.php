@@ -14,7 +14,7 @@ Template Name: Homepage
         <div class="borderblock"></div>
         <div class="borderblock">
           <h2 class="header__title">
-            <?php echo __('LIVE LARGE EVERY DAY', 'gsg'); ?>
+            LIVE LARGE\nEVERY DAY
           </h2>
         </div>
         <div class="borderblock">

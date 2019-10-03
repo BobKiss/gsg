@@ -106,7 +106,7 @@
 				$linkToSwitch = '?lang=en';
 			}
 			?>
-			<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php echo ICL_LANGUAGE_CODE; ?></a></div>
+			<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php // echo ICL_LANGUAGE_CODE; ?>He</a></div>
 		</aside>
 
 		<div class="sideMenuWrapper">
