@@ -99,11 +99,7 @@
 			<div class="infoRow">
 			    <div class="infoCol">
 					<p class="infoHeading"><?php _e('Change language','GsgStrings'); ?> </p>
-					<p class="changeLang__item">
-					    <a href="<?php echo $linkToSwitch; ?>" class="langName">
-					        <span class="LangEn">English</span><span class="LangHe">Hebrew</span>
-					    </a><?php echo ICL_LANGUAGE_NAME_EN; ?></p>
-
+					        <?php do_action('wpml_add_language_selector'); ?>
 				</div>
 				<div class="infoCol">
 					<p class="infoHeading"><?php _e('Address','GsgStrings'); ?></p>
@@ -111,11 +107,11 @@
 				</div>
 				<div class="infoCol">
 					<p class="infoHeading"><?php _e('Phone','GsgStrings'); ?></p>
-					<span>+972-722-20-20-70</span>
+					<a href="tel:972722202070">+972-722-20-20-70</a>
 				</div>
 			    <div class="infoCol">
 					<p class="infoHeading"><?php _e('Email','GsgStrings'); ?></p>
-					<span>office@gsg.co.il</span>
+					<a href="mailto:office@gsg.co.il">office@gsg.co.il</a>
 				</div>
 			</div>
 			<div class="socialsRow">

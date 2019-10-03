@@ -12,7 +12,7 @@ Template Name: Sample Project Page
 		<div class="container">
 			<div class="row d-flex no-gutters">
 				<div class="col-12 barkan-header__img">
-				    <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/sampPrTopImg.png">
+				    <img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/uploads/2019/10/sampPrTopImg.png">
 				</div>
 
 				<p class="barkan-header__text">ברקן מול הים | ברקן</p>
@@ -62,22 +62,22 @@ Template Name: Sample Project Page
 		<div class="barkan-slider__img">
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/R-2-FINAL.png">
+					<img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/uploads/2019/10/R-2-FINAL.png">
 				</div>
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/Rectangle-9-copy.png">
+					<img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/uploads/2019/10/Rectangle-9-copy.png">
 				</div>
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/R-2-FINAL.png">
+					<img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/uploads/2019/10/R-2-FINAL.png">
 				</div>
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/Rectangle-9-copy.png">
+					<img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/uploads/2019/10/Rectangle-9-copy.png">
 				</div>
 			</div>
 		</div>
@@ -116,8 +116,8 @@ Template Name: Sample Project Page
 		</div>
 
 		<div class="houseScreen">
-			<a href="#">
-				<img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2019/10/projSimp.png" alt="projSimp">
+			<a href=" <?= home_url('/product/apartment-room-1/'); ?>">
+				<img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/uploads/2019/10/projSimp.png" alt="projSimp">
 			</a>
 		</div>
 	</section>

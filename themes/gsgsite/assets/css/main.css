@@ -121,6 +121,9 @@ a:focus {
   justify-content: flex-start;
   margin-bottom: 50px;
 }
+.clientItemHome:hover {
+  text-decoration: none;
+}
 .clientItemHome:visited{
   color: black;
 }
@@ -160,52 +163,181 @@ header{
 }
 .header__round_text{
     position: absolute;
-    bottom: 0;
-    right : 0;
+    bottom: -155px;
+    right: 55px;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 36s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 36s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 36s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 [dir="rtl"] .header__round_text{
 	right: unset;
 	left: 0;
 }
 
+
+/* FIRST BLOCK ANIMATIONS */
+@keyframes borderTopLeft {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+@keyframes borderTop {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes borderTopRight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+@keyframes borderRight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 290px;
+  }
+}
+@keyframes borderBottomRight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+@keyframes borderBottom {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes borderBottomLeft {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+/* end /* FIRST BLOCK ANIMATIONS */
+
+
 .borderblock{
     width: 100%;
     border: 2px solid #171111;
     height: 140px;
 }
+.borderblockWrapper {
+  position: relative;
+  padding-right: 0;
+}
+.borderblock::before, .borderblock::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #171111;
+}
+.borderblock:nth-child(1)::before {
+  width: 2px;
+  height: 0;
+  bottom: calc(100% - 140px);
+  animation: borderTopLeft 0.25s 0.25s;
+  animation-fill-mode: forwards;
+}
 .borderblock:nth-child(1){
-    border-bottom: 0;
+  width: 0%;
+  border: 0;
+  border-top: 2px solid #171111;
+  animation: borderTop 1s 0.5s;
+  animation-fill-mode: forwards;
+}
+.borderblock:nth-child(1)::after {
+  width: 2px;
+  height: 0;
+  top: 0;
+  right: 0;
+  animation: borderTopRight 0.25s 1.5s cubic-bezier(0, 0, 0, 0);
+  animation-fill-mode: forwards;
 }
 .borderblock:nth-child(2){
     border: 0;
-    border-right: 2px solid #171111;
+    /* border-right: 2px solid #171111; */
     height: 290px;
     display: flex;
 }
+.borderblock:nth-child(2)::after {
+  right: 0;
+  top: 140px;
+  height: 0;
+  width: 2px;
+  animation: borderRight 0.5s 1.75s cubic-bezier(0, 0, 0, 0);
+  animation-fill-mode: forwards;
+}
 .borderblock:nth-child(3){
-    border-top: 0;
+    border: 0;
     position: relative;
 }
-header .header__title span {
+.borderblock:nth-child(3)::after {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 0;
+  animation: borderBottomRight 0.25s 2.25s cubic-bezier(0, 0, 0, 0);
+  animation-fill-mode: forwards;
+}
+.borderblock:nth-child(3) .bottomLine {
+  position: absolute;
+  width: 0;
+  right: 0;
+  height: 2px;
+  bottom: 0;
+  background-color: #171111;
+  animation: borderBottom 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+.borderblock:nth-child(3)::before {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 0;
+  animation: borderBottomLeft 0.50s 3.5s;
+  animation-fill-mode: forwards;
+}
+.headerSection .borderBlock .row .title span, header .header__title span {
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
-header .header__title span.animationTriggered {
+.headerSection .borderBlock .row .title span.animationTriggered, header .header__title span.animationTriggered {
   visibility: visible;
   opacity: 1;
 }
-
-/* BORDER BLOCK ANIMATIONS */
-/* @keyframes shadow {
-  from {
-    text-shadow: 0 0 3px black;
-  }
-  to {
-    text-shadow: 0 0 3px black;
-  }
-} */
-/* end /* BORDER BLOCK ANIMATIONS */
 
 .header__title{
     text-align: left;
@@ -213,6 +345,7 @@ header .header__title span.animationTriggered {
     font-weight: bold;
     text-transform: uppercase;
     margin: auto 0;
+    max-width: 610px;
 }
 .blog .header .borderblock {
     border-color: #fff;
@@ -466,7 +599,8 @@ header .header__title span.animationTriggered {
 .sideMenu{
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
+  z-index: 7;
   right: 0;
   top: 12%;
 }
@@ -512,6 +646,8 @@ header .header__title span.animationTriggered {
   visibility: visible;
   opacity: 1;
   transition: .5s;
+  font-size: 30px;
+font-weight: 100;
 }
 .sideMenu .sideMenuItem.active img{
   visibility: hidden;
@@ -589,6 +725,20 @@ header .header__title span.animationTriggered {
 .sideMenuWrapper .sideMenuContent .infoCol{
   color: white;
 }
+.sideMenuWrapper .sideMenuContent .infoCol a,
+.sideMenuWrapper .sideMenuContent .infoCol p,
+.sideMenuWrapper .sideMenuContent .infoCol span,
+.sideMenuWrapper .sideMenuContent .infoCol a:visited{
+  color: #666464;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.sideMenuWrapper .sideMenuContent .infoCol:first-child p,
+.sideMenuWrapper .sideMenuContent .infoCol:first-child span{
+  color: white;
+}
+
 .infoCol .changeLang__item{
     color: #fff600;
     font-weight: 500;
@@ -630,6 +780,11 @@ header .header__title span.animationTriggered {
 }
 .sideMenuWrapper .sideMenuContent .infoRow .infoHeading{
   margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sideMenuWrapper .sideMenuContent .wpml-ls-current-language a span{
+  color: #fff600 !important;
 }
 .sideMenuWrapper .sideMenuContent .wpml-ls-legacy-list-horizontal a{
   border-right: 1px solid white;
@@ -643,7 +798,9 @@ header .header__title span.animationTriggered {
 }
 .sideMenuWrapper .sideMenuContent .main-navigation a{
   color: white;
-	font-size: 24px;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 42px;
 }
 .sideMenuWrapper .sideMenuContent li.current-menu-item a{
   color: #fff600;
@@ -654,6 +811,7 @@ header .header__title span.animationTriggered {
 }
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children a{
 	display: inline;
+  text-align: right;
 }
 
 
@@ -690,37 +848,46 @@ header .header__title span.animationTriggered {
 	opacity: 1;
 	visibility: visible;
 	transition: .5s;
-	padding-left: 10px;
-}
-[dir="rtl"] .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active .sub-menu{
 	padding-right: 10px;
-	padding-left: unset;
 }
-.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active a{
-	color: fff600;
+.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active > a{
+	color: #fff600;
 }
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after{
 	transform: rotate(-90deg);
 }
-[dir="rtl"] .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after{
-	transform: rotate(180deg);
-}
+
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after{
   font-family: 'Font Awesome\ 5 Pro';
   font-weight: 900;
   content: "\f104";
   color: #fff600;
 	position: absolute;
-	right: 7px;
-	top: 7px;
+  right: -20px;
+  top: 12px;
 }
-.main-navigation ul {
+.sideMenuWrapper .sideMenuContent .main-navigation ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     padding: 0;
 }
-
+.sideMenuWrapper .sideMenuContent .sub-menu li a{
+  color: white;
+}
+.wpml-ls-legacy-list-horizontal a span {
+    vertical-align: unset;
+    text-transform: uppercase;
+    font-size: 16px;
+font-weight: 400;
+}
+.wpml-ls-legacy-list-horizontal .wpml-ls-item:nth-child(1) a{
+  padding-left: 0;
+}
+.wpml-ls-legacy-list-horizontal .wpml-ls-item:nth-child(2) a{
+  padding-right: 0;
+  border: none;
+}
 /* Side menu popup with form */
 .sideMenu .mailBlock .popup {
   opacity: 0;
@@ -788,7 +955,7 @@ header .header__title span.animationTriggered {
 
 }
 .sideMenu .mailBlock .popup .popupForm input[type="tel"] {
-
+  padding-left: 10px;
 }
 .sideMenu .mailBlock .popup .popupForm input[type="email"] {
 
@@ -1248,7 +1415,7 @@ header .header__title span.animationTriggered {
     display: inline-flex;
     border-bottom: 1px solid #000;
     color: #171111;
-    
+
 }
 .archivepage__img_title p{
     display: block;
@@ -1366,12 +1533,12 @@ header .header__title span.animationTriggered {
 .blog .header .borderblock, .archive .header .borderblock {
     border-color: #fff;
     color: #fff;
-    
+
 }
 .blog .header .borderblock .header__title, .archive .header .borderblock .header__title{
     font-size: 105px;
     width: 80%;
-    
+
 }
 
 /*SectionHousesys*/
@@ -1802,10 +1969,14 @@ header .header__title span.animationTriggered {
   width: 50%;
   min-width: 535px;
   padding: 40px;
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
   margin-right: auto;
   background-color: #ffffffa3;
   text-align: left;
   direction: ltr;
+  overflow: hidden;
 }
 [dir="rtl"] .big-projects-list .list-item .item-info{
   text-align: right;
@@ -1849,6 +2020,16 @@ header .header__title span.animationTriggered {
   margin-right: auto;
   transform: rotate(-90deg);
 }
+.big-projects-list .list-item .item-info.hovered{
+  padding: 40px;
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+  transition: .5s;
+}
+.big-projects-list .list-item .view-btn:hover + .big-projects-list .list-item .item-info{
+
+}
 .big-projects-list .item-bg{
   display: flex;
   align-items: flex-end;
@@ -1857,7 +2038,7 @@ header .header__title span.animationTriggered {
 .big-projects-list .item-content-block{
   display: flex;
   height: 50%;
-  transform: translateX(-100px);
+  transform: translateX(-99px);
 }
 .small-projects-list{
   background-color: #fff600;
@@ -2037,10 +2218,10 @@ transform:rotate(360deg);}
 
     }
     .borderblock:nth-child(2) {
-        height: 160px;
+        /* height: 160px; */
     }
     .header__title {
-        line-height: 160px;
+        /* line-height: 160px; */
     }
     .clientsBlock{
         width: 180px;
