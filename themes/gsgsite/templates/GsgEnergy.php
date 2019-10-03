@@ -10,10 +10,8 @@ Template Name: GsgEnergy
 	<!-- SectionContacts -->
 
     <section class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy.png) center center / cover">
-		<a href="<?php echo get_bloginfo('url') ?>" class="logo">
-			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
-		</a>
-		<div class="borderBlock container">
+
+		<div class="borderBlock container bigPaddings">
 			<div class="row"></div>
 			<div class="row">
 				<div class="title">
@@ -21,7 +19,7 @@ Template Name: GsgEnergy
 				</div>
 			</div>
 			<div class="row"></div>
-			<img class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
+			<img class="decorCircle" src="<?php // echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
 		</div> <!--.borderBlock-->
 	</section> <!-- .headerSection-->
 
@@ -52,7 +50,7 @@ Template Name: GsgEnergy
 			<div class="row"><div class="col-sm-12 col-md-6"><h4 class="gsg-energy__title">מפת מתווה גז ארצית | ישראל</h4></div></div>
 			<div class="row d-flex no-gutters">
 				<div class="col-md-8 col-sm-12">
-				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
+				    <div class="gsg-energy__map" style="background: url(<?php // echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
 				    </div>
 				</div>
 				<div class="col-md-4 col-sm-12">

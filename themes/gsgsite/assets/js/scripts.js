@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+  $('.headerSection .borderBlock').addClass('animated');
+
   if ($('#wwd'). length > 0) {
     setTimeout(function () {
       $('#wwd').addClass('animateStart');
@@ -7,7 +9,7 @@ jQuery(document).ready(function ($) {
 
   if ($('.partneers').length > 0) {
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
-      rtl: true,
+      // rtl: true,
       slidesToShow: 7,
       arrows: false,
       variableWidth: true,
@@ -63,23 +65,25 @@ jQuery(document).ready(function ($) {
   initSidebarMailButton();
 
 
-  // function initBarkanSlider() {
-  //   let padding = $('.container').first().offset().left + 15;
-  //   $('.barkan-slider').css({
-  //     'transform': `translateX(-`+padding+`px)`,
-  //   });
-  //   $('.barkan-slider__img').slick({
-  //     slidesToShow: 2,
-  //     slidesToScroll: 2,
-  //     prevArrow: '<button type="button" class="slick-prev">\<</button>',
-  //     nextArrow: '<button type="button" class="slick-next">\></button>',
-  //   });
-  //   $('.barkan-slider__img .slick-prev').css('left', padding);
-  //
-  //   // projSimple
-  //   $('.houseScreen').css('padding-right', padding);
-  // }
-  // initBarkanSlider();
+  function initBarkanSlider() {
+    let padding = $('.container').first().offset().left + 15;
+    $('.barkan-slider').css({
+      'transform': `translateX(-`+padding+`px)`,
+    });
+    $('.barkan-slider__img').slick({
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      prevArrow: '<button type="button" class="slick-prev">\<</button>',
+      nextArrow: '<button type="button" class="slick-next">\></button>',
+    });
+    $('.barkan-slider__img .slick-prev').css('left', padding);
+
+    // projSimple
+    $('.houseScreen').css('padding-right', padding);
+  }
+  if ($('.container').length > 0) {
+    initBarkanSlider();
+  }
 
   function initHeaderWordsAnimations() {
     let title = $.trim($('header .header__title, .headerSection .borderBlock .row .title').text());
