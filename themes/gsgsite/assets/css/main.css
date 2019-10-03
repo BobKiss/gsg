@@ -451,6 +451,12 @@ header{
   flex-direction: column;
   background-color: #030000;
   padding: 7%;
+  position: relative;
+}
+.aboutUsPageWrapper .aboutMap .additionalImage {
+  position: absolute;
+  top: 105px;
+  left: -40px;
 }
 .aboutUsPageWrapper .aboutMap .mapTitle {
   font-size: 48px;

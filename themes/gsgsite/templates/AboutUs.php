@@ -54,6 +54,7 @@ Template Name: About Us
             </div>
           </div>
           <div class="row"></div>
+          <img class="additionalImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutUsMapCircle.png" alt="">
         </div> <!-- .titleSection -->
       </div>
     </section>
