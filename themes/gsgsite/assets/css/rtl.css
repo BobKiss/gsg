@@ -33,13 +33,13 @@ body{
 .changeLang__item .langName .LangEn{
   display: none !important;
 }
-.header__title {
+/* .header__title {
   text-align: right !important;
-}
-.borderblock:nth-child(2){
+} */
+/* .borderblock:nth-child(2){
   border-left: 2px solid #171111 !important;
   border-right: 0 !important;
-}
+} */
 .blog .header .borderblock {
   border-color: #fff !important;
 }
