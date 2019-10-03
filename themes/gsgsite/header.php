@@ -16,6 +16,33 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+<style type='text/css'>
+	@font-face{
+		font-family: 'almoni';
+		font-weight: 400; /*(regular)*/
+		font-style: normal;
+		src:url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-light-aaa.eot') format('eot'),
+		    url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-light-aaa.woff') format('woff2'),
+			url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-light-aaa.woff2') format('woff');
+	}
+	@font-face{
+		font-family: 'almoni';
+		font-weight: 700; /*(bold)*/
+		font-style: normal;
+		src:url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-regular-aaa.eot') format('eot'),
+		    url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-regular-aaa.woff2') format('woff2'),
+			url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-regular-aaa.woff') format('woff');
+	}
+	@font-face{
+		font-family: 'almoni';
+		font-weight: 900; /*(black)*/
+		font-style: normal;
+		src:url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-bold-aaa.eot') format('eot'),
+		    url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-bold-aaa.woff2') format('woff2'),
+			url('<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/fonts/fonts/almoni-neue-bold-aaa.woff2') format('woff');
+	}
+</style>
+
 
 	<?php wp_head(); ?>
 </head>
