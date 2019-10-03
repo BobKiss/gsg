@@ -15,11 +15,11 @@ get_header();
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="borderblock"></div>
-					<div class="borderblock"><h2 class="header__title">
+					<div class="blog__borderblock"></div>
+					<div class="blog__borderblock"><h2 class="header__title">
 					    <?php echo the_title(); ?>
 					</h2></div>
-					<div class="borderblock">
+					<div class="blog__borderblock">
 					    <img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="blogcircle">
 					</div>
 				</div>
@@ -28,7 +28,7 @@ get_header();
 	</header> <!-- headerSection-->
 	<section id="blogpage" class="blogpage">
 		<div class="container">
-			<h4 class="blogpage__title">איך מתמודדים עם דייר סרבן ?  תמ”א 38  |
+			<h4 class="blogpage__title">איך מתמודדים עם דייר סרבן ?  תמ”א 38
 				<span>מאת מעיין בכר
 				</span>
 			</h4>

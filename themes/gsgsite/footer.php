@@ -57,15 +57,12 @@
     		    <div class="row">
     		        <div class="col-12 d-flex justify-content-center">
     		            <a href="<?php echo get_bloginfo('url') ?>" class="footer__logo">
-    		                <img <img src="<?php bloginfo('template_url'); ?>/assets/images/WhiteLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+    		                <img src="<?php bloginfo('template_url'); ?>/assets/images/WhiteLogo.png" alt="<?php echo get_bloginfo('name') ?>">
     	                </a>
     		        </div>
     		    </div>
     	    <a href="#" class="footer__upbtn">
-						<!-- upbtn.svg is breaking page it's not svg -->
-    	       <!-- <object type="image/svg+xml" data="SvgImg.svg" width="100" height="100">
     	           <img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.svg" width="100" height="100" alt="image format png" />
-            	</object> -->
     		</a>
     	</div>
 	</footer><!-- #colophon -->
