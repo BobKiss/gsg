@@ -1,27 +1,3 @@
-/* Fonts */
-
-@font-face{
-    font-family: 'asimon';
-    font-weight: 400; /*(regular)*/
-    font-style: normal;
-    src: url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-regular-aaa.woff2') format('woff2'),
-        url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-regular-aaa.woff') format('woff') format('woff');
-}
-@font-face{
-    font-family: 'asimon';
-    font-weight: 700; /*(bold)*/
-    font-style: normal;
-     src: url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-bold-aaa.woff2') format('woff2'),
-        url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-bold-aaa.woff') format('woff') format('woff');
-}
-@font-face{
-    font-family: 'asimon';
-    font-weight: 900; /*(black)*/
-    font-style: normal;
-     src: url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-black-aaa.woff2') format('woff2'),
-        url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-black-aaa.woff') format('woff') format('woff');
-}
-
 /* Homepage */
 
 body{
