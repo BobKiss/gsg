@@ -1,31 +1,7 @@
-/* Fonts */
-
-@font-face{
-    font-family: 'asimon';
-    font-weight: 400; /*(regular)*/
-    font-style: normal;
-    src: url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-regular-aaa.woff2') format('woff2'),
-        url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-regular-aaa.woff') format('woff') format('woff');
-}
-@font-face{
-    font-family: 'asimon';
-    font-weight: 700; /*(bold)*/
-    font-style: normal;
-     src: url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-bold-aaa.woff2') format('woff2'),
-        url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-bold-aaa.woff') format('woff') format('woff');
-}
-@font-face{
-    font-family: 'asimon';
-    font-weight: 900; /*(black)*/
-    font-style: normal;
-     src: url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-black-aaa.woff2') format('woff2'),
-        url('<?php bloginfo('template_url'); ?>/assets/fonts/fonts/asimon-black-aaa.woff') format('woff') format('woff');
-}
-
 /* Homepage */
 
 body{
-    font-family: 'asimon', 'Dosis', sans-serif !important;
+    font-family: 'almoni', 'Dosis', sans-serif !important;
     /*overflow: hidden;*/
     direction: ltr;
 }
@@ -1160,8 +1136,8 @@ font-weight: 400;
     text-align: right;
     font-size: 26px;
     line-height: 32px;
-    letter-spacing: 1px;
-    font-weight: 700;
+    letter-spacing: 2px;
+    font-weight: 900;
 }
 .contactus__area textarea{
     width: 100%;
@@ -1171,6 +1147,10 @@ font-weight: 400;
     height: 214px;
     border-radius: 0;
     resize: none;
+    font-weight: 900;
+    color: #c0c0c0;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 .contactus__wrap{
     padding-top: 48px;
@@ -1193,6 +1173,10 @@ font-weight: 400;
     border: none;
     padding-right: 10px;
     border-radius: 0;
+    font-weight: 900;
+    color: #c0c0c0;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 .contactus__area{
     padding-right: 24px;
@@ -1203,7 +1187,7 @@ font-weight: 400;
     line-height: 25px;
     margin-top: 25px;
     background: none;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 0;
 }
 .contactus__links{
@@ -1686,6 +1670,7 @@ font-weight: 400;
 .footer__wrap{
     width: 1200px;
     margin: 0 auto;
+    font-weight: 700;
 }
 .footer__menu{
     border-bottom: 2px solid #8e8686;
@@ -1749,16 +1734,16 @@ font-weight: 400;
     top: 0;
     left: 0; */
     margin-top: 130px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .barkan-header__img img{
     width: 100%;
     height: 620px;
 }
 .barkan-header__text{
-    font-size: 24px;
+    font-size: 26px;
     color: #231f20;
-    font-weight: bold;
+    font-weight: 400;
     text-align: right;
 }
 .barkan-about{
@@ -1774,7 +1759,8 @@ font-weight: 400;
     margin-top: 50px;
     border-bottom: 2px solid  #231f20;
     color: #231f20;
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 900;
 }
 .barkan-about__text{
     margin: 25px 0;
@@ -1783,6 +1769,13 @@ font-weight: 400;
 .barkan-about__stattext{
     font-size: 20px;
     line-height: 20px;
+}
+.barkan-about__stattext strong{
+    font-weight: 900;
+    padding-left: 5px;
+}
+.barkan-about__stattext p{
+    font-weight: 900;
 }
 .barkan-about__statline{
     max-width: 700px;
@@ -1833,8 +1826,10 @@ font-weight: 400;
     border: 2px solid  #231f20;
     /* border-left: none; */
     font-size: 18px;
-    padding: 2px 6px;
+    padding: 2px 22px;
     margin-top: 64px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 .barkan-slider{
     padding-top: 100px;
