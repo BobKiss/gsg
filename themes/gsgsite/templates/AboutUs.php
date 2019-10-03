@@ -60,7 +60,7 @@ Template Name: About Us
 
     <section class="activityAreas">
       <div class="titleContainer">
-        <div class="title">Shaham Crystal Group | Areas of activity</div>
+        <div class="title">קבוצת גביש שחם | תחומי פעילות</div>
       </div>
 
       <div class="titleContainer content">
@@ -83,7 +83,7 @@ Template Name: About Us
 
     <section class="managmentBoard">
       <div class="titleContainer">
-        <div class="title">Shaham Crystal Group | Management board</div>
+        <div class="title">קבוצת גביש שחם | הנהלה</div>
       </div>
 
       <div class="container">
@@ -107,7 +107,7 @@ Template Name: About Us
 
     <section class="partneers">
       <div class="titleContainer">
-        <div class="title">Partners in the Road</div>
+        <div class="title">שותפים לדרך</div>
       </div>
 
       <div class="sliderPartneers">

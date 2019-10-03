@@ -157,6 +157,7 @@ justify-content: flex-end;
 }
 [dir="rtl"] .clientItemHome p{
 	max-width: 75%;
+  direction: ltr;
 }
 [dir="rtl"] .sideMenuWrapper .sideMenuContent li.menu-item-has-children a{
 	text-align: right;
@@ -347,7 +348,7 @@ header{
     font-weight: bold;
     text-transform: uppercase;
     margin: auto 0;
-    max-width: 610px;
+    max-width: 767px;
 }
 .blog .header .borderblock {
     border-color: #fff;
@@ -520,6 +521,8 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  direction: rtl;
+  text-align: right;
 }
 .aboutUsPageWrapper .activityAreas .singleParagraph {
   flex-basis: calc(50% - 50px);
@@ -557,6 +560,8 @@ header{
   display: flex;
   flex-direction: column;
   flex-basis: calc(33% - 30px);
+  direction: rtl;
+text-align: right;
 }
 .aboutUsPageWrapper .managmentBoard .member .image {
   display: flex;
