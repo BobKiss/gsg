@@ -1,8 +1,9 @@
 jQuery(document).ready(function ($) {
 
-  // if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
-  //   $('head').append('<meta name="mobile-web-app-capable" content="yes">');
-  // }
+  if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
+    $('head').append('<meta name="mobile-web-app-capable" content="yes">');
+    $('.vimeo-wrapper iframe').remove();
+  }
 
   if ($('#wwd'). length > 0) {
     setTimeout(function () {
@@ -127,15 +128,16 @@ jQuery(document).ready(function ($) {
         $(selectedTitle).find('span').addClass('animationTriggered');
       }, 100);
     });
-    $('.headerSection .borderBlock').addClass('animated');
+    $('.headerSection .borderBlock, .borderblockWrapper').addClass('animated');
+    $('.site > .logo, .clientsBlock, .sideMenu, .header__round_text').addClass('visible');
 
   }
 
-  if ($('.vimeo-wrapper').length > 0) {
+  if ($('.vimeo-wrapper iframe').length > 0) {
     $(".vimeo-wrapper iframe").ready(function () {
       setTimeout(function () {
         initHeaderWordsAnimations('header .header__title');
-      }, 1000);
+      }, 1500);
     });
   } else {
     initHeaderWordsAnimations('header .header__title, .headerSection .borderBlock .row .title, .archive .headerSection .borderBlock.hebrew .row .littleTitle');
