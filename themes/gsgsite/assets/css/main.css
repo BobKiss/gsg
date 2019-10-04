@@ -2671,8 +2671,8 @@ transform:rotate(360deg);}
     right: 2%;
   }
   .energy__borderBlock{
+
     width: 84% !important;
-    height: 70vh;
     margin-top: 60px;
   }
 
@@ -2690,7 +2690,8 @@ transform:rotate(360deg);}
     font-size: 90px;
   }
   .decorCircle__energy{
-    width: 300px;
+    max-width: 19vh;
+    width: 100%;
   }
   .gsg-energy__intro{
     display: block;
@@ -2703,6 +2704,19 @@ transform:rotate(360deg);}
 @media screen and (max-width: 768px){
     .vimeo-wrapper img {
       display: block;
+    }
+    .sideMenuWrapper .sideMenuContent .infoRow {
+      overflow: scroll;
+      padding: 0 50px;
+    }
+    .sideMenuWrapper .sideMenuContent .infoCol {
+      min-width: 150px;
+    }
+    .sideMenuWrapper .sideMenuContent .menuBlock {
+      padding: 25px;
+    }
+    .headerSection .borderBlock.animated .row:nth-child(3) {
+      overflow: hidden;
     }
     .sideMenu .mailBlock .popup {
       position: fixed;
@@ -2867,6 +2881,9 @@ transform:rotate(360deg);}
     }
     .sideMenuWrapper .sideMenuContent {
       padding: 20px 50px;
+      margin-top: 0;
+      padding-right: 51px;
+      padding-left: 24px;
     }
     .borderblockWrapper {
       padding-left: 0;
@@ -2926,7 +2943,7 @@ transform:rotate(360deg);}
 
    .sn-contactus__title{
       font-size: 24px;
-      
+
   }
 
 }
@@ -2944,7 +2961,7 @@ transform:rotate(360deg);}
   }
   .sn-contactus__title{
       font-size: 22px;
-      
+
   }
 
 }
