@@ -2166,6 +2166,7 @@ font-weight: 400;
   right: 0;
   font-size: 60px;
   letter-spacing: 1px;
+  padding-right: 30px;
 }
 .big-projects-list .list-item .item-info{
   display: flex;
