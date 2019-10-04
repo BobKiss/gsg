@@ -3,7 +3,6 @@ jQuery(document).ready(function ($) {
   if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
     $('head').append('<meta name="mobile-web-app-capable" content="yes">');
     $('.vimeo-wrapper iframe').remove();
-    $('header').empty().insert(window.innerHeight);
   }
 
   if ($('#wwd'). length > 0) {
