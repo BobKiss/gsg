@@ -1,5 +1,4 @@
 jQuery(document).ready(function ($) {
-  $('.headerSection .borderBlock').addClass('animated');
 
   // if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
   //   $('head').append('<meta name="mobile-web-app-capable" content="yes">');
@@ -95,39 +94,52 @@ jQuery(document).ready(function ($) {
     initBarkanSlider();
   }
 
-  function initHeaderWordsAnimations() {
-    let title = $.trim($('header .header__title, .headerSection .borderBlock .row .title').text());
-    title = title.split('');
-    $('.headerSection .borderBlock .row .title, header .header__title').empty();
-    title.forEach(function (item, i, arr) {
-      if (item == '\\') {
-        if (arr[i+1] == 'n') {
-          arr.splice(i+1, 1);
-          arr[i] = '<br>';
+  function initHeaderWordsAnimations(selectors) {
+    selectors = selectors.split(',');
+    selectors.forEach(function (selectedTitle) {
+      let title = $.trim($(selectedTitle).text());
+      title = title.split('');
+      $(selectedTitle).empty();
+      title.forEach(function (item, i, arr) {
+        if (item == '\\') {
+          if (arr[i+1] == 'n') {
+            arr.splice(i+1, 1);
+            arr[i] = '\n';
+          }
         }
-      }
+      });
+
+
+      title.forEach(function (el, i, arr) {
+        // console.log('el', el);
+        if (el == '\n') {
+          console.log('N');
+          $(selectedTitle).append(`<span class="br"></span>`);
+        }
+        if (el == ' ') {
+          $(selectedTitle).append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >&nbsp;</span>`);
+        } else {
+          $(selectedTitle).append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >${el}</span>`);
+        }
+      });
+
+      setTimeout(function () {
+        $(selectedTitle).find('span').addClass('animationTriggered');
+      }, 100);
     });
+    $('.headerSection .borderBlock').addClass('animated');
 
-
-    title.forEach(function (el, i, arr) {
-      if (el == '<br>') {
-        $('.headerSection .borderBlock .row .title, header .header__title').append(`<br>`);
-      }
-      if (el == ' ') {
-        $('.headerSection .borderBlock .row .title, header .header__title').append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >&nbsp;</span>`);
-      } else {
-        $('.headerSection .borderBlock .row .title, header .header__title').append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >${el}</span>`);
-      }
-    });
-
-    setTimeout(function () {
-      $('.headerSection .borderBlock .row .title span, header .header__title span').addClass('animationTriggered');
-    }, 100);
-
-    console.log('title', title);
   }
 
-  initHeaderWordsAnimations();
+  if ($('.vimeo-wrapper').length > 0) {
+    $(".vimeo-wrapper iframe").ready(function () {
+      setTimeout(function () {
+        initHeaderWordsAnimations('header .header__title');
+      }, 1000);
+    });
+  } else {
+    initHeaderWordsAnimations('header .header__title, .headerSection .borderBlock .row .title, .archive .headerSection .borderBlock.hebrew .row .littleTitle');
+  }
 
 
 
@@ -136,4 +148,42 @@ jQuery(document).ready(function ($) {
       e.preventDefault();
     });
   }
+
+
+
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
 });

@@ -20,7 +20,7 @@ get_header();
        <div class="row">
          <div class="title">חילוץ פרוייקט \nממשבר - חלק א’</div>
          <div class="littleTitle">
-           תמ"א 38 והתחדשות עירונית 
+           תמ"א 38 והתחדשות עירונית
          </div>
        </div>
        <div class="row"></div>

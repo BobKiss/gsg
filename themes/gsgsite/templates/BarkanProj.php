@@ -114,8 +114,14 @@ Template Name: Barkan Project
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
+			 <div class="contactsus-after-line">
+				 <div><a href="#">< לפרוייקט הקודם</a></div>
+				 <div class="middleText">חזרה לעמוד פרוייקטים מיידיים</div>
+				 <div><a href="#">לפרוייקט הבא ></a></div>
+			 </div>
 		</div>
 	</section>
+
 
 </div>
 
