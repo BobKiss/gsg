@@ -2709,6 +2709,19 @@ transform:rotate(360deg);}
       overflow: scroll;
       padding: 0 50px;
     }
+    .sideMenuWrapper .sideMenuContent .main-navigation a {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .sideMenuWrapper .sideMenuContent li.menu-item-has-children {
+      position: relative;
+    }
+    .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after {
+      font-size: 10px;
+      top: 2px;
+      right: -11px;
+    }
     .sideMenuWrapper .sideMenuContent .infoCol {
       min-width: 150px;
     }
