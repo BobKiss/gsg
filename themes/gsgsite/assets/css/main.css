@@ -269,14 +269,18 @@ header{
   height: 0;
   bottom: calc(100% - 140px);
   max-height: 140px;
+}
+.borderblockWrapper.animated .borderblock:nth-child(1)::before {
   animation: borderTopLeft 0.25s 0.25s;
   animation-fill-mode: forwards;
 }
-.borderblockWrapper .borderblock:nth-child(1){
+.borderblockWrapper .borderblock:nth-child(1) {
   width: 0%;
   max-width: 100%;
   border: 0;
   border-top: 2px solid #171111;
+}
+.borderblockWrapper.animated .borderblock:nth-child(1) {
   animation: borderTop 0.25s 0.5s;
   animation-fill-mode: forwards;
 }
@@ -286,6 +290,8 @@ header{
   top: 0;
   right: 0;
   max-height: 140px;
+}
+.borderblockWrapper.animated .borderblock:nth-child(1)::after {
   animation: borderTopRight 0.25s 0.75s cubic-bezier(0, 0, 0, 0);
   animation-fill-mode: forwards;
 }
@@ -301,6 +307,8 @@ header{
   top: 0;
   height: 0;
   width: 2px;
+}
+.borderblockWrapper.animated .borderblock:nth-child(2)::after {
   animation: borderRight 0.25s 1s cubic-bezier(0, 0, 0, 0);
   animation-fill-mode: forwards;
 }
@@ -314,6 +322,8 @@ header{
   width: 2px;
   height: 0;
   max-height: 140px;
+}
+.borderblockWrapper.animated .borderblock:nth-child(3)::after {
   animation: borderBottomRight 0.25s 1.25s cubic-bezier(0, 0, 0, 0);
   animation-fill-mode: forwards;
 }
@@ -325,6 +335,8 @@ header{
   height: 2px;
   bottom: 0;
   background-color: #171111;
+}
+.borderblockWrapper.animated .borderblock:nth-child(3) .bottomLine {
   animation: borderBottom 0.5s 1.5s;
   animation-fill-mode: forwards;
 }
@@ -334,6 +346,8 @@ header{
   width: 2px;
   height: 0;
   max-height: 140px;
+}
+.borderblockWrapper.animated .borderblock:nth-child(3)::before {
   animation: borderBottomLeft 0.5s 2s;
   animation-fill-mode: forwards;
 }
@@ -363,9 +377,11 @@ header{
 }
 .homepageContainer .header__title span {
   line-height: 0.8;
+  color: #171111;
 }
 .homepageContainer .header__title {
   padding: 20px 0px;
+  color: transparent;
 }
 .blog .header .borderblock {
     border-color: #fff;
