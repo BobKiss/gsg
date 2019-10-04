@@ -1292,6 +1292,7 @@ font-weight: 400;
     padding-top: 140px;
     padding-bottom: 90px;
     background: #fff600;
+    direction: rtl;
 }
 .sn-contactsus, .gsgenergy {
     background: #fffefe;
@@ -1304,9 +1305,10 @@ font-weight: 400;
     width: 50%;
     text-align: right;
     font-size: 26px;
-    line-height: 32px;
+    line-height: 42px;
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
  .sn-contactsus textarea, .sn-contactsus input{
     background: #f4f4f4;
@@ -1372,7 +1374,7 @@ font-weight: 400;
 .contactus__title{
     text-align: right;
     font-size: 26px;
-    line-height: 32px;
+    line-height: 22px;
     letter-spacing: 2px;
     font-weight: 900;
 }
