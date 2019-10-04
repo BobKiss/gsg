@@ -1,14 +1,16 @@
 <?php
 /*
-Template Name: Barkan Project
+Template Name: Barkan Project 2
 */
 ?>
 <?php get_header(); ?>
 
-<div class="page barkanPAGE">
+<div class="page">
 	<!-- SectionContacts -->
 	<section class="barkan-header">
-
+	    <a href="<?php echo get_bloginfo('url') ?>" class="logo">
+			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+		</a>
 		<div class="container">
 			<div class="row d-flex no-gutters">
 				<div class="col-12 barkan-header__img">
@@ -51,25 +53,13 @@ Template Name: Barkan Project
 	</section>
 
 	<section class="barkan-slider">
-		<div class="barkan-slider__img">
-			<div>
-				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg">
-				</div>
-			</div>
-			<div>
-				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg">
-				</div>
-			</div>
-			<div>
-				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg">
-				</div>
-			</div>
-			<div>
-				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg">
+		<div class="container">
+			<div class="barkan-slider__wrap">
+				<div class="row no-gutters inline-block">
+					<div class="col-9"><div class="barkan-slider__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg"></div></div>
+					<div class="col-3 barkan-slider__img"><div class="barkan-slider__img barkan-slider__img_left"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg"></div></div>
+					<span class="barkan-slider__toggle_left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+					<span class="barkan-slider__toggle_right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
 				</div>
 			</div>
 		</div>
@@ -114,14 +104,8 @@ Template Name: Barkan Project
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
-			 <div class="contactsus-after-line">
-				 <div><a href="#">< לפרוייקט הקודם</a></div>
-				 <div class="middleText">חזרה לעמוד פרוייקטים מיידיים</div>
-				 <div><a href="#">לפרוייקט הבא ></a></div>
-			 </div>
 		</div>
 	</section>
-
 
 </div>
 

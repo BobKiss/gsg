@@ -23,7 +23,7 @@ Template Name: Long-Term Projects
                   </div>
 
                 <?php endif; ?>
-                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?php _e('View project','Gsg'); ?></p></a>
+                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content">הצג פרוייקט</p></a>
               </div>
             </div>
           </div>

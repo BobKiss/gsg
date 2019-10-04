@@ -53,6 +53,12 @@ jQuery(document).ready(function ($) {
     	$(this).parent().children(".item-info").removeClass('hovered');
     });
 
+    $('.small-list-items-wrapper .list-item .item-desc .view-btn').hover(function(e){
+        	$(this).parent().children(".item-content-block").children(".item-info").addClass('hovered');
+        }, function() {
+        	$(this).parent().children(".item-content-block").children(".item-info").removeClass('hovered');
+        });
+
   function initSidebarMailButton() {
     $('.sideMenu .mailBlock a.sideMenuMail').click(function (e) {
       e.preventDefault();
