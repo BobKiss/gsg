@@ -44,7 +44,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</header> <!-- headerSection--> -->
+	</header> headerSection--> 
 
 	<section id="archivepage" class="archivepage">
 		<div class="container">
