@@ -23,11 +23,11 @@ Template Name: Connect From
                   </div>
 
                 <?php endif; ?>
-                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?php _e('View project','Gsg'); ?></p></a>
+                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"></p></a>
               </div>
             </div>
           </div>
-          <div class="item-meta__connect"><?php the_sub_field('project_name'); ?></div>
+          <div class="item-meta__connect"><span><?php the_sub_field('project_name'); ?></span></div>
       </div>
         <?php
         endwhile;

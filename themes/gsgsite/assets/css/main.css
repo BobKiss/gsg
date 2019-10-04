@@ -2147,7 +2147,6 @@ font-weight: 400;
 }
 .big-projects-list .list-item .item-meta__connect{
   color: #231f20;
-  margin-top: 10px;
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
@@ -2155,10 +2154,11 @@ font-weight: 400;
   width: 100%;
   background: #fffc00;
   padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
 }
-.big-projects-list .list-item .item-meta__connect:before{
+.big-projects-list .list-item .item-meta__connect:after{
   content:'2019';
-  text-align: left;
 }
 .big-projects-list .list-item .item-info{
   display: flex;
