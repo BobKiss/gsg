@@ -113,22 +113,7 @@ Template Name: Barkan Project
 
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
-			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
-			<div class="row contactus__wrap d-flex no-gutters">
-				<div class="col-md-6 col-sm-12">
-					<div class="contactus__inp">
-						<input type="text" id="fname" name="firstname" placeholder="שם">
-						<input type="text" id="lname" name="lastname" placeholder="טלפון">
-						<input type="mail" id="mail" name="mail" placeholder="מייל">
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="contactus__area">
-						<textarea id="subject" name="subject" placeholder="כתבו לנו" style="height:210px;"></textarea>
-						<input type="submit" value="שלח >" class="contactus_btn">
-					</div>
-				</div>
-			</div>
+			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 		</div>
 	</section>
 

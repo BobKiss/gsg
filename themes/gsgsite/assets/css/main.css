@@ -2236,6 +2236,15 @@ font-weight: 400;
   height: 50%;
   transform: translateX(-99px);
 }
+.container-1,
+.container-2{
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+
+
 .small-projects-list{
   background-color: #fff600;
 }
@@ -2265,9 +2274,20 @@ font-weight: 400;
   width: 100%;
   min-width: 435px;
   padding: 40px;
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
+      overflow: hidden;
   margin-right: auto;
   text-align: left;
   direction: ltr;
+}
+.small-projects-list .list-item .item-info.hovered{
+  padding: 40px;
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+  transition: .5s;
 }
 [dir="rtl"] .small-projects-list .list-item .item-info{
   text-align: right;
@@ -2323,9 +2343,38 @@ font-weight: 400;
 }
 
 
-
-
-
+.caldera-grid .last_col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.caldera-grid .first_row .form-control{
+  resize: none;
+  background-color: #f4f4f4;
+  border: none;
+  box-shadow: none !important;
+  text-align: right;
+  direction: rtl;
+  min-height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.caldera-grid .last_row .btn{
+  padding: 3px 17px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+  direction: rtl;
+  border: 1px solid black;
+}
+.caldera-grid .form-group{
+  position: relative;
+  margin-bottom: 10px !important;
+}
+.caldera-grid .help-block{
+  position: absolute;
+  top: 0;
+}
 
 
 
@@ -2502,6 +2551,35 @@ transform:rotate(360deg);}
 @media screen and (max-width: 768px){
     .sideMenu{
         top: 0;
+    }
+    .sn-contactsus .container{
+      padding: 0 20px;
+    }
+    .sn-contactsus, .gsgenergy{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .gsg-energy__map{
+      height: 265px;
+    }
+    .caldera-grid .row{
+      max-width: unset !important;
+    }
+    .caldera-grid .first_row{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .caldera-grid textarea.form-control{
+      padding-right: 12px !important;
+    }
+    .gsg-energy__intro-wrap{
+      height: 364px;
+      padding: 20px;
+    }
+    .gsg-energy__intro{
+      height: 48%;
+      align-items: center;
+      line-height: 46px;
     }
     [dir="rtl"] .clientsBlock{
       direction: ltr;
