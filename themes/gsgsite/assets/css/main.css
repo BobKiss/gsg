@@ -2238,7 +2238,7 @@ font-weight: 400;
   line-height: 30px;
   text-align: right;
 }
-.big-projects-list .list-item .item-meta__connect{
+.item-meta__connect{
   color: #231f20;
   font-size: 26px;
   font-weight: 700;
@@ -2253,7 +2253,7 @@ font-weight: 400;
 .big-projects-list .list-item .item-meta__connect:after{
   content:'2019';
 }
-.big-projects-list .list-item .connect__projname{
+.connect__projname{
   position: absolute;
   bottom: 0;
   right: 0;
