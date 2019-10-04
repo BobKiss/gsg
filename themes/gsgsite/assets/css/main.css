@@ -2695,6 +2695,11 @@ transform:rotate(360deg);}
       flex-direction: row;
       justify-content: space-between;
     }
+    header {
+      position: absolute;
+      width: 100%;
+      top: 0;
+    }
     .clientItemHome {
       position: relative;
       margin-bottom: 0;
