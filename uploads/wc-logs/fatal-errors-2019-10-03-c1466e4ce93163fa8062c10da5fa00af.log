@@ -8,3 +8,7 @@ Stack trace:
 #4 C:\wamp64\www\gsg.coelix.live\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
 #5 C:\wamp64\www\gsg.coelix.live\wp-includes\post.php in C:\wamp64\www\gsg.coelix.live\wp-content\plugins\sitepress-multilingual-cms\classes\translations\class-wpml-translation-element.php on line 28
 
+2019-10-03T17:34:53+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\wamp64\www\gsg.coelix.live\wp-includes\wp-db.php on line 2007
+
+2019-10-03T17:55:59+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\gsg.coelix.live\wp-content\themes\gsgsite\single.php on line 96
+

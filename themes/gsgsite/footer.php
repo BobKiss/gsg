@@ -44,12 +44,12 @@
     		            <div class="footer__links_item">מייל <span class="footer__menu_sep"></span>office@gsg.co.il</div>
     		            <div class="footer__links_item" style="color:white;"><a href="#">ENGLISH</a><span class="footer__menu_sep"></span><a href="#" style="margin-left:14px;">HEBREW</a>Change language</div>
     		            <div class="footer__links_item" style="color:white;">
-    		                <a href="#" style="margin-left:10px;">
+    		                <a href="https://www.facebook.com/gavish.shaham/" style="margin-left:10px;">
     		                    <svg type="image/svg+xml" data="SvgImg.svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/fb-white.svg" width="30" height="30" alt="image format png" />
                                 </svg>
     		                </a>
-    		                <a href="#" style="margin-left:10px;">
+    		                <a href="https://www.instagram.com/gavish_shaham_group/" style="margin-left:10px;">
     		                    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/insta-white.svg" width="30" height="30" alt="image format png" />
                                 </svg>
@@ -61,15 +61,12 @@
     		    <div class="row">
     		        <div class="col-12 d-flex justify-content-center">
     		            <a href="<?php echo get_bloginfo('url') ?>" class="footer__logo">
-    		                <img <img src="<?php bloginfo('template_url'); ?>/assets/images/WhiteLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+    		                <img src="<?php bloginfo('template_url'); ?>/assets/images/WhiteLogo.png" alt="<?php echo get_bloginfo('name') ?>">
     	                </a>
     		        </div>
     		    </div>
     	    <a href="#" class="footer__upbtn">
-						<!-- upbtn.svg is breaking page it's not svg -->
-    	       <!-- <object type="image/svg+xml" data="SvgImg.svg" width="100" height="100">
     	           <img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.svg" width="100" height="100" alt="image format png" />
-            	</object> -->
     		</a>
     	</div>
 	</footer><!-- #colophon -->
