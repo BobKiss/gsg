@@ -13,15 +13,17 @@ Template Name: Supervision
 		<a href="<?php echo get_bloginfo('url') ?>" class="logo">
 			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
 		</a>
-		<div class="borderBlock container">
+		<div class="borderBlock container borderWhite big hebrew">
 			<div class="row"></div>
 			<div class="row">
 				<div class="title">
-					<?php echo the_title(); ?>
-				</div>
+          ניהול ופיקוח
+        </div>
 			</div>
 			<div class="row"></div>
-			<img class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
+      <div class="decorCircle">
+        <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorCrysis.png" alt="decorAbout">
+      </div>
 		</div> <!--.borderBlock-->
 	</section> <!-- .headerSection-->
 

@@ -11,7 +11,25 @@ get_header();
 ?>
 
  <div class="archive">
-    <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
+   <section class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
+     <a href="<?php echo get_bloginfo('url') ?>" class="logo">
+       <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+     </a>
+     <div class="borderBlock container borderWhite hebrew">
+       <div class="row"></div>
+       <div class="row">
+         <div class="title">חילוץ פרוייקט \nממשבר - חלק א’</div>
+         <div class="littleTitle">
+           תמ"א 38 והתחדשות עירונית 
+         </div>
+       </div>
+       <div class="row"></div>
+       <div class="decorCircle">
+         <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog.png" alt="decorAbout">
+       </div>
+     </div> <!--.borderBlock-->
+   </section> <!-- .headerSection-->
+    <!-- <header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -26,7 +44,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</header> <!-- headerSection-->
+	</header> <!-- headerSection--> -->
 
 	<section id="archivepage" class="archivepage">
 		<div class="container">
