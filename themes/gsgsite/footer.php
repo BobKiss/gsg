@@ -65,7 +65,7 @@
     	                </a>
     		        </div>
     		    </div>
-    	    <a href="#" class="footer__upbtn">
+    	    <a href="#page" class="footer__upbtn">
     	           <img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.png" width="100" height="100" alt="image format png" />
     		</a>
     	</div>

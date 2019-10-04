@@ -128,9 +128,15 @@ Template Name: Barkan Project
 						<input type="submit" value="שלח >" class="contactus_btn">
 					</div>
 				</div>
+				<div class="contactsus-after-line">
+					<div><a href="#">< לפרוייקט הקודם</a></div>
+					<div class="middleText">חזרה לעמוד פרוייקטים מיידיים</div>
+					<div><a href="#">לפרוייקט הבא ></a></div>
+				</div>
 			</div>
 		</div>
 	</section>
+
 
 </div>
 

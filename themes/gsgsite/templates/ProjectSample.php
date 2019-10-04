@@ -35,7 +35,8 @@ Template Name: Sample Project Page
 					<h5 class="barkan-about__title">
 						אורנית BU  | פירוט הפרוייקט
 					</h5>
-					<p class="barkan-about__text">110 דופלקסים למכירה ביישוב אורנית | גודל דופלקס החל מ180 מ”ר ועד 270 מ”ר | מחיר הדופלקס כולל מפרט איכותי ועשיר | אפשרות לתוספת חבילות פרימיום וקונספט לשדרוג חווית המגורים | אפשרות לתוספת בריכה | אפשרות לתופסת קומת מרתף.
+					<p class="barkan-about__text">
+						110 דופלקסים למכירה ביישוב אורנית | גודל דופלקס החל מ180 מ”ר ועד 270 מ”ר | מחיר הדופלקס כולל מפרט איכותי ועשיר | אפשרות לתוספת חבילות פרימיום וקונספט לשדרוג חווית המגורים | אפשרות לתוספת בריכה | אפשרות לתופסת קומת מרתף.
 <br>
 <br>
 תכנון | גביש שחם
@@ -48,10 +49,10 @@ Template Name: Sample Project Page
 					</h5>
 					<p class="barkan-about__text">
 						הישוב אורנית הינו ישוב עירוני קהילתי הממוקם במורדות המערביים של הרי השומרון מצפון לראש העין ומזרחית להוד השרון. הישוב מעורב.
-הישוב מורכב ברובו מבתים צמודי קרקע ושוכן לצד נוף יערות קרן קיימת בישראל.
-בישוב מרכז מסחרי, חנויות, בתי קפה, קופ“ח, גני ילדים, בתי ספר, יסודי עד תיכון, מרכזי חוגים, מרכז ספורט ועוד.
-לפי נתוני הלמ"ס נכון לסוף 2016, לאורנית דירוג של 8 מתוך 10, במדד חברתי-כלכלי – אשכול לשנת 2015.
-הישוב ממוקם סמוך לצירים ראשיים (כביש 5 וכביש 6), בקרבת תחנת רכבת ובסביבת מרכזי תעסוקה גדולים, פארק היי-טק מפותח ומרכזי בילוי.
+הישוב מורכב ברובו מבתים צמודי קרקע ושוכן לצד נוף יערות קרן קיימת בישראל. <br>
+בישוב מרכז מסחרי, חנויות, בתי קפה, קופ“ח, גני ילדים, בתי ספר, יסודי עד תיכון, מרכזי חוגים, מרכז ספורט ועוד.<br>
+לפי נתוני הלמ"ס נכון לסוף 2016, לאורנית דירוג של 8 מתוך 10, במדד חברתי-כלכלי – אשכול לשנת 2015.<br>
+הישוב ממוקם סמוך לצירים ראשיים (כביש 5 וכביש 6), בקרבת תחנת רכבת ובסביבת מרכזי תעסוקה גדולים, פארק היי-טק מפותח ומרכזי בילוי.<br>
 					</p>
 				</div>
 			</div>
@@ -88,20 +89,28 @@ Template Name: Sample Project Page
 			<div class="row">
 				<div class="col-md-6 col-12">
 					<h5 class="barkan-about__title">אורנית BU | על הפרוייקט</h5>
-					<p class="barkan-about__text"></p>
+					<p class="barkan-about__text">
+						מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”
+					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
-					<p class="barkan-about__stattext"><strong>גילאי התושבים</strong>| בני 16 עד 45</p>
+					<p class="barkan-about__stattext">
+						<strong>גילאי התושבים</strong> | בני 16 עד 64
+					</p>
 					<div class="barkan-about__statline"><span class="statline_01"></span></div><p>60%</p>
 				</div>
 				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
-					<p class="barkan-about__stattext"><strong>תעסוקה</strong> | צווארון לבן</p>
+					<p class="barkan-about__stattext">
+						<strong>תעסוקה</strong> | צווארון לבן
+					</p>
 					<div class="barkan-about__statline"><span class="statline_02"></span></div><p>42%</p>
 				</div>
 				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
-					<p class="barkan-about__stattext"><strong>השכלה</strong>| אקדמאים</p>
+					<p class="barkan-about__stattext">
+						<strong>השכלה</strong> | אקדמאים
+					</p>
 					<div class="barkan-about__statline"><span class="statline_03"></span></div><p>30%</p>
 				</div>
 			</div>
@@ -140,6 +149,11 @@ Template Name: Sample Project Page
 						<textarea id="subject" name="subject" placeholder="כתבו לנו" style="height:210px;"></textarea>
 						<input type="submit" value="שלח >" class="contactus_btn">
 					</div>
+				</div>
+				<div class="contactsus-after-line">
+					<div><a href="#">< לפרוייקט הקודם</a></div>
+					<div class="middleText">חזרה לעמוד פרוייקטים מיידיים</div>
+					<div><a href="#">לפרוייקט הבא ></a></div>
 				</div>
 			</div>
 		</div>

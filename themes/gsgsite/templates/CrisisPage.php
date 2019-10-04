@@ -17,7 +17,7 @@ Template Name: Crisis Page
       <div class="row"></div>
       <div class="row">
         <div class="title">
-          <?php echo the_title(); ?>
+          ניהול משברים וחילוץ\nפרוייקטים תקועים
         </div>
       </div>
       <div class="row"></div>
@@ -55,7 +55,7 @@ Template Name: Crisis Page
 
   <!-- SectionSN-Contactus -->
 
-  <section id="sn-contactus" class="sn-contactsus">
+  <section id="sn-contactus" class="sn-contactsus sn-contactsus-crisis">
     <div class="container">
       <h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
       <div class="row contactus__wrap d-flex no-gutters">
@@ -74,8 +74,6 @@ Template Name: Crisis Page
         </div>
       </div>
     </div>
-    <a href="#" class="contactus__upbtn"><i class="fa fa-angle-up" aria-hidden="true"></i>
-    </a>
   </section>
 
 </div>
