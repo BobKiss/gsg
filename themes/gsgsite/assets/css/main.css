@@ -31,11 +31,12 @@ a:focus {
 }
 .titleContainer .title {
   display: flex;
-justify-content: flex-end;
+  justify-content: flex-end;
   font-size: 26px;
   position: relative;
   margin-bottom: 90px;
   padding-bottom: 10px;
+  font-weight: 700;
 }
 .titleContainer .title::after {
   max-width: 580px;
@@ -336,12 +337,13 @@ header{
   animation: borderBottomLeft 0.5s 2s;
   animation-fill-mode: forwards;
 }
-.headerSection .borderBlock .row .title span, header .header__title span {
+.headerSection .borderBlock .row span, header .header__title span {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
 }
-.headerSection .borderBlock .row .title span.animationTriggered, header .header__title span.animationTriggered {
+
+.headerSection .borderBlock .row span.animationTriggered, header .header__title span.animationTriggered {
   visibility: visible;
   opacity: 1;
 }
@@ -532,7 +534,7 @@ header{
 .headerSection .borderBlock .row .title {
   font-size: 100px;
   text-align: left;
-  max-width: 650px;
+  max-width: unset;
   font-family: 'Roboto';
   font-weight: bold;
   font-size: 100px;
@@ -560,10 +562,13 @@ header{
 .headerSection .borderBlock.borderWhite .row:nth-child(3)::after {
   background-color: #FEFFFE;
 }
-.headerSection .borderBlock.borderWhite .row .title span {
+.headerSection .borderBlock.borderWhite .row span {
   color: #FEFFFE;
   transform: scale(-1,1);
   display: inline-block;
+}
+.headerSection .borderBlock .row span.br, header .header__title span.br {
+  display: block;
 }
 .archive .headerSection .borderBlock.hebrew .row:nth-child(2) {
   display: -webkit-flex;
@@ -577,11 +582,10 @@ header{
   max-width: 700px;
 }
 .archive .headerSection .borderBlock.hebrew .row .littleTitle {
-  transform: scale(-1,1);
+  text-align: left;
   color: #ffffff;
   font-size: 36px;
   font-weight: normal;
-  text-align: right;
 }
 .headerSection .borderBlock.borderWhite .decorCircle img {
   transform: scale(-1,1);
@@ -672,6 +676,23 @@ header{
   position: absolute;
   top: 105px;
   left: -40px;
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotation;
+  -moz-animation-duration: 36s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: rotation;
+  -o-animation-duration: 36s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  animation-name: rotation;
+  animation-duration: 36s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
 }
 .aboutUsPageWrapper .aboutMap .mapTitle {
   font-size: 48px;
@@ -1299,6 +1320,9 @@ font-weight: 400;
     padding-bottom: 90px;
     position: relative;
 }
+.sn-contactsus-crisis .contactus__wrap {
+  border-bottom: none;
+}
 .sn-contactus__title{
     border-bottom: 2px solid #000;
     width: 50%;
@@ -1391,7 +1415,6 @@ font-weight: 400;
 }
 .contactus__wrap{
     padding-top: 48px;
-    padding-bottom: 54px;
     margin-top: 10px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -1463,6 +1486,29 @@ font-weight: 400;
     font-weight: 400;
     letter-spacing: 1px;
 
+}
+.contactsus-after-line {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  direction: ltr;
+}
+.contactsus-after-line > div {
+  flex-basis: 33%;
+  font-weight: 700;
+}
+.contactsus-after-line > div > a {
+  font-size: 18px;
+  color: #030000;
+}
+.contactsus-after-line > div:nth-child(2) {
+  text-align: center;
+}
+.contactsus-after-line > div:nth-child(3) {
+  text-align: right;
 }
 
 
@@ -1554,7 +1600,6 @@ font-weight: 400;
 .archive .decorCircle{
     position: absolute;
     bottom: 2%;
-    left: -13%;
 }
 .archivepage__img a{
     text-decoration: none;
@@ -1589,7 +1634,6 @@ font-weight: 400;
 .blog .decorCircle{
     position: absolute;
     bottom: 2%;
-    left: -13%;
 }
 .blogpage__title{
     text-align: right;
@@ -1920,7 +1964,7 @@ font-weight: 400;
     top: 0;
     left: 0; */
     margin-top: 130px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .barkan-header__img img{
     width: 100%;
@@ -2014,7 +2058,7 @@ font-weight: 400;
     font-size: 18px;
     padding: 2px 22px;
     margin-top: 64px;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 2px;
 }
 .barkan-slider{

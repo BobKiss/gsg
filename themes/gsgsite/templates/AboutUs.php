@@ -12,8 +12,7 @@ Template Name: About Us
         <div class="row"></div>
         <div class="row">
           <div class="title">
-            WHO WE ARE
-            WHAT WE DO
+            WHO WE ARE\nWHAT WE DO
           </div>
         </div>
         <div class="row"></div>
