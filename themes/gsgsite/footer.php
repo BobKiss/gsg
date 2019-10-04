@@ -66,7 +66,7 @@
     		        </div>
     		    </div>
     	    <a href="#" class="footer__upbtn">
-    	           <img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.svg" width="100" height="100" alt="image format png" />
+    	           <img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.png" width="100" height="100" alt="image format png" />
     		</a>
     	</div>
 	</footer><!-- #colophon -->
