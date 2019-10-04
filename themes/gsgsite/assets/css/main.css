@@ -2160,6 +2160,13 @@ font-weight: 400;
 .big-projects-list .list-item .item-meta__connect:after{
   content:'2019';
 }
+.big-projects-list .list-item .connect__projname{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 60px;
+  letter-spacing: 1px;
+}
 .big-projects-list .list-item .item-info{
   display: flex;
   flex-direction: column;
@@ -2232,6 +2239,7 @@ font-weight: 400;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  position: relative;
 }
 .big-projects-list .item-content-block{
   display: flex;

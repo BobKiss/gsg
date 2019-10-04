@@ -15,6 +15,7 @@ Template Name: Connect From
         <div class="list-item connectfrom">
           <div class="item-desc">
             <div class="item-bg" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
+              <span class="connect__projname"><?php the_sub_field('project_name'); ?></span>
               <div class="item-content-block">
                 <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
                   <div class="item-info">
@@ -27,7 +28,7 @@ Template Name: Connect From
               </div>
             </div>
           </div>
-          <div class="item-meta__connect"><span><?php the_sub_field('project_name'); ?></span></div>
+          <div class="item-meta__connect"><span>סגנון</span></div>
       </div>
         <?php
         endwhile;
