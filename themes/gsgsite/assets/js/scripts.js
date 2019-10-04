@@ -1,8 +1,9 @@
 jQuery(document).ready(function ($) {
 
-  // if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
-  //   $('head').append('<meta name="mobile-web-app-capable" content="yes">');
-  // }
+  if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
+    $('head').append('<meta name="mobile-web-app-capable" content="yes">');
+    $('.vimeo-wrapper iframe').remove();
+  }
 
   if ($('#wwd'). length > 0) {
     setTimeout(function () {
@@ -131,7 +132,7 @@ jQuery(document).ready(function ($) {
 
   }
 
-  if ($('.vimeo-wrapper').length > 0) {
+  if ($('.vimeo-wrapper iframe').length > 0) {
     $(".vimeo-wrapper iframe").ready(function () {
       setTimeout(function () {
         initHeaderWordsAnimations('header .header__title');
