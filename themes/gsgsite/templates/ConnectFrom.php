@@ -24,7 +24,7 @@ Template Name: Connect From
                   </div>
 
                 <?php endif; ?>
-                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"></p></a>
+                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content">קרא כתבה</p></a>
               </div>
             </div>
           </div>
