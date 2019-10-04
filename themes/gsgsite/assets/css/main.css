@@ -392,7 +392,7 @@ header{
 .headerSection .logo img {
   width: 100%;
 }
-.headerSection .decorCircle {
+.headerSection .decorCircle, .decorCircle__energy{
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -2498,6 +2498,10 @@ transform:rotate(360deg);}
       width: 275px;
       height: 275px;
     }
+    .decorCircle__energy{
+      right: -10%;
+    }
+
 
 }
 @media screen and (max-width: 1460px){

@@ -19,7 +19,7 @@ Template Name: GsgEnergy
 				</div>
 			</div>
 			<div class="row"></div>
-			<img class="decorCircle" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorEnergy.png" alt="decorAbout">
+			<img class="decorCircle__energy" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorEnergy.png" alt="decorAbout">
 		</div> <!--.borderBlock-->
 	</section> <!-- .headerSection-->
 
