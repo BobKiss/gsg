@@ -2576,6 +2576,7 @@ transform:rotate(360deg);}
       right: -6%;
     }
 
+
 }
 @media screen and (max-width: 1300px){
 
@@ -2810,6 +2811,14 @@ transform:rotate(360deg);}
   .headerSection .borderBlock.bigPaddings .row .title {
       font-size: 46px;
   }
+  .headerSection .borderBlock .row .title{
+      font-size: 60px;
+  }
+
+   .sn-contactus__title{
+      font-size: 24px;
+      
+  }
 
 }
 
@@ -2820,6 +2829,13 @@ transform:rotate(360deg);}
   }
   .headerSection .borderBlock.bigPaddings .row .title {
       font-size: 40px;
+  }
+  .headerSection .borderBlock .row .title{
+      font-size: 40px;
+  }
+  .sn-contactus__title{
+      font-size: 22px;
+      
   }
 
 }
