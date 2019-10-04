@@ -129,6 +129,7 @@ jQuery(document).ready(function ($) {
       }, 100);
     });
     $('.headerSection .borderBlock, .borderblockWrapper').addClass('animated');
+    $('.site > .logo, .clientsBlock, .sideMenu, .header__round_text').addClass('visible');
 
   }
 
@@ -136,7 +137,7 @@ jQuery(document).ready(function ($) {
     $(".vimeo-wrapper iframe").ready(function () {
       setTimeout(function () {
         initHeaderWordsAnimations('header .header__title');
-      }, 1000);
+      }, 1500);
     });
   } else {
     initHeaderWordsAnimations('header .header__title, .headerSection .borderBlock .row .title, .archive .headerSection .borderBlock.hebrew .row .littleTitle');
