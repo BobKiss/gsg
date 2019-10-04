@@ -127,7 +127,7 @@ jQuery(document).ready(function ($) {
         $(selectedTitle).find('span').addClass('animationTriggered');
       }, 100);
     });
-    $('.headerSection .borderBlock').addClass('animated');
+    $('.headerSection .borderBlock, .borderblockWrapper').addClass('animated');
 
   }
 
