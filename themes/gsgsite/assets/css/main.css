@@ -421,6 +421,7 @@ header{
 .site > .logo.visible {
   visibility: visible;
   opacity: 1;
+  z-index: 3;
 }
 .logo {
   max-width: 170px;
@@ -960,7 +961,7 @@ font-weight: 100;
   background-color: black;
   width: 70%;
   height: 100vh;
-  z-index: 2;
+  z-index: 4;
   right: 0;
   transform: translateX(100%);
   transition: .5s;
@@ -1177,7 +1178,7 @@ font-weight: 400;
   position: absolute;
   right: 100%;
   max-width: 500px;
-  width: 500px;
+  width: 100%;
   top: 0;
   background-color: #030000;
   padding-left: 40px;
@@ -2668,6 +2669,40 @@ transform:rotate(360deg);}
 @media screen and (max-width: 768px){
     .vimeo-wrapper img {
       display: block;
+    }
+    .sideMenu .mailBlock .popup {
+      position: fixed;
+      left: 0;
+      top: 0;
+      min-height: 100vh;
+      padding-right: 50px;
+      padding-left: 30px;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter {
+      padding: 0;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
+      height: auto;
+    }
+    .sideMenu .sideMenuMail {
+      z-index: 4;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
+      font-size: 12px;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn .info {
+      font-size: 11px;
+    }
+    .sideMenu .mailBlock .popup .popupTitle {
+      font-size: 22px;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(2) {
+      width: 50%;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(3) {
+      -ms-align-items: center;
+      align-items: center;
+      justify-content: center;
     }
     .sideMenu{
         top: 5%;
