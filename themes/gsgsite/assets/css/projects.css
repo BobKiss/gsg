@@ -1,5 +1,6 @@
-.container-1{
-  width: 1200px;
+/*.container-1{
+  max-width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 
@@ -18,6 +19,24 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1300px){
+
+    .container-1{
+      padding: 124px 65px;
+
+    }
+  }
+@media screen and (max-width: 1120px){
+    .big-projects-list .item-bg {
+      height: 420px;
+    }
+  }
+  @media screen and (max-width: 576px){
+    .big-projects-list .item-bg {
+      height: 320px;
+    }
+  }*/
 /* .big-projects-list .view-btn{
   height: 94px;
   width: 100%;
