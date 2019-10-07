@@ -312,7 +312,6 @@ header{
   border: 0;
   height: auto;
   display: flex;
-  padding-bottom: 10px;
   position: relative;
 }
 .borderblockWrapper .borderblock:nth-child(2)::after {
@@ -489,6 +488,7 @@ header{
   text-transform: uppercase;
   position: relative;
   padding: 0;
+  overflow: hidden;
 }
 .headerSection .borderBlock .row {
   /* border: 2px solid #171111; */
