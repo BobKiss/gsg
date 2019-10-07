@@ -24,3 +24,5 @@ Stack trace:
 #3 {main}
   thrown in C:\OSPanel\domains\gsg.com\wp-content\themes\gsgsite\templates\Blog.php on line 41
 
+2019-10-07T14:07:33+00:00 CRITICAL syntax error, unexpected '<' in C:\OSPanel\domains\gsg.com\wp-content\themes\gsgsite\templates\Blog.php on line 79
+

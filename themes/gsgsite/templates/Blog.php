@@ -38,30 +38,26 @@ Template Name: Blog
         ?>
         <div class="col-md-6 col-sm-12">
           <div class="archivepage__wrap_right">
-            <?php var_dump(count($posts)); ?>
             <?php foreach( $posts as $post ): $counter++; ?>
               <?php
               setup_postdata($post);
               ?>
-              <?php if ($counter >= $middle) { continue; }?>
+              <?php if ($counter > $middle) { continue; }
+              ?>
               <div>
-                <div class="archivepage__img archivepage__img_01" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_02.jpg) center center / cover">
-                  <a href="#">
-                    <span class="archivepage__desc">
-                      לכתבה המלאה
-                    </span>
-                  </a>
-                </div>
+                <a href="<?php the_permalink(); ?>" class="archivepage__img archivepage__img_0<?php echo $counter; ?>" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center center / cover">
+                  <span class="archivepage__desc">
+                    <?php the_field('button_title'); ?>
+                  </span>
+                </a>
                 <h5 class="archivepage__img_title">
-                  איך מתמודדים עם דייר סרבן  <p>מאת מעיין בכר</p>
+                  <?php the_title(); ?> <p>מאת מעיין בכר</p>
                 </h5>
                 <p class="archivepage__img_text">
-                  עשרות אלפי יחידות בניה ופרויקטים נתקעים במשך שנים ארוכות או לא מתרוממים כלל בשל חסמים שונים (משפטיים, תכנוניים, בירוקרטיים או כלכליים). הסרת החסמים ופתרון הבעיות ביעילות ובמהירות, תוך מציאת הפתרונות האופטימליים, פעמים רבות, הם קריטיים לשמירה על כדאיותו וכלכליותו של הפרויקט.
-
-
+                  <?php echo get_the_excerpt() ?>
                 </p>
               </div>
-            <?php endforeach; ?>
+            <?php endforeach; $counter = 0; ?>
 
             <?php wp_reset_postdata(); ?>
           </div>
@@ -73,22 +69,19 @@ Template Name: Blog
               <?php
               setup_postdata($post);
               ?>
-              <?php if ($counter < $middle) { continue; } ?>
+              <?php if ($counter <= $middle) { continue; }
+              ?>
               <div>
-                <div class="archivepage__img archivepage__img_01" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_01.jpg) center center / cover">
-                  <a href="http://gsg.coelix.live/2019/10/02/%d7%90%d7%99%d7%9a-%d7%9e%d7%aa%d7%9e%d7%95%d7%93%d7%93%d7%99%d7%9d-%d7%a2%d7%9d-%d7%93%d7%99%d7%99%d7%a8-%d7%a1%d7%a8%d7%91%d7%9f/?lang=he">
-                    <span class="archivepage__desc">
-                      לכתבה המלאה
-                    </span>
-                  </a>
-                </div>
+                <a href="<?php the_permalink(); ?>" class="archivepage__img archivepage__img_0<?php echo $counter-3; ?>" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center center / cover">
+                  <span class="archivepage__desc">
+                    <?php the_field('button_title'); ?>
+                  </span>
+                </a>
                 <h5 class="archivepage__img_title">
-                  איך מתמודדים עם דייר סרבן  <p>מאת מעיין בכר</p>
+                  <?php the_title(); ?> <p>מאת מעיין בכר</p>
                 </h5>
                 <p class="archivepage__img_text">
-                  עשרות אלפי יחידות בניה ופרויקטים נתקעים במשך שנים ארוכות או לא מתרוממים כלל בשל חסמים שונים (משפטיים, תכנוניים, בירוקרטיים או כלכליים). הסרת החסמים ופתרון הבעיות ביעילות ובמהירות, תוך מציאת הפתרונות האופטימליים, פעמים רבות, הם קריטיים לשמירה על כדאיותו וכלכליותו של הפרויקט.
-
-
+                  <?php echo get_the_excerpt() ?>
                 </p>
               </div>
             <?php endforeach; ?>
