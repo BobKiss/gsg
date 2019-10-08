@@ -42,8 +42,9 @@
     		            <div class="footer__links_item">כתובת   <span class="footer__menu_sep"></span>רחוב יפו 27  <span class="footer__menu_sep"></span> חיפה, ישראל</div>
     		            <div class="footer__links_item">טלפון <span class="footer__menu_sep"></span>972-722-20-20-70+</div>
     		            <div class="footer__links_item">מייל <span class="footer__menu_sep"></span>office@gsg.co.il</div>
-    		            <div class="footer__links_item" style="color:white;"><a href="#">ENGLISH</a><span class="footer__menu_sep"></span><a href="#" style="margin-left:14px;">HEBREW</a>Change language</div>
+    		            <div class="footer__links_item" style="color:white;"><a href="#">ENGLISH</a><span class="footer__menu_sep"></span><a href="#" style="margin-left:14px;">HEBREW</a><p style="margin: 0 auto;">Change language</p></div>
     		            <div class="footer__links_item" style="color:white;">
+                            <div>
     		                <a href="https://www.facebook.com/gavish.shaham/" style="margin-left:10px;">
     		                    <svg type="image/svg+xml" data="SvgImg.svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/fb-white.svg" width="30" height="30" alt="image format png" />
@@ -53,7 +54,9 @@
     		                    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/insta-white.svg" width="30" height="30" alt="image format png" />
                                 </svg>
-    		                </a>Our social
+    		                </a>
+                            </div>
+                            <p style="margin: 0 auto;">Our social</p>
     		            </div>
     		        </div>
     		    </div>
