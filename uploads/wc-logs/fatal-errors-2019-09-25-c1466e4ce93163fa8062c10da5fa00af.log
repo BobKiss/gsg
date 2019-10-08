@@ -1,16 +1,4 @@
-2019-09-25T12:40:38+00:00 CRITICAL require_once(): Failed opening required './get-flat-tab-content.php' (include_path='.:/usr/local/Cellar/php@7.2/7.2.21/share/php@7.2/pear') in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/index.php on line 3
-
-2019-09-25T12:40:39+00:00 CRITICAL require_once(): Failed opening required './get-flat-tab-content.php' (include_path='.:/usr/local/Cellar/php@7.2/7.2.21/share/php@7.2/pear') in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/index.php on line 3
-
-2019-09-25T12:40:53+00:00 CRITICAL require_once(): Failed opening required './get-flat-tab-content.php' (include_path='.:/usr/local/Cellar/php@7.2/7.2.21/share/php@7.2/pear') in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/index.php on line 3
 
 2019-09-25T12:42:06+00:00 CRITICAL require_once(): Failed opening required './get-flat-tab-content.php' (include_path='.:/usr/local/Cellar/php@7.2/7.2.21/share/php@7.2/pear') in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/index.php on line 3
 
 2019-09-25T12:42:49+00:00 CRITICAL require_once(): Failed opening required './get-flat-tab-content.php' (include_path='.:/usr/local/Cellar/php@7.2/7.2.21/share/php@7.2/pear') in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/index.php on line 3
-
-2019-09-25T12:42:53+00:00 CRITICAL require_once(): Failed opening required './get-flat-tab-content.php' (include_path='.:/usr/local/Cellar/php@7.2/7.2.21/share/php@7.2/pear') in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/index.php on line 3
-
-2019-09-25T13:16:03+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/get-flat-tab-content.php on line 4
-
-2019-09-25T13:16:12+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in /Users/a.skuropatov/sites/gsg.test/wp-content/themes/gsgsite/inc/ajax/get-flat-tab-content.php on line 4
-

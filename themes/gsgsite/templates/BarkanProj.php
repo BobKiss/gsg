@@ -91,6 +91,7 @@ Template Name: Barkan Project
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start">
 					<div class="barkan-about__statline"><span class="statline_01"></span></div><p>60%</p>
 				</div>
+			</div>
 				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
 					<p class="barkan-about__stattext"><strong>תעסוקה</strong> | צווארון לבן</p>
 					<div class="barkan-about__statline"><span class="statline_02"></span></div><p>42%</p>
