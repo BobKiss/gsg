@@ -85,8 +85,10 @@ Template Name: Barkan Project
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
+				<div class="col-12 col-md-3 barkan-about__stat_wrap">
 					<p class="barkan-about__stattext"><strong>גילאי התושבים</strong>| בני 16 עד 45</p>
+				</div>
+				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start">
 					<div class="barkan-about__statline"><span class="statline_01"></span></div><p>60%</p>
 				</div>
 				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
