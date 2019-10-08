@@ -2075,14 +2075,14 @@ font-weight: 400;
 }
 .statline_01{
     background: #c4c2c2;
-    width: 250px;
+    width: 40%;
     height: 100%;
     display: inherit;
     margin-right: auto;
 }
 .statline_02{
     background: #c4c2c2;
-    width: 390px;
+    width: 42%;
     height: 100%;
     display: inherit;
     margin-right: auto;
