@@ -577,7 +577,6 @@ header{
   font-family: 'Roboto';
   font-weight: 900;
   font-size: 100px;
-  line-height: 120px;
   padding-bottom: 10px;
 }
 .headerSection .borderBlock.borderWhite .row:nth-child(1) {
@@ -3230,6 +3229,9 @@ transform:rotate(360deg);}
   }
   .contactus__lets{
     font-size: 60px;
+  }
+  .headerSection .decorCircle, .contactUsPageHeader .header__round_text {
+    width: 150px;
   }
 
 
