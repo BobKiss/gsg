@@ -13,7 +13,7 @@ Template Name: Crisis Page
     <a href="<?php echo get_bloginfo('url') ?>" class="logo">
       <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
     </a>
-    <div class="borderBlock container borderWhite hebrew">
+    <div class="container borderBlock borderWhite hebrew">
       <div class="row"></div>
       <div class="row">
         <div class="title">

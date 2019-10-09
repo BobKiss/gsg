@@ -575,7 +575,7 @@ header{
   text-align: left;
   max-width: unset;
   font-family: 'Roboto';
-  font-weight: bold;
+  font-weight: 900;
   font-size: 100px;
   line-height: 120px;
   padding-bottom: 10px;
@@ -785,7 +785,7 @@ header{
   text-align: right;
 }
 .aboutUsPageWrapper .activityAreas .singleParagraph {
-  flex-basis: calc(50% - 50px);
+  flex-basis: calc(50% - 60px);
 }
 .aboutUsPageWrapper .activityAreas .pTitle {
   position: relative;
@@ -2733,6 +2733,17 @@ transform:rotate(360deg);}
     .big-projects-list .list-item .item-info .excerpt p{
       font-size: 16px;
     }
+    .headerSection{
+      padding: 0 60px;
+    }
+    .headerSection .borderBlock .row .title{
+      font-size: 80px;
+    }
+    .headerSection .decorCircle, .contactUsPageHeader .header__round_text{
+      bottom: 0;
+      right: 0;
+      width: 250px;
+    }
 }
 /* 1120px */
 @media screen and (max-width: 1120px){
@@ -2809,6 +2820,9 @@ transform:rotate(360deg);}
     max-width: 300px;
     text-align: center;
     margin: 0 auto;
+  }
+  .titleContainer, .aboutUsPageWrapper .activityAreas .titleContainer{
+      padding: 0 60px;
   }
 
 
@@ -3113,6 +3127,25 @@ transform:rotate(360deg);}
     .barkan-header__img img {
       height: 420px;
     }
+    .headerSection .borderBlock .row .title{
+      font-size: 60px;
+    }
+    .aboutUsPageWrapper .aboutMap .mapTitle{
+      font-size: 28px;
+    }
+    .aboutUsPageWrapper .activityAreas .singleParagraph {
+      flex-basis: calc(100%);
+    }
+    .aboutUsPageWrapper .managmentBoard .board{
+      display: block;
+    }
+    .aboutUsPageWrapper .managmentBoard .member .memberDescription{
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .aboutUsPageWrapper .managmentBoard, .aboutUsPageWrapper .partneers{
+      padding: 60px 0;
+    }
   }
 
 
@@ -3125,7 +3158,7 @@ transform:rotate(360deg);}
       font-size: 46px;
   }
   .headerSection .borderBlock .row .title{
-      font-size: 60px;
+      font-size: 40px;
   }
 
    .sn-contactus__title{
@@ -3211,7 +3244,7 @@ transform:rotate(360deg);}
       font-size: 40px;
   }
   .headerSection .borderBlock .row .title{
-      font-size: 40px;
+      font-size: 20px;
   }
   .sn-contactus__title{
       font-size: 22px;
