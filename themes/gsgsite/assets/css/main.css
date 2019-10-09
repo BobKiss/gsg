@@ -3172,6 +3172,9 @@ transform:rotate(360deg);}
     .aboutUsPageWrapper .managmentBoard, .aboutUsPageWrapper .partneers{
       padding: 60px 0;
     }
+    .coming__wrap img{
+      height: 100px;
+    }
   }
 
 
@@ -3179,6 +3182,8 @@ transform:rotate(360deg);}
   .coming__wrap .coming__circle{
       width: 125px;
       height: 125px;
+      bottom: -70px;
+
   }
   .headerSection .borderBlock.bigPaddings .row .title {
       font-size: 46px;
