@@ -30,7 +30,7 @@ Template Name: Contact Us
 			<h4 class="contactus__title">	שלח לנו הודעה | קבוצת גביש שחם - GSG - יזמות ונדל”ן</h4>
 			 <?php echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>	
 			<div class="row contactus__links d-flex no-gutters">
-					<div class="col-md-4 col-sm-12">
+					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_left-block">
     						<p class="contactus__text">
     						כתובת | רח’ יפו 27, חיפה
@@ -40,12 +40,12 @@ Template Name: Contact Us
     						</p>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-12 text-center">
+					<div class="col-lg-4 col-md-12 text-center">
 						<p class="contactus__text">
 						כמייל | OFFICE@GSG.CO.IL
 						</p>
 					</div>
-					<div class="col-md-4 col-sm-12">
+					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_right-block">
     						<p class="contactus__text">
     						מטלפון | 072-220-20-70
