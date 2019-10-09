@@ -2602,6 +2602,9 @@ transform:rotate(360deg);}
     .clientItemHome p{
         font-size: 26px;
     }
+    .housesys__menu{
+      padding: 0 60px;
+    }
 
 }
 @media screen and (max-width: 1520px){
@@ -2743,6 +2746,10 @@ transform:rotate(360deg);}
       right: 0;
       width: 250px;
     }
+    .housesys__menu_wrap {
+      font-size: 14px;
+    } 
+
 }
 /* 1120px */
 @media screen and (max-width: 1120px){
@@ -2821,10 +2828,30 @@ transform:rotate(360deg);}
     margin: 0 auto;
   }
   .titleContainer, .aboutUsPageWrapper .activityAreas .titleContainer{
-      padding: 0 60px;
+    padding: 0 60px;
   }
-
-
+  .housesys .housesys__img{
+    width: 100%;
+  }
+  .housesys__menu{
+    width: 100%;
+    height: inherit;
+    padding: 40px 100px;
+    margin-top: 60px;
+  }
+  .housesys, .housesys .housesys__img img{
+    height: 100%;
+  }
+  .choose-flat-svg-container{
+    height: 100% !important;
+  }
+  .housesys__menu_nav{
+    right: 0;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    flex-direction: inherit;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -3232,6 +3259,9 @@ transform:rotate(360deg);}
   }
   .headerSection .decorCircle, .contactUsPageHeader .header__round_text {
     width: 150px;
+  }
+   .housesys__menu{
+    padding: 40px 60px;
   }
 
 
