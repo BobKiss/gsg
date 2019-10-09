@@ -1536,7 +1536,9 @@ font-weight: 400;
     color: #000;
     font-weight: 400;
     letter-spacing: 1px;
-
+}
+.contactus__soc span{
+  margin-left: 10px; 
 }
 .contactsus-after-line {
   display: -webkit-flex;
@@ -2802,6 +2804,13 @@ transform:rotate(360deg);}
   .footer__links .footer__links_item:nth-child(5) p{
     display: none;
   }
+  .contactus__links_left-block, .contactus__links_right-block{
+    display: block;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
 
 }
 
@@ -3182,6 +3191,12 @@ transform:rotate(360deg);}
   }
   .barkan-header__img img {
     height: 220px;
+  }
+  .contactus__title, .contactus__text, .contactus__soc, .contactus__soc span {
+    font-size: 24px;
+  }
+  .contactus__lets{
+    font-size: 60px;
   }
 
 
