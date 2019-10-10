@@ -427,7 +427,7 @@ header{
   position: absolute;
   top: 10%;
   left: 4%;
-  z-index: 999;
+  z-index: 5;
 }
 .headerSection .logo img {
   width: 100%;
@@ -1177,7 +1177,7 @@ font-weight: 400;
   position: absolute;
   right: 100%;
   max-width: 500px;
-  width: 100%;
+  width: 100vw;
   top: 0;
   background-color: #030000;
   padding-left: 40px;
@@ -1213,6 +1213,7 @@ font-weight: 400;
   color: #000;
   line-height: 50px;
   height: 50px;
+  padding: 6px 6px;
 }
 .sideMenu .mailBlock .popup .popupForm input::placeholder {
   color: #c0c0c0;
@@ -1254,6 +1255,8 @@ font-weight: 400;
   resize: none;
   font-size: 18px;
   color: #000;
+  text-align: right;
+  padding-right: 6px;
 }
 .sideMenu .mailBlock .popup .popUpFooter {
   display: -webkit-flex;
@@ -2292,6 +2295,7 @@ font-weight: 400;
   letter-spacing: 1px;
   padding-right: 30px;
   max-height: 100px;
+  font-weight: 900;
 }
 .big-projects-list .list-item .item-info{
   display: flex;
@@ -2574,6 +2578,7 @@ transform:rotate(360deg);}
 .menu-item-has-children {
 	display: flex;
 }
+
 
 
 /*Media*/
