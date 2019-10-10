@@ -427,7 +427,7 @@ header{
   position: absolute;
   top: 10%;
   left: 4%;
-  z-index: 999;
+  z-index: 5;
 }
 .headerSection .logo img {
   width: 100%;
@@ -1177,7 +1177,7 @@ font-weight: 400;
   position: absolute;
   right: 100%;
   max-width: 500px;
-  width: 100%;
+  width: 100vw;
   top: 0;
   background-color: #030000;
   padding-left: 40px;
