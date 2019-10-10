@@ -1475,6 +1475,10 @@ font-weight: 400;
     border-bottom: 2px solid #000;
     padding-bottom: 10px;
     margin-bottom: 100px;
+    font-weight: 900;
+    width: 50%;
+    display: block;
+    margin-left: auto;
 }
 .gsg-energy__intro-wrap{
     background: #000;
@@ -3049,6 +3053,7 @@ transform:rotate(360deg);}
     .sn-contactsus .container{
       padding: 0 20px;
     }
+
     .sn-contactsus, .gsgenergy{
       padding-top: 20px;
       padding-bottom: 20px;
@@ -3063,7 +3068,7 @@ transform:rotate(360deg);}
       padding-right: 30px;
     }
     .gsg-energy__map{
-      height: 265px;
+      height: 435px;
     }
     .caldera-grid .row{
       max-width: unset !important;
@@ -3218,7 +3223,7 @@ transform:rotate(360deg);}
     .small-projects-list .item-content-block {
       height: 180px;
     }
-     .big-projects-list .list-item .item-info .excerpt p{
+    .big-projects-list .list-item .item-info .excerpt p{
       font-size: 10px;
     }
     .footer__wrap{
@@ -3293,6 +3298,9 @@ transform:rotate(360deg);}
       width: 15vh;
       left: 0;
       top: 70%;
+    }
+    .archive .headerSection .borderBlock.hebrew .row .littleTitle{
+      font-size: 20px;
     }
   }
 
@@ -3398,6 +3406,9 @@ transform:rotate(360deg);}
     width: 100%;
     font-size: 13px;
     text-align: center;
+  }
+  .gsg-energy__map {
+    max-height: 325px;
   }
 
 }
