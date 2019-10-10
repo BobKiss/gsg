@@ -48,7 +48,7 @@ a:focus {
   position: absolute;
   bottom: 0;
 }
-#masthead {
+#masthead, .comments-area {
   display: none;
 }
 
@@ -432,7 +432,7 @@ header{
 .headerSection .logo img {
   width: 100%;
 }
-.headerSection .decorCircle, .decorCircle__energy{
+ .decorCircle, .decorCircle__energy{
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -483,6 +483,69 @@ header{
 }
 
 /* end */
+
+/* Single Post */
+
+.single-post .decorCircle{
+  right: unset;
+  left: -13%;
+}
+.single-post .header__title {
+  text-align: right;
+  margin-left: auto;
+  color: white;
+  direction: rtl;
+}
+.wp-block-column{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+.wp-block-column p{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.wp-block-column p strong {
+  font-size: 24px;
+  padding-bottom: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.entry-content .wp-block-quote p{
+  border-right: 14px solid #fff600;
+  padding-right: 55px;
+  padding-left: 30px;
+  font-size: 24px;
+  color: #231f20;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  display: block;
+  text-align: right;
+  line-height: 26px;
+}
+.entry-content .wp-block-image img{
+  width: 100%;
+}
+.nav-link-single{
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 33%;
+  margin-bottom: 15px;
+}
+.nav-link-single.next{
+  justify-content: flex-end;
+}
+.nav-link-single.center{
+  justify-content: center;
+}
+.nav-link-single.prev{
+  justify-content: flex-start;
+}
+
+
 
 
 .headerSection .borderBlock {
@@ -1555,7 +1618,10 @@ font-weight: 400;
     letter-spacing: 1px;
 }
 .contactus__soc span{
-  margin-left: 10px; 
+  margin-left: 10px;
+}
+.contactus__soc span{
+  margin-left: 10px;
 }
 .contactus__text span:after{
   content: '|';
@@ -1577,7 +1643,7 @@ font-weight: 400;
   width: 100%;
   margin-top: 50px;
   direction: ltr;
-  border-bottom: 1px solid #000; 
+  border-bottom: 1px solid #000;
 }
 .contactsus-after-line > div {
   flex-basis: 33%;
@@ -1834,8 +1900,16 @@ font-weight: 400;
     width: 80%;
     margin-left: auto;
     text-align: right;
+    direction:rtl;
     color: #fff;
 }
+
+
+.wp-block-columns{
+  flex-direction: row-reverse;
+}
+
+
 
 /*SectionHousesys*/
 
@@ -2133,7 +2207,7 @@ font-weight: 400;
   width: 65%;
 }
 .barkan-about__stat_wrap{
-  
+
 }
 .barkan__about_map{
     width: 100%;
@@ -2656,9 +2730,6 @@ transform:rotate(360deg);}
     .decorCircle__energy{
       right: -10%;
     }
-    .headerSection .crisis__decorCircle{
-      right: -8px;
-    }
 
 
 }
@@ -2696,9 +2767,6 @@ transform:rotate(360deg);}
     .container-1, .container-2{
       padding: 100px 65px;
 
-    }
-    .headerSection .crisis__decorCircle{
-      right: -4px;
     }
 
 
@@ -2782,9 +2850,6 @@ transform:rotate(360deg);}
     }
     .housesys__menu_wrap {
       font-size: 14px;
-    }
-    .headerSection .crisis__decorCircle{
-      right: -2px;
     }
 
 }
@@ -2890,17 +2955,22 @@ transform:rotate(360deg);}
     height: 60px;
     flex-direction: inherit;
   }
-  .headerSection .crisis__decorCircle{
-      right: 2px;
-      bottom: 2px;
-      max-width: 30%;
-
-  }
 }
 
 @media screen and (max-width: 768px){
     .vimeo-wrapper img {
       display: block;
+    }
+    .blogpage .container{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .single-post .decorCircle{
+      left: 0;
+    }
+    .blog__nav{
+      margin-top: 0px;
+      margin-bottom: 61px;
     }
     .sideMenuWrapper .sideMenuContent .infoRow {
       overflow: scroll;
@@ -2916,9 +2986,8 @@ transform:rotate(360deg);}
     }
     .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after {
       font-size: 10px;
-      top: 0;
+      top: 2px;
       right: -11px;
-      margin-top: -0.5%;
     }
     .sideMenuWrapper .sideMenuContent .infoCol {
       min-width: 150px;
@@ -2977,9 +3046,6 @@ transform:rotate(360deg);}
       width: 100%;
       height: 100%;
     }
-    .contactus__title{
-      width: 100%;
-    }
     .sn-contactsus .container{
       padding: 0 20px;
     }
@@ -2993,13 +3059,9 @@ transform:rotate(360deg);}
     }
     .sn-contactus__title{
       width: 100%;
+      margin-bottom: 20px;
       padding-right: 30px;
     }
-    .sn-contactus__topborder{
-      margin-left: 0;
-      margin-bottom: 20px;
-    }
-
     .gsg-energy__map{
       height: 265px;
     }
@@ -3198,7 +3260,7 @@ transform:rotate(360deg);}
     }
     .footer__links .footer__links_item:nth-child(4) p{
       display: block;
-    } 
+    }
     .footer__links .footer__links_item:nth-child(5) p{
       display: inline;
     }
@@ -3262,7 +3324,7 @@ transform:rotate(360deg);}
   }
   .big-projects-list .item-content-block {
     height: 100%;
-    
+
   }
   .big-projects-list .list-item .item-info .title {
     font-size: 14px;
@@ -3376,5 +3438,4 @@ transform:rotate(360deg);}
     margin-bottom: 40px;
     width: calc(100% - 40px);
   }
-
 }
