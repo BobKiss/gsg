@@ -48,7 +48,7 @@ a:focus {
   position: absolute;
   bottom: 0;
 }
-#masthead {
+#masthead, .comments-area {
   display: none;
 }
 .sideMenu {
@@ -410,7 +410,11 @@ header{
 .headerSection .logo img {
   width: 100%;
 }
+<<<<<<< Updated upstream
 .headerSection .decorCircle {
+=======
+ .decorCircle, .decorCircle__energy{
+>>>>>>> Stashed changes
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -458,6 +462,69 @@ header{
 }
 
 /* end */
+
+/* Single Post */
+
+.single-post .decorCircle{
+  right: unset;
+  left: -13%;
+}
+.single-post .header__title {
+  text-align: right;
+  margin-left: auto;
+  color: white;
+  direction: rtl;
+}
+.wp-block-column{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+.wp-block-column p{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.wp-block-column p strong {
+  font-size: 24px;
+  padding-bottom: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.entry-content .wp-block-quote p{
+  border-right: 14px solid #fff600;
+  padding-right: 55px;
+  padding-left: 30px;
+  font-size: 24px;
+  color: #231f20;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  display: block;
+  text-align: right;
+  line-height: 26px;
+}
+.entry-content .wp-block-image img{
+  width: 100%;
+}
+.nav-link-single{
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 33%;
+  margin-bottom: 15px;
+}
+.nav-link-single.next{
+  justify-content: flex-end;
+}
+.nav-link-single.center{
+  justify-content: center;
+}
+.nav-link-single.prev{
+  justify-content: flex-start;
+}
+
+
 
 
 .headerSection .borderBlock {
@@ -1503,7 +1570,13 @@ font-weight: 400;
     color: #000;
     font-weight: 400;
     letter-spacing: 1px;
+<<<<<<< Updated upstream
 
+=======
+}
+.contactus__soc span{
+  margin-left: 10px;
+>>>>>>> Stashed changes
 }
 .contactsus-after-line {
   display: -webkit-flex;
@@ -1770,8 +1843,16 @@ font-weight: 400;
     width: 80%;
     margin-left: auto;
     text-align: right;
+    direction:rtl;
     color: #fff;
 }
+
+
+.wp-block-columns{
+  flex-direction: row-reverse;
+}
+
+
 
 /*SectionHousesys*/
 
@@ -2062,7 +2143,11 @@ font-weight: 400;
   width: 65%;
 }
 .barkan-about__stat_wrap{
+<<<<<<< Updated upstream
     padding-bottom: 25px;
+=======
+
+>>>>>>> Stashed changes
 }
 .barkan__about_map{
     width: 100%;
@@ -2606,6 +2691,43 @@ transform:rotate(360deg);}
         font-size: 16px;
     }
 
+<<<<<<< Updated upstream
+=======
+    }
+
+    .big-projects-list .item-content-block {
+      height: 40%;
+    }
+    .small-projects-list .item-content-block {
+      height: 240px;
+    }
+    .small-projects-list .list-item .view-btn{
+      min-width: 0;
+    }
+    .big-projects-list .item-content-block {
+      height: 70%;
+    }
+    .big-projects-list .list-item .item-info .title{
+      font-size: 24px;
+    }
+    .big-projects-list .list-item .item-info .excerpt p{
+      font-size: 16px;
+    }
+    .headerSection{
+      padding: 0 60px;
+    }
+    .headerSection .borderBlock .row .title{
+      font-size: 80px;
+    }
+    .headerSection .decorCircle, .contactUsPageHeader .header__round_text{
+      bottom: 0;
+      right: 0;
+      width: 250px;
+    }
+    .housesys__menu_wrap {
+      font-size: 14px;
+    }
+>>>>>>> Stashed changes
 
 }
 /* 1120px */
@@ -2630,6 +2752,83 @@ transform:rotate(360deg);}
 }
 
 @media screen and (max-width: 768px){
+<<<<<<< Updated upstream
+=======
+    .vimeo-wrapper img {
+      display: block;
+    }
+    .blogpage .container{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .single-post .decorCircle{
+      left: 0;
+    }
+    .blog__nav{
+      margin-top: 0px;
+      margin-bottom: 61px;
+    }
+    .sideMenuWrapper .sideMenuContent .infoRow {
+      overflow: scroll;
+      padding: 0 50px;
+    }
+    .sideMenuWrapper .sideMenuContent .main-navigation a {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .sideMenuWrapper .sideMenuContent li.menu-item-has-children {
+      position: relative;
+    }
+    .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after {
+      font-size: 10px;
+      top: 2px;
+      right: -11px;
+    }
+    .sideMenuWrapper .sideMenuContent .infoCol {
+      min-width: 150px;
+    }
+    .sideMenuWrapper .sideMenuContent .menuBlock {
+      padding: 25px;
+    }
+    .headerSection .borderBlock.animated .row:nth-child(3) {
+      overflow: hidden;
+    }
+    .sideMenu .mailBlock .popup {
+      position: fixed;
+      left: 0;
+      top: 0;
+      min-height: 100vh;
+      padding-right: 50px;
+      padding-left: 30px;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter {
+      padding: 0;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
+      height: auto;
+    }
+    .sideMenu .sideMenuMail {
+      z-index: 4;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
+      font-size: 12px;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn .info {
+      font-size: 11px;
+    }
+    .sideMenu .mailBlock .popup .popupTitle {
+      font-size: 22px;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(2) {
+      width: 50%;
+    }
+    .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(3) {
+      -ms-align-items: center;
+      align-items: center;
+      justify-content: center;
+    }
+>>>>>>> Stashed changes
     .sideMenu{
         top: 0;
     }
@@ -2761,12 +2960,204 @@ transform:rotate(360deg);}
       width: 175px;
       height: 175px;
     }
+<<<<<<< Updated upstream
 }
+=======
+    .headerSection .borderBlock.bigPaddings .row .title {
+      font-size: 60px;
+    }
+    .blogpage__imgwrap, .blogpage__wrap{
+      padding: 0;
+    }
+    .blogpage__secimg{
+      margin-bottom: 20px;
+    }
+    .blogpage__text p{
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .small-projects-list .item-content-block {
+      height: 180px;
+    }
+     .big-projects-list .list-item .item-info .excerpt p{
+      font-size: 10px;
+    }
+    .footer__wrap{
+      text-align: right;
+      font-size: 18px;
+      line-height: 60px;
+    }
+
+    .footer__menu, .footer__links{
+      flex-direction: column;
+
+    }
+   .footer__menu_sep{
+      display: none;
+    }
+    .footer__links .footer__links_item:nth-child(1){
+      margin-left: auto;
+    }
+    .footer__links .footer__links_item:nth-child(2){
+      margin-left: auto;
+    }
+    .footer__links .footer__links_item:nth-child(3){
+      margin-left: auto;
+    }
+    .footer__links .footer__links_item:nth-child(4){
+      display: block;
+      text-align: center;
+    }
+    .footer__links .footer__links_item:nth-child(5){
+      display: flex;
+      text-align: center;
+      flex-direction: column-reverse;
+    }
+    .footer__links .footer__links_item:nth-child(5) div a{
+      margin-right: 10px;
+    }
+    .footer__links .footer__links_item:nth-child(5) div a img{
+      width: 60px;
+    }
+    .footer__links .footer__links_item:nth-child(4) p{
+      display: block;
+    }
+    .footer__links .footer__links_item:nth-child(5) p{
+      display: inline;
+    }
+    .barkan-header__img img {
+      height: 420px;
+    }
+    .headerSection .borderBlock .row .title{
+      font-size: 40px;
+    }
+    .aboutUsPageWrapper .aboutMap .mapTitle{
+      font-size: 28px;
+    }
+    .aboutUsPageWrapper .activityAreas .singleParagraph {
+      flex-basis: calc(100%);
+    }
+    .aboutUsPageWrapper .managmentBoard .board{
+      display: block;
+    }
+    .aboutUsPageWrapper .managmentBoard .member .memberDescription{
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .aboutUsPageWrapper .managmentBoard, .aboutUsPageWrapper .partneers{
+      padding: 60px 0;
+    }
+    .coming__wrap img{
+      height: 100px;
+    }
+    .aboutUsPageWrapper .aboutMap .additionalImage{
+      width: 15vh;
+      left: 0;
+      top: 70%;
+    }
+  }
+
+>>>>>>> Stashed changes
 
 @media screen and (max-width: 576px){
   .coming__wrap .coming__circle{
       width: 125px;
       height: 125px;
+<<<<<<< Updated upstream
+=======
+      bottom: -70px;
+
+  }
+  .headerSection .borderBlock.bigPaddings .row .title {
+      font-size: 40px;
+  }
+  .headerSection .borderBlock .row .title{
+      font-size: 30px;
+  }
+
+   .sn-contactus__title{
+      font-size: 24px;
+
+  }
+  .blog__nav a, .blog__nav p{
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+  .big-projects-list .item-bg {
+    height: 220px;
+  }
+  .big-projects-list .item-content-block {
+    height: 100%;
+
+  }
+  .big-projects-list .list-item .item-info .title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .big-projects-list .list-item .item-info .excerpt p {
+
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .big-projects-list .item-bg, .small-projects-list .item-content-block{
+    height: 200px;
+  }
+  .big-projects-list .item-content-block{
+    transform: translateX(-80px);
+
+  }
+  .big-projects-list .list-item .view-btn, .small-projects-list .list-item .view-btn{
+    width: 80px;
+  }
+  .big-projects-list .list-item .item-meta{
+    font-size: 20px;
+  }
+  .container-1 .big-projects-list .list-item .item-info{
+    display: none;
+  }
+  .big-projects-list .list-item {
+    margin-bottom: 100px;
+    width: calc(100% - 80px);
+  }
+  .container-2{
+    padding: 20px 65px;
+  }
+  .contactus__lets {
+    font-size: 60px;
+  }
+  .small-projects-list .small-list-items-wrapper{
+    padding: 60px 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .small-projects-list .list-item:nth-child(1){
+    display: none;
+  }
+  .big-projects-list .list-item .view-btn .btn-content, .small-projects-list .list-item .view-btn .btn-content{
+    font-size: 18px;
+  }
+  .barkan-header__img img {
+    height: 220px;
+  }
+  .contactus__title, .contactus__text, .contactus__soc, .contactus__soc span {
+    font-size: 24px;
+  }
+  .contactus__lets{
+    font-size: 60px;
+  }
+  .headerSection .decorCircle, .contactUsPageHeader .header__round_text {
+    width: 15vh;
+  }
+   .housesys__menu{
+    padding: 40px 60px;
+  }
+  .headerSection .borderBlock.bigPaddings .row .title{
+    font-size: 30px;
+  }
+  .decorCircle__energy{
+    max-width: 14vh;
+    width: 100%;
+>>>>>>> Stashed changes
   }
 
 }
