@@ -2291,6 +2291,7 @@ font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
   padding-right: 30px;
+  max-height: 100px;
 }
 .big-projects-list .list-item .item-info{
   display: flex;
