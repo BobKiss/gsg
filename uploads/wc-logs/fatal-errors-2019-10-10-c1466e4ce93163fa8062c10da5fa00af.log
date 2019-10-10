@@ -10,3 +10,5 @@ Stack trace:
 #7 {main}
   thrown in X:\Work\OSPanel\domains\gsg.coelix.live\wp-content\themes\gsgsite\template-parts\content-post.php on line 64
 
+2019-10-10T17:32:25+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) in X:\Work\OSPanel\domains\gsg.coelix.live\wp-content\themes\gsgsite\single.php on line 53
+
