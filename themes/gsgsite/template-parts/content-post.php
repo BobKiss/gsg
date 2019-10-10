@@ -35,8 +35,8 @@
 
 
 			<div class="entry-content">
-				<h4 class="blogpage__title">איך מתמודדים עם דייר סרבן ?  תמ”א 38
-					<span>מאת מעיין בכר
+				<h4 class="blogpage__title"><?php the_title(); ?>
+					<span> מאת <?php the_author(); ?>
 					</span>
 				</h4>
 				<?php
@@ -60,7 +60,7 @@
 					?>
 					<div class="blog__nav">
 						<div class="nav-link-single prev"><?php previous_post_link( '%link', '< לכתבה הקודמת' ); ?></div>
-						<div class="nav-link-single center"><a href="" class="blog__nav_text">חזרה לעמוד מגזין</a></div>
+						<div class="nav-link-single center"><a href="<?= home_url('/blog/'); ?>" class="blog__nav_text">חזרה לעמוד מגזין</a></div>
 						<div class="nav-link-single next"><?php next_post_link( '%link', 'לכתבה הבאה >' ); ?></div>
 
 					</div>
