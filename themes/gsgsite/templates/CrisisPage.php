@@ -21,8 +21,10 @@ Template Name: Crisis Page
         </div>
       </div>
       <div class="row"></div>
-      <img class="decorCircle" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
-    </div> <!--.borderBlock-->
+      <div class="decorCircle crisis__decorCircle">
+      <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
+    
+    </div></div> <!--.borderBlock-->
   </section> <!-- .headerSection-->
 
   <!-- SectioSN-Intro -->
