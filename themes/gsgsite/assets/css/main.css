@@ -2654,7 +2654,7 @@ transform:rotate(360deg);}
         font-size: 18px;
     }
     .decorCircle__energy{
-      right: -6%;
+      right: -4%;
     }
     .container-1, .container-2{
       padding: 100px 65px;
@@ -2675,9 +2675,6 @@ transform:rotate(360deg);}
       width: 225px;
       height: 225px;
       margin-right: 20px;
-    }
-    .decorCircle__energy{
-      right: -6%;
     }
     .archivepage__desc{
       width: 205px;
@@ -2704,9 +2701,6 @@ transform:rotate(360deg);}
     }
     .clientItemHome p{
         font-size: 16px;
-    }
-    .decorCircle__energy{
-      right: -2%;
     }
     .archivepage__img_title{
       display: inline-block;
@@ -2760,9 +2754,6 @@ transform:rotate(360deg);}
   .homepageContainer {
     padding-right: 250px;
   }
-  .decorCircle__energy{
-    right: 2%;
-  }
   .energy__borderBlock{
 
     width: 84% !important;
@@ -2778,6 +2769,10 @@ transform:rotate(360deg);}
   }
   .footer__wrap{
     font-size: 14px;
+  }
+  .decorCircle__energy{
+    max-width: 40vh;
+    width: 100%;
   }
 }
 @media screen and (max-width: 992px){
@@ -3089,7 +3084,7 @@ transform:rotate(360deg);}
       height: 175px;
     }
     .headerSection .borderBlock.bigPaddings .row .title {
-      font-size: 80px;
+      font-size: 60px;
     }
     .blogpage__imgwrap, .blogpage__wrap{
       padding: 0;
@@ -3154,7 +3149,7 @@ transform:rotate(360deg);}
       height: 420px;
     }
     .headerSection .borderBlock .row .title{
-      font-size: 60px;
+      font-size: 40px;
     }
     .aboutUsPageWrapper .aboutMap .mapTitle{
       font-size: 28px;
@@ -3175,6 +3170,11 @@ transform:rotate(360deg);}
     .coming__wrap img{
       height: 100px;
     }
+    .aboutUsPageWrapper .aboutMap .additionalImage{
+      width: 15vh;
+      left: 0;
+      top: 70%;
+    }
   }
 
 
@@ -3186,10 +3186,10 @@ transform:rotate(360deg);}
 
   }
   .headerSection .borderBlock.bigPaddings .row .title {
-      font-size: 46px;
+      font-size: 40px;
   }
   .headerSection .borderBlock .row .title{
-      font-size: 40px;
+      font-size: 30px;
   }
 
    .sn-contactus__title{
@@ -3263,12 +3263,18 @@ transform:rotate(360deg);}
     font-size: 60px;
   }
   .headerSection .decorCircle, .contactUsPageHeader .header__round_text {
-    width: 150px;
+    width: 15vh;
   }
    .housesys__menu{
     padding: 40px 60px;
   }
-
+  .headerSection .borderBlock.bigPaddings .row .title{
+    font-size: 30px;
+  }
+  .decorCircle__energy{
+    max-width: 14vh;
+    width: 100%;
+  }
 
 }
 
@@ -3278,7 +3284,7 @@ transform:rotate(360deg);}
       height: 100px;
   }
   .headerSection .borderBlock.bigPaddings .row .title {
-      font-size: 40px;
+      font-size: 20px;
   }
   .headerSection .borderBlock .row .title{
       font-size: 20px;
