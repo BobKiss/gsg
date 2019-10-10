@@ -32,32 +32,37 @@ Template Name: Contact Us
 			<div class="row contactus__links d-flex no-gutters">
 					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_left-block">
-    						<p class="contactus__text">
-    						כתובת | רח’ יפו 27, חיפה
+    						<p class="contactus__text"><span> רח’ יפו 27, חיפה
+    						</span>
+    						כתובת 
     						</p>
-    						<p class="contactus__soc">
-    						כפקס | 072-220-20-80
+    						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
+    						</span>
+    						כפקס 
     						</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-12 text-center">
-						<p class="contactus__text">
-						כמייל | OFFICE@GSG.CO.IL
+						<p class="contactus__text"><span><a href="mailto:office@gsg.co.il">OFFICE@GSG.CO.IL</a> 
+						</span>
+						כמייל 
 						</p>
 					</div>
 					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_right-block">
-    						<p class="contactus__text">
-    						מטלפון | 072-220-20-70
+    						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a> 
+    						</span>
+    						מטלפון 
     						</p>
     						<p  class="contactus__soc">
+    							<span>OUR SOCIAL</span>
     							<a href="#" class="contactus__soc_icons">
     								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_icon.png">
     							</a>
     							<a href="#" class="contactus__soc_icons">
     								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inst_icon.png">
     							</a>
-    							<span>OUR SOCIAL</span>
+    							
     						</p>
     					</div>
 					</div>
