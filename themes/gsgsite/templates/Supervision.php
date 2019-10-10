@@ -34,7 +34,7 @@ Template Name: Supervision
 			<h4 class="sn-contactus__title">קבוצת גביש שחם | ניהול ופיקוח  </h4>
 			<div class="row d-flex">
 				<div class="col-md-6 col-sm-12">
-
+					<div class="sn-contactus__topborder"></div>
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__area text-right">
