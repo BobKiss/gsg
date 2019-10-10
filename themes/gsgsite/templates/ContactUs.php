@@ -28,51 +28,41 @@ Template Name: Contact Us
 	<section id="contactus" class="contactsus">
 		<div class="container">
 			<h4 class="contactus__title">	שלח לנו הודעה | קבוצת גביש שחם - GSG - יזמות ונדל”ן</h4>
-				<div class="row contactus__wrap d-flex no-gutters">
-					<div class="col-md-6 col-sm-12">
-						<div class="contactus__inp">
-							<input type="text" id="fname" name="firstname" placeholder="שם">
-							<input type="text" id="lname" name="lastname" placeholder="טלפון">
-							<input type="mail" id="mail" name="mail" placeholder="מייל">
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="contactus__area">
-							<textarea id="subject" name="subject" placeholder="כתבו לנו"></textarea>
-
-							<input type="submit" value="שלח >" class="contactus_btn">
-						</div>
-					</div>
-				</div>
+			 <?php echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>	
 			<div class="row contactus__links d-flex no-gutters">
-					<div class="col-md-4 col-sm-12">
+					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_left-block">
-    						<p class="contactus__text">
-    						כתובת | רח’ יפו 27, חיפה
+    						<p class="contactus__text"><span> רח’ יפו 27, חיפה
+    						</span>
+    						כתובת 
     						</p>
-    						<p class="contactus__soc">
-    						כפקס | 072-220-20-80
+    						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
+    						</span>
+    						כפקס 
     						</p>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-12 text-center">
-						<p class="contactus__text">
-						כמייל | OFFICE@GSG.CO.IL
+					<div class="col-lg-4 col-md-12 text-center">
+						<p class="contactus__text"><span><a href="mailto:office@gsg.co.il">OFFICE@GSG.CO.IL</a> 
+						</span>
+						כמייל 
 						</p>
 					</div>
-					<div class="col-md-4 col-sm-12">
+					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_right-block">
-    						<p class="contactus__text">
-    						מטלפון | 072-220-20-70
+    						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a> 
+    						</span>
+    						מטלפון 
     						</p>
     						<p  class="contactus__soc">
+    							<span>OUR SOCIAL</span>
     							<a href="#" class="contactus__soc_icons">
     								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_icon.png">
     							</a>
     							<a href="#" class="contactus__soc_icons">
     								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inst_icon.png">
     							</a>
-    							<span>OUR SOCIAL</span>
+    							
     						</p>
     					</div>
 					</div>

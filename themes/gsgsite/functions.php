@@ -135,7 +135,8 @@ function gsgsite_scripts() {
 	wp_enqueue_style( 'projects', get_template_directory_uri() . '/assets/css/projects.css' );
 	wp_enqueue_style( 'shop-style', get_template_directory_uri() . '/assets/css/shop.css' );
 	wp_enqueue_style( 'magnific-popup-style', get_template_directory_uri() . '/assets/css/magnific-popup.min.css' );
-	wp_enqueue_style( 'Assistant-font', 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800&display=swap&subset=hebrew' );
+	// wp_enqueue_style( 'Assistant-font', 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800&display=swap&subset=hebrew' );
+	wp_enqueue_style( 'Roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:700,900&display=swap' );
 	wp_enqueue_style( 'Dosis', 'https://fonts.googleapis.com/css?family=Dosis:400,700,800' );
 	wp_enqueue_style( 'slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
 

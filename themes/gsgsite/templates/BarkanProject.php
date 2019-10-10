@@ -75,8 +75,10 @@ Template Name: Barkan Project 2
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
+				<div class="col-3 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
 					<p class="barkan-about__stattext"><strong>גילאי התושבים</strong>| בני 16 עד 45</p>
+				</div>
+				<div class="col-9">
 					<div class="barkan-about__statline"><span class="statline_01"></span></div><p>60%</p>
 				</div>
 				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
@@ -103,25 +105,8 @@ Template Name: Barkan Project 2
 
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
-			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
-			<div class="row contactus__wrap d-flex no-gutters">
-				<div class="col-md-6 col-sm-12">
-					<div class="contactus__inp">
-						<input type="text" id="fname" name="firstname" placeholder="שם">
-						<input type="text" id="lname" name="lastname" placeholder="טלפון">
-						<input type="mail" id="mail" name="mail" placeholder="מייל">
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="contactus__area">
-						<textarea id="subject" name="subject" placeholder="כתבו לנו" style="height:210px;"></textarea>
-						<input type="submit" value="שלח >" class="contactus_btn">
-					</div>
-				</div>
-			</div>
+			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 		</div>
-		<a href="#" class="contactus__upbtn"><i class="fa fa-angle-up" aria-hidden="true"></i>
-		</a>
 	</section>
 
 </div>

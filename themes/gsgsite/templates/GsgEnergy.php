@@ -11,7 +11,7 @@ Template Name: GsgEnergy
 
     <section class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy.png) center center / cover">
 
-		<div class="borderBlock container bigPaddings">
+		<div class="energy__borderBlock container bigPaddings borderBlock">
 			<div class="row"></div>
 			<div class="row">
 				<div class="title">
@@ -19,7 +19,7 @@ Template Name: GsgEnergy
 				</div>
 			</div>
 			<div class="row"></div>
-			<img class="decorCircle" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorEnergy.png" alt="decorAbout">
+			<img class="decorCircle__energy" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorEnergy.png" alt="decorAbout">
 		</div> <!--.borderBlock-->
 	</section> <!-- .headerSection-->
 
@@ -30,7 +30,7 @@ Template Name: GsgEnergy
 			<h4 class="sn-contactus__title text-right">קבוצת גביש שחם | ENERGY</h4>
 			<div class="row d-flex no-gutters">
 				<div class="col-md-6 col-sm-12">
-
+					<div class="sn-contactus__topborder"></div>
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__area text-right">מחלקת האנרגיה בקבוצת גביש שחם הינה בעלת ניסיון עשיר בתחום האנרגיה ובכלל זה בניהול והקמת תחנות תדלוק ברחבי הארץ. </br>
@@ -47,13 +47,9 @@ Template Name: GsgEnergy
 
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
-			<div class="row"><div class="col-sm-12 col-md-6"><h4 class="gsg-energy__title">מפת מתווה גז ארצית | ישראל</h4></div></div>
+			<h4 class="gsg-energy__title">מפת מתווה גז ארצית | ישראל</h4>
 			<div class="row d-flex no-gutters">
-				<div class="col-md-8 col-sm-12">
-				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
-				    </div>
-				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="col-lg-4 col-md-12">
 				    <div class="gsg-energy__intro-wrap d-flex">
 				        <div class="gsg-energy__intro_top"></div>
 				        <div class="gsg-energy__intro">מפת
@@ -62,34 +58,22 @@ Template Name: GsgEnergy
                     <div class="gsg-energy__intro_bottom"></div>
 				    </div>
 				</div>
+				<div class="col-lg-8 col-md-12">
+				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
+				    </div>
+				</div>
 			</div>
 		</div>
 	</section>
+	<span class="contactus__line" style="width: 80%;display: block;border-bottom:2px solid #000;margin:0 auto;"></span>
 
 
 	<!-- SectionSN-Contactus -->
 
-    <section id="sn-contactus" class="sn-contactsus">
+  <section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
-			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
-			<div class="row contactus__wrap d-flex no-gutters">
-				<div class="col-md-6 col-sm-12">
-					<div class="contactus__inp">
-						<input type="text" id="fname" name="firstname" placeholder="שם">
-						<input type="text" id="lname" name="lastname" placeholder="טלפון">
-						<input type="mail" id="mail" name="mail" placeholder="מייל">
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="contactus__area">
-						<textarea id="subject" name="subject" placeholder="כתבו לנו" style="height:210px;"></textarea>
-						<input type="submit" value="שלח >" class="contactus_btn">
-					</div>
-				</div>
-			</div>
+			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 		</div>
-		<a href="#" class="contactus__upbtn"><i class="fa fa-angle-up" aria-hidden="true"></i>
-		</a>
 	</section>
 
 </div>

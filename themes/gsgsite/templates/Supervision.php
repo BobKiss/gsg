@@ -13,15 +13,17 @@ Template Name: Supervision
 		<a href="<?php echo get_bloginfo('url') ?>" class="logo">
 			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
 		</a>
-		<div class="borderBlock container">
+		<div class="energy__borderBlock borderBlock container borderWhite big hebrew ">
 			<div class="row"></div>
 			<div class="row">
 				<div class="title">
-					<?php echo the_title(); ?>
-				</div>
+          ניהול ופיקוח
+        </div>
 			</div>
 			<div class="row"></div>
-			<img class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
+      <div class="decorCircle decorCircle__energy">
+        <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorCrysis.png" alt="decorAbout">
+      </div>
 		</div> <!--.borderBlock-->
 	</section> <!-- .headerSection-->
 
@@ -29,10 +31,10 @@ Template Name: Supervision
 
 	<section class="sn-intro">
 		<div class="container">
-			<h4 class="sn-contactus__title text-right">קבוצת גביש שחם | ניהול ופיקוח  </h4>
-			<div class="row d-flex no-gutters">
+			<h4 class="sn-contactus__title">קבוצת גביש שחם | ניהול ופיקוח  </h4>
+			<div class="row d-flex">
 				<div class="col-md-6 col-sm-12">
-
+					<div class="sn-contactus__topborder"></div>
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__area text-right">
@@ -51,21 +53,7 @@ Template Name: Supervision
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
 			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
-			<div class="row contactus__wrap d-flex no-gutters">
-				<div class="col-md-6 col-sm-12">
-					<div class="contactus__inp">
-						<input type="text" id="fname" name="firstname" placeholder="שם">
-						<input type="text" id="lname" name="lastname" placeholder="טלפון">
-						<input type="mail" id="mail" name="mail" placeholder="מייל">
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="contactus__area">
-						<textarea id="subject" name="subject" placeholder="כתבו לנו" style="height:210px;"></textarea>
-						<input type="submit" value="שלח >" class="contactus_btn">
-					</div>
-				</div>
-			</div>
+       <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 		</div>
 	</section>
 
