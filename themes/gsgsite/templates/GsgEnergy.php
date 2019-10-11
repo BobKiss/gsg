@@ -65,13 +65,14 @@ Template Name: GsgEnergy
 			</div>
 		</div>
 	</section>
-	<h5 class="contactus__form_title">שלח לנו הודעה | קבוצת גביש שחם  </h5>
+	
 
 
 	<!-- SectionSN-Contactus -->
 
   <section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
+			 <h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 		</div>
 	</section>
