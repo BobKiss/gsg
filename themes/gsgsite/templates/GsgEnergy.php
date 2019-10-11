@@ -65,7 +65,7 @@ Template Name: GsgEnergy
 			</div>
 		</div>
 	</section>
-	<span class="contactus__line" style="width: 80%;display: block;border-bottom:2px solid #000;margin:0 auto;"></span>
+	<h5 class="contactus__form_title">שלח לנו הודעה | קבוצת גביש שחם  </h5>
 
 
 	<!-- SectionSN-Contactus -->
