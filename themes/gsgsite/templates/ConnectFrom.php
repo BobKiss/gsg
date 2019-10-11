@@ -28,7 +28,7 @@ Template Name: Connect From
               </div>
             </div>
           </div>
-          <div class="item-meta__connect"><span>סגנון</span></div>
+          <div class="item-meta__connect"><span><?php the_sub_field('some_text'); ?></span></div>
       </div>
         <?php
         endwhile;
