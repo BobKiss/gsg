@@ -54,11 +54,11 @@ if ( post_password_required() ) {
 					<div class="housesys__menu_wrap">
 						<h6 class="housesys__menu_title">בחר נכס</h6>
 						<div class="housesys__menu_desc">
-							<div><span class="housesys__menu_count">122<span class="house__menu_textdesc"><a></a>Description</span></span><p class="housesys__menu_text">בחר מגרש</p></div>
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Description</span>חזית</span><p class="housesys__menu_text">בחר תצוגת נכס</p></div>
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Description</span>ללא</span><p class="housesys__menu_text">בחר קומה</p></div>
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Description</span>ללא</span><p class="housesys__menu_text">בחר דירה</p></div>
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Description</span>ללא</span><p class="housesys__menu_text">בחר חבילה</p></div>
+							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr01</span>122</span><p class="housesys__menu_text">בחר מגרש</p></div>
+							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr02</span>חזית</span><p class="housesys__menu_text">בחר תצוגת נכס</p></div>
+							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr03</span>ללא</span><p class="housesys__menu_text">בחר קומה</p></div>
+							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr04</span>ללא</span><p class="housesys__menu_text">בחר דירה</p></div>
+							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr05</span>ללא</span><p class="housesys__menu_text">בחר חבילה</p></div>
 						</div>
 						<div class="housesys__menu_container">
 							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_architecture">הצג שרטוט נכס</a>

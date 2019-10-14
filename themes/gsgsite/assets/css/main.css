@@ -384,6 +384,7 @@ header{
     color: #171111;
     line-height: 0;
 }
+
 .header__title span {
   line-height: 1.2;
 }
@@ -399,7 +400,7 @@ header{
     border-color: #fff;
     color: #fff;
 }
-.blog .header .borderblock .header__title{
+.single-post .header__title{
     font-size: 105px;
 }
 
@@ -1717,6 +1718,9 @@ font-weight: 400;
     padding-top: 75px;
     direction: rtl;
 }
+.blockpage .wp-block-columns{
+  direction: ltr;
+}
 .blog .decorCircle{
     position: absolute;
     bottom: 2%;
@@ -1808,7 +1812,7 @@ font-weight: 400;
     justify-content: space-between;
     border-bottom: 1px solid #000;
     margin-bottom: 130px;
-    line-height: 5px;
+    line-height: 30px;
     letter-spacing: 2px;
 }
 .blog__nav a, .blog__nav p{
@@ -1833,7 +1837,7 @@ font-weight: 400;
     border-top: 0;
 }
 
-.blog .header .blog__borderblock .header__title, .archive .header .blog__borderblock .header__title{
+.single-post .header__title, .archive .header .blog__borderblock .header__title{
     font-size: 105px;
     width: 80%;
     margin-left: auto;
@@ -1892,7 +1896,8 @@ font-weight: 400;
 }
 
 .house__menu_textdesc{
-  width: inherit;
+  max-width: 50px;
+  width: 100%;
   display: none;
   position: absolute;
   top: 0;
@@ -1901,19 +1906,19 @@ font-weight: 400;
   text-align: center;
   border: 1px solid #fff;
   padding: 8px;
-  margin-left: 4vw;
+  margin-left: -56px;
 }
 
-.housesys__menu_count a:hover .house__menu_textdesc{
+.housesys__menu_count:hover .house__menu_textdesc{
   display: block;
-  transform: rotate(-90deg);
+  
 }
 .housesys__menu_count a:hover{
   display: inline-block;
   transform: rotate(-90deg);
 }
 
-.housesys__menu_count a:before{
+.housesys__menu_count:before{
     font-family: 'Font Awesome\ 5 Pro';
     font-weight: 900;
     content: "\f104";
