@@ -16,14 +16,14 @@ Template Name: Crisis Page
     <div class="container borderBlock borderWhite hebrew">
       <div class="row"></div>
       <div class="row">
-        <div class="title">
+        <div class="title" style="color:white !important;">
           ניהול משברים וחילוץ\nפרוייקטים תקועים
         </div>
       </div>
       <div class="row"></div>
       <div class="decorCircle crisis__decorCircle">
       <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
-    
+
     </div></div> <!--.borderBlock-->
   </section> <!-- .headerSection-->
 

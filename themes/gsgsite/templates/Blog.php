@@ -12,8 +12,8 @@ Template Name: Blog
     <div class="borderBlock container borderWhite hebrew">
       <div class="row"></div>
       <div class="row">
-        <div class="title">חילוץ פרוייקט \nממשבר - חלק א’</div>
-        <div class="littleTitle">
+        <div class="title" style="color:white !important;">חילוץ פרוייקט \nממשבר - חלק א’</div>
+        <div class="littleTitle" style="color:white !important;">
           תמ"א 38 והתחדשות עירונית
         </div>
       </div>
@@ -31,6 +31,7 @@ Template Name: Blog
         // запрос
         $args = array(
           'posts_per_page' => 6,
+          'status' => 'publish',
         );
         $posts = get_posts( $args );
         $counter = 0;
