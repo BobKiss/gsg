@@ -13,7 +13,7 @@ Template Name: Crisis Page
     <a href="<?php echo get_bloginfo('url') ?>" class="logo">
       <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
     </a>
-    <div class="borderBlock container borderWhite hebrew">
+    <div class="container borderBlock borderWhite hebrew">
       <div class="row"></div>
       <div class="row">
         <div class="title">
@@ -21,8 +21,10 @@ Template Name: Crisis Page
         </div>
       </div>
       <div class="row"></div>
-      <img class="decorCircle" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
-    </div> <!--.borderBlock-->
+      <div class="decorCircle crisis__decorCircle">
+      <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
+    
+    </div></div> <!--.borderBlock-->
   </section> <!-- .headerSection-->
 
   <!-- SectioSN-Intro -->
@@ -32,7 +34,7 @@ Template Name: Crisis Page
       <h4 class="sn-contactus__title text-right">קבוצת גביש שחם | ניהול ופיקוח</h4>
       <div class="row d-flex no-gutters">
         <div class="col-md-6 col-sm-12">
-
+          <div class="sn-contactus__topborder"></div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="sn-contactus__area text-right">

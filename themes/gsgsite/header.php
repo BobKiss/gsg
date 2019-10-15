@@ -10,7 +10,7 @@
 */
 
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -106,7 +106,7 @@
 				$linkToSwitch = '?lang=en';
 			}
 			?>
-			<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php // echo ICL_LANGUAGE_CODE; ?>He</a></div>
+			<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php echo ICL_LANGUAGE_CODE; ?></a></div>
 		</aside>
 
 		<div class="sideMenuWrapper">

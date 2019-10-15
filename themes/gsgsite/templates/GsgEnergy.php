@@ -30,7 +30,7 @@ Template Name: GsgEnergy
 			<h4 class="sn-contactus__title text-right">קבוצת גביש שחם | ENERGY</h4>
 			<div class="row d-flex no-gutters">
 				<div class="col-md-6 col-sm-12">
-
+					<div class="sn-contactus__topborder"></div>
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__area text-right">מחלקת האנרגיה בקבוצת גביש שחם הינה בעלת ניסיון עשיר בתחום האנרגיה ובכלל זה בניהול והקמת תחנות תדלוק ברחבי הארץ. </br>
@@ -47,12 +47,8 @@ Template Name: GsgEnergy
 
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
-			<div class="row"><div class="col-sm-12 col-md-6"><h4 class="gsg-energy__title">מפת מתווה גז ארצית | ישראל</h4></div></div>
+			<h4 class="gsg-energy__title">מפת מתווה גז ארצית | ישראל</h4>
 			<div class="row d-flex no-gutters">
-				<div class="col-lg-8 col-md-12">
-				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
-				    </div>
-				</div>
 				<div class="col-lg-4 col-md-12">
 				    <div class="gsg-energy__intro-wrap d-flex">
 				        <div class="gsg-energy__intro_top"></div>
@@ -62,15 +58,21 @@ Template Name: GsgEnergy
                     <div class="gsg-energy__intro_bottom"></div>
 				    </div>
 				</div>
+				<div class="col-lg-8 col-md-12">
+				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
+				    </div>
+				</div>
 			</div>
 		</div>
 	</section>
+	
 
 
 	<!-- SectionSN-Contactus -->
 
   <section id="sn-contactus" class="sn-contactsus">
 		<div class="container">
+			 <h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 		</div>
 	</section>

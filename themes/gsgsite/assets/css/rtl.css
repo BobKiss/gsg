@@ -1,8 +1,8 @@
 body{
-    direction: rtl;
+    direction: ltr;
     text-align: right;
 }
-.headerSection {
+/*.headerSection {
   direction: ltr;
 }
 .contactus__inp {
@@ -32,7 +32,7 @@ body{
 }
 .changeLang__item .langName .LangEn{
   display: none !important;
-}
+}*/
 /* .header__title {
   text-align: right !important;
 } */
@@ -40,6 +40,7 @@ body{
   border-left: 2px solid #171111 !important;
   border-right: 0 !important;
 } */
-.blog .header .borderblock {
+/*.blog .header .borderblock {
   border-color: #fff !important;
 }
+*/
