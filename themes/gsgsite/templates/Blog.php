@@ -31,6 +31,7 @@ Template Name: Blog
         // запрос
         $args = array(
           'posts_per_page' => 6,
+          'status' => 'publish',
         );
         $posts = get_posts( $args );
         $counter = 0;

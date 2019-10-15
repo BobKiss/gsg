@@ -2,6 +2,9 @@ body{
     direction: ltr;
     text-align: right;
 }
+.entry-content p {
+  direction: rtl;
+}
 /*.headerSection {
   direction: ltr;
 }

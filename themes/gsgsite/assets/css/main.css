@@ -660,6 +660,9 @@ header{
   padding-top: 150px;
   padding-bottom: 100px;
 }
+.aboutUsPageWrapper .container {
+  max-width: 1000px;
+}
 .aboutUsPageWrapper .aboutYellow > .container {
   display: flex;
   justify-content: space-between;
@@ -2063,7 +2066,10 @@ font-weight: 400;
     color: #fff;
     text-decoration: none;
 }
-.footer__links_item a object{
+.footer__links_item a.currentLang {
+  color: #fff600;
+}
+.footer__links_item a object {
     margin-left: 14px;
 }
 .footer__menu a{

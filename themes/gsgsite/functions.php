@@ -126,6 +126,9 @@ add_action( 'widgets_init', 'gsgsite_widgets_init' );
 function gsgsite_scripts() {
 	// wp_enqueue_style( 'extra-main-style', get_template_directory_uri() . '/assets/css/extra-styles.css' );
 	wp_enqueue_style( 'gsgsite-style', get_stylesheet_uri() );
+
+	// var_dump(get_locale());
+	
 	if (get_locale() === 'he_IL') {
 		wp_enqueue_style( 'main-style-hebrew', get_template_directory_uri() . '/assets/css/rtl.css' );
 	}
