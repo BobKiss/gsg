@@ -107,15 +107,43 @@ a:focus {
   direction: rtl;
 }
 .clientItemHome{
-  border-top: 1.5px solid black;
-  border-left: 1.5px solid black;
   color: black;
+  font-weight: bold;
   text-decoration: none;
   border-bottom: none;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 50px;
+  position: relative;
+}
+.clientItemHome:before,
+.clientItemHome:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.clientItemHome:before{
+  border-top: 2px solid black;
+  width: 0;
+  right: 0;
+}
+/* start animation on page loaded and fully visible */
+.visible .clientItemHome:before{
+  animation: borderHorizonal .25s .5s;
+  animation-fill-mode: forwards;
+
+}
+.clientItemHome:after{
+  border-left: 2px solid black;
+  height: 0;
+  left: 0;
+}
+/* start animation on page loaded and fully visible */
+.visible .clientItemHome:after{
+  animation: borderVertical .75s .75s;
+  animation-fill-mode: forwards;
 }
 .clientItemHome:hover {
   text-decoration: none;
@@ -131,9 +159,23 @@ a:focus {
   text-transform: uppercase;
   font-size: 36px;
   line-height: 35px;
-  font-weight: 700;
+  font-weight: 900;
   color: black;
-  border-bottom: 1.5px solid black;
+  position: relative;
+}
+.clientItemHome p:after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid black;
+  width: 0;
+}
+/* start animation on page loaded and fully visible */
+.visible .clientItemHome p:after{
+  animation: borderHorizonal .75s 1.5s;
+  animation-fill-mode: forwards;
 }
 .rectangleBlock img{
   position: absolute;
@@ -1933,15 +1975,6 @@ font-weight: 400;
   transform: rotate(-90deg);
 }
 
-.housesys__menu_count:before{
-    font-family: 'Font Awesome\ 5 Pro';
-    font-weight: 900;
-    content: "\f104";
-    color: #fff600;
-    margin-right: 5px;
-    display: inline-block;
-    transform: rotate(-90deg);
-}
 
 .housesys__img button{
     padding: none;

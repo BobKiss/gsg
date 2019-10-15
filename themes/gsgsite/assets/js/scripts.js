@@ -130,7 +130,6 @@ jQuery(document).ready(function ($) {
     });
     $('.headerSection .borderBlock, .borderblockWrapper').addClass('animated');
     $('.site > .logo, .clientsBlock, .sideMenu, .header__round_text').addClass('visible');
-
   }
 
   if ($('.vimeo-wrapper iframe').length > 0) {

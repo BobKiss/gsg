@@ -53,17 +53,44 @@ if ( post_password_required() ) {
 				<div class="housesys__menu">
 					<div class="housesys__menu_wrap">
 						<h6 class="housesys__menu_title">בחר נכס</h6>
+						<!-- house systems selects -->
 						<div class="housesys__menu_desc">
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr01</span>122</span><p class="housesys__menu_text">בחר מגרש</p></div>
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr02</span>חזית</span><p class="housesys__menu_text">בחר תצוגת נכס</p></div>
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr03</span>ללא</span><p class="housesys__menu_text">בחר קומה</p></div>
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr04</span>ללא</span><p class="housesys__menu_text">בחר דירה</p></div>
-							<div><span class="housesys__menu_count"><span class="house__menu_textdesc">Attr05</span>ללא</span><p class="housesys__menu_text">בחר חבילה</p></div>
+							<div>
+								<span class="housesys__menu_count">
+									<span class="house__menu_textdesc">Attr01</span>122
+								</span>
+								<p class="housesys__menu_text">בחר מגרש</p>
+							</div>
+							<div>
+								<span class="housesys__menu_count">
+									<span class="house__menu_textdesc">Attr02</span>חזית
+								</span>
+								<p class="housesys__menu_text">בחר תצוגת נכס</p>
+							</div>
+							<div>
+								<span class="housesys__menu_count">
+									<span class="house__menu_textdesc">Attr03</span>ללא
+								</span>
+								<p class="housesys__menu_text">בחר קומה</p>
+							</div>
+							<div>
+								<span class="housesys__menu_count">
+									<span class="house__menu_textdesc">Attr04</span>ללא
+								</span>
+								<p class="housesys__menu_text">בחר דירה</p>
+							</div>
+							<div>
+								<span class="housesys__menu_count">
+									<span class="house__menu_textdesc">Attr05</span>ללא
+								</span>
+								<p class="housesys__menu_text">בחר חבילה</p>
+							</div>
 						</div>
+						<!-- house systems selects END -->
 						<div class="housesys__menu_container">
 							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_architecture">הצג שרטוט נכס</a>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_images"> הצג מפרט ומחירון</a>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_a">הצג תמונות והדמיות</a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_a"> הצג מפרט ומחירון</a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_images">הצג תמונות והדמיות</a>
 							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_b">הצג חבילות קונספט</a>
 						</div>
 						<div class="housesys__menu_desc">
