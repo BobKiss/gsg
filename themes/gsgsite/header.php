@@ -142,7 +142,7 @@
 					</div>
 				</div>
 				<div class="socialsRow">
-					<span><?php _e('Our social:','GsgStrings'); ?>
+					<span><?php _e('Our social','GsgStrings'); ?>
 						<a href="https://www.instagram.com/gavish_shaham_group/"><img src="<?php bloginfo('template_url'); ?>/assets/images/InstagramIcon.png" alt=""></a>
 						<a href="https://www.facebook.com/gavish.shaham/"><img src="<?php bloginfo('template_url'); ?>/assets/images/FacebookIcon.png" alt=""></a></span>
 					</div>
