@@ -1090,9 +1090,23 @@ font-weight: 100;
   line-height: 42px;
   letter-spacing: 1px;
 }
+.sideMenuWrapper .sideMenuContent .main-navigation .current-menu-item a:after{
+  font-family: 'Font Awesome\ 5 Pro';
+  font-weight: 400;
+  font-size: 20px;
+  content: "\f104";
+  color: #fff600;
+  position: absolute;
+  right: -28px;
+  top: 0;
+  margin-top: 0;
+}
+
 .sideMenuWrapper .sideMenuContent li.current-menu-item a{
   color: #fff600;
 }
+
+
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children{
   display: flex;
   flex-direction: column;
@@ -1139,13 +1153,20 @@ font-weight: 100;
   opacity: 1;
   visibility: visible;
   transition: .5s;
-  padding-right: 10px;
+  padding-right: 30px;
 }
-.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active > a, .sideMenuWrapper .sideMenuContent li.current-menu-item > a{
+.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active > a{
+  color: #fff600;
+}
+.sideMenuWrapper .sideMenuContent li.current-menu-item > a{
+  color: #fff600;
+}
+.sideMenuWrapper .sideMenuContent .main-navigation .current-menu-item a{
   color: #fff600;
 }
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after{
   transform: rotate(-90deg);
+   color: #fff600;
 }
 
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after{
@@ -1153,11 +1174,11 @@ font-weight: 100;
   font-weight: 400;
   font-size: 20px;
   content: "\f104";
-  color: #fff600;
+  color: #fff;
   position: absolute;
   right: -28px;
   top: 0;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 .sideMenuWrapper .sideMenuContent .main-navigation ul {
     display: flex;
@@ -1169,10 +1190,10 @@ font-weight: 100;
   color: white;
 }
 .wpml-ls-legacy-list-horizontal a span {
-    vertical-align: unset;
-    text-transform: uppercase;
-    font-size: 16px;
-font-weight: 400;
+  vertical-align: unset;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
 }
 .wpml-ls-legacy-list-horizontal .wpml-ls-item:nth-child(1) a{
   padding-left: 0;
