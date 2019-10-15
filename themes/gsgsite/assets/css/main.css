@@ -402,7 +402,7 @@ header{
 }
 .single-post .header__title{
     font-size: 105px;
-  
+
 }
 
 
@@ -1562,7 +1562,7 @@ font-weight: 400;
     letter-spacing: 1px;
 }
 .contactus__soc span{
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 .contactus__text span:after{
   content: '|';
@@ -1584,7 +1584,7 @@ font-weight: 400;
   width: 100%;
   margin-top: 50px;
   direction: ltr;
-  border-bottom: 1px solid #000; 
+  border-bottom: 1px solid #000;
 }
 .contactsus-after-line > div {
   flex-basis: 33%;
@@ -1884,7 +1884,7 @@ font-weight: 400;
     border-right: 0;
     border-left: 0;
     padding: 10px 0;
-    margin: 5px 0;  
+    margin: 5px 0;
 }
 .housesys__menu_desc div{
     display: inline-flex;
@@ -1910,7 +1910,7 @@ font-weight: 400;
 
 .housesys__menu_count:hover .house__menu_textdesc{
   display: block;
-  
+
 }
 .housesys__menu_count a:hover{
   display: inline-block;
@@ -2050,7 +2050,10 @@ font-weight: 400;
     color: #fff;
     text-decoration: none;
 }
-.footer__links_item a object{
+.footer__links_item a.currentLang {
+  color: #fff600;
+}
+.footer__links_item a object {
     margin-left: 14px;
 }
 .footer__menu a{
@@ -2175,7 +2178,7 @@ font-weight: 400;
   width: 65%;
 }
 .barkan-about__stat_wrap{
-  
+
 }
 .barkan__about_map{
     width: 100%;
@@ -3252,7 +3255,7 @@ transform:rotate(360deg);}
     }
     .footer__links .footer__links_item:nth-child(4) p{
       display: block;
-    } 
+    }
     .footer__links .footer__links_item:nth-child(5) p{
       display: inline;
     }
@@ -3340,7 +3343,7 @@ transform:rotate(360deg);}
   }
   .big-projects-list .item-content-block {
     height: 100%;
-    
+
   }
   .big-projects-list .list-item .item-info .title {
     font-size: 14px;
