@@ -1015,7 +1015,7 @@ font-weight: 100;
 .sideMenuWrapper .sideMenuContent .infoCol p,
 .sideMenuWrapper .sideMenuContent .infoCol span,
 .sideMenuWrapper .sideMenuContent .infoCol a:visited{
-  color: #000;
+  color: #666464;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -2067,7 +2067,7 @@ font-weight: 100;
 }
 .footer__links_item{
     display: flex;
-    color: #000;
+    color: #fff;
     align-items: center;
 }
 .footer__links_item a{
@@ -2078,7 +2078,7 @@ font-weight: 100;
     margin-left: 14px;
 }
 .footer__menu a{
-    color: #000;
+    color: #fff;
 }
 
 .footer__menu a:hover, .footer__links a:hover{
