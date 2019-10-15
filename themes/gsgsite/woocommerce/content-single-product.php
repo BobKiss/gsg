@@ -55,34 +55,33 @@ if ( post_password_required() ) {
 						<h6 class="housesys__menu_title">בחר נכס</h6>
 						<!-- house systems selects -->
 						<div class="housesys__menu_desc">
-							<!-- extra select that is not relevent for this model -->
-							<!-- <div>
-								<span class="housesys__menu_count">
-
-								</span>
-								<p class="housesys__menu_text">בחר מגרש</p>
-							</div> -->
 							<div>
 								<span class="housesys__menu_count">
-
+									<span class="house__menu_textdesc">Attr01</span>122
+								</span>
+								<p class="housesys__menu_text">בחר מגרש</p>
+							</div>
+							<div>
+								<span class="housesys__menu_count">
+									<span class="house__menu_textdesc">Attr02</span>חזית
 								</span>
 								<p class="housesys__menu_text">בחר תצוגת נכס</p>
 							</div>
 							<div>
 								<span class="housesys__menu_count">
-
+									<span class="house__menu_textdesc">Attr03</span>ללא
 								</span>
 								<p class="housesys__menu_text">בחר קומה</p>
 							</div>
 							<div>
 								<span class="housesys__menu_count">
-
+									<span class="house__menu_textdesc">Attr04</span>ללא
 								</span>
 								<p class="housesys__menu_text">בחר דירה</p>
 							</div>
 							<div>
 								<span class="housesys__menu_count">
-
+									<span class="house__menu_textdesc">Attr05</span>ללא
 								</span>
 								<p class="housesys__menu_text">בחר חבילה</p>
 							</div>
