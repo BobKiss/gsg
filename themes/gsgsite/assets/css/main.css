@@ -402,7 +402,7 @@ header{
 }
 .single-post .header__title{
     font-size: 105px;
-  
+
 }
 
 
@@ -1205,6 +1205,10 @@ font-weight: 400;
   border-bottom: 2px solid white;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  text-align: right;
+}
+.popUpFooter {
+
 }
 .sideMenu .mailBlock .popup .popupForm {
 
@@ -1272,17 +1276,21 @@ font-weight: 400;
   display: flex;
   width: 100%;
   padding: 34px 0;
+  direction: rtl;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn {
   width: 33%;
   position: relative;
+}
+.sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(1)::before {
+  display: none;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(2) {
   width: 60%;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(3) {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
   width: 100%;
@@ -1296,6 +1304,7 @@ font-weight: 400;
   width: 100%;
   height: 100%;
   max-width: 60px;
+  max-height: 35px;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn::before {
   content: '';
@@ -1318,6 +1327,7 @@ font-weight: 400;
   color: #f4f4f4;
   border: 1px solid;
   padding: 5px 15px;
+  max-height: 35px;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton:hover {
   background-color: #fff;
@@ -1327,6 +1337,9 @@ font-weight: 400;
 .sideMenu .mailBlock a.sideMenuMail {
   background-color: #000;
   transition: background-color 0.3s;
+}
+.barkan-about iframe {
+  margin-top: 40px;
 }
 .sideMenu .mailBlock a.sideMenuMail.opened {
   background-color: #fff600;
@@ -1562,7 +1575,7 @@ font-weight: 400;
     letter-spacing: 1px;
 }
 .contactus__soc span{
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 .contactus__text span:after{
   content: '|';
@@ -1584,7 +1597,7 @@ font-weight: 400;
   width: 100%;
   margin-top: 50px;
   direction: ltr;
-  border-bottom: 1px solid #000; 
+  border-bottom: 1px solid #000;
 }
 .contactsus-after-line > div {
   flex-basis: 33%;
@@ -1884,7 +1897,7 @@ font-weight: 400;
     border-right: 0;
     border-left: 0;
     padding: 10px 0;
-    margin: 5px 0;  
+    margin: 5px 0;
 }
 .housesys__menu_desc div{
     display: inline-flex;
@@ -1910,7 +1923,7 @@ font-weight: 400;
 
 .housesys__menu_count:hover .house__menu_textdesc{
   display: block;
-  
+
 }
 .housesys__menu_count a:hover{
   display: inline-block;
@@ -2120,11 +2133,15 @@ font-weight: 400;
 .barkan-about__text{
     margin: 25px 0;
     font-size: 18px;
+    margin-bottom: 20px !important;
+}
+.phoneForm input{
+  direction: ltr;
 }
 .barkan-about__stattext{
     font-size: 20px;
     line-height: 20px;
-    max-width: 220px;
+    max-width: 230px;
     width: 100%;
 }
 .barkan-about__stattext strong{
@@ -2175,7 +2192,7 @@ font-weight: 400;
   width: 65%;
 }
 .barkan-about__stat_wrap{
-  
+  margin-bottom: 20px;
 }
 .barkan__about_map{
     width: 100%;
@@ -3007,7 +3024,7 @@ transform:rotate(360deg);}
     .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(3) {
       -ms-align-items: center;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
     }
     .sideMenu{
         top: 5%;
@@ -3252,7 +3269,7 @@ transform:rotate(360deg);}
     }
     .footer__links .footer__links_item:nth-child(4) p{
       display: block;
-    } 
+    }
     .footer__links .footer__links_item:nth-child(5) p{
       display: inline;
     }
@@ -3340,7 +3357,7 @@ transform:rotate(360deg);}
   }
   .big-projects-list .item-content-block {
     height: 100%;
-    
+
   }
   .big-projects-list .list-item .item-info .title {
     font-size: 14px;

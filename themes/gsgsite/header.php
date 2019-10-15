@@ -94,7 +94,7 @@
 							</div>
 						</div>
 						<div class="popupColumn">
-							<a href="#" class="submitButton"><?php _e('Submit >') ?></a>
+							<a href="#" class="submitButton"><?php _e('שלח >') ?></a>
 						</div>
 					</div>
 				</div>
@@ -129,15 +129,15 @@
 						<?php do_action('wpml_add_language_selector'); ?>
 					</div>
 					<div class="infoCol">
-						<p class="infoHeading"><?php _e('Email','GsgStrings'); ?></p>
+						<p class="infoHeading"><?php _e('מייל','GsgStrings'); ?></p>
 						<a href="mailto:office@gsg.co.il">office@gsg.co.il</a>
 					</div>
 					<div class="infoCol">
-						<p class="infoHeading"><?php _e('Phone','GsgStrings'); ?></p>
+						<p class="infoHeading"><?php _e('טלפון','GsgStrings'); ?></p>
 						<a href="tel:972722202070">+972-722-20-20-70</a>
 					</div>
 					<div class="infoCol">
-						<p class="infoHeading"><?php _e('Address','GsgStrings'); ?></p>
+						<p class="infoHeading"><?php _e('כתובת','GsgStrings'); ?></p>
 						<span><?php _e('27 Jaffa Street Haifa, Israel','GsgStrings'); ?></span>
 					</div>
 				</div>
