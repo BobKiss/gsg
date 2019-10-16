@@ -30,7 +30,7 @@ Template Name: Crisis Page
   <!-- SectioSN-Intro -->
 
   <section class="sn-intro">
-    <div class="container">
+    <div class="container wow slideInLeft">
       <h4 class="sn-contactus__title text-right">קבוצת גביש שחם | ניהול ופיקוח</h4>
       <div class="row d-flex no-gutters">
         <div class="col-md-6 col-sm-12">
@@ -58,7 +58,7 @@ Template Name: Crisis Page
   <!-- SectionSN-Contactus -->
 
   <section id="sn-contactus" class="sn-contactsus sn-contactsus-crisis">
-    <div class="container">
+    <div class="container wow slideInRight">
       <h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
     			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
     </div>

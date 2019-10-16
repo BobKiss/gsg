@@ -12,7 +12,7 @@ Template Name: Immediate Projects
         while ( have_rows('project_items_repeater') ) : the_row();
 ?>
 
-        <div class="list-item">
+        <div class="list-item wow slideInRight">
           <div class="item-desc">
             <div class="item-bg" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
               <div class="item-content-block">
@@ -43,7 +43,7 @@ Template Name: Immediate Projects
   <?php
     if( have_rows('mini_projects_repeater') ):
         while ( have_rows('mini_projects_repeater') ) : the_row(); ?>
-        <div class="list-item">
+        <div class="list-item wow slideInLeft">
           <div class="item-desc">
             <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content">מידע נוסף</p></a>
               <div class="item-content-block" style="background-image: url('<?php the_sub_field('project_image'); ?>')">

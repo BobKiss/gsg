@@ -20,7 +20,7 @@ Template Name: About Us
       </div> <!--.borderBlock-->
     </section> <!-- .headerSection-->
 
-    <section class="aboutYellow">
+    <section class="aboutYellow wow slideInLeft">
             <div class="titleContainer">
         <div class="title">קבוצת גביש שחם | פרופיל חברה</div>
       </div>
@@ -44,13 +44,13 @@ Template Name: About Us
       </div>
     </section>
 
-    <section class="aboutMap">
+    <section class="aboutMap wow slideInRight">
       <div class="titleContainer">
         <div class="title">קבוצת גביש שחם | מפת פעילות בארץ</div>
       </div>
       <div class="container">
         <div class="mapSection">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45488.42264829626!2d34.760255635002856!3d32.07067567860087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca6193b7c1f%3A0xc1fb72a2c0963f90!2z0KLQtdC70Ywt0JDQstC40LIsINCY0LfRgNCw0LjQu9GM!5e0!3m2!1sru!2sua!4v1567152065704!5m2!1sru!2sua" width="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe src="https://snazzymaps.com/embed/192528" width="100%" height="380px" style="border:none;"></iframe>
         </div> <!-- .mapSection-->
         <div class="titleSection">
           <div class="row"></div>
@@ -67,7 +67,7 @@ Template Name: About Us
       </div>
     </section>
 
-    <section class="activityAreas">
+    <section class="activityAreas wow slideInLeft">
       <div class="titleContainer">
         <div class="title">קבוצת גביש שחם | תחומי פעילות</div>
       </div>
@@ -90,7 +90,7 @@ Template Name: About Us
       </div>
     </section>
 
-    <section class="managmentBoard">
+    <section class="managmentBoard wow slideInRight">
       <div class="titleContainer">
         <div class="title">קבוצת גביש שחם | הנהלה</div>
       </div>

@@ -58,8 +58,8 @@
 										  <?php echo $addr3; ?> <span class="footer__menu_sep"></span> <?php echo $addr2; ?>  <span class="footer__menu_sep"></span> <?php echo $addr1; ?>
 
 										</div>
-    		            <div class="footer__links_item"> <?php echo __('טלפון', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></div>
-    		            <div class="footer__links_item"> <?php echo __('מייל', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></div>
+    		            <div class="footer__links_item"> <?php echo __('Phone', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></div>
+    		            <div class="footer__links_item"> <?php echo __('Mail', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></div>
     		            <div class="footer__links_item" style="color:white;">
 											<a class="<?php if (get_locale() !== 'he_IL') echo "currentLang"; ?>" href="?lang=en">ENGLISH</a>
 											<span class="footer__menu_sep"></span>

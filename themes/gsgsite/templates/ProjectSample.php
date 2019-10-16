@@ -20,7 +20,7 @@ Template Name: Sample Project Page
 		</div>
 	</section>
 	<section class="barkan-about">
-		<div class="container">
+		<div class="container wow slideInLeft">
 			<div class="row">
 				<div class="col-lg-6 d-flex flex-column">
 					<h5 class="barkan-about__title">
@@ -59,7 +59,7 @@ Template Name: Sample Project Page
 		</div>
 	</section>
 
-	<section class="barkan-slider">
+	<section class="barkan-slider wow slideInRight">
 		<div class="barkan-slider__img">
 			<div>
 				<div class="barkan-single-slider">
@@ -84,7 +84,7 @@ Template Name: Sample Project Page
 		</div>
 	</section>
 
-	<section class="barkan-about">
+	<section class="barkan-about wow slideInLeft">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
@@ -117,7 +117,7 @@ Template Name: Sample Project Page
 			<div class="row">
 				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5></div>
 				<div class="col-12">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.619262041952!2d35.219086115543895!3d31.78086884141153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150329d120080315%3A0xb98584e32cba49e6!2zWWFmbyAyNywgSmVydXNhbGVtLCDQmNC30YDQsNC40LvRjA!5e0!3m2!1sru!2sua!4v1571137373724!5m2!1sru!2sua" width="100%" height="380" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					<iframe src="https://snazzymaps.com/embed/192528" width="100%" height="380px" style="border:none;"></iframe>
 				</div>
 			</div>
 		</div>
@@ -132,7 +132,7 @@ Template Name: Sample Project Page
 	<!-- SectionContacts -->
 
 	<section id="sn-contactus" class="sn-contactsus">
-		<div class="container">
+		<div class="container wow slideInRight">
 			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 			 <div class="contactsus-after-line">

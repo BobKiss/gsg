@@ -1114,6 +1114,9 @@ font-weight: 100;
   margin: 10px 0;
   font-size: 16px;
   font-weight: 400;
+  text-align: left;
+}
+[dir="rtl"] .sideMenuWrapper .sideMenuContent .infoRow .infoHeading{
   text-align: right;
 }
 .sideMenuWrapper .sideMenuContent .wpml-ls-current-language a span{
@@ -1223,7 +1226,7 @@ font-weight: 100;
   color: #fff;
   position: absolute;
   right: -20px;
-  top: 8;
+  top: 8px;
 }
 .sideMenuWrapper .sideMenuContent .main-navigation ul {
     display: flex;
@@ -1510,15 +1513,18 @@ font-weight: 100;
     flex-direction: column;
 }
 .gsg-energy__intro{
-    height: 50%;
-    width: 100%;
-    border-left: 2px solid #fff;
-    display: flex;
-    font-size: 48px;
-    text-align: right;
-    color: #fff;
-    line-height: 65px;
+  height: 50%;
+  width: 100%;
+  border-left: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  text-align: right;
+  color: #fff;
+  line-height: 48px;
+  font-weight: 900;
 }
+
 .gsg-energy__intro_top {
     height: 25%;
     width: 100%;
@@ -3036,6 +3042,19 @@ transform:rotate(360deg);}
     .vimeo-wrapper img {
       display: block;
     }
+    .footer__menu a,
+    .footer__links_item{
+        line-height: 38px;
+    }
+    .page-template-GsgEnergy .caldera-grid {
+      margin-bottom: 30px;
+    }
+    .site-footer {
+    padding-top: 35px;
+}
+    .footer__upbtn img{
+      max-width: 50px;
+    }
     .sideMenuWrapper .sideMenuContent .infoRow {
       overflow: scroll;
       padding: 0 50px;
@@ -3306,10 +3325,16 @@ transform:rotate(360deg);}
       font-size: 18px;
       line-height: 60px;
     }
-
     .footer__menu, .footer__links{
       flex-direction: column;
-
+    }
+    .footer__menu{
+      align-items: flex-end;
+    }
+    .footer__links .footer__links_item:nth-child(1),
+    .footer__links .footer__links_item:nth-child(2),
+    .footer__links .footer__links_item:nth-child(3){
+      margin-right: auto;
     }
     .footer__menu_sep{
       display: none;
@@ -3336,7 +3361,7 @@ transform:rotate(360deg);}
       margin-right: 10px;
     }
     .footer__links .footer__links_item:nth-child(5) div a img{
-      width: 60px;
+      width: 38px;
     }
     .footer__links .footer__links_item:nth-child(4) p{
       display: block;

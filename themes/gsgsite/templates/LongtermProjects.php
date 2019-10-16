@@ -12,7 +12,7 @@ Template Name: Long-Term Projects
         while ( have_rows('project_items_repeater') ) : the_row();
 ?>
 
-        <div class="list-item">
+        <div class="list-item wow slideInRight">
           <div class="item-desc">
             <div class="item-bg" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
               <div class="item-content-block">
