@@ -48,7 +48,7 @@ Template Name: GsgEnergy
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container wow slideInLeft">
 			<h4 class="gsg-energy__title">מפת מתווה גז ארצית | ישראל</h4>
-			<div class="row d-flex no-gutters">
+			<div class="row d-flex no-gutters sectionMap">
 				<div class="col-lg-4 col-md-12">
 				    <div class="gsg-energy__intro-wrap d-flex">
 				        <div class="gsg-energy__intro_top"></div>
@@ -58,9 +58,10 @@ Template Name: GsgEnergy
                     <div class="gsg-energy__intro_bottom"></div>
 				    </div>
 				</div>
-				<div class="col-lg-8 col-md-12">
-				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
-				    </div>
+				<div class="col-lg-8 col-md-12 mapEnergyContainer">
+				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover"></div>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Minus.svg" class="mapBtnMinus" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Plus.svg" class="mapBtnPlus" alt="">
 				</div>
 			</div>
 		</div>

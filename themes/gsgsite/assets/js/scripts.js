@@ -1,5 +1,4 @@
 jQuery(document).ready(function ($) {
-
   if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
     $('head').append('<meta name="mobile-web-app-capable" content="yes">');
     $('.vimeo-wrapper iframe').remove();
@@ -11,9 +10,29 @@ jQuery(document).ready(function ($) {
     }, 500);
   }
 
-  if ($('.partneers').length > 0) {
+  $(".gsg-energy__map").draggable();
+  var scaleCount = 1.2;
+  $('.mapBtnPlus ').click(function (e) {
+    scaleCount += 0.5;
+    $('.gsg-energy__map').css('transform', `scale( ${scaleCount} )`)
+  });
+  $('.mapBtnMinus ').click(function (e) {
+    scaleCount -= 0.5;
+    $('.gsg-energy__map').css('transform', `scale( ${scaleCount} )`)
+  });
+
+  if ($('.partneers').length > 0 && $('body').hasClass('rtl')) {
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
-      // rtl: true,
+      slidesToShow: 7,
+      arrows: false,
+      rtl:true,
+      variableWidth: true,
+      autoscroll: true,
+      slidesToScroll: 3,
+    });
+  }
+  else{
+    $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
       slidesToShow: 7,
       arrows: false,
       variableWidth: true,

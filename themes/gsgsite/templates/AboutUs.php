@@ -50,7 +50,7 @@ Template Name: About Us
       </div>
       <div class="container">
         <div class="mapSection">
-          <iframe src="https://snazzymaps.com/embed/192528" width="100%" height="380px" style="border:none;"></iframe>
+          <iframe src="https://snazzymaps.com/embed/192528" width="100%" height="100%" style="border:none;"></iframe>
         </div> <!-- .mapSection-->
         <div class="titleSection">
           <div class="row"></div>
