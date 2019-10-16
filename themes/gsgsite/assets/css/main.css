@@ -1113,6 +1113,7 @@ font-weight: 100;
   margin: 10px 0;
   font-size: 16px;
   font-weight: 400;
+  text-align: right;
 }
 .sideMenuWrapper .sideMenuContent .wpml-ls-current-language a span{
   color: #fff600 !important;
@@ -1198,8 +1199,7 @@ font-weight: 100;
   color: #fff600;
   position: absolute;
   right: -20px;
-  top: 0;
-  margin-top: 5%;
+  top: 8;
 }
 .sideMenuWrapper .sideMenuContent .main-navigation ul {
     display: flex;
@@ -2082,6 +2082,7 @@ font-weight: 400;
     padding-bottom: 10px;
     margin-bottom: 20px;
     max-width: 1200px;
+    align-items: center;
 }
 .footer__links{
     align-items: center;
@@ -2107,6 +2108,7 @@ font-weight: 400;
 }
 .footer__menu a{
     color: #8e8686;
+    text-align: center;
 }
 
 .footer__menu a:hover, .footer__links a:hover{
@@ -2175,7 +2177,7 @@ font-weight: 400;
     margin-bottom: 20px !important;
 }
 .phoneForm input{
-  direction: ltr;
+  direction: ltr !important;
 }
 .barkan-about__stattext{
     font-size: 20px;
@@ -2184,24 +2186,23 @@ font-weight: 400;
     width: 100%;
 }
 .barkan-about__stattext strong{
-    font-weight: 900;
-    padding-left: 5px;
+  font-weight: 900;
+  padding-left: 5px;
 }
 .barkan-about__stattext p{
-    font-weight: 900;
+  font-weight: 900;
 }
 .barkan-about__statline{
-    max-width: 700px;
-    width: 100%;
-    height: 13px;
-    background: #000;
-    margin: auto 0;
-    margin-right: auto;
-    margin-left: 50px;
+  max-width: 700px;
+  width: 100%;
+  height: 13px;
+  background: #000;
+  margin: auto 0;
+  margin-right: auto;
+  margin-left: 50px;
 }
 .barkan-about p{
   margin: 0;
-
 }
 .statline_01{
     background: #c4c2c2;
@@ -2223,6 +2224,9 @@ font-weight: 400;
     height: 100%;
     display: inherit;
     margin-right: auto;
+}
+.popupColumn .info .firstRow{
+  direction: ltr;
 }
 .barkanPAGE {
 

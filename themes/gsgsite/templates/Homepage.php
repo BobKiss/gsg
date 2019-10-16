@@ -5,7 +5,7 @@ Template Name: Homepage
 ?>
 <?php get_header(); ?>
 <div class="vimeo-wrapper">
-  <iframe class="vimeoVideo" src="https://player.vimeo.com/video/363342188?loop=1&autoplay=1&background=1&loop=1&byline=0&title=0" width="100" height="100" frameborder="0" allow="autoplay; fullscreen" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+  <iframe class="vimeoVideo" src="https://player.vimeo.com/video/363342188?loop=1&autoplay=1&loop=1&byline=0&title=0&background=1" width="100" height="100" frameborder="0" allow="autoplay; fullscreen" ></iframe>
   <div class="mobile-bg">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bgm.png" alt="bgm">
   </div>
@@ -23,7 +23,6 @@ Template Name: Homepage
         <div class="borderblock">
           <img src="<?php bloginfo('template_url'); ?>/assets/images/HomeCircleTxt.png" class="header__round_text" alt="">
           <div class="bottomLine">
-
           </div>
         </div>
       </div>
