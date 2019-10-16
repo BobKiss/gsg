@@ -107,6 +107,12 @@
 			}
 			?>
 			<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php echo ICL_LANGUAGE_CODE; ?></a></div>
+			<div class="sideMenuItem volumeSwitcher">
+				<div class="icon">
+					<?php get_template_part('template-parts/svg','volume-on'); ?>
+					<?php get_template_part('template-parts/svg','volume-off'); ?>
+				</div>
+			</div>
 		</aside>
 
 		<div class="sideMenuWrapper">

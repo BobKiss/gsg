@@ -137,6 +137,19 @@ jQuery(document).ready(function ($) {
       setTimeout(function () {
         initHeaderWordsAnimations('header .header__title');
       }, 1500);
+
+      $('.volumeSwitcher').on('click', function(){
+        var iframe = $('.vimeo-wrapper iframe')[0],
+            player = $f(iframe),
+            status = $('.status');
+        if($(this).hasClass('muted')){
+          player.api('setVolume', 1);
+        }
+        else{
+          player.api('setVolume', 0);
+        }
+        $(this).toggleClass('muted');
+      });
     });
   } else {
     initHeaderWordsAnimations('header .header__title, .headerSection .borderBlock .row .title, .archive .headerSection .borderBlock.hebrew .row .littleTitle');
