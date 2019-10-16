@@ -423,7 +423,7 @@ header{
     text-transform: uppercase;
     margin: auto 0;
 /*     max-width: 770px; */
-    color: #171111;
+    color: #000;
     line-height: 0;
 }
 
@@ -432,7 +432,7 @@ header{
 }
 .homepageContainer .header__title span {
   line-height: 0.8;
-  color: #171111;
+  color: #000;
 }
 .homepageContainer .header__title {
   padding: 20px 0px;
@@ -531,7 +531,7 @@ header{
 
 .headerSection .borderBlock {
   width: 100%;
-  color: #171111;
+  color: #000;
   text-transform: uppercase;
   position: relative;
   padding: 0;
@@ -698,7 +698,7 @@ header{
 
 .aboutUsPageWrapper .aboutYellow {
   background-color: #fff600;
-  color: #171111;
+  color: #000;
   padding-top: 150px;
   padding-bottom: 100px;
 }
@@ -755,7 +755,7 @@ header{
   width: 45%;
   display: flex;
   flex-direction: column;
-  background-color: #030000;
+  background-color: #000;
   padding: 7%;
   position: relative;
 }
@@ -891,7 +891,7 @@ text-align: right;
   width: 100%;
   height: 1px;
   display: block;
-  background-color: #020000;
+  background-color: #000;
 }
 .aboutUsPageWrapper .managmentBoard .member .memberDescription {
   font-size: 18px;
@@ -943,7 +943,7 @@ text-align: right;
   width: 56px;
   height: 56px;
   z-index: 3;
-  background-color: black;
+  background-color: #000;
 }
 .sideMenuItem .langName{
   margin: auto;
@@ -1022,18 +1022,18 @@ font-weight: 100;
   z-index: 6;
 }
 .sideMenuWrapper .sideMenuContent{
-  max-width: 650px;
+  max-width: 630px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 4%;
+  margin: auto 0;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock{
   border: 1px solid #fff600;
   border-right: 0;
   display: flex;
   justify-content: flex-end;
-  padding: 75px 65px;
+  padding: 75px 100px;
   position: relative;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock:after{
@@ -1061,9 +1061,10 @@ font-weight: 100;
 .sideMenuWrapper .sideMenuContent .infoCol span,
 .sideMenuWrapper .sideMenuContent .infoCol a:visited{
   color: #666464;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 16px;
+  letter-spacing: 1px;
 }
 .sideMenuWrapper .sideMenuContent .infoCol:first-child p,
 .sideMenuWrapper .sideMenuContent .infoCol:first-child span{
@@ -1103,9 +1104,9 @@ font-weight: 100;
 
 }
 .sideMenuWrapper .sideMenuContent .socialsRow span{
-  font-size: 18px;
+  font-size: 14px;
   line-height: 18px;
-  color: white;
+  color: #fff;
   display: inline-flex;
   margin-right: auto;
 }
@@ -1123,20 +1124,35 @@ font-weight: 100;
   padding: 0 10px;
   font-size: 18px;
   line-height: 18px;
-  color: white;
+  color: #fff;
 }
 .sideMenuWrapper .sideMenuContent .wpml-ls-legacy-list-horizontal{
   padding: 0;
 }
 .sideMenuWrapper .sideMenuContent .main-navigation a{
   color: white;
-  font-size: 26px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 400;
   line-height: 42px;
+  letter-spacing: 1px;
 }
+.sideMenuWrapper .sideMenuContent .main-navigation .current-menu-item a:after{
+  font-family: 'Font Awesome\ 5 Pro';
+  font-weight: 400;
+  font-size: 20px;
+  content: "\f104";
+  color: #fff600;
+  position: absolute;
+  right: -28px;
+  top: 0;
+  margin-top: 0;
+}
+
 .sideMenuWrapper .sideMenuContent li.current-menu-item a{
   color: #fff600;
 }
+
+
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children{
   display: flex;
   flex-direction: column;
@@ -1183,20 +1199,28 @@ font-weight: 100;
   opacity: 1;
   visibility: visible;
   transition: .5s;
-  padding-right: 10px;
+  padding-right: 30px;
 }
-.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active > a, .sideMenuWrapper .sideMenuContent li.current-menu-item > a{
+.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active > a{
+  color: #fff600;
+}
+.sideMenuWrapper .sideMenuContent li.current-menu-item > a{
+  color: #fff600;
+}
+.sideMenuWrapper .sideMenuContent .main-navigation .current-menu-item a{
   color: #fff600;
 }
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after{
   transform: rotate(-90deg);
+   color: #fff600;
 }
 
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after{
   font-family: 'Font Awesome\ 5 Pro';
-  font-weight: 900;
+  font-weight: 400;
+  font-size: 20px;
   content: "\f104";
-  color: #fff600;
+  color: #fff;
   position: absolute;
   right: -20px;
   top: 8;
@@ -1211,10 +1235,10 @@ font-weight: 100;
   color: white;
 }
 .wpml-ls-legacy-list-horizontal a span {
-    vertical-align: unset;
-    text-transform: uppercase;
-    font-size: 16px;
-font-weight: 400;
+  vertical-align: unset;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
 }
 .wpml-ls-legacy-list-horizontal .wpml-ls-item:nth-child(1) a{
   padding-left: 0;
@@ -1232,7 +1256,7 @@ font-weight: 400;
   max-width: 500px;
   width: 100vw;
   top: 0;
-  background-color: #030000;
+  background-color: #000;
   padding-left: 40px;
   padding-right: 35px;
   padding-top: 35px;
@@ -1246,7 +1270,7 @@ font-weight: 400;
 }
 .sideMenu .mailBlock .popup .popupTitle {
   font-size: 26px;
-  color: #ffffff;
+  color: #fff;
   border-bottom: 2px solid white;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -1650,7 +1674,7 @@ font-weight: 400;
 }
 .contactsus-after-line > div > a {
   font-size: 18px;
-  color: #030000;
+  color: #000;
 }
 .contactsus-after-line > div:nth-child(2) {
   text-align: center;
@@ -1723,7 +1747,7 @@ font-weight: 400;
     line-height: 24px;
     display: inline-flex;
     border-bottom: 1px solid #000;
-    color: #171111;
+    color: #000;
     font-weight: 900;
     letter-spacing: 0.5px;
 
@@ -1732,7 +1756,7 @@ font-weight: 400;
     display: block;
     font-size: 18px;
     margin-right: 10px;
-    color: #231f20;
+    color: #000;
     font-weight: 400;
 }
 .archivepage__img_text{
@@ -1740,7 +1764,7 @@ font-weight: 400;
     margin-top: 15px;
     padding-bottom: 25px;
     font-size: 18px;
-    color: #231f20;
+    color: #000;
     line-height: 23px;
     border-bottom: 1px solid #000;
     margin-bottom: 30px;
@@ -1787,7 +1811,7 @@ font-weight: 400;
     line-height: 52px;
     border-bottom: 1px solid #000;
     margin-bottom: 55px;
-    color: #171111;
+    color: #000;
     font-weight: 900;
     letter-spacing: 0.5px;
   direction: rtl;
@@ -1796,7 +1820,7 @@ font-weight: 400;
     font-size: 18px;
     font-weight: 300;
     padding: 10px;
-    color: #231f20;
+    color: #000;
 }
 .blogpage__title span:before{
   content: '|';
@@ -1807,7 +1831,7 @@ font-weight: 400;
 .blogpage__wrap{
     text-align: right;
     padding-left: 30px;
-    color: #231f20;
+    color: #000;
 }
 .blogpage__wrap_title{
     font-size: 24px;
@@ -1834,7 +1858,7 @@ font-weight: 400;
     padding-right: 55px;
     padding-left: 30px;
     font-size: 24px;
-    color: #231f20;
+    color: #000;
     margin-top: 60px;
     margin-bottom: 24px;
     display: block;
@@ -1873,7 +1897,7 @@ font-weight: 400;
   direction: rtl;
 }
 .blog__nav a, .blog__nav p{
-    color: #030000;
+    color: #000;
 }
 
 .blog__borderblock{
@@ -2093,7 +2117,7 @@ font-weight: 400;
 }
 .footer__links_item{
     display: flex;
-    color: #8e8686;
+    color: #fff;
     align-items: center;
 }
 .footer__links_item a{
@@ -2151,23 +2175,23 @@ font-weight: 400;
 }
 .barkan-header__text{
     font-size: 26px;
-    color: #231f20;
+    color: #000;
     font-weight: 400;
     text-align: right;
 }
 .barkan-about{
     text-align: right;
-    color: #231f20;
+    color: #000;
     direction: rtl;
 }
 .barkan-about a{
-    color: #231f20;
+    color: #000;
 }
 .barkan-about__title{
     padding-bottom: 4px;
     margin-top: 50px;
-    border-bottom: 2px solid  #231f20;
-    color: #231f20;
+    border-bottom: 2px solid  #000;
+    color: #000;
     font-size: 26px;
     font-weight: 900;
 }
@@ -2324,7 +2348,7 @@ font-weight: 400;
 }
 .barkan-slider__img .slick-prev::after {
   content: '<';
-  color: black;
+  color: #000;
 }
 .SamplePAGE .houseScreen {
   margin-top: 80px;
@@ -2349,7 +2373,7 @@ font-weight: 400;
 
 .barkan-slider__img .slick-next::after {
   content: '>';
-  color: black;
+  color: #000;
 }
 /*SectionComingSoon*/
 
@@ -2377,7 +2401,6 @@ font-weight: 400;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-
   direction: rtl;
 }
 
@@ -2394,7 +2417,7 @@ font-weight: 400;
   background-repeat: no-repeat;
 }
 .big-projects-list .list-item .item-meta{
-  color: #231f20;
+  color: #000;
   margin-top: 10px;
   font-size: 26px;
   font-weight: 300;
@@ -2402,7 +2425,7 @@ font-weight: 400;
   text-align: right;
 }
 .item-meta__connect{
-  color: #231f20;
+  color: #000;
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
@@ -2447,24 +2470,24 @@ font-weight: 400;
   direction: rtl;
 }
 .big-projects-list .list-item .item-info .title{
-  color: #231f20;
+  color: #000;
   font-size: 26px;
   font-weight: 700;
   line-height: 48px;
 }
 .big-projects-list .list-item .item-info .excerpt p{
-  color: #231f20;
+  color: #000;
   font-size: 20px;
   font-weight: 400;
 }
 .big-projects-list .list-item .item-info .view-link {
-  color: #231f20;
+  color: #000;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
 }
 .big-projects-list .list-item .view-btn{
-  background-color: black;
+  background-color: #000;
   color: #fff6f8;
   width: 100px;
   display: flex;
@@ -2534,7 +2557,7 @@ font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: black;
+  background-color: #000;
   color: white;
   width: 100%;
   min-width: 435px;
@@ -2559,7 +2582,7 @@ font-weight: 400;
   direction: rtl;
 }
 .small-projects-list .list-item .view-btn{
-  background-color: black;
+  background-color: #000;
   color: #fff6f8;
   width: 100px;
   min-width: 100px;
