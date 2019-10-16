@@ -58,7 +58,7 @@ Template Name: GsgEnergy
                     <div class="gsg-energy__intro_bottom"></div>
 				    </div>
 				</div>
-				<div class="col-lg-8 col-md-12">
+				<div class="col-lg-8 col-md-12" style="overflow: hidden;">
 				    <div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
 				    </div>
 				</div>
