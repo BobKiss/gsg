@@ -15,7 +15,8 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="blog__borderblock"></div>
-				<div class="blog__borderblock"><h2 class="header__title">
+				<div class="blog__borderblock">
+					<h2 class="header__title" style="color:white !important;">
 					 איך מתמודדים \n
 	עם דייר סרבן?
 				</h2></div>
@@ -36,7 +37,7 @@
 
 			<div class="entry-content">
 				<h4 class="blogpage__title"><?php the_title(); ?>
-					<span> מאת <?php the_author(); ?>
+					<span> מאת <?php the_field('author_name'); ?>
 					</span>
 				</h4>
 				<?php

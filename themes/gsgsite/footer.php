@@ -18,7 +18,16 @@
     		<div class="row d-flex">
     		    <div class="footer__wrap">
     		        <div class="footer__menu d-flex justify-content-between">
-    		            <a href="#" class="footer__menu_item">אודות</a>
+									<?php
+									while ( have_rows('top_line_menu_footer', 'options') ) : the_row();
+											the_sub_field('sub_field_name');
+											?>
+											<a href="<?php the_sub_field('link'); ?>" class="footer__menu_item"><?php the_sub_field('title'); ?></a>
+	    		            <span class="footer__menu_sep"></span>
+											<?php
+									endwhile;
+									?>
+    		            <!-- <a href="#" class="footer__menu_item">אודות</a>
     		            <span class="footer__menu_sep"></span>
 										<a href="#" class="footer__menu_item">פרוייקטים בארץ מיידיים</a>
     		            <span class="footer__menu_sep"></span>
@@ -36,13 +45,27 @@
     		            <span class="footer__menu_sep"></span>
     		            <a href="#" class="footer__menu_item">מגזין</a>
     		            <span class="footer__menu_sep"></span>
-    		            <a href="#" class="footer__menu_item">צור קשר</a>
+    		            <a href="#" class="footer__menu_item">צור קשר</a> -->
     		        </div>
     		        <div class="footer__links d-flex justify-content-between">
-    		            <div class="footer__links_item">כתובת   <span class="footer__menu_sep"></span>רחוב יפו 27  <span class="footer__menu_sep"></span> חיפה, ישראל</div>
-    		            <div class="footer__links_item">טלפון <span class="footer__menu_sep"></span>972-722-20-20-70+</div>
-    		            <div class="footer__links_item">מייל <span class="footer__menu_sep"></span>office@gsg.co.il</div>
-    		            <div class="footer__links_item" style="color:white;"><a href="#">ENGLISH</a><span class="footer__menu_sep"></span><a href="#" style="margin-left:14px;">HEBREW</a><p style="margin: 0 auto;">Change language</p></div>
+    		            <div class="footer__links_item">
+											<?php
+												$addresses = get_field('address_footer', 'options');
+												$addr1 = $addresses['addr_1'];
+												$addr2 = $addresses['addr_2'];
+												$addr3 = $addresses['addr_3'];
+											?>
+										  <?php echo $addr3; ?> <span class="footer__menu_sep"></span> <?php echo $addr2; ?>  <span class="footer__menu_sep"></span> <?php echo $addr1; ?>
+
+										</div>
+    		            <div class="footer__links_item"> <?php echo __('Phone', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></div>
+    		            <div class="footer__links_item"> <?php echo __('Mail', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></div>
+    		            <div class="footer__links_item" style="color:white;">
+											<a class="<?php if (get_locale() !== 'he_IL') echo "currentLang"; ?>" href="?lang=en">ENGLISH</a>
+											<span class="footer__menu_sep"></span>
+											<a class="<?php if (get_locale() == 'he_IL') echo "currentLang"; ?>" href="?lang=he" style="margin-left:14px;">HEBREW</a>
+											<p style="margin: 0 auto;"><?php echo __('Change language', 'gsgsite'); ?></p>
+										</div>
     		            <div class="footer__links_item" style="color:white;">
                             <div>
     		                <a href="https://www.facebook.com/gavish.shaham/" style="margin-left:10px;">
@@ -56,7 +79,7 @@
                                 </svg>
     		                </a>
                             </div>
-                            <p style="margin: 0 auto;">Our social</p>
+                            <p style="margin: 0 auto;"><?php echo __('Our social', 'gsgsite'); ?></p>
     		            </div>
     		        </div>
     		    </div>

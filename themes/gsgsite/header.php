@@ -61,8 +61,8 @@
 			</div>
 			<div class="sideMenuItem mailBlock">
 				<a class="sideMenuMail" href="#">
-					<i class="fal fa-envelope"></i>
-					<span class="cross"></span>
+					<img src="<?php bloginfo('template_url'); ?>/assets/images/mail-icon.svg" alt="">
+					<i class="fal fa-times close"></i>
 				</a>
 				<div class="popup">
 					<div class="popupTitle">
@@ -94,7 +94,7 @@
 							</div>
 						</div>
 						<div class="popupColumn">
-							<a href="#" class="submitButton"><?php _e('Submit >') ?></a>
+							<a href="#" class="submitButton"><?php _e('Send >') ?></a>
 						</div>
 					</div>
 				</div>
@@ -102,11 +102,23 @@
 			<?php $lang = get_locale();
 			if ($lang == 'en_US') {
 				$linkToSwitch = '?lang=he';
+				$langText = 'en';
 			} else {
 				$linkToSwitch = '?lang=en';
+				$langText = 'he';
 			}
 			?>
 			<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php echo ICL_LANGUAGE_CODE; ?></a></div>
+			<?php if( is_front_page() ) { ?>
+
+			<div class="sideMenuItem volumeSwitcher">
+				<div class="icon">
+					<?php get_template_part('template-parts/svg','volume-on'); ?>
+					<?php get_template_part('template-parts/svg','volume-off'); ?>
+				</div>
+			</div>
+		<?php } ?>
+
 		</aside>
 
 		<div class="sideMenuWrapper">
@@ -129,7 +141,7 @@
 						<?php do_action('wpml_add_language_selector'); ?>
 					</div>
 					<div class="infoCol">
-						<p class="infoHeading"><?php _e('Email','GsgStrings'); ?></p>
+						<p class="infoHeading"><?php _e('Mail','GsgStrings'); ?></p>
 						<a href="mailto:office@gsg.co.il">office@gsg.co.il</a>
 					</div>
 					<div class="infoCol">

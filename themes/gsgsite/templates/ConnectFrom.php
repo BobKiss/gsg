@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Connect From 
+Template Name: Connect From
 */
 ?>
 <?php get_header(); ?>
@@ -12,7 +12,7 @@ Template Name: Connect From
         while ( have_rows('project_items_repeater') ) : the_row();
 ?>
 
-        <div class="list-item connectfrom">
+        <div class="list-item connectfrom wow slideInLeft">
           <div class="item-desc">
             <div class="item-bg" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
               <span class="connect__projname"><?php the_sub_field('project_name'); ?></span>

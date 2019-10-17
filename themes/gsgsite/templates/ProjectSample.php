@@ -20,7 +20,7 @@ Template Name: Sample Project Page
 		</div>
 	</section>
 	<section class="barkan-about">
-		<div class="container">
+		<div class="container wow slideInLeft">
 			<div class="row">
 				<div class="col-lg-6 d-flex flex-column">
 					<h5 class="barkan-about__title">
@@ -59,7 +59,7 @@ Template Name: Sample Project Page
 		</div>
 	</section>
 
-	<section class="barkan-slider">
+	<section class="barkan-slider wow slideInRight">
 		<div class="barkan-slider__img">
 			<div>
 				<div class="barkan-single-slider">
@@ -84,7 +84,7 @@ Template Name: Sample Project Page
 		</div>
 	</section>
 
-	<section class="barkan-about">
+	<section class="barkan-about wow slideInLeft">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
@@ -117,9 +117,7 @@ Template Name: Sample Project Page
 			<div class="row">
 				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5></div>
 				<div class="col-12">
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/barkan-map.png" class="barkan__about_map">
-					</a>
+					<iframe src="https://snazzymaps.com/embed/192528" width="100%" height="380px" style="border:none;"></iframe>
 				</div>
 			</div>
 		</div>
@@ -134,7 +132,7 @@ Template Name: Sample Project Page
 	<!-- SectionContacts -->
 
 	<section id="sn-contactus" class="sn-contactsus">
-		<div class="container">
+		<div class="container wow slideInRight">
 			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 			 <div class="contactsus-after-line">

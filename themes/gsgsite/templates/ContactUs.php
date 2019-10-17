@@ -26,33 +26,33 @@ Template Name: Contact Us
 		</div>
 	</header> <!-- .headerSection-->
 	<section id="contactus" class="contactsus">
-		<div class="container">
+		<div class="container wow slideInLeft">
 			<h4 class="contactus__title">	שלח לנו הודעה | קבוצת גביש שחם - GSG - יזמות ונדל”ן</h4>
-			 <?php echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>	
+			 <?php echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 			<div class="row contactus__links d-flex no-gutters">
 					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_left-block">
     						<p class="contactus__text"><span> רח’ יפו 27, חיפה
     						</span>
-    						כתובת 
+    						כתובת
     						</p>
     						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
     						</span>
-    						כפקס 
+    						כפקס
     						</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-12 text-center">
-						<p class="contactus__text"><span><a href="mailto:office@gsg.co.il">OFFICE@GSG.CO.IL</a> 
+						<p class="contactus__text"><span><a href="mailto:office@gsg.co.il">OFFICE@GSG.CO.IL</a>
 						</span>
-						כמייל 
+						כמייל
 						</p>
 					</div>
 					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_right-block">
-    						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a> 
+    						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
     						</span>
-    						מטלפון 
+    						מטלפון
     						</p>
     						<p  class="contactus__soc">
     							<span>OUR SOCIAL</span>
@@ -62,7 +62,7 @@ Template Name: Contact Us
     							<a href="#" class="contactus__soc_icons">
     								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inst_icon.png">
     							</a>
-    							
+
     						</p>
     					</div>
 					</div>

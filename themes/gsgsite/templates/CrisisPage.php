@@ -16,21 +16,21 @@ Template Name: Crisis Page
     <div class="container borderBlock borderWhite hebrew">
       <div class="row"></div>
       <div class="row">
-        <div class="title">
+        <div class="title" style="color:white !important;">
           ניהול משברים וחילוץ\nפרוייקטים תקועים
         </div>
       </div>
       <div class="row"></div>
       <div class="decorCircle crisis__decorCircle">
       <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
-    
+
     </div></div> <!--.borderBlock-->
   </section> <!-- .headerSection-->
 
   <!-- SectioSN-Intro -->
 
   <section class="sn-intro">
-    <div class="container">
+    <div class="container wow slideInLeft">
       <h4 class="sn-contactus__title text-right">קבוצת גביש שחם | ניהול ופיקוח</h4>
       <div class="row d-flex no-gutters">
         <div class="col-md-6 col-sm-12">
@@ -58,7 +58,7 @@ Template Name: Crisis Page
   <!-- SectionSN-Contactus -->
 
   <section id="sn-contactus" class="sn-contactsus sn-contactsus-crisis">
-    <div class="container">
+    <div class="container wow slideInRight">
       <h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
     			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
     </div>

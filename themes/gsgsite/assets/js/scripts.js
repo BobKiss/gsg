@@ -1,5 +1,4 @@
 jQuery(document).ready(function ($) {
-
   if ($('.homepageContainer').length > 0 && window.matchMedia('(max-width: 767px)').matches) {
     $('head').append('<meta name="mobile-web-app-capable" content="yes">');
     $('.vimeo-wrapper iframe').remove();
@@ -11,9 +10,29 @@ jQuery(document).ready(function ($) {
     }, 500);
   }
 
-  if ($('.partneers').length > 0) {
+  $(".gsg-energy__map").draggable();
+  var scaleCount = 1.2;
+  $('.mapBtnPlus ').click(function (e) {
+    scaleCount += 0.5;
+    $('.gsg-energy__map').css('transform', `scale( ${scaleCount} )`)
+  });
+  $('.mapBtnMinus ').click(function (e) {
+    scaleCount -= 0.5;
+    $('.gsg-energy__map').css('transform', `scale( ${scaleCount} )`)
+  });
+
+  if ($('.partneers').length > 0 && $('body').hasClass('rtl')) {
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
-      // rtl: true,
+      slidesToShow: 7,
+      arrows: false,
+      rtl:true,
+      variableWidth: true,
+      autoscroll: true,
+      slidesToScroll: 3,
+    });
+  }
+  else{
+    $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
       slidesToShow: 7,
       arrows: false,
       variableWidth: true,
@@ -130,7 +149,6 @@ jQuery(document).ready(function ($) {
     });
     $('.headerSection .borderBlock, .borderblockWrapper').addClass('animated');
     $('.site > .logo, .clientsBlock, .sideMenu, .header__round_text').addClass('visible');
-
   }
 
   if ($('.vimeo-wrapper iframe').length > 0) {
@@ -138,6 +156,19 @@ jQuery(document).ready(function ($) {
       setTimeout(function () {
         initHeaderWordsAnimations('header .header__title');
       }, 1500);
+
+      $('.volumeSwitcher').on('click', function(){
+        var iframe = $('.vimeo-wrapper iframe')[0],
+            player = $f(iframe),
+            status = $('.status');
+        if($(this).hasClass('muted')){
+          player.api('setVolume', 1);
+        }
+        else{
+          player.api('setVolume', 0);
+        }
+        $(this).toggleClass('muted');
+      });
     });
   } else {
     initHeaderWordsAnimations('header .header__title, .headerSection .borderBlock .row .title, .archive .headerSection .borderBlock.hebrew .row .littleTitle');
@@ -189,3 +220,5 @@ jQuery(document).ready(function ($) {
     }
   });
 });
+
+new WOW().init();
