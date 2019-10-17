@@ -5,6 +5,7 @@
 .choose-flat-svg-container{
   height: 100vh;
   overflow: scroll;
+  background: #000;
 }
 
 /* tabs slider */
