@@ -1949,14 +1949,70 @@ font-weight: 400;
     padding: 10px 0;
     margin: 5px 0;
 }
-.housesys__menu_desc div{
+.housesys__menu_desc>div{
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
     line-height: 20px;
     position: relative;
 }
-
+.housesys__menu_desc .nice-select{
+  height: 25px;
+  line-height: 25px;
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.housesys__menu_desc .nice-select.open{
+  background-color: #282828;
+}
+.housesys__menu_desc .nice-select:after{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 3.5px 6px 3.5px;
+  border-color: transparent transparent #ffffff transparent;
+  background: none;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: rotate(180deg);
+  right: auto;
+  left: 5px;
+}
+.housesys__menu_desc .nice-select.open:after{
+  z-index: 6;
+  transform: rotate(0deg);
+}
+.housesys__menu_desc .nice-select .list{
+  margin: 0;
+  background-color: #282828;
+  border-radius: 0;
+  z-index: 5;
+  top: 0;
+  padding-top: 25px;
+}
+.housesys__menu_desc .nice-select .option{
+  line-height: 25px;
+  min-height: 25px;
+  z-index: 7;
+  background-color: #282828;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.housesys__menu_desc .nice-select.open .current{
+  position: relative;
+  z-index: 6;
+}
+.housesys__menu_desc .nice-select .option:hover,
+.housesys__menu_desc .nice-select .option.focus,
+.housesys__menu_desc .nice-select .option.selected.focus{
+  background-color: #474747;
+}
 .house__menu_textdesc{
   max-width: 50px;
   width: 100%;

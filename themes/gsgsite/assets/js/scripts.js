@@ -200,4 +200,8 @@ jQuery(document).ready(function ($) {
       }
     }
   });
+
+
+  //init nice selects
+  $('.nice-select-trigger').niceSelect();
 });
