@@ -1,0 +1,4 @@
+2019-10-18T03:28:21+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\wamp64\www\gsg.coelix.live\wp-content\plugins\wpml-translation-management\classes\notices\translation-jobs-migration\class-wpml-tm-translation-jobs-fix-summary.php on line 3
+
+2019-10-18T03:28:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\wamp64\www\gsg.coelix.live\wp-content\plugins\woocommerce\includes\admin\wc-meta-box-functions.php on line 10
+
