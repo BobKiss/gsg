@@ -48,7 +48,10 @@ Template Name: Blog
               <div>
                 <a href="<?php the_permalink(); ?>" class="archivepage__img archivepage__img_0<?php echo $counter; ?>" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center center / cover">
                   <span class="archivepage__desc">
-                    <?php the_field('button_title'); ?>
+                    
+                        לכתבה המלאה
+                      
+                    <!-- <?php the_field('button_title'); ?> -->
                   </span>
                 </a>
                 <h5 class="archivepage__img_title">
