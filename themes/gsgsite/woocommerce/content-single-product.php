@@ -56,33 +56,38 @@ if ( post_password_required() ) {
 						<!-- house systems selects -->
 						<div class="housesys__menu_desc">
 							<div>
-								<span class="housesys__menu_count">
-									<span class="house__menu_textdesc">Attr01</span>122
-								</span>
+								<select class="nice-select-trigger">
+								  <option selected value="1">111</option>
+								  <option value="2">222</option>
+								</select>
 								<p class="housesys__menu_text">בחר מגרש</p>
 							</div>
 							<div>
-								<span class="housesys__menu_count">
-									<span class="house__menu_textdesc">Attr02</span>חזית
-								</span>
+								<select class="nice-select-trigger">
+								  <option selected value="1">חזית</option>
+								  <option value="2">חזית</option>
+								</select>
 								<p class="housesys__menu_text">בחר תצוגת נכס</p>
 							</div>
 							<div>
-								<span class="housesys__menu_count">
-									<span class="house__menu_textdesc">Attr03</span>ללא
-								</span>
+								<select class="nice-select-trigger">
+								  <option selected value="1">ללא</option>
+								  <option value="2">ללא</option>
+								</select>
 								<p class="housesys__menu_text">בחר קומה</p>
 							</div>
 							<div>
-								<span class="housesys__menu_count">
-									<span class="house__menu_textdesc">Attr04</span>ללא
-								</span>
+								<select class="nice-select-trigger">
+								  <option selected value="1">ללא</option>
+								  <option value="2">ללא</option>
+								</select>
 								<p class="housesys__menu_text">בחר דירה</p>
 							</div>
 							<div>
-								<span class="housesys__menu_count">
-									<span class="house__menu_textdesc">Attr05</span>ללא
-								</span>
+								<select class="nice-select-trigger">
+								  <option selected value="1">ללא</option>
+								  <option value="2">ללא</option>
+								</select>
 								<p class="housesys__menu_text">בחר חבילה</p>
 							</div>
 						</div>
