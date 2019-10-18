@@ -2236,7 +2236,7 @@ animation-direction: reverse;
     text-align: center;
 }
 
-.footer__menu a:hover, .footer__links a:hover{
+.footer__menu a:hover, .footer__links a:hover {
     color: #fff600;
     text-decoration: none;
 }
@@ -2248,10 +2248,9 @@ animation-direction: reverse;
     background: #8e8686;
     margin: 0 10px;
 }
-.footer__menu .footer__menu_sep::nth-last-child(-n+1){
+.footer__menu .footer__menu_sep:nth-last-child(-n+1) {
   display: none;
 }
-
 
 /*--SectionInvest--*/
 
@@ -2491,7 +2490,7 @@ animation-direction: reverse;
   width: 300px;
   height: 300px;
   position: absolute;
-  right: 0;
+  right: -2vw;
   bottom: 0;
   margin-bottom: -60px;
 }
@@ -3110,7 +3109,7 @@ transform:rotate(360deg);}
     width: 100%;
     height: inherit;
     padding: 40px 100px;
-    margin-top: 60px;
+    
   }
   .housesys, .housesys .housesys__img img{
     height: 100%;
@@ -3124,6 +3123,7 @@ transform:rotate(360deg);}
     width: 100%;
     height: 60px;
     flex-direction: inherit;
+    display: none;
   }
   .headerSection .crisis__decorCircle{
       right: 2px;
@@ -3304,6 +3304,11 @@ transform:rotate(360deg);}
       flex-direction: row;
       justify-content: space-between;
     }
+    .clientItemHome:nth-child(2) p {
+      margin-right: auto;
+      text-align: right;
+    }
+
     .page-template-Homepage header {
       position: fixed;
       width: 100%;
@@ -3491,7 +3496,7 @@ transform:rotate(360deg);}
       padding: 60px 0;
     }
     .coming__wrap img{
-      height: 80px;
+      height: 100px;
     }
     .aboutUsPageWrapper .aboutMap .additionalImage{
       width: 15vh;
@@ -3643,14 +3648,16 @@ transform:rotate(360deg);}
     width: calc(100% + 80px);
   }
   .connect__projname{
-    font-size: 26px;
+    font-size: 22px;
     width: calc(100% + 80px);
+    line-height: 38px;
+
   }
   .single-post .header__title{
     font-size: 45px;
   }
   .small-projects-list .list-item {
-    margin-bottom: 40px;
+    margin: 20px 0;
   }
 }
 
@@ -3700,9 +3707,10 @@ transform:rotate(360deg);}
   .connect__projname{
     font-size: 16px;
     width: calc(100% + 40px);
+    line-height: 24px;
   }
   .single-post .header__title{
-  font-size: 25px;
+    font-size: 25px;
   }
 
 }
