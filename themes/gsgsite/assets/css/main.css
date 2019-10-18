@@ -3130,7 +3130,6 @@ transform:rotate(360deg);}
   body{
     overflow-x: hidden;
   }
-
   .vimeo-wrapper img {
     display: block;
   }
@@ -3182,9 +3181,9 @@ transform:rotate(360deg);}
     left: 0;
     top: 0;
     min-height: 100vh;
-      padding-right: 50px;
-      padding-left: 30px;
-    }
+    padding-right: 50px;
+    padding-left: 30px;
+  }
     .sideMenu .mailBlock .popup .popUpFooter {
       padding: 0;
     }
@@ -3224,6 +3223,9 @@ transform:rotate(360deg);}
     .vimeo-wrapper > .mobile-bg > img {
       width: 100%;
       height: 100%;
+    }
+    .sideMenu .volumeSwitcher{
+      display: none
     }
     .contactus__title{
       width: 100%;
