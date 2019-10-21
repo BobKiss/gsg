@@ -4,7 +4,7 @@
 
 .choose-flat-svg-container{
   height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
   background: #000;
 }
 
@@ -119,3 +119,12 @@
   overflow: scroll;
 }
 /* tabs with text end */
+@media screen and (min-width: 1398px){
+  .choose-flat-svg-container{
+    overflow-x: scroll;
+  }
+  .housesys__menu_desc > div{
+    line-height: 0px;
+  }
+
+}
