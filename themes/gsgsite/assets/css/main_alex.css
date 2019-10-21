@@ -9,6 +9,9 @@
 }
 
 /* tabs slider */
+.housesys__tabs_content{
+  overflow: scroll;
+}
 .housesys__tabs_content .imgs-slider{
   height: calc(100vh - 80px);
   overflow: hidden;
@@ -89,6 +92,7 @@
   max-width: 650px;
   direction: rtl;
   text-align: right;
+  height: 100%;
 }
 .prod-desc-two{
   height: calc(100vh - 80px);

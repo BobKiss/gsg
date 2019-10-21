@@ -57,6 +57,8 @@ jQuery(document).ready(function ($) {
     console.log('click');
     $(this).toggleClass('active');
     $(this).parent().toggleClass('active');
+    $('.sideMenu .mailBlock a.sideMenuMail').removeClass('opened');
+    $('.sideMenu .mailBlock .popup').removeClass('opened');
     $('.sideMenuWrapper').toggleClass('active');
   });
   $('.mainNavigationContainer .menu-item-has-children > a, .fullscreenMenu .menu-item-has-children > a').click(function (e) {
@@ -83,6 +85,9 @@ jQuery(document).ready(function ($) {
     $('.sideMenu .mailBlock a.sideMenuMail').click(function (e) {
       e.preventDefault();
       $(this).toggleClass('opened');
+      $('.sideMenu .sideMenuItem.first').removeClass('active');
+      $('.sideMenu .sideMenuItem.first').parent().removeClass('active');
+      $('.sideMenuWrapper').removeClass('active');
       $('.sideMenu .mailBlock .popup').toggleClass('opened');
     });
     $('.sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton').click(function (e) {

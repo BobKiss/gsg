@@ -391,9 +391,11 @@ header{
   bottom: 0;
   background-color: #171111;
 }
+
 .borderblockWrapper.animated .borderblock:nth-child(3) .bottomLine {
   animation: borderBottom 0.5s 1.5s;
   animation-fill-mode: forwards;
+  
 }
 .borderblockWrapper .borderblock:nth-child(3)::before {
   left: 0;
@@ -3582,6 +3584,10 @@ transform:rotate(360deg);}
     }
     .wp-block-columns {
       flex-direction: column-reverse;
+    }
+    .housesys__tabs_content{
+      padding: 90px 50px;
+      height: 100vh;
     }
   }
 
