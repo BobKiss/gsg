@@ -123,8 +123,4 @@
   .choose-flat-svg-container{
     overflow-x: scroll;
   }
-  .housesys__menu_desc > div{
-    line-height: 0px;
-  }
-
 }

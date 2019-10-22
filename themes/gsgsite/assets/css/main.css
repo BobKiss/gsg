@@ -2975,6 +2975,9 @@ transform:rotate(360deg);}
     .site-footer{
       padding-top: 170px;
     }
+    .header__title{
+      font-size: 110px;
+    }
    
 
 }
@@ -3132,10 +3135,10 @@ transform:rotate(360deg);}
     margin-right: 10px;
   }
   .headerSection .borderBlock.bigPaddings .row .title {
-    font-size: 90px;
+    font-size: 70px;
   }
   .decorCircle__energy{
-    max-width: 19vh;
+    max-width: 24vh;
     width: 100%;
   }
   .gsg-energy__intro{
@@ -3508,6 +3511,7 @@ transform:rotate(360deg);}
     }
     .footer__menu{
       align-items: flex-end;
+      direction: ltr;
     }
     .footer__links .footer__links_item:nth-child(1),
     .footer__links .footer__links_item:nth-child(2),
