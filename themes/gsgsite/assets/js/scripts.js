@@ -25,19 +25,24 @@ jQuery(document).ready(function ($) {
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
       slidesToShow: 7,
       arrows: false,
-      rtl:true,
       variableWidth: true,
-      autoscroll: true,
-      slidesToScroll: 3,
+		rtl: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
+      slidesToScroll: 1,
+		infinite: true,
     });
   }
   else{
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
       slidesToShow: 7,
       arrows: false,
+		rtl: false,
       variableWidth: true,
-      autoscroll: true,
-      slidesToScroll: 3,
+      autoplay: true,
+  		autoplaySpeed: 2000,
+      slidesToScroll: 1,
+		infinite: true,
     });
   }
 
