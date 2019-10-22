@@ -3358,6 +3358,7 @@ transform:rotate(360deg);}
     .gsg-energy__intro{
       height: 48%;
       align-items: center;
+      display: flex;
       line-height: 46px;
     }
     [dir="rtl"] .clientsBlock{
@@ -3719,7 +3720,7 @@ transform:rotate(360deg);}
 
   }
   .gsg-energy__map {
-    max-height: 325px;
+    max-height: 235px;
   }
   .item-meta__connect{
     font-size: 22px;
