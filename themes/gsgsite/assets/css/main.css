@@ -225,7 +225,6 @@ header{
     animation-duration: 36s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-direction: reverse;
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.6s, opacity 0.6s;
@@ -479,7 +478,28 @@ header{
 .headerSection .logo img {
   width: 100%;
 }
-.headerSection .decorCircle, .decorCircle__energy{
+.decorCircle__energy{
+  position: absolute;
+  bottom: 2%;
+  right: -13%;
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotation;
+  -moz-animation-duration: 36s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: rotation;
+  -o-animation-duration: 36s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  animation-name: rotation;
+  animation-duration: 36s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.headerSection .decorCircle{
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -500,9 +520,6 @@ header{
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: reverse;
-}
-.headerSection .crisis__decorCircle{
-  animation-direction: inherit;
 }
 .headerSection {
   display: flex;
