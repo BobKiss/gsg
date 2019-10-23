@@ -1070,11 +1070,12 @@ font-weight: 100;
   z-index: 6;
 }
 .sideMenuWrapper .sideMenuContent{
-  max-width: 630px;
+  max-width: 690px;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: auto 0;
+  padding: 0 60px;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock{
   border: 1px solid #fff600;
@@ -1413,7 +1414,7 @@ font-weight: 100;
   display: -ms-flex;
   display: flex;
   width: 100%;
-  padding: 34px 0;
+  margin: 34px 0;
   direction: rtl;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn {
@@ -1465,8 +1466,9 @@ font-weight: 100;
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
   color: #f4f4f4;
   border: 1px solid;
-  padding: 5px 15px;
+  padding: 5px 20px;
   max-height: 35px;
+  margin-right: auto;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton:hover {
   background-color: #fff;
@@ -2831,10 +2833,10 @@ font-weight: 100;
   line-height: 18px;
   direction: rtl;
   border: 1px solid black;
+  background-color: #fff600;
 }
 .caldera-grid .form-group{
   position: relative;
-  margin-bottom: 10px !important;
 }
 .caldera-grid .help-block{
   position: absolute;
@@ -3282,11 +3284,14 @@ font-weight: 100;
   }
   .sideMenu .mailBlock .popup {
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
     min-height: 100vh;
     padding: 35px 50px;
     max-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
     .sideMenu .mailBlock .popup .popUpFooter {
       padding: 0;
@@ -3380,6 +3385,7 @@ font-weight: 100;
       align-items: center;
       display: flex;
       line-height: 46px;
+      direction: rtl;
     }
     [dir="rtl"] .clientsBlock{
       direction: ltr;
@@ -3519,6 +3525,9 @@ font-weight: 100;
     .big-projects-list .list-item .item-info .excerpt p{
       font-size: 10px;
     }
+    .site-footer {
+      direction: ltr;
+    }
     .footer__wrap{
       text-align: right;
       font-size: 18px;
@@ -3529,7 +3538,6 @@ font-weight: 100;
     }
     .footer__menu{
       align-items: flex-end;
-      direction: ltr;
     }
     .footer__links .footer__links_item:nth-child(1),
     .footer__links .footer__links_item:nth-child(2),
@@ -3702,7 +3710,7 @@ font-weight: 100;
   .small-projects-list .list-item:nth-child(1){
     display: none;
   }
-  .small-projects-list .list-item .item-info.hovered, .big-projects-list .list-item .item-info.hovered{
+  .small-projects-list .list-item .item-info.hovered, .big-projects-list .list-item .item-info.hovered, .small-projects-list .list-item .item-info, .big-projects-list .list-item .item-info{
     display: none;
   }
   .big-projects-list .list-item .view-btn .btn-content, .small-projects-list .list-item .view-btn .btn-content{

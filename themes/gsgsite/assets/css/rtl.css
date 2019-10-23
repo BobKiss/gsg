@@ -5,6 +5,7 @@ body{
 .entry-content p {
   direction: rtl;
 }
+
 /*.headerSection {
   direction: ltr;
 }
@@ -47,3 +48,9 @@ body{
   border-color: #fff !important;
 }
 */
+
+@media screen and (max-width: 768px){
+  .site-footer {
+      direction: rtl !important;
+    }
+}

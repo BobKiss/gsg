@@ -10,6 +10,7 @@
 
 /* tabs slider */
 .housesys__tabs_content{
+  height: 100vh;
   overflow: scroll;
 }
 .housesys__tabs_content .imgs-slider{
@@ -88,7 +89,6 @@
   margin-right: auto;
   margin-left: auto;
   padding: 20px;
-  overflow: scroll;
   max-width: 650px;
   direction: rtl;
   text-align: right;
