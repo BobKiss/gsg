@@ -31,24 +31,6 @@ Template Name: Contact Us
 			 <?php echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 			<div class="row contactus__links d-flex no-gutters">
 					<div class="col-lg-4 col-md-12">
-					    <div class="contactus__links_left-block">
-    						<p class="contactus__text"><span> רח’ יפו 27, חיפה
-    						</span>
-    						כתובת
-    						</p>
-    						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
-    						</span>
-    						כפקס
-    						</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 text-center">
-						<p class="contactus__text"><span><a href="mailto:office@gsg.co.il">OFFICE@GSG.CO.IL</a>
-						</span>
-						כמייל
-						</p>
-					</div>
-					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_right-block">
     						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
     						</span>
@@ -65,6 +47,24 @@ Template Name: Contact Us
 
     						</p>
     					</div>
+					</div>
+					<div class="col-lg-4 col-md-12 text-center">
+						<p class="contactus__text"><span><a href="mailto:office@gsg.co.il">OFFICE@GSG.CO.IL</a>
+						</span>
+						כמייל
+						</p>
+					</div>
+					<div class="col-lg-4 col-md-12">
+					    <div class="contactus__links_left-block">
+    						<p class="contactus__text"><span> רח’ יפו 27, חיפה
+    						</span>
+    						כתובת
+    						</p>
+    						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
+    						</span>
+    						כפקס
+    						</p>
+						</div>
 					</div>
 			</div>
 		</div>

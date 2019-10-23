@@ -969,6 +969,9 @@ text-align: right;
   z-index: 3;
   background-color: #000;
 }
+.sideMenuItem.first {
+  z-index: 4;
+}
 .sideMenuItem .langName{
   margin: auto;
   text-transform: capitalize;
@@ -1212,12 +1215,11 @@ font-weight: 100;
   text-align: right;
 }
 
-
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children .sub-menu{
   height: 0;
   opacity: 0;
   visibility: hidden;
-  transition: .5s;
+  transition: .1s;
 }
 
 .vimeo-wrapper {
@@ -1248,7 +1250,7 @@ font-weight: 100;
   height: auto;
   opacity: 1;
   visibility: visible;
-  transition: .5s;
+  transition: .3s;
   padding-right: 30px;
 }
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active > a{
@@ -1375,9 +1377,13 @@ font-weight: 100;
 .sideMenu .mailBlock .caldera-grid .row {
   margin: 0;
 }
+.caldera-grid .row{
+  max-width: inherit !important;
+}
 .sideMenu .mailBlock .caldera-grid .row > div {
   padding: 0;
 }
+
 .sideMenu .mailBlock .popup .popupForm input[type="text"] {
 
 }
@@ -1505,25 +1511,25 @@ font-weight: 100;
 }
 .blog__borderblock .decorCircle{
   position: absolute;
-bottom: 2%;
-left: -13%;
--webkit-animation-name: rotation;
--webkit-animation-duration: 36s;
--webkit-animation-iteration-count: infinite;
--webkit-animation-timing-function: linear;
--moz-animation-name: rotation;
--moz-animation-duration: 36s;
--moz-animation-iteration-count: infinite;
--moz-animation-timing-function: linear;
--o-animation-name: rotation;
--o-animation-duration: 36s;
--o-animation-iteration-count: infinite;
--o-animation-timing-function: linear;
-animation-name: rotation;
-animation-duration: 36s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-animation-direction: reverse;
+  bottom: 2%;
+  left: -13%;
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotation;
+  -moz-animation-duration: 36s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: rotation;
+  -o-animation-duration: 36s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  animation-name: rotation;
+  animation-duration: 36s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
 }
 .sideMenu .mailBlock a.sideMenuMail img{
   width: 35px;
@@ -1673,7 +1679,7 @@ animation-direction: reverse;
     font-weight: 900;
     padding-bottom: 10px;
     border-bottom: 2px solid #000;
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-bottom: 24px;
 }
@@ -1732,10 +1738,10 @@ animation-direction: reverse;
     color:#000;
 }
 .contactus__links_left-block{
-    text-align: left;
+    text-align: right;
 }
 .contactus__links_right-block{
-    text-align: right;
+    text-align: left;
 }
 .contactus__lets{
     text-transform: uppercase;
@@ -2858,44 +2864,44 @@ animation-direction: reverse;
 }
 
 @-webkit-keyframes rotation {
-0% {-webkit-transform:rotate(0deg);
--moz-transform:rotate(0deg);
--o-transform:rotate(0deg);
-transform:rotate(0deg);}
-100% {-webkit-transform:rotate(360deg);
--moz-transform:rotate(360deg);
--o-transform:rotate(360deg);
-transform:rotate(360deg);}
+  0% {-webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -o-transform:rotate(0deg);
+  transform:rotate(0deg);}
+  100% {-webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg);}
 }
 @-moz-keyframes rotation {
-0% {-webkit-transform:rotate(0deg);
--moz-transform:rotate(0deg);
--o-transform:rotate(0deg);
-transform:rotate(0deg);}
-100% {-webkit-transform:rotate(360deg);
--moz-transform:rotate(360deg);
--o-transform:rotate(360deg);
-transform:rotate(360deg);}
+  0% {-webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -o-transform:rotate(0deg);
+  transform:rotate(0deg);}
+  100% {-webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg);}
 }
 @-o-keyframes rotation {
-0% {-webkit-transform:rotate(0deg);
--moz-transform:rotate(0deg);
--o-transform:rotate(0deg);
-transform:rotate(0deg);}
-100% {-webkit-transform:rotate(360deg);
--moz-transform:rotate(360deg);
--o-transform:rotate(360deg);
-transform:rotate(360deg);}
+  0% {-webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -o-transform:rotate(0deg);
+  transform:rotate(0deg);}
+  100% {-webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg);}
 }
 @keyframes rotation {
-0% {-webkit-transform:rotate(0deg);
--moz-transform:rotate(0deg);
--o-transform:rotate(0deg);
-transform:rotate(0deg);}
-100% {-webkit-transform:rotate(360deg);
--moz-transform:rotate(720deg);
--o-transform:rotate(360deg);
-transform:rotate(360deg);}
+  0% {-webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -o-transform:rotate(0deg);
+  transform:rotate(0deg);}
+  100% {-webkit-transform:rotate(360deg);
+  -moz-transform:rotate(720deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg);}
 }
 
 
@@ -2904,6 +2910,13 @@ transform:rotate(360deg);}
 }
 
 /*Media*/
+
+@media screen and (max-width: 1760px){
+
+  .clientsBlock{
+        width: 200px;
+    }
+  }
 
 @media screen and (max-width: 1620px){
 
@@ -2935,6 +2948,7 @@ transform:rotate(360deg);}
     }
      .header__round_text {
       bottom: -105px;
+      max-width: 28vw;
     }
 }
 @media screen and (max-width: 1520px){
@@ -2954,6 +2968,10 @@ transform:rotate(360deg);}
     }
     .headerSection .crisis__decorCircle{
       right: -8px;
+    }
+    .headerSection .borderBlock .row .title{
+      font-size: 80px;
+      line-height: 80px;
     }
 
 
@@ -3072,9 +3090,6 @@ transform:rotate(360deg);}
     }
     .headerSection{
       padding: 0 60px;
-    }
-    .headerSection .borderBlock .row .title{
-      font-size: 80px;
     }
     .headerSection .decorCircle, .contactUsPageHeader .header__round_text{
       bottom: 20px;
@@ -3270,8 +3285,8 @@ transform:rotate(360deg);}
     left: 0;
     top: 0;
     min-height: 100vh;
-    padding-right: 50px;
-    padding-left: 30px;
+    padding: 35px 50px;
+    max-width: 100vh;
   }
     .sideMenu .mailBlock .popup .popUpFooter {
       padding: 0;
