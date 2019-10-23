@@ -394,7 +394,7 @@ header{
 .borderblockWrapper.animated .borderblock:nth-child(3) .bottomLine {
   animation: borderBottom 0.5s 1.5s;
   animation-fill-mode: forwards;
-  
+
 }
 .borderblockWrapper .borderblock:nth-child(3)::before {
   left: 0;
@@ -2975,10 +2975,12 @@ transform:rotate(360deg);}
     .site-footer{
       padding-top: 170px;
     }
+
     .header__title{
       font-size: 110px;
     }
    
+
 
 }
 @media screen and (max-width: 1380px){
@@ -3186,7 +3188,7 @@ transform:rotate(360deg);}
     width: 100%;
     height: inherit;
     padding: 40px 100px;
-    
+
   }
   .housesys, .housesys .housesys__img img{
     height: 100%;
@@ -3361,6 +3363,7 @@ transform:rotate(360deg);}
     .gsg-energy__intro{
       height: 48%;
       align-items: center;
+      display: flex;
       line-height: 46px;
     }
     [dir="rtl"] .clientsBlock{
@@ -3407,7 +3410,7 @@ transform:rotate(360deg);}
       padding-bottom: 6px;
       position: relative;
     }
-  
+
     .sideMenu .sideMenuItem{
         width: 46px;
         height: 46px;
@@ -3723,7 +3726,7 @@ transform:rotate(360deg);}
 
   }
   .gsg-energy__map {
-    max-height: 325px;
+    max-height: 235px;
   }
   .item-meta__connect{
     font-size: 22px;
@@ -3795,4 +3798,7 @@ transform:rotate(360deg);}
     font-size: 25px;
   }
 
+}
+[dir="rtl"] .site-content .partneers .sliderPartneers {
+  direction: rtl;
 }
