@@ -36,7 +36,7 @@ Template Name: Barkan Project
 	תכנון | גביש שחם
 	ניהול הפרוייקט | גביש שחם
 					</p>
-					<a href="#" class="barkan-about__btn"> הורדת חוברת הפרוייקט- PDF</a>
+					<a href="<?= get_template_directory_uri() . '/NewPDF.pdf' ?>" class="barkan-about__btn"> הורדת חוברת הפרוייקט- PDF</a>
 				</div>
 				<div class="col-lg-6 d-flex flex-column">
 					<h5 class="barkan-about__title">
