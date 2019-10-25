@@ -73,7 +73,7 @@ Template Name: About Us
       </div>
 
       <div class="titleContainer content">
-				<div class="list">
+				<div class="list flex-row-reverse">
 					<?php
 					while ( have_rows('activity_areas') ) : the_row();
 						?>

@@ -159,5 +159,6 @@ if ( post_password_required() ) {
 </div>
 
 <?php get_template_part('template-parts/popup-thank-you'); ?>
+<?php get_template_part('template-parts/popup-fail'); ?>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

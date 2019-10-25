@@ -2999,7 +2999,7 @@ font-weight: 100;
     .header__title{
       font-size: 110px;
     }
-   
+
 
 
 }
@@ -3236,6 +3236,12 @@ font-weight: 100;
   body{
     overflow-x: hidden;
   }
+  .sideMenuWrapper .sideMenuContent .socialsRow {
+    display: flex;
+  }
+  .sideMenuWrapper .sideMenuContent .socialsRow span {
+    margin: 0 auto;
+  }
   .vimeo-wrapper img {
     display: block;
   }
@@ -3255,6 +3261,7 @@ font-weight: 100;
   .sideMenuWrapper .sideMenuContent .infoRow {
     overflow: scroll;
     padding: 0;
+    height: 25vh;
   }
   .sideMenuWrapper .sideMenuContent .main-navigation a {
     font-weight: normal;
@@ -3279,6 +3286,9 @@ font-weight: 100;
   }
   .sideMenuWrapper .sideMenuContent .menuBlock {
     padding: 25px;
+  }
+  .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
+    margin-bottom: 15px;
   }
   .headerSection .borderBlock.animated .row:nth-child(3) {
     overflow: hidden;

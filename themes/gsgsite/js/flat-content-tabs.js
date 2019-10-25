@@ -88,11 +88,18 @@ jQuery(document).ready(function($) {
       type: 'inline'
     }
   });
+  // fail popup
+  $('.fail-popup-trigger').magnificPopup({
+    items: {
+      src: '#fail_popup',
+      type: 'inline'
+    }
+  });
 
   //ordering
   $('.add-to-cart-simulation').on('click', function(e){
     e.preventDefault();
-    if(!$(this).hasClass('.disabled')){
+    if(!$(this).hasClass('disabled')){
 
       var data = {
         action: 'add-flat',
@@ -118,7 +125,10 @@ jQuery(document).ready(function($) {
           alert(response.message);
         }
       });
+    } else {
+      $('.fail-popup-trigger').magnificPopup('open');
     }
+
   });
 
 });
