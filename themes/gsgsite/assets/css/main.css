@@ -2056,6 +2056,10 @@ font-weight: 100;
 
 /*SectionHousesys*/
 
+.single-product .logo{
+  display: none;
+}
+
 .housesys, .housesys .housesys__img img{
     width: 100%;
     height: 100vh;
@@ -2833,6 +2837,8 @@ font-weight: 100;
   line-height: 18px;
   direction: rtl;
   border: 1px solid black;
+}
+#contactus .caldera-grid .last_row .btn{
   background-color: #fff600;
 }
 .caldera-grid .form-group{
@@ -3207,8 +3213,8 @@ font-weight: 100;
     padding: 40px 100px;
 
   }
-  .housesys, .housesys .housesys__img img{
-    height: 100%;
+  .housesys__tabs_content .slide-item img{
+    max-height: 300px;
   }
   .choose-flat-svg-container{
     height: 100% !important;
@@ -3527,7 +3533,7 @@ font-weight: 100;
       font-size: 10px;
     }
     .site-footer {
-      direction: ltr;
+      direction: rtl;
     }
     .footer__wrap{
       text-align: right;
@@ -3633,8 +3639,8 @@ font-weight: 100;
       flex-direction: column-reverse;
     }
     .housesys__tabs_content{
-      padding: 90px 50px;
-      height: 100vh;
+      padding: 20px 50px;
+      height: 40vh;
     }
   }
 
