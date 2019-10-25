@@ -1738,6 +1738,8 @@ font-weight: 100;
 .contactus__links{
     margin-top: 22px;
     color:#000;
+    border-top: 1px solid #000;
+    padding-top: 10px;
 }
 .contactus__links_left-block{
     text-align: right;
@@ -2954,10 +2956,9 @@ font-weight: 100;
     .housesys__menu{
       padding: 0 60px;
     }
-     .header__round_text {
-      bottom: -105px;
-      max-width: 28vw;
-    }
+    .header__round_text {
+      bottom: -90px;
+      max-width: 24vw;
 }
 @media screen and (max-width: 1520px){
 
