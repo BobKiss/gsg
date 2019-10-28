@@ -39,9 +39,9 @@ a:focus {
   font-weight: 900;
 }
 .titleContainer .title::after {
-  max-width: 580px;
+  max-width: 550px;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #171111;
   display: block;
   content: '';
@@ -691,7 +691,8 @@ header{
   margin-bottom: 40px;
 }
 .headerSection .borderBlock.borderWhite .decorCircle img {
-  transform: scale(-1,1);
+  /* transform: scale(-1,1); */
+  transform: scale(0.9);
 }
 .headerSection .borderBlock.borderWhite {
   transform: scale(-1,1);
@@ -730,6 +731,9 @@ header{
 }
 .aboutUsPageWrapper .aboutYellow .part {
   flex-basis: calc(50% - 50px);
+}
+.aboutUsPageWrapper .aboutYellow .part.bold {
+  font-weight: bold;
 }
 .aboutUsPageWrapper .aboutYellow p {
   margin: 0;
@@ -969,11 +973,6 @@ text-align: right;
   z-index: 3;
   background-color: #000;
 }
-.sideMenuItem.first:hover,
-.sideMenuItem.mailBlock:hover .sideMenuMail {
-  transition: 0.3s background-color;
-  background-color: #fff600;
-}
 .sideMenuItem.first {
   z-index: 4;
 }
@@ -990,7 +989,27 @@ text-align: right;
 .sideMenuItem:hover a, .sideMenuItem a:active{
   color: #fff600;
 }
-
+/* Menu icon */
+.sideMenuItem .menu-icon {
+  width: 28px;
+  height: 21px;
+}
+.sideMenuItem.first:hover .menu-icon div{
+  background: #fff600;
+}
+.sideMenuItem .menu-icon div {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: 0.3s background ease-in-out;
+}
+.sideMenuItem .menu-icon div:last-child {
+  margin-bottom: 0;
+  width: 80%;
+  float: right;
+}
+/* Menu icon end */
 .sideMenu .sideMenuItem i{
   position: absolute;
   visibility: hidden;
@@ -1041,6 +1060,17 @@ font-weight: 100;
   opacity: 1;
   color: white;
   font-size: 30px;
+}
+.sideMenu .sideMenuItem .sideMenuMail svg {
+  display: block;
+  fill: #fff;
+  width: 25px;
+  stroke: #fff;
+  transition: 0.3s all ease-in-out;
+}
+.sideMenu .sideMenuItem .sideMenuMail:hover svg {
+  fill: #fff600;
+  stroke: #fff600;
 }
 .sideMenu .sideMenuItem.active{
   background-color: #fff600;
@@ -1539,8 +1569,11 @@ font-weight: 100;
   animation-direction: normal;
 }
 .sideMenu .mailBlock a.sideMenuMail img{
-  width: 35px;
+  width: 25px;
 }
+/* .sideMenu .mailBlock a.sideMenuMail object{
+  width: 35px;
+} */
 .sideMenu .mailBlock a.sideMenuMail .cross {
   position: relative;
   opacity: 0;
@@ -1584,6 +1617,9 @@ font-weight: 100;
     padding-bottom: 90px;
     position: relative;
 }
+.sn-contactsus {
+  padding-bottom: 180px;
+}
 .sn-contactsus-crisis .contactus__wrap {
   border-bottom: none;
 }
@@ -1602,13 +1638,14 @@ font-weight: 100;
 }
 .sn-contactus__area{
     padding-right: 25px;
+    font-size: 18px;
 }
 .sn-contactus__block{
     padding-left: 25px;
     width: 100%;
 }
 .sn-contactus__topborder{
-  border-top: 2px solid #000;
+  border-top: 1px solid #000;
   margin-top: 7px;
   margin-left: 25px;
 }
@@ -1685,10 +1722,14 @@ font-weight: 100;
     letter-spacing: 2px;
     font-weight: 900;
     padding-bottom: 10px;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
     width: 100%;
     margin-left: auto;
     margin-bottom: 24px;
+}
+#contactus .caldera-grid {
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
 }
 .contactus__area textarea{
     width: 100%;
@@ -1767,6 +1808,12 @@ font-weight: 100;
     display: flex;
     -ms-align-items: center;
     align-items: center;
+}
+.contactus__soc_icons img {
+  transition: 0.3s all ease-in-out;
+}
+.contactus__soc_icons:hover img {
+  transform: scale(1.5);
 }
 .contactus__text, .contactus__soc{
     font-size: 26px;
@@ -2838,7 +2885,8 @@ font-weight: 100;
   line-height: 18px;
   direction: rtl;
   border: 1px solid black;
-  background-color: #fff600;
+  /* background-color: #fff600; */
+  background-color: #fff;
 }
 .caldera-grid .form-group{
   position: relative;
