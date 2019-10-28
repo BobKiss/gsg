@@ -699,7 +699,6 @@ header{
   max-width: unset;
   font-family: 'Roboto';
   font-size: 100px;
-  letter-spacing: 10px;
 }
 .headerSection .borderBlock.borderWhite .row:nth-child(1) {
   border-top-color: #FEFFFE;
@@ -3301,6 +3300,9 @@ font-weight: 100;
     width: 84% !important;
     margin-top: 60px;
   }
+  .energy__borderBlock .title {
+    letter-spacing: 10px;
+  }
   .blogpage .container, .archivepage .container, .site-footer .container{
     padding-right: 50px;
     padding-left: 50px;
@@ -3826,6 +3828,10 @@ font-weight: 100;
 
 
 @media screen and (max-width: 576px){
+  .energy__borderBlock .title {
+    letter-spacing: normal;
+  }
+
   .coming__wrap .coming__circle{
       width: 115px;
       height: 115px;
