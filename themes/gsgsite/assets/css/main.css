@@ -195,6 +195,11 @@ a:focus {
   text-align: right;
 }
 
+ .firstFow a{
+   text-decoration: none;
+   color: #FEFFFE !important;
+ }
+
 header{
   display: -webkit-flex;
   display: -ms-flex;
@@ -584,6 +589,7 @@ header{
 .headerSection .borderBlock.bigPaddings .row .title {
   padding-top: 3vw;
   padding-bottom: 3.5vw;
+  transform: translateX(-3px);
 }
 .headerSection .borderBlock.animated .row:nth-child(1)::after {
   max-height: 100%;
@@ -910,7 +916,7 @@ text-align: right;
   line-height: 23px;
   position: relative;
   padding-bottom: 10px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 .aboutUsPageWrapper .managmentBoard .member .memberTitle:after {
   content: '';
@@ -982,6 +988,12 @@ text-align: right;
   color: white;
   font-size: 20px;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .sideMenuItem a:visited, .sideMenuItem a:active, .sideMenuItem a:active{
     text-decoration: none;
@@ -1802,6 +1814,8 @@ font-weight: 100;
 .contactus__links{
     margin-top: 22px;
     color:#000;
+    border-top: 1px solid #000;
+    padding-top: 10px;
 }
 .contactus__links_left-block{
     text-align: right;
@@ -2126,6 +2140,10 @@ font-weight: 100;
 
 /*SectionHousesys*/
 
+.single-product .logo{
+  display: none;
+}
+
 .housesys, .housesys .housesys__img img{
     width: 100%;
     height: 100vh;
@@ -2378,6 +2396,22 @@ font-weight: 100;
     color: #fff;
     text-decoration: none;
 }
+
+.footer__links_item.socials{
+  width: 150px;
+  height: 150px;
+  stroke: rgb(241, 241, 241);
+  stroke-width: 1;
+  /* stroke-dasharray: 10 5; */
+  fill: rgb(255, 255, 255);
+}
+
+.footer__links_item svg:hover{
+  stroke-dasharray: 10 0;
+  fill: rgb(255, 255, 255);
+  stroke: rgb(251, 255, 0);
+}
+
 .footer__links_item a.currentLang {
   color: #fff600;
 }
@@ -2391,6 +2425,11 @@ font-weight: 100;
 
 .footer__menu a:hover, .footer__links a:hover {
     color: #fff600;
+    text-decoration: none;
+}
+
+.footer__links a:focus {
+    color: #fff;
     text-decoration: none;
 }
 
@@ -2446,7 +2485,7 @@ font-weight: 100;
 .barkan-about__title{
     padding-bottom: 4px;
     margin-top: 50px;
-    border-bottom: 2px solid  #000;
+    border-bottom: 1px solid  #000;
     color: #000;
     font-size: 26px;
     font-weight: 900;
@@ -2718,7 +2757,7 @@ font-weight: 100;
   direction: ltr;
   overflow: hidden;
 }
-[dir="rtl"] .big-projects-list .list-item .item-info{
+[dir="rtl"] .big-projects-list .list-item .item-content-block{
   text-align: right;
   direction: rtl;
 }
@@ -2766,6 +2805,9 @@ font-weight: 100;
   height: auto;
   visibility: visible;
   transition: .5s;
+  font-size: 20px;
+  font-weight: 70;
+  line-height: 25px;
 }
 .big-projects-list .list-item .view-btn:hover + .big-projects-list .list-item .item-info{
 
@@ -3023,10 +3065,9 @@ font-weight: 100;
     .housesys__menu{
       padding: 0 60px;
     }
-     .header__round_text {
-      bottom: -105px;
-      max-width: 28vw;
-    }
+    .header__round_text {
+      bottom: -90px;
+      max-width: 24vw;
 }
 @media screen and (max-width: 1520px){
 
@@ -3073,6 +3114,10 @@ font-weight: 100;
 
     .header__title{
       font-size: 110px;
+    }
+
+    .borderblockWrapper{
+      transform: translateY(30px);
     }
 
 
@@ -3282,8 +3327,8 @@ font-weight: 100;
     padding: 40px 100px;
 
   }
-  .housesys, .housesys .housesys__img img{
-    height: 100%;
+  .housesys__tabs_content .slide-item img{
+    max-height: 300px;
   }
   .choose-flat-svg-container{
     height: 100% !important;
@@ -3615,7 +3660,7 @@ font-weight: 100;
       font-size: 10px;
     }
     .site-footer {
-      direction: ltr;
+      direction: rtl;
     }
     .footer__wrap{
       text-align: right;
@@ -3721,8 +3766,8 @@ font-weight: 100;
       flex-direction: column-reverse;
     }
     .housesys__tabs_content{
-      padding: 90px 50px;
-      height: 100vh;
+      padding: 20px 50px;
+      height: 40vh;
     }
   }
 

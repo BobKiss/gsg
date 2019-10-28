@@ -72,12 +72,21 @@ jQuery(document).ready(function($) {
       $('.add-to-cart-simulation').addClass('active');
       var attributes = $(this).data('attributes');
 
-      //change woocommerce select
-      for(attribute in attributes){
-        var select = $('select[name="'+attribute+'"]')
-        select.val(attributes[attribute]).trigger('change');
-      }
-    }
+  //     //change woocommerce select
+  //     for(attribute in attributes){
+  //       var select = $('select[name="'+attribute+'"]')
+  //       select.val(attributes[attribute]).trigger('change');
+  //     }
+  //   }
+
+  // });
+
+  //zooming flat//
+  $('.img__zoom').on('click', function(e){
+    $('.housesys__menu').style.display('none');
+    $('.').style.width('100%');
+    $('.housesys__img').style.display('none');
+
 
   });
 

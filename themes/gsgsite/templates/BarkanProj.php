@@ -15,7 +15,7 @@ Template Name: Barkan Project
 				    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock124.jpg">
 				</div>
 
-				<p class="barkan-header__text">ברקן מול הים | ברק </p>
+				<p class="barkan-header__text">ברקן מול הים | בןקן </p>
 			</div>
 		</div>
 	</section>
@@ -33,8 +33,6 @@ Template Name: Barkan Project
 						ברקן מול הים | פירוט הפרוייקט
 					</h5>
 					<p class="barkan-about__text">	62 מגרשים למכירה ביישוב ברקן | גודל מגרש החל מ500 מ”ר ועד 700 מ”ר | מחיר השטח כולל פיתוח ומיסי מקום | אפשרות לבניית וילה צמודה קרקע בשומרון
-	תכנון | גביש שחם
-	ניהול הפרוייקט | גביש שחם
 					</p>
 					<a href="<?= get_template_directory_uri() . '/NewPDF.pdf' ?>" class="barkan-about__btn"> הורדת חוברת הפרוייקט- PDF</a>
 				</div>
@@ -43,7 +41,7 @@ Template Name: Barkan Project
 						ברקן מול הים | על האזור
 					</h5>
 					<p class="barkan-about__text">
-						הישוב נוסד ב1981, ביושב כ400 משפחות. בישוב אוכלוסיה איכותית המנהלת חיי קהילה משותפים. בישוב תינוקיות, מעון, גני ילדים, ובית ספר יסודי, ביושב בריכה, מגרשי טניס ופעילות תרבותית ענפה.
+						הישוב נוסד ב1981, ביושב כ400 משפחות. בישוב אוכלוסיה איכותית המנהלת חיי קהילה משותפים. בישוב תינוקיות, מעון, גני ילדים, ובית ספר יסודי, בישוב בריכה, מגרשי טניס ופעילות תרבותית ענפה.
 					</p>
 				</div>
 			</div>
@@ -64,12 +62,12 @@ Template Name: Barkan Project
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_109365068-min">
 				</div>
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_126.jpg">
 				</div>
 			</div>
 		</div>

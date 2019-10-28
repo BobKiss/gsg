@@ -240,7 +240,7 @@ jQuery(document).ready(function ($) {
 
 });
 
-new WOW().init();
+// new WOW().init();
 
 /*!
  * jQuery UI Touch Punch 0.2.3

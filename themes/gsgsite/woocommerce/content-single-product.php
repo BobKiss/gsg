@@ -36,7 +36,7 @@ if ( post_password_required() ) {
 	<section id="housesys" class="housesys">
 		<div class="container-fluid">
 			<div class="row no-gutters">
-				<div class="housesys__img choose-flat-img-container">
+				<div id="housesysImg"class="housesys__img choose-flat-img-container">
 					<div class="choose-flat-svg-container">
 						<?php get_template_part('template-parts/choose-flat-svg'); ?>
 					</div>
@@ -46,7 +46,7 @@ if ( post_password_required() ) {
 						<a href="#" class="housesys__menu_lnk" onclick="history.forward()"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right.png"></a>
 						<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png"></a>
 						<a href="#" class="housesys__menu_lnk" onclick="document.getElementById('housesysImg').style.width = '74%'"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus.png"></a>
-						<a href="#" class="housesys__menu_lnk" onclick="document.getElementById('housesysImg').style.width = '100%'"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></a>
+						<a href="#" class="housesys__menu_lnk img__zoom"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></a>
 					</div>
 				</div>
 
