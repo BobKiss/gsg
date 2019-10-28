@@ -912,7 +912,7 @@ text-align: right;
   line-height: 23px;
   position: relative;
   padding-bottom: 10px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 .aboutUsPageWrapper .managmentBoard .member .memberTitle:after {
   content: '';
