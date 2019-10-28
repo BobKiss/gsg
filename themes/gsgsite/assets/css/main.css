@@ -484,6 +484,8 @@ header{
   width: 100%;
 }
 .decorCircle__energy{
+  width: 300px;
+  height: 300px;
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -646,8 +648,8 @@ header{
   text-align: left;
   max-width: unset;
   font-family: 'Roboto';
-  font-weight: 900;
   font-size: 100px;
+  letter-spacing: 10px;
 }
 .headerSection .borderBlock.borderWhite .row:nth-child(1) {
   border-top-color: #FEFFFE;
@@ -1641,7 +1643,7 @@ font-weight: 100;
 .gsg-energy__intro{
   height: 50%;
   width: 100%;
-  border-left: 2px solid #fff;
+  border-left: 1px solid #fff;
   display: flex;
   align-items: center;
   font-size: 48px;
@@ -1654,13 +1656,13 @@ font-weight: 100;
 .gsg-energy__intro_top {
     height: 25%;
     width: 100%;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-bottom: none;
 }
 .gsg-energy__intro_bottom {
     height: 25%;
     width: 100%;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-top: none;
     background-size: cover;
 }
@@ -1692,10 +1694,14 @@ font-weight: 100;
     letter-spacing: 2px;
     font-weight: 900;
     padding-bottom: 10px;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
     width: 100%;
     margin-left: auto;
     margin-bottom: 24px;
+}
+
+.sn-contactsus .fb textarea{
+  padding-right: 50px;
 }
 .contactus__area textarea{
     width: 100%;
@@ -2351,6 +2357,7 @@ font-weight: 100;
 .footer__menu a{
     color: #8e8686;
     text-align: center;
+    white-space: nowrap;
 }
 
 .footer__menu a:hover, .footer__links a:hover {
@@ -2867,6 +2874,7 @@ font-weight: 100;
   min-height: 50px;
   font-size: 18px;
   font-weight: 700;
+  padding-right: 10px;
 }
 .caldera-grid .last_row .btn{
   padding: 3px 17px;

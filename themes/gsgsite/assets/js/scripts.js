@@ -184,15 +184,27 @@ jQuery(document).ready(function ($) {
     initHeaderWordsAnimations('header .header__title, .headerSection .borderBlock .row .title, .archive .headerSection .borderBlock.hebrew .row .littleTitle');
   }
 
+  function phone(name) {
+    "use strict";
+    var r = /^([+]?[0-9\s-\(\)]{3,25})*$/i,
+        arr = name.match(r),
+        res,
+        str = arr.join('');
+    if ( name.match(r) === null ) {
+      return false;
+    } else {
+      return true;
+    }
 
-
-  function disableLanguages() {
-    $('.sideMenu .sideMenuItem a.langName').click(function (e) {
-      e.preventDefault();
-    });
+    // if (name.substr(0, 1) === '+') {
+    //   res = "+" + str;
+    // } else if (str.substr(0, 1) === '8') {
+    //   res = "0" + str.substr(1);
+    // } else {
+    //   res = str;
+    // }
+    // return res;
   }
-
-
 
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
