@@ -1185,7 +1185,10 @@ font-weight: 100;
   padding-left: 7px;
 }
 .sideMenuWrapper .sideMenuContent .socialsRow a img{
-
+ transition: 0.3s all ease-in-out;
+}
+.sideMenuWrapper .sideMenuContent .socialsRow a:hover img {
+  transform: scale(1.5);
 }
 .sideMenuWrapper .sideMenuContent .socialsRow span{
   font-size: 14px;
