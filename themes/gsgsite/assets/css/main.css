@@ -1374,11 +1374,13 @@ font-weight: 100;
 }
 .sideMenu .mailBlock .popup .popupTitle {
   font-size: 26px;
+  font-weight: bold;
   color: #fff;
   border-bottom: 2px solid white;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  text-align: right;
+  text-align: center;
+  letter-spacing: 3px;
 }
 .popUpFooter {
 
@@ -1398,10 +1400,11 @@ font-weight: 100;
   color: #000;
   line-height: 50px;
   height: 50px;
-  padding: 6px 6px;
+  padding: 6px 15px;
 }
 .sideMenu .mailBlock .popup .popupForm input::placeholder {
   color: #c0c0c0;
+  font-weight: bold;
 }
 .sideMenu .mailBlock .caldera-grid .form-group {
   margin: 0;
@@ -1470,7 +1473,7 @@ font-weight: 100;
   justify-content: center;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: -webkit-flex;
   display: -ms-flex;
@@ -1480,8 +1483,10 @@ font-weight: 100;
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo img {
   width: 100%;
   height: 100%;
-  max-width: 60px;
-  max-height: 35px;
+  max-width: 80px;
+  max-height: 55px;
+  object-fit: cover;
+  /* transform: scale(1.3); */
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn::before {
   content: '';
@@ -2897,6 +2902,10 @@ font-weight: 100;
 .caldera-grid .help-block{
   position: absolute;
   top: 0;
+}
+.caldera-grid .help-block {
+  margin-top: 14px !important;
+  margin-left: 15px;
 }
 
 
