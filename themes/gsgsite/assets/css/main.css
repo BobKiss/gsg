@@ -969,6 +969,11 @@ text-align: right;
   z-index: 3;
   background-color: #000;
 }
+.sideMenuItem.first:hover,
+.sideMenuItem.mailBlock:hover .sideMenuMail {
+  transition: 0.3s background-color;
+  background-color: #fff600;
+}
 .sideMenuItem.first {
   z-index: 4;
 }
@@ -3235,6 +3240,9 @@ font-weight: 100;
 @media screen and (max-width: 768px){
   body{
     overflow-x: hidden;
+  }
+  .housesys__tabs_content .slide-item img {
+    object-fit: cover;
   }
   .sideMenuWrapper .sideMenuContent .socialsRow {
     display: flex;
