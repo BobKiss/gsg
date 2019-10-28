@@ -24,7 +24,7 @@ Template Name: Connect From
                   </div>
 
                 <?php endif; ?>
-                <a href="#" class="view-btn"><p class="btn-content">קרא כתבה</p></a>
+                <a href="https://www.makorrishon.co.il/news/175345/" class="view-btn"><p class="btn-content">קרא כתבה</p></a>
               </div>
             </div>
           </div>
