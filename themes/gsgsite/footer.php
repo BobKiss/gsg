@@ -58,27 +58,29 @@
 										  <?php echo $addr3; ?> <span class="footer__menu_sep"></span> <?php echo $addr2; ?>  <span class="footer__menu_sep"></span> <?php echo $addr1; ?>
 
 										</div>
-    		            <div class="footer__links_item"> <?php echo __('Phone', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></div>
-    		            <div class="footer__links_item"> <?php echo __('Mail', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></div>
+    		            <a href ="tel:<?php echo __('Phone', 'gsgsite'); ?>" class="footer__links_item"> <?php echo __('Phone', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></a>
+    		            <a href ="mailto:<?php echo __('Mail', 'gsgsite');?>" class="footer__links_item"> <?php echo __('Mail', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></a>
     		            <div class="footer__links_item" style="color:white;">
 											<a class="<?php if (get_locale() !== 'he_IL') echo "currentLang"; ?>" href="?lang=en">ENGLISH</a>
 											<span class="footer__menu_sep"></span>
 											<a class="<?php if (get_locale() == 'he_IL') echo "currentLang"; ?>" href="?lang=he" style="margin-left:14px;">HEBREW</a>
 											<p style="margin: 0 auto;"><?php echo __('Change language', 'gsgsite'); ?></p>
 										</div>
-    		            <div class="footer__links_item" style="color:white;">
-                            <div>
+    		            <div class="footer__links_item socials" style="color:white;">
+
     		                <a href="https://www.facebook.com/gavish.shaham/" style="margin-left:10px;">
-    		                    <svg type="image/svg+xml" data="SvgImg.svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    		                    <!-- <svg type="image/svg+xml" data="SvgImg.svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/fb-white.svg" width="30" height="30" alt="image format png" />
-                                </svg>
+                                </svg> -->
+																<?php get_template_part('template-parts/svg','facebook'); ?>
     		                </a>
     		                <a href="https://www.instagram.com/gavish_shaham_group/" style="margin-left:10px;">
-    		                    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    		                    <!-- <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     		                       <img src="<?php bloginfo('template_url'); ?>/assets/images/insta-white.svg" width="30" height="30" alt="image format png" />
-                                </svg>
+                                </svg> -->
+																<?php get_template_part('template-parts/svg','instagram'); ?>
     		                </a>
-                            </div>
+
                             <p style="margin: 0 auto;"><?php echo __('Our social', 'gsgsite'); ?></p>
     		            </div>
     		        </div>

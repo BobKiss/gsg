@@ -235,7 +235,7 @@ jQuery(document).ready(function ($) {
   $('.nice-select-trigger').niceSelect();
 });
 
-new WOW().init();
+// new WOW().init();
 
 /*!
  * jQuery UI Touch Punch 0.2.3

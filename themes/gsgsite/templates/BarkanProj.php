@@ -64,12 +64,7 @@ Template Name: Barkan Project
 			</div>
 			<div>
 				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_125.jpg">
-				</div>
-			</div>
-			<div>
-				<div class="barkan-single-slider">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/192489-OXNYW4-292.jpg">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock_126.jpg">
 				</div>
 			</div>
 		</div>
