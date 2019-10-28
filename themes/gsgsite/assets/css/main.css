@@ -997,6 +997,9 @@ text-align: right;
 .sideMenuItem.first:hover .menu-icon div{
   background: #fff600;
 }
+.sideMenuItem.first.active .menu-icon{
+  opacity: 0;
+}
 .sideMenuItem .menu-icon div {
   width: 100%;
   height: 1px;
@@ -1551,6 +1554,10 @@ font-weight: 100;
   background-color: #fff600;
 }
 .sideMenu .sideMenuItem .sideMenuMail.opened img {
+  opacity: 0;
+  visibility: hidden;
+}
+.sideMenu .sideMenuItem .sideMenuMail.opened svg {
   opacity: 0;
   visibility: hidden;
 }

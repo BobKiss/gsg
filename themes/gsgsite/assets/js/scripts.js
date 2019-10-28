@@ -234,7 +234,10 @@ jQuery(document).ready(function ($) {
   //init nice selects
   $('.nice-select-trigger').niceSelect();
 
-  $()
+  $('.popupForm').delegate( ".help-block-phone_better", "load", function () {
+    $(".help-block-phone_better").html("another text");
+  } );
+
 });
 
 new WOW().init();
