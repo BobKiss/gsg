@@ -56,12 +56,20 @@
 
 		<aside class="sideMenu">
 			<div class="sideMenuItem first">
-				<img class="menuIcon" src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt="">
+				<!-- <img class="menuIcon" src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt=""> -->
+				<div class="menu-icon">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 				<i class="fal fa-times"></i>
 			</div>
 			<div class="sideMenuItem mailBlock">
 				<a class="sideMenuMail" href="#">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/mail-icon.svg" alt="">
+					<!-- <img src="<?php bloginfo('template_url'); ?>/assets/images/mail-icon.svg" alt=""> -->
+					<?php get_template_part('template-parts/svg','mail-icon'); ?>
+					<!-- <object data="<?php bloginfo('template_url'); ?>/assets/images/mail-icon.svg" type="image/svg+xml"></object> -->
 					<i class="fal fa-times close"></i>
 				</a>
 				<div class="popup">
@@ -157,7 +165,8 @@
 					</div>
 				</div>
 				<div class="socialsRow">
-					<span><?php _e('Our social','GsgStrings'); ?>
+					<!-- <span><?php _e('Our social','GsgStrings'); ?> -->
+					<span>Our social:
 						<a href="https://www.instagram.com/gavish_shaham_group/"><img src="<?php bloginfo('template_url'); ?>/assets/images/InstagramIcon.png" alt=""></a>
 						<a href="https://www.facebook.com/gavish.shaham/"><img src="<?php bloginfo('template_url'); ?>/assets/images/FacebookIcon.png" alt=""></a></span>
 					</div>
