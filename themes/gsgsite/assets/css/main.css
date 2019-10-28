@@ -2687,7 +2687,7 @@ font-weight: 100;
   direction: ltr;
   overflow: hidden;
 }
-[dir="rtl"] .big-projects-list .list-item .item-info{
+[dir="rtl"] .big-projects-list .list-item .item-content-block{
   text-align: right;
   direction: rtl;
 }
@@ -2735,6 +2735,9 @@ font-weight: 100;
   height: auto;
   visibility: visible;
   transition: .5s;
+  font-size: 20px;
+  font-weight: 70;
+  line-height: 25px;
 }
 .big-projects-list .list-item .view-btn:hover + .big-projects-list .list-item .item-info{
 
