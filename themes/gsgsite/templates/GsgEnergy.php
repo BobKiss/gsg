@@ -61,11 +61,11 @@ Template Name: GsgEnergy
 				<div class="col-lg-8 col-md-12">
 					<div class="mapEnergyContainer">
 				    	<div class="gsg-energy__map" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/gsgenergy-map.png) center center / cover">
-				    		
-				    	</div>
+
+				    	<!-- </div>
 				        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Minus.svg" class="mapBtnMinus" alt="">
 				        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Plus.svg" class="mapBtnPlus" alt="">
-				    </div>
+				    </div> -->
 				</div>
 			</div>
 		</div>
@@ -79,7 +79,9 @@ Template Name: GsgEnergy
 		<div class="container wow slideInRight">
 			 <h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
+			 <h4 class="contactus__title"></h4>
 		</div>
+
 	</section>
 
 </div>
