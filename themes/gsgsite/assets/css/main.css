@@ -297,7 +297,57 @@ header{
     height: 100%;
   }
 }
+
 /* end /* FIRST BLOCK ANIMATIONS */
+
+/* Menu block animation */
+@keyframes menuBorderGorizontal {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes menuBorderVertical {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+.menu-border-top,
+.menu-border-left,
+.menu-border-bottom {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border: 1px solid #fff600;
+}
+
+.menu-border-top {
+  width: 0;
+  top: 0;
+  right: 0;
+}
+
+.menu-border-left {
+  /* height: 100%; */
+  height: 0;
+  width: 1px;
+  top: 0;
+  left: 0;
+}
+
+.menu-border-bottom {
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Menu block animation end */
 
 
 .borderblockWrapper .borderblock{
@@ -1128,7 +1178,7 @@ font-weight: 100;
   padding: 0 60px;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock{
-  border: 1px solid #fff600;
+  /* border: 1px solid #fff600; */
   border-right: 0;
   display: flex;
   justify-content: flex-end;
@@ -1136,14 +1186,13 @@ font-weight: 100;
   position: relative;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock:after{
-    content:'';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 1px;
-    height: 40%;
-    background: #fff600;
-
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 40%;
+  background: #fff600;
 }
 .sideMenuWrapper .sideMenuContent .infoRow{
   display: flex;

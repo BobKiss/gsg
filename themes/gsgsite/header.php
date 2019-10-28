@@ -134,6 +134,7 @@
 
 		<div class="sideMenuWrapper">
 			<div class="sideMenuContent">
+
 				<div class="menuBlock">
 					<nav id="site-navigation" class="main-navigation">
 						<div class="mainNavigationContainer">
@@ -145,7 +146,11 @@
 							?>
 						</div>
 					</nav>
+					<div class="menu-border-top"></div>
+					<div class="menu-border-left"></div>
+					<div class="menu-border-bottom"></div>
 				</div>
+
 				<div class="infoRow">
 					<div class="infoCol">
 						<p class="infoHeading"><?php _e('Change language','GsgStrings'); ?> </p>

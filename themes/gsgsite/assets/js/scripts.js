@@ -230,13 +230,40 @@ jQuery(document).ready(function ($) {
     }
   });
 
-
   //init nice selects
   $('.nice-select-trigger').niceSelect();
 
-  $('.popupForm').delegate( ".help-block-phone_better", "load", function () {
-    $(".help-block-phone_better").html("another text");
-  } );
+  $('.sideMenuItem.first').on('click', function () {
+
+    // reset
+    // $('.menuBlock .menu-border-top').css({width: "0"});
+    // $('.menuBlock .menu-border-left').css({height: "0"});
+    // $('.menuBlock .menu-border-bottom').css({width: "0"});
+
+    if( !$(this).hasClass('active') ) {
+      $('.menuBlock .menu-border-top').css({width: "0"});
+      $('.menuBlock .menu-border-left').css({height: "0"});
+      $('.menuBlock .menu-border-bottom').css({width: "0"});
+      return;
+    }
+
+    let borderTop = {
+      width: "100%"
+    }
+    let borderLeft = {
+      height: "100%"
+    }
+    let borderBottom = {
+      width: "100%"
+    }
+
+    $('.menuBlock .menu-border-top').animate(borderTop, 1000, function () {
+      $('.menuBlock .menu-border-left').animate(borderLeft, 1000, function () {
+        $('.menuBlock .menu-border-bottom').animate(borderBottom, 1000)
+      })
+    });
+
+  });
 
 });
 
