@@ -80,7 +80,9 @@
 					<div class="popUpFooter">
 						<div class="popupColumn">
 							<div class="logo">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/WhiteLogo.png" alt="">
+								<a href="<?php echo get_bloginfo('url') ?>">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/WhiteLogo.png" alt="">
+								</a>
 							</div>
 						</div>
 						<div class="popupColumn">
@@ -89,7 +91,8 @@
 									<?php the_field('sidebar_menu_form_info_first_line', 'options'); ?>
 								</div>
 								<div class="firstFow">
-									<?php the_field('sidebar_menu_form_info_second_line', 'options'); ?>
+									<a href="tel:972722202070">+972-722-20-20-70</a>
+									<a href="mailto:office@gsg.co.il">office@gsg.co.il</a>
 								</div>
 							</div>
 						</div>

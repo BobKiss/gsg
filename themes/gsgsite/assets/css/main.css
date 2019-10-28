@@ -195,6 +195,11 @@ a:focus {
   text-align: right;
 }
 
+ .firstFow a{
+   text-decoration: none;
+   color: #FEFFFE !important;
+ }
+
 header{
   display: -webkit-flex;
   display: -ms-flex;
@@ -2315,6 +2320,22 @@ font-weight: 100;
     color: #fff;
     text-decoration: none;
 }
+
+.footer__links_item.socials{
+  width: 150px;
+  height: 150px;
+  stroke: rgb(241, 241, 241);
+  stroke-width: 1;
+  /* stroke-dasharray: 10 5; */
+  fill: rgb(255, 255, 255);
+}
+
+.footer__links_item svg:hover{
+  stroke-dasharray: 10 0;
+  fill: rgb(255, 255, 255);
+  stroke: rgb(251, 255, 0);
+}
+
 .footer__links_item a.currentLang {
   color: #fff600;
 }
@@ -2328,6 +2349,11 @@ font-weight: 100;
 
 .footer__menu a:hover, .footer__links a:hover {
     color: #fff600;
+    text-decoration: none;
+}
+
+.footer__links a:focus {
+    color: #fff;
     text-decoration: none;
 }
 
