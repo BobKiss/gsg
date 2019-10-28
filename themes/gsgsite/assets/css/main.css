@@ -1448,7 +1448,10 @@ font-weight: 100;
   font-size: 18px;
   color: #000;
   text-align: right;
-  padding-right: 6px;
+  padding: 6px 15px;
+}
+.sideMenu .mailBlock .popup .popupForm textarea::placeholder {
+  font-weight: bold;
 }
 .sideMenu .mailBlock .popup .popUpFooter {
   display: -webkit-flex;
