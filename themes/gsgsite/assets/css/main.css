@@ -549,8 +549,7 @@ header{
   width: 100%;
 }
 .decorCircle__energy{
-  width: 300px;
-  height: 300px;
+  transform: scale(0.9);
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -572,6 +571,7 @@ header{
   animation-timing-function: linear;
 }
 .headerSection .decorCircle{
+  transform: scale(0.9);
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -1766,7 +1766,7 @@ font-weight: 100;
     background: #000;
     width: 100%;
     height: 600px;
-    padding: 90px;
+    padding: 90px 90px 90px 45px;
     flex-direction: column;
 }
 .gsg-energy__intro{
@@ -2447,9 +2447,14 @@ font-weight: 100;
     border-bottom: 2px solid #8e8686;
     margin: 0 auto;
     padding-bottom: 10px;
-    margin-bottom: 20px;
-    max-width: 1200px;
+    /* margin-bottom: 20px; */
+    /* transform: translateX(10%); */
     align-items: center;
+    /* width: 100%; */
+    width: max-content;
+}
+.transformed {
+  transform: translateX(10%);
 }
 .footer__links{
     align-items: center;
@@ -2471,16 +2476,17 @@ font-weight: 100;
 .footer__links_item.socials{
   width: 150px;
   height: 150px;
-  stroke: rgb(241, 241, 241);
-  stroke-width: 1;
-  /* stroke-dasharray: 10 5; */
-  fill: rgb(255, 255, 255);
+}
+
+.footer__links_item.socials svg{
+  width: 30px;
+  height: 30px;
 }
 
 .footer__links_item svg:hover{
   stroke-dasharray: 10 0;
-  fill: rgb(255, 255, 255);
-  stroke: rgb(251, 255, 0);
+  fill: #fff600;
+  stroke: #fff600;
 }
 
 .footer__links_item a.currentLang {
@@ -3192,6 +3198,22 @@ font-weight: 100;
     .borderblockWrapper{
       transform: translateY(30px);
     }
+
+    .footer__menu{
+      width: 100%;
+    }
+
+    .footer__menu a{
+      color: #8e8686;
+      text-align: center;
+      white-space: normal;
+    }
+
+    .transformed {
+      transform: none;
+    }
+
+
 
 
 
