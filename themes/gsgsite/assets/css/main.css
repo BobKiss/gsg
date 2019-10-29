@@ -301,48 +301,60 @@ header{
 /* end /* FIRST BLOCK ANIMATIONS */
 
 /* Menu block animation */
-@keyframes menuBorderGorizontal {
+.border-top-animate,
+.border-bottom-animate,
+.border-left-animate {
+  animation-duration: 900ms;
+  animation-fill-mode: forwards;
+}
+.border-top-animate {
+  animation-name: menuBorderGor;
+}
+.border-left-animate {
+  animation-name: menuBorderVer;
+  animation-delay: 1s;
+}
+.border-bottom-animate {
+  animation-name: menuBorderGor;
+  animation-delay: 2s;
+}
+@keyframes menuBorderGor {
   from {
     width: 0;
+    border: 1px solid #fff600;
   }
   to {
     width: 100%;
+    border: 1px solid #fff600;
   }
 }
-@keyframes menuBorderVertical {
+@keyframes menuBorderVer {
   from {
     height: 0;
+    border: 1px solid #fff600;
   }
   to {
     height: 100%;
+    border: 1px solid #fff600;
   }
 }
 .menu-border-top,
 .menu-border-left,
 .menu-border-bottom {
   position: absolute;
-  height: 1px;
-  width: 100%;
-  border: 1px solid #fff600;
 }
 
 .menu-border-top {
-  width: 0;
   top: 0;
   right: 0;
 }
 
 .menu-border-left {
-  /* height: 100%; */
-  height: 0;
-  width: 1px;
   top: 0;
   left: 0;
 }
 
 .menu-border-bottom {
-  height: 1px;
-  width: 0;
   bottom: 0;
   left: 0;
 }
@@ -1063,6 +1075,9 @@ text-align: right;
 .sideMenuItem.first.active .menu-icon{
   opacity: 0;
 }
+.sideMenuItem.first:focus .menu-icon div{
+  background: #fff;
+}
 .sideMenuItem .menu-icon div {
   width: 100%;
   height: 1px;
@@ -1130,8 +1145,10 @@ font-weight: 100;
 .sideMenu .sideMenuItem .sideMenuMail svg {
   display: block;
   fill: #fff;
-  width: 25px;
+  width: 30px;
+  height: 20px;
   stroke: #fff;
+  stroke-width: 0.3;
   transition: 0.3s all ease-in-out;
 }
 .sideMenu .sideMenuItem .sideMenuMail:hover svg {
