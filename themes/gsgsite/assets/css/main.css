@@ -2449,16 +2449,12 @@ font-weight: 100;
 .footer__links_item.socials{
   width: 150px;
   height: 150px;
-  stroke: rgb(241, 241, 241);
-  stroke-width: 1;
-  /* stroke-dasharray: 10 5; */
-  fill: rgb(255, 255, 255);
 }
 
 .footer__links_item svg:hover{
   stroke-dasharray: 10 0;
-  fill: rgb(255, 255, 255);
-  stroke: rgb(251, 255, 0);
+  fill: #fff600;
+  stroke: #fff600;
 }
 
 .footer__links_item a.currentLang {
