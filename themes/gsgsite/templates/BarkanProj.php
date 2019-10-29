@@ -83,7 +83,7 @@ Template Name: Barkan Project
 				</div>
 			</div>
 			<div class="row" style="padding-top: 30px;">
-				<div class="col-12 col-md-3 barkan-about__stat_wrap">
+				<div class="col-12 col-md-3">
 					<p class="barkan-about__stattext"><strong>גילאי התושבים</strong>| בני 16 עד 45</p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
@@ -91,7 +91,7 @@ Template Name: Barkan Project
 				</div>
 			</div>
 			<div class="row" style="padding-top: 30px;">
-				<div class="col-12 col-md-3 d-inline-flex barkan-about__stat_wrap">
+				<div class="col-12 col-md-3 d-inline-flex">
 					<p class="barkan-about__stattext"><strong>תעסוקה</strong> | צווארון לבן</p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
@@ -99,7 +99,7 @@ Template Name: Barkan Project
 				</div>
 			</div>
 			<div class="row" style="padding-top: 30px;">
-				<div class="col-12 col-md-3 d-inline-flex barkan-about__stat_wrap">
+				<div class="col-12 col-md-3 d-inline-flex">
 					<p class="barkan-about__stattext"><strong>השכלה</strong>| אקדמאים</p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">

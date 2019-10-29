@@ -361,6 +361,9 @@ header{
 
 /* Menu block animation end */
 
+.contactus-yellow .caldera-grid .last_row .btn {
+  background-color: #fff600;
+}
 
 .borderblockWrapper .borderblock{
     width: 100%;
@@ -1558,11 +1561,12 @@ font-weight: 100;
   justify-content: center;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  justify-content: center;
   height: 100%;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo img {

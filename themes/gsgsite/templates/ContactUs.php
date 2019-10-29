@@ -25,7 +25,7 @@ Template Name: Contact Us
 			</div>
 		</div>
 	</header> <!-- .headerSection-->
-	<section id="contactus" class="contactsus">
+	<section id="contactus" class="contactsus contactus-yellow">
 		<div class="container wow slideInLeft">
 			<h4 class="contactus__title">	שלח לנו הודעה | קבוצת גביש שחם - GSG - יזמות ונדל”ן</h4>
 			 <?php echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
