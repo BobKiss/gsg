@@ -12,12 +12,16 @@
 ?>
 
 </div><!-- #content -->
-
+<?php
+if( get_locale() == 'en_US' ) {
+	$class = 'transformed';
+}
+?>
 <footer id="colophon" class="site-footer">
 	<div class="container">
 		<div class="row d-flex">
 			<div class="footer__wrap">
-				<div class="footer__menu d-flex justify-content-between">
+				<div class="footer__menu d-flex justify-content-between <?= $class ?>">
 					<?php
 					while ( have_rows('top_line_menu_footer', 'options') ) : the_row();
 					the_sub_field('sub_field_name');
