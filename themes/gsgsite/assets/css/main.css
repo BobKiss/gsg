@@ -534,6 +534,7 @@ header{
   width: 100%;
 }
 .decorCircle__energy{
+  transform: scale(0.9);
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -555,6 +556,7 @@ header{
   animation-timing-function: linear;
 }
 .headerSection .decorCircle{
+  transform: scale(0.9);
   position: absolute;
   bottom: 2%;
   right: -13%;
@@ -1744,7 +1746,7 @@ font-weight: 100;
     background: #000;
     width: 100%;
     height: 600px;
-    padding: 90px;
+    padding: 90px 90px 90px 45px;
     flex-direction: column;
 }
 .gsg-energy__intro{
@@ -2449,6 +2451,11 @@ font-weight: 100;
 .footer__links_item.socials{
   width: 150px;
   height: 150px;
+}
+
+.footer__links_item.socials svg{
+  width: 30px;
+  height: 30px;
 }
 
 .footer__links_item svg:hover{
