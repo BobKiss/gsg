@@ -2502,7 +2502,7 @@ font-weight: 100;
 }
 
 .footer__menu a:hover, .footer__links a:hover {
-    color: #fff600;
+    color: rgb(160, 159, 159);
     text-decoration: none;
 }
 
