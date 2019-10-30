@@ -72,18 +72,14 @@ if( get_locale() == 'en_US' ) {
 					</div>
 					<div class="footer__links_item socials" style="color:white;">
 
-						<a href="https://www.facebook.com/gavish.shaham/" style="margin-left:10px;">
-							<!-- <svg type="image/svg+xml" data="SvgImg.svg" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-							<img src="<?php bloginfo('template_url'); ?>/assets/images/fb-white.svg" width="30" height="30" alt="image format png" />
-						</svg> -->
-						<?php get_template_part('template-parts/svg', 'facebook') ?>
-					</a>
-					<a href="https://www.instagram.com/gavish_shaham_group/" style="margin-left:10px;">
-						<!-- <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/insta-white.svg" width="30" height="30" alt="image format png" />
-					</svg> -->
-					<?php get_template_part('template-parts/svg', 'instagram') ?>
-				</a>
+						<div class="">
+							<a href="https://www.facebook.com/gavish.shaham/" style="margin-left:10px;">
+								<?php get_template_part('template-parts/svg', 'facebook') ?>
+							</a>
+							<a href="https://www.instagram.com/gavish_shaham_group/" style="margin-left:10px;">
+								<?php get_template_part('template-parts/svg', 'instagram') ?>
+							</a>
+						</div>
 
 				<p style="margin: 0 auto;"><?php echo __('Our social', 'gsgsite'); ?></p>
 			</div>

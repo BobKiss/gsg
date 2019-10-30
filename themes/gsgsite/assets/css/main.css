@@ -2578,7 +2578,7 @@ font-weight: 100;
 }
 .barkan-about__stattext{
     font-size: 20px;
-    line-height: 20px;
+    /* line-height: 20px; */
     max-width: 230px;
     width: 100%;
 }
@@ -2704,6 +2704,7 @@ font-weight: 100;
 }
 .barkan-slider__img .barkan-single-slider {
   padding-left: 30px;
+  max-height: 320px;
 }
 .barkan-slider__img .slick-arrow {
   position: absolute;
@@ -3472,7 +3473,9 @@ font-weight: 100;
   .footer__menu a,
   .footer__links_item{
     line-height: 38px;
+    text-align: left;
   }
+
   .page-template-GsgEnergy .caldera-grid {
     margin-bottom: 30px;
   }
@@ -3485,7 +3488,8 @@ font-weight: 100;
   .sideMenuWrapper .sideMenuContent .infoRow {
     overflow: scroll;
     padding: 0;
-    height: 25vh;
+    height: 20vh;
+    margin-bottom: 10px;
   }
   .sideMenuWrapper .sideMenuContent .main-navigation a {
     font-weight: normal;
@@ -3584,7 +3588,7 @@ font-weight: 100;
 
     .sn-contactsus, .gsgenergy{
       padding-top: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 50px;
     }
     .sn-intro .container{
       padding-left: 30px;
