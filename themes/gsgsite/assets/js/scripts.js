@@ -10,7 +10,9 @@ jQuery(document).ready(function ($) {
     }, 500);
   }
 
-  $(".gsg-energy__map").draggable();
+  if ( window.innerWidth <= 768 && window.innerWidth > 425 ) {
+    $(".gsg-energy__map").draggable();
+  }
   var scaleCount = 1.2;
   $('.mapBtnPlus ').click(function (e) {
     scaleCount += 0.5;
@@ -248,20 +250,23 @@ jQuery(document).ready(function ($) {
   });
 
   //init nice selects
-  // $('.nice-select-trigger').niceSelect();
+  $('.nice-select-trigger').niceSelect();
 
   // // fuckin' caldera
   $(document).on('cf.form.submit', function (e, data) {
 
     // e.preventDefault();
+    let phone_reg = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
     let phone = data.$form.find('[type=phone]').val();
 
+    if( !phone.match(phone_reg) ) {
+
+      alert("Please, enter valid number");
+      return;
+
+    }
     console.log(phone);
 
-  })
-
-  $(document).on('cf.validate.FormError', function (e, obj) {
-    console.log(obj);
   })
 });
 
