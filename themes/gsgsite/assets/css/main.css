@@ -3429,7 +3429,8 @@ font-weight: 100;
 
   }
   .housesys__tabs_content .slide-item img{
-    max-height: 300px;
+    /* max-height: 300px; */
+    margin: auto;
   }
   .choose-flat-svg-container{
     height: 100% !important;
@@ -3873,6 +3874,10 @@ font-weight: 100;
     .housesys__tabs_content{
       padding: 20px 50px;
       height: 40vh;
+    }
+
+    .housesys__tabs_content .slide-item{
+      display: flex !important;
     }
   }
 

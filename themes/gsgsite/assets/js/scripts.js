@@ -259,9 +259,13 @@ jQuery(document).ready(function ($) {
     let phone_reg = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
     let phone = data.$form.find('[type=phone]').val();
 
-    // if( phone.match(phone_reg) )
+    if( !phone.match(phone_reg) ) {
 
-    // console.log(phone);
+      alert("Please, enter valid number");
+      return;
+
+    }
+    console.log(phone);
 
   })
 });
