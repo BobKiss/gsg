@@ -10,7 +10,9 @@ jQuery(document).ready(function ($) {
     }, 500);
   }
 
-  $(".gsg-energy__map").draggable();
+  if ( window.innerWidth <= 768 && window.innerWidth > 425 ) {
+    $(".gsg-energy__map").draggable();
+  }
   var scaleCount = 1.2;
   $('.mapBtnPlus ').click(function (e) {
     scaleCount += 0.5;
