@@ -248,20 +248,19 @@ jQuery(document).ready(function ($) {
   });
 
   //init nice selects
-  // $('.nice-select-trigger').niceSelect();
+  $('.nice-select-trigger').niceSelect();
 
   // // fuckin' caldera
   $(document).on('cf.form.submit', function (e, data) {
 
     // e.preventDefault();
+    let phone_reg = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
     let phone = data.$form.find('[type=phone]').val();
 
-    console.log(phone);
+    // if( phone.match(phone_reg) )
 
-  })
+    // console.log(phone);
 
-  $(document).on('cf.validate.FormError', function (e, obj) {
-    console.log(obj);
   })
 });
 
