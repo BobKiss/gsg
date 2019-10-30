@@ -2704,7 +2704,7 @@ font-weight: 100;
 }
 .barkan-slider__img .barkan-single-slider {
   padding-left: 30px;
-  max-height: 610px;
+  /* max-height: 610px; */
 }
 .barkan-slider__img .slick-arrow {
   position: absolute;
@@ -2736,10 +2736,10 @@ font-weight: 100;
 .SamplePAGE .houseScreen > a > img {
   width: 100%;
 }
-.SamplePAGE .barkan-slider__img .barkan-single-slider {
+.barkan-slider__img .barkan-single-slider {
   max-height: 655px;
 }
-.SamplePAGE .barkan-slider__img .barkan-single-slider img {
+.barkan-slider__img .barkan-single-slider img {
   height: 100%;
   width: 100%;
 }
