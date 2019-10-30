@@ -73,7 +73,14 @@
 					<i class="fal fa-times close"></i>
 				</a>
 				<div class="popup">
-					<div class="popupTitle">
+					<?php
+						if (get_locale() == 'en_US') {
+							$style = 'letter-spacing: 0.5px';
+						} else {
+							$style = '';
+						}
+					?>
+					<div class="popupTitle" style="<?= $style ?>">
 						<?php the_field('sidebar_menu_form_title', 'options'); ?>
 					</div>
 					<div class="popupForm">

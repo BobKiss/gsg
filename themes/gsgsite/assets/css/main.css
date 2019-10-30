@@ -1071,6 +1071,7 @@ text-align: right;
 .sideMenuItem .menu-icon {
   width: 28px;
   height: 21px;
+  transform: scale(0.85);
 }
 .sideMenuItem.first:hover .menu-icon div{
   background: #fff600;
@@ -1110,6 +1111,7 @@ text-align: right;
   height: 100%;
   fill: #fff;
   transition: all .2s ease-in;
+  transform: scale(0.85);
 }
 .volumeSwitcher:hover svg{
   fill: #fff600;
@@ -1153,6 +1155,7 @@ font-weight: 100;
   stroke: #fff;
   stroke-width: 0.3;
   transition: 0.3s all ease-in-out;
+  transform: scale(0.85);
 }
 .sideMenu .sideMenuItem .sideMenuMail:hover svg {
   fill: #fff600;
@@ -1536,6 +1539,7 @@ font-weight: 100;
   padding: 6px 15px;
 }
 .sideMenu .mailBlock .popup .popupForm textarea::placeholder {
+  color: #c0c0c0;
   font-weight: bold;
 }
 .sideMenu .mailBlock .popup .popUpFooter {
@@ -1575,7 +1579,8 @@ font-weight: 100;
   max-width: 80px;
   max-height: 55px;
   object-fit: cover;
-  /* transform: scale(1.3); */
+  transform: scale(0.9);
+  transform: translateX(5px);
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn::before {
   content: '';
@@ -1896,8 +1901,8 @@ font-weight: 100;
 }
 .contactus__lets{
     text-transform: uppercase;
-    font-size: 100px;
-    font-weight: bold;
+    font-size: 120px;
+    font-weight: 800;
     color: #fff;
     padding: 0;
     margin: 0;
@@ -2832,8 +2837,8 @@ font-weight: 100;
   visibility: hidden;
   margin-right: auto;
   background-color: #ffffffa3;
-  text-align: left;
-  direction: ltr;
+  text-align: right;
+  direction: rtl;
   overflow: hidden;
 }
 [dir="rtl"] .big-projects-list .list-item .item-content-block{
@@ -3555,6 +3560,9 @@ font-weight: 100;
     .sideMenu .mailBlock .popup .popupTitle {
       font-size: 22px;
     }
+    .letter-spacing__en {
+      letter-spacing: 0.5px !important;
+    }
     .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(2) {
       width: 50%;
     }
@@ -4078,3 +4086,59 @@ font-weight: 100;
   }
 
 }}
+
+/* Statline animation */
+.statline-animation-1 {
+  animation-name: stat-animation-1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.statline-animation-2 {
+  animation-name: stat-animation-2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.statline-animation-3 {
+  animation-name: stat-animation-3;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.statline-animation-3__alt {
+  animation-name: stat-animation-3__alt;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stat-animation-1 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 40%;
+  }
+}
+@keyframes stat-animation-2 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 42%;
+  }
+}
+@keyframes stat-animation-3 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes stat-animation-3__alt {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 70%;
+  }
+}
+/* Statline animation end */

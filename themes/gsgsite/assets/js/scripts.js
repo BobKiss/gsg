@@ -267,7 +267,76 @@ jQuery(document).ready(function ($) {
     }
     console.log(phone);
 
+  });
+
+  // Is in viewport
+  function isInView (elem) {
+
+    var $window = $(window)
+    var viewport_top = $window.scrollTop()
+    var viewport_height = $window.height()
+    var viewport_bottom = viewport_top + viewport_height
+    var $elem = $(elem)
+    var top = $elem.offset().top
+    var height = $elem.height()
+    var bottom = top + height
+
+    return (top >= viewport_top && top < viewport_bottom) ||
+    (bottom > viewport_top && bottom <= viewport_bottom) ||
+    (height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
+
+  }
+
+  window.addEventListener('scroll', function () {
+
+
+    if ( isInView( '.barkan-about' ) ) {
+      var viewed = true;
+
+      // statline
+      $('.statline_01').addClass('statline-animation-1');
+      $('.statline_02').addClass('statline-animation-2');
+
+      if ( $('.statline_03').hasClass('project-sample') ) {
+
+        $('.statline_03').addClass('statline-animation-3__alt');
+        animatedCount( '#percent-3', 30 );
+
+      } else {
+
+        $('.statline_03').addClass('statline-animation-3');
+        animatedCount( '#percent-3', 80 );
+
+      }
+
+      // numbers
+      animatedCount( '#percent-1', 60 );
+      animatedCount( '#percent-2', 42 );
+
+    }
+
   })
+
+  function animatedCount (el, val) {
+    var $el = $(el),
+      value = val;
+
+    $({percentage: 0}).stop(true).animate({percentage: value}, {
+      duration : 3000,
+      easing: "easeOutExpo",
+      step: function () {
+          // percentage with 1 decimal;
+          var percentageVal = Math.ceil(this.percentage);
+
+          $el.html(percentageVal + '%');
+      }
+    }).promise().done(function () {
+      // hard set the value after animation is done to be
+      // sure the value is correct
+      $el.html(value + "%");
+    });
+  };
+
 });
 
 // new WOW().init();

@@ -82,32 +82,32 @@ Template Name: Barkan Project
 					</p>
 				</div>
 			</div>
-			<div class="row" style="padding-top: 30px;">
+			<div class="row" style="padding-top: 20px;">
 				<div class="col-12 col-md-3">
 					<p class="barkan-about__stattext"><strong>גילאי התושבים</strong>| בני 16 עד 45</p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
-					<div class="barkan-about__statline"><span class="statline_01"></span></div><p style="font-weight: 900">60%</p>
+					<div class="barkan-about__statline"><span class="statline_01"></span></div><p id="percent-1" class="percent-number" style="font-weight: 900">60<span>%</span></p>
 				</div>
 			</div>
-			<div class="row" style="padding-top: 30px;">
+			<div class="row" style="padding-top: 20px;">
 				<div class="col-12 col-md-3 d-inline-flex">
 					<p class="barkan-about__stattext"><strong>תעסוקה</strong> | צווארון לבן</p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
-					<div class="barkan-about__statline"><span class="statline_02"></span></div><p style="font-weight: 900;">42%</p>
+					<div class="barkan-about__statline"><span class="statline_02"></span></div><p id="percent-2" class="percent-number" style="font-weight: 900;">42%</p>
 				</div>
 			</div>
-			<div class="row" style="padding-top: 30px;">
+			<div class="row" style="padding-top: 20px;">
 				<div class="col-12 col-md-3 d-inline-flex">
 					<p class="barkan-about__stattext"><strong>השכלה</strong>| אקדמאים</p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
-					<div class="barkan-about__statline"><span class="statline_03"></span></div><p style="font-weight: 900;">80%</p>
+					<div class="barkan-about__statline"><span class="statline_03"></span></div><p id="percent-3" class="percent-number" style="font-weight: 900;">80%</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5></div>
+				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מפת האזור</h5></div>
 				<div class="col-12">
 					<iframe src="https://snazzymaps.com/embed/192528" width="100%" height="380px" style="border:none;"></iframe>
 				</div>
@@ -118,6 +118,7 @@ Template Name: Barkan Project
 
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container wow slideInRight">
+			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 			 <div class="contactsus-after-line">
 				 <div><a href="#">< לפרוייקט הקודם</a></div>
