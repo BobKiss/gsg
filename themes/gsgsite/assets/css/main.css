@@ -2465,7 +2465,7 @@ font-weight: 100;
 }
 .footer__links_item{
     display: flex;
-    color: #fff;
+    color: rgb(160, 159, 159);
     align-items: center;
 }
 .footer__links_item a{
