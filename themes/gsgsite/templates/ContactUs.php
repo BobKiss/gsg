@@ -10,7 +10,7 @@ Template Name: Contact Us
 	<header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/shutterstock_1081210097.jpg) center center / cover">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 borderblockWrapper contactUsPageHeader">
+				<div class="col-xl-12 col-lg-11 col-xs-12 borderblockWrapper contactUsPageHeader">
 					<div class="borderblock"></div>
 					<div class="borderblock">
 						<h2 class="header__title">
