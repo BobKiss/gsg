@@ -248,7 +248,21 @@ jQuery(document).ready(function ($) {
   });
 
   //init nice selects
-  $('.nice-select-trigger').niceSelect();
+  // $('.nice-select-trigger').niceSelect();
+
+  // // fuckin' caldera
+  $(document).on('cf.form.submit', function (e, data) {
+
+    // e.preventDefault();
+    let phone = data.$form.find('[type=phone]').val();
+
+    console.log(phone);
+
+  })
+
+  $(document).on('cf.validate.FormError', function (e, obj) {
+    console.log(obj);
+  })
 });
 
 // new WOW().init();

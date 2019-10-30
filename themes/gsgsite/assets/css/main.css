@@ -3102,9 +3102,12 @@ font-weight: 100;
   transform:rotate(360deg);}
 }
 
-
 .menu-item-has-children {
   display: flex;
+}
+
+[dir="rtl"] .site-content .partneers .sliderPartneers {
+  direction: rtl;
 }
 
 /*Media*/
@@ -4057,7 +4060,4 @@ font-weight: 100;
     font-size: 25px;
   }
 
-}
-[dir="rtl"] .site-content .partneers .sliderPartneers {
-  direction: rtl;
-}
+}}
