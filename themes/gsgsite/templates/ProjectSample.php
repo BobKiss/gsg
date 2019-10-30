@@ -94,7 +94,7 @@ Template Name: Sample Project Page
 					</p>
 				</div>
 			</div> -->
-			<section class="barkan-about wow slideInLeft">
+			<section class="barkan-about wow slideInLeft statlines">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
@@ -151,7 +151,7 @@ Template Name: Sample Project Page
 					</p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
-					<div class="barkan-about__statline"><span class="statline_03 project-sample"></span></div><p id="percent-3" style="font-weight: 900;">30%</p>
+					<div class="barkan-about__statline"><span class="statline_03 project-sample"></span></div><p id="percent-3__alt" style="font-weight: 900;">30%</p>
 				</div>
 			</div>
 			<div class="row">

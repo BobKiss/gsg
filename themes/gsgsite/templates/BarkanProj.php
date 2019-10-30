@@ -73,7 +73,7 @@ Template Name: Barkan Project
 		</div>
 	</section>
 
-	<section class="barkan-about wow slideInLeft">
+	<section class="barkan-about wow slideInLeft statlines">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
