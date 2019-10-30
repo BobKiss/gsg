@@ -3134,7 +3134,7 @@ font-weight: 100;
 
     }
     .blog__borderblock:nth-child(2) {
-        /* height: 160px; */
+        height: auto;
     }
     .header__title {
         /* line-height: 160px; */
@@ -3476,6 +3476,10 @@ font-weight: 100;
     text-align: left;
   }
 
+  .blog__borderblock .decorCircle{
+    width: 40%;
+    margin-left: 40px;
+  }
   .page-template-GsgEnergy .caldera-grid {
     margin-bottom: 30px;
   }
