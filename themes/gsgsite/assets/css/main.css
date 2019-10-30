@@ -1218,7 +1218,7 @@ font-weight: 100;
 .sideMenuWrapper .sideMenuContent .infoRow{
   display: flex;
   justify-content: space-between;
-  height: 30vh;
+  height: 25vh;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -3614,6 +3614,10 @@ font-weight: 100;
     .gsg-energy__intro-wrap{
       height: 364px;
       padding: 20px;
+    }
+
+    .gsg-energy__intro span{
+      max-width: 200px;
     }
     .gsg-energy__intro{
       height: 48%;

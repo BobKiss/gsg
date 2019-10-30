@@ -84,7 +84,7 @@ Template Name: Sample Project Page
 		</div>
 	</section>
 
-	<section class="barkan-about wow slideInLeft">
+	<!-- <section class="barkan-about wow slideInLeft">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
@@ -93,8 +93,18 @@ Template Name: Sample Project Page
 						מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”
 					</p>
 				</div>
-			</div>
+			</div> -->
+			<section class="barkan-about wow slideInLeft">
+		<div class="container">
 			<div class="row">
+				<div class="col-md-6 col-12">
+					<h5 class="barkan-about__title">אורנית BU | על הפרוייקט</h5>
+					<p class="barkan-about__text">מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”
+					</p>
+				</div>
+			</div>
+
+			<!-- <div class="row">
 				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
 					<p class="barkan-about__stattext">
 						<strong>גילאי התושבים</strong> | בני 16 עד 64
@@ -112,6 +122,36 @@ Template Name: Sample Project Page
 						<strong>השכלה</strong> | אקדמאים
 					</p>
 					<div class="barkan-about__statline"><span class="statline_03"></span></div><p>30%</p>
+				</div>
+			</div> -->
+			<div class="row" style="padding-top: 30px;">
+				<div class="col-12 col-md-3">
+					<p class="barkan-about__stattext">
+						<strong>גילאי התושבים</strong> | בני 16 עד 64
+					</p>
+				</div>
+				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
+					<div class="barkan-about__statline"><span class="statline_01"></span></div><p style="font-weight: 900">60%</p>
+				</div>
+			</div>
+			<div class="row" style="padding-top: 30px;">
+				<div class="col-12 col-md-3 d-inline-flex">
+					<p class="barkan-about__stattext">
+						<strong>תעסוקה</strong> | צווארון לבן
+					</p>
+				</div>
+				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
+					<div class="barkan-about__statline"><span class="statline_02"></span></div><p style="font-weight: 900;">42%</p>
+				</div>
+			</div>
+			<div class="row" style="padding-top: 30px;">
+				<div class="col-12 col-md-3 d-inline-flex">
+					<p class="barkan-about__stattext">
+						<strong>השכלה</strong> | אקדמאים
+					</p>
+				</div>
+				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
+					<div class="barkan-about__statline"><span class="statline_03"></span></div><p style="font-weight: 900;">30%</p>
 				</div>
 			</div>
 			<div class="row">

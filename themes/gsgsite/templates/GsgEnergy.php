@@ -52,9 +52,9 @@ Template Name: GsgEnergy
 				<div class="col-lg-4 col-md-12">
 				    <div class="gsg-energy__intro-wrap d-flex">
 				        <div class="gsg-energy__intro_top"></div>
-				        <div class="gsg-energy__intro">מפת
+				        <div class="gsg-energy__intro"><span>מפת
 מתווה
-הגז</div>
+הגז</span></div>
                     <div class="gsg-energy__intro_bottom"></div>
 				    </div>
 				</div>
