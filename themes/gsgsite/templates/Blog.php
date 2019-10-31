@@ -6,8 +6,8 @@ Template Name: Blog
 <?php get_header(); ?>
 <div class="archive">
   <section class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
-    <a href="<?php echo get_bloginfo('url') ?>" class="logo">
-      <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+    <!-- <a href="<?php echo get_bloginfo('url') ?>" class="logo">
+      <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>"> -->
     </a>
     <div class="borderBlock container borderWhite hebrew">
       <div class="row"></div>
