@@ -14,7 +14,7 @@ Template Name: Long-Term Projects
 
         <div class="list-item wow slideInRight">
           <div class="item-desc">
-            <div class="item-bg" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
+            <div class="item-wrap" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
               <div class="item-content-block">
                 <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
                   <div class="item-info">
