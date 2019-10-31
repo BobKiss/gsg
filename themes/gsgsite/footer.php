@@ -19,13 +19,7 @@ if( get_locale() == 'en_US' ) {
 ?>
 <footer id="colophon" class="site-footer">
 	<div class="container-fluid">
-		<?php
-						if (get_locale() == 'en_US') {
-							$style = 'max-width: ';
-						} else {
-							$style = '';
-						}
-					?>
+
 		<div class="row d-flex">
 			<div class="footer__wrap">
 				<div class="footer__menu d-flex justify-content-between <?= $class ?>">
@@ -82,7 +76,6 @@ if( get_locale() == 'en_US' ) {
 				</div>
 				<a href ="tel:<?php echo __('Phone', 'gsgsite'); ?>" class="footer__links_item"> <?php echo __('Phone', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></a>
 				<a href ="mailto:<?php echo __('Mail', 'gsgsite');?>" class="footer__links_item"> <?php echo __('Mail', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></a>
-
 				<div class="footer__links_item" style="color:white;">
 					<a class="<?php if (get_locale() !== 'he_IL') echo "currentLang"; ?>" href="?lang=en">ENGLISH</a>
 					<span class="footer__menu_sep"></span>

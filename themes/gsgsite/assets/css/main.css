@@ -2441,7 +2441,7 @@ font-weight: 100;
     margin-top: 140px;
 }
 .footer__wrap{
-    max-width: 1200px;
+    max-width: max-content;
     width: 100%;
     margin: 0 auto;
     font-weight: 700;
@@ -2457,7 +2457,7 @@ font-weight: 100;
     /* width: max-content; */
 }
 .transformed {
-  transform: translateX(10%);
+  /* transform: translateX(10%); */
   width: max-content;
 }
 .footer__links{
