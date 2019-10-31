@@ -2470,7 +2470,7 @@ font-weight: 100;
 }
 .footer__links_item{
     display: flex;
-    color: #fff;
+    color: rgb(160, 159, 159);
     align-items: center;
 }
 .footer__links_item a{
@@ -2507,7 +2507,7 @@ font-weight: 100;
 }
 
 .footer__menu a:hover, .footer__links a:hover {
-    color: #fff600;
+    color: rgb(160, 159, 159);
     text-decoration: none;
 }
 
