@@ -305,10 +305,9 @@ jQuery(document).ready(function ($) {
       duration : 3000,
       easing: "easeOutExpo",
       step: function () {
-          // percentage with 1 decimal;
-          var percentageVal = Math.ceil(this.percentage);
-
-          $el.html(percentageVal + '%');
+        // percentage with 1 decimal;
+        var percentageVal = Math.ceil(this.percentage);
+        $el.html(percentageVal + '%');
       }
     }).promise().done(function () {
       // hard set the value after animation is done to be

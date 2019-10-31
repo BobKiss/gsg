@@ -74,19 +74,29 @@ Template Name: About Us
       </div>
 
       <div class="titleContainer content">
-				<div class="list flex-row-reverse">
-					<?php
-					while ( have_rows('activity_areas') ) : the_row();
-						?>
+				<div class="list">
+
+          <div class="list-column-1">
+            <?php while ( have_rows('activity_areas_first') ) : the_row(); ?>
             <div class="singleParagraph">
               <div class="pTitle"><?php the_sub_field('title'); ?></div>
               <div class="pContent">
 								<?php the_sub_field('content'); ?>
               </div>
             </div>
-					<?php
-					endwhile;
-					?>
+            <?php	endwhile; ?>
+          </div>
+          <div class="list-column-2">
+            <?php while ( have_rows('activity_areas_second') ) : the_row(); ?>
+              <div class="singleParagraph">
+                <div class="pTitle"><?php the_sub_field('title'); ?></div>
+                <div class="pContent">
+                  <?php the_sub_field('content'); ?>
+                </div>
+              </div>
+            <?php	endwhile; ?>
+          </div>
+
         </div>
       </div>
     </section>
