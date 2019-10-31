@@ -293,7 +293,9 @@ jQuery(document).ready(function ($) {
 
     } )
   }, {} );
-  observer.observe( $('.statlines')[0] );
+  if ( $('.statlines').length != 0 ) {
+    observer.observe( $('.statlines')[0] );
+  }
 
   function animatedCount (el, val) {
     var $el = $(el),

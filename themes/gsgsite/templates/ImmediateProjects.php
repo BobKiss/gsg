@@ -12,24 +12,30 @@ Template Name: Immediate Projects
         while ( have_rows('project_items_repeater') ) : the_row();
 ?>
 
+        <!-- <a href="<?php the_sub_field('project_link'); ?>"> -->
         <div class="list-item wow slideInRight">
           <div class="item-desc">
-            <div class="item-bg" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
-              <div class="item-content-block">
-                <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
-                  <div class="item-info">
-                    <div class="title"><?php the_sub_field('project_name'); ?></div>
-                    <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
-                    <div class="view-link">למידע נוסף אודות הפרוייקט לחץ כאן
- >  </div>
-                  </div>
-                <?php endif; ?>
-                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content">הצג פרוייקט</p></a>
+
+            <!-- <a href="<?php the_sub_field('project_link'); ?>"> -->
+              <div class="item-wrap" >
+                <a href="<?php the_sub_field('project_link'); ?>" class="item-background" style="background-image: url('<?php the_sub_field('project_image'); ?>')"></a href="">
+                <div class="item-content-block">
+                  <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
+                    <div class="item-info">
+                      <div class="title"><?php the_sub_field('project_name'); ?></div>
+                      <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
+                      <div class="view-link">למידע נוסף אודות הפרוייקט לחץ כאן></div>
+                    </div>
+                  <?php endif; ?>
+                  <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content">הצג פרוייקט</p></a>
+                </div>
               </div>
-            </div>
+            <!-- </a> -->
+
           </div>
           <div class="item-meta"><?php the_sub_field('project_name'); ?></div>
       </div>
+      <!-- </a> -->
         <?php
         endwhile;
     else :
