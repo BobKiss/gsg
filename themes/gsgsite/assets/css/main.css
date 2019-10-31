@@ -2456,10 +2456,11 @@ font-weight: 100;
     /* transform: translateX(10%); */
     align-items: center;
     /* width: 100%; */
-    width: max-content;
+    /* width: max-content; */
 }
 .transformed {
   transform: translateX(10%);
+  width: max-content;
 }
 .footer__links{
     align-items: center;
@@ -2480,7 +2481,7 @@ font-weight: 100;
 
 .footer__links_item.socials{
   width: 150px;
-  height: 150px;
+  height: 80px;
 }
 
 .footer__links_item.socials svg{
