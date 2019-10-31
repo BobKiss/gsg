@@ -37,6 +37,7 @@ a:focus {
   margin-bottom: 90px;
   padding-bottom: 10px;
   font-weight: 900;
+  letter-spacing: 2px;
 }
 .titleContainer .title::after {
   max-width: 550px;
@@ -388,6 +389,8 @@ header{
   position: absolute;
   background-color: #171111;
 }
+
+
 .borderblockWrapper .borderblock:nth-child(1)::before {
   width: 2px;
   height: 0;
@@ -539,11 +542,12 @@ header{
   z-index: 3;
 }
 .logo {
-  max-width: 170px;
+  max-width: 180px;
   position: absolute;
   top: 10%;
   left: 4%;
   z-index: 5;
+  margin-left: 36px;
 }
 .headerSection .logo img {
   width: 100%;
@@ -646,7 +650,7 @@ header{
 
 .headerSection .borderBlock.animated .row:nth-child(1) {
   border-top: 2px solid #171111;
-  max-height: 13vh;
+  max-height: 15vh;
   position: absolute;
   bottom: calc(100% - 13vh);
   left: 0;
@@ -690,7 +694,7 @@ header{
 }
 .headerSection .borderBlock.animated .row:nth-child(3) {
   border-top: 0;
-  max-height: 13vh;
+  max-height: 15vh;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -759,7 +763,7 @@ header{
   text-align: left;
   color: #ffffff;
   font-size: 36px;
-  font-weight: normal;
+  font-weight: 900;
   margin-bottom: 40px;
 }
 .headerSection .borderBlock.borderWhite .decorCircle img {
@@ -806,6 +810,7 @@ header{
 }
 .aboutUsPageWrapper .aboutYellow .part.bold {
   font-weight: bold;
+  margin-right: 25px;
 }
 .aboutUsPageWrapper .aboutYellow p {
   margin: 0;
@@ -1043,9 +1048,9 @@ text-align: right;
   justify-content: center;
   position: relative;
   cursor: pointer;
-  margin-bottom: 3px;
-  width: 56px;
-  height: 56px;
+  margin-bottom: 2px;
+  width: 70px;
+  height: 64px;
   z-index: 3;
   background-color: #000;
 }
@@ -1210,7 +1215,7 @@ font-weight: 100;
   border-right: 0;
   display: flex;
   justify-content: flex-end;
-  padding: 75px 100px;
+  padding: 60px 100px;
   position: relative;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock:after{
@@ -1345,6 +1350,9 @@ font-weight: 100;
   display: inline;
   text-align: right;
 }
+.sideMenuWrapper .sideMenuContent li.menu-item-has-children:hover:after{
+  color: #fff600;
+}
 
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children:hover:after {
   color: #fff600 !important;
@@ -1415,6 +1423,11 @@ font-weight: 100;
    color: #fff600;
 }
 
+.sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after{
+  transform: rotate(-90deg);
+   color: #fff600;
+}
+
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after{
   font-family: 'Font Awesome\ 5 Pro';
   font-weight: 400;
@@ -1424,6 +1437,10 @@ font-weight: 100;
   position: absolute;
   right: -20px;
   top: 5px;
+}
+
+.sideMenuWrapper .sideMenuContent li.menu-item-has-children::after:hover{
+  color: #fff600;
 }
 .sideMenuWrapper .sideMenuContent .main-navigation ul {
     display: flex;
@@ -2449,7 +2466,7 @@ font-weight: 100;
     margin-top: 140px;
 }
 .footer__wrap{
-    max-width: 1200px;
+    max-width: max-content;
     width: 100%;
     margin: 0 auto;
     font-weight: 700;
@@ -2465,7 +2482,7 @@ font-weight: 100;
     /* width: max-content; */
 }
 .transformed {
-  transform: translateX(10%);
+  /* transform: translateX(10%); */
   width: max-content;
 }
 .footer__links{
@@ -3037,6 +3054,9 @@ font-weight: 100;
   font-weight: 700;
   padding-right: 10px;
 }
+.caldera-grid .first_row textarea.form-control{
+  padding-top: 10px !important;
+}
 .caldera-grid .last_row .btn{
   padding: 3px 17px;
   font-size: 18px;
@@ -3046,6 +3066,10 @@ font-weight: 100;
   border: 1px solid black;
   /* background-color: #fff600; */
   background-color: #fff;
+  transform: translateY(20px);
+}
+.caldera-grid .first_row input[type=submit]{
+  padding-top: 30px;
 }
 .caldera-grid .form-group{
   position: relative;
