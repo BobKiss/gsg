@@ -1049,8 +1049,8 @@ text-align: right;
   position: relative;
   cursor: pointer;
   margin-bottom: 2px;
-  width: 70px;
-  height: 64px;
+  width: 65px;
+  height: 62px;
   z-index: 3;
   background-color: #000;
 }
@@ -3314,6 +3314,11 @@ font-weight: 100;
     .archivepage__wrap_right .archivepage__desc {
       bottom: 80px;
       right: -125px;
+    }
+
+    .sideMenu .sideMenuItem{
+      width: 63px;
+      height: 63px;
     }
     .archivepage__wrap_left .archivepage__desc {
       bottom: 80px;
