@@ -82,9 +82,11 @@ jQuery(document).ready(function ($) {
   });
 
     $('.big-projects-list .list-item .view-btn').hover(function(e){
-    	$(this).parent().children(".item-info").addClass('hovered');
+    	// $(this).parent().children(".item-info").addClass('hovered');
+    	$(this).parent().children(".item-info").fadeIn();
     }, function() {
-    	$(this).parent().children(".item-info").removeClass('hovered');
+    	// $(this).parent().children(".item-info").removeClass('hovered');
+    	$(this).parent().children(".item-info").fadeOut();
     });
 
     $('.small-list-items-wrapper .list-item .item-desc .view-btn').hover(function(e){
