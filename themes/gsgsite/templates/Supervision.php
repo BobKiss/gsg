@@ -10,8 +10,8 @@ Template Name: Supervision
 	<!-- SectionContacts -->
 
     <section class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/shane-mclendon-EN1tF2EG-50-unsplash.jpg) center center / cover">
-		<a href="<?php echo get_bloginfo('url') ?>" class="logo">
-			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+		<!-- <a href="<?php echo get_bloginfo('url') ?>" class="logo">
+			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>"> -->
 		</a>
 		<div class="energy__borderBlock borderBlock container borderWhite big hebrew ">
 			<div class="row"></div>

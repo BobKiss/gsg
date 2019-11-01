@@ -160,7 +160,7 @@
 
 				<div class="infoRow">
 					<div class="infoCol">
-						<p class="infoHeading"><?php _e('Change language','GsgStrings'); ?> </p>
+						<p class="infoHeading change_language"><?php _e('Change language','GsgStrings'); ?> </p>
 						<?php do_action('wpml_add_language_selector'); ?>
 					</div>
 					<div class="infoCol">

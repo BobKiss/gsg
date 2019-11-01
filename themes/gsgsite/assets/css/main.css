@@ -768,7 +768,7 @@ header{
 }
 .headerSection .borderBlock.borderWhite .decorCircle img {
   /* transform: scale(-1,1); */
-  transform: scale(0.9);
+  transform: scale(0.9) rotateX(180deg);
 }
 .headerSection .borderBlock.borderWhite {
   transform: scale(-1,1);
@@ -1302,6 +1302,10 @@ font-weight: 100;
 }
 [dir="rtl"] .sideMenuWrapper .sideMenuContent .infoRow .infoHeading{
   text-align: right;
+}
+
+.infoHeading.change_language{
+  text-align: left !important;
 }
 .sideMenuWrapper .sideMenuContent .wpml-ls-current-language a span{
   color: #fff600 !important;
@@ -1914,7 +1918,7 @@ font-weight: 100;
     margin-top: 22px;
     color:#000;
     border-top: 1px solid #000;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .contactus__links_left-block{
     text-align: right;
@@ -1948,7 +1952,7 @@ font-weight: 100;
 }
 .contactus__text, .contactus__soc{
     font-size: 26px;
-    padding-bottom: 12px;
+    /* padding-bottom: 12px; */
     display: inline-flex;
     color: #000;
     font-weight: 400;
