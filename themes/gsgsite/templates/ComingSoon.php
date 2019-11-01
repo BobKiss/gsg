@@ -5,8 +5,8 @@ Template Name: Coming Soon
 ?>
 <?php get_header(); ?>
     <section class="headerSection" style="background: #fff600; padding: 0;">
-		<a href="<?php echo get_bloginfo('url') ?>" class="logo">
-			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+		<!-- <a href="<?php echo get_bloginfo('url') ?>" class="logo">
+			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>"> -->
 		</a>
 		<div class="container">
 		    <div class="row no-gutters">
