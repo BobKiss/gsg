@@ -778,7 +778,7 @@ header{
   font-weight: 800;
 }
 .headerSection .borderBlock.big .row:nth-child(1) {
-  max-height: 16vh;
+  /* max-height: 16vh; */
 }
 .headerSection .borderBlock.big .row:nth-child(2) {
   margin-top: 13vh;
@@ -1049,8 +1049,8 @@ text-align: right;
   position: relative;
   cursor: pointer;
   margin-bottom: 2px;
-  width: 70px;
-  height: 64px;
+  width: 65px;
+  height: 62px;
   z-index: 3;
   background-color: #000;
 }
@@ -3153,6 +3153,16 @@ font-weight: 100;
   -o-transform:rotate(360deg);
   transform:rotate(360deg);}
 }
+/* @keyframes rotation {
+  0% {-webkit-transform:rotate(0deg) scale(0.6);
+  -moz-transform:rotate(0deg) scale(0.6);
+  -o-transform:rotate(0deg) scale(0.6);
+  transform:rotate(0deg) scale(0.6);}
+  100% {-webkit-transform:rotate(360deg) scale(0.6);
+  -moz-transform:rotate(720deg) scale(0.6);
+  -o-transform:rotate(360deg) scale(0.6);
+  transform:rotate(360deg) scale(0.6);}
+} */
 
 .menu-item-has-children {
   display: flex;
@@ -3226,6 +3236,10 @@ font-weight: 100;
       line-height: 80px;
     }
 
+    .headerSection .decorCircle, .decorCircle__energy{
+      width: 18vw;
+    }
+
 
 }
 @media screen and (max-width: 1460px){
@@ -3246,6 +3260,9 @@ font-weight: 100;
       padding-top: 170px;
     }
 
+    .header__round_text{
+      max-width: 20vw;
+    }
     .header__title{
       font-size: 110px;
     }
@@ -3266,6 +3283,14 @@ font-weight: 100;
 
     .transformed {
       transform: none;
+    }
+
+    .headerSection .decorCircle{
+      transform: scale(0.9)
+    }
+
+    .site > .logo.visible img{
+      margin-left: -20px;
     }
 
 
@@ -3322,6 +3347,11 @@ font-weight: 100;
     .archivepage__wrap_right .archivepage__desc {
       bottom: 80px;
       right: -125px;
+    }
+
+    .sideMenu .sideMenuItem{
+      width: 58px;
+      height: 58px;
     }
     .archivepage__wrap_left .archivepage__desc {
       bottom: 80px;
@@ -4211,7 +4241,7 @@ font-weight: 100;
 }
 /* Statline animation end */
 .site > .logo.visible img {
-  transform: scale(0.9) !important;
+  transform: scale(0.85) !important;
   transform: translateX(5px);
 }
 
