@@ -13,7 +13,8 @@
 
 </div><!-- #content -->
 <?php
-if( get_locale() == 'en_US' ) {
+$locale = get_locale();
+if( $locale == 'en_US' ) {
 	$class = 'transformed';
 }
 ?>
@@ -26,6 +27,9 @@ if( get_locale() == 'en_US' ) {
 				<?php
 					$wp;
 					$current_page = home_url( $wp -> request );
+					if ( $locale != 'en_US') {
+						$current_page .= '/';
+					}
 				?>
 					<?php
 					while ( have_rows('top_line_menu_footer', 'options') ) : the_row();
