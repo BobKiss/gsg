@@ -778,7 +778,7 @@ header{
   font-weight: 800;
 }
 .headerSection .borderBlock.big .row:nth-child(1) {
-  max-height: 16vh;
+  /* max-height: 16vh; */
 }
 .headerSection .borderBlock.big .row:nth-child(2) {
   margin-top: 13vh;
@@ -3243,6 +3243,9 @@ font-weight: 100;
       padding-top: 170px;
     }
 
+    .header__round_text{
+      max-width: 20vw;
+    }
     .header__title{
       font-size: 110px;
     }
