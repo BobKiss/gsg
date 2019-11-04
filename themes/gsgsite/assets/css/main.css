@@ -4063,7 +4063,7 @@ font-weight: 100;
     font-size: 60px;
   }
   .small-projects-list .small-list-items-wrapper{
-    padding: 0 0 60px;
+    padding: 0 60px;
     flex-direction: column;
     flex-wrap: nowrap;
   }
