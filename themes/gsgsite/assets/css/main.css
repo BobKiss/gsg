@@ -2769,7 +2769,7 @@ font-weight: 100;
   width: 100%;
 }
 .barkan-slider__img .barkan-single-slider {
-  width: 100px;
+  width: 100%;
   max-height: 655px;
 }
 .barkan-slider__img .barkan-single-slider img {
