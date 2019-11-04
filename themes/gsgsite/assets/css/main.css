@@ -3984,7 +3984,7 @@ font-weight: 100;
     }
 
     .aboutUsPageWrapper .activityAreas .list {
-      flex-direction: column;
+      flex-direction: column !important;
     }
     .aboutUsPageWrapper .activityAreas .list .list-column-1,
     .aboutUsPageWrapper .activityAreas .list .list-column-2 {
