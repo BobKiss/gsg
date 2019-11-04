@@ -21,9 +21,11 @@ Template Name: Long-Term Projects
                     <div class="title"><?php the_sub_field('project_name'); ?></div>
                     <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
                   </div>
-
+                <?php
+                $view = ( get_locale() != 'en_US' ) ? 'הצג פרוייקט' : 'View project';
+                ?>
                 <?php endif; ?>
-                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content">הצג פרוייקט</p></a>
+                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?= $view ?></p></a>
               </div>
             </div>
           </div>

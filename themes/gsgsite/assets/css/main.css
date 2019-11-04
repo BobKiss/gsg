@@ -768,7 +768,7 @@ header{
 }
 .headerSection .borderBlock.borderWhite .decorCircle img {
   /* transform: scale(-1,1); */
-  transform: scale(0.9);
+  transform: scale(0.9) rotateX(180deg);
 }
 .headerSection .borderBlock.borderWhite {
   transform: scale(-1,1);
@@ -3361,6 +3361,11 @@ font-weight: 100;
     right: -3%;
   }
 
+  .container-fluid{
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
 }
 
 @media screen and (max-width: 1200px){
@@ -4279,3 +4284,4 @@ font-weight: 100;
 .barkan-slider .slick-list .slick-track .slick-slide {
   display: flex !important;
 }
+

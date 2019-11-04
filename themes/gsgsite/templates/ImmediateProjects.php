@@ -15,7 +15,10 @@ Template Name: Immediate Projects
         <!-- <a href="<?php the_sub_field('project_link'); ?>"> -->
         <div class="list-item wow slideInRight">
           <div class="item-desc">
-
+            <?php
+              $link = ( get_locale() != 'en_US' ) ? 'הצג פרוייקט' : 'For more information on the project click here ';
+              $info = ( get_locale() != 'en_US' ) ? 'הצג פרוייקט' : 'More information ';
+             ?>
             <!-- <a href="<?php the_sub_field('project_link'); ?>"> -->
               <div class="item-wrap" >
                 <a href="<?php the_sub_field('project_link'); ?>" class="item-background" style="background-image: url('<?php the_sub_field('project_image'); ?>')"></a href="">
@@ -27,7 +30,7 @@ Template Name: Immediate Projects
                       <div class="view-link">למידע נוסף אודות הפרוייקט לחץ כאן></div>
                     </div>
                   <?php endif; ?>
-                  <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content">הצג פרוייקט</p></a>
+                  <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?= $link ?></p></a>
                 </div>
               </div>
             <!-- </a> -->
@@ -46,19 +49,17 @@ Template Name: Immediate Projects
 <div class="small-projects-list container-2">
   <marquee scrollamount="5" class="contactus__lets"><?php _e('Sold Out Projects - Sold Out Projects - Sold Out Projects','Gsg'); ?></marquee>
   <div class="small-list-items-wrapper">
-    <?php
-      if( have_rows('mini_projects_repeater') ):
-          while ( have_rows('mini_projects_repeater') ) : the_row(); ?>
-          <div class="list-item wow slideInLeft">
-            <div class="item-desc">
-                <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content">מידע נוסף</p></a>
-                <div class="item-content-block" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
-                  <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
-                  <div class="item-info">
-                    <div class="title"><?php the_sub_field('project_name'); ?></div>
-                    <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
-                  </div>
-                  <?php endif; ?>
+  <?php
+    if( have_rows('mini_projects_repeater') ):
+        while ( have_rows('mini_projects_repeater') ) : the_row(); ?>
+        <div class="list-item wow slideInLeft">
+          <div class="item-desc">
+              <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?= $info ?></p></a>
+              <div class="item-content-block" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
+                <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
+                <div class="item-info">
+                  <div class="title"><?php the_sub_field('project_name'); ?></div>
+                  <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
                 </div>
             </div>
         </div>

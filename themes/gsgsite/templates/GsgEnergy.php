@@ -79,7 +79,7 @@ Template Name: GsgEnergy
 		<div class="container wow slideInRight">
 			 <h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
-			 <h4 class="contactus__title"></h4>
+
 		</div>
 
 	</section>

@@ -14,8 +14,10 @@ Template Name: Barkan Project
 				<div class="col-12 barkan-header__img">
 				    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shutterstock124.jpg">
 				</div>
-
-				<p class="barkan-header__text">ברקן מול הים | בןקן </p>
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | בןקן' : 'Barkan infront of the sea | Barkan';
+?>
+				<p class="barkan-header__text"><?= $heading ?> </p>
 			</div>
 		</div>
 	</section>
@@ -23,25 +25,43 @@ Template Name: Barkan Project
 		<div class="container wow slideInLeft">
 			<div class="row">
 				<div class="col-lg-6 d-flex flex-column">
-					<h5 class="barkan-about__title">
-						ברקן מול הים | על הפרוייקט
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | על הפרוייקט' : 'Barkan Mul Hayam | About the Project';
+$text = ( get_locale() != 'en_US' ) ? 'פרויקט ברקן מול הים, הינו פרויקט הרחבה קהילתית הכולל 62 מגרשים בגודל של כחצי דונם המיועדים לבניית וילות צמודות קרקע. הפרויקט ממוקם באזור הצפון מערבי של הישוב (הגבעה הצפונית) ופונה לנוף הררי מרהיב.
+	נשארו 3 מגרשים אחרונים בלבד!' : 'The Barkan Mul Hayam project is a community expansion project which includes 62 land plots of 500 square meters each intended for building detached houses. The project is located in the north-western area of the community (the northern hill) and faces a spectacular mountainous view.  Only 3 plots remain!';
+$align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
+?>
+					<h5 class="barkan-about__title <?= $align ?>">
+						<?= $heading ?>
 					</h5>
-					<p class="barkan-about__text">	פרויקט ברקן מול הים, הינו פרויקט הרחבה קהילתית הכולל 62 מגרשים בגודל של כחצי דונם המיועדים לבניית וילות צמודות קרקע. הפרויקט ממוקם באזור הצפון מערבי של הישוב (הגבעה הצפונית) ופונה לנוף הררי מרהיב.
-	נשארו 3 מגרשים אחרונים בלבד!
+					<p class="barkan-about__text <?= $align ?>"><?= $text ?>
 					</p>
-					<h5 class="barkan-about__title">
-						ברקן מול הים | פירוט הפרוייקט
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | פירוט הפרוייקט' : 'Barkan Mul Hayam | Project Details';
+$text = ( get_locale() != 'en_US' ) ? '62 מגרשים למכירה ביישוב ברקן | גודל מגרש החל מ500 מ”ר ועד 700 מ”ר | מחיר השטח כולל פיתוח ומיסי מקום | אפשרות לבניית וילה צמודה קרקע בשומרון' : '62 plots for sale at Barkan | Plot sizes range from 500 to 700 square meters | The land price includes development and local taxes | An option for building a detached villa in Samaria';
+$align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
+?>
+					<h5 class="barkan-about__title <?= $align ?>">
+						<?= $heading ?>
 					</h5>
-					<p class="barkan-about__text">	62 מגרשים למכירה ביישוב ברקן | גודל מגרש החל מ500 מ”ר ועד 700 מ”ר | מחיר השטח כולל פיתוח ומיסי מקום | אפשרות לבניית וילה צמודה קרקע בשומרון
+					<p class="barkan-about__text <?= $align ?>"><?= $text ?>
 					</p>
-					<a href="<?= get_template_directory_uri() . '/NewPDF.pdf' ?>" class="barkan-about__btn"> הורדת חוברת הפרוייקט- PDF</a>
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'הורדת חוברת הפרוייקט- PDF' : 'Download project files- PDF';
+?>
+					<a href="<?= get_template_directory_uri() . '/NewPDF.pdf' ?>" class="barkan-about__btn"><?= $heading ?></a>
 				</div>
 				<div class="col-lg-6 d-flex flex-column">
-					<h5 class="barkan-about__title">
-						ברקן מול הים | על האזור
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | על האזור' : 'Barkan Mul Hayam | About the Region';
+$text = ( get_locale() != 'en_US' ) ? 'הישוב נוסד ב1981, ביושב כ400 משפחות. בישוב אוכלוסיה איכותית המנהלת חיי קהילה משותפים. בישוב תינוקיות, מעון, גני ילדים, ובית ספר יסודי, בישוב בריכה, מגרשי טניס ופעילות תרבותית ענפה.' : 'The community was founded in 1981 and is home to approximately 400 families. The community has a high-quality community which conducts a shared community life. The community has daycare, kindergartens and an elementary school, a swimming pool, tennis courts, and robust cultural activities.';
+$align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
+?>
+					<h5 class="barkan-about__title <?= $align ?>">
+						<?= $heading ?>
 					</h5>
-					<p class="barkan-about__text">
-						הישוב נוסד ב1981, ביושב כ400 משפחות. בישוב אוכלוסיה איכותית המנהלת חיי קהילה משותפים. בישוב תינוקיות, מעון, גני ילדים, ובית ספר יסודי, בישוב בריכה, מגרשי טניס ופעילות תרבותית ענפה.
+					<p class="barkan-about__text <?= $align ?>"><?= $text ?>
+
 					</p>
 				</div>
 			</div>
@@ -77,14 +97,22 @@ Template Name: Barkan Project
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
-					<h5 class="barkan-about__title">ברקן מול הים | מדדים חברתיים</h5>
-					<p class="barkan-about__text">מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | מדדים חברתיים' : 'Barkan Mul Hayam | Social Indicators';
+$text = ( get_locale() != 'en_US' ) ? 'מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”' : 'Social-economic index 10 - from the Madlan website';
+?>
+					<h5 class="barkan-about__title"><?= $heading ?></h5>
+					<p class="barkan-about__text"><?= $text ?>
 					</p>
 				</div>
 			</div>
 			<div class="row statlines" style="padding-top: 20px;">
 				<div class="col-12 col-md-3">
-					<p class="barkan-about__stattext"><strong>גילאי התושבים</strong>| בני 16 עד 45</p>
+					<?php
+$heading = ( get_locale() != 'en_US' ) ? 'גילאי התושבים' : 'Resident ages';
+$text = ( get_locale() != 'en_US' ) ? '| בני 16 עד 45' : '| 16 to 45';
+?>
+					<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
 					<div class="barkan-about__statline"><span class="statline_01"></span></div><p id="percent-1" class="percent-number" style="font-weight: 900">60<span>%</span></p>
@@ -92,7 +120,11 @@ Template Name: Barkan Project
 			</div>
 			<div class="row" style="padding-top: 20px;">
 				<div class="col-12 col-md-3 d-inline-flex">
-					<p class="barkan-about__stattext"><strong>תעסוקה</strong> | צווארון לבן</p>
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'תעסוקה' : 'Employment';
+$text = ( get_locale() != 'en_US' ) ? '| צווארון לבן' : '| White Collar';
+?>
+					<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
 					<div class="barkan-about__statline"><span class="statline_02"></span></div><p id="percent-2" class="percent-number" style="font-weight: 900;">42%</p>
@@ -100,14 +132,21 @@ Template Name: Barkan Project
 			</div>
 			<div class="row" style="padding-top: 20px;">
 				<div class="col-12 col-md-3 d-inline-flex">
-					<p class="barkan-about__stattext"><strong>השכלה</strong>| אקדמאים</p>
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'השכלה' : 'Education';
+$text = ( get_locale() != 'en_US' ) ? '| אקדמאים' : '| University Graduates';
+?>
+					<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 				</div>
 				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
 					<div class="barkan-about__statline"><span class="statline_03"></span></div><p id="percent-3" class="percent-number" style="font-weight: 900;">80%</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-12"><h5 class="barkan-about__title">ברקן מול הים | מפת האזור</h5></div>
+<?php
+$heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | מפת האזור' : 'Barkan Mul Hayam | Map of the Region';
+?>
+				<div class="col-md-6 col-12"><h5 class="barkan-about__title"><?= $heading ?></h5></div>
 				<div class="col-12">
 					<iframe src="https://snazzymaps.com/embed/192528" width="100%" height="380px" style="border:none;"></iframe>
 				</div>
