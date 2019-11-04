@@ -17,7 +17,7 @@ Template Name: Supervision
 			<div class="row"></div>
 			<div class="row">
 				<div class="title" style="color:white !important;">
-          ניהול ופיקוח
+          <?php the_title() ?>
         </div>
 			</div>
 			<div class="row"></div>
@@ -28,20 +28,33 @@ Template Name: Supervision
 	</section> <!-- .headerSection-->
 
 		<!-- SectioSN-Intro -->
+<?php
+	$heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | ניהול ופיקוח' : 'Gavish Shaham Group | Management and Supervision';
+	$text = ( get_locale() != 'en_US' ) ? "
+ניהול נכון ומקצועי של פרויקט (מרגעיו הראשוניים והמוקדמים) ופיקוח יעיל ומקצועי על איכות העבודה ועמידה בלוחות זמנים, הם מפתח להצלחה של פרויקט בניה ומפתח לשמירה על רמת הרווחיות המתוכננת.
+מחלקת הניהול והפיקוח שלנו עוסקת בניהול והובלת הליכי תכנון, ניהול ביצוע ופיקוח על פרויקטים בהיקפים שונים. הן עבור רשויות מקומיות והן עבור לקוחות פרטיים, הן ביחס לעבודות בניה והן ביחס לעבודות תשתית ופיתוח.  </br>
+הצוות המקצועי שלנו כולל מהנדסי ביצוע, מנהלי פרויקטים, מנהלי עבודה, מתכננים ויועצים אשר מעניקים מעטפת מקצועית מושלמת לכל פרויקט.
+צוות זה מלווה על ידי המחלקה המשפטית אשר מלווה את הליכי התכנון ומסייעת בפתרון בעיות בהן נתקל הצוות המקצועי בעת ביצוע הפרויקט, בכלל זה הסרת התנגדויות והסרת חסמים." : "A proper, professional management for a project (from its inception) and
+effective and professional supervision of the quality of works and timelines are key in the success of a construction project and are key for
+maintaining the planned level of profit. Our management and supervision department engages in the management of planning procedures, construction,
+ and supervision in projects of various scopes. Both for municipalities and for private clients, both with respect to construction works and with
+ respect to infrastructure and development works.  Our team of professionals includes construction engineers, project managers, work managers,
+ planners, and consultants who offer a perfect professional envelope to every project.  This team is advised by the legal department which advises
+ on planning proceedings and helps with resolving problems facing the professional team while conducting the project, including removing objections
+ and barriers.";
+$align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
+?>
 
 	<section class="sn-intro">
 		<div class="container wow slideInLeft">
-			<h4 class="sn-contactus__title">קבוצת גביש שחם | ניהול ופיקוח  </h4>
+			<h4 class="sn-contactus__title <?= $align ?>"><?= $heading ?></h4>
 			<div class="row d-flex">
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__topborder"></div>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<div class="sn-contactus__area text-right">
-ניהול נכון ומקצועי של פרויקט (מרגעיו הראשוניים והמוקדמים) ופיקוח יעיל ומקצועי על איכות העבודה ועמידה בלוחות זמנים, הם מפתח להצלחה של פרויקט בניה ומפתח לשמירה על רמת הרווחיות המתוכננת.
-מחלקת הניהול והפיקוח שלנו עוסקת בניהול והובלת הליכי תכנון, ניהול ביצוע ופיקוח על פרויקטים בהיקפים שונים. הן עבור רשויות מקומיות והן עבור לקוחות פרטיים, הן ביחס לעבודות בניה והן ביחס לעבודות תשתית ופיתוח.  </br>
-הצוות המקצועי שלנו כולל מהנדסי ביצוע, מנהלי פרויקטים, מנהלי עבודה, מתכננים ויועצים אשר מעניקים מעטפת מקצועית מושלמת לכל פרויקט.
-צוות זה מלווה על ידי המחלקה המשפטית אשר מלווה את הליכי התכנון ומסייעת בפתרון בעיות בהן נתקל הצוות המקצועי בעת ביצוע הפרויקט, בכלל זה הסרת התנגדויות והסרת חסמים.
+					<div class="sn-contactus__area <?= $align ?>">
+						<?= $text ?>
 					</div>
 				</div>
 			</div>
