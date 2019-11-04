@@ -119,11 +119,15 @@
 			</div>
 			<?php $lang = get_locale();
 			if ($lang == 'en_US') {
+
 				$linkToSwitch = '?lang=he';
 				$langText = 'en';
+
 			} else {
+
 				$linkToSwitch = '?lang=en';
 				$langText = 'he';
+
 			}
 			?>
 			<div class="sideMenuItem"><a href="<?php echo $linkToSwitch; ?>" class="langName"><?php echo ICL_LANGUAGE_CODE; ?></a></div>
