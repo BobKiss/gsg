@@ -73,7 +73,7 @@ Template Name: Barkan Project
 		</div>
 	</section>
 
-	<section class="barkan-about wow slideInLeft statlines">
+	<section class="barkan-about wow slideInLeft">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
@@ -82,7 +82,7 @@ Template Name: Barkan Project
 					</p>
 				</div>
 			</div>
-			<div class="row" style="padding-top: 20px;">
+			<div class="row statlines" style="padding-top: 20px;">
 				<div class="col-12 col-md-3">
 					<p class="barkan-about__stattext"><strong>גילאי התושבים</strong>| בני 16 עד 45</p>
 				</div>

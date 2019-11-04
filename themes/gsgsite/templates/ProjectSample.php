@@ -94,7 +94,7 @@ Template Name: Sample Project Page
 					</p>
 				</div>
 			</div> -->
-			<section class="barkan-about wow slideInLeft statlines">
+			<section class="barkan-about wow slideInLeft">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-12">
@@ -124,7 +124,7 @@ Template Name: Sample Project Page
 					<div class="barkan-about__statline"><span class="statline_03"></span></div><p>30%</p>
 				</div>
 			</div> -->
-			<div class="row" style="padding-top: 20px;">
+			<div class="row statlines" style="padding-top: 20px;">
 				<div class="col-12 col-md-3">
 					<p class="barkan-about__stattext">
 						<strong>גילאי התושבים</strong> | בני 16 עד 64

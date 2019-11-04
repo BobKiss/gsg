@@ -4,7 +4,7 @@ Template Name: Supervision
 */
 ?>
 <?php get_header(); ?>
-
+<?php $justify = ( get_locale() == 'en_US' ) ? 'justify-content-end' : ' '; ?>
 <div class="page">
 
 	<!-- SectionContacts -->
@@ -17,7 +17,7 @@ Template Name: Supervision
 			<div class="row"></div>
 			<div class="row">
 				<div class="title" style="color:white !important;">
-          ניהול ופיקוח
+          <?php the_title() ?>
         </div>
 			</div>
 			<div class="row"></div>
@@ -27,8 +27,7 @@ Template Name: Supervision
 		</div> <!--.borderBlock-->
 	</section> <!-- .headerSection-->
 
-		<!-- SectioSN-Intro -->
-
+	<!-- SectioSN-Intro -->
 	<section class="sn-intro">
 		<div class="container wow slideInLeft">
 			<h4 class="sn-contactus__title">קבוצת גביש שחם | ניהול ופיקוח  </h4>
