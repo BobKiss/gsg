@@ -3361,6 +3361,11 @@ font-weight: 100;
     right: -3%;
   }
 
+  .container-fluid{
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
 }
 
 @media screen and (max-width: 1200px){
