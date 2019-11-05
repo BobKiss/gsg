@@ -43,15 +43,17 @@ maintaining the planned level of profit. Our management and supervision departme
  planners, and consultants who offer a perfect professional envelope to every project.  This team is advised by the legal department which advises
  on planning proceedings and helps with resolving problems facing the professional team while conducting the project, including removing objections
  and barriers.";
-$align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
+	$align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
+	$title_reverse = (get_locale() != 'en_US') ? '' : 'sn-contactus__title-reverse';
+	$topborder_class = (get_locale() != 'en_US') ? '' : 'sn-contactus__topborder-reverse alt'
 ?>
 
 	<section class="sn-intro">
 		<div class="container wow slideInLeft">
-			<h4 class="sn-contactus__title <?= $align ?>"style="margin-right: auto"><?= $heading ?></h4>
+			<h4 class="sn-contactus__title <?= $align . ' ' . $title_reverse ?>"><?= $heading ?></h4>
 			<div class="row d-flex <?= $row_direction ?>">
 				<div class="col-md-6 col-sm-12">
-					<div class="sn-contactus__topborder"></div>
+					<div class="sn-contactus__topborder <?= $topborder_class ?>"></div>
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__area <?= $align ?>">
