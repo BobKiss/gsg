@@ -61,14 +61,15 @@ Template Name: Immediate Projects
                   <div class="title"><?php the_sub_field('project_name'); ?></div>
                   <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
-          <?php
+        </div>
+        <?php
           endwhile;
-      else :
-      endif;
-    ?>
-</div>
+          endif;
+        ?>
+  </div>
 </div>
 
 
