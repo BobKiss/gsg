@@ -23,9 +23,10 @@ Template Name: About Us
     <section class="aboutYellow wow slideInLeft">
             <div class="titleContainer">
 <?php
+$row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
 $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | פרופיל חברה' : 'Gavish Shaham Group | Company Profile';
 ?>
-        <div class="title"><?= $heading ?></div>
+        <div class="title <?=$row_direction?>"><?= $heading ?></div>
       </div>
       <div class="container">
 
@@ -61,9 +62,10 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
     <section class="aboutMap wow slideInRight">
       <div class="titleContainer">
 <?php
+$row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
 $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | מפת פעילות בארץ' : 'Gavish Shaham Group | Israel Activity Map';
 ?>
-        <div class="title"><?= $heading ?></div>
+        <div class="title <?=$row_direction?>"><?= $heading ?></div>
       </div>
       <div class="container">
         <div class="mapSection">
@@ -94,9 +96,10 @@ $map_words = [
     <section class="activityAreas wow slideInLeft">
       <div class="titleContainer">
 <?php
+$row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
 $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | תחומי פעילות' : 'Gavish Shaham Group | Areas of Activity';
 ?>
-        <div class="title"><?= $heading ?></div>
+        <div class="title <?=$row_direction?>"><?= $heading ?></div>
       </div>
 
       <div class="titleContainer content">
@@ -129,7 +132,11 @@ $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | תחומ�
 
     <section class="managmentBoard wow slideInRight">
       <div class="titleContainer">
-        <div class="title">קבוצת גביש שחם | הנהלה</div>
+        <?php
+          $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
+          $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | הנהלה' : 'Shaham Crystal Group | management board';
+        ?>
+        <div class="title <?= $row_direction ?>"><?= $heading ?></div>
       </div>
 
       <div class="container">
@@ -153,10 +160,11 @@ $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | תחומ�
 
     <section class="partneers">
       <div class="titleContainer">
-<?php
-  $heading = ( get_locale() != 'en_US' ) ? 'שותפים לדרך' : 'Gavish Shaham Group | Our Partners';
-?>
-        <div class="title"><?=$heading?></div>
+      <?php
+        $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
+        $heading = ( get_locale() != 'en_US' ) ? 'שותפים לדרך' : 'Gavish Shaham Group | Our Partners';
+      ?>
+        <div class="title <?=$row_direction?>"><?=$heading?></div>
       </div>
 
       <div class="sliderPartneers">
