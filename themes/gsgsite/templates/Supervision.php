@@ -64,8 +64,10 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 	<!-- SectionSN-Contactus -->
 
 	<section id="sn-contactus" class="sn-contactsus">
-		<div class="container wow slideInRight">
-			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
+		<div class="container wow slideInRight"><?php
+$heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
+?>
+			 <h4 class="contactus__title"><?= $heading ?> </h4>
        <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 		</div>
 	</section>
