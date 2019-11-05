@@ -65,7 +65,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'מפת מתווה גז ארצית | י
 				    <div class="gsg-energy__intro-wrap d-flex">
 				        <div class="gsg-energy__intro_top"></div>
 <?php $map_words = [
-          'w1' => (get_locale() != 'en_US') ? 'מפת' : 'Gas outline',
+          'w1' => (get_locale() != 'en_US') ? 'מפת' : 'Gas </br>outline',
           'w2' => (get_locale() != 'en_US') ? 'הגז' : 'map',
         ]; ?>
 				        <div class="gsg-energy__intro"><span><?= $map_words['w1'] ?>
