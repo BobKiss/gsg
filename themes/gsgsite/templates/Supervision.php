@@ -29,6 +29,7 @@ Template Name: Supervision
 
 		<!-- SectioSN-Intro -->
 <?php
+	$row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
 	$heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | ניהול ופיקוח' : 'Gavish Shaham Group | Management and Supervision';
 	$text = ( get_locale() != 'en_US' ) ? "
 ניהול נכון ומקצועי של פרויקט (מרגעיו הראשוניים והמוקדמים) ופיקוח יעיל ומקצועי על איכות העבודה ועמידה בלוחות זמנים, הם מפתח להצלחה של פרויקט בניה ומפתח לשמירה על רמת הרווחיות המתוכננת.
@@ -47,8 +48,8 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 
 	<section class="sn-intro">
 		<div class="container wow slideInLeft">
-			<h4 class="sn-contactus__title <?= $align ?>"><?= $heading ?></h4>
-			<div class="row d-flex">
+			<h4 class="sn-contactus__title <?= $align ?>"style="margin-right: auto"><?= $heading ?></h4>
+			<div class="row d-flex <?= $row_direction ?>">
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__topborder"></div>
 				</div>
@@ -62,12 +63,12 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 	</section>
 
 	<!-- SectionSN-Contactus -->
-
 	<section id="sn-contactus" class="sn-contactsus">
-		<div class="container wow slideInRight"><?php
-$heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
-?>
-			 <h4 class="contactus__title"><?= $heading ?> </h4>
+		<div class="container wow slideInRight  <?= $row_direction ?>">
+			<?php
+				$heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
+			?>
+			 <h4 class="contactus__title <?= $align ?>"><?= $heading ?> </h4>
        <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 		</div>
 	</section>
