@@ -52,7 +52,19 @@ if ( post_password_required() ) {
 
 				<div class="housesys__menu">
 					<div class="housesys__menu_wrap">
-						<h6 class="housesys__menu_title">בחר נכס</h6>
+				<?php
+        	$map_word = [
+						'w1' => (get_locale() != 'en_US') ? 'בחר נכס' : 'eng',
+						'w2' => (get_locale() != 'en_US') ? 'בחר מגרש' : 'eng',
+						'w3' => (get_locale() != 'en_US') ? 'בחר תצוגת נכס' : 'eng',
+						'w4' => (get_locale() != 'en_US') ? 'בחר קומה' : 'eng',
+						'w5' => (get_locale() != 'en_US') ? 'בחר דירה' : 'eng',
+						'w6' => (get_locale() != 'en_US') ? 'בחר חבילה' : 'eng',
+						'v1' => (get_locale() != 'en_US') ? 'חזית' : 'eng',
+						'v2' => (get_locale() != 'en_US') ? 'ללא' : 'eng',
+        	];
+        ?>
+						<h6 class="housesys__menu_title"><?= $map_word['w1'] ?></h6>
 						<!-- house systems selects -->
 						<div class="housesys__menu_desc">
 							<div>
@@ -60,50 +72,63 @@ if ( post_password_required() ) {
 								  <option selected value="1">111</option>
 								  <option value="2">222</option>
 								</select>
-								<p class="housesys__menu_text">בחר מגרש</p>
+								<p class="housesys__menu_text"><?= $map_word['w2'] ?></p>
 							</div>
 							<div>
 								<select class="nice-select-trigger">
-								  <option selected value="1">חזית</option>
-								  <option value="2">חזית</option>
+								  <option selected value="1"><?= $map_word['v1'] ?></option>
+								  <option value="2"><?= $map_word['v1'] ?></option>
 								</select>
-								<p class="housesys__menu_text">בחר תצוגת נכס</p>
+								<p class="housesys__menu_text"><?= $map_word['w3'] ?></p>
 							</div>
 							<div>
 								<select class="nice-select-trigger">
-								  <option selected value="1">ללא</option>
-								  <option value="2">ללא</option>
+								  <option selected value="1"><?= $map_word['v2'] ?></option>
+								  <option value="2"><?= $map_word['v2'] ?></option>
 								</select>
-								<p class="housesys__menu_text">בחר קומה</p>
+								<p class="housesys__menu_text"><?= $map_word['w4'] ?></p>
 							</div>
 							<div>
 								<select class="nice-select-trigger">
-								  <option selected value="1">ללא</option>
-								  <option value="2">ללא</option>
+								  <option selected value="1"><?= $map_word['v2'] ?></option>
+								  <option value="2"><?= $map_word['v2'] ?></option>
 								</select>
-								<p class="housesys__menu_text">בחר דירה</p>
+								<p class="housesys__menu_text"><?= $map_word['w5'] ?></p>
 							</div>
 							<div>
 								<select class="nice-select-trigger">
-								  <option selected value="1">ללא</option>
-								  <option value="2">ללא</option>
+								  <option selected value="1"><?= $map_word['v2'] ?></option>
+								  <option value="2"><?= $map_word['v2'] ?></option>
 								</select>
-								<p class="housesys__menu_text">בחר חבילה</p>
+								<p class="housesys__menu_text"><?= $map_word['w6'] ?></p>
 							</div>
 						</div>
 						<!-- house systems selects END -->
 						<div class="housesys__menu_container">
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_architecture">הצג שרטוט נכס</a>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_a"> הצג מפרט ומחירון</a>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_images">הצג תמונות והדמיות</a>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_b">הצג חבילות קונספט</a>
+							<?php
+        	$map_word = [
+						'w1' => (get_locale() != 'en_US') ? 'הצג שרטוט נכס' : 'eng',
+						'w2' => (get_locale() != 'en_US') ? 'הצג מפרט ומחירון' : 'eng',
+						'w3' => (get_locale() != 'en_US') ? 'הצג תמונות והדמיות' : 'eng',
+						'w4' => (get_locale() != 'en_US') ? 'הצג חבילות קונספט' : 'eng',
+						'v1' => (get_locale() != 'en_US') ? 'מחיר בסיס' : 'eng',
+						'v2' => (get_locale() != 'en_US') ? 'תוספת חבילה' : 'eng',
+						'v3' => (get_locale() != 'en_US') ? 'קוד הנחה' : 'eng',
+						'v4' => (get_locale() != 'en_US') ? 'מחיר סופי' : 'eng',
+						'v5' => (get_locale() != 'en_US') ? 'סה”כ דמי הרשמה' : 'eng',
+        	];
+        ?>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_architecture"><?= $map_word['w1'] ?></a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_a"> <?= $map_word['w2'] ?></a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_images"><?= $map_word['w3'] ?></a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_b"><?= $map_word['w4'] ?></a>
 						</div>
 						<div class="housesys__menu_desc">
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">מחיר בסיס</p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">תוספת חבילה</p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">קוד הנחה</p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">מחיר סופי </p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">סה”כ דמי הרשמה</p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v1'] ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v2'] ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v3'] ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v4'] ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v5'] ?></p></div>
 						</div>
 
 						<div class="add-to-cart-container dnone">
@@ -146,7 +171,10 @@ if ( post_password_required() ) {
 						do_action( 'woocommerce_after_single_product_summary' );
 						?>
 						</div>
-						<a class="add-to-cart-simulation housesys__menu_btn disabled" href="<?php echo esc_url( wc_get_checkout_url() ); ?>">לטופס הרשמה ותשלום דמי הרשמה ></a>
+						<?php
+  						$heading = ( get_locale() != 'en_US' ) ? 'לטופס הרשמה ותשלום דמי הרשמה >' : 'en';
+						?>
+						<a class="add-to-cart-simulation housesys__menu_btn disabled" href="<?php echo esc_url( wc_get_checkout_url() ); ?>"><?= $heading ?> </a>
 
 					</div>
 

@@ -16,7 +16,7 @@ Template Name: Immediate Projects
         <div class="list-item wow slideInRight">
           <div class="item-desc">
             <?php
-              $link = ( get_locale() != 'en_US' ) ? 'הצג פרוייקט' : 'For more information on the project click here ';
+              $link = ( get_locale() != 'en_US' ) ? 'הצג פרוייקט' : 'View project ';
               $info = ( get_locale() != 'en_US' ) ? 'הצג פרוייקט' : 'More information ';
              ?>
             <!-- <a href="<?php the_sub_field('project_link'); ?>"> -->

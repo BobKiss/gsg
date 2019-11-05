@@ -157,12 +157,21 @@ $heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | מפת האז
 
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container wow slideInRight">
-			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
+			<?php
+				$heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
+			?>
+			<h4 class="contactus__title"><?= $heading ?> </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 			 <div class="contactsus-after-line">
-				 <div><a href="#">< לפרוייקט הקודם</a></div>
-				 <div class="middleText">חזרה לעמוד פרוייקטים מיידיים</div>
-				 <div><a href="#">לפרוייקט הבא ></a></div>
+				 <?php
+					$left = ( get_locale() != 'en_US' ) ? '< לפרוייקט הקודם' : '< Previous project ';
+					$middle = ( get_locale() != 'en_US' ) ? 'חזרה לעמוד פרוייקטים מיידיים' : 'Back to immediate projects page ';
+					$right = ( get_locale() != 'en_US' ) ? 'לפרוייקט הבא >' : 'Next project > ';
+
+				?>
+				 <div><a href="#"><?= $left ?></a></div>
+				 <div class="middleText"><?= $middle ?></div>
+				 <div><a href="#"><?= $right ?></a></div>
 			 </div>
 		</div>
 	</section>
