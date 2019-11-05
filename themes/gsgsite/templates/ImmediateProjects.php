@@ -51,24 +51,22 @@ Template Name: Immediate Projects
   <div class="small-list-items-wrapper">
   <?php
     if( have_rows('mini_projects_repeater') ):
-        while ( have_rows('mini_projects_repeater') ) : the_row(); ?>
-        <div class="list-item wow slideInLeft">
-          <div class="item-desc">
-              <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?= $info ?></p></a>
-              <div class="item-content-block" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
-                <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
-                <div class="item-info">
-                  <div class="title"><?php the_sub_field('project_name'); ?></div>
-                  <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
-                </div>
-                <?php endif; ?>
-            </div>
-        </div>
-        </div>
-        <?php
-          endwhile;
-          endif;
-        ?>
+      while ( have_rows('mini_projects_repeater') ) : the_row(); ?>
+      <div class="list-item wow slideInLeft">
+        <div class="item-desc">
+            <a href="<?php the_sub_field('project_link'); ?>" class="view-btn"><p class="btn-content"><?= $info ?></p></a>
+            <div class="item-content-block" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
+              <?php if (get_sub_field('project_name') && get_sub_field('project_description') ): ?>
+              <div class="item-info">
+                <div class="title"><?php the_sub_field('project_name'); ?></div>
+                <div class="excerpt"><?php the_sub_field('project_description'); ?></div>
+              </div>
+              <?php endif; ?>
+          </div>
+      </div>
+      </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
   </div>
 </div>
 
