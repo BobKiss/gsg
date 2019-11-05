@@ -1763,6 +1763,9 @@ font-weight: 100;
     letter-spacing: 2px;
     margin-bottom: 0;
 }
+.sn-contactus__title-reverse {
+  margin-right: auto;
+}
  .sn-contactsus textarea, .sn-contactsus input{
     background: #f4f4f4;
 }
@@ -1779,7 +1782,10 @@ font-weight: 100;
   margin-top: 7px;
   margin-left: 25px;
 }
-
+.sn-contactus__topborder-reverse {
+  margin-left: 0;
+  margin-right: 25px;
+}
 .gsg-energy__title{
     text-align: right;
     font-size: 24px;
@@ -2630,6 +2636,10 @@ font-weight: 100;
   margin-right: auto;
   margin-left: 50px;
 }
+.barkan-about__statline-reverse {
+  margin-right: 50px;
+  margin-left: auto;
+}
 .barkan-about p{
   margin: 0;
 }
@@ -2665,6 +2675,10 @@ font-weight: 100;
 }
 .SamplePAGE .statline_03 {
   width: 65%;
+}
+.statline-reverse {
+  margin-right: 0;
+  margin-left: auto;
 }
 .barkan-about__stat_wrap{
   margin-bottom: 20px;
@@ -3706,6 +3720,9 @@ font-weight: 100;
     .sn-contactus__topborder{
       margin-left: 0;
       margin-bottom: 20px;
+    }
+    .sn-contactus__topborder-reverse{
+      margin-right: 0;
     }
     .gsg-energy__map{
       height: 435px;

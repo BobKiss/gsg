@@ -101,97 +101,79 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 		</div>
 	</section>
 
-	<!-- <section class="barkan-about wow slideInLeft">
+	<?php
+		$row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
+		$statline_reverse = (get_locale() != 'en_US') ? '' : 'statline-reverse';
+		$statline_container_reverse = (get_locale() != 'en_US') ? '' : 'barkan-about__statline-reverse';
+		$align = (get_locale() != 'en_US') ? 'text-right' : 'text-left';
+	?>
+	<section class="barkan-about wow slideInLeft">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-12">
-					<h5 class="barkan-about__title">אורנית BU | על הפרוייקט</h5>
-					<p class="barkan-about__text">
-						מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”
-					</p>
-				</div>
-			</div> -->
-			<section class="barkan-about wow slideInLeft">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-12">
-<?php
-$heading = ( get_locale() != 'en_US' ) ? 'אורנית BU | על הפרוייקט' : 'Oranit BU | Social Indices';
-$text = ( get_locale() != 'en_US' ) ? 'מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”' : 'Social-economic index 10 - from the Madlan website ';
-?>
+			<div class="row <?= $row_direction ?>">
+				<div class="col-md-6 col-12 <?= $align ?>">
+					<?php
+					$heading = ( get_locale() != 'en_US' ) ? 'אורנית BU | על הפרוייקט' : 'Oranit BU | Social Indices';
+					$text = ( get_locale() != 'en_US' ) ? 'מדד חברתי כלכלי מתוך אתר 10 - אתר “מדלן”' : 'Social-economic index 10 - from the Madlan website ';
+					?>
 					<h5 class="barkan-about__title"><?= $heading ?></h5>
 					<p class="barkan-about__text"><?= $text ?>
 					</p>
 				</div>
 			</div>
 
-			<!-- <div class="row">
-				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
-					<p class="barkan-about__stattext">
-						<strong>גילאי התושבים</strong> | בני 16 עד 64
-					</p>
-					<div class="barkan-about__statline"><span class="statline_01"></span></div><p>60%</p>
+			<!-- Statlines start -->
+			<div class="statlines-block statlines">
+
+				<div class="row <?= $row_direction ?>" style="padding-top: 20px;">
+					<div class="col-12 col-md-3">
+						<p class="barkan-about__stattext">
+							<?php
+							$heading = ( get_locale() != 'en_US' ) ? 'גילאי התושבים' : 'Resident ages';
+							$text = ( get_locale() != 'en_US' ) ? '| בני 16 עד 64' : '| 16 to 64 ';
+							?>
+							<strong><?= $heading ?></strong> <?= $text ?>
+						</p>
+					</div>
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center <?= $row_direction ?>">
+						<div class="barkan-about__statline <?= $statline_container_reverse ?>""><span class="statline_01 <?= $statline_reverse ?>"></span></div><p id="percent-1" style="font-weight: 900">60%</p>
+					</div>
 				</div>
-				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
-					<p class="barkan-about__stattext">
-						<strong>תעסוקה</strong> | צווארון לבן
-					</p>
-					<div class="barkan-about__statline"><span class="statline_02"></span></div><p>42%</p>
+				<div class="row <?= $row_direction ?>" style="padding-top: 20px;">
+					<div class="col-12 col-md-3 d-inline-flex">
+						<p class="barkan-about__stattext">
+							<?php
+							$heading = ( get_locale() != 'en_US' ) ? 'תעסוקה' : 'Employment';
+							$text = ( get_locale() != 'en_US' ) ? '| צווארון לבן' : '| White Collar ';
+							?>
+							<strong><?= $heading ?></strong> <?= $text ?>
+						</p>
+					</div>
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center <?= $row_direction ?>">
+						<div class="barkan-about__statline <?= $statline_container_reverse ?>""><span class="statline_02 <?= $statline_reverse ?>"></span></div><p id="percent-2" style="font-weight: 900;">42%</p>
+					</div>
 				</div>
-				<div class="col-12 d-inline-flex justify-content-between flex-direction-middle barkan-about__stat_wrap">
-					<p class="barkan-about__stattext">
-						<strong>השכלה</strong> | אקדמאים
-					</p>
-					<div class="barkan-about__statline"><span class="statline_03"></span></div><p>30%</p>
+				<div class="row <?= $row_direction ?>" style="padding-top: 20px;">
+					<div class="col-12 col-md-3 d-inline-flex">
+						<p class="barkan-about__stattext">
+							<?php
+							$heading = ( get_locale() != 'en_US' ) ? 'השכלה' : 'Education';
+							$text = ( get_locale() != 'en_US' ) ? '| אקדמאים' : '| University Graduates ';
+							?>
+							<strong><?= $heading ?></strong> <?= $text ?>
+						</p>
+					</div>
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center <?= $row_direction ?>">
+						<div class="barkan-about__statline <?= $statline_container_reverse ?>""><span class="statline_03 <?= $statline_reverse ?> project-sample"></span></div><p id="percent-3__alt" style="font-weight: 900;">30%</p>
+					</div>
 				</div>
-			</div> -->
-			<div class="row statlines" style="padding-top: 20px;">
-				<div class="col-12 col-md-3">
-					<p class="barkan-about__stattext">
-<?php
-$heading = ( get_locale() != 'en_US' ) ? 'גילאי התושבים' : 'Resident ages';
-$text = ( get_locale() != 'en_US' ) ? '| בני 16 עד 64' : '| 16 to 64 ';
-?>
-						<strong><?= $heading ?></strong> <?= $text ?>
-					</p>
-				</div>
-				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
-					<div class="barkan-about__statline"><span class="statline_01"></span></div><p id="percent-1" style="font-weight: 900">60%</p>
-				</div>
+
 			</div>
-			<div class="row" style="padding-top: 20px;">
-				<div class="col-12 col-md-3 d-inline-flex">
-					<p class="barkan-about__stattext">
-<?php
-$heading = ( get_locale() != 'en_US' ) ? 'תעסוקה' : 'Employment';
-$text = ( get_locale() != 'en_US' ) ? '| צווארון לבן' : '| White Collar ';
-?>
-						<strong><?= $heading ?></strong> <?= $text ?>
-					</p>
-				</div>
-				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
-					<div class="barkan-about__statline"><span class="statline_02"></span></div><p id="percent-2" style="font-weight: 900;">42%</p>
-				</div>
-			</div>
-			<div class="row" style="padding-top: 20px;">
-				<div class="col-12 col-md-3 d-inline-flex">
-					<p class="barkan-about__stattext">
-<?php
-$heading = ( get_locale() != 'en_US' ) ? 'השכלה' : 'Education';
-$text = ( get_locale() != 'en_US' ) ? '| אקדמאים' : '| University Graduates ';
-?>
-						<strong><?= $heading ?></strong> <?= $text ?>
-					</p>
-				</div>
-				<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
-					<div class="barkan-about__statline"><span class="statline_03 project-sample"></span></div><p id="percent-3__alt" style="font-weight: 900;">30%</p>
-				</div>
-			</div>
-			<div class="row">
-<?php
-$heading = ( get_locale() != 'en_US' ) ? 'אורנית BU | מפת אזור' : 'Oranit BU | Map of the Region';
-?>
-				<div class="col-md-6 col-12"><h5 class="barkan-about__title"><?= $heading ?></h5></div>
+			<!-- Statlines end -->
+			<div class="row <?= $row_direction ?>">
+				<?php
+				$heading = ( get_locale() != 'en_US' ) ? 'אורנית BU | מפת אזור' : 'Oranit BU | Map of the Region';
+				?>
+				<div class="col-md-6 col-12 <?= $align ?>"><h5 class="barkan-about__title"><?= $heading ?></h5></div>
 				<div class="col-12">
 					<iframe src="https://snazzymaps.com/embed/192528" width="100%" height="380px" style="border:none;"></iframe>
 				</div>
@@ -209,7 +191,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'אורנית BU | מפת אזור' : '
 
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container wow slideInRight">
-			<h4 class="contactus__title">שלח לנו הודעה | קבוצת גביש שחם   </h4>
+			<h4 class="contactus__title <?= $align ?>">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 			 <div class="contactsus-after-line">
 				 <div><a href="#">< לפרוייקט הקודם</a></div>
