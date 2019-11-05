@@ -95,10 +95,10 @@ $map_words = [
 
     <section class="activityAreas wow slideInLeft">
       <div class="titleContainer">
-<?php
-$row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
-$heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | תחומי פעילות' : 'Gavish Shaham Group | Areas of Activity';
-?>
+        <?php
+        $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
+        $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | תחומי פעילות' : 'Gavish Shaham Group | Areas of Activity';
+        ?>
         <div class="title <?=$row_direction?>"><?= $heading ?></div>
       </div>
 
@@ -108,7 +108,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | תחומ�
           <div class="list-column-1">
             <?php while ( have_rows('activity_areas_first') ) : the_row(); ?>
             <div class="singleParagraph">
-              <div class="pTitle"><?php the_sub_field('title'); ?></div>
+              <div class="pTitle <?= $align ?>"><?php the_sub_field('title'); ?></div>
               <div class="pContent <?= $align ?> ">
 								<?php the_sub_field('content'); ?>
               </div>
@@ -118,7 +118,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | תחומ�
           <div class="list-column-2">
             <?php while ( have_rows('activity_areas_second') ) : the_row(); ?>
               <div class="singleParagraph">
-                <div class="pTitle"><?php the_sub_field('title'); ?></div>
+                <div class="pTitle <?= $align ?>"><?php the_sub_field('title'); ?></div>
                 <div class="pContent <?= $align ?>">
                   <?php the_sub_field('content'); ?>
                 </div>

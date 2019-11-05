@@ -179,11 +179,15 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 					$left = ( get_locale() != 'en_US' ) ? '< לפרוייקט הקודם' : '< Previous project ';
 					$middle = ( get_locale() != 'en_US' ) ? 'חזרה לעמוד פרוייקטים מיידיים' : 'Back to immediate projects page ';
 					$right = ( get_locale() != 'en_US' ) ? 'לפרוייקט הבא >' : 'Next project > ';
-
+				?>
+				<!-- Links to projects -->
+				<?php
+					$next = home_url('project-page');
+					$projects = home_url('immediate-projects');
 				?>
 				 <div><a href="#"><?= $left ?></a></div>
-				 <div class="middleText"><?= $middle ?></div>
-				 <div><a href="#"><?= $right ?></a></div>
+				 <div class="middleText"><a href="<?= $projects ?>"><?= $middle ?></a></div>
+				 <div><a href="<?= $next ?>"><?= $right ?></a></div>
 			 </div>
 		</div>
 	</section>

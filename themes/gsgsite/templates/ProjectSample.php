@@ -188,15 +188,22 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 	</section>
 
 	<!-- SectionContacts -->
+	<?php
+		$left = ( get_locale() != 'en_US' ) ? '< לפרוייקט הקודם' : '< Previous project ';
+		$middle = ( get_locale() != 'en_US' ) ? 'חזרה לעמוד פרוייקטים מיידיים' : 'Back to immediate projects page ';
+		$right = ( get_locale() != 'en_US' ) ? 'לפרוייקט הבא >' : 'Next project > ';
 
+		$prev = home_url('barkan-project');
+		$projects = home_url('immediate-projects');
+	?>
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container wow slideInRight">
 			<h4 class="contactus__title <?= $align ?>">שלח לנו הודעה | קבוצת גביש שחם   </h4>
 			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
 			 <div class="contactsus-after-line">
-				 <div><a href="#">< לפרוייקט הקודם</a></div>
-				 <div class="middleText">חזרה לעמוד פרוייקטים מיידיים</div>
-				 <div><a href="#">לפרוייקט הבא ></a></div>
+				 <div><a href="<?= $prev ?>"><?= $left ?></a></div>
+				 <div class="middleText"><a href="<?= $projects ?>"><?= $middle ?></a></div>
+				 <div><a href="#"><?= $right ?></a></div>
 			 </div>
 		</div>
 	</section>

@@ -1816,7 +1816,9 @@ font-weight: 100;
   line-height: 48px;
   font-weight: 900;
 }
-
+.gsg-energy__intro span {
+  width: 100%;
+}
 .gsg-energy__intro_top {
     height: 25%;
     width: 100%;
