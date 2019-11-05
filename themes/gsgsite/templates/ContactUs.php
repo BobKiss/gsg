@@ -27,6 +27,7 @@ Template Name: Contact Us
 	</header> <!-- .headerSection-->
 <?php
 $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם - GSG - יזמות ונדל”ן' : 'Send Us a Message | Gavish Shaham Group - GSG - Real Estate Development';
+$text = ( get_locale() != 'en_US' ) ? 'מטלפון' : 'From the phone';
 ?>
 	<section id="contactus" class="contactsus contactus-yellow">
 		<div class="container wow slideInLeft">
@@ -37,7 +38,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת 
 					    <div class="contactus__links_right-block">
     						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
     						</span>
-    						מטלפון
+    						<?= $text ?>
     						</p>
     						<p  class="contactus__soc">
     							<span>OUR SOCIAL</span>
@@ -52,20 +53,26 @@ $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת 
     					</div>
 					</div>
 					<div class="col-lg-4 col-md-12 text-center">
+						<?php
+							$heading = ( get_locale() != 'en_US' ) ? 'כמייל' : 'Email';
+							$text = ( get_locale() != 'en_US' ) ? 'רח’ יפו 27, חיפה' : '27 Jaffa St., Haifa';
+							$texts = ( get_locale() != 'en_US' ) ? 'כתובת' : 'Address';
+							$text1 = ( get_locale() != 'en_US' ) ? 'כתובת' : 'As a fax';
+						?>
 						<p class="contactus__text"><span><a href="mailto:office@gsg.co.il">OFFICE@GSG.CO.IL</a>
 						</span>
-						כמייל
+						<?= $heading ?>
 						</p>
 					</div>
 					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_left-block">
-    						<p class="contactus__text"><span> רח’ יפו 27, חיפה
+    						<p class="contactus__text"><span> <?= $text ?>
     						</span>
-    						כתובת
+    						<?= $texts ?>
     						</p>
     						<p class="contactus__text"><span><a href="tel:0722202070">072-220-20-70</a>
     						</span>
-    						כפקס
+    						<?= $text1 ?>
     						</p>
 						</div>
 					</div>

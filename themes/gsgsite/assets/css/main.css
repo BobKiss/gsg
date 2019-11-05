@@ -1786,6 +1786,9 @@ font-weight: 100;
   margin-left: 0;
   margin-right: 25px;
 }
+.sn-contactus__topborder-reverse.alt {
+  margin-right: 0;
+}
 .gsg-energy__title{
     text-align: right;
     font-size: 24px;
