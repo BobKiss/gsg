@@ -96,7 +96,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'מפת מתווה גז ארצית | י
 <?php
 $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
 ?>
-			 <h4 class="contactus__title"><?= $heading ?> </h4>
+			 <h4 class="contactus__title <?= $align ?>"><?= $heading ?> </h4>
 			 <?php
 				$text_area = ( get_locale() != 'en_US' ) ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
 				?>

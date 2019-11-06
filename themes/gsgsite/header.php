@@ -70,7 +70,7 @@
 					<!-- <img src="<?php bloginfo('template_url'); ?>/assets/images/mail-icon.svg" alt=""> -->
 					<?php get_template_part('template-parts/svg','mail-icon'); ?>
 					<!-- <object data="<?php bloginfo('template_url'); ?>/assets/images/mail-icon.svg" type="image/svg+xml"></object> -->
-					<i class="fal fa-times close"></i>
+					<i class="fal fa-times"></i>
 				</a>
 				<div class="popup">
 					<?php
@@ -112,7 +112,7 @@
 							</div>
 						</div>
 						<div class="popupColumn">
-							<a href="#" class="submitButton"><?php _e('Send >') ?></a>
+							<a href="#" class="submitButton"><?php _e('< Send') ?></a>
 						</div>
 					</div>
 				</div>

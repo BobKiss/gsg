@@ -159,8 +159,10 @@ function gsgsite_scripts() {
 
 	// Pass php vars
 	$lang = ( get_locale() != 'en_US' ) ? 'he' : 'en';
-	wp_localize_script( 'main-scripts', 'lang', [
-		'lang' => $lang
+	global $wp;
+	wp_localize_script( 'main-scripts', 'wp_data', [
+		'lang' => $lang,
+		'current_page' => current_page()
 	] );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -321,3 +323,16 @@ function register_acf_options_pages() {
 
 // Hook into acf initialization.
 add_action('acf/init', 'register_acf_options_pages');
+
+function current_page () {
+
+	global $wp;
+	$locale = get_locale();
+
+	$current_page_url = home_url( $wp -> request );
+	if ( $locale != 'en_US') {
+		$current_page_url .= '/';
+	}
+	return $current_page_url;
+
+}

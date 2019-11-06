@@ -171,9 +171,10 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 		<div class="container wow slideInRight">
 			<?php
 				$heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
+				$shortcode = ( get_locale() != 'en_US' ) ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
 			?>
-			<h4 class="contactus__title"><?= $heading ?> </h4>
-			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
+			<h4 class="contactus__title <?= $align ?>"><?= "$heading" ?> </h4>
+			 <?php  echo do_shortcode($shortcode); ?>
 			 <div class="contactsus-after-line">
 				 <?php
 					$left = ( get_locale() != 'en_US' ) ? '< לפרוייקט הקודם' : '< Previous project ';
