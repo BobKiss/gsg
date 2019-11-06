@@ -81,15 +81,15 @@ jQuery(document).ready(function ($) {
     $('.mainNavigationContainer .activeLine').toggleClass('hide');
   });
 
-  $('.big-projects-list .list-item .view-btn, .big-projects-list .list-item .item-background').hover(function(e){
-    $(this).parent().find(".item-info").fadeIn();
-  }, function(e) {
-    if ( e.target.classList.contains('item-content-block') ) {
-      return;
+  $(document).on('hover', '.item-wrap, .item-content-block', handlerImmediateHover);
+  function handlerImmediateHover(e) {
+    if(e.type == "mouseenter") {
+      $(e.target).closest('.list-item').find('.item-info').fadeIn()
     }
-    // console.log( e.target.classList );
-    $(this).parent().find(".item-info").fadeOut();
-  });
+    if(e.type == "mouseleave" && !$(e.relatedTarget).hasClass('item-background')) {
+      $(e.target).closest('.list-item').find('.item-info').fadeOut();
+    }
+  }
 
     $('.small-list-items-wrapper .list-item .item-desc .view-btn').hover(function(e){
       $(this).parent().children(".item-content-block").children(".item-info").addClass('hovered');
