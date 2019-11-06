@@ -32,7 +32,10 @@ $text = ( get_locale() != 'en_US' ) ? 'מטלפון' : 'From the phone';
 	<section id="contactus" class="contactsus contactus-yellow">
 		<div class="container wow slideInLeft">
 			<h4 class="contactus__title"><?= $heading ?></h4>
-			 <?php echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
+			<?php
+				$text_area = ( get_locale() != 'en_US' ) ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
+			?>
+			 <?php echo do_shortcode("$text_area"); ?>
 			<div class="row contactus__links d-flex no-gutters">
 					<div class="col-lg-4 col-md-12">
 					    <div class="contactus__links_right-block">

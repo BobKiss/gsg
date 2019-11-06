@@ -150,7 +150,7 @@ jQuery(document).ready(function ($) {
         }
       });
 
-      if( $(selectedTitle).closest('.borderBlock.borderWhite').length > 0 ) {
+      if( $(selectedTitle).closest('.borderBlock.borderWhite').length > 0 && $(selectedTitle).closest('html[lang="en-US"]').length > 0 ) {
         title.reverse();
       }
 
