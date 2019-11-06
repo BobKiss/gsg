@@ -84,7 +84,7 @@ jQuery(document).ready(function ($) {
   $(document).on('hover', '.item-wrap, .item-content-block', handlerImmediateHover);
   function handlerImmediateHover(e) {
     if(e.type == "mouseenter") {
-      $(e.target).closest('.list-item').find('.item-info').fadeIn()
+      $(e.target).closest('.list-item').find('.item-info').fadeIn();
     }
     if(e.type == "mouseleave" && !$(e.relatedTarget).hasClass('item-background')) {
       $(e.target).closest('.list-item').find('.item-info').fadeOut();
