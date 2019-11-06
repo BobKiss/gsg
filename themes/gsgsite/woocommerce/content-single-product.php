@@ -54,14 +54,14 @@ if ( post_password_required() ) {
 					<div class="housesys__menu_wrap">
 				<?php
         	$map_word = [
-						'w1' => (get_locale() != 'en_US') ? 'בחר נכס' : 'eng',
-						'w2' => (get_locale() != 'en_US') ? 'בחר מגרש' : 'eng',
-						'w3' => (get_locale() != 'en_US') ? 'בחר תצוגת נכס' : 'eng',
-						'w4' => (get_locale() != 'en_US') ? 'בחר קומה' : 'eng',
-						'w5' => (get_locale() != 'en_US') ? 'בחר דירה' : 'eng',
-						'w6' => (get_locale() != 'en_US') ? 'בחר חבילה' : 'eng',
-						'v1' => (get_locale() != 'en_US') ? 'חזית' : 'eng',
-						'v2' => (get_locale() != 'en_US') ? 'ללא' : 'eng',
+						'w1' => (get_locale() != 'en_US') ? 'בחר נכס' : 'Select a property',
+						'w2' => (get_locale() != 'en_US') ? 'בחר מגרש' : 'Select a plot',
+						'w3' => (get_locale() != 'en_US') ? 'בחר תצוגת נכס' : 'Select a property view',
+						'w4' => (get_locale() != 'en_US') ? 'בחר קומה' : 'Select a floor',
+						'w5' => (get_locale() != 'en_US') ? 'בחר דירה' : 'Choose an apartment',
+						'w6' => (get_locale() != 'en_US') ? 'בחר חבילה' : 'Select a package',
+						'v1' => (get_locale() != 'en_US') ? 'חזית' : 'Front',
+						'v2' => (get_locale() != 'en_US') ? 'ללא' : 'Without',
         	];
         ?>
 						<h6 class="housesys__menu_title"><?= $map_word['w1'] ?></h6>
@@ -107,15 +107,15 @@ if ( post_password_required() ) {
 						<div class="housesys__menu_container">
 							<?php
         	$map_word = [
-						'w1' => (get_locale() != 'en_US') ? 'הצג שרטוט נכס' : 'eng',
-						'w2' => (get_locale() != 'en_US') ? 'הצג מפרט ומחירון' : 'eng',
-						'w3' => (get_locale() != 'en_US') ? 'הצג תמונות והדמיות' : 'eng',
-						'w4' => (get_locale() != 'en_US') ? 'הצג חבילות קונספט' : 'eng',
-						'v1' => (get_locale() != 'en_US') ? 'מחיר בסיס' : 'eng',
-						'v2' => (get_locale() != 'en_US') ? 'תוספת חבילה' : 'eng',
-						'v3' => (get_locale() != 'en_US') ? 'קוד הנחה' : 'eng',
-						'v4' => (get_locale() != 'en_US') ? 'מחיר סופי' : 'eng',
-						'v5' => (get_locale() != 'en_US') ? 'סה”כ דמי הרשמה' : 'eng',
+						'w1' => (get_locale() != 'en_US') ? 'הצג שרטוט נכס' : 'View property sketch',
+						'w2' => (get_locale() != 'en_US') ? 'הצג מפרט ומחירון' : 'View specifications and price list',
+						'w3' => (get_locale() != 'en_US') ? 'הצג תמונות והדמיות' : 'View photos and simulations',
+						'w4' => (get_locale() != 'en_US') ? 'הצג חבילות קונספט' : 'View concept packages',
+						'v1' => (get_locale() != 'en_US') ? 'מחיר בסיס' : 'Base price',
+						'v2' => (get_locale() != 'en_US') ? 'תוספת חבילה' : 'Extra package',
+						'v3' => (get_locale() != 'en_US') ? 'קוד הנחה' : 'Discount code',
+						'v4' => (get_locale() != 'en_US') ? 'מחיר סופי' : 'Final price',
+						'v5' => (get_locale() != 'en_US') ? 'סה”כ דמי הרשמה' : 'Total registration fee',
         	];
         ?>
 							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_architecture"><?= $map_word['w1'] ?></a>
@@ -172,9 +172,10 @@ if ( post_password_required() ) {
 						?>
 						</div>
 						<?php
-  						$heading = ( get_locale() != 'en_US' ) ? 'לטופס הרשמה ותשלום דמי הרשמה >' : 'en';
+  						$heading = ( get_locale() != 'en_US' ) ? 'לטופס הרשמה ותשלום דמי הרשמה >' : 'Registration and payment of registration fee';
+							$align = ( get_locale() != 'en_US' ) ? '' : 'text-center';
 						?>
-						<a class="add-to-cart-simulation housesys__menu_btn disabled" href="<?php echo esc_url( wc_get_checkout_url() ); ?>"><?= $heading ?> </a>
+						<a class="add-to-cart-simulation housesys__menu_btn disabled <?= $align ?>" href="<?php echo esc_url( wc_get_checkout_url() ); ?>"><?= $heading ?> </a>
 
 					</div>
 
