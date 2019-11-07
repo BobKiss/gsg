@@ -24,18 +24,11 @@ if( $locale == 'en_US' ) {
 		<div class="row d-flex">
 			<div class="footer__wrap">
 				<div class="footer__menu d-flex justify-content-between <?= $class ?>">
-				<?php
-					$wp;
-					$current_page = home_url( $wp -> request );
-					if ( $locale != 'en_US') {
-						$current_page .= '/';
-					}
-				?>
 					<?php
 					while ( have_rows('top_line_menu_footer', 'options') ) : the_row();
 					the_sub_field('sub_field_name');
 
-					if ( get_sub_field('link') == $current_page ) {
+					if ( get_sub_field('link') == current_page() ) {
 						$style = 'color: #fff600';
 					} else {
 						$style = '';
@@ -84,7 +77,7 @@ if( $locale == 'en_US' ) {
 					<a class="<?php if (get_locale() !== 'he_IL') echo "currentLang"; ?>" href="?lang=en">ENGLISH</a>
 					<span class="footer__menu_sep"></span>
 					<a class="<?php if (get_locale() == 'he_IL') echo "currentLang"; ?>" href="?lang=he" style="margin-left:14px;">HEBREW</a>
-						<p style="margin: 0 auto;"><?php echo __('Change language', 'gsgsite'); ?></p>
+						<p style="margin: 0 auto;color: #8e8686"><?php echo __('Change language', 'gsgsite'); ?></p>
 					</div>
 					<div class="footer__links_item socials" style="color:white;">
 

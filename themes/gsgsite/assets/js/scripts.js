@@ -30,7 +30,7 @@ jQuery(document).ready(function ($) {
       variableWidth: true,
 		rtl: true,
 	autoplay: true,
-	autoplaySpeed: 2000,
+	autoplaySpeed: 800,
       slidesToScroll: 1,
 		infinite: true,
     });
@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
 		rtl: false,
       variableWidth: true,
       autoplay: true,
-  		autoplaySpeed: 2000,
+  		autoplaySpeed: 800,
       slidesToScroll: 1,
 		infinite: true,
     });
@@ -81,7 +81,7 @@ jQuery(document).ready(function ($) {
     $('.mainNavigationContainer .activeLine').toggleClass('hide');
   });
 
-  $(document).on('hover', '.item-wrap, .item-content-block', handlerImmediateHover);
+  $(document).on('hover', '.big-projects-list .item-wrap, .big-projects-list .item-content-block', handlerImmediateHover);
   function handlerImmediateHover(e) {
     if(e.type == "mouseenter") {
       $(e.target).closest('.list-item').find('.item-info').fadeIn();
@@ -322,6 +322,18 @@ jQuery(document).ready(function ($) {
       $el.html(value + "%");
     });
   };
+
+  // Project page punkt highlight
+  (function () {
+
+    var projects = $('.menuBlock .menu-item-has-children');
+    var cur_proj = projects.find('.current_page_item');
+
+    if ( cur_proj.find('a').attr('href') == wp_data.current_page ) {
+      projects.addClass('active');
+    }
+
+  })();
 
 });
 

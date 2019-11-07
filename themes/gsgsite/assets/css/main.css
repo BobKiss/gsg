@@ -1015,7 +1015,7 @@ text-align: right;
   color: #000;
 }
 .aboutUsPageWrapper .partneers a.singlePartneer {
-  padding: 0 20px;
+  padding: 0 80px;
   min-height: 150px;
   display: flex;
   align-items: center;
@@ -1150,12 +1150,12 @@ font-weight: 100;
   opacity: 0;
   transition: .5s;
 }
-.sideMenu .sideMenuItem .sideMenuMail i{
+/* .sideMenu .sideMenuItem .sideMenuMail i{
   visibility: visible;
   opacity: 1;
   color: white;
   font-size: 30px;
-}
+} */
 .sideMenu .sideMenuItem .sideMenuMail svg {
   display: block;
   fill: #fff;
@@ -1405,12 +1405,12 @@ font-weight: 100;
 .sideMenuWrapper .sideMenuContent .main-navigation .current-menu-item a{
   color: #fff600;
 }
-.sideMenu .sideMenuMail i.close{
+.sideMenu .sideMenuMail i{
   visibility: hidden;
   opacity: 0;
   transition: .5s;
 }
-.sideMenu .sideMenuMail.opened i.close{
+.sideMenu .sideMenuMail.opened i{
   visibility: visible;
   opacity: 1;
   transition: .5s;
@@ -1514,6 +1514,10 @@ font-weight: 100;
   line-height: 50px;
   height: 50px;
   padding: 6px 15px;
+}
+html[lang=en-US] .sideMenu .mailBlock .popup .popupForm input,
+html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
+  text-align-last: left;
 }
 .sideMenu .mailBlock .popup .popupForm input::placeholder {
   color: #c0c0c0;
@@ -2545,7 +2549,8 @@ font-weight: 100;
 }
 
 .footer__menu a:hover, .footer__links a:hover {
-    color: rgb(160, 159, 159);
+    /* color: rgb(160, 159, 159); */
+    color: white;
     text-decoration: none;
 }
 
@@ -3039,6 +3044,7 @@ font-weight: 100;
   margin-left: auto;
   margin-right: auto;
   transform: rotate(-90deg);
+  white-space: nowrap;
 }
 .small-projects-list .item-content-block{
   height: 300px;
@@ -3085,8 +3091,18 @@ font-weight: 100;
   font-weight: 700;
   padding-right: 10px;
 }
+.contactus__title.text-left + .caldera-grid .first_row .form-control {
+  text-align-last: left;
+}
+.contactus__title.text-left + .caldera-grid .first_row {
+  direction: rtl;
+}
 .caldera-grid .first_row textarea.form-control{
   padding-top: 10px !important;
+}
+.contactus__title.text-left + .caldera-grid .single .form-group > div {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .caldera-grid .last_row .btn{
   padding: 3px 17px;
@@ -4216,7 +4232,7 @@ font-weight: 100;
     height: 100px;
   }
   .small-projects-list .list-item .view-btn{
-    width: 50px;
+    width: 60px;
   }
 
   .big-projects-list .list-item {
@@ -4241,6 +4257,11 @@ font-weight: 100;
 
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
     margin-left: 10px;
+  }
+
+  .small-projects-list .list-item .view-btn .btn-content {
+    width: fit-content;
+    white-space: normal;
   }
 
 }}
@@ -4310,4 +4331,3 @@ font-weight: 100;
 .barkan-slider .slick-list .slick-track .slick-slide {
   display: flex !important;
 }
-

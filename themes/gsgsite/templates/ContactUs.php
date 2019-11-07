@@ -28,10 +28,11 @@ Template Name: Contact Us
 <?php
 $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם - GSG - יזמות ונדל”ן' : 'Send Us a Message | Gavish Shaham Group - GSG - Real Estate Development';
 $text = ( get_locale() != 'en_US' ) ? 'מטלפון' : 'From the phone';
+$align = ( get_locale() != 'en_US' ) ? '' : 'text-left';
 ?>
 	<section id="contactus" class="contactsus contactus-yellow">
 		<div class="container wow slideInLeft">
-			<h4 class="contactus__title"><?= $heading ?></h4>
+			<h4 class="contactus__title <?= $align ?>"><?= $heading ?></h4>
 			<?php
 				$text_area = ( get_locale() != 'en_US' ) ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
 			?>
