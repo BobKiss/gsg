@@ -4,7 +4,6 @@ Template Name: Immediate Projects
 */
 ?>
 <?php get_header(); ?>
-
 <div class="page after-header-padding">
   <div class="big-projects-list container-1">
   <?php
@@ -47,7 +46,7 @@ Template Name: Immediate Projects
 
   </div>
 <div class="small-projects-list container-2">
-  <marquee scrollamount="5" class="contactus__lets"><?php _e('Sold Out Projects - Sold Out Projects - Sold Out Projects','Gsg'); ?></marquee>
+  <marquee class="marquee contactus__lets"><?php _e('Sold Out Projects - Sold Out Projects - Sold Out Projects Sold Out Projects - Sold Out Projects - Sold Out Projects Sold Out Projects - Sold Out Projects - Sold Out Projects Sold Out Projects - Sold Out Projects - Sold Out Projects Sold Out Projects - Sold Out Projects - Sold Out Projects Sold Out Projects - Sold Out Projects - Sold Out Projects Sold Out Projects - Sold Out Projects - Sold Out Projects','Gsg'); ?></marquee>
   <div class="small-list-items-wrapper">
   <?php
     if( have_rows('mini_projects_repeater') ):
