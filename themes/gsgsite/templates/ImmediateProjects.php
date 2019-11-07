@@ -36,10 +36,7 @@ Template Name: Immediate Projects
             <!-- </a> -->
 
           </div>
-          <?php
-            $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
-          ?>
-          <div class="item-meta size <?= $align ?>"><?php the_sub_field('project_name'); ?></div>
+          <div class="item-meta"><?php the_sub_field('project_name'); ?></div>
       </div>
       <!-- </a> -->
         <?php
