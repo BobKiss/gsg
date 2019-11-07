@@ -335,6 +335,30 @@ jQuery(document).ready(function ($) {
 
   })();
 
+  // Map border animation
+  var borderObserver = new IntersectionObserver(function (entries, observer) {
+
+    if ( !entries[0].isIntersecting ) {
+      $('.gsg-energy__intro_top').removeClass("intro-top-animated");
+      $('.gsg-energy__intro').removeClass("intro-left-animated");
+      $('.gsg-energy__intro_bottom').removeClass("intro-bottom-animated");
+      return;
+    }
+
+    $('.gsg-energy__intro_top').addClass("intro-top-animated");
+    $('.gsg-energy__intro').addClass("intro-left-animated");
+    $('.gsg-energy__intro_bottom').addClass("intro-bottom-animated");
+
+  }, {});
+  if ( $('.sectionMap').length != 0 ) {
+    borderObserver.observe( $('.sectionMap')[0] );
+  }
+  if ( $('.titleSection').length != 0 ) {
+    borderObserver.observe( $('.titleSection')[0] );
+  }
+  // borderObserver.observe( $('.titleSection')[0] );
+
+
 });
 
 // new WOW().init();

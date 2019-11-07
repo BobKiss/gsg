@@ -42,11 +42,11 @@ if ( post_password_required() ) {
 					</div>
 					<div class="housesys__tabs_content dnone"></div>
 					<div class="housesys__menu_nav">
-						<a href="#" class="housesys__menu_lnk" onclick="history.back()"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left.png"></a>
-						<a href="#" class="housesys__menu_lnk" onclick="history.forward()"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right.png"></a>
-						<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png"></a>
-						<a href="#" class="housesys__menu_lnk" onclick="document.getElementById('housesysImg').style.width = '74%'"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus.png"></a>
-						<a href="#" class="housesys__menu_lnk img__zoom"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></a>
+						<a href="#" class="housesys__menu_lnk" onclick="history.back()"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left-hs.svg"></a>
+						<a href="#" class="housesys__menu_lnk" onclick="history.forward()"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right-hs.svg"></a>
+						<a href="#" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/plus-hs.svg"></a>
+						<a href="#" class="housesys__menu_lnk" onclick="document.getElementById('housesysImg').style.width = '74%'"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus-hs.svg"></a>
+						<a href="#" class="housesys__menu_lnk img__zoom"><img src="<?php bloginfo('template_url'); ?>/assets/images/download-hs.svg"></a>
 					</div>
 				</div>
 

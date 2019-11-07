@@ -11,14 +11,19 @@ Template Name: House System
 						<div class="housesys__img" id="housesysImg">
 							<img id="mainImg" src="<?php bloginfo('template_url'); ?>/assets/images/r2house.png">
 							<div class="housesys__menu_nav">
-								<button onclick="history.back()" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left.png"></button>
+								<button onclick="history.back()" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left-hs.svg"></button>
+								<button onclick="history.forward()" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right-hs.svg"></button>
+								<button class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/plus-hs.svg"></button>
+								<button onclick="document.getElementById('housesysImg').style.width = '74%'" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus-hs.svg"></button>
+								<button onclick="document.getElementById('housesysImg').style.width = '100%'" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/download-hs.svg"></button>
+								<!-- <button onclick="history.back()" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-left.png"></button>
 								<button onclick="history.forward()" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/arrow-right.png"></button>
 								<button class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png"></button>
 								<button onclick="document.getElementById('housesysImg').style.width = '74%'" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/minus.png"></button>
-								<button onclick="document.getElementById('housesysImg').style.width = '100%'" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></button>
+								<button onclick="document.getElementById('housesysImg').style.width = '100%'" class="housesys__menu_lnk"><img src="<?php bloginfo('template_url'); ?>/assets/images/download.png"></button> -->
 							</div>
 						</div>
-				
+
 						<div class="housesys__menu">
 							<div class="housesys__menu_wrap">
 								<h6 class="housesys__menu_title">בחר נכס</h6>
@@ -41,13 +46,13 @@ Template Name: House System
 									<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text">סה”כ דמי הרשמה</p></div>
 								</div>
 								<button class="housesys__offer_btn">לטופס הרשמה ותשלום דמי הרשמה ></button>
-								
+
 							</div>
-							
+
 						</div>
-					
+
 				</div>
-			</div>			
+			</div>
 	</section>
 	<!-- #sectionHousesys -->
 <?php wp_footer(); ?>
