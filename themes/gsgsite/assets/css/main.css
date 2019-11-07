@@ -2851,7 +2851,7 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
   background-position: center;
   background-size: cover;
 }
-.item-wrap .item-background:hover
+/* .item-wrap .item-background:hover */
 .big-projects-list .list-item .item-meta{
   color: #000;
   margin-top: 10px;
@@ -2859,6 +2859,9 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
   font-weight: 300;
   line-height: 30px;
   text-align: right;
+}
+html[lang=en-US] .big-projects-list .list-item .item-meta{
+  text-align-last: left;
 }
 .item-meta__connect{
   color: #000;
