@@ -60,6 +60,7 @@ jQuery(document).ready(function ($) {
     $(this).parent().toggleClass('active');
  });
 
+  // Menu border animation
   $('.sideMenu .sideMenuItem.first').click(function(e){
     console.log('click');
     $(this).toggleClass('active');
@@ -73,6 +74,7 @@ jQuery(document).ready(function ($) {
     $('.menuBlock .menu-border-left').toggleClass('border-left-animate');
     $('.menuBlock .menu-border-bottom').toggleClass('border-bottom-animate');
   });
+
   $('.mainNavigationContainer .menu-item-has-children > a, .fullscreenMenu .menu-item-has-children > a').click(function (e) {
     console.log('click and prev def');
     e.preventDefault();
@@ -105,6 +107,11 @@ jQuery(document).ready(function ($) {
       $('.sideMenu .sideMenuItem.first').parent().removeClass('active');
       $('.sideMenuWrapper').removeClass('active');
       $('.sideMenu .mailBlock .popup').toggleClass('opened');
+
+      // Stupid fix for menu animation
+      $('.menuBlock .menu-border-top').removeClass('border-top-animate');
+      $('.menuBlock .menu-border-left').removeClass('border-left-animate');
+      $('.menuBlock .menu-border-bottom').removeClass('border-bottom-animate');
     });
     $('.sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton').click(function (e) {
       e.preventDefault();
