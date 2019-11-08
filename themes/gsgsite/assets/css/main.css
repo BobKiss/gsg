@@ -490,6 +490,9 @@ header{
   visibility: visible;
   opacity: 1;
 }
+#coming-soon{
+  height: 100vh;
+}
 
 .header__title{
     text-align: left;
