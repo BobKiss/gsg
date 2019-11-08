@@ -61,35 +61,47 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 
     <section class="aboutMap wow slideInRight">
       <div class="titleContainer">
-<?php
-$row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
-$heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | מפת פעילות בארץ' : 'Gavish Shaham Group | Israel Activity Map';
-?>
+        <?php
+        $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
+        $heading = ( get_locale() != 'en_US' ) ? 'קבוצת גביש שחם | מפת פעילות בארץ' : 'Gavish Shaham Group | Israel Activity Map';
+        $map_words = [
+          'w1' => (get_locale() != 'en_US') ? 'מפת' : 'Map',
+          'w2' => (get_locale() != 'en_US') ? 'פעילות' : 'activity',
+          'w3' => (get_locale() != 'en_US') ? 'בארץ' : 'in the country',
+        ]
+        ?>
         <div class="title <?=$row_direction?>"><?= $heading ?></div>
       </div>
       <div class="container">
         <div class="mapSection">
           <iframe src="https://snazzymaps.com/embed/192528" width="100%" height="100%" style="border:none;"></iframe>
-        </div> <!-- .mapSection-->
+        </div>
+
+        <!-- .mapSection-->
         <div class="titleSection">
-          <div class="row"></div>
+          <!-- <div class="row"></div>
           <div class="row mapTitleRow">
             <div class="mapTitle">
-<?php
-$map_words = [
-  'w1' => (get_locale() != 'en_US') ? 'מפת' : 'Map',
-  'w2' => (get_locale() != 'en_US') ? 'פעילות' : 'activity',
-  'w3' => (get_locale() != 'en_US') ? 'בארץ' : 'in the country',
-]
-?>
               <?= $map_words['w1'] ?><br>
               <?= $map_words['w2'] ?><br>
               <?= $map_words['w3'] ?><br>
             </div>
           </div>
-          <div class="row"></div>
+          <div class="row"></div> -->
+          <div class="gsg-energy__intro_top"></div>
+          <div class="gsg-energy__intro">
+            <span>
+              <?= $map_words['w1'] ?><br>
+              <?= $map_words['w2'] ?><br>
+              <?= $map_words['w3'] ?><br>
+            </span>
+            <div class="gsg-energy__intro_left"></div>
+          </div>
+          <div class="gsg-energy__intro_bottom"></div>
           <img class="additionalImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutUsMapCircle.png" alt="">
-        </div> <!-- .titleSection -->
+        </div>
+        <!-- .titleSection -->
+
       </div>
     </section>
 

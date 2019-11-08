@@ -38,13 +38,13 @@ $text = ( get_locale() != 'en_US' ) ? 'מחלקת האנרגיה בקבוצת ג
 על פי החלטת הממשלה, משק החשמל בישראל צפוי להשתנות באופן ש 20% מצריכת החשמל בישראל יעבור לייצור באמצעות תחנות כוח פרטיות. החזון שלנו, להאיץ ולקדם הקמת תחנות כוח פרטיות אשר יספקו אנרגיה זולה לאזורי תעשיה, בתי מלון, בתי חולים וישובים.' : 'The energy department at Gavish Shaham Group has ample experience in the energy field, including in the planning and constructing gas stations across Israel.</br>  Now our activity is focused on developing projects for launching private power plants aiming to provide cheaper electricity than that of the Electricity Company and to promote competition in the electricity market in Israel.  Our team of professionals is working to promote projects in the energy field from identifying land (and preparing it for this type of project according to predefined criteria) through completion of the project and delivery to the client. According to the Government\'s decision, the Israeli electricity market is expected to change so that 20% of the consumption of electricity in Israel would be produced by private power plants. Our vision is to accelerate and advance the establishment of private power plants which would provide cheap energy to industrial zones, hotels, hospitals, and communities.  ';
 $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 ?>
-			<h4 class="sn-contactus__title <?=$title_reverse . ' ' . $align?>"><?= $heading ?></h4>
+			<h4 class="sn-contactus__title <?= $title_reverse . ' ' . $align?>"><?= $heading ?></h4>
 			<div class="row d-flex no-gutters <?= $row_direction ?>">
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__topborder <?= $topborder_class ?>"></div>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<div class="sn-contactus__area<?= $align ?>">
+					<div class="sn-contactus__area <?= $align ?>">
 <?= $text ?>
 </div>
 				</div>
@@ -53,26 +53,29 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 	</section>
 
 	<!-- Section-Gsgenergy -->
+<?php
+	$heading = ( get_locale() != 'en_US' ) ? 'מפת מתווה גז ארצית | ישראל' : 'National Gas Outline Map | Israel';
+	$map_words = [
+		'w1' => (get_locale() != 'en_US') ? 'מפת</br>מתווה</br>' : 'Gas </br>outline</br>',
+		'w2' => (get_locale() != 'en_US') ? 'הגז' : 'map',
+	]
+?>
 
 	<section id="sn-contactus" class="sn-contactsus">
 		<div class="container wow slideInLeft">
-<?php
-$heading = ( get_locale() != 'en_US' ) ? 'מפת מתווה גז ארצית | ישראל' : 'National Gas Outline Map | Israel';
-?>
 			<h4 class="gsg-energy__title"><?= $heading ?></h4>
 			<div class="row d-flex no-gutters sectionMap">
 				<div class="col-lg-4 col-md-12">
-				    <div class="gsg-energy__intro-wrap d-flex">
-				        <div class="gsg-energy__intro_top"></div>
-<?php $map_words = [
-          'w1' => (get_locale() != 'en_US') ? 'מפת</br>מתווה</br>' : 'Gas </br>outline</br>',
-          'w2' => (get_locale() != 'en_US') ? 'הגז' : 'map',
-        ]; ?>
-				        <div class="gsg-energy__intro">
-									<span><?= $map_words['w1'] . $map_words['w2'] ?></span>
-								</div>
-                    <div class="gsg-energy__intro_bottom"></div>
-				    </div>
+
+					<div class="gsg-energy__intro-wrap d-flex">
+						<div class="gsg-energy__intro_top"></div>
+						<div class="gsg-energy__intro">
+							<span><?= $map_words['w1'] . $map_words['w2'] ?></span>
+							<div class="gsg-energy__intro_left"></div>
+						</div>
+						<div class="gsg-energy__intro_bottom"></div>
+					</div>
+
 				</div>
 				<div class="col-lg-8 col-md-12">
 					<div class="mapEnergyContainer">
@@ -100,7 +103,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת 
 			 <?php
 				$text_area = ( get_locale() != 'en_US' ) ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
 				?>
-			 <?php  echo do_shortcode($text_area); ?>
+			 <?php echo do_shortcode($text_area); ?>
 
 		</div>
 

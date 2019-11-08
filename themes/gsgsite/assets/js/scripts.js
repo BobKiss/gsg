@@ -60,8 +60,9 @@ jQuery(document).ready(function ($) {
     $(this).parent().toggleClass('active');
  });
 
+  // Menu border animation
   $('.sideMenu .sideMenuItem.first').click(function(e){
-    console.log('click');
+    // console.log('click');
     $(this).toggleClass('active');
     $(this).parent().toggleClass('active');
     $('.sideMenu .mailBlock a.sideMenuMail').removeClass('opened');
@@ -73,8 +74,9 @@ jQuery(document).ready(function ($) {
     $('.menuBlock .menu-border-left').toggleClass('border-left-animate');
     $('.menuBlock .menu-border-bottom').toggleClass('border-bottom-animate');
   });
+
   $('.mainNavigationContainer .menu-item-has-children > a, .fullscreenMenu .menu-item-has-children > a').click(function (e) {
-    console.log('click and prev def');
+    // console.log('click and prev def');
     e.preventDefault();
     $(this).parent().toggleClass('active');
     $(this).parent().find('.sub-menu').toggleClass('activeMenu');
@@ -105,6 +107,11 @@ jQuery(document).ready(function ($) {
       $('.sideMenu .sideMenuItem.first').parent().removeClass('active');
       $('.sideMenuWrapper').removeClass('active');
       $('.sideMenu .mailBlock .popup').toggleClass('opened');
+
+      // Stupid fix for menu animation
+      $('.menuBlock .menu-border-top').removeClass('border-top-animate');
+      $('.menuBlock .menu-border-left').removeClass('border-left-animate');
+      $('.menuBlock .menu-border-bottom').removeClass('border-bottom-animate');
     });
     $('.sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton').click(function (e) {
       e.preventDefault();
@@ -334,6 +341,30 @@ jQuery(document).ready(function ($) {
     }
 
   })();
+
+  // Map border animation
+  var borderObserver = new IntersectionObserver(function (entries, observer) {
+
+    if ( !entries[0].isIntersecting ) {
+      $('.gsg-energy__intro_top').removeClass("intro-top-animated");
+      $('.gsg-energy__intro').removeClass("intro-left-animated");
+      $('.gsg-energy__intro_bottom').removeClass("intro-bottom-animated");
+      return;
+    }
+
+    $('.gsg-energy__intro_top').addClass("intro-top-animated");
+    $('.gsg-energy__intro').addClass("intro-left-animated");
+    $('.gsg-energy__intro_bottom').addClass("intro-bottom-animated");
+
+  }, {});
+  if ( $('.sectionMap').length != 0 ) {
+    borderObserver.observe( $('.sectionMap')[0] );
+  }
+  if ( $('.titleSection').length != 0 ) {
+    borderObserver.observe( $('.titleSection')[0] );
+  }
+  // borderObserver.observe( $('.titleSection')[0] );
+
 
 });
 
