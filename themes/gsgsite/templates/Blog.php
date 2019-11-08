@@ -12,9 +12,14 @@ Template Name: Blog
     <div class="borderBlock container borderWhite hebrew">
       <div class="row"></div>
       <div class="row">
-        <div class="title" style="color:white !important;">חילוץ פרוייקט \nממשבר - חלק א’</div>
+        <?php
+          $heading = ( get_locale() != 'en_US' ) ? 'חילוץ פרוייקט \nממשבר - חלק א’' : 'Rescue Project\nCrisis - Part I';
+          $text = ( get_locale() != 'en_US' ) ? 'תמ"א 38 והתחדשות עירונית' : '38 and urban renewal ';
+          $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
+        ?>
+        <div class="title" style="color:white !important;"><?= $heading ?></div>
         <div class="littleTitle" style="color:white !important;">
-          תמ"א 38 והתחדשות עירונית
+          <?= $text ?>
         </div>
       </div>
       <div class="row"></div>
@@ -55,7 +60,10 @@ Template Name: Blog
                   </span>
                 </a>
                 <h5 class="archivepage__img_title">
-                  <?php the_title(); ?> <p>מאת מעיין בכר</p>
+                  <?php
+                    $heading = ( get_locale() != 'en_US' ) ? 'מאת מעיין בכר' : 'By Maayan Bachar';
+                  ?>
+                  <?php the_title(); ?> <p><?= $heading?></p>
                 </h5>
                 <p class="archivepage__img_text">
                   <?php echo get_the_excerpt() ?>
@@ -85,7 +93,10 @@ Template Name: Blog
                   </span>
                 </a>
                 <h5 class="archivepage__img_title">
-                  <?php the_title(); ?> <p>מאת מעיין בכר</p>
+                  <?php
+                    $heading = ( get_locale() != 'en_US' ) ? 'מאת מעיין בכר' : 'By Maayan Bachar';
+                  ?>
+                  <?php the_title(); ?> <p><?= $heading ?></p>
                 </h5>
                 <p class="archivepage__img_text">
                   <?php echo get_the_excerpt() ?>

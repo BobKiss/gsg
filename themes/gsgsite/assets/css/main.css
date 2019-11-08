@@ -158,7 +158,7 @@ a:focus {
   padding: 20px;
   padding-right: 0;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 42px;
   line-height: 35px;
   font-weight: 900;
   color: black;
@@ -189,7 +189,7 @@ a:focus {
   justify-content: flex-end;
 }
 [dir="rtl"] .clientItemHome p{
-  max-width: 75%;
+  max-width: 100%;
   direction: ltr;
 }
 [dir="rtl"] .sideMenuWrapper .sideMenuContent li.menu-item-has-children a{
@@ -527,7 +527,7 @@ header{
 
 
 .headerSection {
-  min-height: 100vh;
+  min-height: 98vh;
   position: relative;
   background-color: #e5e5e3;
 }
@@ -544,7 +544,7 @@ header{
 .logo {
   max-width: 180px;
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 4%;
   z-index: 5;
   margin-left: 36px;
@@ -757,7 +757,7 @@ header{
   flex-direction: column;
 }
 .archive .headerSection .borderBlock.hebrew .row .title {
-  max-width: 700px;
+  max-width: 720px;
 }
 .archive .headerSection .borderBlock.hebrew .row .littleTitle {
   text-align: left;
@@ -772,6 +772,12 @@ header{
 }
 .headerSection .borderBlock.borderWhite {
   transform: scale(-1,1);
+}
+.headerSection .borderBlock.borderWhite.revers .row {
+  direction: rtl;
+}
+.headerSection .borderBlock.borderWhite.revers .row .title {
+  margin-right: auto;
 }
 .headerSection .borderBlock.hebrew .row .title {
   font-family: inherit;
