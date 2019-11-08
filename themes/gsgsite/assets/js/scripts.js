@@ -151,13 +151,13 @@ jQuery(document).ready(function ($) {
       });
 
       if( $(selectedTitle).closest('.borderBlock.borderWhite').length > 0 && $(selectedTitle).closest('html[lang="en-US"]').length > 0 ) {
-        title.reverse();
+        // title.reverse();
+        $(selectedTitle).closest('.borderBlock.borderWhite').addClass('revers');
       }
 
       title.forEach(function (el, i, arr) {
         // console.log('el', el);
         if (el == '\n') {
-          console.log('N');
           $(selectedTitle).append(`<span class="br"></span>`);
         }
         if (el == ' ') {

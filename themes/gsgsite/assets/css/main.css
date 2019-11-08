@@ -757,7 +757,7 @@ header{
   flex-direction: column;
 }
 .archive .headerSection .borderBlock.hebrew .row .title {
-  max-width: 700px;
+  max-width: 720px;
 }
 .archive .headerSection .borderBlock.hebrew .row .littleTitle {
   text-align: left;
@@ -772,6 +772,12 @@ header{
 }
 .headerSection .borderBlock.borderWhite {
   transform: scale(-1,1);
+}
+.headerSection .borderBlock.borderWhite.revers .row {
+  direction: rtl;
+}
+.headerSection .borderBlock.borderWhite.revers .row .title {
+  margin-right: auto;
 }
 .headerSection .borderBlock.hebrew .row .title {
   font-family: inherit;
