@@ -1,4 +1,9 @@
 <svg class="" viewBox="0 0 1401 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style type="text/css">
+	.st0{fill:none;stroke:#F4EB26;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:#F4EB26;}
+	.st2{fill:none;stroke:#F4EB26;stroke-width:6;stroke-miterlimit:10;}
+</style>
 <rect class="image" x="-1" width="1402" height="1080" fill="url(#pattern0)"/>
 <g data-flat="flat-1" class="flat-item">
   <g class="is-closed">
@@ -9,8 +14,10 @@
     <path opacity="0.8" d="M208 435H571V487H208V435Z" fill="black"/>
     <path opacity="0.8" d="M568 435H638V493H568V435Z" fill="black"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M638 298H217L224.118 304H638V298Z" fill="black" fill-opacity="0.5"/>
+
     <path opacity="0.5" d="M427.5 359C401.266 359 380 337.734 380 311.5C380 285.266 401.266 264 427.5 264C453.734 264 475 285.266 475 311.5C475 337.734 453.734 359 427.5 359Z" stroke="#FFFC00" stroke-width="4" stroke-linejoin="round"/>
     <rect width="46" height="57" transform="matrix(-1 0 0 1 450 280)" fill="url(#pattern1)"/>
+
   </g>
   <g class="hover">
     <path opacity="0.3" d="M267 126H638V250H267V126Z" fill="#F6FF00"/>

@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
 
   // Menu border animation
   $('.sideMenu .sideMenuItem.first').click(function(e){
-    console.log('click');
+    // console.log('click');
     $(this).toggleClass('active');
     $(this).parent().toggleClass('active');
     $('.sideMenu .mailBlock a.sideMenuMail').removeClass('opened');
@@ -76,7 +76,7 @@ jQuery(document).ready(function ($) {
   });
 
   $('.mainNavigationContainer .menu-item-has-children > a, .fullscreenMenu .menu-item-has-children > a').click(function (e) {
-    console.log('click and prev def');
+    // console.log('click and prev def');
     e.preventDefault();
     $(this).parent().toggleClass('active');
     $(this).parent().find('.sub-menu').toggleClass('activeMenu');
