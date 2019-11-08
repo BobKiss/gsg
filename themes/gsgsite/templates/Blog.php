@@ -60,7 +60,10 @@ Template Name: Blog
                   </span>
                 </a>
                 <h5 class="archivepage__img_title">
-                  <?php the_title(); ?> <p>מאת מעיין בכר</p>
+                  <?php
+                    $heading = ( get_locale() != 'en_US' ) ? 'מאת מעיין בכר' : 'By Maayan Bachar';
+                  ?>
+                  <?php the_title(); ?> <p><?= $heading?></p>
                 </h5>
                 <p class="archivepage__img_text">
                   <?php echo get_the_excerpt() ?>
@@ -90,7 +93,10 @@ Template Name: Blog
                   </span>
                 </a>
                 <h5 class="archivepage__img_title">
-                  <?php the_title(); ?> <p>מאת מעיין בכר</p>
+                  <?php
+                    $heading = ( get_locale() != 'en_US' ) ? 'מאת מעיין בכר' : 'By Maayan Bachar';
+                  ?>
+                  <?php the_title(); ?> <p><?= $heading ?></p>
                 </h5>
                 <p class="archivepage__img_text">
                   <?php echo get_the_excerpt() ?>
