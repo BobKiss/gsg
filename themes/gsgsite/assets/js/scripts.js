@@ -83,10 +83,16 @@ jQuery(document).ready(function ($) {
     $('.mainNavigationContainer .activeLine').toggleClass('hide');
   });
 
-  $(document).on('hover', '.big-projects-list .item-wrap, .big-projects-list .item-content-block', handlerImmediateHover);
+  $(document).on('hover', '.big-projects-list .item-wrap', handlerImmediateHover);
   function handlerImmediateHover(e) {
+
     if(e.type == "mouseenter") {
+
+      if ( $(e.target).hasClass('view-btn') ) {
+        return;
+      }
       $(e.target).closest('.list-item').find('.item-info').fadeIn();
+
     }
     if(e.type == "mouseleave" && !$(e.relatedTarget).hasClass('item-background')) {
       $(e.target).closest('.list-item').find('.item-info').fadeOut();

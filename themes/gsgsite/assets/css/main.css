@@ -189,7 +189,7 @@ a:focus {
   justify-content: flex-end;
 }
 [dir="rtl"] .clientItemHome p{
-  max-width: 100%;
+  /* max-width: 100%; */
   direction: ltr;
 }
 [dir="rtl"] .sideMenuWrapper .sideMenuContent li.menu-item-has-children a{
@@ -2391,6 +2391,9 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
     line-height: 20px;
     position: relative;
 }
+html[lang=en-US] .housesys__menu_desc > div {
+  direction: rtl;
+}
 .housesys__menu_desc .nice-select{
   height: 25px;
   line-height: 25px;
@@ -2582,6 +2585,13 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
     /* width: 100%; */
     /* width: max-content; */
 }
+html[lang=en-US] .footer__menu {
+  direction: ltr;
+}
+html[lang=en-US] .footer__links_item.right {
+  direction: ltr;
+}
+
 .transformed {
   /* transform: translateX(10%); */
   width: max-content;
@@ -3604,6 +3614,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     max-width: 24vh;
     width: 100%;
   }
+
   .gsg-energy__intro{
     display: flex;
     margin-left: auto;
@@ -3916,7 +3927,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       font-size: 43px;
       line-height: 13px;
       padding-top: 10px;
-      margin-left: -20px;
+      /* margin-left: -20px; */
 /*       max-width: 200px; */
     }
   .single-post .header__title{
