@@ -4076,9 +4076,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       height: 100px;
     }
     .aboutUsPageWrapper .aboutMap .additionalImage{
-      width: 15vh;
-      left: 0;
-      top: 70%;
+      width: 9vh;
+      /* left: 0; */
+      left: 4%;
+      top: 60%;
     }
     .archive .headerSection .borderBlock.hebrew .row .littleTitle{
       font-size: 20px;
@@ -4123,6 +4124,20 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     /* .intro-top-animated.gsg-energy__intro_top:after {
       bottom: calc(100% - 90px);
     } */
+    .aboutUsPageWrapper .aboutMap > .container {
+      flex-direction: column-reverse;
+    }
+    .aboutUsPageWrapper .aboutMap .titleSection,
+    .aboutUsPageWrapper .aboutMap .mapSection {
+      width: 100%;
+    }
+    .aboutUsPageWrapper .aboutMap .mapSection {
+      height: 435px;
+    }
+    .aboutUsPageWrapper .aboutMap .titleSection {
+      height: 364px;
+      padding: 20px;
+    }
   }
 
 
@@ -4282,6 +4297,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo img {
     object-fit: contain;
   }
+
+  .aboutUsPageWrapper .aboutMap .mapSection {
+    height: 235px;
+  }
 }
 
 @media screen and (max-width: 325px){
@@ -4416,4 +4435,8 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 .barkan-slider .slick-list .slick-track,
 .barkan-slider .slick-list .slick-track .slick-slide {
   display: flex !important;
+}
+
+.percent-number {
+  max-width: 28px;
 }
