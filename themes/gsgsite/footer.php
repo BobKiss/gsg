@@ -61,7 +61,7 @@ if( $locale == 'en_US' ) {
 				<a href="#" class="footer__menu_item">צור קשר</a> -->
 			</div>
 			<div class="footer__links d-flex justify-content-between">
-				<div class="footer__links_item">
+				<div class="footer__links_item right">
 					<?php
 					$addresses = get_field('address_footer', 'options');
 					$addr1 = $addresses['addr_1'];
@@ -71,8 +71,8 @@ if( $locale == 'en_US' ) {
 					<?php echo $addr3; ?> <span class="footer__menu_sep"></span> <?php echo $addr2; ?>  <span class="footer__menu_sep"></span> <?php echo $addr1; ?>
 
 				</div>
-				<a href ="tel:<?php echo __('Phone', 'gsgsite'); ?>" class="footer__links_item"> <?php echo __('Phone', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></a>
-				<a href ="mailto:<?php echo __('Mail', 'gsgsite');?>" class="footer__links_item"> <?php echo __('Mail', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></a>
+				<a href ="tel:<?php echo __('Phone', 'gsgsite'); ?>" class="footer__links_item right"> <?php echo __('Phone', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></a>
+				<a href ="mailto:<?php echo __('Mail', 'gsgsite');?>" class="footer__links_item right"> <?php echo __('Mail', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></a>
 				<div class="footer__links_item" style="color:white;">
 					<a class="<?php if (get_locale() !== 'he_IL') echo "currentLang"; ?>" href="?lang=en">ENGLISH</a>
 					<span class="footer__menu_sep"></span>

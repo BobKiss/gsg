@@ -31,10 +31,10 @@ Template Name: Homepage
   </div>
   <div class="clientsBlock">
     <a href="<?php echo get_bloginfo('url'); ?>/gsg-energy/" class="clientItemHome">
-      <p>Business Clients</p>
+      <p>Private Clients</p>
     </a>
     <a href="<?php echo get_bloginfo('url'); ?>/immediate-projects/" class="clientItemHome">
-      <p>Private Clients</p>
+      <p>Business Clients</p>
     </a>
   </div>
 </header> <!-- .headerSection-->

@@ -56,7 +56,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 <?php
 	$heading = ( get_locale() != 'en_US' ) ? 'מפת מתווה גז ארצית | ישראל' : 'National Gas Outline Map | Israel';
 	$map_words = [
-		'w1' => (get_locale() != 'en_US') ? 'מפת</br>' : 'Gas </br>outline</br>',
+		'w1' => (get_locale() != 'en_US') ? 'מפת</br>מתווה</br>' : 'Gas </br>outline</br>',
 		'w2' => (get_locale() != 'en_US') ? 'הגז' : 'map',
 	]
 ?>

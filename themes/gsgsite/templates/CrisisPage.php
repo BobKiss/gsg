@@ -67,7 +67,10 @@
   <section id="sn-contactus" class="sn-contactsus sn-contactsus-crisis">
     <div class="container wow slideInRight">
       <h4 class="contactus__title <?= $align ?>"><?= $heading ?></h4>
-        <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
+      <?php
+				$text_area = ( get_locale() != 'en_US' ) ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
+			?>
+        <?php  echo do_shortcode($text_area); ?>
     </div>
   </section>
 
