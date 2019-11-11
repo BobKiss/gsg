@@ -22,3 +22,27 @@
 .choose-flat-img-container .flat-item.disabled .is-closed{
   display: block;
 }
+
+
+.product-template-default .logo.visible{
+  top: 3%;
+  max-width: 100px;
+}
+
+@media(max-width: 576px){
+  .product-template-default .logo.visible{
+    display: none;
+  }
+  .prod-desc-one,
+  .prod-desc-two{
+    padding: 20px 60px;
+  }
+  .prod-desc-two .text-col{
+    width: 100%;
+    padding: 0;
+  }
+  .prod-desc-two .imgs-slider,
+  .prod-desc-two+.slider-nav{
+    display: none;
+  }
+}
