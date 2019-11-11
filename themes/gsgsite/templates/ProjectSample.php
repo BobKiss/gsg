@@ -189,6 +189,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 
 	<!-- SectionContacts -->
 	<?php
+		// Links text
 		$left = ( get_locale() != 'en_US' ) ? '< לפרוייקט הקודם' : '< Previous project ';
 		$middle = ( get_locale() != 'en_US' ) ? 'חזרה לעמוד פרוייקטים מיידיים' : 'Back to immediate projects page ';
 		$right = ( get_locale() != 'en_US' ) ? 'לפרוייקט הבא >' : 'Next project > ';

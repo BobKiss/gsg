@@ -336,3 +336,34 @@ function current_page () {
 	return $current_page_url;
 
 }
+
+/**
+ * CPT
+ */
+add_action( 'init', 'my_cpt' );
+function my_cpt () {
+
+	$house_proj_labels = [
+		'name' => 'House projects',
+		'singular_name' => 'House project',
+		'menu_name' => 'House project'
+	];
+
+	register_post_type( 'house_project', [
+
+		'labels' => $house_proj_labels,
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'query_var'	=> true,
+		'rewrite'	=> true,
+		'capability_type'	=> 'post',
+		'has_archive'	=> true,
+		'hierarchical'	=> false,
+		'menu_position'	=> null,
+		'menu_icon' => 'dashicons-buddicons-activity',
+		'supports'	=> array('title','editor','author','thumbnail','excerpt','comments')
+
+	] );
+
+}

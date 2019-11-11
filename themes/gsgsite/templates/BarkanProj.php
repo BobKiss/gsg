@@ -115,7 +115,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 
 			<!-- Statlines start -->
 			<div class="statlines-block statlines">
-				<div class="row <?= $row_direction ?>" style="padding-top: 20px;">
+				<div class="row" style="padding-top: 20px;">
 					<div class="col-12 col-md-3">
 						<?php
 						$heading = ( get_locale() != 'en_US' ) ? 'גילאי התושבים' : 'Resident ages';
@@ -127,7 +127,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 						<div class="barkan-about__statline <?= $statline_container_reverse ?>"><span class="statline_01 <?= $statline_reverse ?>"></span></div><p id="percent-1" class="percent-number" style="font-weight: 900">60<span>%</span></p>
 					</div>
 				</div>
-				<div class="row <?= $row_direction ?>" style="padding-top: 20px;">
+				<div class="row" style="padding-top: 20px;">
 					<div class="col-12 col-md-3 d-inline-flex">
 						<?php
 						$heading = ( get_locale() != 'en_US' ) ? 'תעסוקה' : 'Employment';
@@ -139,7 +139,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 						<div class="barkan-about__statline <?= $statline_container_reverse ?>"><span class="statline_02 <?= $statline_reverse ?>"></span></div><p id="percent-2" class="percent-number" style="font-weight: 900;">42%</p>
 					</div>
 				</div>
-				<div class="row <?= $row_direction ?>" style="padding-top: 20px;">
+				<div class="row" style="padding-top: 20px;">
 					<div class="col-12 col-md-3 d-inline-flex">
 						<?php
 						$heading = ( get_locale() != 'en_US' ) ? 'השכלה' : 'Education';
