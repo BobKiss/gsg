@@ -27,7 +27,7 @@ Template Name: Contact Us
 	</header> <!-- .headerSection-->
 <?php
 $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם - GSG - יזמות ונדל”ן' : 'Send Us a Message | Gavish Shaham Group - GSG - Real Estate Development';
-$text = ( get_locale() != 'en_US' ) ? 'מטלפון' : 'From the phone';
+$text = ( get_locale() != 'en_US' ) ? 'מטלפון' : 'Phone';
 $align = ( get_locale() != 'en_US' ) ? '' : 'text-left';
 ?>
 	<section id="contactus" class="contactsus contactus-yellow">

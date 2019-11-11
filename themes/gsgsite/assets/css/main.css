@@ -52,6 +52,9 @@ a:focus {
 #masthead {
   display: none;
 }
+#header{
+  height: 98vh;
+}
 
 .homepage .homepageContent{
   display: flex;
@@ -364,6 +367,9 @@ header{
 
 .contactus-yellow .caldera-grid .last_row .btn {
   background-color: #fff600;
+}
+#contuctus{
+  height: 100vh;
 }
 
 .borderblockWrapper .borderblock{
@@ -814,6 +820,10 @@ header{
   display: flex;
   justify-content: space-between;
 }
+html[lang=en-US] .aboutUsPageWrapper .aboutYellow > .container{
+  direction: rtl;
+}
+
 .aboutUsPageWrapper .aboutYellow .part {
   flex-basis: calc(50% - 50px);
 }
@@ -946,6 +956,9 @@ header{
   justify-content: space-between;
   direction: rtl;
   text-align: right;
+}
+html[lang=en-US] .aboutUsPageWrapper .activityAreas .list{
+  direction: ltr;
 }
 .list-column-1,
 .list-column-2 {
@@ -1939,6 +1952,10 @@ html[lang=en-US] .barkan-about .row {
 }
 
 /*SectionContactUs*/
+
+html[lang=en-US] .contactus__text, .contactus__soc {
+  direction: rtl;
+}
 
 .contactsus{
     background: #fff600;
@@ -4101,7 +4118,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       height: 100px;
     }
     .aboutUsPageWrapper .aboutMap .additionalImage{
-      width: 9vh;
+      width: 19vh;
       /* left: 0; */
       left: 4%;
       top: 60%;
@@ -4160,7 +4177,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       height: 435px;
     }
     .aboutUsPageWrapper .aboutMap .titleSection {
-      height: 364px;
+      height: 410px;
       padding: 20px;
     }
   }
