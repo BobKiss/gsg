@@ -78,8 +78,9 @@
   text-align: center;
 }
 .housesys__tabs_content .slide-item img{
-  width: auto;
+  width: 100%;
   height: 100%;
+  object-fit: contain;
   margin-right: auto;
   margin-left: auto;
 }

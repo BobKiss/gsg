@@ -30,9 +30,10 @@ jQuery(document).ready(function ($) {
       variableWidth: true,
 		rtl: true,
 	autoplay: true,
-	autoplaySpeed: 800,
+	autoplaySpeed: 100,
       slidesToScroll: 1,
 		infinite: true,
+    cssEase: 'cubic-bezier(0.92, 0.91, 0.23, 0.21)'
     });
   }
   else{
@@ -42,7 +43,7 @@ jQuery(document).ready(function ($) {
 		rtl: false,
       variableWidth: true,
       autoplay: true,
-  		autoplaySpeed: 800,
+  		autoplaySpeed: 1,
       slidesToScroll: 1,
 		infinite: true,
     });
