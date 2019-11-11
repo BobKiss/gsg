@@ -87,6 +87,12 @@ jQuery(document).ready(function ($) {
   $(document).on('hover', '.big-projects-list .item-wrap', handlerImmediateHover);
   function handlerImmediateHover(e) {
 
+    let screen_width = window.innerWidth;
+
+    if ( screen_width <= 500 ) {
+      return;
+    }
+
     if(e.type == "mouseenter") {
 
       if ( $(e.target).hasClass('view-btn') ) {
