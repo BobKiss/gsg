@@ -126,7 +126,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 						?>
 						<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 					</div>
-					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start align-items-center <?= $row_direction ?>">
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start align-items-center">
 						<div class="barkan-about__statline <?= $statline_container_reverse ?>"><span class="statline_01 <?= $statline_reverse ?>"></span></div><p id="percent-1" class="percent-number" style="font-weight: 900">60<span>%</span></p>
 					</div>
 				</div>
@@ -138,7 +138,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 						?>
 						<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 					</div>
-					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center <?= $row_direction ?>">
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
 						<div class="barkan-about__statline <?= $statline_container_reverse ?>"><span class="statline_02 <?= $statline_reverse ?>"></span></div><p id="percent-2" class="percent-number" style="font-weight: 900;">42%</p>
 					</div>
 				</div>
@@ -150,7 +150,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 						?>
 						<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 					</div>
-					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center <?= $row_direction ?>">
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
 						<div class="barkan-about__statline <?= $statline_container_reverse ?>"><span class="statline_03 <?= $statline_reverse ?>"></span></div><p id="percent-3" class="percent-number" style="font-weight: 900;">80%</p>
 					</div>
 				</div>

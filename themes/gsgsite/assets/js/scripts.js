@@ -28,12 +28,12 @@ jQuery(document).ready(function ($) {
       slidesToShow: 7,
       arrows: false,
       variableWidth: true,
-		rtl: true,
-	autoplay: true,
-	autoplaySpeed: 100,
+  		rtl: true,
+    	autoplay: true,
+    	autoplaySpeed: 800,
       slidesToScroll: 1,
 		infinite: true,
-    cssEase: 'cubic-bezier(0.92, 0.91, 0.23, 0.21)'
+    // cssEase: 'cubic-bezier(0.92, 0.91, 0.23, 0.21)'
     });
   }
   else{
@@ -46,6 +46,7 @@ jQuery(document).ready(function ($) {
   		autoplaySpeed: 1,
       slidesToScroll: 1,
 		infinite: true,
+    autoplaySpeed: 800,
     });
   }
 
