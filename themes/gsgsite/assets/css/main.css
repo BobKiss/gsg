@@ -3036,6 +3036,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   text-align: right;
   direction: rtl;
 }
+.connect-from-item .item-content-block__alt {
+  display: none;
+}
 .big-projects-list .list-item .item-info .title{
   color: #000;
   font-size: 26px;
@@ -4141,6 +4144,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       line-height: 11vh;
 
     }
+    .connect-from-item .connect__projname {
+      height: 80px;
+    }
     .primary-menu li{
       padding-bottom: 12px;
     }
@@ -4343,6 +4349,34 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .aboutUsPageWrapper .aboutMap .mapSection {
     height: 235px;
   }
+
+  /* Only "Connect from" items */
+  .connect-from-item {
+    width: 100% !important;
+  }
+
+  .connect-from-item .item-content-block {
+    display: none;
+  }
+
+  .connect-from-item .item-content-block__alt {
+    display: flex;
+    width: 100%;
+    height: 40px;
+  }
+
+  .connect-from-item .item-content-block__alt .view-btn {
+    width: 100%;
+  }
+
+  .connect-from-item .item-content-block__alt .btn-content {
+    transform: none !important;
+  }
+
+  .connect-from-item .connect__projname,
+  .connect-from-item .item-meta__connect {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 325px){
@@ -4409,6 +4443,21 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .small-projects-list .list-item .view-btn .btn-content {
     width: fit-content;
     white-space: normal;
+  }
+
+  /* Connect from */
+  .connect-from-item .item-content-block__alt .view-btn {
+    width: 100%;
+  }
+
+  .connect-from-item .item-meta__connect {
+    padding: 0 30px;
+    margin-top: 50px;
+  }
+
+  .connect-from-item .connect__projname {
+    bottom: -50px;
+    height: 50px;
   }
 
 }}

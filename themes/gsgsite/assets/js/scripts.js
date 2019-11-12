@@ -28,11 +28,11 @@ jQuery(document).ready(function ($) {
       slidesToShow: 7,
       arrows: false,
       variableWidth: true,
-  		rtl: true,
-    	autoplay: true,
-    	autoplaySpeed: 800,
+      rtl: true,
+      autoplay: true,
+      autoplaySpeed: 800,
       slidesToScroll: 1,
-		infinite: true,
+    infinite: true,
     // cssEase: 'cubic-bezier(0.92, 0.91, 0.23, 0.21)'
     });
   }
@@ -40,15 +40,21 @@ jQuery(document).ready(function ($) {
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
       slidesToShow: 7,
       arrows: false,
-		rtl: false,
+    rtl: false,
       variableWidth: true,
       autoplay: true,
-  		autoplaySpeed: 1,
+      autoplaySpeed: 1,
       slidesToScroll: 1,
-		infinite: true,
+    infinite: true,
     autoplaySpeed: 800,
     });
   }
+  $('.aboutUsPageWrapper .partneers .sliderPartneers').on('afterChange', function () {
+
+    console.log( 'changed' );
+    // this.slickNext();
+
+  })
 
   $('.mainNavigationContainer .menu-item-has-children > a, .fullscreenMenu .menu-item-has-children > a').click(function (e) {
     e.preventDefault();

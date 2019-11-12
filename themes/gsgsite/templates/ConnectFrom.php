@@ -12,7 +12,7 @@ Template Name: Connect From
         while ( have_rows('project_items_repeater') ) : the_row();
 ?>
 
-        <div class="list-item connectfrom wow slideInLeft">
+        <div class="list-item connectfrom wow slideInLeft connect-from-item">
           <div class="item-desc">
             <div class="item-wrap" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
               <span class="connect__projname"><?php the_sub_field('project_name'); ?></span>
@@ -29,7 +29,11 @@ Template Name: Connect From
             </div>
           </div>
           <div class="item-meta__connect"><span><?php the_sub_field('some_text'); ?></span></div>
+          <div class="item-content-block__alt">
+            <a href="https://www.makorrishon.co.il/news/175345/" class="view-btn"><p class="btn-content">קרא כתבה</p></a>
+          </div>
       </div>
+
         <?php
         endwhile;
     else :
