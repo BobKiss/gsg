@@ -179,7 +179,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
         <div class="title <?=$row_direction?>"><?=$heading?></div>
       </div>
 
-      <div class="sliderPartneers">
+      <div class="sliderPartneers" dir="rtl">
 				<?php
 				while ( have_rows('partneers') ) : the_row();
 					?>

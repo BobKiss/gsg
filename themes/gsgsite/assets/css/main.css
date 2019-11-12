@@ -986,6 +986,10 @@ html[lang=en-US] .aboutUsPageWrapper .activityAreas .list{
   font-size: 18px;
   line-height: 23px;
 }
+.aboutUsPageWrapper .activityAreas .pContent p{
+  margin-bottom: 4rem;
+}
+
 .aboutUsPageWrapper .managmentBoard {
   background-color: #fffefe;
   padding-top: 160px;
@@ -1800,7 +1804,7 @@ html[lang=en-US] .barkan-about .row {
 }
 .sn-contactus__area{
     padding-right: 25px;
-    font-size: 18px;
+    font-size: 19px;
 }
 .sn-contactus__block{
     padding-left: 25px;
@@ -2727,7 +2731,7 @@ html[lang=en-US] .footer__links_item.right {
     color: #000;
 }
 .barkan-about__title{
-    padding-bottom: 4px;
+    padding-bottom: 7px;
     margin-top: 50px;
     border-bottom: 1px solid  #000;
     color: #000;
@@ -2770,6 +2774,7 @@ html[lang=en-US] .footer__links_item.right {
 }
 .barkan-about p{
   margin: 0;
+  /* margin-top: 10px; */
 }
 .statline_01{
     background: #c4c2c2;
@@ -3041,6 +3046,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   font-size: 26px;
   font-weight: 700;
   line-height: 48px;
+  margin-bottom: 10px;
 }
 .big-projects-list .list-item .item-info .excerpt p{
   color: #000;
@@ -3052,6 +3058,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+  font-weight: bold;
 }
 .big-projects-list .list-item .view-btn{
   background-color: #000;
