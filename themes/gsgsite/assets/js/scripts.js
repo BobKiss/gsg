@@ -28,25 +28,27 @@ jQuery(document).ready(function ($) {
       slidesToShow: 7,
       arrows: false,
       variableWidth: true,
-      rtl: true,
-      autoplay: true,
-      autoplaySpeed: 800,
+		rtl: true,
+	autoplay: true,
+	autoplaySpeed: 0,
       slidesToScroll: 1,
-    infinite: true,
-    // cssEase: 'cubic-bezier(0.92, 0.91, 0.23, 0.21)'
+		infinite: true,
+    speed: 3000,
+    cssEase: 'linear',
     });
   }
   else{
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
       slidesToShow: 7,
       arrows: false,
-    rtl: false,
+		rtl: true,
       variableWidth: true,
       autoplay: true,
-      autoplaySpeed: 1,
+  		autoplaySpeed: 0,
       slidesToScroll: 1,
-    infinite: true,
-    autoplaySpeed: 800,
+      speed: 3000,
+    cssEase: 'linear',
+		infinite: true,
     });
   }
   $('.aboutUsPageWrapper .partneers .sliderPartneers').on('afterChange', function () {
