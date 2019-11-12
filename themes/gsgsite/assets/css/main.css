@@ -521,6 +521,7 @@ header{
 .homepageContainer .header__title {
   padding: 20px 0px;
   color: transparent;
+  letter-spacing: 10px;
 }
 .blog .header .borderblock {
     border-color: #fff;
@@ -670,6 +671,7 @@ header{
   padding-top: 3vw;
   padding-bottom: 3.5vw;
   transform: translateX(-3px);
+  letter-spacing: 10px;
 }
 .headerSection .borderBlock.animated .row:nth-child(1)::after {
   max-height: 100%;
@@ -727,6 +729,7 @@ header{
   max-width: unset;
   font-family: 'Roboto';
   font-size: 100px;
+  letter-spacing: 10px;
 }
 .headerSection .borderBlock.borderWhite .row:nth-child(1) {
   border-top-color: #FEFFFE;
@@ -1631,7 +1634,7 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   max-width: 80px;
   max-height: 55px;
   object-fit: cover;
@@ -1957,7 +1960,7 @@ html[lang=en-US] .barkan-about .row {
 
 /*SectionContactUs*/
 
-html[lang=en-US] .contactus__text, .contactus__soc {
+html[lang=en-US] .contactus__text, .contactus__soc span {
   direction: rtl;
 }
 
@@ -2080,12 +2083,17 @@ html[lang=en-US] .contactus__text, .contactus__soc {
     letter-spacing: 1px;
 }
 .contactus__soc span{
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .contactus__text span:after{
   content: '|';
   margin-right: 10px;
 }
+html[lang=en-US] .contactus__text span:after{
+  margin-right: 0;
+  margin-left: 10px;
+}
+
 .contactus__text span a{
   color: #000;
 }
@@ -3763,8 +3771,8 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .sideMenuWrapper .sideMenuContent .main-navigation a {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    /* font-size: 14px;
+    line-height: 16px; */
   }
   .sideMenuWrapper .sideMenuContent li.menu-item-has-children {
     position: relative;
@@ -3773,7 +3781,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     padding-right: 12px;
   }
   .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after, .sideMenuWrapper .sideMenuContent .main-navigation .current-menu-item a:after{
-    font-size: 10px;
+    /* font-size: 10px; */
     top: 0;
     right: -11px;
     margin-top: -0.5%;
@@ -4207,11 +4215,19 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .headerSection .borderBlock .row .title{
       font-size: 30px;
   }
+  .sideMenuWrapper .sideMenuContent{
+    height: 100%;
+    justify-content: space-between;
+  }
 
    .sn-contactus__title{
       font-size: 24px;
 
   }
+  .sideMenuWrapper .sideMenuContent .main-navigation a{
+    font-size: 19px;
+  }
+
   .blog__nav a, .blog__nav p{
     font-size: 11px;
     letter-spacing: 0;
