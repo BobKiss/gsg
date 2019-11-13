@@ -1676,7 +1676,7 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
 .barkan-about iframe {
   margin-top: 40px;
 }
-html[lang=en-US] .barkan-about .row {
+html[lang=en-US] .statlines .row {
   direction: ltr;
 }
 .mapEnergyContainer{
@@ -1835,6 +1835,11 @@ html[lang=en-US] .barkan-about .row {
     width: 50%;
     display: block;
     margin-left: auto;
+}
+html[lang=en-US] .gsg-energy__title{
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
 }
 .gsg-energy__intro-wrap{
     background: #000;
@@ -2389,7 +2394,9 @@ html[lang=en-US] .contactus__text span:after{
 .housesys__menu_title{
     font-size: 26px;
     padding-bottom: 15px;
-
+}
+html[lang=en-US] .housesys__menu_title {
+  text-align: left;
 }
 .housesys .container-fluid{
     padding: 0;
@@ -2622,9 +2629,9 @@ html[lang=en-US] .housesys__menu_desc > div {
     /* width: 100%; */
     /* width: max-content; */
 }
-html[lang=en-US] .footer__menu {
+/* html[lang=en-US] .footer__menu {
   direction: ltr;
-}
+} */
 html[lang=en-US] .footer__links_item.right {
   direction: ltr;
 }
@@ -2729,6 +2736,10 @@ html[lang=en-US] .footer__links_item.right {
     color: #000;
     font-weight: 400;
     text-align: right;
+    width: 100%;
+}
+html[lang=en-US] .barkan-header__text {
+  text-align: left;
 }
 .barkan-about{
     text-align: right;
@@ -3350,6 +3361,81 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   direction: rtl;
 }
 
+.img-thank {
+  margin-bottom: 65px;
+  width: 1020px;
+}
+
+.img-you {
+  margin-right: 35px;
+  width: 720px;
+}
+
+.img-thank,
+.img-you {
+  height: 254px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.big-text {
+  font-size: 246px;
+  text-transform: uppercase;
+  color: #fff600;
+  background-color: #000;
+  font-weight: bold;
+}
+
+.thank-you-text p:not(.btn-content) {
+  font-size: 36px;
+  width: 245px;
+  direction: rtl;
+  font-weight: bold;
+}
+
+.ty-btn {
+  background-color: #000;
+  line-height: 2;
+  padding: 0 30px;
+  color: #fff600;
+  font-size: 36px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.ty-btn:visited {
+  color: #fff700;
+}
+
+.ty-btn:hover {
+  text-decoration: none;
+}
+
+.thank-you-circle,
+.thank-you-circle__alt {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: 30%;
+  right: -20%;
+  transform: scale(0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank-you-circle__alt {
+  display: none;
+}
+
+.thank-you-circle img,
+.thank-you-circle__alt img {
+  position: absolute;
+  width: initial;
+  height: initial;
+}
+
 /*Media*/
 
 @media screen and (max-width: 1760px){
@@ -3418,7 +3504,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       width: 18vw;
     }
 
+    .img-thank {
+      width: 820px;
+      margin-bottom: 0;
+    }
+    .img-you {
+      width: 520px;
+    }
 
+    .thank-you-circle {
+      right: -5%;
+    }
 }
 @media screen and (max-width: 1460px){
 
@@ -3604,6 +3700,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .sideMenuWrapper .sideMenuContent .main-navigation a{
       line-height: 32px;
     }
+
+    .thank-you-circle {
+      right: -2%;
+      transform: scale(0.6);
+    }
 }
 /* 1120px */
 @media screen and (max-width: 1120px){
@@ -3639,6 +3740,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .decorCircle__energy{
     max-width: 25vh;
     width: 100%;
+  }
+
+  .thank-you-circle {
+    right: -6%;
   }
 }
 @media screen and (max-width: 992px){
@@ -3728,6 +3833,46 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .connect__projname{
     font-size: 40px;
+  }
+
+  .thank-you-circle {
+    display: none;
+  }
+
+  .thank-you-circle__alt {
+    display: flex;
+    position: relative;
+    right: 0;
+  }
+
+  .thank-you-text {
+    width: 100%;
+  }
+
+  .thank-you-text div:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-you {
+    margin-right: 0;
+    width: 63%;
+    background-position: top;
+  }
+
+  .img-thank {
+    margin-bottom: 55px;
+    width: 100%;
+  }
+
+  #thank-you {
+    padding: 150px 0 120px !important;
+  }
+
+  .thank-you-text p:not(.btn-content) {
+    text-align: center;
+    width: calc(100% - 100px);
+    font-weight: 900;
   }
 }
 
@@ -4400,6 +4545,23 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .connect-from-item .item-meta__connect {
     width: 100%;
   }
+
+  .img-thank,
+  .img-you {
+    height: 100px;
+  }
+
+  .img-thank {
+    margin-bottom: 10%;
+  }
+
+  .thank-you-circle {
+    transform: scale(0.6);
+  }
+
+  .thank-you-text p:not(.btn-content) {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 325px){
@@ -4481,6 +4643,15 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .connect-from-item .connect__projname {
     bottom: -50px;
     height: 50px;
+  }
+
+  .img-thank,
+  .img-you {
+    height: 50px;
+  }
+
+  .thank-you-circle__alt {
+    transform: scale(0.5);
   }
 
 }}
