@@ -142,7 +142,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
       </div>
     </section>
 
-    <section class="managmentBoard wow slideInRight">
+    <!-- <section class="managmentBoard wow slideInRight">
       <div class="titleContainer">
         <?php
           $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
@@ -168,7 +168,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 					?>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="partneers">
       <div class="titleContainer">
