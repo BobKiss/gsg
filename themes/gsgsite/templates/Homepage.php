@@ -30,11 +30,15 @@ Template Name: Homepage
     </div>
   </div>
   <div class="clientsBlock">
+    <?php
+      $private = ( get_locale() != 'en_US' ) ? 'Business Clients' : 'Private Clients';
+      $buisness = ( get_locale() != 'en_US' ) ? 'Private Clients' : 'Business Clients';
+    ?>
     <a href="<?php echo get_bloginfo('url'); ?>/gsg-energy/" class="clientItemHome">
-      <p>Private Clients</p>
+      <p><?= $private ?></p>
     </a>
     <a href="<?php echo get_bloginfo('url'); ?>/immediate-projects/" class="clientItemHome">
-      <p>Business Clients</p>
+      <p><?= $buisness ?></p>
     </a>
   </div>
 </header> <!-- .headerSection-->
