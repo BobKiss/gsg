@@ -1673,7 +1673,7 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
 .barkan-about iframe {
   margin-top: 40px;
 }
-html[lang=en-US] .barkan-about .row {
+html[lang=en-US] .statlines .row {
   direction: ltr;
 }
 .mapEnergyContainer{
@@ -1832,6 +1832,11 @@ html[lang=en-US] .barkan-about .row {
     width: 50%;
     display: block;
     margin-left: auto;
+}
+html[lang=en-US] .gsg-energy__title{
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
 }
 .gsg-energy__intro-wrap{
     background: #000;
@@ -2381,7 +2386,9 @@ html[lang=en-US] .contactus__text, .contactus__soc {
 .housesys__menu_title{
     font-size: 26px;
     padding-bottom: 15px;
-
+}
+html[lang=en-US] .housesys__menu_title {
+  text-align: left;
 }
 .housesys .container-fluid{
     padding: 0;
@@ -2614,9 +2621,9 @@ html[lang=en-US] .housesys__menu_desc > div {
     /* width: 100%; */
     /* width: max-content; */
 }
-html[lang=en-US] .footer__menu {
+/* html[lang=en-US] .footer__menu {
   direction: ltr;
-}
+} */
 html[lang=en-US] .footer__links_item.right {
   direction: ltr;
 }
@@ -2721,6 +2728,10 @@ html[lang=en-US] .footer__links_item.right {
     color: #000;
     font-weight: 400;
     text-align: right;
+    width: 100%;
+}
+html[lang=en-US] .barkan-header__text {
+  text-align: left;
 }
 .barkan-about{
     text-align: right;
