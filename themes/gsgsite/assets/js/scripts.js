@@ -137,6 +137,12 @@ jQuery(document).ready(function ($) {
 
   initSidebarMailButton();
 
+  logoAlign();
+  function logoAlign() {
+    if( wp_data.is_404 == 1 && window.innerWidth <= 992) {
+      $('.logo-404').addClass('logo-align');
+    }
+  }
 
   function initBarkanSlider() {
     let padding = $('.container').first().offset().left + 15;
