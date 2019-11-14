@@ -17,7 +17,7 @@ Template Name: Coming Soon
                     <!-- <img id="coming__circle" class="coming__circle" src="<?php bloginfo('template_url'); ?>/assets/images/progress-circle.png" alt="decorAbout"> -->
                     <div class="cs-circle">
                       <img src="<?php bloginfo('template_url'); ?>/assets/images/progress-circle.png" alt="decorAbout">
-                      <img src="<?= get_template_directory_uri() . './assets/images/hand.png' ?>" alt="">
+                      <img src="<?= get_template_directory_uri() . '/assets/images/hand.png' ?>" alt="">
                       <div class="cs-text-mobile">
                         <span>עמוד חדש יעלה בקרוב!</span>
                         <a class="cs-btn" href="<?= home_url() ?>">לחצו כאן לחזרה לאתר</a>
@@ -26,7 +26,7 @@ Template Name: Coming Soon
                 </div>
                 <div class="cs-circle__alt">
                   <img src="<?php bloginfo('template_url'); ?>/assets/images/progress-circle.png" alt="decorAbout">
-                  <img src="<?= get_template_directory_uri() . './assets/images/hand.png' ?>" alt="">
+                  <img src="<?= get_template_directory_uri() . '/assets/images/hand.png' ?>" alt="">
                   <div class="cs-text-mobile">
                     <span>עמוד חדש יעלה בקרוב!</span>
                     <a class="cs-btn" href="<?= home_url() ?>">לחצו כאן לחזרה לאתר</a>
