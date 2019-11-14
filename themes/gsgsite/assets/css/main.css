@@ -445,6 +445,7 @@ html[lang=en-US] .text404{
 }
 .header404{
   height: 955px;
+  overflow: hidden;
 }
 .vector{
   height: 50px;
