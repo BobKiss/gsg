@@ -3532,6 +3532,92 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   margin-top: 10% !important;
 }
 
+.thank-you-circle,
+.thank-you-circle__alt {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: 30%;
+  right: -20%;
+  transform: scale(0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank-you-circle img:first-child,
+.thank-you-circle__alt img:first-child {
+  animation: rotation 36s linear infinite;
+}
+
+.thank-you-circle__alt {
+  display: none;
+}
+
+.thank-you-circle img,
+.thank-you-circle__alt img {
+  position: absolute;
+  width: initial;
+  height: initial;
+}
+
+.cs-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  left: 450px;
+}
+.cs-circle__alt {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cs-circle img,
+.cs-circle__alt img {
+  position: absolute;
+  width: initial;
+}
+
+.cs-circle img:first-child,
+.cs-circle__alt img:first-child {
+  width: 320px;
+  height: 320px;
+  animation: rotation 36s linear infinite;
+  object-fit: contain;
+}
+
+.cs-circle img:nth-child(2),
+.cs-circle__alt img:nth-child(2) {
+  width: 80px;
+  height: 150px;
+}
+
+.cs-text-mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+  direction: rtl;
+  font-size: 36px;
+  position: relative;
+  top: 300px;
+  white-space: nowrap;
+}
+
+.cs-text-mobile a,
+.cs-text-mobile a:active {
+  color: #fff600;
+  background-color: #171111;
+  line-height: 2;
+  padding: 0 30px;
+  margin-top: 30px;
+}
 /*Media*/
 
 @media screen and (max-width: 1760px){
