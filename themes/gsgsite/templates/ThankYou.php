@@ -4,7 +4,7 @@
  */
 get_header();
 
-$img_path = get_template_directory_uri() . './assets/images/';
+$img_path = get_template_directory_uri() . '/assets/images/';
 ?>
 
 <section id="thank-you" class="headerSection" style="background: #fff600; padding: 0;">
