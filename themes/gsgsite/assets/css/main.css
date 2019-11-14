@@ -3422,7 +3422,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 
 .thank-you-circle img:first-child,
 .thank-you-circle__alt img:first-child {
-  animation: rotation 36s linear;
+  animation: rotation 36s linear infinite;
 }
 
 .thank-you-circle__alt {
