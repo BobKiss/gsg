@@ -363,6 +363,169 @@ header{
   left: 0;
 }
 
+/* Page404 */
+.black404{
+  position: relative;
+  margin-top: 250px;
+  z-index: 2;
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  line-height: 60px;
+}
+html[lang=en-US] .black404{
+  direction: ltr;
+}
+.block404{
+  position: relative;
+  object-fit: contain;
+  right: 30px;
+}
+html[lang=en-US] .block404{
+  right: -15px;
+}
+html[lang=en-US] .dontworry .view-btn{
+  height: 120px;
+}
+html[lang=en-US] .dontworry .view-btn p{
+  line-height: 45px;
+  margin-top: 15px;
+}
+
+
+.text404{
+  color:
+#fff600;
+  position: relative;
+  object-fit: contain;
+  right: 70px;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: justify;
+  height: max-content;
+}
+html[lang=en-US] .text404{
+  right: -50px;
+}
+
+.dontworry .view-btn{
+  background-color:
+  #000;
+  color:
+  #fff6f8;
+  width: 496px;
+  height: 85px;
+  display: flex;
+  margin-top: 5px;
+}
+
+.dontworry .view-btn p{
+  font-weight: bold;
+  color: #fff600;
+  font-size: 40px;
+  line-height: 85px;
+  text-align: center;
+  width: 100%;
+}
+.dontworry .view-btn:hover{
+  text-decoration: none;
+}
+.circle404{
+  position: relative;
+  bottom: 13%;
+  right: -70%;
+  animation-name: rotation;
+  animation-duration: 36s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  align-self: flex-end;
+}
+.header404{
+  height: 955px;
+}
+.vector{
+  height: 50px;
+  position: relative;
+  bottom: 30px;
+  background-position-x: 100px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forward; */
+  animation-timing-function: linear;
+}
+.vectorL{
+  width: 1010px;
+  height: 51px;
+  transform: rotate(175deg);
+  position: relative;
+  top: 125px;
+  display: none;
+  background-position-x: 100px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forward;
+  animation-timing-function: linear;
+}
+.borderline{
+  /* width: 300px; */
+  width: 0;
+  height: 3px;
+  background: black;
+  margin-top: 135px;
+  margin-left: 250px;
+  position: absolute;
+  animation: bl-hor 0.8s 0.9s forwards;
+}
+.borderline::before{
+  position: absolute;
+  content: " ";
+  /* height: 10px; */
+  height: 0;
+  width: 3px;
+  background: black;
+  top: -50px;
+  animation: bl-vert 0.8s forwards;
+}
+
+@keyframes slidein {
+  from {
+    background-position-x: 100%;
+  }
+  to {
+    background-position-x: 0;
+  }
+}
+@keyframes slideinr {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+@keyframes bl-vert {
+  from {
+    height: 0;
+  }
+  to {
+    height: 50px;
+  }
+}
+@keyframes bl-hor {
+  from {
+    width: 0;
+  }
+  to {
+    width: 630px;
+  }
+}
+
+
 /* Menu block animation end */
 
 .contactus-yellow .caldera-grid .last_row .btn {
@@ -3501,6 +3664,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   padding: 0 30px;
   margin-top: 30px;
 }
+.logo-align {
+  margin-left: 40% !important;
+  margin-top: 10% !important;
+}
 /*Media*/
 
 @media screen and (max-width: 1760px){
@@ -3807,10 +3974,20 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     max-width: 25vh;
     width: 100%;
   }
-
+  .block404{
+    flex-direction: column;
+    width: 300px;
+    right: 80px;
+  }
+  .text404{
+    flex-direction: column;
+    font-size: 57px;
+    right: 210px;
+  }
   .thank-you-circle {
     right: -6%;
   }
+
 }
 @media screen and (max-width: 992px){
   #coming-soon {
@@ -3901,9 +4078,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     display: none;
   }
   .headerSection .crisis__decorCircle{
-      right: 2px;
-      bottom: 2px;
-      max-width: 30%;
+    right: 2px;
+    bottom: 2px;
+    max-width: 30%;
 
   }
   .connect__projname{
@@ -3972,6 +4149,134 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     flex-direction: column;
   }
 
+  .thank-you-circle {
+    display: none;
+  }
+
+  .thank-you-circle__alt {
+    display: flex;
+    position: relative;
+    right: 0;
+  }
+
+  .thank-you-text {
+    width: 100%;
+  }
+
+  .thank-you-text div:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-you {
+    margin-right: 0;
+    width: 63%;
+    background-position: top;
+  }
+
+  .img-thank {
+    margin-bottom: 55px;
+    width: 100%;
+  }
+
+  #thank-you {
+    padding: 150px 0 120px !important;
+  }
+
+  .thank-you-text p:not(.btn-content) {
+    text-align: center;
+    width: calc(100% - 100px);
+    font-weight: 900;
+  }
+
+  .cs-circle {
+    width: 100%;
+    top: 200px;
+    left: 0;
+    display: none;
+  }
+  .cs-circle__alt {
+    width: 100%;
+    top: 200px;
+    left: 0;
+    display: flex;
+  }
+
+  .cs-text-mobile {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .cs-wrapper {
+    flex-direction: column;
+  }
+
+  .black404{
+    height: 460px;
+    flex-direction: column;
+  }
+  .block404{
+    flex-direction: column;
+    width: 300px;
+    right: 10px;
+    top: 115px;
+  }
+  .text404{
+    flex-direction: column;
+    width: 350px;
+    right: 20px;
+    top: 150px;
+    text-align: center;
+  }
+  .container404{
+    width: 100%;
+    position: relative;
+  }
+  .circle404{
+    display: none;
+  }
+  .borderline{
+    display: none;
+  }
+  .dontworry{
+    width: 100%;
+    max-width: 700px;
+  }
+  .dontworry .view-btn{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .b404{
+    align-items: center;
+  }
+  .vector{
+    bottom: 5px;
+  }
+  .header404{
+    height: 1300px;
+  }
+  .vectorL{
+    width: 1010px;
+    height: 57px;
+    transform: rotate(175deg);
+    position: relative;
+    top: 125px;
+    display: block;
+  }
+  .logo-align {
+    margin-top: 5% !important;
+    width: 200px !important;
+  }
+  .vectorL{
+    animation-name: slidein;
+  }
+  html[lang=en-US] .text404{
+    width: 100%;
+    right: 0;
+  }
+  html[lang="en-US"] .block404 {
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -4040,7 +4345,8 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     padding: 25px;
   }
   .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    text-align: right;
   }
   .headerSection .borderBlock.animated .row:nth-child(3) {
     overflow: hidden;
@@ -4448,6 +4754,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       transform: scale(0.7);
       top: 150px;
     }
+    .logo-align{
+      width: 170px !important;
+    }
 
   }
 
@@ -4620,75 +4929,34 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .aboutUsPageWrapper .aboutMap .mapSection {
     height: 235px;
   }
-
-  /* Only "Connect from" items */
-  .connect-from-item {
-    width: 100% !important;
-  }
-
-  .connect-from-item .item-content-block {
-    display: none;
-  }
-
-  .connect-from-item .item-content-block__alt {
-    display: flex;
+  .container404 {
     width: 100%;
-    height: 40px;
+    position: relative;
   }
-
-  .connect-from-item .item-content-block__alt .view-btn {
-    width: 100%;
+  .black404 {
+    height: 400px;
+    flex-direction: column;
   }
-
-  .connect-from-item .item-content-block__alt .btn-content {
-    transform: none !important;
+  .logo-align {
+    width: 158px !important;
+    margin-left: 38% !important;
   }
-
-  .connect-from-item .connect__projname,
-  .connect-from-item .item-meta__connect {
-    width: 100%;
+  .block404{
+    top: 70px;
+    width: 200px;
   }
-
-  .img-thank,
-  .img-you {
-    height: 100px;
+  .text404 {
+    top: 120px;
+    right: 10px;
+    font-size: 40px;
   }
-
-  .img-thank {
-    margin-bottom: 10%;
+  html[lang="en-US"] .dontworry .view-btn p {
+    line-height: 40px;
+    margin-top: 15px;
+    font-size: 35px;
   }
-
-  .thank-you-circle {
-    transform: scale(0.6);
-  }
-
-  .thank-you-text p:not(.btn-content) {
-    width: 100%;
-  }
-
-  .coming__wrap > img {
-    height: 88px;
-  }
-
-  .coming__wrap > img:nth-child(2) {
-    margin-top: 20px !important;
-  }
-
-  .cs-circle__alt {
-    top: 100px;
-  }
-
-  .cs-circle__alt img:first-child {
-    width: 220px;
-    height: auto;
-  }
-
-  .cs-circle__alt img:nth-child(2) {
-    transform: scale(0.6);
-  }
-
-  .cs-text-mobile {
-    top: 250px;
+  html[lang="en-US"] .dontworry .view-btn {
+    height: 105px;
   }
 }
 
@@ -4756,6 +5024,57 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .small-projects-list .list-item .view-btn .btn-content {
     width: fit-content;
     white-space: normal;
+  }
+  .black404 {
+    height: 300px;
+    flex-direction: column;
+    line-height: 30px;
+  }
+  .container404 {
+    width: 100%;
+    position: relative;
+  }
+  .vector {
+    bottom: 2px;
+    height: 20px;
+    background-size:cover;
+  }
+  .text404{
+    font-size: 25px;
+    right: 0;
+  }
+  .block404{
+    width: 150px;
+    right: 0;
+  }
+  .logo-align {
+    width: 140px !important;
+    margin-left: 32% !important;
+    margin-top: 70px !important;
+  }
+  .header404 {
+    height: 900px;
+  }
+  .vectorL {
+    height: 40px;
+    background-size: contain;
+    animation-name: slideinr;
+  }
+  .dontworry .view-btn p {
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .dontworry .view-btn {
+    height: 45px;
+    margin-top: 20px;
+  }
+  html[lang="en-US"] .dontworry .view-btn {
+    height: 80px;
+  }
+  html[lang="en-US"] .dontworry .view-btn p {
+    line-height: 25px;
+    margin-top: 15px;
+    font-size: 25px;
   }
 
   /* Connect from */
