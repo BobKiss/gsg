@@ -2430,6 +2430,7 @@ html[lang=en-US] .housesys__menu_title {
 }
 html[lang=en-US] .housesys__menu_desc > div {
   direction: rtl;
+  text-align-last: left;
 }
 .housesys__menu_desc .nice-select{
   height: 25px;
