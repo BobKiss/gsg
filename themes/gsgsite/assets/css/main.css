@@ -2535,6 +2535,7 @@ html[lang=en-US] .housesys__menu_desc > div {
     width: 100%;
     margin: 5px 0;
     transition: all .2s ease-in-out;
+    text-align: center;
 }
 .housesys__menu_wrap .housesys__menu_btn.disabled,
 .housesys__menu_wrap .housesys__menu_btn.disabled:hover{
