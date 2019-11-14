@@ -162,7 +162,7 @@ function gsgsite_scripts() {
 	global $wp;
 	wp_localize_script( 'main-scripts', 'wp_data', [
 		'lang' => $lang,
-		'current_page' => current_page()
+		'current_page' => current_page(),
 	] );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
