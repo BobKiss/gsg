@@ -144,8 +144,19 @@ jQuery(document).ready(function ($) {
   initSidebarMailButton();
 
   logoAlign();
+  // function logoAlign() {
+  //   if( wp_data.is_404 == 1 && window.innerWidth <= 992) {
+  //     $('.logo-404').addClass('logo-align');
+  //   }
+  // }
+
   function logoAlign() {
-    if( wp_data.is_404 == 1 && window.innerWidth <= 992) {
+    if( ( wp_data.is_404) == 1 && window.innerWidth <= 992) {
+      $('.logo-404').addClass('logo-align');
+    }
+
+    if ( wp_data.current_page_slug == 'coming-soon' && window.innerWidth <= 992) {
+      console.log( 'fdfsd' );
       $('.logo-404').addClass('logo-align');
     }
   }
