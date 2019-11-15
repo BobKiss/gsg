@@ -412,7 +412,8 @@ html[lang=en-US] .black404{
 .block404{
   position: relative;
   object-fit: contain;
-  right: 30px;
+  right: 80px;
+  width: 400px;
 }
 html[lang=en-US] .block404{
   right: -55px;
@@ -420,10 +421,11 @@ html[lang=en-US] .block404{
 html[lang=en-US] .dontworry .view-btn{
   height: 120px;
 }
-html[lang=en-US] .dontworry .view-btn p{
+html[lang="en-US"] .dontworry .view-btn p{
   line-height: 45px;
   margin-top: 15px;
   margin-left: 55px;
+  text-align: left;
 }
 
 
@@ -432,11 +434,12 @@ html[lang=en-US] .dontworry .view-btn p{
 #fff600;
   position: relative;
   object-fit: contain;
-  right: 70px;
+  right: 155px;
   font-size: 61px;
   font-weight: 900;
   text-align: justify;
   height: max-content;
+  margin-top: 35px;
 }
 html[lang=en-US] .text404{
   right: -125px;
@@ -455,11 +458,11 @@ html[lang=en-US] .text404{
 }
 
 .dontworry .view-btn p{
-  font-weight: bold;
+  font-weight: 900;
   color: #fff600;
   font-size: 40px;
   line-height: 85px;
-  text-align: left;
+  text-align: center;
   width: 100%;
 }
 .dontworry .view-btn:hover{
@@ -4283,7 +4286,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .text404{
     flex-direction: column;
-    width: 350px;
+    /* width: 350px; */
     right: 20px;
     top: 150px;
     text-align: center;
@@ -4334,6 +4337,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 100%;
     right: 0;
     margin-top: 0px;
+    /* font-size: 22px; */
   }
   html[lang="en-US"] .block404 {
     right: 0;
@@ -4850,6 +4854,12 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .connect-from-item .item-meta__connect {
       width: 100%;
     }
+    .invisible-mobile{
+      display: none;
+    }
+    .footer-mobile{
+      display: none;
+    }
 
   }
 
@@ -5176,6 +5186,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     font-size: 18px;
     margin-left: 0px;
     text-align: center;
+    font-weight: 900;
   }
 
   /* Connect from */
