@@ -18,7 +18,7 @@ if( $locale == 'en_US' ) {
 	$class = 'transformed';
 }
 ?>
-<footer id="colophon" class="site-footer">
+<footer id="colophon" class="site-footer footer-mobile">
 	<div class="container-fluid">
 
 		<div class="row d-flex">
