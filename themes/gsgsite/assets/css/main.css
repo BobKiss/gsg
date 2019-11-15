@@ -45,8 +45,9 @@ a:focus {
   margin-bottom: 35px;
   margin-top: 75px;
 }
-
-
+#thank-you {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -3802,6 +3803,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .thank-you-circle {
       right: -5%;
     }
+
+    .thank-you-text p:not(.btn-content) {
+      width: 245px;
+      margin-bottom: 35px;
+    }
 }
 @media screen and (max-width: 1460px){
 
@@ -4043,6 +4049,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     right: -6%;
   }
 
+}
+@media screen and (max-width: 1024px) {
+  .thank-you-circle {
+    right: -16%;
+  }
 }
 @media screen and (max-width: 992px){
   #coming-soon {
