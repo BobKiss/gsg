@@ -11,6 +11,11 @@ Template Name: Coming Soon
     <div class="container">
         <div class="row no-gutters">
             <div class="col-12 d-flex cs-wrapper">
+
+                <a href="<?php echo get_bloginfo('url') ?>" class="logo logo-ty">
+                  <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+                </a>
+
                 <div class="coming__wrap">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/coming.png" alt="">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/soon.png" alt="" style="margin-top: 40px;">
@@ -24,6 +29,7 @@ Template Name: Coming Soon
                       </div>
                     </div>
                 </div>
+
                 <div class="cs-circle__alt">
                   <img src="<?php bloginfo('template_url'); ?>/assets/images/progress-circle.png" alt="decorAbout">
                   <img src="<?= get_template_directory_uri() . '/assets/images/hand.png' ?>" alt="">
@@ -32,6 +38,7 @@ Template Name: Coming Soon
                     <a class="cs-btn" href="<?= home_url() ?>">לחצו כאן לחזרה לאתר</a>
                   </div>
                 </div>
+
             </div>
         </div>
 
