@@ -54,7 +54,7 @@
 		</a>
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gsgsite' ); ?></a>
 
-		<aside class="sideMenu">
+		<aside class="sideMenu invisible-mobile">
 			<div class="sideMenuItem first">
 				<!-- <img class="menuIcon" src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt=""> -->
 				<div class="menu-icon">
