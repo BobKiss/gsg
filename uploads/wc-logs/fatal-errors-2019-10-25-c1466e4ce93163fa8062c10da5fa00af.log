@@ -1,6 +1,0 @@
-2019-10-25T07:52:41+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) בקובץ D:\Work\programs\wamp\www\gsg\wp-content\themes\gsgsite\templates\Blog.php בשורה 93
-
-2019-10-25T07:52:52+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) בקובץ D:\Work\programs\wamp\www\gsg\wp-content\themes\gsgsite\templates\Blog.php בשורה 93
-
-2019-10-25T08:47:54+00:00 CRITICAL syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\Work\programs\wamp\www\gsg\wp-content\themes\gsgsite\templates\ImmediateProjects.php on line 49
-

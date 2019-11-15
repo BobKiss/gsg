@@ -34,7 +34,7 @@ Template Name: Sample Project Page
 	</section>
 	<section class="barkan-about">
 		<div class="container wow slideInLeft">
-			<div class="row">
+			<div class="row oranit">
 				<div class="col-lg-6 d-flex flex-column">
 					<h5 class="barkan-about__title <?= $align ?>">
 						<?= $heading ?>
