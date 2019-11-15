@@ -140,24 +140,20 @@ jQuery(document).ready(function ($) {
       $('.sideMenu .mailBlock .popup .popupForm input[type="submit"]').click();
     });
   }
-
   initSidebarMailButton();
 
+  // For 404, Coming Soon and Thank You pages
   logoAlign();
-  // function logoAlign() {
-  //   if( wp_data.is_404 == 1 && window.innerWidth <= 992) {
-  //     $('.logo-404').addClass('logo-align');
-  //   }
-  // }
 
   function logoAlign() {
     if( ( wp_data.is_404) == 1 && window.innerWidth <= 992) {
       $('.logo-404').addClass('logo-align');
     }
-
+  }
+  function logoDisappear () {
     if ( wp_data.current_page_slug == 'coming-soon' && window.innerWidth <= 992) {
       console.log( 'fdfsd' );
-      $('.logo-404').addClass('logo-align');
+      $('.logo-404').addClass('logo-inv');
     }
   }
 

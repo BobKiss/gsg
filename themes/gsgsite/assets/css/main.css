@@ -95,6 +95,9 @@ a:focus {
   max-width: 185px;
   margin-left: 5%;
 }
+.logo-inv {
+  display: none;
+}
 .homepage video.homeVideoBack{
   position: absolute;
   right: 0;
@@ -3604,9 +3607,12 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 
 .thank-you-text p:not(.btn-content) {
   font-size: 36px;
-  width: 245px;
+  width: 225px;
   direction: rtl;
-  font-weight: bold;
+  font-weight: 900;
+  margin-left: auto;
+  margin-bottom: auto;
+  line-height: 1.2;
 }
 
 .ty-btn {
@@ -3615,7 +3621,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   padding: 0 30px;
   color: #fff600;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 900;
   white-space: nowrap;
 }
 
