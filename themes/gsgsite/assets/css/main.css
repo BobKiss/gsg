@@ -819,7 +819,6 @@ html[lang=en-US] .text404{
   background-size: cover;
 }
 .crisisreverse{
-  flex-direction: none !important;
   direction: ltr;
 }
 
@@ -1052,7 +1051,9 @@ html[lang=en-US] .aboutUsPageWrapper .aboutYellow > .container{
   text-align: right;
   direction: rtl;
 }
-
+html[lang="en-US"] .aboutUsPageWrapper .aboutYellow p {
+  direction: ltr;
+}
 
 .aboutUsPageWrapper .aboutMap {
   background-color: #fefefe;
