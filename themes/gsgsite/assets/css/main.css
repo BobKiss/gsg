@@ -415,7 +415,7 @@ html[lang=en-US] .black404{
   right: 30px;
 }
 html[lang=en-US] .block404{
-  right: -15px;
+  right: -55px;
 }
 html[lang=en-US] .dontworry .view-btn{
   height: 120px;
@@ -423,6 +423,7 @@ html[lang=en-US] .dontworry .view-btn{
 html[lang=en-US] .dontworry .view-btn p{
   line-height: 45px;
   margin-top: 15px;
+  margin-left: 55px;
 }
 
 
@@ -432,13 +433,14 @@ html[lang=en-US] .dontworry .view-btn p{
   position: relative;
   object-fit: contain;
   right: 70px;
-  font-size: 70px;
-  font-weight: 700;
+  font-size: 61px;
+  font-weight: 900;
   text-align: justify;
   height: max-content;
 }
 html[lang=en-US] .text404{
-  right: -50px;
+  right: -125px;
+  margin-top: 38px;
 }
 
 .dontworry .view-btn{
@@ -457,7 +459,7 @@ html[lang=en-US] .text404{
   color: #fff600;
   font-size: 40px;
   line-height: 85px;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 .dontworry .view-btn:hover{
@@ -465,13 +467,14 @@ html[lang=en-US] .text404{
 }
 .circle404{
   position: relative;
-  bottom: 13%;
-  right: -70%;
+  bottom: 16%;
+  right: -79%;
   animation-name: rotation;
   animation-duration: 36s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   align-self: flex-end;
+  width: 234px;
 }
 .header404{
   height: 955px;
@@ -506,8 +509,8 @@ html[lang=en-US] .text404{
   /* width: 300px; */
   width: 0;
   height: 3px;
-  background: black;
-  margin-top: 135px;
+  background:black;
+  margin-top: 67px;
   margin-left: 250px;
   position: absolute;
   animation: bl-hor 0.8s 0.9s forwards;
@@ -552,12 +555,16 @@ html[lang=en-US] .text404{
     width: 0;
   }
   to {
-    width: 630px;
+    width: 720px;
   }
 }
 
 
 /* Menu block animation end */
+
+.contactus-yellow .col-sm-6.first_col{
+  padding-right: 40px;
+}
 
 .contactus-yellow .caldera-grid .last_row .btn {
   background-color: #fff600;
@@ -2187,7 +2194,7 @@ html[lang=en-US] .contactus__text, .contactus__soc span {
     border-bottom: 1px solid #000;
     width: 100%;
     margin-left: auto;
-    margin-bottom: 24px;
+    margin-bottom: 55px;
 }
 
 .sn-contactsus .fb textarea{
@@ -2244,7 +2251,7 @@ html[lang=en-US] .contactus__text, .contactus__soc span {
     border-radius: 0;
 }
 .contactus__links{
-    margin-top: 22px;
+    margin-top: 55px;
     color:#000;
     border-top: 1px solid #000;
     padding-top: 10px;
@@ -4323,9 +4330,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .vectorL{
     animation-name: slidein;
   }
-  html[lang=en-US] .text404{
+  html[lang="en-US"] .text404{
     width: 100%;
     right: 0;
+    margin-top: 0px;
   }
   html[lang="en-US"] .block404 {
     right: 0;
@@ -5038,10 +5046,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     right: 10px;
     font-size: 40px;
   }
+
   html[lang="en-US"] .dontworry .view-btn p {
     line-height: 40px;
     margin-top: 15px;
-    font-size: 35px;
+    font-size: 30px;
   }
   html[lang="en-US"] .dontworry .view-btn {
     height: 105px;
@@ -5160,10 +5169,13 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   html[lang="en-US"] .dontworry .view-btn {
     height: 80px;
   }
+
   html[lang="en-US"] .dontworry .view-btn p {
     line-height: 25px;
     margin-top: 15px;
-    font-size: 25px;
+    font-size: 18px;
+    margin-left: 0px;
+    text-align: center;
   }
 
   /* Connect from */
