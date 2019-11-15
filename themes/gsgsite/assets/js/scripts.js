@@ -144,6 +144,8 @@ jQuery(document).ready(function ($) {
 
   // For 404, Coming Soon and Thank You pages
   logoAlign();
+  logoDisappear();
+  menuMobile();
 
   function logoAlign() {
     if( ( wp_data.is_404) == 1 && window.innerWidth <= 992) {
@@ -151,10 +153,20 @@ jQuery(document).ready(function ($) {
     }
   }
   function logoDisappear () {
-    if ( wp_data.current_page_slug == 'coming-soon' && window.innerWidth <= 992) {
+    if ( (wp_data.current_page_slug == 'coming-soon' || wp_data.current_page_slug == 'thank-you-page') && window.innerWidth <= 768) {
       console.log( 'fdfsd' );
-      $('.logo-404').addClass('logo-inv');
+      $('.logo-404').addClass('invisible-mobile');
     }
+  }
+  function menuMobile () {
+
+    let slug = wp_data.current_page_slug;
+    let error = wp_data.is_404;
+
+    if ( slug == 'coming-soon' || slug == 'thank-you-page' || error == 1 ) {
+      $('.sideMenu').addClass('invisible-mobile');
+    }
+
   }
 
   function initBarkanSlider() {

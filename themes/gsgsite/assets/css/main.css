@@ -45,8 +45,9 @@ a:focus {
   margin-bottom: 35px;
   margin-top: 75px;
 }
-
-
+#thank-you {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -96,6 +97,9 @@ a:focus {
   margin-left: 5%;
 }
 .logo-inv {
+  display: none;
+}
+.logo-ty {
   display: none;
 }
 .homepage video.homeVideoBack{
@@ -3816,6 +3820,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .thank-you-circle {
       right: -5%;
     }
+
+    .thank-you-text p:not(.btn-content) {
+      width: 245px;
+      margin-bottom: 35px;
+    }
 }
 @media screen and (max-width: 1460px){
 
@@ -4070,6 +4079,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
 
 }
+@media screen and (max-width: 1024px) {
+  .thank-you-circle {
+    right: -16%;
+  }
+}
 @media screen and (max-width: 992px){
   #coming-soon {
     overflow-y: scroll;
@@ -4210,6 +4224,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     text-align: center;
     width: calc(100% - 100px);
     font-weight: 900;
+    margin-left: 0;
   }
 
   .cs-circle {
@@ -4371,6 +4386,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 @media screen and (max-width: 768px){
   body{
     overflow-x: hidden;
+  }
+  .container-mobile {
+    padding: 0 45px;
   }
   .housesys__tabs_content .slide-item img {
     object-fit: cover;
@@ -4884,7 +4902,24 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .footer-mobile{
       display: none;
     }
-
+    .logo-ty {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-left: 0;
+      margin-bottom: 50px;
+    }
+    #thank-you .col.d-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    #thank-you {
+      padding-top: 100px !important;
+    }
+    #coming-soon .logo-ty{
+      margin: 0 auto 40px;
+    }
   }
 
 
@@ -5100,6 +5135,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   html[lang="en-US"] .dontworry .view-btn {
     height: 105px;
   }
+
   .dontworry .view-btn p{
     font-size: 30px;
   }
@@ -5108,10 +5144,43 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     right: 0;
     margin-top: 0px;
     font-size: 31px;
-}
+  }
+
+
+  .img-you {
+    height: 100px;
+  }
+  .thank-you-text p:not(.btn-content) {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 325px){
+@media screen and (max-width: 425px) {
+  .thank-you-circle, .thank-you-circle__alt {
+    transform: scale(0.5);
+  }
+
+  .img-thank {
+    background-position-y: top;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .img-you {
+    height: 75px;
+  }
+
+  .thank-you-circle__alt {
+    bottom: 50px;
+  }
+
+  .thank-you-circle__alt + div {
+    position: relative;
+    bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 325px) {
 
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
     padding: 5px 10px;
@@ -5136,8 +5205,8 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .big-projects-list .item-content-block{
     transform: translateX(-40px);
-
   }
+
   .big-projects-list .list-item .view-btn{
     width: 40px;
   }
@@ -5264,13 +5333,39 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     height: 50px;
   }
 
-  .img-thank,
+  .img-thank {
+    width: 264px;
+    height: 64px;
+    transform: translateX(-11px);
+    margin-bottom: 20px;
+  }
+
   .img-you {
-    height: 50px;
+    width: 160px;
+    height: 60px;
   }
 
   .thank-you-circle__alt {
-    transform: scale(0.5);
+    transform: scale(0.3);
+    bottom: 85px;
+  }
+
+  .thank-you-circle__alt + div {
+    bottom: 180px;
+  }
+
+  .thank-you-text p:not(.btn-content) {
+    font-size: 20px;
+    margin-bottom: 15px;
+    width: 230px;
+  }
+
+  .ty-btn {
+    font-size: 24px;
+  }
+
+  #thank-you {
+    padding: 50px 0 0 !important;
   }
 
   .cs-circle img:first-child {
@@ -5316,6 +5411,12 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .connect-from-item .connect__projname {
     bottom: -50px;
     height: 50px;
+  }
+
+  .logo-ty {
+    width: 75px;
+    height: 50px;
+    margin-bottom: 30px;
   }
 
 }}
