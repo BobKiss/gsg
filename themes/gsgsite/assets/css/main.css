@@ -542,7 +542,7 @@ html[lang=en-US] .text404{
     background-position-x: 0;
   }
   to {
-    background-position-x: 500%;
+    background-position-x: 100%;
   }
 }
 @keyframes bl-vert {
@@ -817,6 +817,10 @@ html[lang=en-US] .text404{
   justify-content: center;
   align-items: center;
   background-size: cover;
+}
+.crisisreverse{
+  flex-direction: none !important;
+  direction: ltr;
 }
 
 /* FIRST BLOCK ANIMATIONS, OTHER PAGES */
@@ -4333,11 +4337,12 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .vectorL{
     width: 1010px;
-    height: 57px;
+    height: 85px;
     transform: rotate(175deg);
     position: relative;
     top: 125px;
     display: block;
+    background-size: cover;
   }
   .logo-align {
     margin-top: 5% !important;
@@ -5074,11 +5079,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     background-size: cover;
     animation-duration: 2s;
   }
+  .vectorL{
+    height: 65px;
+  }
+  .site > .logo.visible img{
+    margin-left: -38px;
+  }
 
   html[lang="en-US"] .dontworry .view-btn p {
     line-height: 40px;
     margin-top: 15px;
-    font-size: 30px;
+    font-size: 25px;
   }
   html[lang="en-US"] .dontworry .view-btn {
     height: 105px;
@@ -5086,6 +5097,12 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .dontworry .view-btn p{
     font-size: 30px;
   }
+  html[lang="en-US"] .text404 {
+    width: 100%;
+    right: 0;
+    margin-top: 0px;
+    font-size: 31px;
+}
 }
 
 @media screen and (max-width: 325px){
@@ -5187,7 +5204,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     height: 655px;
   }
   .vectorL {
-    height: 40px;
+    height: 35px;
     background-size: contain;
     /* animation-name: slideinr; */
     animation: slideinr 10s linear infinite forwards;
@@ -5201,8 +5218,20 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     height: 45px;
     margin-top: 20px;
   }
+  html[lang="en-US"] .text404 {
+    font-size: 23px;
+}
+  html[lang="en-US"] .text404{
+    margin-top: 40px;
+  }
   html[lang="en-US"] .dontworry .view-btn {
-    height: 80px;
+    height: 75px;
+  }
+  html[lang="en-US"] .site > .logo.visible img{
+    margin-left: -25px;
+  }
+  html[lang="en-US"] .vectorL{
+    top: 35px;
   }
 
   html[lang="en-US"] .dontworry .view-btn p {
