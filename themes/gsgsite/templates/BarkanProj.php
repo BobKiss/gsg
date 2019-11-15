@@ -23,10 +23,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | בןקן' : '
 	</section>
 	<section class="barkan-about">
 		<div class="container wow slideInLeft">
-			<?php
-				$rtl_ltr = ( get_locale() != 'en_US' ) ? 'rtl' : 'ltr';
-			?>
-			<div class="row <?= $rtl_ltr ?>">
+			<div class="row barkan">
 				<div class="col-lg-6 d-flex flex-column">
 <?php
 $heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | על הפרוייקט' : 'Barkan Mul Hayam | About the Project';

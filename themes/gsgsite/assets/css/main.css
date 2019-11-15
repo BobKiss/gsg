@@ -15,11 +15,11 @@ a:focus {
 .post, .page{
   margin: 0;
 }
-ol {
+.document ol {
   list-style: none;
   counter-reset: li;
 }
-li:before {
+.document li:before {
   counter-increment: li;
   content: counters(li,".") ". ";
 }
@@ -30,9 +30,9 @@ li:before {
   margin-right: 10px;
   text-align: justify
 }
-.headerSection .container{
+/* .headerSection .container{
   margin-top: 200px;
-}
+} */
 .document h1{
   direction: rtl;
   text-align: right;
@@ -1874,6 +1874,13 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
 html[lang=en-US] .statlines .row {
   direction: ltr;
 }
+html[lang=en-US] .row.barkan {
+  direction: ltr;
+}
+html[lang=en-US] .row.oranit {
+  direction: ltr;
+}
+
 .mapEnergyContainer{
   overflow: hidden;
   position: relative;
@@ -2837,6 +2844,10 @@ html[lang=en-US] .footer__links_item.right {
   /* transform: translateX(10%); */
   width: max-content;
 }
+html[lang=en-US] .transformed {
+  direction: ltr;
+}
+
 .footer__links{
     align-items: center;
     text-decoration: none;
