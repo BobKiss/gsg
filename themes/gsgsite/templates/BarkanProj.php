@@ -23,10 +23,7 @@ $heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | בןקן' : '
 	</section>
 	<section class="barkan-about">
 		<div class="container wow slideInLeft">
-			<?php
-				$rtl_ltr = ( get_locale() != 'en_US' ) ? 'rtl' : 'ltr';
-			?>
-			<div class="row <?= $rtl_ltr ?>">
+			<div class="row barkan">
 				<div class="col-lg-6 d-flex flex-column">
 <?php
 $heading = ( get_locale() != 'en_US' ) ? 'ברקן מול הים | על הפרוייקט' : 'Barkan Mul Hayam | About the Project';
@@ -126,7 +123,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 						?>
 						<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 					</div>
-					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start align-items-center <?= $row_direction ?>">
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start align-items-center">
 						<div class="barkan-about__statline <?= $statline_container_reverse ?>"><span class="statline_01 <?= $statline_reverse ?>"></span></div><p id="percent-1" class="percent-number" style="font-weight: 900">60<span>%</span></p>
 					</div>
 				</div>
@@ -138,7 +135,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 						?>
 						<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 					</div>
-					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center <?= $row_direction ?>">
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
 						<div class="barkan-about__statline <?= $statline_container_reverse ?>"><span class="statline_02 <?= $statline_reverse ?>"></span></div><p id="percent-2" class="percent-number" style="font-weight: 900;">42%</p>
 					</div>
 				</div>
@@ -150,7 +147,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 						?>
 						<p class="barkan-about__stattext"><strong><?= $heading ?></strong><?= $text ?></p>
 					</div>
-					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center <?= $row_direction ?>">
+					<div class="col-12 col-md-9 d-inline-flex justify-content-between flex-direction-start  align-items-center">
 						<div class="barkan-about__statline <?= $statline_container_reverse ?>"><span class="statline_03 <?= $statline_reverse ?>"></span></div><p id="percent-3" class="percent-number" style="font-weight: 900;">80%</p>
 					</div>
 				</div>

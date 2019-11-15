@@ -30,24 +30,33 @@ jQuery(document).ready(function ($) {
       variableWidth: true,
 		rtl: true,
 	autoplay: true,
-	autoplaySpeed: 100,
+	autoplaySpeed: 0,
       slidesToScroll: 1,
 		infinite: true,
-    cssEase: 'cubic-bezier(0.92, 0.91, 0.23, 0.21)'
+    speed: 3000,
+    cssEase: 'linear',
     });
   }
   else{
     $('.aboutUsPageWrapper .partneers .sliderPartneers').slick({
       slidesToShow: 7,
       arrows: false,
-		rtl: false,
+		rtl: true,
       variableWidth: true,
       autoplay: true,
-  		autoplaySpeed: 1,
+  		autoplaySpeed: 0,
       slidesToScroll: 1,
+      speed: 3000,
+    cssEase: 'linear',
 		infinite: true,
     });
   }
+  $('.aboutUsPageWrapper .partneers .sliderPartneers').on('afterChange', function () {
+
+    console.log( 'changed' );
+    // this.slickNext();
+
+  })
 
   $('.mainNavigationContainer .menu-item-has-children > a, .fullscreenMenu .menu-item-has-children > a').click(function (e) {
     e.preventDefault();
@@ -134,6 +143,12 @@ jQuery(document).ready(function ($) {
 
   initSidebarMailButton();
 
+  logoAlign();
+  function logoAlign() {
+    if( wp_data.is_404 == 1 && window.innerWidth <= 992) {
+      $('.logo-404').addClass('logo-align');
+    }
+  }
 
   function initBarkanSlider() {
     let padding = $('.container').first().offset().left + 15;
