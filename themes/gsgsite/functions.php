@@ -159,10 +159,12 @@ function gsgsite_scripts() {
 
 	// Pass php vars
 	$lang = ( get_locale() != 'en_US' ) ? 'he' : 'en';
-	global $wp;
+	global $post;
+
 	wp_localize_script( 'main-scripts', 'wp_data', [
 		'lang' => $lang,
 		'current_page' => current_page(),
+		'current_page_slug' => $post -> post_name,
 		'is_404' => is_404()
 	] );
 

@@ -3048,6 +3048,9 @@ html[lang=en-US] .barkan-header__text {
     height: 380px;
     margin-top: 60px;
 }
+.connect-from-item .item-content-block__alt {
+  display: none;
+}
 .barkan-about__btn{
     margin-right: auto;
     border: 2px solid  #231f20;
@@ -4152,6 +4155,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     align-items: center;
   }
 
+  .connect-from-item .connect__projname {
+    height: 80px;
+  }
+
   .img-you {
     margin-right: 0;
     width: 63%;
@@ -4354,6 +4361,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .page-template-GsgEnergy .caldera-grid {
     margin-bottom: 30px;
   }
+
   .site-footer {
   padding-top: 35px;
   }
@@ -4807,6 +4815,34 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       animation-duration: 6s;
     }
 
+    /* Only "Connect from" items */
+    .connect-from-item {
+      width: 100% !important;
+    }
+
+    .connect-from-item .item-content-block {
+      display: none;
+    }
+
+    .connect-from-item .item-content-block__alt {
+      display: flex;
+      width: 100%;
+      height: 40px;
+    }
+
+    .connect-from-item .item-content-block__alt .view-btn {
+      width: 100%;
+    }
+
+    .connect-from-item .item-content-block__alt .btn-content {
+      transform: none !important;
+    }
+
+    .connect-from-item .connect__projname,
+    .connect-from-item .item-meta__connect {
+      width: 100%;
+    }
+
   }
 
 
@@ -4869,6 +4905,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .big-projects-list .list-item .view-btn, .small-projects-list .list-item .view-btn{
     width: 80px;
+  }
+  .connect-from-item .item-content-block__alt .view-btn {
+    width: 100%;
   }
   .big-projects-list .list-item .item-meta{
     font-size: 20px;
@@ -5179,6 +5218,21 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 
   .cs-circle__alt img:nth-child(2) {
     transform: scale(0.3);
+  }
+
+  /* Connect from */
+  .connect-from-item .item-content-block__alt .view-btn {
+    width: 100%;
+  }
+
+  .connect-from-item .item-meta__connect {
+    padding: 0 30px;
+    margin-top: 50px;
+  }
+
+  .connect-from-item .connect__projname {
+    bottom: -50px;
+    height: 50px;
   }
 
 }}
