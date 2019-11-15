@@ -15,6 +15,36 @@ a:focus {
 .post, .page{
   margin: 0;
 }
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+li:before {
+  counter-increment: li;
+  content: counters(li,".") ". ";
+}
+/* Policies */
+.policiesol{
+  direction: rtl;
+  text-align: right;
+  margin-right: 10px;
+  text-align: justify
+}
+.headerSection .container{
+  margin-top: 200px;
+}
+.document h1{
+  direction: rtl;
+  text-align: right;
+}
+.document h2{
+  text-align: right;
+  border-bottom: 2px solid black;
+  width: 50%;
+  margin-left: auto;
+  margin-bottom: 35px;
+  margin-top: 75px;
+}
 
 
 .container {
@@ -506,7 +536,7 @@ html[lang=en-US] .text404{
     background-position-x: 0;
   }
   to {
-    background-position-x: 100%;
+    background-position-x: 500%;
   }
 }
 @keyframes bl-vert {
@@ -4762,6 +4792,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .logo-align{
       width: 170px !important;
     }
+    .vector{
+      animation-duration: 6s;
+    }
 
   }
 
@@ -5063,7 +5096,8 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .vectorL {
     height: 40px;
     background-size: contain;
-    animation-name: slideinr;
+    /* animation-name: slideinr; */
+    animation: slideinr 10s linear infinite forwards;
   }
   .dontworry .view-btn p {
     font-size: 20px;

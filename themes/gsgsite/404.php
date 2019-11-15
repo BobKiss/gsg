@@ -26,7 +26,7 @@ get_header();
 					<div class="vector" style="background-image: url(<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/Vector.png"></div>
 			</div>
 				<div class="dontworry">
-					<a class="view-btn" href="#">
+					<a class="view-btn" href="<?php echo get_bloginfo('url') ?>">
 						<p class="btn-content"><?= $text ?></p>
 					</a>
 					<div class="borderline"></div>
