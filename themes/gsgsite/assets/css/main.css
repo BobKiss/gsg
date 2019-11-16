@@ -407,7 +407,7 @@ header{
   z-index: 2;
   background-color: black;
   width: 100%;
-  height: 250px;
+  height: 280px;
   direction: rtl;
   display: flex;
   align-items: center;
@@ -477,7 +477,7 @@ html[lang=en-US] .text404{
 }
 .circle404{
   position: relative;
-  bottom: 16%;
+  bottom: 70px;
   right: -79%;
   animation-name: rotation;
   animation-duration: 36s;
@@ -549,7 +549,7 @@ html[lang=en-US] .text404{
     background-position-x: 0;
   }
   to {
-    background-position-x: 500%;
+    background-position-x: 100%;
   }
 }
 @keyframes bl-vert {
@@ -825,6 +825,9 @@ html[lang=en-US] .text404{
   align-items: center;
   background-size: cover;
 }
+.crisisreverse{
+  direction: ltr;
+}
 
 /* FIRST BLOCK ANIMATIONS, OTHER PAGES */
 @keyframes borderVertical {
@@ -1055,7 +1058,9 @@ html[lang=en-US] .aboutUsPageWrapper .aboutYellow > .container{
   text-align: right;
   direction: rtl;
 }
-
+html[lang="en-US"] .aboutUsPageWrapper .aboutYellow p {
+  direction: ltr;
+}
 
 .aboutUsPageWrapper .aboutMap {
   background-color: #fefefe;
@@ -2664,7 +2669,7 @@ html[lang=en-US] .housesys__menu_desc > div {
   border: none;
   background-color: transparent;
   border-radius: 0;
-  padding-right: 25px;
+  padding-right: 0;
   padding-left: 25px;
 }
 .housesys__menu_desc .nice-select.open{
@@ -4061,6 +4066,18 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .thank-you-circle {
     right: -6%;
   }
+  .circle404{
+    right: -73%;
+    width: 210px;
+    bottom: 50px;
+  }
+  @keyframes bl-hor {
+  from {
+    width: 0;
+  }
+  to {
+    width: 500px;
+  }
 
 }
 @media screen and (max-width: 1024px) {
@@ -4298,6 +4315,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .black404{
     height: 460px;
     flex-direction: column;
+    margin-top: 200px;
   }
   .block404{
     flex-direction: column;
@@ -4341,11 +4359,12 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .vectorL{
     width: 1010px;
-    height: 57px;
+    height: 85px;
     transform: rotate(175deg);
     position: relative;
     top: 125px;
     display: block;
+    background-size: cover;
   }
   .logo-align {
     margin-top: 5% !important;
@@ -5097,47 +5116,34 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     right: 10px;
     font-size: 40px;
   }
+  .vector{
+    height: 23px;
+    background-size: cover;
+    animation-duration: 2s;
+  }
+  .vectorL{
+    height: 65px;
+  }
+  .site > .logo.visible img{
+    margin-left: -38px;
+  }
 
   html[lang="en-US"] .dontworry .view-btn p {
     line-height: 40px;
     margin-top: 15px;
-    font-size: 30px;
+    font-size: 25px;
   }
   html[lang="en-US"] .dontworry .view-btn {
     height: 105px;
+  }  .dontworry .view-btn p{
+    font-size: 30px;
   }
-
-  .img-you {
-    height: 100px;
-  }
-  .thank-you-text p:not(.btn-content) {
+  html[lang="en-US"] .text404 {
     width: 100%;
-  }
+    right: 0;
+    margin-top: 0px;
+    font-size: 31px;
 }
-
-@media screen and (max-width: 425px) {
-  .thank-you-circle, .thank-you-circle__alt {
-    transform: scale(0.5);
-  }
-
-  .img-thank {
-    background-position-y: top;
-    height: 80px;
-    margin-bottom: 20px;
-  }
-
-  .img-you {
-    height: 75px;
-  }
-
-  .thank-you-circle__alt {
-    bottom: 50px;
-  }
-
-  .thank-you-circle__alt + div {
-    position: relative;
-    bottom: 100px;
-  }
 }
 
 @media screen and (max-width: 325px) {
@@ -5206,9 +5212,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     white-space: normal;
   }
   .black404 {
-    height: 300px;
+    height: 215px;
     flex-direction: column;
     line-height: 30px;
+    margin-top: 155px;
   }
   .container404 {
     width: 100%;
@@ -5216,30 +5223,33 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .vector {
     bottom: 2px;
-    height: 20px;
+    height: 13px;
     background-size:cover;
   }
   .text404{
     font-size: 25px;
     right: 0;
+    top: 27px;
   }
   .block404{
     width: 150px;
     right: 0;
+    top: 40px;
   }
   .logo-align {
     width: 140px !important;
     margin-left: 32% !important;
-    margin-top: 70px !important;
+    /* margin-top: 70px !important; */
   }
   .header404 {
-    height: 900px;
+    height: 655px;
   }
   .vectorL {
-    height: 40px;
+    height: 35px;
     background-size: contain;
     /* animation-name: slideinr; */
     animation: slideinr 10s linear infinite forwards;
+    top: 60px;
   }
   .dontworry .view-btn p {
     font-size: 20px;
@@ -5249,8 +5259,20 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     height: 45px;
     margin-top: 20px;
   }
+  html[lang="en-US"] .text404 {
+    font-size: 23px;
+}
+  html[lang="en-US"] .text404{
+    margin-top: 40px;
+  }
   html[lang="en-US"] .dontworry .view-btn {
-    height: 80px;
+    height: 75px;
+  }
+  html[lang="en-US"] .site > .logo.visible img{
+    margin-left: -25px;
+  }
+  html[lang="en-US"] .vectorL{
+    top: 35px;
   }
 
   html[lang="en-US"] .dontworry .view-btn p {
