@@ -2031,6 +2031,9 @@ html[lang=en-US] .row.oranit {
     background: #fff600;
     direction: rtl;
 }
+html[lang="en-US"] .sn-intro {
+  direction: ltr;
+}
 .sn-contactsus, .gsgenergy {
     background: #fffefe;
     padding-top: 90px;
@@ -5306,6 +5309,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .cs-circle__alt img:nth-child(2) {
     transform: scale(0.2)
   }
+  html[lang="en-US"] #crisisForm .col-sm-6.first_col {
+    padding-left: 7.5px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -5363,9 +5369,6 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   #supervisionYellow{
     padding-right: 0;
-  }
-  .big-projects-list .item-wrap{
-    height: 140px;
   }
   .big-projects-list .item-content-block{
     transform: translateX(-40px);
