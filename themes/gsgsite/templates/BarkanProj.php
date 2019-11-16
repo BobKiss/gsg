@@ -168,7 +168,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 	<!-- SectionContacts -->
 
 	<section id="sn-contactus" class="sn-contactsus">
-		<div class="container wow slideInRight">
+		<div id="crisisForm" class="container wow slideInRight">
 			<?php
 				$heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
 				$shortcode = ( get_locale() != 'en_US' ) ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';

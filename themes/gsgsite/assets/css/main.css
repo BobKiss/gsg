@@ -5,6 +5,12 @@ body{
     /*overflow: hidden;*/
     direction: ltr;
 }
+.invisible-mobile{
+  display: none !important;
+}
+.footer-mobile{
+  display: none;
+}
 body .page-template-templatesHomepage-php {
   overflow: hidden;
 }
@@ -102,6 +108,9 @@ a:focus {
 .logo-ty {
   display: none;
 }
+.logo-cs {
+  display: none !important;
+}
 .homepage video.homeVideoBack{
   position: absolute;
   right: 0;
@@ -142,6 +151,24 @@ a:focus {
 .clientsBlock.visible {
   opacity: 1;
   visibility: visible;
+}
+.prod-desc-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.prod-desc-one p{
+  margin-bottom: 0;
+}
+.prod-desc-one strong{
+  margin-top: 10px;
+}
+#crisisForm .col-sm-6.first_col{
+  padding-right: 40px;
+}
+html[lang="en-US"] #crisisForm .col-sm-6.first_col{
+  padding-left: 40px;
+  padding-right: 7.5px;
 }
 
 [dir="rtl"] .clientsBlock{
@@ -575,6 +602,9 @@ html[lang=en-US] .text404{
 .contactus-yellow .col-sm-6.first_col{
   padding-right: 40px;
 }
+html[lang="en-US"] .contactus-yellow .col-sm-6.first_col{
+  padding-left: 40px;
+}
 
 .contactus-yellow .caldera-grid .last_row .btn {
   background-color: #fff600;
@@ -825,7 +855,7 @@ html[lang=en-US] .text404{
   align-items: center;
   background-size: cover;
 }
-.crisisreverse{
+html[lang="en-US"] .crisisreverse{
   direction: ltr;
 }
 
@@ -2338,8 +2368,11 @@ html[lang=en-US] .contactus__text span:after{
   justify-content: space-between;
   width: 100%;
   margin-top: 50px;
-  direction: ltr;
+  direction: rtl;
   border-bottom: 1px solid #000;
+}
+html[lang="en-US"] .contactsus-after-line{
+  direction: ltr;
 }
 .contactsus-after-line > div {
   flex-basis: 33%;
@@ -2353,8 +2386,17 @@ html[lang=en-US] .contactus__text span:after{
   text-align: center;
 }
 .contactsus-after-line > div:nth-child(3) {
-  text-align: right;
+  /* text-align: right; */
   white-space: nowrap;
+}
+html[lang="en-US"] .contactsus-after-line > div:nth-child(3) {
+  text-align: right;
+}
+.contactsus-after-line > div:first-child {
+  text-align: right;
+}
+html[lang="en-US"] .contactsus-after-line > div:first-child {
+  text-align: left;
 }
 
 .footer__links_item.right:hover{
@@ -2996,7 +3038,7 @@ html[lang=en-US] .barkan-header__text {
   direction: ltr !important;
 }
 .barkan-about__stattext{
-    font-size: 20px;
+    font-size: 19px;
     /* line-height: 20px; */
     max-width: 230px;
     width: 100%;
@@ -3074,7 +3116,7 @@ html[lang=en-US] .barkan-header__text {
   display: none;
 }
 .barkan-about__btn{
-    margin-right: auto;
+    margin-left: auto;
     border: 2px solid  #231f20;
     /* border-left: none; */
     font-size: 18px;
@@ -3082,6 +3124,14 @@ html[lang=en-US] .barkan-header__text {
     margin-top: 64px;
     font-weight: 900;
     letter-spacing: 2px;
+}
+html[lang="en-US"] .barkan-about__btn{
+  margin-right: auto;
+  margin-left: 0;
+}
+html[lang="en-US"] .barkan-about__stattext{
+  text-align: left;
+  max-width: unset;
 }
 .barkan-slider{
     padding-top: 100px;
@@ -3236,7 +3286,7 @@ html[lang=en-US] .barkan-header__text {
   text-align: right;
 }
 html[lang=en-US] .big-projects-list .list-item .item-meta{
-  text-align-last: left;
+  text-align: left;
 }
 .item-meta__connect{
   color: #000;
@@ -3629,7 +3679,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   width: 225px;
   direction: rtl;
   font-weight: 900;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-bottom: auto;
   line-height: 1.2;
 }
@@ -3743,7 +3793,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   margin-top: 10% !important;
 }
 /*Media*/
-
+#blog-title {
+  font-size: 80px;
+  line-height: 1;
+}
 @media screen and (max-width: 1760px){
 
   .clientsBlock{
@@ -3755,7 +3808,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 
     .logo{
         top: 5%;
-        left: 2%;
+        left: 1%;
     }
 
     .sideMenu{
@@ -3783,6 +3836,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       bottom: -90px;
       max-width: 24vw;
 }
+
 @media screen and (max-width: 1520px){
 
     .clientsBlock{
@@ -4084,6 +4138,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .thank-you-circle {
     right: -16%;
   }
+  .borderblockWrapper{
+    width: 95%;
+  }
+  .titleContainer .title{
+    margin-bottom: 60px;
+    margin-left: 71px;
+  }
+  .contactUsPageHeader.borderblockWrapper .borderblock:nth-child(2){
+    padding-bottom: 3vh;
+    padding-top: 4vh;
+  }
 }
 @media screen and (max-width: 992px){
   #coming-soon {
@@ -4091,12 +4156,6 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .homepageContainer {
     padding-right: 150px;
-  }
-  .coming__wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
   }
   .coming__wrap .coming__circle{
     width: 200px;
@@ -4192,6 +4251,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     position: relative;
     right: 0;
   }
+  .thank-you-circle__alt + div {
+    align-items: center;
+  }
 
   .thank-you-text {
     width: 100%;
@@ -4230,15 +4292,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 
   .cs-circle {
     width: 100%;
-    top: 200px;
-    left: 0;
-    display: none;
-  }
-  .cs-circle__alt {
-    width: 100%;
-    top: 200px;
-    left: 0;
     display: flex;
+    transform: scale(0.7);
+    left: 300px;
   }
 
   .cs-text-mobile {
@@ -4259,6 +4315,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     position: relative;
     right: 0;
   }
+
 
   .thank-you-text {
     width: 100%;
@@ -4290,18 +4347,18 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     font-weight: 900;
   }
 
-  .cs-circle {
+  /* .cs-circle {
     width: 100%;
     top: 200px;
     left: 0;
     display: none;
-  }
-  .cs-circle__alt {
+  } */
+  /* .cs-circle__alt {
     width: 100%;
     top: 200px;
     left: 0;
     display: flex;
-  }
+  } */
 
   .cs-text-mobile {
     display: flex;
@@ -4382,8 +4439,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   html[lang="en-US"] .block404 {
     right: 0;
   }
+  html[lang="en-US"] .titleContainer .title {
+    margin-left: 0;
+  }
 }
-
 @media screen and (max-width: 768px){
   body{
     overflow-x: hidden;
@@ -4407,6 +4466,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .footer__links_item{
     line-height: 38px;
     text-align: left;
+  }
+  #supervisionYellow{
+    padding-right: 0;
   }
 
   .blog__borderblock .decorCircle{
@@ -4555,7 +4617,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
     .caldera-grid .first_row{
       display: flex;
-      flex-direction: column-reverse;
+      /* flex-direction: column-reverse; */
     }
     .caldera-grid textarea.form-control{
       padding-right: 12px !important;
@@ -4773,6 +4835,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
     .headerSection .borderBlock .row .title{
       font-size: 40px;
+      line-height: 50px;
     }
     .aboutUsPageWrapper .aboutMap .mapTitle{
       font-size: 28px;
@@ -4801,6 +4864,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
     .archive .headerSection .borderBlock.hebrew .row .littleTitle{
       font-size: 20px;
+      margin-bottom: 11px;
     }
     .item-meta__connect{
       width: calc(100% + 99px);
@@ -4897,11 +4961,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .connect-from-item .item-meta__connect {
       width: 100%;
     }
-    .invisible-mobile{
-      display: none;
+    .contactus-yellow .col-sm-6.first_col{
+      padding-right: 7.5px;
     }
-    .footer-mobile{
-      display: none;
+    html[lang="en-UA"] .contactus-yellow .col-sm-6.first_col{
+      padding-left: 7.5px;
+    }
+    #crisisForm .col-sm-6.first_col{
+      padding-right: 7.5px;
+    }
+    html[lang="en-UA"] #crisisForm .col-sm-6.first_col{
+      padding-left: 7.5px;
     }
     .logo-ty {
       display: block;
@@ -4921,6 +4991,63 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     #coming-soon .logo-ty{
       margin: 0 auto 40px;
     }
+    .headerSection .borderBlock.bigPaddings .row .title,
+    .headerSection .borderBlock .row .title {
+      letter-spacing: 0;
+    }
+    .aboutUsPageWrapper .borderBlock {
+      margin-top: 20px;
+    }
+    #blog-page .borderBlock {
+      margin-top: 35px;
+    }
+    .aboutYellow .container .row {
+      flex-wrap: wrap-reverse;
+    }
+    /* html[lang=en-US] .aboutYellow .container .row {
+      flex-wrap: wrap;
+    } */
+    .aboutYellow .container .row .bold {
+      margin-right: 0;
+    }
+    html[lang=en-US] .transformed {
+      direction: rtl;
+    }
+    .coming__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .cs-circle__alt {
+      width: 100%;
+      top: 40px;
+      left: 0;
+      display: flex;
+    }
+    .cs-circle {
+      display: none;
+    }
+    .logo-cs {
+      display: block !important;
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto 50px;
+    }
+    .cs-circle img:first-child, .cs-circle__alt img:first-child {
+      width: 120px;
+      height: 220px;
+    }
+    .cs-circle img:nth-child(2), .cs-circle__alt img:nth-child(2) {
+      transform: scale(0.4)
+    }
+    .cs-text-mobile {
+      top: 200px;
+    }
+    #coming-soon .container {
+      padding: 0 45px;
+    }
   }
 
 
@@ -4939,7 +5066,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       font-size: 40px;
   }
   .headerSection .borderBlock .row .title{
-      font-size: 30px;
+      font-size: 40px;
   }
   .sideMenuWrapper .sideMenuContent{
     height: 100%;
@@ -5127,6 +5254,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .site > .logo.visible img{
     margin-left: -38px;
   }
+  #blog-title{
+    font-size: 65px;
+  }
 
   html[lang="en-US"] .dontworry .view-btn p {
     line-height: 40px;
@@ -5154,6 +5284,28 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .thank-you-text p:not(.btn-content) {
     width: 100%;
   }
+  .aboutYellow .titleContainer {
+    text-align: right;
+  }
+  html[lang=en-US] .aboutYellow .titleContainer {
+    text-align: left;
+  }
+  .logo-cs {
+    transform: scale(0.8);
+  }
+  .coming__wrap {
+    bottom: 15px;
+  }
+  .cs-circle__alt {
+    top: 0;
+  }
+  .cs-circle__alt img:first-child {
+    width: 80px;
+    height: auto;
+  }
+  .cs-circle__alt img:nth-child(2) {
+    transform: scale(0.2)
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -5179,6 +5331,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     position: relative;
     bottom: 100px;
   }
+  .titleContainer .title {
+    width: 100%;
+    margin-left: 0;
+  }
+
 }
 
 @media screen and (max-width: 325px) {
@@ -5195,11 +5352,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       font-size: 20px;
   }
   .headerSection .borderBlock .row .title{
-      font-size: 20px;
+      font-size: 30px;
+  }
+  html[lang="en-US"] .headerSection .borderBlock .row .title{
+    font-size: 25px;
   }
   .sn-contactus__title{
       font-size: 22px;
 
+  }
+  #supervisionYellow{
+    padding-right: 0;
   }
   .big-projects-list .item-wrap{
     height: 140px;
@@ -5294,6 +5457,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     height: 45px;
     margin-top: 20px;
   }
+  .archive .headerSection .borderBlock.hebrew .row .littleTitle{
+    font-size: 15px;
+  }
+  #blog-title{
+    font-size: 30px;
+  }
+  #blogCircle{
+    width: 13vh;
+    bottom: 0;
+    right: 0;
+  }
   html[lang="en-US"] .text404 {
     font-size: 23px;
 }
@@ -5380,23 +5554,20 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 
   .coming__wrap > img:nth-child(2) {
     width: 75%;
-  }
-
-  .cs-circle__alt {
-    top: 20px;
+    margin-top: 25px;
   }
 
   .cs-text-mobile {
     font-size: 26px;
-    top: 180px;
+    top: 135px;
   }
 
   .cs-circle__alt img:first-child {
-    width: 120px;
+    width: 89px;
   }
 
   .cs-circle__alt img:nth-child(2) {
-    transform: scale(0.3);
+    transform: scale(0.2);
   }
 
   /* Connect from */
@@ -5418,6 +5589,33 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 75px;
     height: 50px;
     margin-bottom: 30px;
+  }
+
+  .contactus__title, .contactus__text, .contactus__soc, .contactus__soc span {
+    font-size: 17px;
+  }
+  #aboutCircle{
+    bottom: 0;
+    right: 0;
+  }
+  #tittleContact{
+    font-size: 33px;
+  }
+  #contactCircle{
+    bottom: 3px;
+    right: -4px;
+  }
+  .cs-circle__alt {
+    top: -55px;
+  }
+  .coming__wrap img {
+    height: 80px;
+  }
+  .coming__wrap {
+    bottom: 35px;
+  }
+  .cs-text-mobile a, .cs-text-mobile a:active {
+    margin-top: 9px;
   }
 
 }}

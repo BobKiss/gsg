@@ -38,7 +38,7 @@ $text = ( get_locale() != 'en_US' ) ? 'מחלקת האנרגיה בקבוצת ג
 על פי החלטת הממשלה, משק החשמל בישראל צפוי להשתנות באופן ש 20% מצריכת החשמל בישראל יעבור לייצור באמצעות תחנות כוח פרטיות. החזון שלנו, להאיץ ולקדם הקמת תחנות כוח פרטיות אשר יספקו אנרגיה זולה לאזורי תעשיה, בתי מלון, בתי חולים וישובים.' : 'The energy department at Gavish Shaham Group has ample experience in the energy field, including in the planning and constructing gas stations across Israel.</br>  Now our activity is focused on developing projects for launching private power plants aiming to provide cheaper electricity than that of the Electricity Company and to promote competition in the electricity market in Israel.  Our team of professionals is working to promote projects in the energy field from identifying land (and preparing it for this type of project according to predefined criteria) through completion of the project and delivery to the client. According to the Government\'s decision, the Israeli electricity market is expected to change so that 20% of the consumption of electricity in Israel would be produced by private power plants. Our vision is to accelerate and advance the establishment of private power plants which would provide cheap energy to industrial zones, hotels, hospitals, and communities.  ';
 $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 ?>
-			<h4 class="sn-contactus__title <?= $title_reverse . ' ' . $align?>"><?= $heading ?></h4>
+			<h4 id="supervisionYellow" class="sn-contactus__title <?= $title_reverse . ' ' . $align?>"><?= $heading ?></h4>
 			<div class="row d-flex no-gutters <?= $row_direction ?>">
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__topborder <?= $topborder_class ?>"></div>
@@ -95,7 +95,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 	<!-- SectionSN-Contactus -->
 
   <section id="sn-contactus" class="sn-contactsus">
-		<div class="container wow slideInRight">
+		<div id="crisisForm" class="container wow slideInRight">
 <?php
 $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
 ?>

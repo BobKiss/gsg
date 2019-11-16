@@ -26,7 +26,7 @@ $img_path = get_template_directory_uri() . '/assets/images/';
               <img src="<?= $img_path . 'ty-circle.png' ?>" alt="">
               <img src="<?= $img_path . 'hand.png' ?>" alt="">
             </div>
-            <div class="d-flex flex-column align-items-center justify-content-end">
+            <div class="d-flex flex-column justify-content-end">
               <p>
                 אחד מנציגנו יצור עמך קשר בהקדם!
               </p>
