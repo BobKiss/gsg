@@ -5265,7 +5265,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     margin-left: -38px;
   }
   #blog-title{
-    font-size: 65px;
+    font-size: 40px;
   }
 
   html[lang="en-US"] .dontworry .view-btn p {
@@ -5365,6 +5365,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .contactus__title, .contactus__text, .contactus__soc, .contactus__soc span {
     font-size: 15px;
+  }
+  #blog-title{
+    font-size: 30px;
   }
 }
 
@@ -5493,9 +5496,6 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .archive .headerSection .borderBlock.hebrew .row .littleTitle{
     font-size: 15px;
-  }
-  #blog-title{
-    font-size: 30px;
   }
   #blogCircle{
     width: 13vh;
