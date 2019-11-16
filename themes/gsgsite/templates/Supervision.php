@@ -16,7 +16,7 @@ Template Name: Supervision
 		<div class="energy__borderBlock borderBlock container borderWhite big hebrew ">
 			<div class="row"></div>
 			<div class="row">
-				<div class="title" style="color:white !important;">
+				<div id="supervision-title" class="title" style="color:white !important;">
           <?php the_title() ?>
         </div>
 			</div>

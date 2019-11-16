@@ -21,7 +21,7 @@
         <!-- <div class="title" style="color:white !important;">
           ניהול משברים וחילוץ\nפרוייקטים תקועים
         </div> -->
-        <div class="title" style="color:white !important;">
+        <div id="crisis-title" class="title" style="color:white !important;">
           <?php the_title() ?>
         </div>
       </div>

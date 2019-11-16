@@ -3795,11 +3795,14 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   margin-left: 40% !important;
   margin-top: 10% !important;
 }
-/*Media*/
 #blog-title {
   font-size: 80px;
   line-height: 1;
 }
+.sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
+  text-align: right;
+}
+/*Media*/
 @media screen and (max-width: 1760px){
 
   .clientsBlock{
@@ -4128,15 +4131,16 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 210px;
     bottom: 50px;
   }
-  @keyframes bl-hor {
-  from {
-    width: 0;
-  }
-  to {
-    width: 500px;
-  }
-
 }
+  @keyframes bl-hor {
+    from {
+      width: 0;
+    }
+    to {
+      width: 500px;
+    }
+
+  }
 @media screen and (max-width: 1024px) {
   .thank-you-circle {
     right: -16%;
@@ -4518,10 +4522,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .sideMenuWrapper .sideMenuContent .menuBlock {
     padding: 25px;
   }
-  .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
-    /* margin-bottom: 15px; */
+  /* .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
+    margin-bottom: 15px;
     text-align: right;
-  }
+  } */
   .headerSection .borderBlock.animated .row:nth-child(3) {
     overflow: hidden;
   }
@@ -4871,7 +4875,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
     .item-meta__connect{
       width: calc(100% + 99px);
-      margin-top: 10vh;
+      margin-top: 80px;
     }
     .connect__projname{
       bottom: -10vh;
@@ -4886,6 +4890,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
     .connect-from-item .connect__projname {
       height: 80px;
+      bottom: -80px;
     }
     .primary-menu li{
       padding-bottom: 12px;
@@ -5157,7 +5162,8 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     font-size: 60px;
   }
   .headerSection .decorCircle, .contactUsPageHeader .header__round_text {
-    width: 15vh;
+    /* width: 15vh; */
+    width: 80px;
   }
    .housesys__menu{
     padding: 40px 60px;
@@ -5185,6 +5191,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .item-meta__connect{
     font-size: 22px;
     width: calc(100% + 80px);
+    margin-top: 79px;
   }
   .connect__projname{
     font-size: 22px;
@@ -5312,6 +5319,18 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   html[lang="en-US"] #crisisForm .col-sm-6.first_col {
     padding-left: 7.5px;
   }
+  .connect-from-item .connect__projname {
+    bottom: -79px;
+  }
+  html[lang="en-US"] .contactus-yellow .col-sm-6.first_col {
+    padding-left: 7.5px;
+  }
+}
+/* About us(first screen) : circle fix */
+@media screen and (max-width: 470px) {
+  #aboutCircle {
+    width: 80px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -5341,9 +5360,19 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 100%;
     margin-left: 0;
   }
-
+  #aboutus-title {
+    font-size: 30px;
+  }
+  .contactus__title, .contactus__text, .contactus__soc, .contactus__soc span {
+    font-size: 15px;
+  }
 }
 
+@media screen and (max-width: 390px) {
+  #supervision-title {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 325px) {
 
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
@@ -5363,9 +5392,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   html[lang="en-US"] .headerSection .borderBlock .row .title{
     font-size: 25px;
   }
+  html[lang="en-US"] #crisis-title {
+    font-size: 20px;
+  }
   .sn-contactus__title{
-      font-size: 22px;
-
+    font-size: 22px;
   }
   #supervisionYellow{
     padding-right: 0;
@@ -5507,7 +5538,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
 
   .connect-from-item .connect__projname {
-    bottom: -50px;
+    bottom: -49px;
     height: 50px;
   }
 
@@ -5580,7 +5611,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 
   .connect-from-item .item-meta__connect {
     padding: 0 30px;
-    margin-top: 50px;
+    margin-top: 49px;
   }
 
   .connect-from-item .connect__projname {
@@ -5594,9 +5625,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     margin-bottom: 30px;
   }
 
-  .contactus__title, .contactus__text, .contactus__soc, .contactus__soc span {
+  /* .contactus__title, .contactus__text, .contactus__soc, .contactus__soc span {
     font-size: 17px;
-  }
+  } */
   #aboutCircle{
     bottom: 0;
     right: 0;
@@ -5621,7 +5652,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     margin-top: 9px;
   }
 
-}}
+}
 
 /* Statline animation */
 .statline-animation-1 {

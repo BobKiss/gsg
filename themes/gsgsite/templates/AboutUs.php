@@ -11,7 +11,7 @@ Template Name: About Us
       <div class="borderBlock container">
         <div class="row"></div>
         <div class="row">
-          <div class="title">
+          <div id="aboutus-title" class="title">
             WHO WE ARE\nWHAT WE DO
           </div>
         </div>
