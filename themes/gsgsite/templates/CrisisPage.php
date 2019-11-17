@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="row"></div>
-      <div class="decorCircle crisis__decorCircle">
+      <div id="crisis-circle" class="decorCircle crisis__decorCircle">
       <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
 
     </div></div> <!--.borderBlock-->

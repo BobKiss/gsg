@@ -75,6 +75,10 @@ a:focus {
   padding-bottom: 10px;
   font-weight: 900;
   letter-spacing: 2px;
+  text-align: right;
+}
+html[lang="en-US"] .titleContainer .title {
+  text-align: left;
 }
 .titleContainer .title::after {
   max-width: 550px;
@@ -3841,8 +3845,8 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .header__round_text {
       bottom: -90px;
       max-width: 24vw;
+    }
 }
-
 @media screen and (max-width: 1520px){
 
     .clientsBlock{
@@ -5056,6 +5060,13 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     #coming-soon .container {
       padding: 0 45px;
     }
+    #supervision-circle {
+      width: 100%;
+      max-width: 130px;
+    }
+    #crisis-circle {
+      width: 135px;
+    }
   }
 
 
@@ -5325,6 +5336,13 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   html[lang="en-US"] .contactus-yellow .col-sm-6.first_col {
     padding-left: 7.5px;
   }
+  #supervision-circle {
+    max-width: 110px;
+  }
+  #crisis-circle {
+    width: 115px;
+    max-width: 100%;
+  }
 }
 /* About us(first screen) : circle fix */
 @media screen and (max-width: 470px) {
@@ -5359,6 +5377,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .titleContainer .title {
     width: 100%;
     margin-left: 0;
+    text-align: right;
+  }
+  html[lang="en-US"] .titleContainer .title {
+    text-align: left;
   }
   #aboutus-title {
     font-size: 30px;
@@ -5651,7 +5673,25 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .cs-text-mobile a, .cs-text-mobile a:active {
     margin-top: 9px;
   }
+  #crisis-circle {
+    width: 95px;
+  }
 
+}
+
+.site > .logo.visible img {
+  transform: scale(0.85) !important;
+  transform: translateX(5px);
+}
+
+.barkan-slider .slick-list,
+.barkan-slider .slick-list .slick-track,
+.barkan-slider .slick-list .slick-track .slick-slide {
+  display: flex !important;
+}
+
+.percent-number {
+  max-width: 28px;
 }
 
 /* Statline animation */
@@ -5709,17 +5749,3 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
 }
 /* Statline animation end */
-.site > .logo.visible img {
-  transform: scale(0.85) !important;
-  transform: translateX(5px);
-}
-
-.barkan-slider .slick-list,
-.barkan-slider .slick-list .slick-track,
-.barkan-slider .slick-list .slick-track .slick-slide {
-  display: flex !important;
-}
-
-.percent-number {
-  max-width: 28px;
-}
