@@ -1095,6 +1095,9 @@ html[lang=en-US] .aboutUsPageWrapper .aboutYellow > .container{
 html[lang="en-US"] .aboutUsPageWrapper .aboutYellow p {
   direction: ltr;
 }
+#policiesText{
+  margin-top:150px;
+}
 
 .aboutUsPageWrapper .aboutMap {
   background-color: #fefefe;
@@ -5275,6 +5278,18 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .site > .logo.visible img{
     margin-left: -38px;
   }
+  .policiesol{
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .document h2{
+    width: 100%;
+  }
+  #policiesText{
+    padding-left: 0;
+    padding-right: 0;
+  }
   #blog-title{
     font-size: 40px;
   }
@@ -5518,6 +5533,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .archive .headerSection .borderBlock.hebrew .row .littleTitle{
     font-size: 15px;
+  }
+  .document h2{
+    width: 100%;
   }
   #blogCircle{
     width: 13vh;
