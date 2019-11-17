@@ -3942,10 +3942,13 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       margin-left: -20px;
     }
 
-
-
-
-
+    #crisis-circle {
+      width: 100%;
+      max-width: 200px;
+    }
+    #blog-page .borderBlock .row:nth-child(2) {
+      margin: 11vh 0;
+    }
 }
 @media screen and (max-width: 1380px){
 
@@ -4081,6 +4084,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       right: -2%;
       transform: scale(0.6);
     }
+    #crisis-circle {
+      bottom: 10px;
+      max-width: 140px;
+    }
 }
 /* 1120px */
 @media screen and (max-width: 1120px){
@@ -4135,6 +4142,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 210px;
     bottom: 50px;
   }
+  .titleContainer {
+    padding: 0 60px 0;
+  }
 }
   @keyframes bl-hor {
     from {
@@ -4154,11 +4164,14 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .titleContainer .title{
     margin-bottom: 60px;
-    margin-left: 71px;
+    /* margin-left: 71px; */
   }
   .contactUsPageHeader.borderblockWrapper .borderblock:nth-child(2){
     padding-bottom: 3vh;
     padding-top: 4vh;
+  }
+  .contactus__text, .contactus__soc span {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 992px){
@@ -4611,7 +4624,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
     .sn-contactus__title{
       width: 100%;
-      padding-right: 30px;
+      /* padding-right: 30px; */
     }
     .sn-contactus__topborder{
       margin-left: 0;
@@ -4912,8 +4925,14 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
 
     .aboutUsPageWrapper .activityAreas .list {
-      flex-direction: column !important;
+      flex-direction: column-reverse !important;
     }
+    /* .aboutUsPageWrapper .activityAreas .list {
+      flex-direction: column !important;
+    } */
+    /* html[lang="en-US"] .aboutUsPageWrapper .activityAreas .list {
+      flex-direction: column-reverse !important;
+    } */
     .aboutUsPageWrapper .activityAreas .list .list-column-1,
     .aboutUsPageWrapper .activityAreas .list .list-column-2 {
       width: 100%;
@@ -5066,6 +5085,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
     #crisis-circle {
       width: 135px;
+    }
+    #map-circle {
+      width: 100%;
+      max-width: 140px;
     }
   }
 
@@ -5343,6 +5366,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 115px;
     max-width: 100%;
   }
+  #map-circle {
+    width: 100%;
+    max-width: 120px;
+  }
 }
 /* About us(first screen) : circle fix */
 @media screen and (max-width: 470px) {
@@ -5396,6 +5423,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 @media screen and (max-width: 390px) {
   #supervision-title {
     font-size: 30px;
+  }
+  #map-circle {
+    width: 100%;
+    max-width: 90px;
+    top: 70%;
   }
 }
 @media screen and (max-width: 325px) {

@@ -98,7 +98,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
             <div class="gsg-energy__intro_left"></div>
           </div>
           <div class="gsg-energy__intro_bottom"></div>
-          <img class="additionalImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutUsMapCircle.png" alt="">
+          <img id="map-circle" class="additionalImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutUsMapCircle.png" alt="">
         </div>
         <!-- .titleSection -->
 
