@@ -165,7 +165,8 @@ function gsgsite_scripts() {
 		'lang' => $lang,
 		'current_page' => current_page(),
 		'current_page_slug' => $post -> post_name,
-		'is_404' => is_404()
+		'is_404' => is_404(),
+		'ty_page' => home_url('/thank-you-page/')
 	] );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

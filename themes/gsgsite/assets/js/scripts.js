@@ -146,6 +146,7 @@ jQuery(document).ready(function ($) {
   logoAlign();
   logoDisappear();
   menuMobile();
+  projNavText();
 
   function logoAlign() {
     if( ( wp_data.is_404) == 1 && window.innerWidth <= 992) {
@@ -153,8 +154,8 @@ jQuery(document).ready(function ($) {
     }
   }
   function logoDisappear () {
-    if ( (wp_data.current_page_slug == 'coming-soon' || wp_data.current_page_slug == 'thank-you-page') && window.innerWidth <= 768) {
-      console.log( 'fdfsd' );
+    if ( (wp_data.current_page_slug == 'coming-soon' || wp_data.current_page_slug == 'thank-you-page') && window.innerWidth <= 980) {
+      // console.log( 'fdfsd' );
       $('.logo-404').addClass('invisible-mobile');
     }
   }
@@ -163,9 +164,33 @@ jQuery(document).ready(function ($) {
     let slug = wp_data.current_page_slug;
     let error = wp_data.is_404;
 
-    if ( (slug == 'coming-soon' || slug == 'thank-you-page' || error == 1) && (window.innerHeight <= 768) ) {
+    if ( (slug == 'coming-soon' || slug == 'thank-you-page' || error == 1) && (window.innerWidth <= 980) ) {
+      console.log('fdsh');
       $('.sideMenu').addClass('invisible-mobile');
       $('.site-footer').addClass('footer-mobile');
+    }
+
+  }
+  function projNavText () {
+
+    let width = window.innerWidth;
+    let lang = wp_data.lang;
+    let first = $('.contactsus-after-line div:first-child a');
+    let middle = $('.contactsus-after-line .middleText a');
+    let last = $('.contactsus-after-line div:last-child a');
+
+    if ( width <= 480 && lang == 'en' ) {
+
+      first.html('< Previous');
+      middle.html('Back to projects');
+      last.html('Next >');
+
+    } else if ( width <= 480 && lang != 'en' ) {
+
+      last.html('הבא >');
+      middle.html('חזרה פרוייקטים');
+      first.html('< הקודם');
+
     }
 
   }

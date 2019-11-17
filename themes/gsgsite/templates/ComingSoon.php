@@ -12,7 +12,7 @@ Template Name: Coming Soon
         <div class="row no-gutters">
             <div class="col-12 d-flex cs-wrapper">
 
-                <a href="<?php echo get_bloginfo('url') ?>" class="logo logo-ty">
+                <a href="<?php echo get_bloginfo('url') ?>" class="logo logo-cs">
                   <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
                 </a>
 
@@ -23,10 +23,10 @@ Template Name: Coming Soon
                     <div class="cs-circle">
                       <img src="<?php bloginfo('template_url'); ?>/assets/images/progress-circle.png" alt="decorAbout">
                       <img src="<?= get_template_directory_uri() . '/assets/images/hand.png' ?>" alt="">
-                      <div class="cs-text-mobile">
+                      <!-- <div class="cs-text-mobile">
                         <span>עמוד חדש יעלה בקרוב!</span>
                         <a class="cs-btn" href="<?= home_url() ?>">לחצו כאן לחזרה לאתר</a>
-                      </div>
+                      </div> -->
                     </div>
                 </div>
 

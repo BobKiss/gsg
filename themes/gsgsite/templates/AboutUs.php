@@ -11,12 +11,12 @@ Template Name: About Us
       <div class="borderBlock container">
         <div class="row"></div>
         <div class="row">
-          <div class="title">
+          <div id="aboutus-title" class="title">
             WHO WE ARE\nWHAT WE DO
           </div>
         </div>
         <div class="row"></div>
-        <img class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
+        <img id="aboutCircle" class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
       </div> <!--.borderBlock-->
     </section> <!-- .headerSection-->
 

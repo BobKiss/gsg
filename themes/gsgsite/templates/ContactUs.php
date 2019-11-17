@@ -13,12 +13,12 @@ Template Name: Contact Us
 				<div class="col-xl-12 col-lg-11 col-xs-12 borderblockWrapper contactUsPageHeader">
 					<div class="borderblock"></div>
 					<div class="borderblock">
-						<h2 class="header__title">
+						<h2 id="tittleContact" class="header__title">
 					    <?php echo the_title(); ?>
 						</h2>
 					</div>
 					<div class="borderblock">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/decorContact.png" alt="" class="header__round_text">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/decorContact.png" alt="" id="contactCircle" class="header__round_text">
 						<div class="bottomLine"></div>
 					</div>
 				</div>

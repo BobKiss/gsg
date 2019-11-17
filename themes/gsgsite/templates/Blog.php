@@ -5,7 +5,7 @@ Template Name: Blog
 ?>
 <?php get_header(); ?>
 <div class="archive">
-  <section class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
+  <section id="blog-page" class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
     <!-- <a href="<?php echo get_bloginfo('url') ?>" class="logo">
       <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>"> -->
     </a>
@@ -17,13 +17,13 @@ Template Name: Blog
           $text = ( get_locale() != 'en_US' ) ? 'תמ"א 38 והתחדשות עירונית' : '38 and urban renewal ';
           $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
         ?>
-        <div class="title" style="color:white !important;"><?= $heading ?></div>
+        <div id="blog-title" class="title" style="color:white !important;"><?= $heading ?></div>
         <div class="littleTitle" style="color:white !important;">
           <?= $text ?>
         </div>
       </div>
       <div class="row"></div>
-      <div class="decorCircle">
+      <div id="blogCircle" class="decorCircle">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog.png" alt="decorAbout">
       </div>
     </div> <!--.borderBlock-->

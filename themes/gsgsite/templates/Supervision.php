@@ -16,12 +16,12 @@ Template Name: Supervision
 		<div class="energy__borderBlock borderBlock container borderWhite big hebrew ">
 			<div class="row"></div>
 			<div class="row">
-				<div class="title" style="color:white !important;">
+				<div id="supervision-title" class="title" style="color:white !important;">
           <?php the_title() ?>
         </div>
 			</div>
 			<div class="row"></div>
-      <div class="decorCircle">
+      <div id="supervision-circle" class="decorCircle">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorCrysis.png" alt="decorAbout">
       </div>
 		</div> <!--.borderBlock-->
@@ -50,7 +50,7 @@ maintaining the planned level of profit. Our management and supervision departme
 
 	<section class="sn-intro">
 		<div class="container wow slideInLeft">
-			<h4 class="sn-contactus__title <?= $align . ' ' . $title_reverse ?>"><?= $heading ?></h4>
+			<h4 id="supervisionYellow" class="sn-contactus__title <?= $align . ' ' . $title_reverse ?>"><?= $heading ?></h4>
 			<div class="row d-flex crisisreverse">
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__topborder <?= $topborder_class ?>"></div>
@@ -66,7 +66,7 @@ maintaining the planned level of profit. Our management and supervision departme
 
 	<!-- SectionSN-Contactus -->
 	<section id="sn-contactus" class="sn-contactsus">
-		<div class="container wow slideInRight  <?= $row_direction ?>">
+		<div id="crisisForm" class="container wow slideInRight  <?= $row_direction ?>">
 			<?php
 				$heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
 			?>

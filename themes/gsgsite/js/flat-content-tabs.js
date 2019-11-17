@@ -126,9 +126,12 @@ jQuery(document).ready(function($) {
         //console.log(response);
         if(response.success){
           //open success popup
-          $('.thank-you-popup-trigger').magnificPopup('open');
+          // $('.thank-you-popup-trigger').magnificPopup('open');
+
           //block selected flat
           $('.flat-item[data-variation_id="'+$('input.variation_id').val()+'"]').addClass('disabled');
+
+          window.location.href = wp_data.ty_page;
         }
         else{
           alert(response.message);

@@ -21,12 +21,12 @@
         <!-- <div class="title" style="color:white !important;">
           ניהול משברים וחילוץ\nפרוייקטים תקועים
         </div> -->
-        <div class="title" style="color:white !important;">
+        <div id="crisis-title" class="title" style="color:white !important;">
           <?php the_title() ?>
         </div>
       </div>
       <div class="row"></div>
-      <div class="decorCircle crisis__decorCircle">
+      <div id="crisis-circle" class="decorCircle crisis__decorCircle">
       <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
 
     </div></div> <!--.borderBlock-->
@@ -65,7 +65,7 @@
     $heading = (get_locale() != 'en_US') ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group - GSG - Real Estate Development';
   ?>
   <section id="sn-contactus" class="sn-contactsus sn-contactsus-crisis">
-    <div class="container wow slideInRight">
+    <div id="crisisForm" class="container wow slideInRight">
       <h4 class="contactus__title <?= $align ?>"><?= $heading ?></h4>
       <?php
 				$text_area = ( get_locale() != 'en_US' ) ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
