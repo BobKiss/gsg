@@ -9,7 +9,7 @@ Template Name: GsgEnergy
 
 	<!-- SectionContacts -->
 
-	<section class="headerSection" style="background: url(http://localhost/gsg/wp-content/themes/gsgsite/assets/images/gsgenergy.png) center center / cover; background-position: 0 0%;background-size: 100% 95%;background-repeat: no-repeat;">
+	<section class="headerSection" style="background: url(<?php get_template_directory_uri() . '/assets/images/gsgenergy.png' ?>) center center / cover; background-position: 0 0%;background-size: 100% 95%;background-repeat: no-repeat;">
 
 		<div class="energy__borderBlock container bigPaddings borderBlock">
 			<div class="row"></div>
