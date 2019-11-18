@@ -4291,7 +4291,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 100%;
   }
 
-  .thank-you-text div:nth-child(2) {
+  .thank-you-text div:nth-child(2){
     flex-direction: column;
     align-items: center;
   }
