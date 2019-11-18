@@ -5061,14 +5061,21 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       top: 0;
       left: 0;
       margin-left: 0;
-      margin-bottom: 50px;
+      /* margin-bottom: 50px; */
+
+      width: 75px;
+      height: 50px;
+      margin-bottom: 30px;
     }
     #thank-you .col.d-flex {
       flex-direction: column;
       align-items: center;
     }
     #thank-you {
-      padding-top: 80px !important;
+      padding: 50px 0 0 !important;
+      align-items: flex-start;
+      height: 100vh;
+      overflow-y: hidden;
     }
     #coming-soon .logo-ty{
       margin: 0 auto 40px;
@@ -5158,6 +5165,37 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     #map-circle {
       width: 100%;
       max-width: 140px;
+    }
+    .img-thank {
+      height: 64px;
+      margin-bottom: 20px;
+      /* width: 264px; */
+      /* transform: translateX(-11px); */
+    }
+    .img-you {
+      width: 160px;
+      height: 60px;
+    }
+    .thank-you-circle__alt {
+      transform: scale(0.3);
+      bottom: 85px;
+    }
+    .thank-you-circle__alt + div {
+      position: relative;
+      bottom: 180px;
+    }
+    .thank-you-text p:not(.btn-content) {
+      font-size: 20px;
+      margin-bottom: 15px;
+      width: 230px;
+    }
+    .ty-btn {
+      font-size: 24px;
+    }
+    #thank-you > .container {
+      position: relative;
+      transform: scale(1.5);
+      top: 165px;
     }
   }
 
@@ -5407,12 +5445,12 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
 
 
-  .img-you {
+  /* .img-you {
     height: 100px;
-  }
-  .thank-you-text p:not(.btn-content) {
+  } */
+  /* .thank-you-text p:not(.btn-content) {
     width: 100%;
-  }
+  } */
   .aboutYellow .titleContainer {
     text-align: right;
   }
@@ -5461,27 +5499,27 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 }
 
 @media screen and (max-width: 425px) {
-  .thank-you-circle, .thank-you-circle__alt {
+  /* .thank-you-circle, .thank-you-circle__alt {
     transform: scale(0.5);
-  }
+  } */
 
-  .img-thank {
+  /* .img-thank {
     background-position-y: top;
     height: 80px;
     margin-bottom: 20px;
-  }
+  } */
 
-  .img-you {
+  /* .img-you {
     height: 75px;
-  }
+  } */
 
-  .thank-you-circle__alt {
+  /* .thank-you-circle__alt {
     bottom: 50px;
-  }
+  } */
 
   .thank-you-circle__alt + div {
     position: relative;
-    bottom: 100px;
+    /* bottom: 100px; */
   }
   .titleContainer .title {
     width: 100%;
@@ -5511,9 +5549,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     transform: scale(1.2);
     top: 0;
   }
+  #thank-you > .container {
+    transform: scale(1.2);
+    top: 80px;
+  }
 }
 
 @media screen and (max-width: 390px) {
+  #thank-you > .container {
+    transform: scale(1);
+    top: 0;
+  }
   #supervision-title {
     font-size: 30px;
   }
