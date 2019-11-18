@@ -3838,11 +3838,21 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     }
   }
 
+@media screen and (max-width: 1680px) {
+  .logo-header {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 1620px){
 
     .logo{
         top: 5%;
         left: 1%;
+    }
+
+    .logo-header {
+      margin-left: 36px;
     }
 
     .sideMenu{

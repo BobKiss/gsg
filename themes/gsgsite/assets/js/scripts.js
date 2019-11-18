@@ -250,7 +250,14 @@ jQuery(document).ready(function ($) {
           $(selectedTitle).append(`<span class="br"></span>`);
         }
         if (el == ' ') {
-          $(selectedTitle).append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >&nbsp;</span>`);
+
+          if ( wp_data.lang == 'en' && window.innerWidth <= 1024 && wp_data.current_page_slug == 'crisis-page' ) {
+            console.log( 'opa' );
+            $(selectedTitle).append(`</br>`);
+          } else {
+            $(selectedTitle).append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >&nbsp;</span>`);
+          }
+
         } else {
           $(selectedTitle).append(`<span style="transition-delay: ${(i * 0.15).toFixed(2)}s" >${el}</span>`);
         }
