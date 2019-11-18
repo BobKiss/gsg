@@ -2067,6 +2067,10 @@ html[lang="en-US"] .sn-intro {
 .sn-contactus__title-reverse {
   margin-right: auto;
 }
+/* html[lang="en-US"] .sn-contactus__title-reverse {
+  margin-right: 0;
+  margin-left: auto;
+} */
  .sn-contactsus textarea, .sn-contactsus input{
     background: #f4f4f4;
 }

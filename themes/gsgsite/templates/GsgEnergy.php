@@ -39,7 +39,7 @@ $text = ( get_locale() != 'en_US' ) ? 'מחלקת האנרגיה בקבוצת ג
 $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 ?>
 			<h4 id="supervisionYellow" class="sn-contactus__title <?= $title_reverse . ' ' . $align?>"><?= $heading ?></h4>
-			<div class="row d-flex no-gutters <?= $row_direction ?>">
+			<div class="row d-flex no-gutters">
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__topborder <?= $topborder_class ?>"></div>
 				</div>
