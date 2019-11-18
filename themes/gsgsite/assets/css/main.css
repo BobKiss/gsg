@@ -5479,12 +5479,15 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     max-width: 90px;
     top: 70%;
   }
+<<<<<<< HEAD
   #coming-soon {
     padding-top: 60px !important;
   }
   #coming-soon .container {
     transform: scale(1);
   }
+=======
+>>>>>>> parent of 4bddb9cf... 404 crisis contact
 }
 @media screen and (max-width: 325px) {
 
