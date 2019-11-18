@@ -2227,10 +2227,10 @@ html[lang=en-US] .gsg-energy__title{
     transition: transform .4s;
 
 }
-.sectionMap{
+/* .sectionMap{
   overflow: hidden;
   max-height: 600px;
-}
+} */
 
 /*SectionContactUs*/
 
@@ -4886,7 +4886,18 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       padding: 60px 0;
     }
     .coming__wrap img{
-      height: 100px;
+      /* height: auto; */
+      height: 80px;
+      width: 100%;
+
+      max-width: 235px;
+    }
+    .coming__wrap img:nth-child(2) {
+      /* max-width: 80%; */
+      width: 75%;
+      margin-top: 20px !important;
+
+      max-width: 176px;
     }
     .aboutUsPageWrapper .aboutMap .additionalImage{
       width: 19vh;
@@ -5057,12 +5068,14 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       flex-direction: column;
       align-items: center;
       width: 100%;
+      bottom: 35px;
     }
     .cs-circle__alt {
       width: 100%;
       top: 40px;
       left: 0;
       display: flex;
+      top: -55px;
     }
     .cs-circle {
       display: none;
@@ -5073,19 +5086,35 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
       top: 0;
       left: 0;
       margin: 0 auto 50px;
+      transform: scale(0.8);
     }
     .cs-circle img:first-child, .cs-circle__alt img:first-child {
-      width: 120px;
-      height: 220px;
+      /* width: 120px;
+      height: 220px; */
+      width: 89px;
+      height: auto;
     }
     .cs-circle img:nth-child(2), .cs-circle__alt img:nth-child(2) {
-      transform: scale(0.4)
+      /* transform: scale(0.4) */
+      transform: scale(0.2)
     }
     .cs-text-mobile {
-      top: 200px;
+      /* top: 200px; */
+      top: 135px;
+      font-size: 26px;
+    }
+    .cs-text-mobile a, .cs-text-mobile a:active {
+      margin-top: 9px;
+    }
+    #coming-soon {
+      align-items: flex-start;
+      padding-top: 60px !important;
     }
     #coming-soon .container {
       padding: 0 45px;
+      transform: scale(1.5);
+      position: relative;
+      top: 100px;
     }
     #supervision-circle {
       width: 100%;
@@ -5357,12 +5386,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .logo-cs {
     transform: scale(0.8);
   }
-  .coming__wrap {
-    bottom: 15px;
-  }
-  .cs-circle__alt {
+  /* .cs-circle__alt {
     top: 0;
-  }
+  } */
   .cs-circle__alt img:first-child {
     width: 80px;
     height: auto;
@@ -5438,6 +5464,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   #blog-title{
     font-size: 30px;
   }
+  #coming-soon .container {
+    transform: scale(1.2);
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -5448,6 +5478,12 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 100%;
     max-width: 90px;
     top: 70%;
+  }
+  #coming-soon {
+    padding-top: 60px !important;
+  }
+  #coming-soon .container {
+    transform: scale(1);
   }
 }
 @media screen and (max-width: 325px) {
@@ -5665,7 +5701,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 
   .coming__wrap > img:nth-child(2) {
     width: 75%;
-    margin-top: 25px;
+    /* margin-top: 25px; */
   }
 
   .cs-text-mobile {
@@ -5732,6 +5768,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     width: 95px;
   }
 
+  #coming-soon {
+    padding-top: 25px !important;
+  }
 }
 
 .site > .logo.visible img {
