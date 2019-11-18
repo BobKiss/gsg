@@ -311,7 +311,18 @@ header{
   visibility: visible;
 }
 
+/* mailBLock */
+/* .mailBlock .caldera-grid .help-block{
+  left: 15px;
+} */
+html[lang="en-US"] .help-block{
+  direction: ltr;
+  right: 10px;
+}
 
+html[lang="en-US"] .mailBlock .caldera-grid .help-block{
+  right: 15px;
+}
 /* FIRST BLOCK ANIMATIONS */
 @keyframes borderTopLeft {
   from {
@@ -3781,6 +3792,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   width: 80px;
   height: 150px;
 }
+#crisis-circle{
+  bottom: -32%;
+  right: -9%;
+  width: 267px;
+}
 
 .cs-text-mobile {
   display: none;
@@ -3893,7 +3909,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .thank-you-circle {
       right: -5%;
     }
-
+    #crisis-circle{
+      right: -30px;
+      bottom: -20px;
+    }
     .thank-you-text p:not(.btn-content) {
       width: 245px;
       margin-bottom: 35px;
@@ -4153,16 +4172,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .titleContainer {
     padding: 0 60px 0;
   }
-}
   @keyframes bl-hor {
     from {
       width: 0;
     }
     to {
-      width: 500px;
+      /* width: 500px; */
+      width: 520px;
     }
 
   }
+}
 @media screen and (max-width: 1024px) {
   .thank-you-circle {
     right: -16%;
@@ -4299,7 +4319,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .connect-from-item .connect__projname {
     height: 80px;
   }
-
+  #logo404img img{
+    margin-top: -45px;
+  }
   .img-you {
     margin-right: 0;
     width: 63%;
@@ -4404,7 +4426,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .black404{
     height: 460px;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 170px;
   }
   .block404{
     flex-direction: column;
@@ -5310,6 +5332,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   .black404 {
     height: 400px;
     flex-direction: column;
+    margin-top: 130px;
   }
   .logo-align {
     width: 158px !important;
@@ -5334,6 +5357,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .site > .logo.visible img{
     margin-left: -38px;
+  }
+  #blog-page .borderBlock .row:nth-child(2){
+    margin: 13vh 0;
   }
   .policiesol{
     margin-right: 0;
@@ -5452,6 +5478,13 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     margin-left: 0;
     text-align: right;
   }
+  .block404{
+    right: 1px;
+  }
+  .text404 {
+    right: 8px;
+    font-size: 35px;
+  }
   html[lang="en-US"] .titleContainer .title {
     text-align: left;
   }
@@ -5484,6 +5517,32 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   #coming-soon .container {
     transform: scale(1);
+  }
+  .black404 {
+    height: 370px;
+    flex-direction: column;
+    margin-top: 110px;
+  }
+  .text404 {
+    top: 75px;
+    right: 4px;
+    font-size: 35px;
+  }
+  .dontworry .view-btn {
+    margin-top: 15px;
+  }
+  .header404 {
+    height: 960px;
+  }
+  .vectorL{
+    top: 45px;
+  }
+  .block404{
+    right: 2px;
+    width: 188px;
+  }
+  .dontworry .view-btn p{
+    font-size: 28px;
   }
 }
 @media screen and (max-width: 325px) {
@@ -5560,7 +5619,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     height: 215px;
     flex-direction: column;
     line-height: 30px;
-    margin-top: 155px;
+    margin-top: 110px;
   }
   .container404 {
     width: 100%;
@@ -5606,6 +5665,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
   .archive .headerSection .borderBlock.hebrew .row .littleTitle{
     font-size: 15px;
+  }
+  #logo404img img{
+    transform: scale(0.65) !important;
+    margin-left: -15px;
   }
   .document h2{
     width: 100%;
