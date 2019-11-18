@@ -147,6 +147,7 @@ jQuery(document).ready(function ($) {
   logoDisappear();
   menuMobile();
   projNavText();
+  logoAddId();
 
   function logoAlign() {
     if( ( wp_data.is_404) == 1 && window.innerWidth <= 992) {
@@ -191,6 +192,14 @@ jQuery(document).ready(function ($) {
       middle.html('חזרה פרוייקטים');
       first.html('< הקודם');
 
+    }
+
+  }
+  function logoAddId () {
+
+    let id = "logo404img";
+    if ( wp_data.is_404 == 1 ) {
+      $('.site > .logo').attr("id", id);
     }
 
   }
