@@ -49,7 +49,7 @@
 
 <body <?php body_class(); ?> class="owerflow-hidden">
 	<div id="page" class="site">
-		<a href="<?php echo get_bloginfo('url') ?>" id="logo404img" class="logo logo-404">
+		<a href="<?php echo get_bloginfo('url') ?>" class="logo logo-404">
 			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
 		</a>
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gsgsite' ); ?></a>
