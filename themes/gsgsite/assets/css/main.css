@@ -2708,6 +2708,7 @@ html[lang=en-US] .housesys__menu_title {
     text-align: right;
     position: relative;
     box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.65);
+    overflow-y: scroll;
 
 }
 .housesys__menu_wrap{
