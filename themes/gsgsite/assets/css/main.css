@@ -500,6 +500,12 @@ html[lang=en-US] .text404{
   right: -125px;
   margin-top: 38px;
 }
+  .caldera-grid .alert-success{
+    text-align: right;
+  }
+  html[lang=en-US] .caldera-grid .alert-success{
+    text-align: left;
+  }
 
 .dontworry .view-btn{
   background-color:
@@ -2062,12 +2068,15 @@ html[lang="en-US"] .sn-intro {
 .sn-contactsus, .gsgenergy {
     background: #fffefe;
     padding-top: 90px;
-    padding-bottom: 90px;
+    /* padding-bottom: 90px; */
     position: relative;
 }
-.sn-contactsus {
-  padding-bottom: 180px;
+.slideInRight{
+  padding-bottom: 90px;
 }
+/* .sn-contactsus {
+  padding-bottom: 180px;
+} */
 .sn-contactsus-crisis .contactus__wrap {
   border-bottom: none;
 }
@@ -2482,12 +2491,12 @@ html[lang="en-US"] .contactsus-after-line > div:first-child {
     width: 245px;
     height: 95px;
     background: #fffc00;
-    color: #fffc00;
+    color: #000;
     font-size: 25px;
     letter-spacing: 2px;
     text-align: center;
     line-height: 95px;
-    text-shadow: 2px 2px #000;
+    /* text-shadow: 2px 2px #000; */
     transform: rotate(-90deg);
 }
 
@@ -4541,6 +4550,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   #supervisionYellow{
     padding-right: 0;
   }
+  .slideInRight{
+    padding-bottom: 0;
+  }
 
   .blog__borderblock .decorCircle{
     width: 40%;
@@ -4587,7 +4599,10 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     padding: 25px;
   }
   .contactsus{
-    padding-top: 90px;
+    padding-top: 40px;
+  }
+  .contactus__title{
+    margin-bottom: 25px;
   }
   /* .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
     margin-bottom: 15px;
@@ -4870,6 +4885,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
     .footer__links .footer__links_item:nth-child(2),
     .footer__links .footer__links_item:nth-child(3){
       margin-right: auto;
+      direction: rtl;
     }
     .footer__menu_sep{
       display: none;
