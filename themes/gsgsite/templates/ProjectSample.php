@@ -41,13 +41,9 @@ Template Name: Sample Project Page
 					</h5>
 					<p class="barkan-about__text <?= $align ?>"><?= $text ?></p>
 <?php
-$heading = ( get_locale() != 'en_US' ) ? 'אורנית BU  | פירוט הפרוייקט' : 'Barkan Mul Hayam | Project Details';
-$text = ( get_locale() != 'en_US' ) ? '110 דופלקסים למכירה ביישוב אורנית | גודל דופלקס החל מ180 מ”ר ועד 270 מ”ר | מחיר הדופלקס כולל מפרט איכותי ועשיר | אפשרות לתוספת חבילות פרימיום וקונספט לשדרוג חווית המגורים | אפשרות לתוספת בריכה | אפשרות לתופסת קומת מרתף.
-<br>
-<br>
-תכנון | גביש שחם
-<br>
-ניהול הפרוייקט | גביש שחם' : '110 duplex units for sale at Oranit | Duplex sizes range from 180 to 270 square meters | Duplex prices include a high-quality, rich list of fixtures | Options for adding premium and concept packages to upgrade the living experience | Optional swimming pool | Optional basement level.  Planning | Gavish Shaham  Project Management | Gavish Shaham';
+$heading = ( get_locale() != 'en_US' ) ? 'אורנית BU | על הפרוייקט' : 'Barkan Mul Hayam | Project Details';
+$text = ( get_locale() != 'en_US' ) ? 'מתחם מגורים יוקרתי, ראשון מסוגו, מבית קבוצת גביש שחם.</br>
+פרוייקט בוטיק ייחודי המציע בתי קונספט ופרימיום מודרניים</br> ומעוצבים עם מפרט איכותי ועשיר במיוחד. לבית החדש שלכם תוכלו</br> לבחור "חליפה" מבין המפרטים הקונספטואליים המדהימים שתפרנו</br> במיוחד בשבילכם והמותאמים לאלו שאוהבים את החיים ולא מוותרים</br> על אף רגע.' : '110 duplex units for sale at Oranit | Duplex sizes range from 180 to 270 square meters | Duplex prices include a high-quality, rich list of fixtures | Options for adding premium and concept packages to upgrade the living experience | Optional swimming pool | Optional basement level.  Planning | Gavish Shaham  Project Management | Gavish Shaham';
 $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 ?>
 					<h5 class="barkan-about__title <?= $align ?>">
