@@ -29,6 +29,11 @@ a:focus {
   counter-increment: li;
   content: counters(li,".") ". ";
 }
+/* svgproject */
+.flat-item .is-closed svg{
+  opacity: 0.6;
+}
+
 /* Policies */
 .policiesol{
   direction: rtl;
