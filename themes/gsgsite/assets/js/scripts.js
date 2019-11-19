@@ -454,6 +454,22 @@ jQuery(document).ready(function ($) {
   }
   // borderObserver.observe( $('.titleSection')[0] );
 
+  // small projects
+  $('.small-list-items-wrapper .list-item').on('click', function () {
+
+    let href = $(this).find('a').attr('href');
+    window.location.href = href;
+    // console.log( href );
+
+  })
+
+  // long term projects
+  $('.long-term .list-item').on('click', function () {
+
+    let href = $(this).find('a').attr('href');
+    window.location.href = href;
+
+  })
 
 });
 

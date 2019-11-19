@@ -48,7 +48,7 @@ function output_product_architecture($field){
 
 function output_product_images($field){
   ?>
-  <div class="imgs-slider">
+  <div class="imgs-slider tab__third">
     <?php foreach($field as $image) : ?>
       <div class="slide-item">
         <img src="<?=$image['url']?>" alt="">

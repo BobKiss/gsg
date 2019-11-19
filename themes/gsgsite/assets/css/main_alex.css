@@ -85,6 +85,10 @@
   margin-left: auto;
 }
 
+.housesys__tabs_content .tab__third .slide-item img {
+  object-fit: cover;
+}
+
 /* tabs with text */
 .prod-desc-one{
   /* margin-right: auto; */

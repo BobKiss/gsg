@@ -3369,6 +3369,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   /* transition: .5s opacity;
   opacity: 0; */
 }
+html[lang="en-US"] .big-projects-list .list-item .item-info {
+  text-align: left;
+}
 /* .big-projects-list .list-item .item-background:hover + .item-content-block .item-info {
   opacity: 1;
 } */
@@ -3521,6 +3524,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   background-repeat: no-repeat;
   display: flex;
 }
+.small-projects-list .item-content-block:hover {
+  cursor: pointer;
+}
 .small-projects-list .item-content-block .item-info .title{
   font-size: 26px;
   font-weight: 700;
@@ -3538,7 +3544,9 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
 .big-projects-list.long-term .list-item .item-info{
       justify-content: flex-start;
 }
-
+.big-projects-list.long-term .item-wrap:hover {
+  cursor: pointer;
+}
 
 .caldera-grid .last_col{
   display: flex;
@@ -3580,6 +3588,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   /* background-color: #fff600; */
   background-color: #fff;
   transform: translateY(20px);
+}
+.caldera-grid .last_row .btn:hover {
+  transition: all 0.3s ease-in-out;
+  color: #fff600;
+  background-color: #000;
 }
 .caldera-grid .first_row input[type=submit]{
   padding-top: 30px;
@@ -4220,6 +4233,11 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   }
 }
 @media screen and (max-width: 992px){
+
+  .contactus__links {
+    flex-wrap: wrap-reverse;
+  }
+
   #coming-soon {
     overflow-y: scroll;
   }
