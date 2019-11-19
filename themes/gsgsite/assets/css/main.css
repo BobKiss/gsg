@@ -171,6 +171,7 @@ html[lang="en-US"] .titleContainer .title {
 }
 .prod-desc-one strong{
   margin-top: 10px;
+  font-weight: 900;
 }
 #crisisForm .col-sm-6.first_col{
   padding-right: 40px;

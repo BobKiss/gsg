@@ -87,7 +87,8 @@
 
 /* tabs with text */
 .prod-desc-one{
-  margin-right: auto;
+  /* margin-right: auto; */
+  margin-right: 150px;
   margin-left: auto;
   padding: 20px;
   max-width: 650px;
@@ -124,4 +125,9 @@
   /* .choose-flat-svg-container{
     overflow-x: scroll;
   } */
+}
+@media screen and (max-width: 992px) {
+  .prod-desc-one {
+    margin-right: auto;
+  }
 }
