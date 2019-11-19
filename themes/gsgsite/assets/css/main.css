@@ -3411,13 +3411,17 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   position: absolute;
   width: 150px;
   text-align: center;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 300;
   line-height: 20px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
   transform: rotate(-90deg);
+}
+.list-item.connectfrom .btn-content{
+    font-size: 19px !important ;
+    transform: scale(1.4) rotate(-90deg) !important ;
 }
 .big-projects-list .list-item .item-info.hovered{
   padding: 40px;

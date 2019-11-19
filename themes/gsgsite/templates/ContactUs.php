@@ -27,7 +27,7 @@ Template Name: Contact Us
 	</header> <!-- .headerSection-->
 <?php
 $heading = ( get_locale() != 'en_US' ) ? 'שלח לנו הודעה | קבוצת גביש שחם - GSG - יזמות ונדל”ן' : 'Send Us a Message | Gavish Shaham Group - GSG - Real Estate Development';
-$text = ( get_locale() != 'en_US' ) ? 'מטלפון' : 'Phone';
+$text = ( get_locale() != 'en_US' ) ? 'טלפון' : 'Phone';
 $align = ( get_locale() != 'en_US' ) ? '' : 'text-left';
 ?>
 	<section id="contactus" class="contactsus contactus-yellow">
@@ -61,7 +61,7 @@ $align = ( get_locale() != 'en_US' ) ? '' : 'text-left';
 							$heading = ( get_locale() != 'en_US' ) ? 'כמייל' : 'Email';
 							$text = ( get_locale() != 'en_US' ) ? 'רח’ יפו 27, חיפה' : '27 Jaffa St., Haifa';
 							$texts = ( get_locale() != 'en_US' ) ? 'כתובת' : 'Address';
-							$text1 = ( get_locale() != 'en_US' ) ? 'כתובת' : 'As a fax';
+							$text1 = ( get_locale() != 'en_US' ) ? 'פקס' : 'As a fax';
 						?>
 						<p class="contactus__text"><span><a href="mailto:office@gsg.co.il">OFFICE@GSG.CO.IL</a>
 						</span>

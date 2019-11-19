@@ -24,13 +24,19 @@ Template Name: Connect From
                   </div>
 
                 <?php endif; ?>
-                <a href="https://www.makorrishon.co.il/news/175345/" class="view-btn"><p class="btn-content">קרא כתבה</p></a>
+                <?php
+                  $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ THE ARTICLE';
+                ?>
+                <a href="https://www.makorrishon.co.il/news/175345/" class="view-btn"><p class="btn-content"><?=$button ?></p></a>
               </div>
             </div>
           </div>
           <div class="item-meta__connect"><span><?php the_sub_field('some_text'); ?></span></div>
           <div class="item-content-block__alt">
-            <a href="https://www.makorrishon.co.il/news/175345/" class="view-btn"><p class="btn-content">קרא כתבה</p></a>
+              <?php
+                $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ THE ARTICLE';
+              ?>
+            <a href="https://www.makorrishon.co.il/news/175345/" class="view-btn"><p class="btn-content"><?=$button ?></p></a>
           </div>
       </div>
 
