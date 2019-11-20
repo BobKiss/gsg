@@ -183,11 +183,11 @@
 				<div class="socialsRow">
 					<!-- <span><?php _e('Our social','GsgStrings'); ?> -->
 					<span>Our social:
-						<a href="https://www.instagram.com/gavish_shaham_group/">
+						<a href="https://www.instagram.com/gavish_shaham_group/" target="_blank">
 							<!-- <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/InstagramIcon.svg" alt=""> -->
 							<?php get_template_part('template-parts/svg', 'instagram') ?>
 						</a>
-						<a href="https://www.facebook.com/gavish.shaham/">
+						<a href="https://www.facebook.com/gavish.shaham/" target="_blank">
 							<!-- <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/FacebookIcon.svg" alt=""> -->
 							<?php get_template_part('template-parts/svg', 'facebook') ?>
 						</a>

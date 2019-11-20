@@ -82,10 +82,10 @@ if( $locale == 'en_US' ) {
 					<div class="footer__links_item socials" style="color:white;">
 
 						<div class="">
-							<a href="https://www.facebook.com/gavish.shaham/" style="margin-left:10px;">
+							<a href="https://www.facebook.com/gavish.shaham/" target="_blank" style="margin-left:10px;">
 								<?php get_template_part('template-parts/svg', 'facebook') ?>
 							</a>
-							<a href="https://www.instagram.com/gavish_shaham_group/" style="margin-left:10px;">
+							<a href="https://www.instagram.com/gavish_shaham_group/" target="_blank" style="margin-left:10px;">
 								<?php get_template_part('template-parts/svg', 'instagram') ?>
 							</a>
 						</div>
