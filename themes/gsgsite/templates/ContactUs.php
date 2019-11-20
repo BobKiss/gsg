@@ -58,7 +58,7 @@ $align = ( get_locale() != 'en_US' ) ? '' : 'text-left';
 					</div>
 					<div class="col-lg-4 col-md-12 text-center">
 						<?php
-							$heading = ( get_locale() != 'en_US' ) ? 'כמייל' : 'Email';
+							$heading = ( get_locale() != 'en_US' ) ? 'מייל' : 'Email';
 							$text = ( get_locale() != 'en_US' ) ? 'רח’ יפו 27, חיפה' : '27 Jaffa St., Haifa';
 							$texts = ( get_locale() != 'en_US' ) ? 'כתובת' : 'Address';
 							$text1 = ( get_locale() != 'en_US' ) ? 'פקס' : 'As a fax';
@@ -82,7 +82,7 @@ $align = ( get_locale() != 'en_US' ) ? '' : 'text-left';
 					</div>
 			</div>
 		</div>
-		<marquee scrollamount="5" class="contactus__lets">let's talk - let's talk - let's talk</marquee>
+		<marquee scrollamount="5" class="contactus__lets">let's talk - let's talk - let's talk-let's talk - let's talk - let's talk-let's talk - let's talk - let's talk-let's talk - let's talk - let's talk-let's talk - let's talk - let's talk-let's talk - let's talk - let's talk</marquee>
 	</section>
 
 </div>
