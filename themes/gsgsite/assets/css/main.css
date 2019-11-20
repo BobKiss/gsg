@@ -2058,7 +2058,7 @@ html[lang=en-US] .row.oranit {
 
 .sn-intro{
     padding-top: 140px;
-    padding-bottom: 90px;
+    /* padding-bottom: 90px; */
     background: #fff600;
     direction: rtl;
 }
@@ -3349,7 +3349,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 60px;
+  font-size: 59px;
   color: #fff;
   letter-spacing: 1px;
   padding-right: 30px;
@@ -4439,6 +4439,16 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
     width: 100%;
   }
 
+  .gsg-energy__title{
+    margin-bottom: 70px;
+  }
+  .slideInRight{
+    padding-bottom: 40px;
+  }
+  .sn-contactsus, .gsgenergy{
+    padding-top: 50px;
+  }
+
   #thank-you {
     padding: 150px 0 120px !important;
   }
@@ -4695,6 +4705,7 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
     }
     .sn-intro {
       padding-top: 30px;
+      padding-bottom: 40px;
     }
     .gsg-energy__title{
       width: 100%;
@@ -4702,7 +4713,7 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
     }
 
     .sn-contactsus, .gsgenergy{
-      padding-top: 20px;
+      padding-top: 40px;
       padding-bottom: 50px;
     }
     .sn-intro .container{
@@ -4996,7 +5007,7 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
     .connect__projname{
       bottom: -10vh;
       height: 11vh;
-      font-size: 34px;
+      font-size: 32px;
       text-align: right;
       padding-right: 30px;
       width: calc(100% + 99px);
@@ -5464,6 +5475,16 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
   }
   .document h2{
     width: 100%;
+  }
+  .homepageContainer .header__title{
+    font-size: 30px;
+  }
+  .clientsBlock{
+    margin-top: calc(109vh - 150px);
+  }
+  .header__round_text{
+    bottom: -33px;
+    right: 28px;
   }
   #policiesText{
     padding-left: 0;
