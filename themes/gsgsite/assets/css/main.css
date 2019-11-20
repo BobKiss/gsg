@@ -824,7 +824,7 @@ html[lang="en-US"] .contactus-yellow .col-sm-6.first_col{
 .logo {
   max-width: 180px;
   position: absolute;
-  top: 15%;
+  top: 12%;
   left: 4%;
   z-index: 5;
   margin-left: 36px;
@@ -1606,6 +1606,16 @@ font-weight: 100;
 }
 .sideMenuWrapper .sideMenuContent .socialsRow a img{
  transition: 0.3s all ease-in-out;
+}
+.sideMenuWrapper .sideMenuContent .socialsRow svg {
+  width: 20px;
+  height: 20px;
+  transition: 0.3s all ease-in-out;
+}
+.sideMenuWrapper .sideMenuContent .socialsRow svg:hover {
+  fill: #fff600;
+  stroke: #fff600;
+  transform: scale(1.2);
 }
 .sideMenuWrapper .sideMenuContent .socialsRow a:hover img {
   transform: scale(1.5);
@@ -5723,6 +5733,15 @@ html[lang="en-US"] #blog-lt {
 
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
     padding: 5px 10px;
+  }
+  .sideMenuWrapper .sideMenuContent .infoCol{
+    margin-left: 13px;
+  }
+  .sideMenuWrapper .sideMenuContent .infoRow .infoHeading{
+    margin: 10px 6px;
+  }
+  html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol{
+    text-align: left;
   }
 
   .coming__wrap .coming__circle{
