@@ -1058,6 +1058,12 @@ html[lang="en-US"] .crisisreverse{
 .headerSection .borderBlock.borderWhite {
   transform: scale(-1,1);
 }
+html[lang="en-US"] #supervision-border {
+  transform: unset;
+}
+html[lang="en-US"] #supervision-title {
+  transform: scale(-1, 1);
+}
 .headerSection .borderBlock.borderWhite.revers .row {
   direction: rtl;
 }
@@ -1166,6 +1172,13 @@ html[lang="en-US"] .aboutUsPageWrapper .aboutMap > .container {
   background-color: #000;
   padding: 7%;
   position: relative;
+}
+html[lang="en-US"] .aboutUsPageWrapper .aboutMap .titleSection {
+  transform: scale(-1, 1);
+}
+html[lang="en-US"] .aboutUsPageWrapper .aboutMap .titleSection p {
+  transform: scale(-1, 1);
+  text-align: left;
 }
 .aboutUsPageWrapper .aboutMap .additionalImage {
   position: absolute;
@@ -3877,6 +3890,26 @@ html[lang="en-US"] .side-block__en {
 html[lang="en-US"] .side-block__en p {
   transform: scale(-1, 1);
   text-align-last: left;
+  /* reset */
+  margin-bottom: 0;
+}
+
+html[lang="en-US"] #crisis-border {
+  transform: unset;
+}
+html[lang="en-US"] #crisis-title {
+  transform: scale(-1, 1);
+}
+html[lang="en-US"] #blog-border {
+  transform: unset;
+}
+html[lang="en-US"] #blog-title {
+  transform: scale(-1, 1);
+  text-align: justify;
+}
+html[lang="en-US"] #blog-lt {
+  transform: scale(-1, 1);
+  margin-right: auto;
 }
 /*Media*/
 @media screen and (max-width: 1760px){
@@ -5624,7 +5657,7 @@ html[lang="en-US"] .side-block__en p {
     top: 0;
   }
   #supervision-title {
-    font-size: 30px;
+    font-size: 29px;
   }
   #map-circle {
     width: 100%;

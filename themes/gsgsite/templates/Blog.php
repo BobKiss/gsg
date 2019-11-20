@@ -4,12 +4,12 @@ Template Name: Blog
 */
 ?>
 <?php get_header(); ?>
-<div class="archive">
+<div class="archive" style="overflow-x: hidden;">
   <section id="blog-page" class="headerSection" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/samuel-zeller-YfrSHq3EnRg-unsplash.jpg) center bottom / cover">
     <!-- <a href="<?php echo get_bloginfo('url') ?>" class="logo">
       <img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>"> -->
     </a>
-    <div class="borderBlock container borderWhite hebrew">
+    <div class="borderBlock container borderWhite hebrew" id="blog-border">
       <div class="row"></div>
       <div class="row">
         <?php
@@ -18,7 +18,7 @@ Template Name: Blog
           $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
         ?>
         <div id="blog-title" class="title" style="color:white !important;"><?= $heading ?></div>
-        <div class="littleTitle" style="color:white !important;">
+        <div class="littleTitle" style="color:white !important;" id="blog-lt">
           <?= $text ?>
         </div>
       </div>
