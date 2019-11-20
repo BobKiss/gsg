@@ -57,6 +57,7 @@ Template Name: GsgEnergy
 	<?php
 	$heading = (get_locale() != 'en_US') ? 'מפת מתווה גז ארצית | ישראל' : 'National Gas Outline Map | Israel';
 	$map_words = [
+		// 'w1' => (get_locale() != 'en_US') ? 'מפת</br>מתווה</br>' : 'Gas </br>outline</br>',
 		'w1' => (get_locale() != 'en_US') ? 'מפת</br>מתווה</br>' : 'Gas </br>outline</br>',
 		'w2' => (get_locale() != 'en_US') ? 'הגז' : 'map',
 	];
@@ -68,10 +69,12 @@ Template Name: GsgEnergy
 			<div class="row d-flex no-gutters sectionMap">
 				<div class="col-lg-4 col-md-12">
 
-					<div class="gsg-energy__intro-wrap d-flex">
+					<div class="gsg-energy__intro-wrap d-flex side-block__en">
 						<div class="gsg-energy__intro_top"></div>
 						<div class="gsg-energy__intro">
-							<span><?= $map_words['w1'] . $map_words['w2'] ?></span>
+							<span>
+								<p><?= $map_words['w1'] . $map_words['w2'] ?></p>
+							</span>
 							<div class="gsg-energy__intro_left"></div>
 						</div>
 						<div class="gsg-energy__intro_bottom"></div>

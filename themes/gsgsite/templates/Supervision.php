@@ -13,7 +13,7 @@ Template Name: Supervision
 		<!-- <a href="<?php echo get_bloginfo('url') ?>" class="logo">
 			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>"> -->
 		</a>
-		<div class="energy__borderBlock borderBlock container borderWhite big hebrew ">
+		<div class="energy__borderBlock borderBlock container borderWhite big hebrew " id="supervision-border">
 			<div class="row"></div>
 			<div class="row">
 				<div id="supervision-title" class="title" style="color:white !important;">
