@@ -1132,6 +1132,9 @@ html[lang="en-US"] .aboutUsPageWrapper .aboutYellow p {
   direction: rtl;
   display: flex;
 }
+html[lang="en-US"] .aboutUsPageWrapper .aboutMap > .container {
+  direction: ltr;
+}
 .aboutUsPageWrapper .aboutMap .mapTitle {
   text-align: right;
 }
@@ -2257,6 +2260,9 @@ html[lang=en-US] .gsg-energy__title{
   overflow: hidden;
   max-height: 600px;
 } */
+html[lang="en-US"] .sectionMap {
+  direction: rtl;
+}
 
 /*SectionContactUs*/
 
@@ -3862,6 +3868,15 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
 }
 .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
   text-align: right;
+}
+
+html[lang="en-US"] .side-block__en {
+  transform: scale(-1, 1);
+}
+
+html[lang="en-US"] .side-block__en p {
+  transform: scale(-1, 1);
+  text-align-last: left;
 }
 /*Media*/
 @media screen and (max-width: 1760px){
