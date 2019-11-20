@@ -52,7 +52,7 @@ Template Name: Blog
               ?>
               <div>
                   <?php
-                    $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ THE ARTICLE';
+                    $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ ARTICLE';
                   ?>
 
                 <a href="<?php the_permalink(); ?>" class="archivepage__img archivepage__img_0<?php echo $counter; ?>" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center center / cover">
@@ -88,7 +88,7 @@ Template Name: Blog
               <?php if ($counter <= $middle) { continue; }
               ?>
               <?php
-                $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ THE ARTICLE';
+                $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ ARTICLE';
               ?>
               <div>
                 <a href="<?php the_permalink(); ?>" class="archivepage__img archivepage__img_0<?php echo $counter-3; ?>" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center center / cover">
