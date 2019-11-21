@@ -19,7 +19,7 @@ Template Name: GsgEnergy
 				</div>
 			</div>
 			<div class="row"></div>
-			<img class="decorCircle__energy" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorEnergy.png" alt="decorAbout">
+			<img class="decorCircle__energy mobile-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorEnergy.png" alt="decorAbout">
 		</div>
 		<!--.borderBlock-->
 	</section> <!-- .headerSection-->
@@ -63,7 +63,7 @@ Template Name: GsgEnergy
 	];
 	?>
 
-	<section id="sn-contactus" class="sn-contactsus">
+	<section id="sn-contactus" class="sn-contactsus mobile-none">
 		<div class="container wow slideInLeft">
 			<h4 class="gsg-energy__title"><?= $heading ?></h4>
 			<div class="row d-flex no-gutters sectionMap">

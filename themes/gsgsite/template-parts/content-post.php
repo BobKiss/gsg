@@ -21,7 +21,7 @@
 	עם דייר סרבן?
 				</h2></div>
 				<div class="blog__borderblock">
-						<img class="decorCircle" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="blogcircle">
+						<img class="decorCircle mobile-none" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="blogcircle">
 				</div>
 			</div>
 		</div>
@@ -41,18 +41,19 @@
 					</span>
 				</h4>
 				<?php
-				the_content( sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gsgsite' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-					) );
+				// the_content( sprintf(
+				// 	wp_kses(
+				// 		/* translators: %s: Name of current post. Only visible to screen readers */
+				// 		__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gsgsite' ),
+				// 		array(
+				// 			'span' => array(
+				// 				'class' => array(),
+				// 			),
+				// 		)
+				// 	),
+				// 	get_the_title()
+				// 	) );
+				the_content();
 
 					wp_link_pages( array(
 						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'gsgsite' ),

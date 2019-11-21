@@ -2477,7 +2477,9 @@ html[lang="en-US"] .contactsus-after-line > div:first-child {
 .footer__links_item.right:hover{
   color: rgb(163, 162, 162);
 }
-
+.footer-address:visited {
+ color: rgb(163, 162, 162);
+}
 
 /*SectionArchive*/
 .archivepage__img_title p:before{
@@ -3917,6 +3919,7 @@ html[lang="en-US"] #crisis-border {
 }
 html[lang="en-US"] #crisis-title {
   transform: scale(-1, 1);
+  text-align: justify;
 }
 html[lang="en-US"] #blog-border {
   transform: unset;
@@ -3929,6 +3932,18 @@ html[lang="en-US"] #blog-lt {
   transform: scale(-1, 1);
   margin-right: auto;
 }
+/* html[lang="en-US"] #blogpage .entry-content {
+  direction: rtl;
+} */
+/* html[lang="en-US"] #blogpage .wp-block-column {
+  flex-direction: row-reverse;
+}
+html[lang="en-US"] #blogpage .wp-block-column p {
+  text-align: left !important;
+}
+html[lang="en-US"] #blogpage .blogpage__title {
+  text-align: left !important;
+} */
 /*Media*/
 @media screen and (max-width: 1760px){
 
@@ -5392,6 +5407,9 @@ html[lang="en-US"] #blog-lt {
       position: relative;
       transform: scale(1.5);
       top: 165px;
+    }
+    .mobile-none {
+      display: none !important;
     }
   }
 
