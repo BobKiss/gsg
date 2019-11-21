@@ -23,7 +23,7 @@ Template Name: Blog
         </div>
       </div>
       <div class="row"></div>
-      <div id="blogCircle" class="decorCircle">
+      <div id="blogCircle" class="decorCircle mobile-none">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog.png" alt="decorAbout">
       </div>
     </div> <!--.borderBlock-->
@@ -37,6 +37,7 @@ Template Name: Blog
         $args = array(
           'posts_per_page' => 6,
           'status' => 'publish',
+          'suppress_filters' => 0
         );
         $posts = get_posts( $args );
         $counter = 0;
@@ -51,9 +52,9 @@ Template Name: Blog
               <?php if ($counter > $middle) { continue; }
               ?>
               <div>
-                  <?php
-                    $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ ARTICLE';
-                  ?>
+                <?php
+                  $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ ARTICLE';
+                ?>
 
                 <a href="<?php the_permalink(); ?>" class="archivepage__img archivepage__img_0<?php echo $counter; ?>" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center center / cover">
                   <span class="archivepage__desc">

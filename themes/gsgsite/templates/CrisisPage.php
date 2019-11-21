@@ -26,7 +26,7 @@ $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
         </div>
       </div>
       <div class="row"></div>
-      <div id="crisis-circle" class="decorCircle crisis__decorCircle">
+      <div id="crisis-circle" class="decorCircle crisis__decorCircle mobile-none">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/creses.png" alt="decorAbout">
       </div>
     </div>

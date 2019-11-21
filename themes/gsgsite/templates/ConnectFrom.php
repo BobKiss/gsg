@@ -27,7 +27,7 @@ Template Name: Connect From
                 <?php
                   $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ THE ARTICLE';
                 ?>
-                <a href="https://www.makorrishon.co.il/news/175345/" class="view-btn"><p class="btn-content"><?=$button ?></p></a>
+                <a href="https://www.makorrishon.co.il/news/175345/" target="_blank" class="view-btn"><p class="btn-content"><?=$button ?></p></a>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ Template Name: Connect From
               <?php
                 $button = ( get_locale() != 'en_US' ) ? 'קרא כתבה' : 'READ THE ARTICLE';
               ?>
-            <a href="https://www.makorrishon.co.il/news/175345/" class="view-btn"><p class="btn-content"><?=$button ?></p></a>
+            <a href="https://www.makorrishon.co.il/news/175345/" target="_blank" class="view-btn"><p class="btn-content"><?=$button ?></p></a>
           </div>
       </div>
 

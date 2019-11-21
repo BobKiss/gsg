@@ -18,7 +18,7 @@ Template Name: Contact Us
 						</h2>
 					</div>
 					<div class="borderblock">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/decorContact.png" alt="" id="contactCircle" class="header__round_text">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/decorContact.png" alt="" id="contactCircle" class="header__round_text mobile-none">
 						<div class="bottomLine"></div>
 					</div>
 				</div>

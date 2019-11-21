@@ -21,7 +21,7 @@ Template Name: Supervision
         </div>
 			</div>
 			<div class="row"></div>
-      <div id="supervision-circle" class="decorCircle">
+      <div id="supervision-circle" class="decorCircle mobile-none">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorCrysis.png" alt="decorAbout">
       </div>
 		</div> <!--.borderBlock-->

@@ -16,7 +16,7 @@ Template Name: About Us
           </div>
         </div>
         <div class="row"></div>
-        <img id="aboutCircle" class="decorCircle" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
+        <img id="aboutCircle" class="decorCircle mobile-none" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
       </div>
       <!--.borderBlock-->
     </section> <!-- .headerSection-->
