@@ -21,6 +21,7 @@ a:focus {
 .post, .page{
   margin: 0;
 }
+
 .document ol {
   list-style: none;
   counter-reset: li;
@@ -824,8 +825,8 @@ html[lang="en-US"] .contactus-yellow .col-sm-6.first_col{
 .logo {
   max-width: 180px;
   position: absolute;
-  top: 12%;
-  left: 4%;
+  /* top: 12%;
+  left: 4%; */
   z-index: 5;
   margin-left: 36px;
 }
@@ -1163,7 +1164,7 @@ html[lang="en-US"] .aboutUsPageWrapper .aboutMap > .container {
   margin: 0;
 }
 .popupColumn .info .firstFow{
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 .aboutUsPageWrapper .aboutMap .titleSection {
   width: 45%;
@@ -4778,6 +4779,7 @@ html[lang="en-US"] #blog-lt {
     }
     .sideMenu .mailBlock .popup .popupTitle {
       font-size: 22px;
+      display: none;
     }
     .letter-spacing__en {
       letter-spacing: 0.5px !important;
@@ -5743,6 +5745,12 @@ html[lang="en-US"] #blog-lt {
     transform: scale(1);
     top: 0;
   }
+  .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
+    padding: 5px 10px;
+  }
+  .logo-mail-block{
+      margin-left: 5px;
+  }
   #supervision-title {
     font-size: 29px;
   }
@@ -5797,7 +5805,7 @@ html[lang="en-US"] #blog-lt {
     margin-left: 13px;
   }
   .sideMenuWrapper .sideMenuContent .infoRow .infoHeading{
-    margin: 10px 6px;
+    /* margin: 10px 6px; */
   }
   html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol{
     text-align: left;
@@ -6043,10 +6051,12 @@ html[lang="en-US"] #blog-lt {
   }
 
   .connect-from-item .connect__projname {
-    bottom: -50px;
-    height: 50px;
+      bottom: -50px;
+      height: 50px;
+      text-align: right;
+      padding-right: 11px;
+      padding-left: 12px;
   }
-
   .logo-ty {
     width: 75px;
     height: 50px;

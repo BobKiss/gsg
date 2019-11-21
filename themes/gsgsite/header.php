@@ -49,7 +49,7 @@
 
 <body <?php body_class(); ?> class="owerflow-hidden">
 	<div id="page" class="site">
-		<a href="<?php echo get_bloginfo('url') ?>" class="logo logo-404 logo-header">
+		<a href="<?php echo get_bloginfo('url') ?>" class="logo logo-404 logo-header " >
 			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
 		</a>
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gsgsite' ); ?></a>
@@ -94,7 +94,7 @@
 					</div>
 					<div class="popUpFooter">
 						<div class="popupColumn">
-							<div class="logo">
+							<div class="logo logo-mail-block">
 								<a href="<?php echo get_bloginfo('url') ?>">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/WhiteLogo.png" alt="">
 								</a>
