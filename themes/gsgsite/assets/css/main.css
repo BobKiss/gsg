@@ -2612,7 +2612,12 @@ html[lang="en-US"] .contactsus-after-line > div:first-child {
     color: #000;
     font-weight: 900;
     letter-spacing: 0.5px;
-  direction: rtl;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+}
+html[lang="en-US"] .blogpage__title {
+  direction: ltr;
 }
 .blogpage__title span{
     font-size: 18px;
