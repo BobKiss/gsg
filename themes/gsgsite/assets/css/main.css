@@ -517,6 +517,10 @@ html[lang=en-US] .text404{
   display: flex;
   margin-top: 5px;
 }
+#crisis-title{
+  /* max-width: 79%; */
+  font-size: 107px;
+}
 
 .dontworry .view-btn p{
   font-weight: 900;
@@ -2084,7 +2088,7 @@ html[lang=en-US] .row.oranit {
 
 .sn-intro{
     padding-top: 140px;
-    /* padding-bottom: 90px; */
+    padding-bottom: 90px;
     background: #fff600;
     direction: rtl;
 }
@@ -2548,6 +2552,7 @@ html[lang="en-US"] .contactsus-after-line > div:first-child {
     margin-right: 10px;
     color: #000;
     font-weight: 400;
+    white-space: nowrap;
 }
 .archivepage__img_text{
     width: 100%;
@@ -3383,7 +3388,7 @@ html[lang=en-US] .big-projects-list .list-item .item-meta{
   color: #fff;
   letter-spacing: 1px;
   padding-right: 30px;
-  max-height: 100px;
+  /* max-height: 100px; */
   font-weight: 900;
 
   width: 100%;
@@ -3856,7 +3861,7 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
   height: 150px;
 }
 #crisis-circle{
-  bottom: -32%;
+  bottom: 0%;
   right: -9%;
   width: 267px;
 }
@@ -3982,6 +3987,10 @@ html[lang="en-US"] #blog-lt {
     .clientItemHome p{
         font-size: 22px;
     }
+    #crisis-title{
+    max-width: 65%;
+    font-size: 65px;
+    }
     .coming__wrap .coming__circle{
       width: 275px;
       height: 275px;
@@ -4012,6 +4021,7 @@ html[lang="en-US"] #blog-lt {
     .thank-you-circle {
       right: -5%;
     }
+
     #crisis-circle{
       right: -30px;
       bottom: -20px;
@@ -4190,6 +4200,10 @@ html[lang="en-US"] #blog-lt {
     .header__title {
         font-size: 70px;
     }
+    #crisis-title{
+      max-width: 65%;
+      font-size: 45px;
+    }
     .clientsBlock{
         width: 100px;
     }
@@ -4259,6 +4273,9 @@ html[lang="en-US"] #blog-lt {
      margin-top: -105px;
     font-size: 84px;
     margin-bottom: -64px
+  }
+  #crisis-title{
+    /* max-width: 85%; */
   }
   .container {
     padding-left: 60px;
@@ -4352,6 +4369,10 @@ html[lang="en-US"] #blog-lt {
 
   .contactus__links {
     flex-wrap: wrap-reverse;
+  }
+  #crisis-title{
+    max-width: 75%;
+    font-size: 52px;
   }
 
   #coming-soon {
@@ -4468,7 +4489,7 @@ html[lang="en-US"] #blog-lt {
   }
 
   .connect-from-item .connect__projname {
-    height: 80px;
+    /* height: 80px; */
   }
   #logo404img img{
     margin-top: -45px;
@@ -4691,6 +4712,10 @@ html[lang="en-US"] #blog-lt {
   }
   .slideInRight{
     padding-bottom: 0;
+  }
+  #crisis-title{
+    max-width: 65%;
+    font-size: 50px;
   }
 
   .blog__borderblock .decorCircle{
@@ -5116,7 +5141,7 @@ html[lang="en-US"] #blog-lt {
     }
     .connect__projname{
       bottom: -10vh;
-      height: 11vh;
+      /* height: 11vh; */
       font-size: 32px;
       text-align: right;
       padding-right: 30px;
@@ -5379,6 +5404,10 @@ html[lang="en-US"] #blog-lt {
       height: 115px;
       bottom: -70px;
 
+  }
+  #crisis-title{
+    max-width: 69%;
+    font-size: 40px;
   }
   .headerSection .borderBlock.bigPaddings .row .title {
       font-size: 40px;
@@ -5678,6 +5707,10 @@ html[lang="en-US"] #blog-lt {
   #aboutCircle {
     width: 80px;
   }
+  #crisis-title{
+    max-width: 60%;
+    font-size: 25px;
+  }
 
 }
 
@@ -5743,6 +5776,11 @@ html[lang="en-US"] #blog-lt {
     transform: scale(1);
     top: 0;
   }
+  #crisis-title{
+    max-width: 75%;
+    font-size: 25px;
+  }
+  }
   #supervision-title {
     font-size: 29px;
   }
@@ -5806,6 +5844,10 @@ html[lang="en-US"] #blog-lt {
   .coming__wrap .coming__circle{
       width: 100px;
       height: 100px;
+  }
+  #crisis-title{
+    max-width: 77%;
+    font-size: 20px;
   }
   .headerSection .borderBlock.bigPaddings .row .title {
       font-size: 20px;
