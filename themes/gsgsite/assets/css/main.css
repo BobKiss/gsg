@@ -5823,6 +5823,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     width: 100%;
     margin-left: 0;
     text-align: right;
+    font-size: 24px;
   }
   .block404{
     right: 1px;
@@ -5860,6 +5861,21 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
     padding: 5px 10px;
+  }
+  #parsley-id-7{
+    margin-top: 222px !important;
+  }
+  #parsley-id-9{
+    margin-top: 50px !important;
+  }
+  #parsley-id-11{
+    margin-top: 50px !important;
+  }
+  #parsley-id-13{
+    margin-top: 50px !important;
+  }
+  .caldera-grid .form-group{
+    margin-bottom: 29px !important;
   }
   .logo-mail-block{
       margin-left: 5px;
