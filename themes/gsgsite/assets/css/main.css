@@ -520,8 +520,9 @@ html[lang=en-US] .text404{
   margin-top: 5px;
 }
 #crisis-title{
-  /* max-width: 79%; */
-  font-size: 107px;
+  /* font-size: 107px; */
+  max-width: 79%;
+  font-size: 65px;
 }
 html[lang=en-US] #crisis-title{
   max-width: 100%;

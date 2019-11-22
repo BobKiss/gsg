@@ -102,7 +102,7 @@ Template Name: About Us
     </section>
 
     <section class="activityAreas wow slideInLeft">
-      <div id="titleContainerAboutUS" class="titleContainer">
+      <div class="titleContainer">
         <?php
         $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
         $heading = (get_locale() != 'en_US') ? 'קבוצת גביש שחם | תחומי פעילות' : 'Gavish Shaham Group | Areas of Activity';
