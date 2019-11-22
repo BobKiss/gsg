@@ -5893,6 +5893,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
       top: 0;
       left: 0;
   }
+  .sideMenuItem.mailBlock .caldera-grid .form-group{
+    margin-bottom: 0 !important;
+  }
   #crisis-title{
     max-width: 210px;
     font-size: 25px;
@@ -5907,7 +5910,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     top: 70%;
   }
   #coming-soon {
-    padding-top: 60px !important;
+    padding-top: 120px !important;
   }
   #coming-soon .container {
     transform: scale(1);
