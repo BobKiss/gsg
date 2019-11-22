@@ -166,6 +166,7 @@ html[lang="en-US"] .titleContainer .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: auto !important;
 }
 .prod-desc-one p{
   margin-bottom: 0;
@@ -521,6 +522,10 @@ html[lang=en-US] .text404{
 #crisis-title{
   /* max-width: 79%; */
   font-size: 107px;
+}
+html[lang=en-US] #crisis-title{
+  max-width: 100%;
+  font-size: 90px;
 }
 
 .dontworry .view-btn p{
@@ -882,6 +887,9 @@ html[lang="en-US"] .contactus-yellow .col-sm-6.first_col{
   animation-timing-function: linear;
   animation-direction: reverse;
 }
+html[lang="en-US"] #crisis-circle{
+  animation-direction: unset;
+}
 .headerSection {
   display: flex;
   justify-content: center;
@@ -1063,6 +1071,9 @@ html[lang="en-US"] .crisisreverse{
 .headerSection .borderBlock.borderWhite {
   transform: scale(-1,1);
 }
+html[lang="en-US"] .headerSection .borderBlock.borderWhite .decorCircle img{
+  transform: scale(0.9) rotateX(0deg);
+}
 html[lang="en-US"] #supervision-border {
   transform: unset;
 }
@@ -1184,6 +1195,7 @@ html[lang="en-US"] .aboutUsPageWrapper .aboutMap .titleSection {
 html[lang="en-US"] .aboutUsPageWrapper .aboutMap .titleSection p {
   transform: scale(-1, 1);
   text-align: left;
+  margin-bottom: 0rem;
 }
 .aboutUsPageWrapper .aboutMap .additionalImage {
   position: absolute;
@@ -1338,7 +1350,7 @@ text-align: right;
 
 .aboutUsPageWrapper .partneers {
   background-color: #fff600;
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 160px;
   color: #000;
 }
@@ -2089,7 +2101,7 @@ html[lang=en-US] .row.oranit {
 
 .sn-intro{
     padding-top: 140px;
-    padding-bottom: 90px;
+    padding-bottom: 120px;
     background: #fff600;
     direction: rtl;
 }
@@ -2104,6 +2116,10 @@ html[lang="en-US"] .sn-intro {
 }
 .slideInRight{
   padding-bottom: 90px;
+}
+
+#container-energy{
+  padding-bottom: 0;
 }
 /* .sn-contactsus {
   padding-bottom: 180px;
@@ -2389,7 +2405,7 @@ html[lang=en-US] .contactus__text, .contactus__soc span {
     color: #fff;
     padding: 0;
     margin: 0;
-    line-height: 3;
+    line-height: 4;
     margin-bottom: -41px;
     margin-top: -95px;
 }
@@ -4012,6 +4028,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     max-width: 65%;
     font-size: 65px;
     }
+    html[lang=en-US] #crisis-title{
+      max-width: 100%;
+      font-size: 65px;
+    }
     .coming__wrap .coming__circle{
       width: 275px;
       height: 275px;
@@ -4041,6 +4061,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
     .thank-you-circle {
       right: -5%;
+    }
+    #sn-intro-yellow{
+      padding-top: 100px;
     }
 
     #crisis-circle{
@@ -4222,7 +4245,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
         font-size: 70px;
     }
     #crisis-title{
-      max-width: 65%;
+      max-width: 688px;
+      font-size: 60px;
+      width: 100%;
+    }
+    html[lang=en-US] #crisis-title{
+      max-width: 100%;
       font-size: 45px;
     }
     .clientsBlock{
@@ -4391,10 +4419,22 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .contactus__links {
     flex-wrap: wrap-reverse;
   }
-  #crisis-title{
-    max-width: 75%;
-    font-size: 52px;
+  .barkan-about__btn{
+    margin-top: 0;
   }
+  #sn-intro-energy{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #crisis-title{
+    max-width: 630px;
+    font-size: 52px;
+    width: 100%;
+  }
+  html[lang=en-US] #crisis-title{
+      max-width: 100%;
+      font-size: 52px;
+    }
 
   #coming-soon {
     overflow-y: scroll;
@@ -4711,6 +4751,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .container-mobile {
     padding: 0 45px;
   }
+  #sn-intro-energy{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .housesys__tabs_content .slide-item img {
     object-fit: cover;
   }
@@ -4728,6 +4772,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     line-height: 38px;
     text-align: left;
   }
+  #sn-intro-yellow{
+    padding: 40px;
+  }
   #supervisionYellow{
     padding-right: 0;
   }
@@ -4735,8 +4782,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding-bottom: 0;
   }
   #crisis-title{
-    max-width: 65%;
-    font-size: 50px;
+    max-width: 430px;
+    font-size: 52px;
+    width: 100%;
+    line-height: 70px;
   }
 
   .blog__borderblock .decorCircle{
@@ -5155,7 +5204,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     }
     .archive .headerSection .borderBlock.hebrew .row .littleTitle{
       font-size: 20px;
-      margin-bottom: 11px;
+      margin-bottom: 20px;
     }
     .item-meta__connect{
       width: calc(100% + 99px);
@@ -5173,7 +5222,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
     }
     .connect-from-item .connect__projname {
-      height: 80px;
+      height: 81px;
       bottom: -80px;
     }
     .primary-menu li{
@@ -5431,9 +5480,14 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   }
   #crisis-title{
-    max-width: 69%;
+    max-width: 330px;
     font-size: 40px;
+    width: 100%;
   }
+  html[lang=en-US] #crisis-title{
+      max-width: 100%;
+      font-size: 40px;
+    }
   .headerSection .borderBlock.bigPaddings .row .title {
       font-size: 40px;
   }
@@ -5733,8 +5787,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     width: 80px;
   }
   #crisis-title{
-    max-width: 60%;
+    max-width: 210px;
     font-size: 25px;
+    line-height: 40px;
+    width: 100%;
   }
 
 }
@@ -5762,6 +5818,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     position: relative;
     /* bottom: 100px; */
   }
+
   .titleContainer .title {
     width: 100%;
     margin-left: 0;
@@ -5792,14 +5849,14 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   #thank-you > .container {
     transform: scale(1.2);
-    top: 80px;
+    top: 110px;
   }
 }
 
 @media screen and (max-width: 390px) {
   #thank-you > .container {
     transform: scale(1);
-    top: 0;
+    top: 60px;
   }
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
     padding: 5px 10px;
@@ -5808,8 +5865,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
       margin-left: 5px;
   }
   #crisis-title{
-    max-width: 75%;
+    max-width: 210px;
     font-size: 25px;
+    width: 100%;
   }
   #supervision-title {
     font-size: 29px;
@@ -5837,6 +5895,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   .dontworry .view-btn {
     margin-top: 15px;
+  }
+  .clientsBlock{
+    margin-top: calc(109vh - 200px);
   }
   .header404 {
     height: 960px;
@@ -5867,8 +5928,24 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .sideMenuWrapper .sideMenuContent .infoRow .infoHeading{
     /* margin: 10px 6px; */
   }
+  .contactsus-after-line > div > a{
+    font-size: 16px;
+  }
+  #thank-you > .container{
+    top: 10px;
+  }
+  .housesys__tabs_content{
+    padding: 20px 20px 30px 30px;
+  }
+  .clientsBlock{
+    margin-top: calc(109vh - 150px);
+  }
   html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol{
     text-align: left;
+  }
+  #sn-intro-energy{
+    padding-top: 35px;
+    padding-bottom: 45px;
   }
 
   .coming__wrap .coming__circle{
@@ -5876,8 +5953,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
       height: 100px;
   }
   #crisis-title{
-    max-width: 77%;
+    max-width: 165px;
     font-size: 20px;
+    width: 100%;
   }
   .headerSection .borderBlock.bigPaddings .row .title {
       font-size: 20px;
@@ -5892,7 +5970,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-size: 20px;
   }
   .sn-contactus__title{
-    font-size: 22px;
+    font-size: 20px;
   }
   #supervisionYellow{
     padding-right: 0;
@@ -6115,7 +6193,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .connect-from-item .connect__projname {
-      bottom: -50px;
+      bottom: -49px;
       height: 50px;
       text-align: right;
       padding-right: 11px;
