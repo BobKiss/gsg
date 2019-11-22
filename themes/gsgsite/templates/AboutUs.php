@@ -94,7 +94,7 @@ Template Name: About Us
             <div class="gsg-energy__intro_left"></div>
           </div>
           <div class="gsg-energy__intro_bottom"></div>
-          <img id="map-circle" class="additionalImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutUsMapCircle.png" alt="">
+          <img id="map-circle" class="additionalImage mobile-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutUsMapCircle.png" alt="">
         </div>
         <!-- Title section end -->
 
