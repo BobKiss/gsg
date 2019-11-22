@@ -458,18 +458,22 @@ jQuery(document).ready(function ($) {
   $('.small-list-items-wrapper .list-item').on('click', function () {
 
     let href = $(this).find('a').attr('href');
-    window.location.href = href;
+    window.open("https://www.makorrishon.co.il/news/175345/", "_blank");
     // console.log( href );
 
   })
 
   // long term projects
-  $('.long-term .list-item').on('click', function () {
+  $('.long-term .list-item').on('click', function (e) {
 
     let href = $(this).find('a').attr('href');
-    window.location.href = href;
+    window.open("https://www.makorrishon.co.il/news/175345/", "_blank");
+    // e.stopPropagation();
 
   })
+  $('.long-term .list-item .view-btn').on( 'click', function (e) {
+    e.stopPropagation();
+  } )
 
 });
 

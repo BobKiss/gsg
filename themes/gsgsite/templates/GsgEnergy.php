@@ -26,8 +26,8 @@ Template Name: GsgEnergy
 
 	<!-- SectioSN-Intro -->
 
-	<section class="sn-intro">
-		<div class="container wow slideInRight">
+	<section id="sn-intro-energy" class="sn-intro">
+		<div id="container-energy" class="container wow slideInRight">
 			<?php
 			$row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
 			$title_reverse = (get_locale() != 'en_US') ? '' : 'sn-contactus__title-reverse';

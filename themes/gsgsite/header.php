@@ -177,7 +177,7 @@
 					</div>
 					<div class="infoCol">
 						<p class="infoHeading"><?php _e('Address','GsgStrings'); ?></p>
-						<span><?php _e('27 Jaffa Street Haifa, Israel','GsgStrings'); ?></span>
+						<a target="_blank" href="https://goo.gl/maps/p1URJwpwCmNWfMHW8"><?php _e('27 Jaffa Street Haifa, Israel','GsgStrings'); ?></a>
 					</div>
 				</div>
 				<div class="socialsRow">

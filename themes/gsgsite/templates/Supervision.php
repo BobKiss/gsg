@@ -48,7 +48,7 @@ maintaining the planned level of profit. Our management and supervision departme
 	$topborder_class = (get_locale() != 'en_US') ? '' : 'sn-contactus__topborder-reverse alt'
 ?>
 
-	<section class="sn-intro">
+	<section id="sn-intro-yellow" class="sn-intro">
 		<div class="container wow slideInLeft">
 			<h4 id="supervisionYellow" class="sn-contactus__title <?= $align . ' ' . $title_reverse ?>"><?= $heading ?></h4>
 			<div class="row d-flex crisisreverse">
