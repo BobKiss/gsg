@@ -829,8 +829,8 @@ html[lang="en-US"] .contactus-yellow .col-sm-6.first_col{
 .logo {
   max-width: 180px;
   position: absolute;
-  /* top: 12%;
-  left: 4%; */
+  top: 12%;
+  left: 4%;
   z-index: 5;
   margin-left: 36px;
 }
@@ -3621,8 +3621,9 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
   font-weight: 700;
   padding-right: 10px;
 }
-.contactus__title.text-left + .caldera-grid .first_row .form-control {
-  text-align-last: left;
+html[lang="en-US"] .contactus__title.text-left + .caldera-grid .first_row .form-control {
+  text-align: left;
+  direction: ltr;
 }
 .contactus__title.text-left + .caldera-grid .first_row {
   direction: rtl;
@@ -3902,7 +3903,7 @@ html[lang="en-US"] .big-projects-list .list-item .item-info {
 #blog-title {
   font-size: 76px;
   line-height: 1;
-  margin-top: 13px;
+  /* margin-top: 13px; */
 }
 .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
   text-align: right;
@@ -3949,6 +3950,9 @@ html[lang="en-US"] #blogpage .wp-block-column p {
 html[lang="en-US"] #blogpage .blogpage__title {
   text-align: left !important;
 } */
+#blog__row-middle {
+  height: auto;
+}
 /*Media*/
 @media screen and (max-width: 1760px){
 
@@ -3999,6 +4003,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
       bottom: -90px;
       max-width: 24vw;
     }
+}
+@media screen and (max-width: 1576px) {
+  #blog-title {
+    font-size: 80px;
+  }
 }
 @media screen and (max-width: 1520px){
 
@@ -4216,7 +4225,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
 }
-
+@media screen and (max-width: 1250px) {
+  .titleContainer {
+    padding: 0 60px 0;
+  }
+}
 @media screen and (max-width: 1200px){
     .header__title {
         font-size: 70px;
@@ -4346,9 +4359,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     width: 210px;
     bottom: 50px;
   }
-  .titleContainer {
-    padding: 0 60px 0;
-  }
+
   @keyframes bl-hor {
     from {
       width: 0;
@@ -5806,6 +5817,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   .logo-mail-block{
       margin-left: 5px;
+      top: 0;
+      left: 0;
   }
   #crisis-title{
     max-width: 75%;
@@ -5854,6 +5867,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .aboutUsPageWrapper .aboutYellow {
     padding-bottom: 0px;
     padding-top: 30px;
+  }
+  .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 325px) {
@@ -5929,10 +5945,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   .single-post .header__title{
     font-size: 25px;
-  }
-
-  .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
-    margin-left: 10px;
   }
 
   .small-projects-list .list-item .view-btn .btn-content {
