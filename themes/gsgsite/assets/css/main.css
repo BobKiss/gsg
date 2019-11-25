@@ -4928,7 +4928,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
     .sideMenu .mailBlock .popup .popUpFooter {
       padding: 0;
-      margin: 0;
+      margin-top : 25px;
     }
     .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
       height: auto;
@@ -5007,10 +5007,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
     }
     .caldera-grid .row{
       max-width: unset !important;
-    }
-    .caldera-grid .first_row{
-      display: flex;
-      /* flex-direction: column-reverse; */
     }
     .caldera-grid textarea.form-control{
       padding-right: 12px !important;
@@ -5540,6 +5536,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .energy__borderBlock .title {
     letter-spacing: normal;
   }
+  .caldera-grid .first_row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .coming__wrap .coming__circle{
       width: 115px;
@@ -6022,11 +6022,20 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
     margin-left: 10px;
   }
+
 }
 @media screen and (max-width: 325px) {
 
  .caldera-grid textarea.form-control {
     height: 106px !important;
+ }
+
+ .popUpFooter{
+    margin-top: 25px !important;
+ }
+
+ #fld_5507250_2 {
+     height: auto !important;
  }
 
   #popUpColumnLogo{
