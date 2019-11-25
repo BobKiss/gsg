@@ -8,7 +8,7 @@ Template Name: Contact Us
 <div class="page">
 	<!-- SectionContacts -->
 	<header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/shutterstock_1081210097.jpg) center center / cover">
-		<div class="container">
+		<div class="container forLittleHight">
 			<div class="row">
 				<div class="col-xl-12 col-lg-11 col-xs-12 borderblockWrapper contactUsPageHeader">
 					<div class="borderblock"></div>
