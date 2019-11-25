@@ -4797,6 +4797,19 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(0.92);
   }
 }
+
+@media screen  and (min-width: 768px) and (max-height: 900px) {
+    .coming__wrap{
+        transform: scale(0.8) !important;
+    }
+}
+
+@media screen  and (min-width: 768px) and (max-height: 750px) {
+    .forLittleHight{
+        transform: scale(0.8);
+    }
+}
+
 @media screen  and (min-width: 768px) and (max-height: 722px) {
     #fld_7683514_1 {
         height: 90px !important;
