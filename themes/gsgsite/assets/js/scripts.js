@@ -360,7 +360,7 @@ jQuery(document).ready(function ($) {
 
     // e.preventDefault();
     let phone_reg = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-    let phone = data.$form.find('[type=phone]').val();
+    let phone = data.$form.find('[type=tel]').val();
 
     if( !phone.match(phone_reg) ) {
 

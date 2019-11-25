@@ -1195,6 +1195,7 @@ html[lang="en-US"] .aboutUsPageWrapper .aboutMap > .container {
 }
 .popupColumn .info .firstFow{
   /* font-size: 12px; */
+
 }
 .aboutUsPageWrapper .aboutMap .titleSection {
   width: 45%;
@@ -1948,6 +1949,9 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn {
   width: 33%;
   position: relative;
+}
+#popUpColumnLogo{
+    margin-top: -9px;
 }
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(1)::before {
   display: none;
@@ -4924,6 +4928,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
     .sideMenu .mailBlock .popup .popUpFooter {
       padding: 0;
+      margin: 0;
     }
     .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
       height: auto;
@@ -6013,6 +6018,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 }
 @media screen and (max-width: 325px) {
 
+  #popUpColumnLogo{
+      margin-top: 3px;
+  }
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
     padding: 5px 10px;
   }
