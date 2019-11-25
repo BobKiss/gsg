@@ -42,6 +42,20 @@ a:focus {
   margin-right: 10px;
   text-align: justify
 }
+.policies_footer{
+  margin-top: 50px;
+  text-align: center;
+}
+.policies_footer a{
+  color: gray;
+  text-decoration: none;
+}
+html[lang="en-US"] .policies_footer a{
+
+}
+.policies_footer a:hover{
+  color: white;
+}
 /* .headerSection .container{
   margin-top: 200px;
 } */
@@ -4447,6 +4461,14 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .contactus__links {
     flex-wrap: wrap-reverse;
   }
+  .sideMenuWrapper .sideMenuContent .infoCol{
+    min-width: 152px;
+    text-align: right;
+  }
+  html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol{
+    min-width: 150px;
+    text-align: left;
+  }
   .barkan-about__btn{
     margin-top: 0;
   }
@@ -5857,6 +5879,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
   /* .thank-you-circle__alt {
     bottom: 50px;
   } */
+  html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol{
+    min-width: 150px;
+    text-align: left;
+  }
 
   .thank-you-circle__alt + div {
     position: relative;

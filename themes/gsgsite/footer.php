@@ -102,6 +102,14 @@ if( $locale == 'en_US' ) {
 		</a>
 	</div>
 </div>
+<?php
+	$policies = (get_locale() != 'en_US') ? '@2019 כל הזכויות שמורות לקבוצת גביש שחם / תנאי שימוש ומדיניות' : '@ 2019 All rights reserved to Shaham Crystal Group / Terms of Use and Policy';
+?>
+<div class="policies_footer">
+		<a target="_blank" href="https://gsg.co.il/Policies/">
+				<?= $policies ?>
+			</a>
+	</div>
 <a href="#page" class="footer__upbtn">
 	<img src="<?php bloginfo('template_url'); ?>/assets/images/upbtn.png" width="100" height="100" alt="image format png" />
 </a>
