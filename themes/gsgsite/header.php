@@ -93,7 +93,7 @@
 						?>
 					</div>
 					<div class="popUpFooter">
-						<div class="popupColumn">
+						<div id="popUpColumnLogo" class="popupColumn">
 							<div class="logo logo-mail-block">
 								<a href="<?php echo get_bloginfo('url') ?>">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/WhiteLogo.png" alt="">
