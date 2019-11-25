@@ -1070,7 +1070,7 @@ html[lang="en-US"] .crisisreverse{
   transform: scale(0.9) rotateX(180deg);
 }
 .headerSection .borderBlock.borderWhite {
-  transform: scale(-1,1);
+  /* transform: scale(-1,1); */
 }
 html[lang="en-US"] .headerSection .borderBlock.borderWhite .decorCircle img{
   transform: scale(0.9) rotateX(0deg);
