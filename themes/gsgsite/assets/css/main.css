@@ -1076,7 +1076,7 @@ html[lang="en-US"] .headerSection .borderBlock.borderWhite .decorCircle img{
   transform: scale(0.9) rotateX(0deg);
 }
 html[lang="en-US"] #supervision-border {
-  transform: unset;
+  /* transform: unset; */
 }
 html[lang="en-US"] #supervision-title {
   transform: scale(-1, 1);
@@ -3921,7 +3921,7 @@ html[lang="en-US"] .contactus__title.text-left + .caldera-grid .first_row .form-
 #blog-title {
   font-size: 76px;
   line-height: 1;
-  /* margin-top: 13px; */
+  margin-top: 13px;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
   text-align: right;
@@ -4024,7 +4024,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 }
 @media screen and (max-width: 1576px) {
   #blog-title {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 1520px){
@@ -4145,6 +4145,18 @@ html[lang="en-US"] #blogpage .blogpage__title {
       margin: 11vh 0;
     }
 }
+@media screen and (max-width: 1536px) and (max-height: 722px){
+  .site > .logo.visible{
+    transform: scale(0.86);
+  }
+  .headerSection .borderBlock{
+    transform: scale(0.9);
+  }
+  #supervision-border{
+    transform: scale(0.90);
+  }
+
+}
 @media screen and (max-width: 1380px){
 
     .aboutUsPageWrapper .aboutMap {
@@ -4155,6 +4167,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     .aboutUsPageWrapper .aboutYellow {
         padding-top: 62px;
         padding-bottom: 15px;
+    }
+    .headerSection .borderBlock{
+      transform: scale(0.9);
     }
 
     .aboutUsPageWrapper .activityAreas {
@@ -4753,6 +4768,22 @@ html[lang="en-US"] #blogpage .blogpage__title {
     margin-left: 0;
   }
 }
+@media screen and (max-height: 755px){
+  html[lang="en-US"] #blog-border{
+    transform: scale(0.92);
+  }
+}
+@media screen and (max-height: 690px){
+  html[lang="en-US"] #blog-border{
+    transform: scale(0.89);
+  }
+}
+@media screen and (max-height: 670px){
+  html[lang="en-US"] #blog-border{
+    transform: scale(0.89);
+  }
+}
+
 @media screen and (max-width: 768px){
   body{
     overflow-x: hidden;
