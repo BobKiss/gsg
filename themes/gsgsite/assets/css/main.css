@@ -4942,10 +4942,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     .sideMenu .mailBlock .popup .popUpFooter .popupColumn .info {
       font-size: 11px;
     }
-    .sideMenu .mailBlock .popup .popupTitle {
-      font-size: 22px;
-      display: none;
-    }
+
     .letter-spacing__en {
       letter-spacing: 0.5px !important;
     }
@@ -5852,6 +5849,13 @@ html[lang="en-US"] #blogpage .blogpage__title {
     max-width: 120px;
   }
 }
+@media screen and (max-width: 523px) {
+
+    .caldera-grid textarea.form-control {
+       height: 139px !important;
+    }
+
+}
 /* About us(first screen) : circle fix */
 @media screen and (max-width: 470px) {
   #aboutCircle {
@@ -5930,6 +5934,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 }
 
 @media screen and (max-width: 390px) {
+  .sideMenu .mailBlock .popup .popupTitle {
+     font-size: 17px;
+  }
   #thank-you > .container {
     transform: scale(1);
     top: 60px;
@@ -6018,9 +6025,14 @@ html[lang="en-US"] #blogpage .blogpage__title {
 }
 @media screen and (max-width: 325px) {
 
+ .caldera-grid textarea.form-control {
+    height: 106px !important;
+ }
+
   #popUpColumnLogo{
       margin-top: 3px;
   }
+
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
     padding: 5px 10px;
   }
