@@ -1,5 +1,7 @@
 /* Homepage */
-
+html {
+  overflow-x: hidden;
+}
 body{
     font-family: 'almoni', sans-serif;
     /*overflow: hidden;*/
@@ -152,6 +154,9 @@ html[lang="en-US"] .titleContainer .title {
   justify-content: flex-start;
   align-items: center;
   position: relative;
+}
+.blog__borderblock .header__title{
+      margin-top: -8px !important;
 }
 .homepage .rectangleBlock p{
   font-size: 100px;
@@ -967,7 +972,7 @@ html[lang="en-US"] .crisisreverse{
   border-top: 2px solid #171111;
   max-height: 15vh;
   position: absolute;
-  bottom: calc(100% - 13vh);
+  bottom: calc(100% - 14vh);
   left: 0;
   animation: borderHorizonal 0.5s 0.5s, borderVertical 0.5s 0.3s;
   animation-fill-mode: forwards;
@@ -3939,7 +3944,7 @@ html[lang="en-US"] .contactus__title.text-left + .caldera-grid .first_row .form-
 #blog-title {
   font-size: 76px;
   line-height: 1;
-  margin-top: 13px;
+  margin-top: 14px;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
   text-align: right;
@@ -5274,7 +5279,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     }
     .archive .headerSection .borderBlock.hebrew .row .littleTitle{
       font-size: 20px;
-      margin-bottom: 20px;
+      /* margin-bottom: 1px; */
     }
     .item-meta__connect{
       width: calc(100% + 99px);
