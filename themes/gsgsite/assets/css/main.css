@@ -1084,13 +1084,13 @@ html[lang="en-US"] .crisisreverse{
   transform: scale(0.9) rotateX(180deg);
 }
 .headerSection .borderBlock.borderWhite {
-  /* transform: scale(-1,1); */
+  transform: scale(-1,1);
 }
 html[lang="en-US"] .headerSection .borderBlock.borderWhite .decorCircle img{
   transform: scale(0.9) rotateX(0deg);
 }
 html[lang="en-US"] #supervision-border {
-  /* transform: unset; */
+  transform: unset;
 }
 html[lang="en-US"] #supervision-title {
   transform: scale(-1, 1);
@@ -4166,7 +4166,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .headerSection .borderBlock{
     transform: scale(0.9);
   }
-  #supervision-border{
+  html[lang="en-US"] #supervision-border{
     transform: scale(0.90);
   }
 
