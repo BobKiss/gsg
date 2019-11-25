@@ -4535,9 +4535,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .footer__links .footer__links_item:nth-child(4) p{
     display: none;
   }
-  .footer__links .footer__links_item:nth-child(5) p{
-    display: none;
-  }
+
   .contactus__links_left-block, .contactus__links_right-block{
     display: block;
     max-width: 300px;
@@ -4799,6 +4797,15 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(0.92);
   }
 }
+@media screen  and (min-width: 768px) and (max-height: 722px) {
+    #fld_7683514_1 {
+        height: 90px !important;
+    }
+    .sideMenuWrapper .sideMenuContent .menuBlock {
+        padding: 33px 100px;
+    }
+}
+
 @media screen and (max-height: 690px){
   html[lang="en-US"] #blog-border{
     transform: scale(0.89);
