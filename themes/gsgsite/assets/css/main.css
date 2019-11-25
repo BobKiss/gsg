@@ -1868,7 +1868,8 @@ font-weight: 100;
 }
 html[lang=en-US] .sideMenu .mailBlock .popup .popupForm input,
 html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
-  text-align-last: left;
+  text-align: left;
+  direction: ltr;
 }
 .sideMenu .mailBlock .popup .popupForm input::placeholder {
   color: #c0c0c0;
