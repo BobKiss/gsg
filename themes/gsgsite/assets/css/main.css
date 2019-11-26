@@ -48,9 +48,16 @@ a:focus {
 }
 .wp-block-column{
   flex-basis: 100%;
+  text-align: right;
 }
 .wp-image-415{
-  width: 400px;
+  width: 100%;
+}
+.wp-image-417{
+  width: 390px;
+}
+.wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized{
+  width: 100%;
 }
 
 /* Policies */
