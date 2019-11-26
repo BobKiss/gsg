@@ -37,8 +37,20 @@ a:focus {
   opacity: 0.6;
 }
 .entry-content p{
-  text-align: justify;
-  padding-right: 300px;
+  /* text-align: justify; */
+}
+#blog-container{
+  max-width: 900px;
+}
+.wp-block-column:not(:first-child){
+  margin-right: 0 !important;
+  text-align: right;
+}
+.wp-block-column{
+  flex-basis: 100%;
+}
+.wp-image-415{
+  width: 400px;
 }
 
 /* Policies */
@@ -456,6 +468,9 @@ html[lang="en-US"] .mailBlock .caldera-grid .help-block{
 .menu-border-left,
 .menu-border-bottom {
   position: absolute;
+}
+.blog__borderblock .decorCircle{
+  width: 300px;
 }
 
 .menu-border-top {
@@ -4190,6 +4205,15 @@ html[lang="en-US"] #blogpage .blogpage__title {
         padding-top: 62px;
         padding-bottom: 60px;
     }
+    .blog__borderblock .decorCircle{
+      left: -20px;
+    }
+    .headerSection .borderBlock.borderWhite .decorCircle img{
+      left: -20px;
+    }
+    .headerSection .borderBlock.borderWhite{
+      width: 1000px;
+    }
 
     .aboutUsPageWrapper .aboutYellow {
         padding-top: 62px;
@@ -4262,6 +4286,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     .coming__wrap img{
       height: 160px;
     }
+    .blog__borderblock .decorCircle{
+      width: 250px;
+      left: -40px;
+    }
     .archivepage__desc{
       width: 205px;
       height: 45px;
@@ -4300,6 +4328,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 @media screen and (max-width: 1200px){
     .header__title {
         font-size: 70px;
+    }
+    .blog__borderblock .decorCircle{
+      left: -10px;
     }
     #crisis-title{
       max-width: 688px;
@@ -4826,6 +4857,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     .sideMenuWrapper .sideMenuContent .menuBlock {
         padding: 33px 100px;
     }
+
+  #single-post-container {
+    transform: scale(0.9);
+  }
 }
 
 @media screen and (max-height: 690px){
