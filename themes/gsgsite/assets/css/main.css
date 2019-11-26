@@ -1,5 +1,7 @@
 /* Homepage */
-
+html {
+  overflow-x: hidden;
+}
 body{
     font-family: 'almoni', sans-serif;
     /*overflow: hidden;*/
@@ -33,6 +35,29 @@ a:focus {
 /* svgproject */
 .flat-item .is-closed svg{
   opacity: 0.6;
+}
+.entry-content p{
+  /* text-align: justify; */
+}
+#blog-container{
+  max-width: 900px;
+}
+.wp-block-column:not(:first-child){
+  margin-right: 0 !important;
+  text-align: right;
+}
+.wp-block-column{
+  flex-basis: 100%;
+  text-align: right;
+}
+.wp-image-415{
+  width: 100%;
+}
+.wp-image-417{
+  width: 390px;
+}
+.wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized{
+  width: 100%;
 }
 
 /* Policies */
@@ -148,6 +173,12 @@ html[lang="en-US"] .titleContainer .title {
   justify-content: flex-start;
   align-items: center;
   position: relative;
+}
+.blog__borderblock .header__title{
+      margin-top: -8px !important;
+}
+.headerSection .borderBlock.animated #up-row:nth-child(1){
+      bottom: calc(100% - 13vh);
 }
 .homepage .rectangleBlock p{
   font-size: 100px;
@@ -345,6 +376,7 @@ html[lang="en-US"] .help-block{
 html[lang="en-US"] .mailBlock .caldera-grid .help-block{
   right: 15px;
 }
+
 /* FIRST BLOCK ANIMATIONS */
 @keyframes borderTopLeft {
   from {
@@ -447,6 +479,9 @@ html[lang="en-US"] .mailBlock .caldera-grid .help-block{
 .menu-border-left,
 .menu-border-bottom {
   position: absolute;
+}
+.blog__borderblock .decorCircle{
+  width: 300px;
 }
 
 .menu-border-top {
@@ -963,7 +998,7 @@ html[lang="en-US"] .crisisreverse{
   border-top: 2px solid #171111;
   max-height: 15vh;
   position: absolute;
-  bottom: calc(100% - 13vh);
+  bottom: calc(100% - 14vh);
   left: 0;
   animation: borderHorizonal 0.5s 0.5s, borderVertical 0.5s 0.3s;
   animation-fill-mode: forwards;
@@ -3697,9 +3732,28 @@ html[lang="en-US"] .contactus__title.text-left + .caldera-grid .first_row .form-
   position: absolute;
   top: 0;
 }
-.caldera-grid .help-block {
+.caldera-grid input + span {
   margin-top: 14px !important;
   margin-left: 15px;
+}
+.caldera-grid textarea + span{
+  left: 15px;
+}
+#parsley-id-7{
+    /* margin-top: 222px !important; */
+    margin-left: 10px;
+}
+#parsley-id-9{
+    /* margin-top: 50px !important; */
+  margin-left: 10px;
+}
+#parsley-id-11{
+    /* margin-top: 50px !important; */
+  margin-left: 10px;
+}
+#parsley-id-13{
+    /* margin-top: 50px !important; */
+  margin-left: 10px;
 }
 
 
@@ -3939,7 +3993,7 @@ html[lang="en-US"] .contactus__title.text-left + .caldera-grid .first_row .form-
 #blog-title {
   font-size: 76px;
   line-height: 1;
-  margin-top: 13px;
+  margin-top: 14px;
 }
 .sideMenuWrapper .sideMenuContent .menuBlock .menu-item:not(:last-child) {
   text-align: right;
@@ -3969,6 +4023,7 @@ html[lang="en-US"] #blog-border {
 html[lang="en-US"] #blog-title {
   transform: scale(-1, 1);
   text-align: justify;
+  font-size: 25px;
 }
 html[lang="en-US"] #blog-lt {
   transform: scale(-1, 1);
@@ -4052,6 +4107,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     }
     .clientItemHome p{
         font-size: 22px;
+    }
+    .blogpage{
+      padding-top: 40px;
     }
     #crisis-title{
     max-width: 65%;
@@ -4181,6 +4239,15 @@ html[lang="en-US"] #blogpage .blogpage__title {
         padding-top: 62px;
         padding-bottom: 60px;
     }
+    .blog__borderblock .decorCircle{
+      left: -20px;
+    }
+    .headerSection .borderBlock.borderWhite .decorCircle img{
+      left: -20px;
+    }
+    .headerSection .borderBlock.borderWhite{
+      width: 1000px;
+    }
 
     .aboutUsPageWrapper .aboutYellow {
         padding-top: 62px;
@@ -4253,6 +4320,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     .coming__wrap img{
       height: 160px;
     }
+    .blog__borderblock .decorCircle{
+      width: 250px;
+      left: -40px;
+    }
     .archivepage__desc{
       width: 205px;
       height: 45px;
@@ -4291,6 +4362,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 @media screen and (max-width: 1200px){
     .header__title {
         font-size: 70px;
+    }
+    .blog__borderblock .decorCircle{
+      left: -10px;
     }
     #crisis-title{
       max-width: 688px;
@@ -4476,6 +4550,13 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .barkan-about__btn{
     margin-top: 0;
   }
+  .blogpage__title{
+    font-size: 22px;
+  }
+  .blogpage__title span{
+    font-size: 16px;
+  }
+
   #sn-intro-energy{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -4792,6 +4873,26 @@ html[lang="en-US"] #blogpage .blogpage__title {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 780px) {
+  .blogpage__title{
+   margin-bottom: 23px;
+   flex-direction: column;
+   font-size: 18px;
+   line-height: 35px;
+   margin-top: 10px;
+   align-items: end;
+ }
+ .blogpage{
+   padding-top: 0;
+ }
+ .blogpage__title span{
+   width: 100%;
+   padding: 0;
+ }
+ .blogpage .container, .archivepage .container, .site-footer .container{
+   padding-right: 50px;
+ }
+}
 @media screen and (max-height: 755px){
   html[lang="en-US"] #blog-border{
     transform: scale(0.92);
@@ -4820,7 +4921,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
     .sideMenuWrapper .sideMenuContent .menuBlock {
         padding: 33px 100px;
     }
+
+  #single-post-container {
+    transform: scale(0.9);
+  }
 }
+
 
 @media screen and (max-height: 690px){
   html[lang="en-US"] #blog-border{
@@ -5291,7 +5397,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     }
     .archive .headerSection .borderBlock.hebrew .row .littleTitle{
       font-size: 20px;
-      margin-bottom: 20px;
+      /* margin-bottom: 1px; */
     }
     .item-meta__connect{
       width: calc(100% + 99px);
@@ -5638,8 +5744,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
     display: none;
   }
   .big-projects-list .list-item {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     width: calc(100% - 80px);
+  }
+  .container-1{
+    padding: 50px 65px;
   }
   /* .container-2{
     padding: 20px 65px;
@@ -5671,7 +5780,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .contactus__lets{
     font-size: 60px;
     margin-top: -72px;
-    margin-bottom: -43px;
+    margin-bottom: -80px;
   }
   .headerSection .decorCircle, .contactUsPageHeader .header__round_text {
     /* width: 15vh; */
@@ -5915,6 +6024,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
     min-width: 150px;
     text-align: left;
   }
+  .container-1 {
+    padding: 45px 30px 0;
+  }
+  .big-projects-list .list-item {
+      margin-bottom: 40px;
+  }
 
   .thank-you-circle__alt + div {
     position: relative;
@@ -5941,7 +6056,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-size: 30px;
   }
   .contactus__title, .contactus__text, .contactus__soc, .contactus__soc span {
-    font-size: 15px;
+    font-size: 14px;
   }
   #blog-title{
     font-size: 30px;
@@ -5964,20 +6079,34 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(1);
     top: 60px;
   }
+  .caldera-grid .has-error {
+    position: relative;
+  }
+  .caldera-grid textarea + span{
+    top: 135px !important;
+    /* left: 0; */
+  }
+  .caldera-grid input + span{
+    margin-top: 55px !important;
+  }
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
     padding: 5px 10px;
   }
   #parsley-id-7{
-    margin-top: 222px !important;
+    /* margin-top: 222px !important; */
+    /* margin-left: 10px; */
   }
   #parsley-id-9{
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
+    /* margin-left: 10px; */
   }
   #parsley-id-11{
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
+    /* margin-left: 10px; */
   }
   #parsley-id-13{
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
+    /* margin-left: 10px; */
   }
   .caldera-grid .form-group{
     margin-bottom: 29px !important;
@@ -6059,6 +6188,26 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
  #fld_5507250_2 {
      height: auto !important;
+ }
+ .blogpage{
+   padding-top: 0;
+ }
+ .blogpage__title{
+   margin-bottom: 23px;
+   flex-direction: column;
+   font-size: 18px;
+   line-height: 35px;
+   margin-top: 10px;
+ }
+ .blogpage__title span{
+   width: 100%;
+   padding: 0;
+ }
+ .blogpage .container, .archivepage .container, .site-footer .container{
+   padding-right: 50px;
+ }
+ #blog-container{
+   margin-top: -24px;
  }
 
   #popUpColumnLogo{
