@@ -177,6 +177,9 @@ html[lang="en-US"] .titleContainer .title {
 .blog__borderblock .header__title{
       margin-top: -8px !important;
 }
+.headerSection .borderBlock.animated #up-row:nth-child(1){
+      bottom: calc(100% - 13vh);
+}
 .homepage .rectangleBlock p{
   font-size: 100px;
   color: black;
@@ -373,6 +376,7 @@ html[lang="en-US"] .help-block{
 html[lang="en-US"] .mailBlock .caldera-grid .help-block{
   right: 15px;
 }
+
 /* FIRST BLOCK ANIMATIONS */
 @keyframes borderTopLeft {
   from {
@@ -3728,9 +3732,28 @@ html[lang="en-US"] .contactus__title.text-left + .caldera-grid .first_row .form-
   position: absolute;
   top: 0;
 }
-.caldera-grid .help-block {
+.caldera-grid input + span {
   margin-top: 14px !important;
   margin-left: 15px;
+}
+.caldera-grid textarea + span{
+  left: 15px;
+}
+#parsley-id-7{
+    /* margin-top: 222px !important; */
+    margin-left: 10px;
+}
+#parsley-id-9{
+    /* margin-top: 50px !important; */
+  margin-left: 10px;
+}
+#parsley-id-11{
+    /* margin-top: 50px !important; */
+  margin-left: 10px;
+}
+#parsley-id-13{
+    /* margin-top: 50px !important; */
+  margin-left: 10px;
 }
 
 
@@ -4000,6 +4023,7 @@ html[lang="en-US"] #blog-border {
 html[lang="en-US"] #blog-title {
   transform: scale(-1, 1);
   text-align: justify;
+  font-size: 25px;
 }
 html[lang="en-US"] #blog-lt {
   transform: scale(-1, 1);
@@ -4083,6 +4107,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     }
     .clientItemHome p{
         font-size: 22px;
+    }
+    .blogpage{
+      padding-top: 40px;
     }
     #crisis-title{
     max-width: 65%;
@@ -4523,6 +4550,13 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .barkan-about__btn{
     margin-top: 0;
   }
+  .blogpage__title{
+    font-size: 22px;
+  }
+  .blogpage__title span{
+    font-size: 16px;
+  }
+
   #sn-intro-energy{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -4839,6 +4873,26 @@ html[lang="en-US"] #blogpage .blogpage__title {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 780px) {
+  .blogpage__title{
+   margin-bottom: 23px;
+   flex-direction: column;
+   font-size: 18px;
+   line-height: 35px;
+   margin-top: 10px;
+   align-items: end;
+ }
+ .blogpage{
+   padding-top: 0;
+ }
+ .blogpage__title span{
+   width: 100%;
+   padding: 0;
+ }
+ .blogpage .container, .archivepage .container, .site-footer .container{
+   padding-right: 50px;
+ }
+}
 @media screen and (max-height: 755px){
   html[lang="en-US"] #blog-border{
     transform: scale(0.92);
@@ -4869,6 +4923,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(0.9);
   }
 }
+
 
 @media screen and (max-height: 690px){
   html[lang="en-US"] #blog-border{
@@ -5722,7 +5777,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .contactus__lets{
     font-size: 60px;
     margin-top: -72px;
-    margin-bottom: -43px;
+    margin-bottom: -80px;
   }
   .headerSection .decorCircle, .contactUsPageHeader .header__round_text {
     /* width: 15vh; */
@@ -5967,7 +6022,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     text-align: left;
   }
   .container-1 {
-    padding: 45px 30px;
+    padding: 45px 30px 0;
   }
   .big-projects-list .list-item {
       margin-bottom: 40px;
@@ -6021,20 +6076,34 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(1);
     top: 60px;
   }
+  .caldera-grid .has-error {
+    position: relative;
+  }
+  .caldera-grid textarea + span{
+    top: 135px !important;
+    /* left: 0; */
+  }
+  .caldera-grid input + span{
+    margin-top: 55px !important;
+  }
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
     padding: 5px 10px;
   }
   #parsley-id-7{
-    margin-top: 222px !important;
+    /* margin-top: 222px !important; */
+    /* margin-left: 10px; */
   }
   #parsley-id-9{
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
+    /* margin-left: 10px; */
   }
   #parsley-id-11{
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
+    /* margin-left: 10px; */
   }
   #parsley-id-13{
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
+    /* margin-left: 10px; */
   }
   .caldera-grid .form-group{
     margin-bottom: 29px !important;
@@ -6116,6 +6185,26 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
  #fld_5507250_2 {
      height: auto !important;
+ }
+ .blogpage{
+   padding-top: 0;
+ }
+ .blogpage__title{
+   margin-bottom: 23px;
+   flex-direction: column;
+   font-size: 18px;
+   line-height: 35px;
+   margin-top: 10px;
+ }
+ .blogpage__title span{
+   width: 100%;
+   padding: 0;
+ }
+ .blogpage .container, .archivepage .container, .site-footer .container{
+   padding-right: 50px;
+ }
+ #blog-container{
+   margin-top: -24px;
  }
 
   #popUpColumnLogo{

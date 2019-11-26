@@ -9,7 +9,7 @@ Template Name: About Us
   <div class="aboutUsPageWrapper">
     <section class="headerSection" style="background-image: url(<?php echo site_url(); ?>/wp-content/uploads/2019/08/aboutUsBg.jpg)">
       <div class="borderBlock container">
-        <div class="row"></div>
+        <div id="up-row" class="row"></div>
         <div class="row">
           <div id="aboutus-title" class="title">
             WHO WE ARE\nWHAT WE DO
