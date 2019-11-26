@@ -371,6 +371,7 @@ header{
 html[lang="en-US"] .help-block{
   direction: ltr;
   right: 10px;
+  text-align: right;
 }
 
 html[lang="en-US"] .mailBlock .caldera-grid .help-block{
