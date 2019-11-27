@@ -49,12 +49,20 @@
 
 <body <?php body_class(); ?> class="owerflow-hidden">
 	<div id="page" class="site">
+		<?php if(!wp_is_mobile()){ ?>
 		<a href="<?php echo get_bloginfo('url') ?>" class="logo logo-404 logo-header " >
 			<img src="<?php echo site_url(); ?>/wp-content/uploads/2019/08/mainLogo.png" alt="<?php echo get_bloginfo('name') ?>">
 		</a>
+	<?php } ?>
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gsgsite' ); ?></a>
 
 		<aside class="sideMenu">
+			<?php if(wp_is_mobile()){ ?>
+				<a href="<?php echo get_bloginfo('url') ?>" class="logo logo-404 logo-header " >
+					<img src="<?php echo get_bloginfo('template_url'); ?>/assets/images/WhiteLogo.png" alt="<?php echo get_bloginfo('name') ?>">
+				</a>
+				<div class="side-icon-items">
+				<?php } ?>
 			<div class="sideMenuItem first">
 				<!-- <img class="menuIcon" src="<?php bloginfo('template_url'); ?>/assets/images/MenuIcon.png" alt=""> -->
 				<div class="menu-icon">
@@ -139,7 +147,9 @@
 					<?php get_template_part('template-parts/svg','volume-off'); ?>
 				</div>
 			</div>
+
 		<?php } ?>
+		<?php	if(wp_is_mobile()){ ?>	</div> <?php } ?>
 
 		</aside>
 
