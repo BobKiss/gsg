@@ -160,6 +160,9 @@ html[lang="en-US"] .titleContainer .title {
 .logo-cs {
   display: none !important;
 }
+.project__connect{
+  display: none;
+}
 .homepage video.homeVideoBack{
   position: absolute;
   right: 0;
@@ -4959,6 +4962,17 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .project__connect{
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  .connect__projname{
+    display: none;
+  }
   .housesys__tabs_content .slide-item img {
     object-fit: cover;
   }
@@ -5406,7 +5420,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     }
     .item-meta__connect{
       width: calc(100% + 99px);
-      margin-top: 80px;
+      /* margin-top: 80px; */
     }
     .connect__projname{
       bottom: -10vh;
