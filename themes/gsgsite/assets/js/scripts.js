@@ -462,6 +462,14 @@ jQuery(document).ready(function ($) {
     // console.log( href );
 
   })
+  // blog buttons
+  if ( window.innerWidth <= 992 ) {
+
+  console.log('lol');
+  // let newtext = $('.archivepage__desc').first().text();
+
+  $('.archivepage__desc').text('לפוסט המלא >>' );
+}
   // main page buttons
   if ( window.innerWidth > 475 ) {
     return;
