@@ -14,6 +14,7 @@ Template Name: Connect From
 
         <div class="list-item connectfrom wow slideInLeft connect-from-item">
           <div class="item-desc">
+            <div class="project__connect"><?php the_sub_field('project_name'); ?></div>
             <div class="item-wrap" style="background-image: url('<?php the_sub_field('project_image'); ?>')">
               <span class="connect__projname"><?php the_sub_field('project_name'); ?></span>
               <div class="item-content-block">

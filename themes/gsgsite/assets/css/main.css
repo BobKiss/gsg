@@ -190,8 +190,10 @@ html[lang="en-US"] .titleContainer .title {
 .logo-cs {
   display: none !important;
 }
-
-.homepage video.homeVideoBack {
+.project__connect{
+  display: none;
+}
+.homepage video.homeVideoBack{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -5635,7 +5637,17 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
+  .project__connect{
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  .connect__projname{
+    display: none;
+  }
   .housesys__tabs_content .slide-item img {
     object-fit: cover;
   }
@@ -6554,15 +6566,34 @@ html[lang="en-US"] #blogpage .blogpage__title {
     max-width: 100vh;
   }
 
-  /* .headerSection .borderBlock .row::before, .headerSection .borderBlock .row::after,
-      .headerSection .borderBlock.borderWhite .row:nth-child(1),
-      .headerSection .borderBlock.animated .row:nth-child(3){
-        display: none;
-      } */
   .headerSection {
     padding: 0 35px;
   }
 
+    .aboutUsPageWrapper .aboutMap .additionalImage{
+      width: 19vh;
+      /* left: 0; */
+      left: 4%;
+      top: 60%;
+    }
+    .archive .headerSection .borderBlock.hebrew .row .littleTitle{
+      font-size: 20px;
+      /* margin-bottom: 1px; */
+    }
+    .item-meta__connect{
+      width: calc(100% + 99px);
+      /* margin-top: 80px; */
+    }
+    .connect__projname{
+      bottom: -10vh;
+      /* height: 11vh; */
+      font-size: 32px;
+      text-align: right;
+      padding-right: 30px;
+      width: calc(100% + 99px);
+      background: #000;
+      line-height: 11vh;
+}
   .energy__borderBlock {
     width: 100% !important;
     margin-top: 0;
