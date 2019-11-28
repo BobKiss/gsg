@@ -4363,6 +4363,11 @@ html[lang="en-US"] .contactus__title.text-left+.caldera-grid .first_row .form-co
   -o-transform:rotate(360deg) scale(0.6);
   transform:rotate(360deg) scale(0.6);}
 } */
+.big-projects-list .list-item:last-child{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
 .menu-item-has-children {
   display: flex;
 }
@@ -5267,7 +5272,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .titleContainer, .aboutUsPageWrapper .activityAreas .titleContainer {
-    padding: 0 60px;
+    padding: 0 35px;
   }
 
   .housesys .housesys__img {
@@ -5623,19 +5628,65 @@ html[lang="en-US"] #blogpage .blogpage__title {
   body {
     overflow-x: hidden;
   }
-
-  .aboutUsPageWrapper .aboutMap {
-    padding-top: 10px;
-    padding-bottom: 38px;
+  .aboutUsPageWrapper .aboutMap>.container{
+    padding: 0;
   }
-
+  .aboutUsPageWrapper .activityAreas .pContent,
+  .aboutUsPageWrapper .aboutYellow p{
+    text-align: justify !important;
+  }
+  .aboutUsPageWrapper .aboutYellow p{
+    font-size: 16px;
+  }
+  .aboutUsPageWrapper .activityAreas .pTitle{
+    font-size: 17px;
+    color: #d2d2d2;
+  }
+  .big-projects-list .item-content-block,
+  .small-projects-list .list-item .view-btn{
+    display: none;
+  }
+  .aboutUsPageWrapper .activityAreas .pContent p {
+    font-size: 16px;
+    color: #d2d2d2;
+}
+  .small-projects-list .item-content-block{
+    width: 100%;
+  }
+  .main-title{
+    font-size: 63px;
+    line-height: 53px;
+    font-weight: 800;
+  }
+  [dir=rtl] .main-title{
+    text-align: right;
+    direction: rtl;
+  }
+  .headerSection .borderBlock{
+    transform: unset;
+  }
+  .aboutUsPageWrapper .aboutMap {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .aboutUsPageWrapper .aboutYellow p{
+    padding-bottom: 20px;
+  }
+  .aboutUsPageWrapper .aboutYellow p:last-item{
+    padding-bottom: 60px;
+  }
+  .activityAreas .titleContainer .title{
+    margin-bottom: 30px;
+  }
+  .aboutUsPageWrapper .activityAreas .pContent p{
+    margin-bottom: 2rem;
+  }
   .container-mobile {
     padding: 0 45px;
   }
 
   #sn-intro-energy {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 35px;
   }
   .project__connect{
     display: block;
@@ -6264,6 +6315,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .aboutUsPageWrapper .aboutMap .titleSection {
     height: 410px;
     padding: 20px;
+    display: none;
   }
 
   .cs-circle {
@@ -6357,7 +6409,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .aboutUsPageWrapper .borderBlock {
-    margin-top: 20px;
+    margin-top: 80px;
   }
 
   #blog-page .borderBlock {
@@ -6611,7 +6663,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .headerSection {
-    min-height: 100vh;
+    min-height: 65vh;
     position: relative;
     background-color: #e5e5e3;
   }
@@ -6761,7 +6813,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   .big-projects-list .list-item {
     margin-bottom: 60px;
-    width: calc(100% - 80px);
+    width: 100%;
   }
 
   .container-1 {
@@ -6777,7 +6829,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .small-projects-list .small-list-items-wrapper {
-    padding: 0 60px;
+    padding: 0 35px;
     flex-direction: column;
     flex-wrap: nowrap;
   }
@@ -7173,7 +7225,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .container-1 {
-    padding: 45px 30px 0;
+    padding: 0 35px 0;
   }
 
   .big-projects-list .list-item {
@@ -7189,7 +7241,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     width: 100%;
     margin-left: 0;
     text-align: right;
-    font-size: 24px;
+    font-size: 15px;
   }
 
   .block404 {

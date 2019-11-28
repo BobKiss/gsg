@@ -11,9 +11,13 @@ Template Name: About Us
       <div class="borderBlock container">
         <div id="up-row" class="row"></div>
         <div class="row">
+          <?php if(wp_is_mobile()) { ?>
+            <h1 class="main-title">WHO WE <br> ARE WHAT <br> WE DO</h1>
+        <?php } else { ?>
           <div id="aboutus-title" class="title">
             WHO WE ARE\nWHAT WE DO
           </div>
+        <?php } ?>
         </div>
         <div class="row"></div>
         <img id="aboutCircle" class="decorCircle mobile-none" src="<?php echo site_url() ?>/wp-content/uploads/2019/08/decorAbout.png" alt="decorAbout">
@@ -188,6 +192,23 @@ Template Name: About Us
         endwhile;
         ?>
       </div> <!-- .sliderPartneers-->
+    </section>
+    <!-- SectionSN-Contactus -->
+
+    <section id="sn-contactus" class="sn-contactsus">
+      <div id="crisisForm" class="container wow slideInRight">
+        <?php
+        $align = (get_locale() != 'en_US') ? 'text-right' : 'text-left';
+        $heading = (get_locale() != 'en_US') ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
+        ?>
+        <h4 class="contactus__title <?= $align ?>"><?= $heading ?> </h4>
+        <?php
+        $text_area = (get_locale() != 'en_US') ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
+        ?>
+        <?php echo do_shortcode($text_area); ?>
+
+      </div>
+
     </section>
   </div>
 

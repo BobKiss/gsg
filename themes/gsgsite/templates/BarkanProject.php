@@ -104,9 +104,19 @@ Template Name: Barkan Project 2
 	<!-- SectionContacts -->
 
 	<section id="sn-contactus" class="sn-contactsus">
-		<div class="container">
-			 <?php  echo do_shortcode('[caldera_form id="CF5d9673b59f3b3"]'); ?>
+		<div id="crisisForm" class="container wow slideInRight">
+			<?php
+			$align = (get_locale() != 'en_US') ? 'text-right' : 'text-left';
+			$heading = (get_locale() != 'en_US') ? 'שלח לנו הודעה | קבוצת גביש שחם' : 'Send Us a Message | Gavish Shaham Group ';
+			?>
+			<h4 class="contactus__title <?= $align ?>"><?= $heading ?> </h4>
+			<?php
+			$text_area = (get_locale() != 'en_US') ? '[caldera_form id="CF5d9673b59f3b3"]' : '[caldera_form id="CF5dc27bf24912c"]';
+			?>
+			<?php echo do_shortcode($text_area); ?>
+
 		</div>
+
 	</section>
 
 </div>
