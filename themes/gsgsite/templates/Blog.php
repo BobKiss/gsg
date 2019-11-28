@@ -43,7 +43,7 @@ Template Name: Blog
         $counter = 0;
         $middle = count($posts) / 2;
         ?>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-lg-6 col-sm-12">
           <div class="archivepage__wrap_right">
             <?php foreach( $posts as $post ): $counter++; ?>
               <?php
@@ -80,7 +80,7 @@ Template Name: Blog
           </div>
         </div>
 
-        <div class="col-md-6 col-sm-12">
+        <div class="col-lg-6 col-sm-12">
           <div class="archivepage__wrap_left">
             <?php foreach( $posts as $post ): $counter++; ?>
               <?php

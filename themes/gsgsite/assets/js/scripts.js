@@ -462,6 +462,19 @@ jQuery(document).ready(function ($) {
     // console.log( href );
 
   })
+  // main page buttons
+  if ( window.innerWidth > 475 ) {
+    return;
+  }
+
+  console.log('fds');
+  let prevTextLeft = $('.clientItemHome').first().find('p').text();
+  let prevTextRight = $('.clientItemHome').last().find('p').text();
+
+  $('.clientItemHome').first().find('p').text( prevTextLeft + ' enterance' );
+  $('.clientItemHome').last().find('p').text( prevTextRight + ' enterance' );
+
+
 
   // long term projects
   $('.long-term .list-item').on('click', function (e) {
