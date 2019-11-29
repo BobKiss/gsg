@@ -560,6 +560,9 @@ html[lang="en-US"] .mailBlock .caldera-grid .help-block {
 .menu-border-bottom {
   position: absolute;
 }
+.caldera-grid input+span{
+  margin-left: 20px;
+}
 
 .blog__borderblock .decorCircle {
   width: 300px;
@@ -4243,7 +4246,7 @@ html[lang="en-US"] .contactus__title.text-left+.caldera-grid .first_row .form-co
 
 .caldera-grid input+span {
   margin-top: 14px !important;
-  margin-left: 15px;
+  /* margin-left: 40px; */
 }
 
 .caldera-grid textarea+span {
@@ -7421,7 +7424,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .caldera-grid input+span {
-    margin-top: 55px !important;
+    margin-top: 40px !important;
   }
 
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
@@ -7449,7 +7452,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .caldera-grid .form-group {
-    margin-bottom: 14px !important;
+    margin-bottom: 25px !important;
   }
 
   .logo-mail-block {
@@ -7541,7 +7544,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     height: 106px !important;
   }
   .caldera-grid textarea + span{
-    top: 215px !important;
+    top: 180px !important;
   }
   #main-title-energy{
     font-size: 43px;
