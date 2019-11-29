@@ -2530,7 +2530,7 @@ html[lang="en-US"] .sn-intro {
 }
 
 .sn-contactus__area {
-  padding-right: 25px;
+  /* padding-right: 25px; */
   font-size: 19px;
 }
 
@@ -5650,6 +5650,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   body {
     overflow-x: hidden;
   }
+  #contactus-title{
+    padding-left: 35px;
+  }
   .aboutUsPageWrapper .aboutMap>.container{
     padding: 0;
   }
@@ -5675,15 +5678,14 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .small-projects-list .item-content-block{
     width: 100%;
   }
-  .main-title{
-    font-size: 63px;
-    line-height: 53px;
-    font-weight: 800;
+  .no-gutters>.col, .no-gutters>[class*=col-]{
+    padding-right: 35px;
+    padding-left: 35px;
   }
-  [dir=rtl] .main-title{
-    text-align: right;
-    direction: rtl;
+  .sn-contactus__area{
+    padding-right: 0;
   }
+
   .headerSection .borderBlock{
     transform: unset;
   }
@@ -5708,7 +5710,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   #sn-intro-energy {
-    padding: 60px 35px;
+    /* padding: 60px 35px; */
   }
   .project__connect{
     display: block;
@@ -5927,7 +5929,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   .sn-contactus__title {
     width: 100%;
-    /* padding-right: 30px; */
+    padding-right: 30px;
+    /* padding-left: 35px; */
   }
 
   .sn-contactus__topborder {
@@ -6017,9 +6020,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     position: relative;
   }
 
-  .sn-contactus__area {
-    padding-right: 0;
-  }
+  /* .sn-contactus__area {
+    padding-right: 35px;
+    padding-left: 35px;
+  } */
 
   .sideMenu .sideMenuItem {
     width: 46px;
@@ -6691,7 +6695,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .headerSection {
-    min-height: 65vh;
+    min-height: 98vh;
     position: relative;
     background-color: #e5e5e3;
   }
@@ -7162,6 +7166,45 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .archive .headerSection .borderBlock.hebrew .row .littleTitle{
     font-size: 30px;
   }
+  #tittleContact{
+    font-size: 60px;
+  }
+  [dir=rtl] .main-title{
+    text-align: right;
+    direction: rtl;
+  }
+  .main-title{
+    font-size: 63px;
+    line-height: 53px;
+    font-weight: 800;
+  }
+  [dir=rtl] #supervisionRow{
+    direction: rtl;
+    margin-right: auto;
+    /* transform: scale(-1,1); */
+  }
+  html[lang="en-US"] #supervisionRow{
+    direction: rtl;
+  }
+  #supervisionRow .main-title{
+    font-size: 65px;
+  }
+  #main-title-crisisPage{
+    /* text-align: left; */
+    font-size: 60px;
+  }
+  #main-title-blogh1{
+    font-size: 90px;
+    line-height: 65px;
+  }
+  #main-title-blogh2{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .headerSection .borderBlock.borderWhite{
+    transform: unset;
+  }
   .footer__menu{
     display: none !important;
   }
@@ -7183,6 +7226,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   /* mobile */
   .headerSection .borderBlock.borderWhite .row span{
     color: black;
+  }
+  #headerSectionEnergy{
+    min-height: 50vh;
   }
   /* .headerSection .borderBlock.animated .row{
   display: none;
@@ -7319,15 +7365,28 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(1.2);
     top: 110px;
   }
+  #main-title-energy{
+    font-size: 60px;
+    margin-top: inherit;
+  }
 }
 
 @media screen and (max-width: 390px) {
   .sideMenu .mailBlock .popup .popupTitle {
     font-size: 17px;
   }
+  #tittleContact{
+    font-size: 50px;
+  }
   .clientsBlock a{
     width: 125px;
     height: 45px;
+  }
+  #main-title-blogh1{
+    font-size: 75px;
+  }
+  #main-title-crisisPage{
+    font-size: 49px;
   }
   .archivepage__desc{
     width: 125px;
@@ -7341,6 +7400,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   #thank-you > .container {
     transform: scale(1);
     top: 60px;
+  }
+  #supervisionRow .main-title{
+    font-size: 55px;
   }
 
   .caldera-grid .has-error {
@@ -7463,15 +7525,40 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
     margin-left: 10px;
   }
+  #main-title-energy{
+    font-size: 47px;
+  }
 }
 
 @media screen and (max-width: 325px) {
   .caldera-grid textarea.form-control {
     height: 106px !important;
   }
-
+  .caldera-grid textarea + span{
+    top: 215px !important;
+  }
+  #main-title-energy{
+    font-size: 43px;
+  }
+  #main-title-blogh1{
+    font-size: 60px;
+    line-height: 50px;
+  }
+  #main-title-blogh2{
+    font-size: 16px;
+  }
+  .main-title{
+    line-height: 1;
+  }
+  #main-title-crisisPage{
+    font-size: 45px;
+    line-height: 40px;
+  }
   .popUpFooter {
     margin-top: 25px !important;
+  }
+  #archivepage{
+    padding-top: 0;
   }
 
   #fld_5507250_2 {
@@ -7488,6 +7575,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-size: 18px;
     line-height: 35px;
     margin-top: 10px;
+  }
+  #supervisionRow .main-title{
+    font-size: 70px;
+    line-height: 60px;
   }
 
   .blogpage__title span {
@@ -7576,7 +7667,14 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   #supervisionYellow {
-    padding-right: 0;
+    /* padding-right: 30px;
+    padding-left: 35px; */
+  }
+  #energyYellow{
+    padding-right: 30px;
+  }
+  html[lang="en-US"] #energyYellow{
+    padding-left: 35px;
   }
 
   .big-projects-list .item-content-block {
@@ -7841,7 +7939,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   #tittleContact {
-    font-size: 33px;
+    font-size: 45px;
   }
 
   #contactCircle {

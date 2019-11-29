@@ -17,13 +17,13 @@ $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
     </a>
     <div class="container borderBlock borderWhite hebrew" id="crisis-border">
       <div class="row"></div>
-      <div class="row">
-        <!-- <div class="title" style="color:white !important;">
-          ניהול משברים וחילוץ\nפרוייקטים תקועים
-        </div> -->
+      <div class="row"><?php if(wp_is_mobile()) { ?>
+            <h1 id="main-title-crisisPage" class="main-title">ניהול משברים וחילוץ פרוייקטים תקועים</h1>
+        <?php } else { ?>
         <div id="crisis-title" class="title" style="color:white !important;">
           <?php the_title() ?>
         </div>
+        <?php } ?>
       </div>
       <div class="row"></div>
       <div id="crisis-circle" class="decorCircle crisis__decorCircle mobile-none">
@@ -47,7 +47,7 @@ $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
   ?>
   <section class="sn-intro">
     <div class="container wow slideInLeft">
-      <h4 class="sn-contactus__title <?= $align . ' ' . $title_reverse ?>"><?= $heading ?></h4>
+      <h4 id="contactus-title" class="sn-contactus__title <?= $align . ' ' . $title_reverse ?>"><?= $heading ?></h4>
       <div class="row d-flex no-gutters crisisreverse">
         <div class="col-md-6 col-sm-12">
           <div class="sn-contactus__topborder <?= $topborder_class ?>"></div>

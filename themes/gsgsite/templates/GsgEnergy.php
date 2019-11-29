@@ -9,14 +9,18 @@ Template Name: GsgEnergy
 
 	<!-- SectionContacts -->
 
-	<section class="headerSection" style="background: url(<?= get_template_directory_uri() . '/assets/images/gsgenergy.png' ?>) center center / cover; background-position: 0 0%;background-size: 100% 95%;background-repeat: no-repeat;">
+	<section id="headerSectionEnergy" class="headerSection" style="background: url(<?= get_template_directory_uri() . '/assets/images/gsgenergy.png' ?>) center center / cover; background-position: 0 0%;background-size: 100% 95%;background-repeat: no-repeat;">
 
 		<div class="energy__borderBlock container bigPaddings borderBlock">
 			<div class="row"></div>
 			<div class="row">
+				<?php if(wp_is_mobile()) { ?>
+            <h1 id="main-title-energy" class="main-title">GSG ENERGY</h1>
+        <?php } else { ?>
 				<div class="title">
 					<?php echo the_title(); ?>
 				</div>
+				<?php } ?>
 			</div>
 			<div class="row"></div>
 			<img class="decorCircle__energy mobile-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/decorEnergy.png" alt="decorAbout">
@@ -39,7 +43,7 @@ Template Name: GsgEnergy
 על פי החלטת הממשלה, משק החשמל בישראל צפוי להשתנות באופן ש 20% מצריכת החשמל בישראל יעבור לייצור באמצעות תחנות כוח פרטיות. החזון שלנו, להאיץ ולקדם הקמת תחנות כוח פרטיות אשר יספקו אנרגיה זולה לאזורי תעשיה, בתי מלון, בתי חולים וישובים.' : 'The energy department at Gavish Shaham Group has ample experience in the energy field, including in the planning and constructing gas stations across Israel.</br>  Now our activity is focused on developing projects for launching private power plants aiming to provide cheaper electricity than that of the Electricity Company and to promote competition in the electricity market in Israel.  Our team of professionals is working to promote projects in the energy field from identifying land (and preparing it for this type of project according to predefined criteria) through completion of the project and delivery to the client. According to the Government\'s decision, the Israeli electricity market is expected to change so that 20% of the consumption of electricity in Israel would be produced by private power plants. Our vision is to accelerate and advance the establishment of private power plants which would provide cheap energy to industrial zones, hotels, hospitals, and communities.  ';
 			$align = (get_locale() != 'en_US') ? 'text-right' : 'text-left';
 			?>
-			<h4 id="supervisionYellow" class="sn-contactus__title <?= $title_reverse . ' ' . $align ?>"><?= $heading ?></h4>
+			<h4 id="energyYellow" class="sn-contactus__title <?= $title_reverse . ' ' . $align ?>"><?= $heading ?></h4>
 			<div class="row d-flex no-gutters">
 				<div class="col-md-6 col-sm-12">
 					<div class="sn-contactus__topborder <?= $topborder_class ?>"></div>

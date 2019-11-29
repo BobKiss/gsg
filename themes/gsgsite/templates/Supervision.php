@@ -15,10 +15,14 @@ Template Name: Supervision
 		</a>
 		<div class="energy__borderBlock borderBlock container borderWhite big hebrew " id="supervision-border">
 			<div class="row"></div>
-			<div class="row">
+			<div id="supervisionRow" class="row">
+				<?php if(wp_is_mobile()) { ?>
+            <h1 class="main-title">ניהול ופיקוח</h1>
+        <?php } else { ?>
 				<div id="supervision-title" class="title" style="color:white !important;">
           <?php the_title() ?>
         </div>
+				<?php } ?>
 			</div>
 			<div class="row"></div>
       <div id="supervision-circle" class="decorCircle mobile-none">
