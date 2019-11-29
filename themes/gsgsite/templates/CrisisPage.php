@@ -18,7 +18,7 @@ $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
     <div class="container borderBlock borderWhite hebrew" id="crisis-border">
       <div class="row"></div>
       <div class="row"><?php if(wp_is_mobile()) { ?>
-            <h1 id="main-title-crisisPage" class="main-title">ניהול משברים וחילוץ פרוייקטים תקועים</h1>
+            <h1 id="main-title-crisisPage" class="main-title"> <?php _e('Crisis management and project rescue','gsg'); ?> </h1>
         <?php } else { ?>
         <div id="crisis-title" class="title" style="color:white !important;">
           <?php the_title() ?>
