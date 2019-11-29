@@ -18,8 +18,8 @@ Template Name: Blog
           $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
         ?>
         <?php if(wp_is_mobile()) { ?>
-            <h1 id="main-title-blogh1" class="main-title">חילוץ פרוייקט ממשבר - חלק א’</h1>
-            <h2 id="main-title-blogh2" class="main-title">תמ"א 38 והתחדשות עירונית</h2>
+            <h1 id="main-title-blogh1" class="main-title"><?php _e('Rescue Project Crisis - Part I','gsg'); ?></h1>
+            <h2 id="main-title-blogh2" class="main-title"><?php _e('38 and urban renewal','gsg'); ?></h2>
         <?php } else { ?>
         <div id="blog-title" class="title" style="color:white !important;"><?= $heading ?></div>
         <div class="littleTitle" style="color:white !important;" id="blog-lt">

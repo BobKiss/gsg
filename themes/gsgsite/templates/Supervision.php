@@ -17,7 +17,7 @@ Template Name: Supervision
 			<div class="row"></div>
 			<div id="supervisionRow" class="row">
 				<?php if(wp_is_mobile()) { ?>
-            <h1 class="main-title">ניהול ופיקוח</h1>
+            <h1 class="main-title"><?php _e('Management and supervision','gsg'); ?></h1>
         <?php } else { ?>
 				<div id="supervision-title" class="title" style="color:white !important;">
           <?php the_title() ?>
