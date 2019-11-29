@@ -1133,7 +1133,7 @@ html[lang="en-US"] .crisisreverse {
   border-top: 2px solid #171111;
   max-height: 15vh;
   position: absolute;
-  bottom: calc(100% - 14vh);
+  bottom: calc(100% - 13vh);
   left: 0;
   animation: borderHorizonal 0.5s 0.5s, borderVertical 0.5s 0.3s;
   animation-fill-mode: forwards;
@@ -4571,7 +4571,7 @@ html[lang="en-US"] #blog-border {
 html[lang="en-US"] #blog-title {
   transform: scale(-1, 1);
   text-align: justify;
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 
 html[lang="en-US"] #blog-lt {
@@ -5649,6 +5649,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+  html[lang="en-US"] #energyYellow{
+    padding-left: 35px;
   }
   #contactus-title{
     padding-left: 35px;
