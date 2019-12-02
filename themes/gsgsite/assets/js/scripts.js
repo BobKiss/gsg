@@ -72,6 +72,7 @@ jQuery(document).ready(function ($) {
 
   // Menu border animation
   $('.sideMenu .sideMenuItem.first').click(function(e){
+
     // console.log('click');
     $(this).toggleClass('active');
     $(this).parent().toggleClass('active');
@@ -80,9 +81,11 @@ jQuery(document).ready(function ($) {
     $('.sideMenuWrapper').toggleClass('active');
 
     // Animation
-    $('.menuBlock .menu-border-top').toggleClass('border-top-animate');
-    $('.menuBlock .menu-border-left').toggleClass('border-left-animate');
-    $('.menuBlock .menu-border-bottom').toggleClass('border-bottom-animate');
+    if ( window.innerWidth > 425 ) {
+      $('.menuBlock .menu-border-top').toggleClass('border-top-animate');
+      $('.menuBlock .menu-border-left').toggleClass('border-left-animate');
+      $('.menuBlock .menu-border-bottom').toggleClass('border-bottom-animate');
+    }
   });
 
   $('.mainNavigationContainer .menu-item-has-children > a, .fullscreenMenu .menu-item-has-children > a').click(function (e) {

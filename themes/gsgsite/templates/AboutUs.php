@@ -7,12 +7,12 @@ Template Name: About Us
 
 <div class="page">
   <div class="aboutUsPageWrapper">
-    <section class="headerSection" style="background-image: url(<?php echo site_url(); ?>/wp-content/uploads/2019/08/aboutUsBg.jpg)">
+    <section id="about-us-header-section" class="headerSection" style="background-image: url(<?php echo site_url(); ?>/wp-content/uploads/2019/08/aboutUsBg.jpg)">
       <div class="borderBlock container">
         <div id="up-row" class="row"></div>
         <div class="row">
           <?php if(wp_is_mobile()) { ?>
-            <h1 class="main-title">WHO WE <br> ARE WHAT <br> WE DO</h1>
+            <h1 id="about-us-title__mobile" class="main-title">WHO WE <br> ARE WHAT <br> WE DO</h1>
         <?php } else { ?>
           <div id="aboutus-title" class="title">
             WHO WE ARE\nWHAT WE DO

@@ -1795,7 +1795,8 @@ html[lang=en-US] .aboutUsPageWrapper .activityAreas .list {
 }
 
 .sideMenu .sideMenuItem.active {
-  background-color: #fff600;
+  background-color: black;
+  /* background-color: #fff600; */
 }
 
 .sideMenu.active .sideMenuItem {
@@ -1854,7 +1855,7 @@ html[lang=en-US] .aboutUsPageWrapper .activityAreas .list {
   position: absolute;
   top: 0;
   right: 0;
-  width: 1px;
+  width: 2px;
   height: 40%;
   background: #fff600;
 }
@@ -2092,7 +2093,8 @@ html[lang=en-US] .aboutUsPageWrapper .activityAreas .list {
   transition: .5s;
   font-size: 30px;
   font-weight: 100;
-  color: black;
+  /* color: black; */
+  color: #fff600;
 }
 
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after {
@@ -2281,7 +2283,8 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
 }
 
 #popUpColumnLogo {
-  margin-top: -9px;
+  /* margin-top: -9px; */
+  margin-top: 3px;
 }
 
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(1)::before {
@@ -2395,7 +2398,8 @@ html[lang=en-US] .row.oranit {
 }
 
 .sideMenu .mailBlock a.sideMenuMail.opened {
-  background-color: #fff600;
+  /* background-color: #fff600; */
+  background-color: black;
 }
 
 .sideMenu .sideMenuItem .sideMenuMail.opened img {
@@ -6657,13 +6661,15 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .sideMenuWrapper {
-    height: 90vh;
+    height: 100vh;
+    padding-top: 60px;
     bottom: 0;
   }
 
   .sideMenu .sideMenuItem.active i,
   .sideMenu .sideMenuMail.opened i {
     font-size: 23px;
+    color: #fff106;
   }
 
   .sideMenu .mailBlock .popup {
@@ -7420,6 +7426,19 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-size: 60px;
     margin-top: inherit;
   }
+
+  .menuBlock .menu-border-top,
+  .menuBlock .menu-border-bottom {
+    width: 100%;
+    border: 1px solid #fff600;
+  }
+  .menuBlock .menu-border-left {
+    height: 100%;
+    border: 1px solid #fff600;
+  }
+  #about-us-title__mobile {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -7576,11 +7595,14 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding-top: 40px;
   }
 
-  .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
+  /* .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
     margin-left: 10px;
-  }
+  } */
   #main-title-energy{
     font-size: 47px;
+  }
+  #popUpColumnLogo {
+    margin-left: 10px;
   }
 }
 
@@ -8023,6 +8045,13 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   #coming-soon {
     padding-top: 25px !important;
+  }
+  #about-us-title__mobile {
+    font-size: 59px;
+  }
+  #about-us-header-section {
+    padding-left: 36px;
+    padding-right: 31px;
   }
 }
 
