@@ -5636,6 +5636,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(0.9);
   }
 }
+@media screen and (max-height: 700px) and (max-width: 1300px) {
+  .borderblockWrapper {
+    transform: scale(0.89);
+  }
+
+}
 
 @media screen and (max-height: 690px) {
   html[lang="en-US"] #blog-border {
@@ -5647,10 +5653,15 @@ html[lang="en-US"] #blogpage .blogpage__title {
   html[lang="en-US"] #blog-border {
     transform: scale(0.89);
   }
+  .borderblockWrapper {
+    transform: scale(0.7);
+  }
 }
-@media screen and (max-height: 700px) {
-  html[lang="en-US"] #blog-border {
-    transform: scale(0.89);
+
+@media screen and (max-height: 640px) and (min-width: 770px) {
+  .clientsBlock.visible{
+    transform: scale(0.8);
+    right: -10px;
   }
 }
 

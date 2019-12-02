@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header id="header" class="header" style="background: url(<?php echo site_url(); ?>/wp-content/themes/gsgsite/assets/images/archive_01.jpg) center center / cover">
+	<header id="header" class="header" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center center / cover">
 	<div id="single-post-container" class="container single-post">
 		<div class="row">
 			<div class="col-12">
