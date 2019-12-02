@@ -17,8 +17,7 @@
 				<div class="blog__borderblock"></div>
 				<div class="blog__borderblock" id="blog__row-middle">
 					<h2 id="blog-title" class="header__title" style="color:white !important;">
-					 איך מתמודדים \n
-	עם דייר סרבן?
+					 <?php the_title() ?>
 				</h2></div>
 				<div class="blog__borderblock">
 						<img id="single-post-circle" class="decorCircle mobile-none" src="<?php echo site_url() ?>/wp-content/themes/gsgsite/assets/images/blogcirc.png" alt="blogcircle">

@@ -62,7 +62,7 @@ Template Name: Blog
                 ?>
 
                 <a href="<?php the_permalink(); ?>" class="archivepage__img archivepage__img_0<?php echo $counter; ?>" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center center / cover">
-                  <span class="archivepage__desc">
+                  <span class="archivepage__desc">e
 
                       <?= $button ?>
 
