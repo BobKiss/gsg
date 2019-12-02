@@ -69,6 +69,31 @@ a:focus {
 .wp-image-417 {
   width: 390px;
 }
+.wp-image-859{
+  height: 600px;
+  width: 420px;
+}
+.wp-image-873{
+  width: 420px;
+  height: 420px;
+}
+.wp-image-869{
+  height: 800px;
+  padding-right: 10px;
+}
+.wp-image-880{
+  width: 100%;
+  height: 500px;
+  padding-right: 10px;
+}
+.wp-image-878{
+  padding-left: 10px;
+}
+.wp-image-884{
+  width: 100%;
+  height: 500px;
+  padding-right: 10px;
+}
 
 .wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized {
   width: 100%;
