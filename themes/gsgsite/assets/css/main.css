@@ -2308,8 +2308,7 @@ html[lang=en-US] .sideMenu .mailBlock .popup .popupForm textarea {
 }
 
 #popUpColumnLogo {
-  /* margin-top: -9px; */
-  margin-top: 3px;
+  margin-top: -9px;
 }
 
 .sideMenu .mailBlock .popup .popUpFooter .popupColumn:nth-child(1)::before {
@@ -5697,6 +5696,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+  #popUpColumnLogo {
+    margin-top: 3px;
   }
   html[lang="en-US"] #energyYellow{
     padding-left: 35px;
