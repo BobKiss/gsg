@@ -17,10 +17,14 @@ Template Name: Homepage
       <div class="col-12 borderblockWrapper">
         <div class="borderblock"></div>
         <div class="borderblock">
+          <?php if(wp_is_mobile()) { ?>
+            <h1 id="mainpage" class="main-title">LIVE LARGE EVERY DAY</h1>
+        <?php } else { ?>
           <h2 class="header__title">
             LIVE LARGE\nEVERY DAY
           </h2>
         </div>
+        <?php } ?>
         <div class="borderblock">
           <img src="<?php bloginfo('template_url'); ?>/assets/images/HomeCircleTxt.png" class="header__round_text" alt="">
           <div class="bottomLine">

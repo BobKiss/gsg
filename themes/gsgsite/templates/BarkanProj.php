@@ -193,7 +193,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 		</div>
 	</section>
 
-	<section id="sn-contactus" class="sn-contactsus">
+	<!-- <section id="sn-contactus" class="sn-contactsus">
 		<div id="crisisForm" class="container wow slideInRight">
 			<?php
 			$align = (get_locale() != 'en_US') ? 'text-right' : 'text-left';
@@ -207,7 +207,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 
 		</div>
 
-	</section>
+	</section> -->
 
 </div>
 

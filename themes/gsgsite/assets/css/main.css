@@ -7169,6 +7169,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .archive .headerSection .borderBlock.hebrew .row .littleTitle{
     font-size: 30px;
   }
+  .header__round_text{
+    display: none;
+  }
+  #mainpage{
+    text-align: left;
+  }
   #tittleContact{
     font-size: 60px;
   }
