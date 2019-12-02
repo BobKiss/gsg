@@ -470,6 +470,15 @@ jQuery(document).ready(function ($) {
 
   $('.archivepage__desc').text('לפוסט המלא >>' );
 }
+
+  // footer
+  if ( window.innerWidth <= 425 ) {
+
+  console.log('copyright');
+  // let newtext = $('.archivepage__desc').first().text();
+
+  $('.policies_footer a').text('@ כל הזכויות שמורות לgsg  | לתקנון אתר' );
+}
   // main page buttons
   if ( window.innerWidth > 475 ) {
     return;

@@ -74,7 +74,7 @@ Template Name: About Us
           'w3' => (get_locale() != 'en_US') ? 'בארץ' : 'in the country',
         ]
         ?>
-        <div class="title <?= $row_direction ?>"><?= $heading ?></div>
+        <div id="titleMap" class="title <?= $row_direction ?>"><?= $heading ?></div>
       </div>
       <div class="container about-us-map">
 

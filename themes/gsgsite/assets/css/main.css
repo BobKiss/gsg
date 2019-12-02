@@ -560,6 +560,9 @@ html[lang="en-US"] .mailBlock .caldera-grid .help-block {
 .menu-border-bottom {
   position: absolute;
 }
+.caldera-grid input+span{
+  margin-left: 20px;
+}
 
 .blog__borderblock .decorCircle {
   width: 300px;
@@ -1133,7 +1136,7 @@ html[lang="en-US"] .crisisreverse {
   border-top: 2px solid #171111;
   max-height: 15vh;
   position: absolute;
-  bottom: calc(100% - 14vh);
+  bottom: calc(100% - 13vh);
   left: 0;
   animation: borderHorizonal 0.5s 0.5s, borderVertical 0.5s 0.3s;
   animation-fill-mode: forwards;
@@ -4243,7 +4246,7 @@ html[lang="en-US"] .contactus__title.text-left+.caldera-grid .first_row .form-co
 
 .caldera-grid input+span {
   margin-top: 14px !important;
-  margin-left: 15px;
+  /* margin-left: 40px; */
 }
 
 .caldera-grid textarea+span {
@@ -4571,7 +4574,7 @@ html[lang="en-US"] #blog-border {
 html[lang="en-US"] #blog-title {
   transform: scale(-1, 1);
   text-align: justify;
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 
 html[lang="en-US"] #blog-lt {
@@ -5137,7 +5140,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .aboutUsPageWrapper .aboutYellow {
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     padding-top: 57px;
   }
 
@@ -5633,6 +5636,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(0.9);
   }
 }
+@media screen and (max-height: 700px) and (max-width: 1300px) {
+  .borderblockWrapper {
+    transform: scale(0.89);
+  }
+
+}
 
 @media screen and (max-height: 690px) {
   html[lang="en-US"] #blog-border {
@@ -5644,14 +5653,30 @@ html[lang="en-US"] #blogpage .blogpage__title {
   html[lang="en-US"] #blog-border {
     transform: scale(0.89);
   }
+  .borderblockWrapper {
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-height: 640px) and (min-width: 770px) {
+  .clientsBlock.visible{
+    transform: scale(0.8);
+    right: -10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
+  html[lang="en-US"] #energyYellow{
+    padding-left: 35px;
+  }
   #contactus-title{
     padding-left: 35px;
+  }
+  #titleMap{
+    margin-bottom: 18px;
   }
   .sn-contactus__title{
         line-height: 21px;
@@ -5693,17 +5718,17 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: unset;
   }
   .aboutUsPageWrapper .aboutMap {
-    padding-top: 20px;
+    padding-top: 22px;
     padding-bottom: 0;
   }
   .aboutUsPageWrapper .aboutYellow p{
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
   }
   .aboutUsPageWrapper .aboutYellow p:last-item{
     padding-bottom: 60px;
   }
   .activityAreas .titleContainer .title{
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   .aboutUsPageWrapper .activityAreas .pContent p{
     margin-bottom: 2rem;
@@ -5925,11 +5950,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding-bottom: 50px;
   }
 
-  .sn-intro .container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .sn-contactus__title {
     width: 100%;
     padding-right: 30px;
@@ -6061,7 +6081,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .sideMenuWrapper .sideMenuContent {
-    padding: 20px 50px;
+    padding: 21px 50px;
     margin-top: 0;
     padding-right: 51px;
     padding-left: 24px;
@@ -6460,6 +6480,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     } */
   .aboutYellow .container .row .bold {
     margin-right: 0;
+    padding-bottom: 70px;
   }
 
   html[lang=en-US] .transformed {
@@ -6710,6 +6731,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .sn-intro .container {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
   .container {
@@ -7192,6 +7215,25 @@ html[lang="en-US"] #blogpage .blogpage__title {
     margin-right: auto;
     /* transform: scale(-1,1); */
   }
+  .archivepage{
+    border-top: none;
+    padding-top: 0;
+  }
+  .archivepage__wrap_left{
+    margin-top: 0;
+  }
+  .archivepage{
+    padding-bottom: 0;
+  }
+  .archivepage__wrap_right .archivepage__img_03{
+    height: 270px;
+  }
+  .archivepage__wrap_left .archivepage__img_01{
+    height: 270px;
+  }
+  .archivepage__img{
+    height: 230px;
+  }
   html[lang="en-US"] #supervisionRow{
     direction: rtl;
   }
@@ -7227,7 +7269,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     display: none !important;
   }
   .policies_footer{
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .site-footer{
     padding-top: 10px;
@@ -7387,6 +7429,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   #tittleContact{
     font-size: 50px;
   }
+  #titleMap{
+    font-size: 13px;
+  }
   .clientsBlock a{
     width: 125px;
     height: 45px;
@@ -7424,7 +7469,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .caldera-grid input+span {
-    margin-top: 55px !important;
+    margin-top: 40px !important;
   }
 
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .submitButton {
@@ -7452,7 +7497,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .caldera-grid .form-group {
-    margin-bottom: 14px !important;
+    margin-bottom: 25px !important;
   }
 
   .logo-mail-block {
@@ -7528,7 +7573,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   .aboutUsPageWrapper .aboutYellow {
     padding-bottom: 0px;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   .sideMenu .mailBlock .popup .popUpFooter .popupColumn .logo {
@@ -7544,7 +7589,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     height: 106px !important;
   }
   .caldera-grid textarea + span{
-    top: 215px !important;
+    top: 180px !important;
   }
   #main-title-energy{
     font-size: 43px;
