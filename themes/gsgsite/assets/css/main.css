@@ -107,6 +107,13 @@ a:focus {
   direction: rtl;
   text-align: right;
 }
+.wp-image-908{
+  height: 360px;
+  padding-left: 10px;
+}
+.wp-image-906{
+  height: 450px;
+}
 
 .wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized {
   width: 100%;
