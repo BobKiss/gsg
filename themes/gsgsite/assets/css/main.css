@@ -5659,7 +5659,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
 @media screen and (max-width: 1550px) and (max-height:750px) {
   .container.homepageContainer {
-    transform: scale(0.9);
   }
 }
 @media screen and (max-width: 768px) and (min-height: 600px) {
@@ -6087,7 +6086,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding: 0;
     margin: 0;
     top: 0;
-    margin-top: calc(100vh - 150px);
+    margin-top: 60px;
+    position: relative;
     width: 100%;
     max-width: 100%;
     -webkit-flex-direction: row;
@@ -6095,7 +6095,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     flex-direction: row;
     justify-content: space-between;
   }
-
+  .container.homepageContainer{
+  margin-top: 115px;
+  }
   .clientItemHome:nth-child(2) p {
     margin-right: auto;
     text-align: right;
@@ -6868,7 +6870,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .project__connect{
     font-size: 20px;
   }
-
+  .container.homepageContainer > .row{
+    display: none;
+  }
   .caldera-grid .first_row {
     display: flex;
     flex-direction: column-reverse;
@@ -7149,7 +7153,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .clientsBlock {
-    margin-top: calc(109vh - 150px);
   }
 
   .header__round_text {
@@ -7296,8 +7299,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
     height: 400px;
   }
   .main-title{
-    font-size: 63px;
-    line-height: 53px;
+    font-size: 73px;
+    line-height: 59px;
     font-weight: 800;
   }
   [dir=rtl] #supervisionRow{
@@ -7417,7 +7420,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
     display: none;
   }
   .clientsBlock{
-    margin-top: calc(90vh - 150px);
     justify-content: space-between;
     padding: 0 50px;
   }
@@ -7437,7 +7439,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     text-align: left;
   }
   .clientsBlock{
-  padding: 0 30px;
+  padding: 0;
 }
   /* .thank-you-circle, .thank-you-circle__alt {
     transform: scale(0.5);
@@ -7542,8 +7544,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-size: 13px;
   }
   .clientsBlock a{
-    width: 125px;
-    height: 45px;
+    width: 120px;
+    height: 40px;
   }
   #main-title-blogh1{
     font-size: 75px;
@@ -7558,7 +7560,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
     line-height: 48px;
   }
   .clientsBlock p{
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 15px;
   }
   #thank-you > .container {
     transform: scale(1);
@@ -7663,7 +7666,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .clientsBlock {
-    margin-top: calc(109vh - 200px);
   }
 
   .header404 {
@@ -7795,7 +7797,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .clientsBlock {
-    margin-top: calc(109vh - 150px);
   }
 
   html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol {
@@ -8232,3 +8233,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
 }
 
 /* Statline animation end */
+.main-title{
+  color: black;
+}

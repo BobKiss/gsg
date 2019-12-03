@@ -13,12 +13,27 @@ Template Name: Homepage
 </div>
 <header id="header" class="header" style="">
   <div class="container homepageContainer">
+    <?php if(wp_is_mobile()){ ?>
+      <h1 id="mainpage" class="main-title">LIVE <br> LARGE <br> EVERY <br> DAY</h1>
+      <div class="clientsBlock mobile">
+          <?php
+            $private = ( get_locale() != 'en_US' ) ? 'Business Clients' : 'Private Clients';
+            $buisness = ( get_locale() != 'en_US' ) ? 'Private Clients' : 'Business Clients';
+          ?>
+          <a href="<?php echo get_bloginfo('url'); ?>/gsg-energy/" class="clientItemHome">
+            <p><?= $private ?></p>
+          </a>
+          <a href="<?php echo get_bloginfo('url'); ?>/immediate-projects/" class="clientItemHome">
+            <p><?= $buisness ?></p>
+          </a>
+        </div>
+    <?php } ?>
     <div class="row">
       <div class="col-12 borderblockWrapper">
         <div class="borderblock"></div>
         <div class="borderblock">
           <?php if(wp_is_mobile()) { ?>
-            <h1 id="mainpage" class="main-title">LIVE LARGE EVERY DAY</h1>
+
         <?php } else { ?>
           <h2 class="header__title">
             LIVE LARGE\nEVERY DAY
@@ -33,7 +48,12 @@ Template Name: Homepage
       </div>
     </div>
   </div>
-  <div class="clientsBlock">
+</header> <!-- .headerSection-->
+<?php if(wp_is_mobile()){ ?>
+
+<?php }
+else{ ?>
+<div class="clientsBlock">
     <?php
       $private = ( get_locale() != 'en_US' ) ? 'Business Clients' : 'Private Clients';
       $buisness = ( get_locale() != 'en_US' ) ? 'Private Clients' : 'Business Clients';
@@ -45,8 +65,7 @@ Template Name: Homepage
       <p><?= $buisness ?></p>
     </a>
   </div>
-</header> <!-- .headerSection-->
-
+<?php } ?>
 
 
 
