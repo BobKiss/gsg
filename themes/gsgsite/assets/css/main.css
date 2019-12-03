@@ -5742,6 +5742,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   body {
     overflow-x: hidden;
   }
+  .small-projects-list{
+    display: none;
+  }
   #popUpColumnLogo {
     margin-top: 3px;
   }
@@ -7868,7 +7871,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   .big-projects-list .list-item {
     margin-bottom: 40px;
-    width: calc(100% - 40px);
+    width: 100%;
   }
 
   .gsg-energy__map {
