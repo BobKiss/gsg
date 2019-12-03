@@ -5748,6 +5748,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   body {
     overflow-x: hidden;
   }
+  .big-projects-list .list-item{
+    width: 100%;
+  }
   #popUpColumnLogo {
     margin-top: 3px;
   }
@@ -5776,6 +5779,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .aboutUsPageWrapper .activityAreas .pTitle{
     font-size: 17px;
     color: #d2d2d2;
+    display: inline-block;
   }
   .big-projects-list .item-content-block,
   .small-projects-list .list-item .view-btn{
@@ -7291,6 +7295,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .header__round_text{
     display: none;
   }
+  .small-projects-list.container-2{
+    display: none;
+  }
+  .connect-from-item .item-content-block__alt{
+    display: none;
+  }
   .clientsBlock.mobile.visible{
       margin-top: 25px;
   }
@@ -7891,6 +7901,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .big-projects-list .list-item {
     margin-bottom: 40px;
     width: calc(100% - 40px);
+    width: 100%;
   }
 
   .gsg-energy__map {
