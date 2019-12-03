@@ -5654,7 +5654,24 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(0.9);
   }
 }
-
+@media screen and (max-width: 768px) and (min-height: 600px) {
+    .sideMenuWrapper .sideMenuContent .menuBlock {
+      padding: 25px;
+      margin-top: 57px;
+  }
+  .sideMenuWrapper .sideMenuContent {
+    height: 100%;
+    justify-content: space-between;
+    margin-left: 27px;
+  }
+}
+@media screen and (max-width: 375px) and (max-height: 737px) {
+    .sideMenuWrapper .sideMenuContent {
+       height: 100%;
+       justify-content: space-between;
+       margin-top: 27px;
+    }
+}
 @media screen and (min-width: 768px) and (max-height: 900px) {
   .coming__wrap {
     transform: scale(0.8) !important;
