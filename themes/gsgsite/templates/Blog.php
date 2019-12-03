@@ -23,9 +23,9 @@ Template Name: Blog
             <h2 id="main-title-blogh2" class="main-title"><?php _e('38 and urban renewal','gsg'); ?></h2>
         <?php } else { ?>
         <div id="blog-title" class="title" style="color:white !important;"><?= $heading ?></div>
-        <div class="littleTitle" style="color:white !important;" id="blog-lt">
+        <a href="<?php echo get_permalink( $pinned_post ); ?>" class="littleTitle" style="color:white !important;" id="blog-lt">
           <?= $text ?>
-        </div>
+        </a>
         <?php } ?>
       </div>
       <div class="row"></div>
