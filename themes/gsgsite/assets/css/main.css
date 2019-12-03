@@ -7310,6 +7310,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   #supervisionRow .main-title{
     font-size: 65px;
   }
+  html[lang="en-US"] #supervisionRow .main-title{
+    font-size: 55px;
+  }
   #main-title-crisisPage{
     /* text-align: left; */
     font-size: 60px;
@@ -7540,6 +7543,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   #supervisionRow .main-title{
     font-size: 55px;
+  }
+  html[lang="en-US"] #supervisionRow .main-title{
+    font-size: 50px;
   }
 
   .caldera-grid .has-error {
