@@ -3102,6 +3102,12 @@ html[lang="en-US"] .contactsus-after-line>div:first-child {
   border-top: 25px solid #fff600;
   padding-top: 75px;
 }
+.wp-block-column p{
+  padding-left: 35px;
+}
+html[lang="en-US"] .wp-block-column p {
+  padding-right: 35px;
+}
 
 .blog .decorCircle {
   position: absolute;
@@ -7729,6 +7735,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   #main-title-blogh2{
     font-size: 16px;
+  }
+  .clientsBlock a{
+    width: 112px;
   }
   .main-title{
     line-height: 1;
