@@ -7683,6 +7683,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .caldera-grid textarea + span{
     top: 180px !important;
   }
+  html[lang="en-US"] #supervisionRow .main-title{
+    font-size: 43px;
+  }
   #main-title-energy{
     font-size: 43px;
   }
