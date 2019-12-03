@@ -13,8 +13,9 @@ Template Name: Blog
       <div class="row"></div>
       <div class="row">
         <?php
-          $heading = ( get_locale() != 'en_US' ) ? 'חילוץ פרוייקט \nממשבר - חלק א’' : 'Rescue Project\nCrisis - Part I';
-          $text = ( get_locale() != 'en_US' ) ? 'תמ"א 38 והתחדשות עירונית' : '38 and urban renewal ';
+          $pinned_post = get_field('pinned_post');
+          $heading = $pinned_post->post_title;
+          $text = get_field('pinned_post_small_text');
           $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
         ?>
         <?php if(wp_is_mobile()) { ?>
