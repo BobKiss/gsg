@@ -75,10 +75,10 @@ a:focus {
 }
 .wp-image-873{
   width: 420px;
-  height: 420px;
+  height: 487px;
 }
 .wp-image-869{
-  height: 800px;
+  height: 888px;
   /* padding-right: 10px; */
 }
 .wp-image-880{
@@ -99,6 +99,13 @@ a:focus {
 }
 .wp-image-886{
   width: 420px;
+}
+.wp-image-893{
+  height: 430px;
+}
+.entry-content ul{
+  direction: rtl;
+  text-align: right;
 }
 
 .wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized {
