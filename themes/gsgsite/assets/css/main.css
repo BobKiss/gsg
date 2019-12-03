@@ -7340,6 +7340,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-weight: 600;
     letter-spacing: 1px;
   }
+  #main-title-blogh2 a{
+    color: black;
+  }
   .headerSection .borderBlock.borderWhite{
     transform: unset;
   }

@@ -19,8 +19,12 @@ Template Name: Blog
           $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
         ?>
         <?php if(wp_is_mobile()) { ?>
-            <h1 id="main-title-blogh1" class="main-title"><?php _e('Rescue Project Crisis - Part I','gsg'); ?></h1>
-            <h2 id="main-title-blogh2" class="main-title"><?php _e('38 and urban renewal','gsg'); ?></h2>
+            <h1 id="main-title-blogh1" class="main-title"><?php echo $heading; ?></h1>
+            <h2 id="main-title-blogh2" class="main-title">
+              <a href="<?php echo get_permalink( $pinned_post ); ?>">
+                <?php echo $text ?>
+              </a>
+            </h2>
         <?php } else { ?>
         <div id="blog-title" class="title" style="color:white !important;"><?= $heading ?></div>
         <a href="<?php echo get_permalink( $pinned_post ); ?>" class="littleTitle" style="color:white !important;" id="blog-lt">
