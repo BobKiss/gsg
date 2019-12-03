@@ -160,7 +160,7 @@ $align = ( get_locale() != 'en_US' ) ? 'text-right' : 'text-left';
 				?>
 				<div class="col-md-6 col-12 <?= $align ?>"><h5 class="barkan-about__title"><?= $heading ?></h5></div>
 				<div class="col-12">
-					<iframe src="https://snazzymaps.com/embed/192528" width="100%" height="380px" style="border:none;"></iframe>
+					<iframe src="https://snazzymaps.com/embed/203726" width="100%" height="320px" style="border:none;"></iframe>
 				</div>
 			</div>
 		</div>

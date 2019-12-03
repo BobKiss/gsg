@@ -7315,6 +7315,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   #supervisionRow .main-title{
     font-size: 65px;
   }
+  html[lang="en-US"] #supervisionRow .main-title{
+    font-size: 55px;
+  }
   #main-title-crisisPage{
     /* text-align: left; */
     font-size: 60px;
@@ -7546,6 +7549,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   #supervisionRow .main-title{
     font-size: 55px;
   }
+  html[lang="en-US"] #supervisionRow .main-title{
+    font-size: 50px;
+  }
 
   .caldera-grid .has-error {
     position: relative;
@@ -7681,6 +7687,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   .caldera-grid textarea + span{
     top: 180px !important;
+  }
+  html[lang="en-US"] #supervisionRow .main-title{
+    font-size: 43px;
   }
   #main-title-energy{
     font-size: 43px;
