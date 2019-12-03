@@ -7289,6 +7289,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     text-align: right;
     direction: rtl;
   }
+  .wp-image-859{
+    height: 400px;
+  }
   .main-title{
     font-size: 63px;
     line-height: 53px;
