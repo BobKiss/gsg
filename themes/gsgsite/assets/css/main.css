@@ -7285,6 +7285,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .header__round_text{
     display: none;
   }
+  .clientsBlock.mobile.visible{
+      margin-top: 25px;
+  }
+  .container.homepageContainer{
+      margin-top: 92px;
+  }
   #mainpage{
     text-align: left;
   }
