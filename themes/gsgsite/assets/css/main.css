@@ -7292,6 +7292,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .wp-image-859{
     height: 400px;
   }
+  .archivepage__img_title{
+    font-size: 16px;
+  }
   .main-title{
     font-size: 63px;
     line-height: 53px;
@@ -7756,7 +7759,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .blogpage .container, .archivepage .container, .site-footer .container {
-    padding-right: 50px;
+    padding-right: 30px;
+    padding-left: 20px;
+  }
+  .archivepage__wrap_left{
+    padding-right: 0;
   }
 
   #blog-container {
