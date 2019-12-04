@@ -5240,6 +5240,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .archivepage__img_text{
     border: none;
   }
+  .sideMenuWrapper .sideMenuContent .infoRow{
+    overflow: scroll;
+  }
+  .sideMenuWrapper .sideMenuContent .infoCol:nth-child(4){
+    margin-left: 14px;
+  }
 
   .sideMenuWrapper .sideMenuContent .infoCol {
     min-width: 152px;
@@ -7298,6 +7304,17 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .small-projects-list.container-2{
     display: none;
   }
+  #sn-contactus{
+    padding-top: 22px;
+    padding-bottom: 28px;
+  }
+  .sn-intro .container{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #sn-intro-yellow{
+    top: 37px;
+  }
   .connect-from-item .item-content-block__alt{
     display: none;
   }
@@ -7568,6 +7585,12 @@ html[lang="en-US"] #blogpage .blogpage__title {
   #tittleContact{
     font-size: 50px;
   }
+  .sideMenuWrapper .sideMenuContent .infoCol{
+    min-width: 151px;
+  }
+  .sideMenuWrapper .sideMenuContent .infoCol:nth-child(4){
+    margin-left: 27px;
+  }
   #titleMap{
     font-size: 13px;
   }
@@ -7739,6 +7762,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   html[lang="en-US"] #supervisionRow .main-title{
     font-size: 43px;
   }
+  .sideMenuWrapper .sideMenuContent .infoCol{
+    width: 155px;
+  }
   #main-title-energy{
     font-size: 43px;
   }
@@ -7871,7 +7897,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .sn-contactus__title {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   #supervisionYellow {
