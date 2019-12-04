@@ -5776,6 +5776,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   body {
     overflow-x: hidden;
   }
+  html[lang="en-US"] .singleParagraph{
+      text-align: left;
+  }
   .big-projects-list .list-item{
     width: 100%;
   }
@@ -7329,9 +7332,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .header__round_text{
     display: none;
   }
-  html[lang="en-US"] .singleParagraph{
-      text-align: left;
-  }
+
   #BlackTitleContainer{
       padding-right: 35px !important;
   }
