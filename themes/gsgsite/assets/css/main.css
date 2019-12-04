@@ -7301,6 +7301,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .connect-from-item .item-content-block__alt{
     display: none;
   }
+  #sn-intro-energy{
+    padding-top: 0;
+  }
   .clientsBlock.mobile.visible{
       margin-top: 25px;
   }
@@ -7836,7 +7839,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   #sn-intro-energy {
-    padding-top: 35px;
+    /* padding-top: 35px; */
     padding-bottom: 45px;
   }
 
