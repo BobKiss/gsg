@@ -4888,6 +4888,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding-top: 62px;
     padding-bottom: 60px;
   }
+  #YellowTitleContainer{
+    margin-bottom: 28px;
+  }
 
   .blog__borderblock .decorCircle {
     left: -20px;
@@ -5247,6 +5250,15 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .archivepage__img_title p{
     display: none;
   }
+  #YellowTitleContainer{
+    margin-right: 26px;
+  }
+  #BlackTitleContainer{
+    padding-right: 60px;
+  }
+  #BlackTextAbout{
+    padding-right: 60px;
+  }
   .archivepage__img_text{
     border: none;
   }
@@ -5296,8 +5308,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   #sn-intro-energy {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px; */
+    /* padding-bottom: 100px; */
   }
 
   #crisis-title {
@@ -5769,6 +5781,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   #popUpColumnLogo {
     margin-top: 3px;
+  }
+  #sn-intro-energy{
+    padding-top: 10px;
   }
   html[lang="en-US"] #energyYellow{
     padding-left: 35px;
@@ -6893,6 +6908,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .contactus__links {
     margin-top: 33px;
   }
+  #energyYellow{
+    font-size: 23px;
+  }
   .project__connect{
     font-size: 20px;
   }
@@ -7329,7 +7347,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     display: none;
   }
   #sn-intro-energy{
-    padding-top: 0;
+    padding-top: 28px;
   }
   .clientsBlock.mobile.visible{
       margin-top: 25px;

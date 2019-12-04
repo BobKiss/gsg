@@ -31,7 +31,7 @@ Template Name: About Us
         $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
         $heading = (get_locale() != 'en_US') ? 'קבוצת גביש שחם | פרופיל חברה' : 'Gavish Shaham Group | Company Profile';
         ?>
-        <div class="title <?= $row_direction ?>"><?= $heading ?></div>
+        <div id="YellowTitleContainer" class="title <?= $row_direction ?>"><?= $heading ?></div>
       </div>
       <div class="container">
 
@@ -106,7 +106,7 @@ Template Name: About Us
     </section>
 
     <section class="activityAreas wow slideInLeft">
-      <div class="titleContainer">
+      <div id="BlackTitleContainer" class="titleContainer">
         <?php
         $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
         $heading = (get_locale() != 'en_US') ? 'קבוצת גביש שחם | תחומי פעילות' : 'Gavish Shaham Group | Areas of Activity';
@@ -114,7 +114,7 @@ Template Name: About Us
         <div class="title <?= $row_direction ?>"><?= $heading ?></div>
       </div>
 
-      <div class="titleContainer content">
+      <div id="BlackTextAbout" class="titleContainer content">
         <div class="list flex-row-reverse">
 
           <div class="list-column-1">
