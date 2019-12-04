@@ -4730,9 +4730,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding-top: 40px;
   }
 
-  #crisis-title {
+   html[lang=he-IL]#crisis-title {
     max-width: 65%;
-    font-size: 65px;
+    font-size: 55px;
   }
 
   html[lang=en-US] #crisis-title {
@@ -4882,7 +4882,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(0.90);
   }
 }
-
+@media screen and (max-width: 1540px) and (min-height: 710px){
+   .contactUsPageHeader.animated{
+       transform: scale(0.9);
+   }
+}
 @media screen and (max-width: 1380px) {
   .aboutUsPageWrapper .aboutMap {
     padding-top: 62px;
