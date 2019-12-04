@@ -7329,6 +7329,15 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .header__round_text{
     display: none;
   }
+  html[lang="en-US"] .singleParagraph{
+      text-align: left;
+  }
+  #BlackTitleContainer{
+      padding-right: 35px !important;
+  }
+  #BlackTextAbout{
+      padding-right: 35px !important ;
+  }
   .small-projects-list.container-2{
     display: none;
   }
