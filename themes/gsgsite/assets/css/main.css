@@ -1813,6 +1813,7 @@ html[lang=en-US] .aboutUsPageWrapper .activityAreas .list {
   transition: .5s;
   font-size: 30px;
   font-weight: 100;
+  color: #fff106;
 }
 
 .sideMenu .sideMenuItem.active img {
@@ -6800,7 +6801,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .sideMenu .sideMenuItem.active i,
   .sideMenu .sideMenuMail.opened i {
     font-size: 23px;
-    color: #fff106;
   }
 
   .sideMenu .mailBlock .popup {
