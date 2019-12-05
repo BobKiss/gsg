@@ -74,9 +74,11 @@ if( $locale == 'en_US' ) {
 				<a href ="tel:<?php echo __('Phone', 'gsgsite'); ?>" class="footer__links_item right"> <?php echo __('Phone', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('phone_number_footer', 'options'); ?></a>
 				<a href ="mailto:<?php echo __('Mail', 'gsgsite');?>" class="footer__links_item right"> <?php echo __('Mail', 'gsgsite'); ?> <span class="footer__menu_sep"></span><?php the_field('email_footer', 'options'); ?></a>
 				<div class="footer__links_item" style="color:white;">
-					<a class="<?php if (get_locale() !== 'he_IL') echo "currentLang"; ?>" href="?lang=en">ENGLISH</a>
+
+					<a id="switch-eng" class="<?php if (get_locale() !== 'he_IL') echo "currentLang"; ?>" href="?lang=en">ENGLISH</a>
 					<span class="footer__menu_sep"></span>
-					<a class="<?php if (get_locale() == 'he_IL') echo "currentLang"; ?>" href="?lang=he" style="margin-left:14px;">HEBREW</a>
+					<a id="switch-he" class="<?php if (get_locale() == 'he_IL') echo "currentLang"; ?>" href="?lang=he" style="margin-left:14px;">HEBREW</a>
+
 						<p style="margin: 0 auto;color: #8e8686"><?php echo __('Change language', 'gsgsite'); ?></p>
 					</div>
 					<div class="footer__links_item socials" style="color:white;">

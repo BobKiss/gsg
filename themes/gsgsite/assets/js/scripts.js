@@ -472,6 +472,7 @@ jQuery(document).ready(function ($) {
   if ( window.wp_data.current_page_slug == "blog") {
      console.log( $('.sideMenu .langName') );
      $('.sideMenu .langName').addClass('lang-disabled');
+     $('#switch-eng').addClass('lang-disabled');
   }
 
   // blog buttons
