@@ -1816,6 +1816,7 @@ html[lang=en-US] .aboutUsPageWrapper .activityAreas .list {
   transition: .5s;
   font-size: 30px;
   font-weight: 100;
+  color: #fff106;
 }
 
 .sideMenu .sideMenuItem.active img {
@@ -4733,9 +4734,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding-top: 40px;
   }
 
-  #crisis-title {
+   html[lang=he-IL]#crisis-title {
     max-width: 65%;
-    font-size: 65px;
+    font-size: 55px;
   }
 
   html[lang=en-US] #crisis-title {
@@ -4885,7 +4886,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
     transform: scale(0.90);
   }
 }
-
+@media screen and (max-width: 1540px) and (min-height: 710px){
+   .contactUsPageHeader.animated{
+       transform: scale(0.9);
+   }
+}
 @media screen and (max-width: 1380px) {
   .aboutUsPageWrapper .aboutMap {
     padding-top: 62px;
@@ -5715,6 +5720,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
        justify-content: space-between;
        margin-top: 27px;
     }
+    #about-us-title__mobile{
+        font-size: 65px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-height: 900px) {
@@ -5778,6 +5786,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+  html[lang="en-US"] .singleParagraph{
+      text-align: left;
   }
   .big-projects-list .list-item{
     width: 100%;
@@ -6793,7 +6804,6 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .sideMenu .sideMenuItem.active i,
   .sideMenu .sideMenuMail.opened i {
     font-size: 23px;
-    color: #fff106;
   }
 
   .sideMenu .mailBlock .popup {
@@ -7331,6 +7341,13 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   .header__round_text{
     display: none;
+  }
+
+  #BlackTitleContainer{
+      padding-right: 35px !important;
+  }
+  #BlackTextAbout{
+      padding-right: 35px !important ;
   }
   .small-projects-list.container-2{
     display: none;

@@ -158,7 +158,7 @@ jQuery(document).ready(function ($) {
     }
   }
   function logoDisappear () {
-    if ( (wp_data.current_page_slug == 'coming-soon' || wp_data.current_page_slug == 'thank-you-page') && window.innerWidth <= 980) {
+    if ( (wp_data.current_page_slug == 'coming-soon' || wp_data.current_page_slug == 'thank-you-page') && window.innerWidth <= 425) {
       // console.log( 'fdfsd' );
       $('.logo-404').addClass('invisible-mobile');
     }
@@ -168,7 +168,7 @@ jQuery(document).ready(function ($) {
     let slug = wp_data.current_page_slug;
     let error = wp_data.is_404;
 
-    if ( (slug == 'coming-soon' || slug == 'thank-you-page' || error == 1) && (window.innerWidth <= 980) ) {
+    if ( (slug == 'coming-soon' || slug == 'thank-you-page' || error == 1) && (window.innerWidth <= 425) ) {
       console.log('fdsh');
       $('.sideMenu').addClass('invisible-mobile');
       $('.site-footer').addClass('footer-mobile');
