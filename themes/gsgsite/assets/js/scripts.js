@@ -168,7 +168,7 @@ jQuery(document).ready(function ($) {
     let slug = wp_data.current_page_slug;
     let error = wp_data.is_404;
 
-    if ( (slug == 'coming-soon' || slug == 'thank-you-page' || error == 1) && (window.innerWidth <= 425) ) {
+    if ( (slug == 'coming-soon' || slug == 'thank-you-page' || error == 1) && (window.innerWidth <= 768) ) {
       console.log('fdsh');
       $('.sideMenu').addClass('invisible-mobile');
       $('.site-footer').addClass('footer-mobile');
