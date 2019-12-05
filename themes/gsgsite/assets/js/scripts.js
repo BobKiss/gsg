@@ -465,6 +465,15 @@ jQuery(document).ready(function ($) {
     // console.log( href );
 
   })
+
+   /*
+  Disable lang switch for blog page
+   */
+  if ( window.wp_data.current_page_slug == "blog") {
+     console.log( $('.sideMenu .langName') );
+     $('.sideMenu .langName').addClass('lang-disabled');
+  }
+
   // blog buttons
   if ( window.innerWidth <= 992 ) {
 

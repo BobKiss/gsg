@@ -318,6 +318,10 @@ html[lang="en-US"] .titleContainer .title {
 #crisisForm .col-sm-6.first_col {
   padding-right: 40px;
 }
+#crisisForm{
+  padding-top: 50px;
+}
+
 
 html[lang="en-US"] #crisisForm .col-sm-6.first_col {
   padding-left: 40px;
@@ -2626,6 +2630,7 @@ html[lang="en-US"] .sn-intro {
   width: 50%;
   display: block;
   margin-left: auto;
+  padding-top: 50px;
 }
 
 html[lang=en-US] .gsg-energy__title {
@@ -4661,6 +4666,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
 } */
 #blog__row-middle {
   height: auto;
+}
+
+.lang-disabled {
+  pointer-events: none;
 }
 
 /*Media*/

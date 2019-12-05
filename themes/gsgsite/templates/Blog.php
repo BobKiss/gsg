@@ -147,6 +147,9 @@ Template Name: Blog
   </section>
 
 </div>
+<script>
+  console.log('f');
+</script>
 <?php
 get_sidebar();
 get_footer();
