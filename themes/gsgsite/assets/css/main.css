@@ -1344,6 +1344,9 @@ html[lang="en-US"] #supervision-border {
 
 html[lang="en-US"] #supervision-title {
   transform: scale(-1, 1);
+  max-width: 575px;
+  font-size: 60px;
+  text-align: right;
 }
 
 .headerSection .borderBlock.borderWhite.revers .row {
@@ -4719,6 +4722,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
   #blog-title {
     font-size: 60px;
   }
+  html[lang="en-US"] #supervisionRow{
+    margin-top: 7vh;
+    margin-bottom: 15vh;
+  }
 }
 
 @media screen and (max-width: 1520px) {
@@ -5793,6 +5800,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .big-projects-list .list-item{
     width: 100%;
   }
+  html[lang="en-US"] #supervision-title{
+    max-width: 380px;
+    font-size: 50px;
+  }
+
   #popUpColumnLogo {
     margin-top: 3px;
   }
@@ -7420,14 +7432,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .archivepage__img{
     height: 230px;
   }
-  html[lang="en-US"] #supervisionRow{
-    direction: rtl;
-  }
   #supervisionRow .main-title{
     font-size: 65px;
   }
   html[lang="en-US"] #supervisionRow .main-title{
-    font-size: 55px;
+    font-size: 45px;
   }
   #main-title-crisisPage{
     /* text-align: left; */
@@ -7670,7 +7679,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-size: 55px;
   }
   html[lang="en-US"] #supervisionRow .main-title{
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .caldera-grid .has-error {
@@ -7811,7 +7820,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     top: 180px !important;
   }
   html[lang="en-US"] #supervisionRow .main-title{
-    font-size: 43px;
+    font-size: 35px;
   }
   .sideMenuWrapper .sideMenuContent .infoCol{
     width: 155px;
