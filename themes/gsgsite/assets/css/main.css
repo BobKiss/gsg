@@ -7549,7 +7549,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     bottom: 50px;
   } */
   html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol {
-    min-width: 150px;
+    min-width: 176px;
     text-align: left;
   }
 
@@ -7913,6 +7913,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol {
     text-align: left;
+    margin-left: 2px;
   }
 
   #sn-intro-energy {
