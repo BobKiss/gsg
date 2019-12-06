@@ -5813,7 +5813,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
     max-width: 380px;
     font-size: 50px;
   }
-
+  .sideMenu.visible{
+      padding: 0 128px 0 128px;
+      transform: scale(1.3);
+  }
   #popUpColumnLogo {
     margin-top: 3px;
   }
@@ -5931,6 +5934,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   #supervisionYellow {
     padding-right: 0;
+    font-size: 23px;
   }
   html[lang="en-US"] #supervisionYellow {
     max-width: 380px;
@@ -5974,9 +5978,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .sideMenuWrapper .sideMenuContent .main-navigation a {
-    font-weight: normal;
-    /* font-size: 14px;
-    line-height: 16px; */
+     font-weight: normal;
+     font-size: 40px;
+     line-height: 65px;
+     padding-right: 10px;
   }
 
   .sideMenuWrapper .sideMenuContent li.menu-item-has-children {
@@ -5988,10 +5993,10 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after, .sideMenuWrapper .sideMenuContent .main-navigation .current-menu-item a:after {
-    /* font-size: 10px; */
-    top: 0;
-    right: -11px;
-    margin-top: -0.5%;
+      font-size: 30px;
+      top: 50%;
+      right: -11px;
+      transform: translateY(-53%);
   }
 
   .sideMenuWrapper .sideMenuContent .infoCol {
@@ -6563,6 +6568,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   .connect-from-item .item-content-block__alt .view-btn {
     width: 100%;
+    display: none;
   }
 
   .connect-from-item .item-content-block__alt .btn-content {
@@ -6805,6 +6811,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-size: 26px;
     line-height: 27px;
     align-items: center;
+    margin-top: 1px;
   }
 
   .sideMenu .sideMenuItem .sideMenuMail svg {
@@ -6934,10 +6941,20 @@ html[lang="en-US"] #blogpage .blogpage__title {
     font-size: 15px;
   }
 }
-
+@media screen and (max-width: 650px) {
+    .sideMenu.visible {
+    padding: 0 80px 0 80px;
+    transform: scale(1.2);
+}
+}
 @media screen and (max-width: 576px) {
   .energy__borderBlock .title {
     letter-spacing: normal;
+  }
+
+  .sideMenu.visible {
+      padding: 0 35px 0 35px;
+      transform: scale(1);
   }
   .contactus__links {
     margin-top: 33px;
@@ -6992,6 +7009,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   .sideMenuWrapper .sideMenuContent .main-navigation a {
     font-size: 19px;
+    line-height: 31px;
   }
 
   .blog__nav a, .blog__nav p {
@@ -7360,10 +7378,22 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .archive .headerSection .borderBlock.hebrew .row .littleTitle{
     font-size: 30px;
   }
+  #supervisionYellow{
+      font-size: 13px;
+  }
+  .sideMenuWrapper .sideMenuContent li.menu-item-has-children:after, .sideMenuWrapper .sideMenuContent .main-navigation .current-menu-item a:after {
+    font-size: 20px;
+  }
   .header__round_text{
     display: none;
   }
-
+  .sideMenu .mailBlock .popup .popUpFooter {
+    margin-top: 10px !important;
+    margin-bottom: 40px;
+  }
+  .sn-contactus__topborder-reverse.alt {
+    margin-bottom: 10px;
+  }
   #BlackTitleContainer{
       padding-right: 35px !important;
   }
@@ -7821,6 +7851,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 @media screen and (max-width: 325px) {
     .sideMenuContent{
         margin-left: 26px !important;
+    }
+    .sideMenuWrapper .sideMenuContent .main-navigation a {
+        padding-right: 2px;
     }
   .caldera-grid textarea.form-control {
     height: 106px !important;
