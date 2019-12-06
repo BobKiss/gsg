@@ -53,7 +53,7 @@ $row_direction = (get_locale() != 'en_US') ? '' : 'flex-row-reverse';
           <div class="sn-contactus__topborder <?= $topborder_class ?>"></div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <div class="sn-contactus__area <?= $align ?>">
+          <div id="YellowArea" class="sn-contactus__area <?= $align ?>">
             <?= $paragraph ?>
           </div>
         </div>

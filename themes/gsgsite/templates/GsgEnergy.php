@@ -49,7 +49,7 @@ Template Name: GsgEnergy
 					<div class="sn-contactus__topborder <?= $topborder_class ?>"></div>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<div class="sn-contactus__area <?= $align ?>">
+					<div id="YellowAreaEnergy" class="sn-contactus__area <?= $align ?>">
 						<?= $text ?>
 					</div>
 				</div>

@@ -5275,7 +5275,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     display: none;
   }
   #YellowTitleContainer{
-    margin-right: 26px;
+    /* margin-right: 26px; */
   }
   #BlackTitleContainer{
     padding-right: 60px;
@@ -5809,6 +5809,20 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .big-projects-list .list-item{
     width: 100%;
   }
+  #YellowAreaEnergy{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  html[lang="en-US"] .sideMenuWrapper .sideMenuContent .infoCol{
+    min-width: 228px;
+  }
+  .sideMenuWrapper .sideMenuContent .infoCol a, .sideMenuWrapper .sideMenuContent .infoCol p, .sideMenuWrapper .sideMenuContent .infoCol span, .sideMenuWrapper .sideMenuContent .infoCol a:visited{
+    font-size: 19px;
+  }
+  html[lang="en-US"] #supervisionRow{
+    margin-top: 13vh;
+    margin-bottom: 13vh;
+  }
   html[lang="en-US"] #supervision-title{
     max-width: 380px;
     font-size: 50px;
@@ -5862,11 +5876,18 @@ html[lang="en-US"] #blogpage .blogpage__title {
     width: 100%;
   }
   .no-gutters>.col, .no-gutters>[class*=col-]{
-    padding-right: 35px;
-    padding-left: 35px;
+    /* padding-right: 35px;
+    padding-left: 35px; */
   }
   .sn-contactus__area{
     padding-right: 0;
+  }
+  #YellowArea{
+    padding-right: 21px;
+    padding-left: 15px;
+  }
+  #contactus-title{
+    font-size: 24px;
   }
 
   .headerSection .borderBlock{
@@ -5975,6 +5996,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding: 0;
     height: 20vh;
     margin-bottom: 10px;
+  }
+  .sideMenuWrapper .sideMenuContent .infoRow .infoHeading{
+    font-size: 25px;
   }
 
   .sideMenuWrapper .sideMenuContent .main-navigation a {
