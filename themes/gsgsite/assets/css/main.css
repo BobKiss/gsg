@@ -2158,12 +2158,12 @@ html[lang=en-US] .aboutUsPageWrapper .activityAreas .list {
 }
 
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after {
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   color: #fff600;
 }
 
 .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after {
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   color: #fff600;
 }
 
@@ -5979,8 +5979,8 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   .sideMenuWrapper .sideMenuContent .main-navigation a {
      font-weight: normal;
-     font-size: 40px;
-     line-height: 65px;
+     font-size: 36px;
+     line-height: 55px;
      padding-right: 10px;
   }
 
@@ -5997,6 +5997,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
       top: 50%;
       right: -11px;
       transform: translateY(-53%);
+  }
+  .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after{
+    margin-top: -57px;
   }
 
   .sideMenuWrapper .sideMenuContent .infoCol {
@@ -6951,6 +6954,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .energy__borderBlock .title {
     letter-spacing: normal;
   }
+  .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after{
+    margin-top: -32px;
+  }
 
   .sideMenu.visible {
       padding: 0 35px 0 35px;
@@ -7377,6 +7383,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
 @media screen and (max-width: 425px) {
   .archive .headerSection .borderBlock.hebrew .row .littleTitle{
     font-size: 30px;
+  }
+  .sideMenuWrapper .sideMenuContent li.menu-item-has-children.active:after{
+    margin-top: -29px;
   }
   #supervisionYellow{
       font-size: 13px;
