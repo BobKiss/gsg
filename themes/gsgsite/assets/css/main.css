@@ -6162,7 +6162,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding: 0;
     margin: 0;
     top: 0;
-    margin-top: 60px;
+    margin-top: 900px;
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -6948,9 +6948,9 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .project__connect{
     font-size: 20px;
   }
-  .container.homepageContainer > .row{
+  /* .container.homepageContainer > .row{
     display: none;
-  }
+  } */
   .caldera-grid .first_row {
     display: flex;
     flex-direction: column-reverse;
