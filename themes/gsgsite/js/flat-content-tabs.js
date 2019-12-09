@@ -33,21 +33,25 @@ jQuery(document).ready(function($) {
 
   //on init - create apartment select's options
   //get all available apartment types and remove duplicates (.filter part removes duplicates)
-  var stockApartmentTypes = [];
-  HouseSystem.variations.map(function(variation){
-    if(variation.is_in_stock){
-      stockApartmentTypes = stockApartmentTypes.concat(variation.apartmentTypes.filter(function(item){
-        return stockApartmentTypes.indexOf(item) === -1;
-      }));
-    }
-  });
+  if($('.flat-item').length){
 
-  console.log(stockApartmentTypes);
-  //generate new options
-  stockApartmentTypes.forEach(function(apartmentTypeId){
-    var apartmentName = HouseSystem.apartments[apartmentTypeId].name;
-    $('#apartment_type_select').append('<option value="'+apartmentTypeId+'">'+apartmentName+'</option>');
-  });
+    var stockApartmentTypes = [];
+    HouseSystem.variations.map(function(variation){
+      if(variation.is_in_stock){
+        stockApartmentTypes = stockApartmentTypes.concat(variation.apartmentTypes.filter(function(item){
+          return stockApartmentTypes.indexOf(item) === -1;
+        }));
+      }
+    });
+
+    console.log(stockApartmentTypes);
+    //generate new options
+    stockApartmentTypes.forEach(function(apartmentTypeId){
+      var apartmentName = HouseSystem.apartments[apartmentTypeId].name;
+      $('#apartment_type_select').append('<option value="'+apartmentTypeId+'">'+apartmentName+'</option>');
+    });
+
+  }
   //apartment select init END
 
   //apartment select on change logic
