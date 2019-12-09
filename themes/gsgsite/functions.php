@@ -323,6 +323,12 @@ function register_acf_options_pages() {
         'capability'    => 'edit_posts',
         'redirect'      => false
     ));
+
+		acf_add_options_sub_page(array(
+			'page_title' 	=> 'House System Packages Settings',
+			'menu_title'	=> 'House System',
+			'parent_slug'	=> 'theme-general-settings',
+		));
 }
 
 // Hook into acf initialization.
