@@ -31,6 +31,61 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
+
+<?php
+//get info about all avialable packages and apartment types
+$apartments = [
+	'top_duplex' => [ 'name' => _x('Top duplex', 'house system', 'gsg'), 'price' => get_field('top_duplex_price', 'option') ],
+	'garden_duplex' =>  [ 'name' => _x('Garden duplex', 'house system', 'gsg'), 'price' => get_field('garden_duplex_price', 'option') ],
+	'cellar_garden_duplex' =>  [ 'name' => _x('Garden duplex + cellar', 'house system', 'gsg'), 'price' => get_field('cellar_garden_duplex_price', 'option') ],
+];
+$packages = [
+	'top_duplex' => get_field('top_duplex_packages', 'option'),
+	'garden_duplex' => get_field('garden_duplex_packages', 'option'),
+	'cellar_garden_duplex' => get_field('cellar_garden_duplex_packages', 'option'),
+];
+//get all info about variations
+global $product;
+$variationsData = $product->get_available_variations();
+//array to pass into js in future
+$variationsArr = [];
+foreach ($variationsData as $variation) {
+
+	$variationPackages = [];
+	$variationApartmentTypes = [];
+	if(get_field('top_duplex', $variation['variation_id'])){
+		$variationApartmentTypes[] = 'top_duplex';
+		$variationPackages['top_duplex'] = get_field('top_duplex_packages', $variation['variation_id']);
+	}
+	if(get_field('garden_duplex', $variation['variation_id'])){
+		$variationApartmentTypes[] = 'garden_duplex';
+		$variationPackages['garden_duplex'] = get_field('garden_duplex_packages', $variation['variation_id']);
+	}
+	if(get_field('cellar_garden_duplex', $variation['variation_id'])){
+		$variationApartmentTypes[] = 'cellar_garden_duplex';
+		$variationPackages['cellar_garden_duplex'] = get_field('cellar_garden_duplex_packages', $variation['variation_id']);
+	}
+
+	$variationsArr[] = [
+		'variation_id' => $variation['variation_id'],
+		'is_in_stock' => $variation['is_in_stock'],
+		'apartmentTypes' => $variationApartmentTypes,
+		'packages' => $variationPackages
+	];
+
+}
+
+//pass this data to javascript
+?>
+<script type="text/javascript">
+	var HouseSystem = {
+		apartments : <?= json_encode($apartments) ?>,
+		packages : <?= json_encode($packages) ?>,
+		variations : <?= json_encode($variationsArr) ?>
+	}
+</script>
+
+
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<section id="housesys" class="housesys">
@@ -56,16 +111,14 @@ if ( post_password_required() ) {
 						<!-- house systems selects -->
 						<div class="housesys__menu_desc">
 							<div>
-								<select class="nice-select-trigger">
-									<option selected value="1"><?php _ex('Without', 'house system','gsg'); ?></option>
-									<option value="2"><?php _ex('Without','gsg'); ?></option>
+								<select class="nice-select-trigger" id="apartment_type_select">
+									<option selected disabled value="0"><?php _ex('Not selected', 'house system','gsg'); ?></option>
 								</select>
 								<p class="housesys__menu_text"><?php _ex('Choose an apartment', 'house system','gsg'); ?></p>
 							</div>
 							<div>
-								<select class="nice-select-trigger">
-									<option selected value="1"><?php _ex('Without', 'house system','gsg'); ?></option>
-									<option value="2"><?php _ex('Without', 'house system','gsg'); ?></option>
+								<select disabled class="nice-select-trigger" id="package_select">
+									<option selected disabled value="0"><?php _ex('Not selected', 'house system','gsg'); ?></option>
 								</select>
 								<p class="housesys__menu_text"><?php _ex('Select a package', 'house system','gsg'); ?></p>
 							</div>
@@ -99,11 +152,11 @@ if ( post_password_required() ) {
 							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_b"><?php _ex('View concept packages', 'house system','gsg'); ?></a>
 						</div>
 						<div class="housesys__menu_desc">
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Base price', 'house system','gsg'); ?></p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Extra package', 'house system','gsg'); ?></p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Discount code', 'house system','gsg'); ?></p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Final price', 'house system','gsg'); ?></p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Total registration fee', 'house system','gsg'); ?></p></div>
+							<div><span id="apartment_cost" class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Base price', 'house system','gsg'); ?></p></div>
+							<div><span id="package_cost" class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Extra package', 'house system','gsg'); ?></p></div>
+							<div><span id="discount_cost" class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Discount code', 'house system','gsg'); ?></p></div>
+							<div><span id="total_cost" class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Final price', 'house system','gsg'); ?></p></div>
+							<div><span id="registration_cost" class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Total registration fee', 'house system','gsg'); ?></p></div>
 						</div>
 
 						<div class="add-to-cart-container dnone">
