@@ -52,83 +52,58 @@ if ( post_password_required() ) {
 
 				<div class="housesys__menu">
 					<div class="housesys__menu_wrap">
-				<?php
-        	$map_word = [
-						'w1' => (get_locale() != 'en_US') ? 'בחר נכס' : 'Select a property',
-						'w2' => (get_locale() != 'en_US') ? 'בחר מגרש' : 'Select a plot',
-						'w3' => (get_locale() != 'en_US') ? 'בחר תצוגת נכס' : 'Select a property view',
-						'w4' => (get_locale() != 'en_US') ? 'בחר קומה' : 'Select a floor',
-						'w5' => (get_locale() != 'en_US') ? 'בחר דירה' : 'Choose an apartment',
-						'w6' => (get_locale() != 'en_US') ? 'בחר חבילה' : 'Select a package',
-						'v1' => (get_locale() != 'en_US') ? 'חזית' : 'Front',
-						'v2' => (get_locale() != 'en_US') ? 'ללא' : 'Without',
-        	];
-        ?>
-						<h6 class="housesys__menu_title"><?= $map_word['w1'] ?></h6>
+						<h6 class="housesys__menu_title"><?php _ex('Select a property', 'house system','gsg'); ?></h6>
 						<!-- house systems selects -->
 						<div class="housesys__menu_desc">
+							<div>
+								<select class="nice-select-trigger">
+									<option selected value="1"><?php _ex('Without', 'house system','gsg'); ?></option>
+									<option value="2"><?php _ex('Without','gsg'); ?></option>
+								</select>
+								<p class="housesys__menu_text"><?php _ex('Choose an apartment', 'house system','gsg'); ?></p>
+							</div>
+							<div>
+								<select class="nice-select-trigger">
+									<option selected value="1"><?php _ex('Without', 'house system','gsg'); ?></option>
+									<option value="2"><?php _ex('Without', 'house system','gsg'); ?></option>
+								</select>
+								<p class="housesys__menu_text"><?php _ex('Select a package', 'house system','gsg'); ?></p>
+							</div>
 							<div>
 								<select class="nice-select-trigger">
 								  <option selected value="1">111</option>
 								  <option value="2">222</option>
 								</select>
-								<p class="housesys__menu_text"><?= $map_word['w2'] ?></p>
+								<p class="housesys__menu_text"><?php _ex('Select a plot', 'house system','gsg'); ?></p>
 							</div>
 							<div>
 								<select class="nice-select-trigger">
-								  <option selected value="1"><?= $map_word['v1'] ?></option>
-								  <option value="2"><?= $map_word['v1'] ?></option>
+								  <option selected value="1"><?php _ex('Front', 'house system','gsg'); ?></option>
+								  <option value="2"><?php _ex('Front','gsg'); ?></option>
 								</select>
-								<p class="housesys__menu_text"><?= $map_word['w3'] ?></p>
+								<p class="housesys__menu_text"><?php _ex('Select a property view', 'house system','gsg'); ?></p>
 							</div>
 							<div>
 								<select class="nice-select-trigger">
-								  <option selected value="1"><?= $map_word['v2'] ?></option>
-								  <option value="2"><?= $map_word['v2'] ?></option>
+								  <option selected value="1"><?php _ex('Without', 'house system','gsg'); ?></option>
+								  <option value="2"><?php _ex('Without', 'house system','gsg'); ?></option>
 								</select>
-								<p class="housesys__menu_text"><?= $map_word['w4'] ?></p>
-							</div>
-							<div>
-								<select class="nice-select-trigger">
-								  <option selected value="1"><?= $map_word['v2'] ?></option>
-								  <option value="2"><?= $map_word['v2'] ?></option>
-								</select>
-								<p class="housesys__menu_text"><?= $map_word['w5'] ?></p>
-							</div>
-							<div>
-								<select class="nice-select-trigger">
-								  <option selected value="1"><?= $map_word['v2'] ?></option>
-								  <option value="2"><?= $map_word['v2'] ?></option>
-								</select>
-								<p class="housesys__menu_text"><?= $map_word['w6'] ?></p>
+								<p class="housesys__menu_text"><?php _ex('Select a floor', 'house system','gsg'); ?></p>
 							</div>
 						</div>
 						<!-- house systems selects END -->
 						<div class="housesys__menu_container">
-							<?php
-        	$map_word = [
-						'w1' => (get_locale() != 'en_US') ? 'הצג שרטוט נכס' : 'View property sketch',
-						'w2' => (get_locale() != 'en_US') ? 'הצג מפרט ומחירון' : 'View specifications and price list',
-						'w3' => (get_locale() != 'en_US') ? 'הצג תמונות והדמיות' : 'View photos and simulations',
-						'w4' => (get_locale() != 'en_US') ? 'הצג חבילות קונספט' : 'View concept packages',
-						'v1' => (get_locale() != 'en_US') ? 'מחיר בסיס' : 'Base price',
-						'v2' => (get_locale() != 'en_US') ? 'תוספת חבילה' : 'Extra package',
-						'v3' => (get_locale() != 'en_US') ? 'קוד הנחה' : 'Discount code',
-						'v4' => (get_locale() != 'en_US') ? 'מחיר סופי' : 'Final price',
-						'v5' => (get_locale() != 'en_US') ? 'סה”כ דמי הרשמה' : 'Total registration fee',
-        	];
-        ?>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_architecture"><?= $map_word['w1'] ?></a>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_a"> <?= $map_word['w2'] ?></a>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_images"><?= $map_word['w3'] ?></a>
-							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_b"><?= $map_word['w4'] ?></a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_architecture"><?php _ex('View property sketch', 'house system','gsg'); ?></a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_a"><?php _ex('View specifications and price list', 'house system','gsg'); ?></a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_images"><?php _ex('View photos and simulations', 'house system','gsg'); ?></a>
+							<a class="housesys__menu_btn disabled flat-tab-trigger" href="#" data-name="product_description_b"><?php _ex('View concept packages', 'house system','gsg'); ?></a>
 						</div>
 						<div class="housesys__menu_desc">
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v1'] ?></p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v2'] ?></p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v3'] ?></p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v4'] ?></p></div>
-							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?= $map_word['v5'] ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Base price', 'house system','gsg'); ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Extra package', 'house system','gsg'); ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Discount code', 'house system','gsg'); ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Final price', 'house system','gsg'); ?></p></div>
+							<div><span class="housesys__menu_count">0</span><p class="housesys__menu_text"><?php _ex('Total registration fee', 'house system','gsg'); ?></p></div>
 						</div>
 
 						<div class="add-to-cart-container dnone">
@@ -172,10 +147,9 @@ if ( post_password_required() ) {
 						?>
 						</div>
 						<?php
-  						$heading = ( get_locale() != 'en_US' ) ? 'לטופס הרשמה ותשלום דמי הרשמה >' : 'Registration and payment of registration fee';
 							$align = ( get_locale() != 'en_US' ) ? '' : 'text-center';
 						?>
-						<a class="add-to-cart-simulation housesys__menu_btn disabled <?= $align ?>" href="<?php echo esc_url( wc_get_checkout_url() ); ?>"><?= $heading ?> </a>
+						<a class="add-to-cart-simulation housesys__menu_btn disabled <?= $align ?>" href="#"><?php _ex('Registration and payment of registration fee', 'house system','gsg'); ?></a>
 
 					</div>
 
