@@ -377,3 +377,14 @@ function my_cpt () {
 	] );
 
 }
+
+function pre($var){
+	echo '<pre>';
+	var_dump($var);
+	echo '</pre>';
+}
+
+
+//include House System controllers
+require_once get_template_directory() . '/inc/house-system/class-admin.php';
+new House_System\Admin();

@@ -31,6 +31,70 @@ jQuery(document).ready(function($) {
   // };
   //Selects with package and apartment logic
 
+  //on init - create apartment select's options
+  //get all available apartment types and remove duplicates (.filter part removes duplicates)
+  var stockApartmentTypes = [];
+  HouseSystem.variations.map(function(variation){
+    if(variation.is_in_stock){
+      stockApartmentTypes = stockApartmentTypes.concat(variation.apartmentTypes.filter(function(item){
+        return stockApartmentTypes.indexOf(item) === -1;
+      }));
+    }
+  });
+
+  console.log(stockApartmentTypes);
+  //generate new options
+  stockApartmentTypes.forEach(function(apartmentTypeId){
+    var apartmentName = HouseSystem.apartments[apartmentTypeId].name;
+    $('#apartment_type_select').append('<option value="'+apartmentTypeId+'">'+apartmentName+'</option>');
+  });
+  //apartment select init END
+
+  //apartment select on change logic
+  $('#apartment_type_select').on('change', function(){
+    var apartment = $(this).val();
+
+    //Set package select to initial state
+    $('#package_select option:not([value="0"])').remove();
+    $('#package_select').removeAttr('disabled').val('0').niceSelect('update');
+    //Insert into 'package select' available packages options
+    HouseSystem.packages[apartment].forEach(function(item){
+      console.log(item);
+      $('#package_select').append('<option value="'+item.price+'">'+item.name+'</option>');
+    });
+    $('#package_select').niceSelect('update');
+
+    //set 'Base price', 'Total Price' and 'Total registration fee'
+    $('#apartment_cost').text(HouseSystem.apartments[apartment].price);
+    var total = parseInt($('#apartment_cost').text()) + parseInt($('#package_cost').text()) - parseInt($('#discount_cost').text());
+    $('#total_cost').text(total);
+    $('#registration_cost').text(2000);
+
+    //select first appropriate flat on image if available
+    for(var i = 0;i<HouseSystem.variations.length;i++){
+      if(HouseSystem.variations[i].is_in_stock){
+        if(HouseSystem.variations[i].apartmentTypes.indexOf(apartment) !== -1){
+          var variation = HouseSystem.variations[i].variation_id;
+          setTimeout(function(){
+            $('.flat-item[data-variation_id="'+variation+'"]').trigger('click');
+          }, 0);
+          break;
+        }
+      }
+    }
+
+  });
+  //apartment select on change logic END
+
+  //package select on change logic
+  $('#package_select').on('change', function(){
+    var selectedPackage = $(this).val();
+    $('#package_cost').text(selectedPackage);
+    var total = parseInt($('#apartment_cost').text()) + parseInt(selectedPackage) - parseInt($('#discount_cost').text());
+    $('#total_cost').text(total);
+  });
+  //package select on change logic END
+
 
   //flat tabs switching
   $('.flat-tab-trigger').on('click', function(e){
@@ -109,6 +173,22 @@ jQuery(document).ready(function($) {
       for(attribute in attributes){
         var select = $('select[name="'+attribute+'"]')
         select.val(attributes[attribute]).trigger('change');
+      }
+
+      //change House System selects if needed
+
+      //Firstly check if apartment type changed
+      var variationId = $(this).data('variation_id');
+      var variation = HouseSystem.variations.find(function(item){
+        return variationId === item.variation_id;
+      });
+
+      if(variation.apartmentTypes.indexOf($('#apartment_type_select').val()) === -1){//if changed
+        //select first apartment type
+        $('#apartment_type_select').val(variation.apartmentTypes[0]).niceSelect('update');
+        //clear packages select
+        $('#package_select option:not([value="0"])').remove();
+        $('#package_select').removeAttr('disabled').val('0').niceSelect('update');
       }
     }
 

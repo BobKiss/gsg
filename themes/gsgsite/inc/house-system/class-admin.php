@@ -31,10 +31,18 @@ class  Admin {
     // reset choices
     $field['choices'] = array();
 
-    // get the textarea value from options page without any formatting
+    // get choices from options page
     $choices = get_field('top_duplex_packages', 'option');
 
-    error_log( print_r($choises, true) );
+    if(is_array($choices)){
+      foreach ($choices as $choice) {
+        $field['choices'][$choice['name']] = $choice['name'];
+      }
+    }
+
+    //error_log( var_export($field['choises'], true) );
+
+    return $field;
 
   }
 
@@ -43,6 +51,19 @@ class  Admin {
   */
   public function load_garden_duplex_packages_choises( $field ){
 
+    // reset choices
+    $field['choices'] = array();
+
+    // get choices from options page
+    $choices = get_field('garden_duplex_packages', 'option');
+
+    if(is_array($choices)){
+      foreach ($choices as $choice) {
+        $field['choices'][$choice['name']] = $choice['name'];
+      }
+    }
+
+    return $field;
   }
 
   /*
@@ -50,6 +71,19 @@ class  Admin {
   */
   public function load_cellar_garden_duplex_packages_choises( $field ){
 
+    // reset choices
+    $field['choices'] = array();
+
+    // get choices from options page
+    $choices = get_field('cellar_garden_duplex_packages', 'option');
+
+    if(is_array($choices)){
+      foreach ($choices as $choice) {
+        $field['choices'][$choice['name']] = $choice['name'];
+      }
+    }
+
+    return $field;
   }
 
 
