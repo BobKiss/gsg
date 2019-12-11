@@ -1,7 +1,14 @@
 .dnone{
   display: none;
 }
-
+.choose-flat-img-container .side-front,
+.choose-flat-img-container .side-back{
+  display: none;
+}
+.choose-flat-img-container .side-front.active,
+.choose-flat-img-container .side-back.active{
+  display: block;
+}
 .choose-flat-img-container .flat-item .is-closed,
 .choose-flat-img-container .flat-item.disabled .hover{
   display: none;

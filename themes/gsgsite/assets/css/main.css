@@ -3365,7 +3365,7 @@ html[lang=en-US] .housesys__menu_desc>div {
 }
 
 .housesys__menu_desc .nice-select.open:after {
-  z-index: 6;
+  z-index: 9;
   transform: rotate(0deg);
 }
 
@@ -3389,7 +3389,7 @@ html[lang=en-US] .housesys__menu_desc>div {
 
 .housesys__menu_desc .nice-select.open .current {
   position: relative;
-  z-index: 6;
+  z-index: 9;
 }
 
 .housesys__menu_desc .nice-select .option:hover,
