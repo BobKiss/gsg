@@ -4907,6 +4907,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
        transform: scale(0.9);
    }
 }
+
 @media screen and (max-width: 1380px) {
   .aboutUsPageWrapper .aboutMap {
     padding-top: 62px;
@@ -5042,7 +5043,11 @@ html[lang="en-US"] #blogpage .blogpage__title {
     left: 250px;
   }
 }
-
+@media (max-width:1280px){
+  #supervision-border{
+     max-width: 65% ;
+   }
+}
 @media screen and (max-width: 1250px) {
   .titleContainer {
     padding: 0 60px 0;
