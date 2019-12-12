@@ -5237,6 +5237,20 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .thank-you-circle {
     right: -16%;
   }
+  .borderblockWrapper.animated .borderblock:nth-child(1){
+    display: none;
+  }
+  .borderblockWrapper.animated .borderblock:nth-child(3){
+    display: none;
+  }
+  .borderblockWrapper.animated .borderblock:nth-child(2)::after{
+    display: none;
+  }
+  /* #mainpage{
+    font-weight: 900;
+    font-size: 120px;
+    padding-left: 90px;
+  } */
 
   .aboutUsPageWrapper .aboutYellow {
     /* padding-bottom: 40px; */
@@ -5809,6 +5823,37 @@ html[lang="en-US"] #blogpage .blogpage__title {
   .big-projects-list .list-item{
     width: 100%;
   }
+  .clientsBlock a::before{
+    display: none;
+  }
+  .clientsBlock a::after{
+    display: none;
+  }
+  .clientsBlock p::after{
+    display: none;
+  }
+  .clientsBlock{
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .clientsBlock a{
+    background: #000;
+    width: 160px;
+    height: 60px;
+  }
+  .clientsBlock p{
+    color: white;
+    font-weight: 300;
+    max-width: 155px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .clientItemHome:nth-child(2) p{
+    text-align: left;
+  }
+  .clientsBlock{
+  padding: 0;
+}
   #YellowAreaEnergy{
     padding-right: 10px;
     padding-left: 10px;
@@ -6185,6 +6230,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
 
   [dir="rtl"] .clientsBlock {
     direction: ltr;
+    padding-top: 40px;
   }
 
   .clientsBlock {
@@ -6194,7 +6240,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
     padding: 0;
     margin: 0;
     top: 0;
-    margin-top: 900px;
+    /* margin-top: 900px; */
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -6208,7 +6254,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   .clientItemHome:nth-child(2) p {
     margin-right: auto;
-    text-align: right;
+    /* text-align: right; */
   }
 
   .page-template-Homepage header {
@@ -6224,15 +6270,21 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
 
   .clientItemHome p {
-    max-width: 100px;
-    font-size: 21px;
-    font-weight: 900;
+    /* max-width: 100px; */
+    /* font-size: 21px; */
+    /* font-weight: 900; */
     padding: 0 10px;
     border-bottom: 0;
     line-height: 20px;
     padding-top: 6px;
     padding-bottom: 6px;
     position: relative;
+  }
+  .main-title{
+    font-size: 73px;
+    line-height: 59px;
+    font-weight: 800;
+    padding-left: 30px;
   }
 
   /* .sn-contactus__area {
@@ -7455,6 +7507,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   }
   .clientsBlock.mobile.visible{
       margin-top: 25px;
+      padding-top: 0;
   }
   .container.homepageContainer{
       margin-top: 92px;
@@ -7468,6 +7521,7 @@ html[lang="en-US"] #blogpage .blogpage__title {
   [dir=rtl] .main-title{
     text-align: right;
     direction: rtl;
+    padding-left: 0;
   }
   .wp-image-859{
     height: 400px;
